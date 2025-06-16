@@ -89,17 +89,28 @@
 
 |tag|link|
 |:-|:-|
+|neovim,editor,math|[codi.vim](https://github.com/metakirby5/codi.vim)|
+|neovim,editor,npm|[depsync](https://github.com/robertazzopardi/depsync)|
+|neovim,editor,read|[fsread.nvim](https://github.com/nullchilly/fsread.nvim)|
+|neovim,editor,write|[true-zen.nvim](https://github.com/Pocco81/true-zen.nvim)|
+|neovim,editor,write|[Twilight](https://github.com/folke/twilight.nvim)|
+|neovim,editor,write|[Typewriter Mode for Obsidian](https://github.com/davisriedel/obsidian-typewriter-mode)|
+|neovim,editor,write|[zen-mode.nvim](https://github.com/folke/zen-mode.nvim)|
+|neovim,editor|[bufferline.nvim](https://github.com/akinsho/bufferline.nvim)|
+|neovim,editor|[nvim-navic](https://github.com/SmiteshP/nvim-navic)|
+|neovim,editor|[Paint](https://github.com/folke/paint.nvim)|
+|neovim,editor|[Smooth Cursor](https://github.com/gen740/SmoothCursor.nvim)|
 |neovim,lsp|[rime-ls](https://github.com/wlh320/rime-ls)|
-|neovim,ai|[Aider Plugin for Neovim](https://github.com/joshuavial/aider.nvim)|
-|neovim,ai|[ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim)|
-|neovim,ai|[CodeCompanion](https://github.com/olimorris/codecompanion.nvim)|
-|neovim,ai|[llm.nvim](https://github.com/Kurama622/llm.nvim)|
-|neovim,ai|[nvim-aider](https://github.com/GeorgesAlkhouri/nvim-aider)|
-|neovim,ai|[ollama.nvim](https://github.com/nomnivore/ollama.nvim)|
-|neovim,ai|[parrot.nvim](https://github.com/frankroeder/parrot.nvim)|
-|neovim,ai|[Smear cursor for Neovim](https://github.com/sphamba/smear-cursor.nvim)|
-|neovim,ai|[Telescope GPT](https://github.com/HPRIOR/telescope-gpt)|
-|neovim,ai|[yarepl.nvim](https://github.com/milanglacier/yarepl.nvim)|
+|neovim,llm|[Aider Plugin for Neovim](https://github.com/joshuavial/aider.nvim)|
+|neovim,llm|[ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim)|
+|neovim,llm|[CodeCompanion](https://github.com/olimorris/codecompanion.nvim)|
+|neovim,llm|[llm.nvim](https://github.com/Kurama622/llm.nvim)|
+|neovim,llm|[nvim-aider](https://github.com/GeorgesAlkhouri/nvim-aider)|
+|neovim,llm|[ollama.nvim](https://github.com/nomnivore/ollama.nvim)|
+|neovim,llm|[parrot.nvim](https://github.com/frankroeder/parrot.nvim)|
+|neovim,llm|[Smear cursor for Neovim](https://github.com/sphamba/smear-cursor.nvim)|
+|neovim,llm|[Telescope GPT](https://github.com/HPRIOR/telescope-gpt)|
+|neovim,llm|[yarepl.nvim](https://github.com/milanglacier/yarepl.nvim)|
 |neovim,anima|[tiny-glimmer.nvim](https://github.com/rachartier/tiny-glimmer.nvim)|
 |neovim,bible|[bible-verse.nvim](https://github.com/anthony-halim/bible-verse.nvim)|
 |neovim,bookmark|[navigate-note.nvim](https://github.com/you-n-g/navigate-note.nvim)|
@@ -150,24 +161,13 @@
 |neovim,edit,save|[VimSaver](https://github.com/kopsha/vim-saver)|
 |neovim,edit,select|[multiple-cursors.nvim](https://github.com/brenton-leighton/multiple-cursors.nvim)|
 |neovim,edit,wrap|[Vim-ArgWrap](https://git.foosoft.net/alex/vim-argwrap)|
-|neovim,editor,math|[codi.vim](https://github.com/metakirby5/codi.vim)|
-|neovim,editor,npm|[depsync](https://github.com/robertazzopardi/depsync)|
-|neovim,editor,read|[fsread.nvim](https://github.com/nullchilly/fsread.nvim)|
-|neovim,editor,write|[true-zen.nvim](https://github.com/Pocco81/true-zen.nvim)|
-|neovim,editor,write|[Twilight](https://github.com/folke/twilight.nvim)|
-|neovim,editor,write|[Typewriter Mode for Obsidian](https://github.com/davisriedel/obsidian-typewriter-mode)|
-|neovim,editor,write|[zen-mode.nvim](https://github.com/folke/zen-mode.nvim)|
-|neovim,editor|[bufferline.nvim](https://github.com/akinsho/bufferline.nvim)|
-|neovim,editor|[nvim-navic](https://github.com/SmiteshP/nvim-navic)|
-|neovim,editor|[Paint](https://github.com/folke/paint.nvim)|
-|neovim,editor|[Smooth Cursor](https://github.com/gen740/SmoothCursor.nvim)|
 |neovim,edit|[dial.nvim](https://github.com/monaqa/dial.nvim)|
 |neovim,edit|[join.nvim](https://github.com/jakeru/join.nvim)|
 |neovim,edit|[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)|
 |neovim,edit|[nvim-surround](https://github.com/kylechui/nvim-surround)|
 |neovim,edit|[SuEdit](https://github.com/Grafcube/suedit.nvim)|
 |neovim,encode|[decipher.nvim](https://github.com/MisanthropicBit/decipher.nvim)|
-|neovim,env,hidden|[Streamer Mode](https://github.com/Kolkhis/streamer-mode.nvim)|
+|neovim,env|[Streamer Mode](https://github.com/Kolkhis/streamer-mode.nvim)|
 |neovim,explorer|[browser-bookmarks.nvim](https://github.com/dhruvmanila/browser-bookmarks.nvim)|
 |neovim,explorer|[open-browser.vim](https://github.com/tyru/open-browser.vim)|
 |neovim,explorer|[telescope-openbrowser.nvim](https://github.com/tamago324/telescope-openbrowser.nvim)|
@@ -327,6 +327,7 @@
 |neovim,theme|[The Ink](https://github.com/JWW127/theink)|
 |neovim,theme|[Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)|
 |neovim,theme|[Themify](https://github.com/LmanTW/themify.nvim)|
+|neovim,theme|[vanta.nvim](https://github.com/emanuel2718/vanta.nvim)|
 |neovim,tmux|[tmux-navigator.nvim](https://github.com/connordeckers/tmux-navigator.nvim)|
 |neovim,todo|[vim-todo](https://github.com/wsdjeg/vim-todo)|
 |neovim,tool,color|[color-picker.nvim](https://github.com/ziontee113/color-picker.nvim)|

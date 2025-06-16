@@ -35,13 +35,7 @@
 |bin,font|[ttf2woff2](https://github.com/nfroidure/ttf2woff2)|
 |bin,font|[Webify](https://github.com/ananthakumaran/webify)|
 |bin,fzf|[fzf](https://github.com/junegunn/fzf)|
-|bin,git|[Branchless workflow for Git](https://github.com/arxanas/git-branchless)|
-|bin,git|[git-cliff](https://github.com/orhun/git-cliff)|
-|bin,git|[git-sync](https://github.com/simonthum/git-sync)|
 |bin,git|[Git](https://git-scm.com)|
-|bin,git|[gptcommit](https://github.com/zurawiki/gptcommit)|
-|bin,git|[mgitstatus](https://github.com/fboender/multi-git-status)|
-|bin,git|[ugit](https://github.com/Bhupesh-V/ugit)|
 |bin,grep|[ripgrep](https://github.com/BurntSushi/ripgrep)|
 |bin,grep|[sig](https://github.com/ynqa/sig)|
 |bin,hash|[Gethash](https://github.com/xymy/gethash)|
@@ -83,6 +77,7 @@
 |bin,tree|[ki-cli](https://github.com/nju33/ki-cli)|
 |bin,video|[vimg](https://github.com/alexheretic/vimg)|
 |bin,vim|[Vim](https://github.com/vim/vim)|
+|bin,complete|[carapace-bin](https://github.com/carapace-sh/carapace-bin)|
 |linux,bin,asciinema|[agg](https://github.com/asciinema/agg)|
 |linux,bin,asciinema|[asciinema](https://github.com/asciinema/asciinema)|
 |linux,bin,asciinema|[autocast](https://github.com/k9withabone/autocast)|
@@ -103,6 +98,7 @@
 |windows10,bin,sshfs|[SSHFS-Win](https://github.com/winfsp/sshfs-win)|
 |windows10,bin,sudo|[gsudo - a sudo for Windows](https://github.com/gerardog/gsudo)|
 |windows10,bin,top|[NTop](https://github.com/gsass1/NTop)|
+|windows10,bin,top|[btop](https://github.com/aristocratos/btop)|
 |windows10,bin|[Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)|
 |windows10,bin|[Remove Microsoft Edge Permanently](https://github.com/liuyuyu2020/EdgeGoAway)|
 
@@ -115,7 +111,6 @@
 |bin,data|[Mille](https://github.com/johnkerl/miller)|
 |bin,font|[autosubset](https://github.com/MarcelWaldvogel/autosubset)|
 |bin,font|[fontbm](https://github.com/vladimirgamalyan/fontbm)|
-|bin,git|[jj](https://github.com/jj-vcs/jj)|
 |bin,pdf|[markpdf](https://github.com/ajaxray/markpdf)|
 |bin,pdf|[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)|
 |bin,pdf|[PDF ToC](https://github.com/HareInWeed/pdf-toc)|
@@ -263,16 +258,6 @@
 |bin,github|[gh-md-toc](https://github.com/ekalinin/github-markdown-toc)|
 |bin,github|[Markdown to GitHub style web](https://github.com/KrauseFx/markdown-to-html-github-style)|
 |bin,github|[Mediawiki to GitHub Flavoured Markdown](https://github.com/outofcontrol/mediawiki-to-gfm)|
-|bin,git|[bit](https://github.com/chriswalz/bit)|
-|bin,git|[commitizen](https://github.com/commitizen-tools/commitizen)|
-|bin,git|[degit](https://github.com/Rich-Harris/degit)|
-|bin,git|[Git Profile Switcher](https://github.com/TheYkk/git-switcher)|
-|bin,git|[git-bug](https://github.com/MichaelMure/git-bug)|
-|bin,git|[git-notify](https://github.com/jevakallio/git-notify)|
-|bin,git|[gitbackup](https://github.com/amitsaha/gitbackup)|
-|bin,git|[GitUI](https://github.com/extrawurst/gitui)|
-|bin,git|[Lazygit](https://github.com/jesseduffield/lazygit)|
-|bin,git|[Mercurial](https://mercurial-scm.org)|
 |bin,gps|[SARfish](https://github.com/MJCruickshank/SARfish)|
 |bin,grammer,languagetool|[languagetool-code-comments](https://github.com/dustinblackman/languagetool-code-comments)|
 |bin,graphic|[cmdpxl](https://github.com/knosmos/cmdpxl)|
@@ -441,7 +426,6 @@
 |bin,sync|[Rclone](https://github.com/rclone/rclone)|
 |bin,sync|[rsync](https://rsync.samba.org)|
 |bin,sync|[sync-directory](https://github.com/hoperyy/sync-directory)|
-|bin,terminal|[Alacritty Settings](https://github.com/jwu/alacritty-settings)|
 |bin,thumbnail|[mt](https://github.com/mutschler/mt)|
 |bin,thumbnail|[vcsi](https://github.com/amietn/vcsi)|
 |bin,tiker|[tick-rs](https://github.com/tarkah/tickrs)|

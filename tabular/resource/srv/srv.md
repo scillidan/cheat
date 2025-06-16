@@ -14,14 +14,15 @@
 
 |tag|link|
 |:-|:-|
-|srv,github-action|[Howto Deploy LaTeX Documents](https://github.com/SimonWaldherr/HowTo-Deploy-LaTeX-Documents)|
 |srv,sync|[Resilio-sync](https://github.com/linuxserver/docker-resilio-sync)|
 |srv,sync|[Syncthing](https://github.com/linuxserver/docker-syncthing)|
+|srv,github-action|[Gitleaks Action](https://github.com/gitleaks/gitleaks-action)|
 
 ## Extra
 
 |tag|link|
 |:-|:-|
+|srv,ci|[Howto Deploy LaTeX Documents](https://github.com/SimonWaldherr/HowTo-Deploy-LaTeX-Documents)|
 |srv,github-action|[configure-pages](https://github.com/actions/configure-pages)|
 |srv,github-action|[deploy-pages](https://github.com/actions/deploy-pages)|
 |srv,github-action|[GitLab Sync - GitHub Action](https://github.com/kujov/gitlab-sync)|
@@ -99,6 +100,7 @@
 |srv,github-action|[Markdown autodocs](https://github.com/dineshsonachalam/markdown-autodocs)|
 |srv,github-action|[Tencent Cloud COS and CDN action](https://github.com/sylingd/tencent-cos-and-cdn-action)|
 |srv,github-action|[Generating PDF Documents with Quarto, LaTeX, and GitHub Actions](https://github.com/SimonWaldherr/BookTemplate)|
+|srv,github-action|[MdBook Github Action with Plugin Support](https://github.com/benfalk/action-mdbook)|
 |srv,git|[git-sync](https://github.com/kubernetes/git-sync)|
 |srv,git|[Gogs](https://github.com/gogs/gogs)|
 |srv,home-assistant|[Home Assistant](https://github.com/home-assistant/core)|
@@ -192,6 +194,7 @@
 |srv,write|[HedgeDoc](https://github.com/linuxserver/docker-hedgedoc)|
 |srv,yomitan|[Local Audio Server for Yomichan](https://github.com/themoeway/local-audio-yomichan)|
 |srv,yomitan|[yomichan_audio_server](https://github.com/aramrw/yomichan_audio_server)|
+|srv|[Web Site Change Detection, Restock monitoring and notifications.](https://github.com/dgtlmoon/changedetection.io)|
 
 ## Cancel
 

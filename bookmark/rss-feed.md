@@ -4,8 +4,11 @@
 |:-|:-|
 |rss-feed,commit|[Awesome Neovim](https://github.com/rockerBOO/awesome-neovim/commits.atom)|
 |rss-feed,commit|[awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins/commits.atom)|
+|rss-feed,github-search-rss|[clink](https://scillidan.github.io/github-search-rss/clink.rss)|
+|rss-feed,github-search-rss|[cmder](https://scillidan.github.io/github-search-rss/cmder.rss)|
 |rss-feed,github-search-rss|[goldendict](https://scillidan.github.io/github-search-rss/goldendict.rss)|
 |rss-feed,github-search-rss|[keypirinha](https://scillidan.github.io/github-search-rss/keypirinha.rss)|
+|rss-feed,github-search-rss|[mdbook](https://scillidan.github.io/github-search-rss/mdbook.rss)|
 |rss-feed,github-search-rss|[sphinx](https://scillidan.github.io/github-search-rss/sphinx.rss)|
 |rss-feed|[catalog](https://github.com/mkdocs/catalog/commits.atom)|
 |rss-feed|[ctan-ann](https://www.ctan.org/ctan-ann/atom)|

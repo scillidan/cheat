@@ -1,11 +1,11 @@
-|tag|title|author,publisher|license|fontname|subscribe|
-|:-|:-|:-|:-|:-|:-|
-|font,monospace|[Sarasa Term SC Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd)|laishulu|[OFL-1.1](https://github.com/laishulu/Sarasa-Term-SC-Nerd/blob/main/LICENSE)|Sarasa Term SC Nerd|release|
-|font,sans-serif|[Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic)|Renzhi Li|[OFL-1.1](https://github.com/be5invis/Sarasa-Gothic/blob/main/LICENSE)|更纱黑体|release|
-|font,sans-serif|[Source Han Sans](https://github.com/adobe-fonts/source-han-sans)|Adobe|[OFL-1.1](https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt)|Source Han Sans|release|
-|font,sans-serif|[得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans)|atelierAnchor|[OFL-1.1](https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE)|得意黑|release|
-|font,serif|[LXGW WenKai GB / 霞鹜文楷 GB](https://github.com/lxgw/LxgwWenkaiGB)|LXGW|[OFL-1.1](https://github.com/lxgw/LxgwWenkaiGB/blob/main/OFL.txt)|霞鹜文楷 GB|release|
-|font,serif|[Source Han Serif](https://github.com/adobe-fonts/source-han-serif)|Adobe|[OFL-1.1](https://github.com/adobe-fonts/source-han-serif/blob/master/LICENSE.txt)|Source Han Serif|release|
+| tag             | title                                                                  | author,publisher | license                                                                            | fontname            | subscribe |
+| :-------------- | :--------------------------------------------------------------------- | :--------------- | :--------------------------------------------------------------------------------- | :------------------ | :-------- |
+| font,monospace  | [Sarasa Term SC Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd) | laishulu         | [OFL-1.1](https://github.com/laishulu/Sarasa-Term-SC-Nerd/blob/main/LICENSE)       | Sarasa Term SC Nerd | release   |
+| font,sans-serif | [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic)             | Renzhi Li        | [OFL-1.1](https://github.com/be5invis/Sarasa-Gothic/blob/main/LICENSE)             | 更纱黑体                | release   |
+| font,sans-serif | [Source Han Sans](https://github.com/adobe-fonts/source-han-sans)      | Adobe            | [OFL-1.1](https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt)  | Source Han Sans     | release   |
+| font,sans-serif | [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans)       | atelierAnchor    | [OFL-1.1](https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE)         | 得意黑                 | release   |
+| font,serif      | [LXGW WenKai GB / 霞鹜文楷 GB](https://github.com/lxgw/LxgwWenkaiGB)       | LXGW             | [OFL-1.1](https://github.com/lxgw/LxgwWenkaiGB/blob/main/OFL.txt)                  | 霞鹜文楷 GB             | release   |
+| font,serif      | [Source Han Serif](https://github.com/adobe-fonts/source-han-serif)    | Adobe            | [OFL-1.1](https://github.com/adobe-fonts/source-han-serif/blob/master/LICENSE.txt) | Source Han Serif    | release   |
 
 |tag|title|author,publisher|license|fontname|subscribe|
 |:-|:-|:-|:-|:-|:-|

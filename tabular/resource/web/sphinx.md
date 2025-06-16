@@ -23,14 +23,20 @@
 |tag|link|
 |:-|:-|
 |sphinx|[autoclasstoc](https://autoclasstoc.readthedocs.io/en/latest/)|
+|sphinx|[doc8](https://github.com/PyCQA/doc8)|
+|sphinx|[DOCtor-RST](https://github.com/OskarStark/doctor-rst)|
 |sphinx|[Read the Docs Sphinx Theme](https://github.com/readthedocs/sphinx_rtd_theme)|
 |sphinx|[Sphinx Combine](https://github.com/adamtheturtle/sphinx-combine)
 |sphinx|[Sphinx Comments](https://github.com/executablebooks/sphinx-comments)|
 |sphinx|[Sphinx DataTables](https://sharm294.github.io/sphinx-datatables/)|
 |sphinx|[Sphinx Prompt](https://github.com/sbrunner/sphinx-prompt)
 |sphinx|[Sphinx Sitemap Generator Extension](https://github.com/jdillard/sphinx-sitemap)|
+|sphinx|[Sphinx Substitution Extensions](https://github.com/adamtheturtle/sphinx-substitution-extensions)|
+|sphinx|[sphinx-automodapi](https://github.com/astropy/sphinx-automodapi)|
+|sphinx|[sphinx-gha](https://github.com/drewcassidy/sphinx-gha)|
 |sphinx|[sphinx-mdinclude](https://github.com/omnilib/sphinx-mdinclude)|
 |sphinx|[sphinx-needs](https://github.com/useblocks/sphinx-needs)|
+|sphinx|[sphinx-nested-apidoc](https://github.com/arunanshub/sphinx-nested-apidoc)|
 |sphinx|[sphinx-preview](https://github.com/useblocks/sphinx-preview)|
 |sphinx|[sphinxcontrib-constdata](https://documatt.gitlab.io/sphinxcontrib-constdata/table.html)|
 |sphinx|[sphinxcontrib-fulltoc](https://github.com/sphinx-contrib/fulltoc)|
@@ -39,10 +45,5 @@
 |sphinx|[sphinxcontrib-programoutput](https://github.com/OpenNTI/sphinxcontrib-programoutput)|
 |sphinx|[sphinxcontrib.autoprogram](https://pythonhosted.org/sphinxcontrib-autoprogram/)|
 |sphinx|[sphinxcontrib.external-links](https://github.com/finleyfamily/sphinxcontrib.external-links)|
-|sphinx|[Sphinx Substitution Extensions](https://github.com/adamtheturtle/sphinx-substitution-extensions)|
-|sphinx|[DOCtor-RST](https://github.com/OskarStark/doctor-rst)|
-|sphinx|[sphinx-automodapi](https://github.com/astropy/sphinx-automodapi)|
-|sphinx|[doc8](https://github.com/PyCQA/doc8)|
 |sphinx|[sphinxnotes-project](https://github.com/sphinx-notes/project)|
 |sphinx|[SPHinXsys](https://github.com/Xiangyu-Hu/SPHinXsys)|
-|sphinx|[sphinx-gha](https://github.com/drewcassidy/sphinx-gha)|

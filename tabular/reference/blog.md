@@ -35,6 +35,8 @@
 |blog,maintainer|[Notes from a tired maintainer](https://github.com/pi0/tired-maintainer)|
 |blog,maintainer|[On Typesetting Engines: A Programmer's Perspective](https://blog.ppresume.com/posts/on-typesetting-engines)|
 |blog,monospace|[The Monospace Web](https://owickstrom.github.io/the-monospace-web/)|
+|blog,neovim|[Nvim warning](https://github.com/LunarWatcher/auto-pairs#nvim-warning)|
+|blog,neovim|[Why you switched from Neovim to Vim?](https://www.reddit.com/r/vim/comments/16cdbyd/why_you_switched_from_neovim_to_vim/)|
 |blog,neumann-architecture|[Once You're Laid Off, You'll Never Be the Same Again](https://mertbulan.com/2025/01/26/once-you-are-laid-off-you-will-never-be-the-same-again/)|
 |blog,ninja|[Pragmatic Lua Basics in 30 Minutes](https://ruoyusun.com/2013/03/23/pragmatic-lua-basics-in-30-mins.html)|
 |blog,open-source|[Procrastination and the Fear of Not Being 'Good Enough'](https://swapnilchauhan.com/blog/procrastination-and-the-fear-of-not-being-good-enough)|

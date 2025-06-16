@@ -89,7 +89,6 @@
 |windows10,opt,audio|[AudioShell](https://audioshell.en.lo4d.com/windows)|download|
 |windows10,opt,audio|[CUETools](http://cue.tools/wiki/Main_Page)|download|
 |windows10,opt,audio|[Mp3tag](https://mp3tag.de)|download|
-|windows10,opt,audio|[XMedia Recode](https://xmedia-recode.de)|download|
 |windows10,opt,clipboard|[Ditto](https://github.com/sabrogden/Ditto)||
 |windows10,opt,copy|[FastCopy](https://fastcopy.jp)|download|
 |windows10,opt,desktop|[CenterTaskbar](https://github.com/mdhiggins/CenterTaskbar)|release|
@@ -463,6 +462,7 @@
 |windows10,opt,audio|[MusicBee](https://getmusicbee.com)|
 |windows10,opt,audio|[ocenaudio](https://www.ocenaudio.com/)|
 |windows10,opt,audio|[SpleeterGUI](https://github.com/boy1dr/SpleeterGui)|
+|windows10,opt,audio|[XMedia Recode](https://xmedia-recode.de)|
 |windows10,opt,clipboard|[SnipDo](https://snipdo-app.com)|
 |windows10,opt,controller|[Gopher](https://github.com/irungentoo/Gopher360)|
 |windows10,opt,controller|[xInput Controller Tester](https://thatsmytrunks.itch.io/xinput-controller-tester)|

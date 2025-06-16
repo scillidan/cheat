@@ -1,7 +1,7 @@
 ## Mark
 
 |tag|link|
-|:-|:-| 
+|:-|:-|
 |mkdocs,theme|[Material for MkDocs](https://squidfunk.github.io/mkdocs-material)|
 |mkdocs|[Breakless Lists Markdown Extension](https://github.com/adamb70/mdx-breakless-lists)|
 |mkdocs|[Mdx Truly Sane Lists](https://github.com/radude/mdx_truly_sane_lists)|

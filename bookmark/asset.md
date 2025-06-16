@@ -1,12 +1,12 @@
-| tag      | site                                          |
-| :------- | :-------------------------------------------- |
-| design   | [Behance](https://www.behance.net)            |
-| design   | [Dribbble](https://dribbble.com)              |
-| design   | [Pinterest](https://www.pinterest.com)        |
-| image,ai | [Civiai - Images](https://civitai.com/images) |
-| image,ai | [Civiai - models](https://civitai.com/models) |
-| news     | [Kumo](https://gm-kumo.vercel.app)            |
-| news     | [News Now](https://newsnow.busiyi.world)      |
+|tag|site|
+|:-|:-|
+|design|[Behance](https://www.behance.net)|
+|design|[Dribbble](https://dribbble.com)|
+|design|[Pinterest](https://www.pinterest.com)|
+|image,ai|[Civiai - Images](https://civitai.com/images)|
+|image,ai|[Civiai - models](https://civitai.com/models)|
+|news|[Kumo](https://gm-kumo.vercel.app)|
+|news|[News Now](https://newsnow.busiyi.world)|
 
 |tag|site|
 |:-|:-|
@@ -69,3 +69,5 @@
 |dictionary|[Yomichan/Yomitan Dictionaries](https://github.com/MarvNC/yomichan-dictionaries)|
 |dotfile|[ArchSway](https://github.com/Ultra-Code/archsway)|
 |dotfile|[@Fluffy-Bean](https://github.com/Fluffy-Bean/dots)|
+|windows10,dotfile|[windots](https://github.com/jacquindev/windots)|
+|windows10,dotfile|[Alacritty Settings](https://github.com/jwu/alacritty-settings)|

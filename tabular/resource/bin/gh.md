@@ -4,6 +4,7 @@
 |:-|:-|
 |gh,branch|[Tidy](https://github.com/HaywardMorihara/gh-tidy)|
 |gh,download|[gh-download](https://github.com/yuler/gh-download)|
+|gh,org|[gh-clone-org](https://github.com/matt-bartel/gh-clone-org)|
 
 ## Later
 
@@ -41,7 +42,6 @@
 |gh,issue|[gh-workon](https://github.com/chmouel/gh-workon)|
 |gh,milestone|[gh milestone](https://github.com/valeriobelli/gh-milestone)|
 |gh,notify|[gh-notify](https://github.com/meiji163/gh-notify)|
-|gh,org|[gh-clone-org](https://github.com/matt-bartel/gh-clone-org)|
 |gh,org|[gh-org-browse-repo](https://github.com/gh-cli-for-education/gh-org-browse-repo)|
 |gh,org|[gh-org-users](https://github.com/yermulnik/gh-org-users)|
 |gh,other|[gh-inspire](https://github.com/lakuapik/gh-inspire)|

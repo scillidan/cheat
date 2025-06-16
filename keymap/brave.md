@@ -52,6 +52,7 @@
 
 |opt|extension|context_menu|
 |:-|:-|:-|
+|Brave|/|Open link in split view|
 |Brave|Block Site|(Un)Block this Page|
 |Brave|uBlock Origin|Block element...|
 |Brave|Cookie AutoDelete|/|
