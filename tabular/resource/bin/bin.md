@@ -91,6 +91,7 @@
 |windows10,bin,curl|[Reproducible curl binaries](https://github.com/curl/curl-for-win)|
 |windows10,bin,dictzip|[dictzip for Windows 10 (x64)](https://github.com/KaseyJenkins/dictzip-win64)|
 |windows10,bin,git|[Git for Windows](https://github.com/git-for-windows/git)|
+|windows10,bin,grep|[ugrep](https://github.com/Genivia/ugrep)|
 |windows10,bin,scoop|[Scoop](https://scoop.sh)|
 |windows10,bin,sed|[sed-windows](https://github.com/mbuilov/sed-windows)|
 |windows10,bin,shell|[PowerShell](https://github.com/PowerShell/PowerShell)|
@@ -267,7 +268,6 @@
 |bin,grep|[qgrep](https://github.com/zeux/qgrep)|
 |bin,grep|[rga](https://github.com/phiresky/ripgrep-all)|
 |bin,grep|[sg](https://github.com/ast-grep/ast-grep)|
-|bin,grep|[ugrep](https://github.com/Genivia/ugrep)|
 |bin,grep|[vgrep](https://github.com/vrothberg/vgrep)|
 |bin,grep|[w2vgrep - Semantic Grep](https://github.com/arunsupe/semantic-grep)|
 |bin,handbrake|[Handbrake Watcher](https://github.com/shannah/handbrake-watcher)|
