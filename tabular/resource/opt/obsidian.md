@@ -41,6 +41,8 @@
 |obsidian|cheat|[Tag Wrangler](https://github.com/pjeby/tag-wrangler)|
 |obsidian|cheat|[TagFolder](https://github.com/vrtmrz/obsidian-tagfolder)|
 |obsidian|live|[Calibre](https://github.com/caronchen/obsidian-calibre-plugin)|
+|obsidian|live|[Date Inserter](https://github.com/namikaze-40p/obsidian-date-inserter)|
+|obsidian|live|[Emoji Autocomplete](https://github.com/KraXen72/obsidian-emoji-autocomplete)|
 |obsidian|live|[Force note view mode](https://github.com/bwydoogh/obsidian-force-view-mode-of-note)|
 |obsidian|live|[Note Definitions](https://github.com/dominiclet/obsidian-note-definitions)|
 |obsidian|live|[Habit Tracker 21](https://github.com/zincplusplus/habit-tracker)|
@@ -51,6 +53,7 @@
 |obsidian|live|[Reading Time](https://github.com/avr/obsidian-reading-time)|
 |obsidian|live|[Remember cursor position](https://github.com/dy-sh/obsidian-remember-cursor-position)|
 |obsidian|live|[Sentence Navigator](https://github.com/timhor/obsidian-sentence-navigator)|
+|obsidian|live|[Solve](https://github.com/LiamRiddell/obsidian-solve)|
 |obsidian|live|[Soundscapes](https://github.com/andrewmcgivery/obsidian-soundscapes)|
 |obsidian|live|[Timeline Schedule](https://github.com/Ebonsignori/obsidian-timeline-schedule)|
 |obsidian|live|[Water Tracker](https://github.com/LuigiCerone/obsidian-water-tracker)|
@@ -64,6 +67,7 @@
 |tag|vault|link|
 |:-|:-|:-|
 |obsidian|live|[Citations](https://github.com/hans/obsidian-citation-plugin)|
+|obsidian|live|[Reminder](https://github.com/uphy/obsidian-reminder)|
 |obsidian|live|[Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration)|
 
 ## Cache
@@ -167,7 +171,6 @@
 |obsidian|[Obsidian Quick Settings Switch for Plugins](https://github.com/Hugo-COLLIN/obsidian-quick-settings-switchs)|
 |obsidian|[Obsidian Sheets](https://github.com/NicoNekoru/obsidan-advanced-table-xt)|
 |obsidian|[Obsidian Shiki Plugin](https://github.com/mProjectsCode/obsidian-shiki-plugin)|
-|obsidian|[Obsidian Solve](https://github.com/LiamRiddell/obsidian-solve)|
 |obsidian|[Obsidian Song Form Diagram](https://github.com/ShacharHarshuv/obsidian-song-form-diagram)|
 |obsidian|[Obsidian Tabs](https://github.com/gitobsidiantutorial/obsidian-tabs)|
 |obsidian|[Obsidian Teleprompter](https://github.com/lumetrium/obsidian-teleprompter)|
@@ -205,6 +208,7 @@
 |obsidian|[Search Everywhere](https://github.com/Mom0aut/obsidian-search-everywhere)|
 |obsidian|[Sentence Navigator](https://github.com/timhor/obsidian-sentence-navigator)|
 |obsidian|[Shiki Highlighter](https://github.com/mProjectsCode/obsidian-shiki-plugin)|
+|obsidian|[Simple Folder Filelist for Obsidian](https://github.com/band/obsidian-folder-filelist)|
 |obsidian|[Solve](https://github.com/LiamRiddell/obsidian-solve)|
 |obsidian|[Spellcheck Toggler](https://github.com/julzerinos/spellcheck-toggler-obsidian-plugin)|
 |obsidian|[Starlight Starter Kit: Basics](https://github.com/mProjectsCode/obsidian-meta-bind-plugin-docs)|

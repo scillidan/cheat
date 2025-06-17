@@ -57,7 +57,7 @@
 |vscodium,syntax|[srt](https://github.com/gert7/srtvs)||
 |vscodium,syntax|[XML](https://github.com/redhat-developer/vscode-xml)||
 |vscodium,syntax|[YAML](https://github.com/redhat-developer/vscode-yaml)||
-|vscodium,theme|[Shimmer Theme](https://github.com/tenianon/shimmer-theme)||
+|vscodium,theme|[Lightless Theme](https://github.com/ferretwithaberet/lightless-theme)|TwoDevs.lightless|
 |vscodium|[filesize](https://github.com/mkxml/vscode-filesize)||
 |vscodium|[WakaTime](https://github.com/wakatime/vscode-wakatime)||
 
@@ -161,6 +161,8 @@
 |vscodium,syntax|[XML Toolkit](https://github.com/SAP/xml-tools/tree/master/packages/xml-toolkit)||
 |vscodium,task|[Task Explorer](https://github.com/spmeesseman/vscode-taskexplorer)||
 |vscodium,theme|[e-ink](https://gitlab.com/eddjrn/vs-code-e-ink-theme)||
+|vscodium,theme|[Shimmer Theme](https://github.com/tenianon/shimmer-theme)||
+|vscodium,theme|[Vanta](https://github.com/orellazri/vanta)|
 |vscodium,theme|[Tokyo Night Dark Enhanced](https://github.com/Venage5603/Tokyo-Night-Dark-Enhanced)||
 |vscodium,theme|[Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme)|
 |vscodium,theme|[Vesper](https://github.com/raunofreiberg/vesper)||

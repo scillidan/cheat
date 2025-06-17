@@ -91,6 +91,7 @@
 |lib,video|[MoviePy](https://github.com/Zulko/moviepy)|
 |lib,video|[Norfair](https://github.com/tryolabs/norfair)|
 |lib,video|[VidGear](https://github.com/abhiTronix/vidgear)|
+|lib,voice|[Vosk Speech Recognition Toolkit](https://github.com/alphacep/vosk-api)|
 |lib,war3|[GoWarcraft3](https://github.com/nielsAD/gowarcraft3)|
 |lib,war3|[war3map](https://github.com/invoker-bot/war3map)|
 |lib,watch|[LVGL](https://lvgl.io)|

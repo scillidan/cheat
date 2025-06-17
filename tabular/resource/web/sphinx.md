@@ -23,11 +23,13 @@
 |tag|link|
 |:-|:-|
 |sphinx|[autoclasstoc](https://autoclasstoc.readthedocs.io/en/latest/)|
+|sphinx|[Color schemed images for Sphinx](https://github.com/danirus/sphinx-colorschemed-images)|
 |sphinx|[doc8](https://github.com/PyCQA/doc8)|
 |sphinx|[DOCtor-RST](https://github.com/OskarStark/doctor-rst)|
 |sphinx|[Read the Docs Sphinx Theme](https://github.com/readthedocs/sphinx_rtd_theme)|
 |sphinx|[Sphinx Combine](https://github.com/adamtheturtle/sphinx-combine)
 |sphinx|[Sphinx Comments](https://github.com/executablebooks/sphinx-comments)|
+|sphinx|[Sphinx DataTables](https://github.com/sharm294/sphinx-datatables)|
 |sphinx|[Sphinx DataTables](https://sharm294.github.io/sphinx-datatables/)|
 |sphinx|[Sphinx Prompt](https://github.com/sbrunner/sphinx-prompt)
 |sphinx|[Sphinx Sitemap Generator Extension](https://github.com/jdillard/sphinx-sitemap)|
@@ -38,9 +40,13 @@
 |sphinx|[sphinx-needs](https://github.com/useblocks/sphinx-needs)|
 |sphinx|[sphinx-nested-apidoc](https://github.com/arunanshub/sphinx-nested-apidoc)|
 |sphinx|[sphinx-preview](https://github.com/useblocks/sphinx-preview)|
+|sphinx|[Sphinx-testify](https://github.com/BasicWolf/sphinx-testify)|
+|sphinx|[sphinx_click_custom](https://github.com/RhetTbull/sphinx_click_custom)|
+|sphinx|[sphinxcontrib-bibtex](https://github.com/mcmtroffaes/sphinxcontrib-bibtex)|
 |sphinx|[sphinxcontrib-constdata](https://documatt.gitlab.io/sphinxcontrib-constdata/table.html)|
 |sphinx|[sphinxcontrib-fulltoc](https://github.com/sphinx-contrib/fulltoc)|
 |sphinx|[sphinxcontrib-images](https://github.com/sphinx-contrib/images)|
+|sphinx|[sphinxcontrib-jsontable](https://github.com/sasakama-code/sphinxcontrib-jsontable)|
 |sphinx|[sphinxcontrib-mermaid](https://github.com/mgaitan/sphinxcontrib-mermaid)|
 |sphinx|[sphinxcontrib-programoutput](https://github.com/OpenNTI/sphinxcontrib-programoutput)|
 |sphinx|[sphinxcontrib.autoprogram](https://pythonhosted.org/sphinxcontrib-autoprogram/)|

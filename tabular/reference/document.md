@@ -25,3 +25,4 @@
 |document|[RST, Sphinx, Sublime, GitHub](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html)|
 |document|[rsync](https://download.samba.org/pub/rsync/rsync.1#OPTIONS)|
 |document|[Weblate](https://docs.weblate.org/en/latest)|
+|document|[ESPHome-Docs](https://github.com/esphome/esphome-docs)|

@@ -66,6 +66,7 @@
 |global|Auto Link Title|Normal paste (no fetching behavior)|C-v|
 |global|Auto Link Title|Paste URL and auto fetch title|C-S-v|
 |cheatsheet|LanguageTool Integration|Check Text|A-S-l|
+|live|Date Inserter|Open Calendar|A-S-d|
 |live|Sentence Navigator|Move to start of current sentence|S-Up|
 |live|Sentence Navigator|Move to start of next sentence|S-Down|
 |live|Sentence Navigator|Select current sentence|A-s|

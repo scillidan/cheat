@@ -32,16 +32,11 @@
 |launch|[Awesome-launch](https://github.com/KingMenes/awesome-launch)|
 |retro-game,video|[Arcade Database](https://www.youtube.com/@ArcadeDatabase/videos)|
 |ui|[Hand-Drawn Arrows](https://github.com/eronred/handy-arrows)|
-|ui|[Hand-Drawn Arrows](https://github.com/eronred/handy-arrows)|
 |ui|[shadcn/ui](https://github.com/shadcn-ui/ui)|
-|ui|[shadcn/ui](https://github.com/shadcn-ui/ui)|
-|visualization|[1 dataset 100 visualizations](https://100.datavizproject.com/)|
 |visualization|[1 dataset 100 visualizations](https://100.datavizproject.com/)|
 |windows10,cursor|[Cosmica](https://toumeya.itch.io/cosmica-v1-cursor-pack)|
 |windows10,cursor|[DOT M Cursors](https://deviantart.com/alexgal23/art/DOT-M-Cursors-817793310)|
-|windows10,cursor|[DOT M Cursors](https://deviantart.com/alexgal23/art/DOT-M-Cursors-817793310)|
 |windows10,cursor|[mini.cur](https://github.com/rghv234/mini.cur)|
-|windows10,cursor|[Simplify Dot 2](https://deviantart.com/dpcdpc11/art/Simplify-Dot-2-Windows-Cursors-897619865)|
 |windows10,cursor|[Simplify Dot 2](https://deviantart.com/dpcdpc11/art/Simplify-Dot-2-Windows-Cursors-897619865)|
 |windows10,theme|[Gruvbox for Windows](https://www.deviantart.com/niivu/art/Gruvbox-for-Windows-913766735)|
 |windows10,theme|[Macindows for Windows 10](https://www.deviantart.com/niivu/art/Macindows-for-Windows-10-870073866)|

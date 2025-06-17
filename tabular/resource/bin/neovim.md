@@ -14,7 +14,7 @@
 |neovim,console|[telescope-cmdline.nvim](https://github.com/jonarrien/telescope-cmdline.nvim)|
 |neovim,console|[toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)|
 |neovim,cursor|[keepcursor.nvim](https://github.com/rlychrisg/keepcursor.nvim)|
-|neovim,dap|[nvim-dap-view](https://github.com/igorlfs/nvim-dap-view)|
+|neovim,debug|[nvim-dap-view](https://github.com/igorlfs/nvim-dap-view)|
 |neovim,docset|[nvim-devdocs](https://github.com/luckasRanarison/nvim-devdocs)|
 |neovim,edit,align|[align.nvim](https://github.com/jokesper/align.nvim)|
 |neovim,edit,complete|[gyoza.vim](https://github.com/mityu/vim-gyoza)|
@@ -28,43 +28,43 @@
 |neovim,edit|[move-lines.nvim](https://github.com/kobbikobb/move-lines.nvim)|
 |neovim,edit|[vim-sandwich](https://github.com/machakann/vim-sandwich)|
 |neovim,explorer|[oil.nvim](https://github.com/stevearc/oil.nvim)|
-|neovim,feed|[feed.nvim](https://github.com/neo451/feed.nvim)|
+|neovim|[feed.nvim](https://github.com/neo451/feed.nvim)|
 |neovim,file|[telescope-file-browser.nvim](https://github.com/simonmclean/triptych.nvim)|
-|neovim,format|[stylua-nvim](https://github.com/ckipp01/stylua-nvim)|
-|neovim,gh|[Telescope-github.nvim](https://github.com/nvim-telescope/telescope-github.nvim)|
-|neovim,git|[telescope-repo.nvim](https://github.com/cljoly/telescope-repo.nvim)|
+|neovim,formatter|[stylua-nvim](https://github.com/ckipp01/stylua-nvim)|
+|neovim,telescope|[Telescope-github.nvim](https://github.com/nvim-telescope/telescope-github.nvim)|
+|neovim,telescope|[telescope-repo.nvim](https://github.com/cljoly/telescope-repo.nvim)|
 |neovim,harper|[Harper](https://github.com/elijah-potter/harper)|
 |neovim,highlight|[colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua)|
 |neovim,highlight|[STCursorword](https://github.com/sontungexpt/stcursorword)|
 |neovim,highlight|[whitespace.nvim](https://github.com/johnfrankmorgan/whitespace.nvim)|
 |neovim,history|[telescope-frecency.nvim](https://github.com/nvim-telescope/telescope-frecency.nvim)|
 |neovim,icon|[nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)|
-|neovim,im,switch|[im-switch.nvim](https://github.com/drop-stones/im-switch.nvim)|
+|neovim,ime|[im-switch.nvim](https://github.com/drop-stones/im-switch.nvim)|
 |neovim,ime|[cmp-lsp-rimels](https://github.com/liubianshi/cmp-lsp-rimels)|
-|neovim,jump|[Telescope Zoxide](https://github.com/jvgrootveld/telescope-zoxide)|
+|neovim,telescope|[Telescope Zoxide](https://github.com/jvgrootveld/telescope-zoxide)|
 |neovim,keymap,command|[legendary.nvim](https://github.com/mrjones2014/legendary.nvim)|
 |neovim,keymap|[Houdini](https://github.com/TheBlob42/houdini.nvim)|
 |neovim,keymap|[Which Key](https://github.com/folke/which-key.nvim)|
-|neovim,key|[timseriakov/spamguard.nvim](https://github.com/timseriakov/spamguard.nvim)|
+|neovim,keymap|[timseriakov/spamguard.nvim](https://github.com/timseriakov/spamguard.nvim)|
 |neovim,lazy|[lazy.nvim](https://github.com/folke/lazy.nvim)|
 |neovim,lazy|[lazydev.nvim](https://github.com/folke/lazydev.nvim)|
 |neovim,lazy|[telescope-lazy.nvim](https://github.com/tsakirist/telescope-lazy.nvim)|
-|neovim,lsp,mason|[mason.nvim](https://github.com/williamboman/mason.nvim)|
-|neovim,lsp,mason|[conform.nvim](https://github.com/stevearc/conform.nvim)|
-|neovim,lsp,mason|[mason-conform.nvim](https://github.com/zapling/mason-conform.nvim)|
-|neovim,lsp,mason|[nvim-lint](https://github.com/mfussenegger/nvim-lint)|
-|neovim,lsp,mason|[mason-nvim-lint](https://github.com/rshkarin/mason-nvim-lint)|
+|neovim,lsp|[mason.nvim](https://github.com/williamboman/mason.nvim)|
+|neovim,lsp|[conform.nvim](https://github.com/stevearc/conform.nvim)|
+|neovim,lsp|[mason-conform.nvim](https://github.com/zapling/mason-conform.nvim)|
+|neovim,lsp|[nvim-lint](https://github.com/mfussenegger/nvim-lint)|
+|neovim,lsp|[mason-nvim-lint](https://github.com/rshkarin/mason-nvim-lint)|
 |neovim,lsp|[Blink Completion (blink.cmp)](https://github.com/Saghen/blink.cmp)|
 |neovim,lsp|[blink.compat](https://github.com/Saghen/blink.compat)|
 |neovim,lsp|[lsp-setup.nvim](https://github.com/junnplus/lsp-setup.nvim)|
 |neovim,lsp|[wezterm-types](https://github.com/justinsgithub/wezterm-types)|
-|neovim,manage|[vim-plug](https://github.com/junegunn/vim-plug)|
+|neovim,plugin-manage|[vim-plug](https://github.com/junegunn/vim-plug)|
 |neovim,move|[Beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)|
 |neovim,move|[Treewalker.nvim](https://github.com/aaronik/Treewalker.nvim)|
 |neovim,navigate|[Goto Preview](https://github.com/rmagatti/goto-preview)|
 |neovim,obsidian|[obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)|
 |neovim,pdf|[Markdown to PDF](https://github.com/arminveres/md-pdf.nvim)|
-|neovim,proj|[Neovim project manager plugin](https://github.com/coffebar/neovim-project)|
+|neovim,project|[Neovim project manager plugin](https://github.com/coffebar/neovim-project)|
 |neovim,python|[py-requirements.nvim](https://github.com/MeanderingProgrammer/py-requirements.nvim)|
 |neovim,replace|[grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim)|
 |neovim,search,dir|[dir-telescope.nvim](https://github.com/princejoogie/dir-telescope.nvim)|
@@ -84,6 +84,14 @@
 |neovim,translate|[translate.nvim](https://github.com/uga-rosa/translate.nvim)|
 |neovim|[indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)|
 |NeoVim|[visual-whitespace.nvim](https://github.com/mcauley-penney/visual-whitespace.nvim)
+
+## Later
+
+|tag|link|
+|:-|:-|
+|neovim,latex|[rnoweb-nvim](https://github.com/bamonroe/rnoweb-nvim)|
+|neovim,latex|[VimTeX](https://github.com/lervag/vimtex)|
+|neovim,theme|[vanta.nvim](https://github.com/emanuel2718/vanta.nvim)|
 
 ## Cache
 
@@ -111,26 +119,26 @@
 |neovim,llm|[Smear cursor for Neovim](https://github.com/sphamba/smear-cursor.nvim)|
 |neovim,llm|[Telescope GPT](https://github.com/HPRIOR/telescope-gpt)|
 |neovim,llm|[yarepl.nvim](https://github.com/milanglacier/yarepl.nvim)|
-|neovim,anima|[tiny-glimmer.nvim](https://github.com/rachartier/tiny-glimmer.nvim)|
-|neovim,bible|[bible-verse.nvim](https://github.com/anthony-halim/bible-verse.nvim)|
-|neovim,bookmark|[navigate-note.nvim](https://github.com/you-n-g/navigate-note.nvim)|
-|neovim,bookmark|[navimark.nvim](https://github.com/zongben/navimark.nvim)|
-|neovim,buffer,github|[Githubify](https://github.com/manugoyal/githubify)|
-|neovim,buffer,padding|[no-neck-pain.nvim](https://github.com/shortcuts/no-neck-pain.nvim)|
+|neovim|[tiny-glimmer.nvim](https://github.com/rachartier/tiny-glimmer.nvim)|
+|neovim|[bible-verse.nvim](https://github.com/anthony-halim/bible-verse.nvim)|
+|neovim,edit|[navigate-note.nvim](https://github.com/you-n-g/navigate-note.nvim)|
+|neovim,edit|[navimark.nvim](https://github.com/zongben/navimark.nvim)|
+|neovim,buffer|[Githubify](https://github.com/manugoyal/githubify)|
+|neovim,buffer|[no-neck-pain.nvim](https://github.com/shortcuts/no-neck-pain.nvim)|
 |neovim,buffer|[Buffon](https://github.com/francescarpi/buffon.nvim)|
-|neovim,case|[Coerce](https://github.com/gregorias/coerce.nvim)|
-|neovim,case|[text-case.nvim](https://github.com/johmsalas/text-case.nvim)|
-|neovim,clip|[nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua)|
-|neovim,colorcheme|[Gruvbox Flat](https://github.com/eddyekofo94/gruvbox-flat.nvim)|
-|neovim,colorcheme|[Iceberg](https://github.com/cocopon/iceberg.vim)|
-|neovim,colorcheme|[Kyoto Night NeoVim](https://github.com/shrikecode/kyotonight.vim)|
-|neovim,colorcheme|[lackluster](https://github.com/slugbyte/lackluster.nvim)|
-|neovim,colorcheme|[Last Color](https://github.com/raddari/last-color.nvim)|
-|neovim,colorcheme|[Neon](https://github.com/rafamadriz/neon)|
-|neovim,colorcheme|[newpaper.nvim](https://github.com/yorik1984/newpaper.nvim)|
-|neovim,colorcheme|[Nightfox](https://github.com/EdenEast/nightfox.nvim)|
-|neovim,colorcheme|[northernlights.vim](https://github.com/m-gail/northernlights.vim)|
-|neovim,colorcheme|[Styler](https://github.com/folke/styler.nvim)|
+|neovim,edit|[Coerce](https://github.com/gregorias/coerce.nvim)|
+|neovim,edit|[text-case.nvim](https://github.com/johmsalas/text-case.nvim)|
+|neovim,edit|[nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua)|
+|neovim,theme|[Gruvbox Flat](https://github.com/eddyekofo94/gruvbox-flat.nvim)|
+|neovim,theme|[Iceberg](https://github.com/cocopon/iceberg.vim)|
+|neovim,theme|[Kyoto Night NeoVim](https://github.com/shrikecode/kyotonight.vim)|
+|neovim,theme|[lackluster](https://github.com/slugbyte/lackluster.nvim)|
+|neovim,theme|[Last Color](https://github.com/raddari/last-color.nvim)|
+|neovim,theme|[Neon](https://github.com/rafamadriz/neon)|
+|neovim,theme|[newpaper.nvim](https://github.com/yorik1984/newpaper.nvim)|
+|neovim,theme|[Nightfox](https://github.com/EdenEast/nightfox.nvim)|
+|neovim,theme|[northernlights.vim](https://github.com/m-gail/northernlights.vim)|
+|neovim,theme|[Styler](https://github.com/folke/styler.nvim)|
 |neovim,comment|[Comment.nvim](https://github.com/numToStr/Comment.nvim)|
 |neovim,comment|[ts-comments.nvim](https://github.com/folke/ts-comments.nvim)|
 |neovim,comment|[vim-hidecomments](https://github.com/wangfanstar/vim-hidecomments)|
@@ -146,34 +154,34 @@
 |neovim,debug|[godot-gdscript](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#godot-gdscript)|
 |neovim,debug|[telescope-dap.nvim](https://github.com/nvim-telescope/telescope-dap.nvim)|
 |neovim,debug|[tshunkyPy](https://github.com/jeff-dh/tshunkyPy.nvim)|
-|neovim,deno,dpp|[dpp.vim](https://github.com/Shougo/dpp.vim)|
+|neovim,deno|[dpp.vim](https://github.com/Shougo/dpp.vim)|
 |neovim,denops,manage|[dvpm](https://github.com/yukimemi/dvpm)|
 |neovim,denops|[vim-detect-indent](https://github.com/kg8m/vim-detect-indent)|
 |neovim,dictionary|[dict-popup.nvim](https://github.com/Nealium/dict-popup.nvim)|
 |neovim,docset|[dash-docs.nvim](https://github.com/sei40kr/dash-docs.nvim)|
 |neovim,docset|[nvim-telescope-zeal-cli](https://gitlab.com/ivan-cukic/nvim-telescope-zeal-cli)|
 |neovim,docset|[zeal-lynx-cli](https://github.com/Sanix-Darker/zeal-lynx-cli)|
-|neovim,edit,emoji|[Emojify.nvim](https://github.com/ronisbr/emojify.nvim)|
-|neovim,edit,image|[Pinmd](https://github.com/mistgc/pinmd.nvim)|
-|neovim,edit,move|[flash.nvim](https://github.com/folke/flash.nvim)|
-|neovim,edit,move|[leap.nvim](https://github.com/ggandor/leap.nvim)|
-|neovim,edit,move|[numb.nvim](https://github.com/nacro90/numb.nvim)|
-|neovim,edit,save|[VimSaver](https://github.com/kopsha/vim-saver)|
-|neovim,edit,select|[multiple-cursors.nvim](https://github.com/brenton-leighton/multiple-cursors.nvim)|
+|neovim,edit|[Emojify.nvim](https://github.com/ronisbr/emojify.nvim)|
+|neovim,edit|[Pinmd](https://github.com/mistgc/pinmd.nvim)|
+|neovim,edit|[flash.nvim](https://github.com/folke/flash.nvim)|
+|neovim,edit|[leap.nvim](https://github.com/ggandor/leap.nvim)|
+|neovim,edit|[numb.nvim](https://github.com/nacro90/numb.nvim)|
+|neovim,edit|[VimSaver](https://github.com/kopsha/vim-saver)|
+|neovim,edit|[multiple-cursors.nvim](https://github.com/brenton-leighton/multiple-cursors.nvim)|
 |neovim,edit,wrap|[Vim-ArgWrap](https://git.foosoft.net/alex/vim-argwrap)|
 |neovim,edit|[dial.nvim](https://github.com/monaqa/dial.nvim)|
 |neovim,edit|[join.nvim](https://github.com/jakeru/join.nvim)|
 |neovim,edit|[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)|
 |neovim,edit|[nvim-surround](https://github.com/kylechui/nvim-surround)|
 |neovim,edit|[SuEdit](https://github.com/Grafcube/suedit.nvim)|
-|neovim,encode|[decipher.nvim](https://github.com/MisanthropicBit/decipher.nvim)|
-|neovim,env|[Streamer Mode](https://github.com/Kolkhis/streamer-mode.nvim)|
+|neovim|[decipher.nvim](https://github.com/MisanthropicBit/decipher.nvim)|
+|neovim|[Streamer Mode](https://github.com/Kolkhis/streamer-mode.nvim)|
 |neovim,explorer|[browser-bookmarks.nvim](https://github.com/dhruvmanila/browser-bookmarks.nvim)|
 |neovim,explorer|[open-browser.vim](https://github.com/tyru/open-browser.vim)|
 |neovim,explorer|[telescope-openbrowser.nvim](https://github.com/tamago324/telescope-openbrowser.nvim)|
 |neovim,explorer|[vfiler.vim](https://github.com/obaland/vfiler.vim)|
-|neovim,file,find|[Command-T](https://github.com/wincent/command-t)|
-|neovim,file,tag|[Grapple.nvim](https://github.com/cbochs/grapple.nvim)|
+|neovim,file|[Command-T](https://github.com/wincent/command-t)|
+|neovim,file|[Grapple.nvim](https://github.com/cbochs/grapple.nvim)|
 |neovim,file|[fm-nvim](https://github.com/is0n/fm-nvim)|
 |neovim,file|[ranger.nvim](https://github.com/kelly-lin/ranger.nvim)|
 |neovim,file|[Rnvimr](https://github.com/kevinhwang91/rnvimr)|
@@ -195,7 +203,7 @@
 |neovim,git|[telescope-undo.nvim](https://github.com/debugloop/telescope-undo.nvim)|
 |neovim,gui|[Goneovim](https://github.com/akiyosi/goneovim)|
 |neovim,gui|[roarie-commands](https://github.com/lalbornoz/roarie-commands.vim)|
-|neovim,hex|[hexer.nvim](https://github.com/theKnightsOfRohan/hexer.nvim)|
+|neovim|[hexer.nvim](https://github.com/theKnightsOfRohan/hexer.nvim)|
 |neovim,highlight,focus|[multicolumn.nvim](https://github.com/fmbarina/multicolumn.nvim)|
 |neovim,highlight|[NeoColumn.nvim](https://github.com/ecthelionvi/NeoColumn.nvim)|
 |neovim,highlight|[nvim-cursorline](https://github.com/yamatsum/nvim-cursorline)|
@@ -206,53 +214,51 @@
 |neovim,ime|[cmp-flypy.nvim](https://github.com/wasden/cmp-flypy.nvim)|
 |neovim,ime|[fcitx5.nvim](https://github.com/tonyfettes/fcitx5.nvim)|
 |neovim,ime|[jam.nvim](https://github.com/uga-rosa/jam.nvim)|
-|neovim,input|[Neovim GhostText](https://github.com/wallpants/ghost-text.nvim)|
+|neovim,edit|[Neovim GhostText](https://github.com/wallpants/ghost-text.nvim)|
 |neovim,issue|[Octo.nvim](https://github.com/pwntester/octo.nvim)|
 |neovim,joplin|[dps-joplin](https://github.com/tomato3713/dps-joplin)|
-|neovim,jump|[arena.nvim](https://github.com/dzfrias/arena.nvim)|
-|neovim,jump|[jumper.nvim](https://github.com/homerours/jumper.nvim)|
-|neovim,jump|[Refjump](https://github.com/mawkler/refjump.nvim)|
-|neovim,jump|[telescope-heading.nvim](https://github.com/crispgm/telescope-heading.nvim)|
-|neovim,jump|[telescope-hop.nvim](https://github.com/nvim-telescope/telescope-hop.nvim)|
-|neovim,jump|[telescope-z.nvim](https://github.com/nvim-telescope/telescope-z.nvim)|
+|neovim,edit|[arena.nvim](https://github.com/dzfrias/arena.nvim)|
+|neovim,edit|[jumper.nvim](https://github.com/homerours/jumper.nvim)|
+|neovim,edit|[Refjump](https://github.com/mawkler/refjump.nvim)|
+|neovim,telescope|[telescope-heading.nvim](https://github.com/crispgm/telescope-heading.nvim)|
+|neovim,telescope|[telescope-hop.nvim](https://github.com/nvim-telescope/telescope-hop.nvim)|
+|neovim,telescope|[telescope-z.nvim](https://github.com/nvim-telescope/telescope-z.nvim)|
 |neovim,keymap,command|[commander.nvim](https://github.com/FeiyouG/commander.nvim)|
 |neovim,keymap|[keymap-stats.nvim](https://github.com/gmatheu/keymap-stats.nvim)|
 |neovim,keymap|[Mapper](https://github.com/gregorias/nvim-mapper)|
-|neovim,latex|[rnoweb-nvim](https://github.com/bamonroe/rnoweb-nvim)|
-|neovim,latex|[VimTeX](https://github.com/lervag/vimtex)|
 |neovim,lazy|[Lazy local patcher](https://github.com/polirritmico/lazy-local-patcher.nvim)|
 |neovim,lazy|[lz.n](https://github.com/nvim-neorocks/lz.n)|
-|neovim,library|[commons.nvim](https://github.com/linrongbin16/commons.nvim)|
-|neovim,license|[telescope-software-licenses.nvim](https://github.com/chip/telescope-software-licenses.nvim)|
-|neovim,life|[Neorg](https://github.com/nvim-neorg/neorg)|
-|neovim,lsp,dev|[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)|
-|neovim,lsp,manage|[lazy-lsp.nvim](https://github.com/dundalek/lazy-lsp.nvim)|
-|neovim,lsp,style|[lspkind-nvim](https://github.com/onsails/lspkind.nvim)|
-|neovim,lsp,tool|[lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim)|
+|neovim,lib|[commons.nvim](https://github.com/linrongbin16/commons.nvim)|
+|neovim,telescope|[telescope-software-licenses.nvim](https://github.com/chip/telescope-software-licenses.nvim)|
+|neovim|[Neorg](https://github.com/nvim-neorg/neorg)|
+|neovim,lsp|[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)|
+|neovim,lsp|[lazy-lsp.nvim](https://github.com/dundalek/lazy-lsp.nvim)|
+|neovim,lsp|[lspkind-nvim](https://github.com/onsails/lspkind.nvim)|
+|neovim,lsp|[lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim)|
 |neovim,lsp,window|[Glance](https://github.com/DNLHC/glance.nvim)|
 |neovim,lsp|[code-compass.nvim](https://github.com/emmanueltouzery/code-compass.nvim)|
-|neovim,macro|[NeoComposer.nvim](https://github.com/ecthelionvi/NeoComposer.nvim)|
-|neovim,manage|[activate.nvim](https://github.com/roobert/activate.nvim)|
-|neovim,manage|[rocks.nvim](https://github.com/nvim-neorocks/rocks.nvim)|
+|neovim|[NeoComposer.nvim](https://github.com/ecthelionvi/NeoComposer.nvim)|
+|neovim|[activate.nvim](https://github.com/roobert/activate.nvim)|
+|neovim|[rocks.nvim](https://github.com/nvim-neorocks/rocks.nvim)|
 |neovim,markdown|[kiwi.nvim](https://github.com/serenevoid/kiwi.nvim)|
 |neovim,markdown|[markdown-toc](https://github.com/ChuufMaster/markdown-toc)|
 |neovim,markdown|[markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)|
-|neovim,menu|[telescope-menu.nvim](https://github.com/octarect/telescope-menu.nvim)|
+|neovim,telescope|[telescope-menu.nvim](https://github.com/octarect/telescope-menu.nvim)|
 |neovim,mpv|[mpv.nvim](https://github.com/tamton-aquib/mpv.nvim)|
 |neovim,mpv|[neovimpv](https://github.com/queue-miscreant/neovimpv)|
-|neovim,natural-language|[nvumi](https://github.com/josephburgess/nvumi)|
+|neovim|[nvumi](https://github.com/josephburgess/nvumi)|
 |neovim,navigate|[aerial.nvim](https://github.com/stevearc/aerial.nvim)|
 |neovim,navigate|[nvim-bqf](https://github.com/kevinhwang91/nvim-bqf)|
-|neovim,note|[Memo.nvim](https://github.com/KIMGEONUNG/memo.nvim)|
-|neovim,note|[Neovim Simple Note Plugin](https://github.com/rguruprakash/simple-note.nvim)|
+|neovim|[Memo.nvim](https://github.com/KIMGEONUNG/memo.nvim)|
+|neovim|[Neovim Simple Note Plugin](https://github.com/rguruprakash/simple-note.nvim)|
 |neovim,notice|[Noice](https://github.com/folke/noice.nvim)|
 |neovim,notice|[nvim-notify](https://github.com/rcarriga/nvim-notify)|
-|neovim,npm,run|[BuildScript Plugin](https://github.com/kosekidev/build-script)|
-|neovim,org|[Linear plugin for NeoVim](https://github.com/rmanocha/linear-nvim)|
-|neovim,other|[cellular-automaton.nvim](https://github.com/Eandrju/cellular-automaton.nvim)|
-|neovim,packer|[packer.nvim](https://github.com/wbthomason/packer.nvim)|
-|neovim,packer|[telescope-packer.nvim](https://github.com/nvim-telescope/telescope-packer.nvim)|
-|neovim,paste|[clippy.nvim](https://github.com/petersid2022/clippy.nvim)|
+|neovim,npm|[BuildScript Plugin](https://github.com/kosekidev/build-script)|
+|neovim|[Linear plugin for NeoVim](https://github.com/rmanocha/linear-nvim)|
+|neovim|[cellular-automaton.nvim](https://github.com/Eandrju/cellular-automaton.nvim)|
+|neovim,plugin-manager|[packer.nvim](https://github.com/wbthomason/packer.nvim)|
+|neovim,telescope|[telescope-packer.nvim](https://github.com/nvim-telescope/telescope-packer.nvim)|
+|neovim,edit|[clippy.nvim](https://github.com/petersid2022/clippy.nvim)|
 |neovim,path|[pathlib.nvim](https://github.com/pysan3/pathlib.nvim)|
 |neovim,pdf|[nougat.nvim](https://github.com/facebookresearch/nougat)|
 |neovim,pdf|[nvim-pandoc-pdf](https://github.com/kaymmm/nvim-pandoc-pdf)|
@@ -267,15 +273,15 @@
 |neovim,preset|[mini.nvim](https://github.com/echasnovski/mini.nvim)|
 |neovim,preset|[NvChad](https://github.com/NvChad/NvChad)|
 |neovim,preset|[oxocarbon.nvim](https://github.com/nyoom-engineering/oxocarbon.nvim)|
-|neovim,proj|[telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim)|
+|neovim,project|[telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim)|
 |neovim,python|[swenv.nvim](https://github.com/AckslD/swenv.nvim)|
-|neovim,recent|[Telescope recent files extension](https://github.com/smartpde/telescope-recent-files)|
-|neovim,repl,notebook|[Molten](https://github.com/benlubas/molten-nvim)|
-|neovim,replace|[scalpel.nvim](https://github.com/wassimk/scalpel.nvim)|
+|neovim,telescope|[Telescope recent files extension](https://github.com/smartpde/telescope-recent-files)|
+|neovim,repl|[Molten](https://github.com/benlubas/molten-nvim)|
+|neovim,edit|[scalpel.nvim](https://github.com/wassimk/scalpel.nvim)|
 |neovim,repl|[Notebook Navigator](https://github.com/GCBallesteros/NotebookNavigator.nvim)|
 |neovim,repl|[Slime for neovim](https://github.com/Mackrics/neoslime)|
-|neovim,run,code|[runner.nvim](https://github.com/MarcHamamji/runner.nvim)|
-|neovim,run,repl|[LitREPL](https://github.com/sergei-mironov/litrepl)|
+|neovim,run|[runner.nvim](https://github.com/MarcHamamji/runner.nvim)|
+|neovim,run|[LitREPL](https://github.com/sergei-mironov/litrepl)|
 |neovim,run|[code_runner.vim](https://github.com/MajorZiploc/code_runner.vim)|
 |neovim,run|[compal.nvim](https://github.com/sashetophizika/compal.nvim)|
 |neovim,run|[nvim-fuel](https://github.com/javiorfo/nvim-fuel)|
@@ -303,7 +309,7 @@
 |neovim,statusline|[lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim)|
 |neovim,statusline|[slimline.nvim](https://github.com/sschleemilch/slimline.nvim)|
 |neovim,statusline|[yasl.nvim](https://github.com/brianaung/yasl.nvim)|
-|neovim,subtitle|[interlaced.nvim](https://github.com/tanloong/interlaced.nvim)|
+|neovim|[interlaced.nvim](https://github.com/tanloong/interlaced.nvim)|
 |neovim,syntax|[Decisive.nvim](https://github.com/emmanueltouzery/decisive.nvim)|
 |neovim,syntax|[nvim-lilypond-suite](https://github.com/martineausimon/nvim-lilypond-suite)|
 |neovim,syntax|[peek.nvim](https://github.com/toppair/peek.nvim)|
@@ -327,12 +333,11 @@
 |neovim,theme|[The Ink](https://github.com/JWW127/theink)|
 |neovim,theme|[Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)|
 |neovim,theme|[Themify](https://github.com/LmanTW/themify.nvim)|
-|neovim,theme|[vanta.nvim](https://github.com/emanuel2718/vanta.nvim)|
 |neovim,tmux|[tmux-navigator.nvim](https://github.com/connordeckers/tmux-navigator.nvim)|
-|neovim,todo|[vim-todo](https://github.com/wsdjeg/vim-todo)|
-|neovim,tool,color|[color-picker.nvim](https://github.com/ziontee113/color-picker.nvim)|
-|neovim,tool,rss|[NVIM-RSS](https://github.com/EMPAT94/nvim-rss)|
-|neovim,tool|[dexercism.vim](https://github.com/pyonk/dexercism.vim)|
+|neovim|[vim-todo](https://github.com/wsdjeg/vim-todo)|
+|neovim|[color-picker.nvim](https://github.com/ziontee113/color-picker.nvim)|
+|neovim|[NVIM-RSS](https://github.com/EMPAT94/nvim-rss)|
+|neovim|[dexercism.vim](https://github.com/pyonk/dexercism.vim)|
 |neovim,translate|[dps-translate-vim](https://github.com/Omochice/dps-translate-vim)|
 |neovim,translate|[Trans.nvim](https://github.com/JuanZoran/Trans.nvim)|
 |neovim,ui,colorscheme|[Artimux](https://github.com/tribhuwan-kumar/Artimux)|
@@ -355,3 +360,9 @@
 |neovim,yank|[yanklines.nvim](https://github.com/obergodmar/yanklines.nvim)|
 |neovim,yank|[yanklock.nvim](https://github.com/daltongd/yanklock.nvim)|
 |neovim,yank|[yanky.nvim](https://github.com/gbprod/yanky.nvim)|
+|neovim,license|[header.nvim](https://github.com/attilarepka/header.nvim)|
+|neovim,theme|[Min Theme](https://github.com/datsfilipe/min-theme.nvim)|
+|neovim|[referencer.nvim](https://github.com/romus204/referencer.nvim)|
+|neovim|[md-table-tidy.nvim](https://github.com/timantipov/md-table-tidy.nvim)|
+|neovim,debug|[dap-breakpoints.nvim](https://github.com/Carcuis/dap-breakpoints.nvim)|
+|neovim,lsp|[dev-tools.nvim](https://github.com/yarospace/dev-tools.nvim)|
