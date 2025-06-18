@@ -58,6 +58,8 @@
 |vscodium,syntax|[XML](https://github.com/redhat-developer/vscode-xml)||
 |vscodium,syntax|[YAML](https://github.com/redhat-developer/vscode-yaml)||
 |vscodium,theme|[Lightless Theme](https://github.com/ferretwithaberet/lightless-theme)|TwoDevs.lightless|
+|vscodium,theme|[Vanta](https://github.com/orellazri/vanta)|OrelLazri.vanta|
+|vscodium,theme|[Oxocarbon Theme](https://github.com/nyoom-engineering/oxocarbon-vscode)|NyoomEngineering.oxocarbon-vscode|
 |vscodium|[filesize](https://github.com/mkxml/vscode-filesize)||
 |vscodium|[WakaTime](https://github.com/wakatime/vscode-wakatime)||
 
@@ -162,7 +164,6 @@
 |vscodium,task|[Task Explorer](https://github.com/spmeesseman/vscode-taskexplorer)||
 |vscodium,theme|[e-ink](https://gitlab.com/eddjrn/vs-code-e-ink-theme)||
 |vscodium,theme|[Shimmer Theme](https://github.com/tenianon/shimmer-theme)||
-|vscodium,theme|[Vanta](https://github.com/orellazri/vanta)|
 |vscodium,theme|[Tokyo Night Dark Enhanced](https://github.com/Venage5603/Tokyo-Night-Dark-Enhanced)||
 |vscodium,theme|[Tokyo Night](https://github.com/tokyo-night/tokyo-night-vscode-theme)|
 |vscodium,theme|[Vesper](https://github.com/raunofreiberg/vesper)||
@@ -198,3 +199,4 @@
 |vscodium,github|[GitHub Pull Requests](https://github.com/Microsoft/vscode-pull-request-github)||
 |vscodium|[vscode-open](https://github.com/robertohuertasm/vscode-open)|
 |vscodium,edit|[Multiple cursor case preserve](https://github.com/Cardinal90/multi-cursor-case-preserve)||
+|vscodium|[VSCode Animalese](https://github.com/ESV-Sweetplum/vscode-animalese)||
