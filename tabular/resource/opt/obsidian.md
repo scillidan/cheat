@@ -227,6 +227,7 @@
 |obsidian|[The Calendarium](https://github.com/javalent/the-calendarium)|
 |obsidian|[The Map File System](https://github.com/nzani/mfs-obsidian-plugin)|
 |obsidian|[Transcription](https://github.com/djmango/obsidian-transcription)|
+|obsidian|[Typewriter Mode for Obsidian](https://github.com/davisriedel/obsidian-typewriter-mode)|
 |obsidian|[Typewriter Scroll](https://github.com/deathau/cm-typewriter-scroll-obsidian)|
 |obsidian|[WeWrite](https://github.com/learnerchen-forever/wewrite)|
 |obsidian|[Wheel Tab Switcher](https://github.com/22-2/wheel-tab-switcher)|

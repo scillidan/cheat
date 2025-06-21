@@ -96,6 +96,7 @@
 
 |tag|link|file|
 |:-|:-|:-|
+|vscodium,latex|[vscode2latex](https://github.com/ottokokstein/vscode2latex)||
 |vscodium,complete|[Path Autocomplete](https://github.com/mihai-vlc/path-autocomplete)||
 |vscodium,converter|[Data Format Converter](https://marketplace.visualstudio.com/items?itemName=utbah.data-format-converter)||
 |vscodium,database|[Database Client JDBC](https://github.com/database-client/jdbc-adapter-server)||

@@ -18,6 +18,7 @@
 |linux,zsh|[zsh-smart-insert](https://github.com/lgdevlop/zsh-smart-insert)|
 |linux,zsh|[zsh-snr](https://github.com/raisedadead/zsh-snr)|
 |linux,zsh|[zsh-touchplus](https://github.com/raisedadead/zsh-touchplus)|
+|linux,zsh,python|[zpy](https://github.com/AndydeCleyre/zpy)|
 
 ## Cache
 

@@ -20,6 +20,7 @@
 |vim,docker|[k8s.vim](https://github.com/skanehira/k8s.vim)
 |vim,document|[Devdocs](https://github.com/girishji/devdocs.vim)
 |vim,edit|[Auto Pairs](https://github.com/jiangmiao/auto-pairs)
+|vim,edit|[Auto Pairs](https://github.com/LunarWatcher/auto-pairs)||
 |vim,epub|[vim-epub](https://github.com/vim-scripts/Vim-EPUB)
 |vim,explorer|[vim-molder](https://github.com/mattn/vim-molder)
 |vim,file|[vim-ledger](https://github.com/ledger/vim-ledger)
@@ -68,3 +69,4 @@
 |vim,wiki|[wiki.vim](https://github.com/lervag/wiki.vim)
 |vim,write|[goyo.vim](https://github.com/junegunn/goyo.vim)
 |vim,write|[limelight.vim](https://github.com/junegunn/limelight.vim)
+|vim,translate|[translate-shell.vim](https://github.com/echuraev/translate-shell.vim)|

@@ -102,6 +102,8 @@
 |windows10,bin,top|[btop](https://github.com/aristocratos/btop)|
 |windows10,bin|[Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)|
 |windows10,bin|[Remove Microsoft Edge Permanently](https://github.com/liuyuyu2020/EdgeGoAway)|
+|bin,less,epub|[epy](https://github.com/wustho/epy)|
+|bin,diff|[difftastic](https://github.com/Wilfred/difftastic)|
 
 ## Later
 
@@ -313,7 +315,6 @@
 |bin,latex|[mtng](https://github.com/paulgessinger/mtng)|
 |bin,latex|[TeXFindPkg](https://github.com/lvjr/texfindpkg)|
 |bin,less,epub|[epr](https://github.com/wustho/epr)|
-|bin,less,epub|[epy](https://github.com/wustho/epy)|
 |bin,less,html|[reader](https://github.com/mrusme/reader)|
 |bin,linkding|[linkding-cli](https://github.com/bachya/linkding-cli)|
 |bin,llm,translate|[translate](https://github.com/xyproto/translate)|

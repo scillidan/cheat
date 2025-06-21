@@ -85,8 +85,8 @@
 |sublime-text,diff|[DiffView](https://github.com/CJTozer/SublimeDiffView)|
 |sublime-text,document|[DashDoc](https://github.com/farcaller/DashDoc)|
 |sublime-text,document|[Zeal](https://github.com/SublimeText/Zeal)|
-|sublime-text,editor|[Auto Fold](https://github.com/fermads/sublime-autofold)|
 |sublime-text,edit|[Advanced CSV](https://github.com/wadetb/Sublime-Text-Advanced-CSV)|
+|sublime-text,edit|[Auto Fold](https://github.com/fermads/sublime-autofold)|
 |sublime-text,edit|[Comment Marks](https://github.com/maegul/comment_marks)|
 |sublime-text,edit|[Display numbers](https://github.com/nia40m/sublime-display-nums)|
 |sublime-text,edit|[GitHub Markdown Snippets](https://github.com/praveenpuglia/github_markdown_snippets)|
@@ -98,6 +98,7 @@
 |sublime-text,edit|[TabNav](https://github.com/mitchvm/tabnav)|
 |sublime-text,edit|[Trimmer](https://github.com/jonlabelle/Trimmer)|
 |sublime-text,explorer|[FileManager](https://github.com/math2001/FileManager)|
+|sublime-text,diff|[DiffTabs](https://github.com/soandrew/DiffTabs)|
 |sublime-text,filterpipe|[ConvertChineseCharacters](https://github.com/leibnizli/ConvertChineseCharacters)|
 |sublime-text,filterpipe|[DataConverter](https://github.com/fitnr/SublimeDataConverter)|
 |sublime-text,filterpipe|[Fanhuaji](https://github.com/Fanhuaji/Sublime-Fanhuaji)|

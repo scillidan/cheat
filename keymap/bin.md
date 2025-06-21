@@ -1,5 +1,5 @@
 |tag|resource|comment|keymap|
-|:---------------|:------|:----------|
+|:-|:-|:-|
 |bin,zoxide|/|/|`z`|
 |bin,zoxide|/|/|`zi`|
 |linux,bin,zellij|/|Paste|C-S-v|
@@ -12,5 +12,5 @@
 ## Cache
 
 |tag|resource|comment|keymap|
-|:---------------|:------|:----------|
+|:-|:-|:-|
 |bin,neovim,telescope|telescope-everything.nvim|`:Telescope everything`|
