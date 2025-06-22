@@ -238,3 +238,5 @@
 |obsidian|[Macros Plugin for Obsidian](https://github.com/JamesCliffordSpratt/macros)|
 |obsidian|[Timelive Plugin](https://github.com/aNNiMON/obsidian-timelive)|
 |obsidian|[UID Generator Plugin for Obsidian](https://github.com/Netajam/obsidian_note_uid_generator)|
+|obsidian|[Tree Diagram](https://github.com/limpido/obsidian-tree-diagram)|
+|obsidian|[CJK Count](https://github.com/vrabe/obsidian-cjk-count)|

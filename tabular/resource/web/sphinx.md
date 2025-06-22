@@ -53,3 +53,4 @@
 |sphinx|[sphinxcontrib.external-links](https://github.com/finleyfamily/sphinxcontrib.external-links)|
 |sphinx|[sphinxnotes-project](https://github.com/sphinx-notes/project)|
 |sphinx|[SPHinXsys](https://github.com/Xiangyu-Hu/SPHinXsys)|
+|sphinx|[docsig](https://github.com/jshwi/docsig)|

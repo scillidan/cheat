@@ -4,7 +4,6 @@
 
 |opt|state|extension|
 |:-|:-|:-|
-|Brave|pinned|Scramble|
 |Brave|pinned|AI Grammar Checker & Paraphraser – LanguageTool|
 |Brave|pinned|Yomitan Popup Dictionary|
 |Brave|pinned|Read Later|
@@ -28,9 +27,9 @@
 |Brave|cat-catch|Activate the extension|A-S-c|
 |Brave|Chikamichi - Quickly find a page -|Activate the extension|A-f|
 |Brave|Dark Reader|Activate the extension|A-S-d|
+|Brave|Gitako - GitHub file tree - Toggle sidebar|A-S-t|
 |Brave|GoFullPage - Full Page Screen Capture|Activate the extension|A-S-p|
 |Brave|Image downloader - Imageye|Activate the extension|A-S-i|
-|Brave|Immersive Translate - Translate Web & PDF|Activate the extension|A-S-t|
 |Brave|Immersive Translate - Translate Web & PDF|Translate Webpage/Show Original Text|A-S-z|
 |Brave|Linkclump|Opened as New Tabs|mbtn_left-a|
 |Brave|Linkclump|Copied to clipboard|mbtn_right-a|

@@ -42,6 +42,7 @@
 |rss-feed,commit|[Awesome Tmux](https://github.com/rothgar/awesome-tmux/commits.atom)|
 |rss-feed,wiki|[cmus](https://github.com/cmus/cmus/wiki)|
 |rss-feed,wiki|[rofi](https://github.com/davatorium/rofi/wiki/User-scripts)|
+|rss-feed,wiki|[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim/wiki/Extensions)|
 |rss-feed|[F-Droid_Newapps_RSS](https://github.com/yzqzss/f-Droid_Newapps_RSS)|
 |rss-feed|[Hacker News RSS](https://github.com/hnrss/hnrss)|
 |rss-feed|[MDRSS-TS](https://github.com/kindlyfire/mdrss-ts)|

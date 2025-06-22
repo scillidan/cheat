@@ -70,3 +70,4 @@
 |vim,write|[goyo.vim](https://github.com/junegunn/goyo.vim)
 |vim,write|[limelight.vim](https://github.com/junegunn/limelight.vim)
 |vim,translate|[translate-shell.vim](https://github.com/echuraev/translate-shell.vim)|
+|vim,cmp|[ncm2](https://github.com/ncm2/ncm2)|

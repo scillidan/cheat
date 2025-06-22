@@ -31,6 +31,7 @@
 |PNG to SVG|https://png2svg.com|
 |RegExr|https://regexr.com|
 |Spotify Downloader|https://spotidownloader.com|
+|SYMBL|https://symbl.cc|
 |TableConvert|https://tableconvert.com|
 |texdoc online documentation|https://texdoc.org/index.html|
 |VirusTotal|https://www.virustotal.com/gui/home/upload|
@@ -38,7 +39,6 @@
 |Winbindex|https://winbindex.m417z.com|
 |Y2Mate|https://y2mate.nu/en-GczD|
 |You need 4 colors|https://www.iamsajid.com/colors|
-|微信文件传输助手网页版|https://szfilehelper.weixin.qq.com|
 
 ## Fork
 

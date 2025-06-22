@@ -28,8 +28,10 @@
 |mdbook|[mdbook-codename](https://github.com/smallkirby/mdbook-codename)|
 |mdbook|[mdbook-compress](https://github.com/RosiePuddles/mdbook-compress)|
 |mdbook|[mdbook-curly-quotes](https://github.com/arminha/mdbook-curly-quotes)|
+|mdbook|[mdbook-files](https://github.com/xfbs/mdbook-files)|
 |mdbook|[mdbook-fix-cjk-spacing](https://github.com/lotabout/mdbook-fix-cjk-spacing)|
 |mdbook|[mdbook-footnote](https://github.com/daviddrysdale/mdbook-footnote)|
+|mdbook|[mdbook-force-relative-links, an mdbook pre-processor](https://github.com/poliorcetics/mdbook-force-relative-links)|
 |mdbook|[mdbook-frontmatter-reader](https://github.com/sspaeti/mdbook-frontmatter-reader)|
 |mdbook|[mdbook-github-authors](https://github.com/VectorInstitute/mdbook-github-authors)|
 |mdbook|[mdbook-grammar](https://github.com/simplx-lang/mdbook-grammar)|
@@ -52,4 +54,3 @@
 |mdbook|[mdbookshelf](https://github.com/DomtronVox/mdbookshelf)|
 |mdbook|[MDBookshelf](https://github.com/rams3s/mdbookshelf)|
 |mdbook|[Svgbob plugin for mdbook](https://github.com/boozook/mdbook-svgbob)|
-|mdbook|[mdbook-force-relative-links, an mdbook pre-processor](https://github.com/poliorcetics/mdbook-force-relative-links)|

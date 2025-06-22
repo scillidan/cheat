@@ -45,7 +45,6 @@
 |brave|Active|[Prevue Popup](https://chrome.google.com/webstore/detail/prevue-popup/afencccmfcofdgnigbenkpplpanigajd)|
 |brave|Active|[Read Later](https://github.com/willbchang/chrome-read-later)|
 |brave|Active|[RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar)|
-|brave|Active|[Scramble](https://github.com/zlwaterfield/scramble)|
 |brave|Active|[Screen Ruler - Measure The Web](https://chromewebstore.google.com/detail/screen-ruler-measure-the/jfbbgijjljfbolelfkopkhbfjajjampm)|
 |brave|Active|[Screenshot Capture](https://github.com/simov/screenshot-capture)|
 |brave|Active|[SingleFile](https://github.com/gildas-lormeau/SingleFile)|
@@ -72,6 +71,7 @@
 |brave|Inactive|[Kiwix JS Browser Extension](https://chromewebstore.google.com/detail/kiwix-js-browser-extensio/donaljnlmapmngakoipdmehbfcioahhk)|
 |brave|Inactive|[Luminous: JavaScript events blocker](https://gbaptista.github.io/luminous/doc/en-US)|
 |brave|Inactive|[Page Assist - A Web UI for Local AI Models](https://github.com/n4ze3m/page-assist)|
+|brave|Inactive|[Private Grammar Checking - Harper](https://github.com/Automattic/harper)|
 |brave|Inactive|[Rikaitan Popup Dictionary](https://github.com/Ajatt-Tools/rikaitan)|
 |brave|Inactive|[Saladict - Pop-up Dictionary and Page Translator](https://github.com/crimx/ext-saladict)|
 |brave|Inactive|[SF Explorer](https://info.sf-explorer.com)|
@@ -163,6 +163,7 @@
 |brave|[Robots Exclusion Checke](https://samgipson.com/robots-exclusion-checker-chrome-extension)|
 |brave|[Ruffle](https://ruffle.rs)|
 |brave|[Save Page WE](https://chrome.google.com/webstore/detail/save-page-we/dhhpefjklgkmgeafimnjhojgjamoafof)|
+|brave|[Scramble](https://github.com/zlwaterfield/scramble)|
 |brave|[Selection Search](https://chrome.google.com/webstore/detail/selection-search/gipnlpdeieaidmmeaichnddnmjmcakoe)|
 |brave|[Side_side](https://github.com/frederickk/side-by-side)|
 |brave|[Sideview Plus](https://parimalam.me/pages/sideview.html)|

@@ -6,9 +6,11 @@
 |linux,zsh,exa|[Zsh exa](https://github.com/zplugin/zsh-exa)|
 |linux,zsh,fzf|[fzf-tab](https://github.com/Aloxaf/fzf-tab)|
 |linux,zsh,git|[forgit](https://github.com/wfxr/forgit)|
-|linux,zsh,jump|[Zsh-z](https://github.com/agkozak/zsh-z)|
+|linux,zsh,jump|[zsh-zoxide](https://github.com/z-shell/zsh-zoxide)|
 |linux,zsh,plugin-manager|[zinit](https://github.com/zdharma-continuum/zinit)|
+|linux,zsh,python|[zpy](https://github.com/AndydeCleyre/zpy)|
 |linux,zsh,theme|[minimal](https://github.com/subnixr/minimal)|
+|linux,zsh,zellij|[Zsh plugin for Zellij](https://codeberg.org/tranzystorekk/zellij.zsh)|
 |linux,zsh|[fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)|
 |linux,zsh|[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)|
 |linux,zsh|[zsh-completions](https://github.com/zsh-users/zsh-completions)|
@@ -18,12 +20,13 @@
 |linux,zsh|[zsh-smart-insert](https://github.com/lgdevlop/zsh-smart-insert)|
 |linux,zsh|[zsh-snr](https://github.com/raisedadead/zsh-snr)|
 |linux,zsh|[zsh-touchplus](https://github.com/raisedadead/zsh-touchplus)|
-|linux,zsh,python|[zpy](https://github.com/AndydeCleyre/zpy)|
 
 ## Cache
 
 |tag|link|
 |:-|:-|
+|linux,zsh,history|[history-search-multi-word - zsh plugin](https://github.com/zdharma-continuum/history-search-multi-word)|
+|linux,zsh,start|[zsh-async](https://github.com/mafredri/zsh-async)|
 |linux,zsh,backup|[zshrc-sync](https://github.com/Skylor-Tang/zshrc-sync)|
 |linux,zsh,backup|[Zsnapshot](https://github.com/zdharma-continuum/zsnapshot)|
 |linux,zsh,banner|[zsh-banner](https://github.com/drkhsh/zsh-banner)|
@@ -52,9 +55,9 @@
 |linux,zsh,gpt|[ZSH AI Commands](https://github.com/muePatrick/zsh-ai-commands)|
 |linux,zsh,highlight|[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)|
 |linux,zsh,highlight|[zsh-url-highlighter](https://github.com/ascii-soup/zsh-url-highlighter)|
-|linux,zsh,history|[history-search-multi-word - zsh plugin](https://github.com/zdharma-continuum/history-search-multi-word)|
 |linux,zsh,jump|[fzf-z](https://github.com/andrewferrier/fzf-z)|
 |linux,zsh,jump|[wd](https://github.com/mfaerevaag/wd)|
+|linux,zsh,jump|[Zsh-z](https://github.com/agkozak/zsh-z)|
 |linux,zsh,ls|[zsh-lsd](https://github.com/wintermi/zsh-lsd)|
 |linux,zsh,manage|[zplug](https://github.com/zplug/zplug)|
 |linux,zsh,manage|[zsh_unplugged](https://github.com/mattmc3/zsh_unplugged)|
@@ -72,7 +75,6 @@
 |linux,zsh,ssh|[zsh-ssh-agent](https://github.com/twfksh/zsh-ssh-agent)|
 |linux,zsh,ssh|[zsh-ssh](https://github.com/sunlei/zsh-ssh)|
 |linux,zsh,start|[auto-fortune-cowsay-zsh](https://github.com/babasbot/auto-fortune-cowsay-zsh)|
-|linux,zsh,start|[zsh-async](https://github.com/mafredri/zsh-async)|
 |linux,zsh,theme|[alien-minimal](https://github.com/eendroroy/alien-minimal)|
 |linux,zsh,theme|[berghain.zsh-theme](https://github.com/meshkinyar/berghain.zsh-theme)|
 |linux,zsh,theme|[club-house](https://github.com/skippyr/club-house)|
@@ -80,9 +82,7 @@
 |linux,zsh,uv|[zsh-uv-env](https://github.com/matthiasha/zsh-uv-env)|
 |linux,zsh,version|[zsh-mise](https://github.com/wintermi/zsh-mise)|
 |linux,zsh,web,search|[ZSH Web Search](https://github.com/GowayLee/zsh_web_search)|
-|linux,zsh,zellij|[Zsh plugin for Zellij](https://codeberg.org/tranzystorekk/zellij.zsh)|
-|linux,zsh,zsh|[zsh-auto-source-file](https://github.com/maximux13/zsh-auto-source-file)|
-|linux,zsh|[org-hopper](https://github.com/hjdarnel/org-hopper)|
+|linux,zsh|[zsh-auto-source-file](https://github.com/maximux13/zsh-auto-source-file)|
 |linux,zsh|[Pycalc Oh My Zsh Plugin](https://github.com/alalik/pycalc)|
 |linux,zsh|[Smart Files Plugin for Zsh](https://github.com/vxfemboy/zsh-smart-files)|
 |linux,zsh|[zenquotes](https://github.com/Dhaiwat10/zenquotes)|
