@@ -7,6 +7,7 @@
 |windows10,autohotkey,input|[AHK-KeyMap](https://github.com/Gustice/AHK-KeyMap)|
 |windows10,autohotkey,lintalist|[Lintalist](https://github.com/lintalist/lintalist)|
 |windows10,autohotkey,lintalist|[Themes for Lintalist](https://github.com/lintalist/lintalist-themes)|
+|windows10,autohotkey,ime|[AHK](https://github.com/ouweiya/AHK)|
 |windows10,autohotkey,ocr|[GoldenDictOCR](https://github.com/VimWei/GoldenDictOCR)|
 |windows10,autohotkey|[QuickSwitch](https://github.com/fenchai23/QuickSwitch)|
 |windows10,autohotkey|[ShortScript](https://github.com/RichKMLS/ShortScript)|
@@ -36,7 +37,6 @@
 |windows10,autohotkey,filterpipe|[HeckR_Replace](https://github.com/Heck-R/HeckR_Replace)|
 |windows10,autohotkey,filterpipe|[Unicode Hotstrings](https://github.com/dspinellis/unicode-hotstrings)|
 |windows10,autohotkey,game|[Dota 2 Queue-And-Go](https://github.com/etofok/Dota-2-Queue-and-Go)|
-|windows10,autohotkey,ime|[AHK](https://github.com/ouweiya/AHK)|
 |windows10,autohotkey,ime|[shortcut_suggest](https://github.com/sgriffin53/shortcut_suggest)|
 |windows10,autohotkey,ime|[玉兔毫](https://github.com/amorphobia/rabbit)|
 |windows10,autohotkey,input|[ahk_RegExHotstring](https://github.com/8LWXpg/RegExHotstring)|

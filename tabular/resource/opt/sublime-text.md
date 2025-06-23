@@ -17,6 +17,9 @@
 |sublime-text,filterpipe|[Color Convert](https://github.com/zhouyuexie/ColorConvert)|
 |sublime-text,filterpipe|[ConvertFullHalfWidth](https://github.com/naoyukik/SublimeConvertFullHalfWidth)|
 |sublime-text,filterpipe|[FilterPipes](https://github.com/tylerl/FilterPipes)|
+|sublime-text,formatter|[Pretty JSON](https://github.com/dzhibas/SublimePrettyJson)|
+|sublime-text,formatter|[Pretty Lua](https://github.com/aerobounce/Sublime-Pretty-Lua)|
+|sublime-text,formatter|[Pretty YAML](https://github.com/aukaost/SublimePrettyYAML)|
 |sublime-text,format|[JsPrettier](https://github.com/jonlabelle/SublimeJsPrettier)|
 |sublime-text,format|[Minify](https://github.com/tssajo/Minify)|
 |sublime-text,highlight|[Block Cursor Everywhere](https://github.com/karlhorky/BlockCursorEverywhere)|
@@ -29,11 +32,13 @@
 |sublime-text,keymap|[Keymaps](https://github.com/MiroHibler/sublime-keymaps)|
 |sublime-text,latex|[LaTeXTools](https://github.com/SublimeText/LaTeXTools)
 |sublime-text,link|[OpenUri](https://github.com/jfcherng-sublime/ST-OpenUri)|
+|sublime-text,lsp|[LSP-basedpyright](https://github.com/sublimelsp/LSP-basedpyright)|
 |sublime-text,lsp|[LSP-css](https://github.com/sublimelsp/LSP-css)|
 |sublime-text,lsp|[LSP-eslint](https://github.com/sublimelsp/LSP-eslint)|
 |sublime-text,lsp|[LSP-html](https://github.com/sublimelsp/LSP-html)|
 |sublime-text,lsp|[LSP-json](https://github.com/sublimelsp/LSP-json)|
-|sublime-text,lsp|[LSP-ltex-ls](https://github.com/sublimelsp/LSP-ltex-ls)|
+|sublime-text,lsp|[LSP-lua](https://github.com/sublimelsp/LSP-lua)|
+|sublime-text,lsp|[LSP-marksman](https://github.com/sublimelsp/LSP-marksman)|
 |sublime-text,lsp|[LSP-stylelint](https://github.com/sublimelsp/LSP-stylelint)|
 |sublime-text,lsp|[LSP-tailwindcss](https://github.com/sublimelsp/LSP-tailwindcss)|
 |sublime-text,lsp|[LSP-TexLab](https://github.com/sublimelsp/LSP-TexLab)|
@@ -48,8 +53,6 @@
 |sublime-text,syntax|[Markdown Extended](https://github.com/jonschlinkert/sublime-markdown-extended)|
 |sublime-text,syntax|[MarLant](https://github.com/retifrav/marlant)|
 |sublime-text,syntax|[MDX](https://github.com/SublimeText/MDX)|
-|sublime-text,syntax|[Pretty Lua](https://github.com/aerobounce/Sublime-Pretty-Lua)|
-|sublime-text,syntax|[Pretty JSON](https://github.com/dzhibas/SublimePrettyJson)|
 |sublime-text,syntax|[rainbow_csv](https://github.com/mechatroner/sublime_rainbow_csv)|
 |sublime-text,syntax|[reStructuredText Improved](https://github.com/adamchainz/sublime-rst-improved)|
 |sublime-text,ui|[A File Icon](https://github.com/SublimeText/AFileIcon)|
@@ -82,6 +85,8 @@
 |sublime-text,config|[EditorConfigSnippets](https://github.com/mfuentesg/EditorConfigSnippets)|
 |sublime-text,config|[WindowsContextMenu](https://github.com/jfcherng-sublime/ST-WindowsContextMenu)|
 |sublime-text,config|[Working with AutoHotKey in Sublime Text](https://gist.github.com/AWMooreCO/d0308bab265cc8c5e122)|
+|sublime-text,diff|[Diffable](https://github.com/yaroslavyaroslav/Diffable)|
+|sublime-text,diff|[DiffTabs](https://github.com/soandrew/DiffTabs)|
 |sublime-text,diff|[DiffView](https://github.com/CJTozer/SublimeDiffView)|
 |sublime-text,document|[DashDoc](https://github.com/farcaller/DashDoc)|
 |sublime-text,document|[Zeal](https://github.com/SublimeText/Zeal)|
@@ -98,7 +103,6 @@
 |sublime-text,edit|[TabNav](https://github.com/mitchvm/tabnav)|
 |sublime-text,edit|[Trimmer](https://github.com/jonlabelle/Trimmer)|
 |sublime-text,explorer|[FileManager](https://github.com/math2001/FileManager)|
-|sublime-text,diff|[DiffTabs](https://github.com/soandrew/DiffTabs)|
 |sublime-text,filterpipe|[ConvertChineseCharacters](https://github.com/leibnizli/ConvertChineseCharacters)|
 |sublime-text,filterpipe|[DataConverter](https://github.com/fitnr/SublimeDataConverter)|
 |sublime-text,filterpipe|[Fanhuaji](https://github.com/Fanhuaji/Sublime-Fanhuaji)|
@@ -129,8 +133,10 @@
 |sublime-text,lint|[SublimeLinter](https://github.com/SublimeLinter/SublimeLinter)|
 |sublime-text,lsp|[DictionaryAutoComplete](https://github.com/Zinggi/DictionaryAutoComplete)|
 |sublime-text,lsp|[LOVELY2D](https://github.com/kevinfiol/LOVELY2D)|
+|sublime-text,lsp|[LSP-cspell](https://github.com/sublimelsp/LSP-cspell)|
 |sublime-text,lsp|[LSP-Grammarly](https://github.com/sublimelsp/LSP-Grammarly)|
 |sublime-text,lsp|[LSP-lemminx](https://github.com/sublimelsp/LSP-lemminx)|
+|sublime-text,lsp|[LSP-ltex-ls](https://github.com/sublimelsp/LSP-ltex-ls)|
 |sublime-text,lsp|[LSP-lua](https://github.com/sublimelsp/LSP-lua)|
 |sublime-text,lsp|[PyRock](https://github.com/abhishek72850/pyrock)|
 |sublime-text,lsp|[PYTHON TOOLS](https://github.com/ginanjarn/pythontools)|
@@ -165,4 +171,3 @@
 |sublime-text,window|[Layout](https://github.com/loggerhead/Layout)|
 |sublime-text,workspace|[Project And Workspace Management](https://github.com/kyoobey/ProjectAndWorkspaceManagement)|
 |sublime-text,workspace|[ProjectManager](https://github.com/randy3k/ProjectManager)|
-|sublime-text,diff|[Diffable](https://github.com/yaroslavyaroslav/Diffable)|

@@ -54,3 +54,5 @@
 |mdbook|[mdbookshelf](https://github.com/DomtronVox/mdbookshelf)|
 |mdbook|[MDBookshelf](https://github.com/rams3s/mdbookshelf)|
 |mdbook|[Svgbob plugin for mdbook](https://github.com/boozook/mdbook-svgbob)|
+[mdbook|[gen-mdbook-summary](https://github.com/CNCSMonster/gen-mdbook-summary)|
+|mdbook|[Mdbook Embedify](https://github.com/MR-Addict/mdbook-embedify)|

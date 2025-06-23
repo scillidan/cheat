@@ -2,7 +2,6 @@
 
 |tag|link|
 |:-|:-|
-|neovim,buffer|[incline.nvim](https://github.com/b0o/incline.nvim)|
 |neovim,cmp|[Blink Completion (blink.cmp)](https://github.com/Saghen/blink.cmp)|
 |neovim,cmp|[blink-cmp-conventional-commits](https://github.com/disrupted/blink-cmp-conventional-commits)|
 |neovim,cmp|[blink-cmp-dictionary](https://github.com/Kaiser-Yang/blink-cmp-dictionary)|
@@ -24,6 +23,7 @@
 |neovim,edit,csv|[Decisive.nvim](https://github.com/emmanueltouzery/decisive.nvim)|
 |neovim,edit,escape|[Houdini](https://github.com/TheBlob42/houdini.nvim)|
 |neovim,edit,fold|[nvim-origami](https://github.com/chrisgrieser/nvim-origami)|
+|neovim,edit,move|[move-lines.nvim](https://github.com/kobbikobb/move-lines.nvim)|
 |neovim,edit,navigate|[Beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)|
 |neovim,edit,navigate|[Glance](https://github.com/DNLHC/glance.nvim)|
 |neovim,edit,navigate|[Goto Preview](https://github.com/rmagatti/goto-preview)|
@@ -37,7 +37,6 @@
 |neovim,edit|[flash.nvim](https://github.com/folke/flash.nvim)|
 |neovim,edit|[Hodur](https://github.com/vodchella/hodur.nvim)|
 |neovim,edit|[img-clip.nvim](https://github.com/hakonharnes/img-clip.nvim)|
-|neovim,edit|[mini.align](https://github.com/echasnovski/mini.align)|
 |neovim,edit|[multiple-cursors.nvim](https://github.com/brenton-leighton/multiple-cursors.nvim)|
 |neovim,edit|[nvim-autopairs](https://github.com/windwp/nvim-autopairs)|
 |neovim,edit|[tabout.nvim](https://github.com/abecodes/tabout.nvim)|
@@ -48,7 +47,6 @@
 |neovim,formatter|[mason-conform.nvim](https://github.com/zapling/mason-conform.nvim)|
 |neovim,git|[gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)|
 |neovim,highlight|[colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua)|
-|neovim,highlight|[STCursorword](https://github.com/sontungexpt/stcursorword)|
 |neovim,key|[timseriakov/spamguard.nvim](https://github.com/timseriakov/spamguard.nvim)|
 |neovim,key|[Which Key](https://github.com/folke/which-key.nvim)|
 |neovim,latex|[bibcite.nvim](https://github.com/Aidavdw/bibcite.nvim)|
@@ -63,6 +61,17 @@
 |neovim,lsp|[nvim-navic](https://github.com/SmiteshP/nvim-navic)|
 |neovim,markdown|[marknav.nvim](https://github.com/daenikon/marknav.nvim)|
 |neovim,markdown|[obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)|
+|neovim,mini|[mini.align](https://github.com/echasnovski/mini.align)|
+|neovim,mini|[mini.comment](https://github.com/echasnovski/mini.comment)|
+|neovim,mini|[mini.cursorword](https://github.com/echasnovski/mini.cursorword)|
+|neovim,mini|[mini.diff](https://github.com/echasnovski/mini.diff)|
+|neovim,mini|[mini.git](https://github.com/echasnovski/mini-git)|
+|neovim,mini|[mini.icons](https://github.com/echasnovski/mini.icons)|
+|neovim,mini|[mini.move](https://github.com/echasnovski/mini.move)|
+|neovim,mini|[mini.splitjoin](https://github.com/echasnovski/mini.splitjoin)|
+|neovim,mini|[mini.statusline](https://github.com/echasnovski/mini.statusline)|
+|neovim,mini|[mini.surround](https://github.com/echasnovski/mini.surround)|
+|neovim,mini|[mini.trailspace](https://github.com/echasnovski/mini.trailspace)|
 |neovim,other,dictionary|[dict-popup.nvim](https://github.com/Nealium/dict-popup.nvim)|
 |neovim,other,translate|[translate.nvim](https://github.com/uga-rosa/translate.nvim)|
 |neovim,other|[feed.nvim](https://github.com/neo451/feed.nvim)|
@@ -103,7 +112,6 @@
 |neovim,treesitter|[Treesitter-indent-object.nvim](https://github.com/kiyoon/treesitter-indent-object.nvim)|
 |neovim,ui,theme|[Tokyo Night](https://github.com/folke/tokyonight.nvim)|
 |neovim,ui,theme|[vanta.nvim](https://github.com/emanuel2718/vanta.nvim)|
-|neovim,ui|[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)|
 |neovim,ui|[nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)|
 |neovim,window|[Vimade](https://github.com/TaDaa/vimade)|
 |neovim,window|[WinShift.nvim](https://github.com/sindrets/winshift.nvim)|
@@ -123,9 +131,9 @@
 |neovim,cmp|[cmp-lsp-rimels](https://github.com/liubianshi/cmp-lsp-rimels)|
 |neovim,cmp|[cmp-pandoc-references](https://github.com/jmbuhr/cmp-pandoc-references)|
 |neovim,cmp|[compl.nvim](https://github.com/brianaung/compl.nvim)|
-|neovim,cmp|[vim-dadbod-completion](https://github.com/kristijanhusak/vim-dadbod-completion)|
 |neovim,cmp|[ecolog.nvim](https://github.com/ssstba/ecolog.nvim)|
 |neovim,cmp|[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)|
+|neovim,cmp|[vim-dadbod-completion](https://github.com/kristijanhusak/vim-dadbod-completion)|
 |neovim,comment|[Comment.nvim](https://github.com/numToStr/Comment.nvim)|
 |neovim,comment|[ts-comments.nvim](https://github.com/folke/ts-comments.nvim)|
 |neovim,comment|[vim-hidecomments](https://github.com/wangfanstar/vim-hidecomments)|
@@ -162,7 +170,6 @@
 |neovim,edit,license|[header.nvim](https://github.com/attilarepka/header.nvim)|
 |neovim,edit,mode|[true-zen.nvim](https://github.com/Pocco81/true-zen.nvim)|
 |neovim,edit,mode|[zen-mode.nvim](https://github.com/folke/zen-mode.nvim)|
-|neovim,edit,move|[move-lines.nvim](https://github.com/kobbikobb/move-lines.nvim)|
 |neovim,edit,move|[Treewalker.nvim](https://github.com/aaronik/Treewalker.nvim)|
 |neovim,edit,wrap|[Vim-ArgWrap](https://git.foosoft.net/alex/vim-argwrap)|
 |neovim,edit|[align.nvim](https://github.com/jokesper/align.nvim)|
@@ -237,6 +244,7 @@
 |neovim,highlight|[nvim-cursorline](https://github.com/ya2s/nvim-cursorline)|
 |neovim,highlight|[Paint](https://github.com/folke/paint.nvim)|
 |neovim,highlight|[Rainbow delimiters for Neovim](https://gitlab.com/HiPhish/rainbow-delimiters.nvim)|
+|neovim,highlight|[STCursorword](https://github.com/sontungexpt/stcursorword)|
 |neovim,highlight|[Syntax Highlighted Cursor](https://github.com/ukyouz/syntax-highlighted-cursor.nvim)|
 |neovim,highlight|[whitespace.nvim](https://github.com/johnfrankmorgan/whitespace.nvim)|
 |neovim,history|[Memento.nvim](https://github.com/gaborvecsei/memento.nvim)|
@@ -274,6 +282,15 @@
 |neovim,markdown|[markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)|
 |neovim,markdown|[md-table-tidy.nvim](https://github.com/timantipov/md-table-tidy.nvim)|
 |neovim,markdown|[peek.nvim](https://github.com/toppair/peek.nvim)|
+|neovim,mini|[mini.bracketed](https://github.com/echasnovski/mini.bracketed)|
+|neovim,mini|[mini.clue](https://github.com/echasnovski/mini.clue)|
+|neovim,mini|[mini.colors](https://github.com/echasnovski/mini.colors)|
+|neovim,mini|[mini.hipatterns](https://github.com/echasnovski/mini.hipatterns)|
+|neovim,mini|[mini.indentscope](https://github.com/echasnovski/mini.indentscope)|
+|neovim,mini|[mini.operators](https://github.com/echasnovski/mini.operators)|
+|neovim,mini|[mini.pairs](https://github.com/echasnovski/mini.pairs)|
+|neovim,mini|[mini.pick](https://github.com/echasnovski/mini.pick)|
+|neovim,mini|[mini.sessions](https://github.com/echasnovski/mini.sessions)|
 |neovim,mpv,youtube|[mpv.nvim](https://github.com/tamton-aquib/mpv.nvim)|
 |neovim,navigate|[aerial.nvim](https://github.com/stevearc/aerial.nvim)|
 |neovim,navigate|[nvim-bqf](https://github.com/kevinhwang91/nvim-bqf)|
@@ -333,6 +350,7 @@
 |neovim,setup|[packer.nvim](https://github.com/wbthomason/packer.nvim)|
 |neovim,setup|[rocks.nvim](https://github.com/nvim-neorocks/rocks.nvim)|
 |neovim,setup|[vim-plug](https://github.com/junegunn/vim-plug)|
+|neovim,statusline|[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)|
 |neovim,synax|[dpp.vim](https://github.com/Shougo/dpp.vim)|
 |neovim,synax|[vim-detect-indent](https://github.com/kg8m/vim-detect-indent)|
 |neovim,syntax|[nvim-lilypond-suite](https://github.com/martineausimon/nvim-lilypond-suite)|
@@ -395,6 +413,9 @@
 |neovim,version|[Bob](https://github.com/MordechaiHadad/bob)|
 |neovim,version|[nvs (Neovim Version Switcher)](https://github.com/y3owk1n/nvs)|
 |neovim,view|[Markdown to PDF](https://github.com/arminveres/md-pdf.nvim)|
+|neovim,winbar|[barbecue.nvim](https://github.com/utilyre/barbecue.nvim)|
+|neovim,winbar|[do.nvim](https://github.com/nocksock/do.nvim)|
+|neovim,winbar|[incline.nvim](https://github.com/b0o/incline.nvim)|
 |neovim,window|[tint.nvim](https://github.com/levouh/tint.nvim)|
 |neovim,window|[win-mover.nvim](https://github.com/ycdzj/win-mover.nvim)|
 |neovim,window|[winmove.nvim](https://github.com/MisanthropicBit/winmove.nvim)|
