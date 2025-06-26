@@ -9,17 +9,12 @@
 |git|[gptcommit](https://github.com/zurawiki/gptcommit)|
 |git|[mgitstatus](https://github.com/fboender/multi-git-status)|
 |git|[gowl](https://github.com/tadashi-aikawa/gowl)|
-
-## Later
-
-|tag|link|
-|:-|:-|
+|git|[Lazygit](https://github.com/jesseduffield/lazygit)|
+|git|[ugit](https://github.com/Bhupesh-V/ugit)|
 |git|[commitizen](https://github.com/commitizen/cz-cli)|
 |git|[git-crypt - transparent file encryption in git](https://github.com/AGWA/git-crypt)|
 |git|[git-filter-repo](https://github.com/newren/git-filter-repo)|
 |git|[Gitleaks](https://github.com/gitleaks/gitleaks)|
-|git|[Lazygit](https://github.com/jesseduffield/lazygit)|
-|git|[ugit](https://github.com/Bhupesh-V/ugit)|
 
 ## Cache
 

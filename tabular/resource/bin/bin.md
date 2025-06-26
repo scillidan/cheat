@@ -199,6 +199,7 @@
 |bin,dig|[bind](https://isc.org/bind)|
 |bin,dig|[dog](https://github.com/ogham/dog)|
 |bin,disk|[smartmontools](https://github.com/smartmontools/smartmontools)|
+|bin,docker|[buildkit](https://github.com/moby/buildkit)|
 |bin,docset|[doc2dash](https://github.com/hynek/doc2dash)|
 |bin,document,devdocs|[dedoc](https://github.com/toiletbril/dedoc)|
 |bin,document|[Dashing](https://github.com/technosophos/dashing)|
@@ -427,6 +428,7 @@
 |bin,sync|[Rclone](https://github.com/rclone/rclone)|
 |bin,sync|[rsync](https://rsync.samba.org)|
 |bin,sync|[sync-directory](https://github.com/hoperyy/sync-directory)|
+|bin,table|[tabiew](https://github.com/shshemi/tabiew)|
 |bin,thumbnail|[mt](https://github.com/mutschler/mt)|
 |bin,thumbnail|[vcsi](https://github.com/amietn/vcsi)|
 |bin,tiker|[tick-rs](https://github.com/tarkah/tickrs)|

@@ -20,8 +20,8 @@
 
 ### Expand name
 
-|opt|file_type|tab|comment|
-|:-|:-|:-|:-|
+|opt|file_type|tab|comment|content|
+|:-|:-|:-|:-|:-|
 |Directory Opus|Documents|event|Left_Double_Click|`subl {allfilepath}`|
 |Directory Opus|Images|event|C-Left_Double_Click|`imageglass {allfilepath}`|
 |Directory Opus|Images|event|Left_Double_Click|`jpegview {allfilepath}`|

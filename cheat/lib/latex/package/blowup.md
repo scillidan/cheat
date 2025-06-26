@@ -35,6 +35,7 @@ Letter-size document on A4-size paper
 
 \end{document}
 ```
+
 ## [blowup-ex1.tex](https://github.com/rolfn/blowup/blob/master/blowup-ex1.tex)
 
 ````md

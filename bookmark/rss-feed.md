@@ -2,6 +2,7 @@
 
 |tag|link|
 |:-|:-|
+|rss-feed,commit|[Awesome Löve](https://github.com/love2d-community/awesome-love2d/commits.atom)|
 |rss-feed,commit|[Awesome Neovim](https://github.com/rockerBOO/awesome-neovim/commits.atom)|
 |rss-feed,commit|[awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins/commits.atom)|
 |rss-feed,github-search-rss|[clink](https://scillidan.github.io/github-search-rss/clink.rss)|
@@ -34,7 +35,6 @@
 |rss-feed,commit|[vim-galore](https://github.com/mhinz/vim-galore)|
 |rss-feed,commit|[Awesome Github CLI Extensions](https://github.com/kodepandai/awesome-gh-cli-extensions/commits.atom)|
 |rss-feed,commit|[Awesome LaTeX](https://github.com/egeerardyn/awesome-LaTeX/commits.atom)|
-|rss-feed,commit|[Awesome Löve](https://github.com/love2d-community/awesome-love2d/commits.atom)|
 |rss-feed,commit|[Awesome mpv](https://github.com/stax76/awesome-mpv/commits.atom)|
 |rss-feed,commit|[Awesome Sphinx](https://github.com/yoloseem/awesome-sphinxdoc/commits.atom)|
 |rss-feed,commit|[Awesome Visual Studio Code Extensions](https://github.com/viatsko/awesome-vscode/commits.atom)

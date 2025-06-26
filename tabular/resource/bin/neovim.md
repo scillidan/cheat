@@ -20,7 +20,6 @@
 |neovim,debug|[Trouble](https://github.com/folke/trouble.nvim)|
 |neovim,deveplop|[LÖVE 2D](https://github.com/S1M0N38/love2d.nvim)|
 |neovim,document|[devdocs.nvim](https://github.com/maskudo/devdocs.nvim)|
-|neovim,edit,csv|[Decisive.nvim](https://github.com/emmanueltouzery/decisive.nvim)|
 |neovim,edit,escape|[Houdini](https://github.com/TheBlob42/houdini.nvim)|
 |neovim,edit,fold|[nvim-origami](https://github.com/chrisgrieser/nvim-origami)|
 |neovim,edit,move|[move-lines.nvim](https://github.com/kobbikobb/move-lines.nvim)|
@@ -36,7 +35,6 @@
 |neovim,edit|[auto-save.nvim](https://github.com/Pocco81/auto-save.nvim)|
 |neovim,edit|[flash.nvim](https://github.com/folke/flash.nvim)|
 |neovim,edit|[Hodur](https://github.com/vodchella/hodur.nvim)|
-|neovim,edit|[img-clip.nvim](https://github.com/hakonharnes/img-clip.nvim)|
 |neovim,edit|[multiple-cursors.nvim](https://github.com/brenton-leighton/multiple-cursors.nvim)|
 |neovim,edit|[nvim-autopairs](https://github.com/windwp/nvim-autopairs)|
 |neovim,edit|[tabout.nvim](https://github.com/abecodes/tabout.nvim)|
@@ -97,6 +95,7 @@
 |neovim,telescope|[Telescope Lazy Plugins](https://github.com/polirritmico/telescope-lazy-plugins.nvim)|
 |neovim,telescope|[Telescope Zoxide](https://github.com/jvgrootveld/telescope-zoxide)|
 |neovim,telescope|[telescope-dap.nvim](https://github.com/nvim-telescope/telescope-dap.nvim)|
+|neovim,telescope|[telescope-egrepify.nvim](https://github.com/fdschmidt93/telescope-egrepify.nvim)|
 |neovim,telescope|[telescope-gitmoji.nvim](https://github.com/olacin/telescope-gitmoji.nvim)|
 |neovim,telescope|[telescope-glyph.nvim](https://github.com/alduraibi/telescope-glyph.nvim)|
 |neovim,telescope|[telescope-heading.nvim](https://github.com/crispgm/telescope-heading.nvim)|
@@ -110,6 +109,7 @@
 |neovim,treesitter|[nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)|
 |neovim,treesitter|[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)|
 |neovim,treesitter|[Treesitter-indent-object.nvim](https://github.com/kiyoon/treesitter-indent-object.nvim)|
+|neovim,tmux|[tmux-navigator.nvim](https://github.com/connordeckers/tmux-navigator.nvim)
 |neovim,ui,theme|[Tokyo Night](https://github.com/folke/tokyonight.nvim)|
 |neovim,ui,theme|[vanta.nvim](https://github.com/emanuel2718/vanta.nvim)|
 |neovim,ui|[nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)|
@@ -163,6 +163,7 @@
 |neovim,edit,bookmark|[Lspmark.nvim](https://github.com/tristone13th/lspmark.nvim)|
 |neovim,edit,bookmark|[spelunk.nvim](https://github.com/EvWilson/spelunk.nvim)|
 |neovim,edit,comment|[nvim-hemingway](https://github.com/javiorfo/nvim-hemingway)|
+|neovim,edit,csv|[Decisive.nvim](https://github.com/emmanueltouzery/decisive.nvim)|
 |neovim,edit,fold|[foldtext.nvim](https://github.com/OXY2DEV/foldtext.nvim)|
 |neovim,edit,fold|[nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)|
 |neovim,edit,ime|[fcitx5.nvim](https://github.com/tonyfettes/fcitx5.nvim)|
@@ -180,6 +181,7 @@
 |neovim,edit|[Emojify.nvim](https://github.com/ronisbr/emojify.nvim)|
 |neovim,edit|[gyoza.vim](https://github.com/mityu/vim-gyoza)|
 |neovim,edit|[im-switch.nvim](https://github.com/drop-stones/im-switch.nvim)|
+|neovim,edit|[img-clip.nvim](https://github.com/hakonharnes/img-clip.nvim)|
 |neovim,edit|[in-and-out.nvim](https://github.com/ysmb-wtsg/in-and-out.nvim)|
 |neovim,edit|[interlaced.nvim](https://github.com/tanloong/interlaced.nvim)|
 |neovim,edit|[join.nvim](https://github.com/jakeru/join.nvim)|
@@ -198,6 +200,7 @@
 |neovim,edit|[referencer.nvim](https://github.com/romus204/referencer.nvim)|
 |neovim,edit|[Refjump](https://github.com/mawkler/refjump.nvim)|
 |neovim,edit|[remember.nvim](https://github.com/vladdoster/remember.nvim)|
+|neovim,edit|[rip-substitute](https://github.com/chrisgrieser/nvim-rip-substitute)|
 |neovim,edit|[scalpel.nvim](https://github.com/wassimk/scalpel.nvim)|
 |neovim,edit|[Smooth Cursor](https://github.com/gen740/SmoothCursor.nvim)|
 |neovim,edit|[Streamer Mode](https://github.com/Kolkhis/streamer-mode.nvim)|
@@ -281,6 +284,7 @@
 |neovim,markdown|[markdown-toc](https://github.com/ChuufMaster/markdown-toc)|
 |neovim,markdown|[markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)|
 |neovim,markdown|[md-table-tidy.nvim](https://github.com/timantipov/md-table-tidy.nvim)|
+|neovim,markdown|[mkdnflow.nvim](https://github.com/jakewvincent/mkdnflow.nvim)|
 |neovim,markdown|[peek.nvim](https://github.com/toppair/peek.nvim)|
 |neovim,mini|[mini.bracketed](https://github.com/echasnovski/mini.bracketed)|
 |neovim,mini|[mini.clue](https://github.com/echasnovski/mini.clue)|
@@ -427,6 +431,7 @@
 |neovim,yank|[yanklock.nvim](https://github.com/daltongd/yanklock.nvim)|
 |neovim|[Filetype Based Template Plugin For Neovim](https://github.com/doganalper/template.nvim)|
 |neovim|[Luarocks.nvim](https://github.com/camspiers/luarocks)|
+|neovim|[rgflow.nvim](https://github.com/mangelozzi/rgflow.nvim)|
 
 ## Cancel
 

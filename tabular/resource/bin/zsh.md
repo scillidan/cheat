@@ -14,6 +14,7 @@
 |linux,zsh|[fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)|
 |linux,zsh|[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)|
 |linux,zsh|[zsh-completions](https://github.com/zsh-users/zsh-completions)|
+|linux,zsh|[zsh-env-secrets](https://github.com/singular0/zsh-env-secrets)|
 |linux,zsh|[zsh-help](https://github.com/Freed-Wu/zsh-help)|
 |linux,zsh|[zsh-history-on-success](https://github.com/nyoungstudios/zsh-history-on-success)|
 |linux,zsh|[zsh-proxy](https://github.com/SukkaW/zsh-proxy)|

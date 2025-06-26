@@ -93,3 +93,4 @@
 |js|[Exifr](https://github.com/MikeKovarik/exifr)|
 |js|[Subscapes](https://github.com/mattdesl/subscapes)|
 |js,itch|[Itch-Sort-And-Export](https://github.com/6uhrmittag/Itch-Sort-And-Export)|
+|js,browser|[Drag-able Full-Screen Button](https://addons.mozilla.org/en-US/android/addon/drag-able-full-screen-button/)|

@@ -22,6 +22,7 @@
 
 |tag|link|
 |:-|:-|
+|sphinx|[atsphinx-mini18n](https://github.com/atsphinx/mini18n)|
 |sphinx|[autoclasstoc](https://autoclasstoc.readthedocs.io/en/latest/)|
 |sphinx|[Color schemed images for Sphinx](https://github.com/danirus/sphinx-colorschemed-images)|
 |sphinx|[doc8](https://github.com/PyCQA/doc8)|
@@ -34,12 +35,15 @@
 |sphinx|[Sphinx Comments](https://github.com/executablebooks/sphinx-comments)|
 |sphinx|[Sphinx DataTables](https://github.com/sharm294/sphinx-datatables)|
 |sphinx|[Sphinx DataTables](https://sharm294.github.io/sphinx-datatables/)|
+|sphinx|[Sphinx Indexed Definitions](https://github.com/TeachBooks/Sphinx-Indexed-Definitions)|
 |sphinx|[Sphinx llms.txt generator](https://github.com/jdillard/sphinx-llms-txt)|
 |sphinx|[Sphinx Minecraft](https://github.com/Gunivers/Sphinx-Minecraft)|
 |sphinx|[Sphinx Prompt](https://github.com/sbrunner/sphinx-prompt)
 |sphinx|[Sphinx Sitemap Generator Extension](https://github.com/jdillard/sphinx-sitemap)|
 |sphinx|[Sphinx Substitution Extensions](https://github.com/adamtheturtle/sphinx-substitution-extensions)|
+|sphinx|[sphinx-all-contributors](https://github.com/tkoyama010/sphinx-all-contributors)|
 |sphinx|[sphinx-automodapi](https://github.com/astropy/sphinx-automodapi)|
+|sphinx|[Sphinx-Gallery](https://github.com/sphinx-gallery/sphinx-gallery)|
 |sphinx|[sphinx-gha](https://github.com/drewcassidy/sphinx-gha)|
 |sphinx|[sphinx-mdinclude](https://github.com/omnilib/sphinx-mdinclude)|
 |sphinx|[sphinx-needs](https://github.com/useblocks/sphinx-needs)|

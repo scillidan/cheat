@@ -43,6 +43,7 @@
 |brave|Active|[Open Multiple URLs](https://github.com/htrinter/Open-Multiple-URLs)|
 |brave|Active|[Powerful Pixiv Downloader](https://pixiv.download)|
 |brave|Active|[Prevue Popup](https://chrome.google.com/webstore/detail/prevue-popup/afencccmfcofdgnigbenkpplpanigajd)|
+|brave|Active|[Reader View](https://github.com/rNeomy/reader-view/)|
 |brave|Active|[Read Later](https://github.com/willbchang/chrome-read-later)|
 |brave|Active|[RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar)|
 |brave|Active|[Screen Ruler - Measure The Web](https://chromewebstore.google.com/detail/screen-ruler-measure-the/jfbbgijjljfbolelfkopkhbfjajjampm)|

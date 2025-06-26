@@ -4,6 +4,7 @@
 |:-|:-|
 |AudioMass|https://audiomass.co|
 |BookSearchParty|https://booksearch.party|
+|Creative Commons Licenses for GitHub Projects|https://github.com/santisoler/cc-licenses|
 |Dev Encyclopedia;|https://devpedia.dev|
 |DevDocs|https://devdocs.io|
 |DownSub|https://downsub.com|

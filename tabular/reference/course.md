@@ -12,6 +12,7 @@
 |course,music|[Learning Music](https://learningmusic.ableton.com/)|
 |course,pygame|[Build an Asteroids Game With Python and Pygame](https://realpython.com/asteroids-game-python)|
 |course,python|[30 Days Of Python](https://github.com/Asabeneh/30-Days-Of-Python)|
+|course,python|[FullStack Web Development with Python](https://github.com/Alexandrbig1/py-web)|
 |course,ram|[RAM-a-thon](https://ram-a-thon.vercel.app/)|
 |course,shell-style|[Shell Style Guide](https://google.github.io/styleguide/shellguide.html)|
 |course,sleep|[Good sleep, good learning, good life](https://super-memory.com/articles/sleep.htm)|

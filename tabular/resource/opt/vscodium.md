@@ -2,15 +2,12 @@
 
 |tag|link|file|
 |:-|:-|:-|
-|vscodium,edit|[Incrementor Selection](https://github.com/nmsmith22389/vscode-incrementor)||
-|vscodium,edit|[Whitespace+](https://github.com/strikekat/whitespace-plus)|davidhouchin.whitespace-plus|
-|vscodium,file|[Open](https://github.com/sandcastle/vscode-open)|sandcastle.vscode-open|
-|vscodium,llm|[Files2Prompt](https://github.com/Thomas-McKanna/Files2Prompt)|thomas-mckanna.files2Prompt|
-|vscodium|[Cron Tasks](https://github.com/zokugun/vscode-cron)||
-|vscodium,complete|[Path Intellisense](https://github.com/ChristianKohler/PathIntellisense)||
 |vscodium,complete|[All Autocomplete](https://github.com/atishay/vscode-allautocomplete)||
+|vscodium,complete|[Path Intellisense](https://github.com/ChristianKohler/PathIntellisense)||
 |vscodium,converter|[indent2tree](https://github.com/takuan423/inent2tree)|takuanporipori.indent2tree|
 |vscodium,debug|[Error Lens](https://github.com/usernamehw/vscode-error-lens)||
+|vscodium,debug|[Lua Debug](https://github.com/actboy168/lua-debug)||
+|vscodium,debug|[Python Debugger](https://github.com/microsoft/vscode-python-debugger)||
 |vscodium,edit|[Better Align](https://github.com/chouzz/vscode-better-align)||
 |vscodium,edit|[Better Comments Next](https://github.com/edwinhuish/better-comments-next)||
 |vscodium,edit|[Better Folding Plus](https://github.com/AtroxEGO/vscode-better-folding)|AtroxEGO.better-folding-plus|
@@ -20,9 +17,13 @@
 |vscodium,edit|[Fold VSCode](https://github.com/leonatkdev/Fold-vscode-extension)|LeonatKrasniqi.foldvscode|
 |vscodium,edit|[Hide Comments](https://github.com/estruyf/vscode-hide-comments)||
 |vscodium,edit|[Hungry Delete](https://github.com/Jasonlhy/VSCode-Hungry-Delete)||
+|vscodium,edit|[Incrementor Selection](https://github.com/nmsmith22389/vscode-incrementor)||
+|vscodium,edit|[Sort Import Lines](https://marketplace.visualstudio.com/items?itemName=NimaKalhor.sort-import-lines)||
 |vscodium,edit|[Sort lines](https://github.com/Tyriar/vscode-sort-lines)||
 |vscodium,edit|[Text Marker (Numbered)](https://github.com/pit00/vscode-text-marker-numbered)|pit00.text-marker-numbered|
+|vscodium,edit|[Whitespace+](https://github.com/strikekat/whitespace-plus)|davidhouchin.whitespace-plus|
 |vscodium,file|[Epub Reader](https://github.com/weijan-vscode/vscode-epub-viewer)|cweijan.epub-reader|
+|vscodium,file|[Open](https://github.com/sandcastle/vscode-open)|sandcastle.vscode-open|
 |vscodium,file|[vscode-pdf](https://github.com/tomoki1207/vscode-pdfviewer)||
 |vscodium,formatter|[Better YAML Formatter](https://github.com/longkai/kubernetes-yaml-formatter)|kennylong.kubernetes-yaml-formatter|
 |vscodium,formatter|[Prettier - Code formatter](https://github.com/prettier/prettier-vscode)||
@@ -33,6 +34,7 @@
 |vscodium,latex|[LTeX+](https://github.com/ltex-plus/vscode-ltex-plus)||
 |vscodium,llm|[Cline](https://github.com/cline/cline)||
 |vscodium,llm|[Continue](https://github.com/continuedev/continue)||
+|vscodium,llm|[Files2Prompt](https://github.com/Thomas-McKanna/Files2Prompt)|thomas-mckanna.files2Prompt|
 |vscodium,llm|[Mintlify Doc Writer](https://github.com/mintlify/vscode-docs)||
 |vscodium,profile|[Snippets Manager](https://github.com/zjffun/vscode-snippets-manager)||
 |vscodium,profile|[Syncing](https://github.com/nonoroazoro/vscode-syncing)||
@@ -46,11 +48,13 @@
 |vscodium,syntax|[Color Highlight](https://github.com/enyancc/vscode-ext-color-highlight)||
 |vscodium,syntax|[ENV](https://github.com/IronGeek/vscode-env)||
 |vscodium,syntax|[Log File Highlighter](https://github.com/emilast/vscode-logfile-highlighter)||
+|vscodium,syntax|[Lua](https://github.com/LuaLS/lua-language-server)||
 |vscodium,syntax|[M3U8 / HLS Language Support](https://github.com/wabiloo/vscode-m3u8-language)||
 |vscodium,syntax|[Markdown Preview Enhanced](https://github.com/shd101wyy/vscode-markdown-preview-enhanced)||
 |vscodium,syntax|[Markdown Preview Mermaid Support](https://github.com/mjbvz/vscode-markdown-mermaid)||
 |vscodium,syntax|[Mermaid Markdown Syntax Highlighting](https://github.com/bpruitt-goddard/vscode-mermaid-syntax-highlight)||
 |vscodium,syntax|[Mermaid Preview](https://github.com/vstirbu/vscode-mermaid-preview)|vstirbu.vscode-mermaid-preview|
+|vscodium,syntax|[Python](https://github.com/Microsoft/vscode-python)||
 |vscodium,syntax|[Rainbow CSV](https://github.com/mechatroner/vscode_rainbow_csv.git)||
 |vscodium,syntax|[reStructuredText Syntax highlighting](https://github.com/trond-snekvik/vscode-rst)||
 |vscodium,syntax|[Slidev](https://github.com/slidevjs/slidev)||
@@ -58,8 +62,9 @@
 |vscodium,syntax|[XML](https://github.com/redhat-developer/vscode-xml)||
 |vscodium,syntax|[YAML](https://github.com/redhat-developer/vscode-yaml)||
 |vscodium,theme|[Lightless Theme](https://github.com/ferretwithaberet/lightless-theme)|TwoDevs.lightless|
-|vscodium,theme|[Vanta](https://github.com/orellazri/vanta)|OrelLazri.vanta|
 |vscodium,theme|[Oxocarbon Theme](https://github.com/nyoom-engineering/oxocarbon-vscode)|NyoomEngineering.oxocarbon-vscode|
+|vscodium,theme|[Vanta](https://github.com/orellazri/vanta)|OrelLazri.vanta|
+|vscodium|[Cron Tasks](https://github.com/zokugun/vscode-cron)||
 |vscodium|[filesize](https://github.com/mkxml/vscode-filesize)||
 |vscodium|[WakaTime](https://github.com/wakatime/vscode-wakatime)||
 
@@ -70,14 +75,11 @@
 |vscodium,edit|[Compare Folders](https://github.com/moshfeu/vscode-compare-folders)||
 |vscodium,syanx|[KiCad Syntax Highlighter](https://github.com/danielmeza/kicad-syntax-vscode)|DanielMeza.kicad-syntax-highlighter|
 |vscodium,syntax|[SQLite3 Editor](https://github.com/yy0931/sqlite3-editor)||
-|vscodium|[novel-writer](https://github.com/ttrace/vscode-language-japanese-novel)|TaiyoFujii.novel-writer|
 
 ## Extra
 
 |tag|link|file|
 |:-|:-|:-|
-|vscodium,debug|[Lua Debug](https://github.com/actboy168/lua-debug)||
-|vscodium,debug|[Python Debugger](https://github.com/microsoft/vscode-python-debugger)||
 |vscodium,frontend|[Bootstrap IntelliSense](https://github.com/aviiceena/bootstrap-intellisense)|hossaini.bootstrap-intellisense|
 |vscodium,frontend|[CSS Variable Autocomplete](https://github.com/vunguyentuan/vscode-css-variables)||
 |vscodium,frontend|[ESLint](https://github.com/Microsoft/vscode-eslint)||
@@ -89,8 +91,6 @@
 |vscodium,frontend|[Pretty TypeScript Errors](https://github.com/yoavbls/pretty-ts-errors)||
 |vscodium,frontend|[Tailwind CSS IntelliSense](https://github.com/tailwindlabs/tailwindcss-intellisense)|
 |vscodium,frontend|[Tauri](https://github.com/tauri-apps/tauri-vscode)||
-|vscodium,syntax|[Lua](https://github.com/LuaLS/lua-language-server)||
-|vscodium,syntax|[Python](https://github.com/Microsoft/vscode-python)||
 
 ## Cache
 
@@ -117,7 +117,6 @@
 |vscodium,edit|[Private Snippets](https://github.com/brianuceda/private-snippets)||
 |vscodium,edit|[Remove empty lines](https://github.com/usernamehw/vscode-remove-empty-lines)||
 |vscodium,edit|[Snippet Composer](https://github.com/Phantasm0009/snippet-composer)||
-|vscodium,edit|[Sort Import Lines](https://marketplace.visualstudio.com/items?itemName=NimaKalhor.sort-import-lines)||
 |vscodium,edit|[Text Power Tools](https://github.com/qcz/vscode-text-power-tools.git)||
 |vscodium,edit|[URI Encode/Decode](https://github.com/sryze/vscode-uridecode)||
 |vscodium,edit|[会了吧](https://github.com/mqycn/huile8)||
@@ -200,4 +199,5 @@
 |vscodium,github|[GitHub Pull Requests](https://github.com/Microsoft/vscode-pull-request-github)||
 |vscodium|[vscode-open](https://github.com/robertohuertasm/vscode-open)|
 |vscodium,edit|[Multiple cursor case preserve](https://github.com/Cardinal90/multi-cursor-case-preserve)||
+|vscodium|[novel-writer](https://github.com/ttrace/vscode-language-japanese-novel)|TaiyoFujii.novel-writer|
 |vscodium|[VSCode Animalese](https://github.com/ESV-Sweetplum/vscode-animalese)||

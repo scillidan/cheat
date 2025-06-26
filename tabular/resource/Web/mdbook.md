@@ -12,8 +12,11 @@
 |mdbook|[Anchors Aweigh](https://github.com/benfalk/anchors-aweigh)|
 |mdbook|[Aquamarine](https://github.com/mersinvald/aquamarine)|
 |mdbook|[book-summary](https://github.com/dvogt23/book-summary)|
+|mdbook|[D2 preprocessor for mdbook](https://github.com/danieleades/mdbook-d2)|
+|mdbook|[gen-mdbook-summary](https://github.com/CNCSMonster/gen-mdbook-summary)|
 |mdbook|[Internationalization and Rendering extensions for mdbook](https://github.com/google/mdbook-i18n-helpers)|
 |mdbook|[mdbook Combiner](https://github.com/jscarrott/mdbook-combiner)|
+|mdbook|[Mdbook Embedify](https://github.com/MR-Addict/mdbook-embedify)|
 |mdbook|[MDBook EPUB Backend](https://github.com/Michael-F-Bryan/mdbook-epub)|
 |mdbook|[mdBook Graphviz](https://github.com/dylanowen/mdbook-graphviz)|
 |mdbook|[mdBook Journal](https://github.com/benfalk/mdbook-journal)|
@@ -28,12 +31,14 @@
 |mdbook|[mdbook-codename](https://github.com/smallkirby/mdbook-codename)|
 |mdbook|[mdbook-compress](https://github.com/RosiePuddles/mdbook-compress)|
 |mdbook|[mdbook-curly-quotes](https://github.com/arminha/mdbook-curly-quotes)|
+|mdbook|[mdbook-docgen](https://github.com/yokurang/mdbook-docgen)|
 |mdbook|[mdbook-files](https://github.com/xfbs/mdbook-files)|
 |mdbook|[mdbook-fix-cjk-spacing](https://github.com/lotabout/mdbook-fix-cjk-spacing)|
 |mdbook|[mdbook-footnote](https://github.com/daviddrysdale/mdbook-footnote)|
 |mdbook|[mdbook-force-relative-links, an mdbook pre-processor](https://github.com/poliorcetics/mdbook-force-relative-links)|
 |mdbook|[mdbook-frontmatter-reader](https://github.com/sspaeti/mdbook-frontmatter-reader)|
 |mdbook|[mdbook-github-authors](https://github.com/VectorInstitute/mdbook-github-authors)|
+|mdbook|[mdbook-gitinfo](https://github.com/CompEng0001/mdbook-gitinfo)|
 |mdbook|[mdbook-grammar](https://github.com/simplx-lang/mdbook-grammar)|
 |mdbook|[mdbook-image-size](https://github.com/lhybdv/mdbook-image-size)|
 |mdbook|[mdbook-indexing](https://github.com/daviddrysdale/mdbook-indexing)|
@@ -54,5 +59,3 @@
 |mdbook|[mdbookshelf](https://github.com/DomtronVox/mdbookshelf)|
 |mdbook|[MDBookshelf](https://github.com/rams3s/mdbookshelf)|
 |mdbook|[Svgbob plugin for mdbook](https://github.com/boozook/mdbook-svgbob)|
-[mdbook|[gen-mdbook-summary](https://github.com/CNCSMonster/gen-mdbook-summary)|
-|mdbook|[Mdbook Embedify](https://github.com/MR-Addict/mdbook-embedify)|

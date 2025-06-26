@@ -49,6 +49,7 @@
 |obsidian|live|[Kokoro TTS](https://github.com/Mithadon/obsidian-kokoro-tts-plugin)|
 |obsidian|live|[MTG Card Links](https://github.com/aedans/mtg-card-links)|
 |obsidian|live|[mpv links](https://github.com/patsh90/mpv-obsidian-plugin)|
+|obsidian|live|[Numerals](https://github.com/gtg922r/obsidian-numerals)|
 |obsidian|live|[PomoBar](https://github.com/semanticdata/obsidian-pomodoro)|
 |obsidian|live|[Reading Time](https://github.com/avr/obsidian-reading-time)|
 |obsidian|live|[Remember cursor position](https://github.com/dy-sh/obsidian-remember-cursor-position)|
@@ -69,6 +70,7 @@
 |obsidian|live|[Citations](https://github.com/hans/obsidian-citation-plugin)|
 |obsidian|live|[Reminder](https://github.com/uphy/obsidian-reminder)|
 |obsidian|live|[Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration)|
+|obsidian|live|[Focus Tracker](https://github.com/jeetsukumaran/obsidian-focus-tracker)|
 
 ## Cache
 
@@ -125,6 +127,7 @@
 |obsidian|[Flexoki](https://github.com/kepano/flexoki-obsidian)|
 |obsidian|[Folder Navigator](https://github.com/wenlzhang/obsidian-folder-navigator)|
 |obsidian|[Front Matter Title](https://github.com/otaviocc/obsidian-microblog)|
+|obsidian|[Gyazo viewer for Obsidian](https://github.com/nota/gyazo-obsidian-plugin)|
 |obsidian|[Gallery](https://github.com/Darakah/obsidian-gallery)|
 |obsidian|[Generic Initiative Tracker](https://github.com/beaurancourt/obsidian-generic-initiative-tracker)|
 |obsidian|[Github Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher)|
@@ -153,7 +156,6 @@
 |obsidian|[MIDI Logger](https://github.com/maybe-hello-world/midi-logger)|
 |obsidian|[Natural Language Syntax Highlighting](https://github.com/artisticat1/nl-syntax-highlighting)|
 |obsidian|[NeuroVox](https://github.com/Synaptic-Labs-AI/NeuroVox)|
-|obsidian|[Numerals](https://github.com/gtg922r/obsidian-numerals)|
 |obsidian|[obsideck](https://github.com/j4ckofalltrades/obsideck)|
 |obsidian|[Obsidian Asciinema cast file viewer plugin](https://github.com/dkleinbe/obsidian-asciinema-player)|
 |obsidian|[Obsidian Automatic Table Of Contents](https://github.com/johansatge/obsidian-automatic-table-of-contents)|
@@ -196,6 +198,7 @@
 |obsidian|[Print](https://github.com/marijnbent/obsidian-print)|
 |obsidian|[Projects](https://github.com/marcusolsson/obsidian-projects)|
 |obsidian|[Proofreader](https://github.com/chrisgrieser/obsidian-proofreader)|
+|obsidian|[Quartz Syncer](https://github.com/saberzero1/quartz-syncer)|
 |obsidian|[Query Control](https://github.com/nothingislost/obsidian-query-control)|
 |obsidian|[QueryDash](https://github.com/liufree/obsidian-querydash)|
 |obsidian|[Quick Latex for Obsidian](https://github.com/joeyuping/quick_latex_obsidian)|
@@ -209,6 +212,7 @@
 |obsidian|[Sentence Navigator](https://github.com/timhor/obsidian-sentence-navigator)|
 |obsidian|[Shiki Highlighter](https://github.com/mProjectsCode/obsidian-shiki-plugin)|
 |obsidian|[Simple Folder Filelist for Obsidian](https://github.com/band/obsidian-folder-filelist)|
+|obsidian|[smart-link-formatter](https://github.com/ccmdi/smart-link-formatter)|
 |obsidian|[Solve](https://github.com/LiamRiddell/obsidian-solve)|
 |obsidian|[Spellcheck Toggler](https://github.com/julzerinos/spellcheck-toggler-obsidian-plugin)|
 |obsidian|[Starlight Starter Kit: Basics](https://github.com/mProjectsCode/obsidian-meta-bind-plugin-docs)|

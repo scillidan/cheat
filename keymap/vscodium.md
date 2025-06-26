@@ -5,7 +5,9 @@
 |VScodium|Add Cursors to Line Ends|C-S-l|
 |VScodium|Explorer|C-S-e|
 |VScodium|Extensions|C-S-x|
+|VScodium|Format Document|C-A-f|
 |VScodium|Keyboard Shortcuts|C-k,C-s|
+|VScodium|Close Window|C-S-w|
 |VScodium|Move Line Up/Down|C-S-Up/Down|
 |VScodium|Open|A-o|
 |VScodium|Primary Side Bar|C-b|
@@ -15,8 +17,7 @@
 |VScodium|Secondary Side Bar|C-S-b|
 |VScodium|Source Control|C-S-g|
 |VScodium|toggleFindInSelection|A-f|
-|VScodium|View: Split Editor Down|C-k,C-\\|
-|VScodium|View: Split Editor|C-\\|
+|VScodium|View: Split Editor Up/Down/Left/Right|C-k,C-Up/Down/Left/Right|
 
 |opt|extension|command|shortcut|
 |:-|:-|:-|:-|

@@ -36,6 +36,7 @@
 |dev,mouse|[Statial.b Adjustable Mouse](https://github.com/PyottDesign/Statial-b)|
 |dev,mouse|[The Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)|
 |dev,notify|[The Guardian Duck](https://github.com/dr-mod/guardian-duck)|
+|dev,pico|[ChipSHOUTER-PicoEMP](https://github.com/newaetech/chipshouter-picoemp)|
 |dev,printer|[E-TKT](https://github.com/andreisperid/E-TKT)|
 |dev,rpi|[3.5inch RPi Display](https://lcdwiki.com/zh/3.5inch_RPi_Display)|
 |dev,rpi|[LabStack](https://github.com/JaredC01/LabStack)|
@@ -54,3 +55,4 @@
 |dev,uconsole,sway|[uConsole Sway Configuration](https://github.com/emdash/uConsole_sway_config)|
 |dev,uconsole,usb|[μHub](https://github.com/dotcypress/uhub)|
 |dev,uconsole|[uConsole](https://github.com/clockworkpi/uConsole)|
+|dev|[Oasis](https://github.com/justbuchanan/oasis)|

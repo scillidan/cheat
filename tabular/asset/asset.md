@@ -24,6 +24,7 @@
 |i3|[Simple Arc Dark](http://dotshare.it/dots/1446/)|
 |i3|[statusBar](http://dotshare.it/dots/24/)|
 |i3|[UnaSemana](http://dotshare.it/dots/307/)|
+|icon|[Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons)|
 |icon|[Lucide](https://github.com/lucide-icons/lucide)|
 |icon|[Streamline](https://home.streamlinehq.com/)|
 |icon|[things](https://www.thiings.co/things)|
