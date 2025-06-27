@@ -9,6 +9,7 @@
 |linux,zsh,jump|[zsh-zoxide](https://github.com/z-shell/zsh-zoxide)|
 |linux,zsh,plugin-manager|[zinit](https://github.com/zdharma-continuum/zinit)|
 |linux,zsh,python|[zpy](https://github.com/AndydeCleyre/zpy)|
+|linux,zsh,ssh|[zsh-ssh](https://github.com/sunlei/zsh-ssh)|
 |linux,zsh,theme|[minimal](https://github.com/subnixr/minimal)|
 |linux,zsh,zellij|[Zsh plugin for Zellij](https://codeberg.org/tranzystorekk/zellij.zsh)|
 |linux,zsh|[fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)|
@@ -74,7 +75,6 @@
 |linux,zsh,skim|[zsh-git-switch-branch-skim](https://github.com/okhiroyuki/zsh-git-switch-branch-skim)|
 |linux,zsh,skim|[zsh-select-history-skim](https://github.com/okhiroyuki/zsh-select-history-skim)|
 |linux,zsh,ssh|[zsh-ssh-agent](https://github.com/twfksh/zsh-ssh-agent)|
-|linux,zsh,ssh|[zsh-ssh](https://github.com/sunlei/zsh-ssh)|
 |linux,zsh,start|[auto-fortune-cowsay-zsh](https://github.com/babasbot/auto-fortune-cowsay-zsh)|
 |linux,zsh,theme|[alien-minimal](https://github.com/eendroroy/alien-minimal)|
 |linux,zsh,theme|[berghain.zsh-theme](https://github.com/meshkinyar/berghain.zsh-theme)|

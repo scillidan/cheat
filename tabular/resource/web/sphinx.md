@@ -35,6 +35,7 @@
 |sphinx|[Sphinx Comments](https://github.com/executablebooks/sphinx-comments)|
 |sphinx|[Sphinx DataTables](https://github.com/sharm294/sphinx-datatables)|
 |sphinx|[Sphinx DataTables](https://sharm294.github.io/sphinx-datatables/)|
+|sphinx|[Sphinx extension: Iframes](https://github.com/TeachBooks/sphinx-iframes)|
 |sphinx|[Sphinx Indexed Definitions](https://github.com/TeachBooks/Sphinx-Indexed-Definitions)|
 |sphinx|[Sphinx llms.txt generator](https://github.com/jdillard/sphinx-llms-txt)|
 |sphinx|[Sphinx Minecraft](https://github.com/Gunivers/Sphinx-Minecraft)|
@@ -43,15 +44,18 @@
 |sphinx|[Sphinx Substitution Extensions](https://github.com/adamtheturtle/sphinx-substitution-extensions)|
 |sphinx|[sphinx-all-contributors](https://github.com/tkoyama010/sphinx-all-contributors)|
 |sphinx|[sphinx-automodapi](https://github.com/astropy/sphinx-automodapi)|
+|sphinx|[sphinx-diagram-connect](https://github.com/mi-parkes/sphinx-diagram-connect)
 |sphinx|[Sphinx-Gallery](https://github.com/sphinx-gallery/sphinx-gallery)|
 |sphinx|[sphinx-gha](https://github.com/drewcassidy/sphinx-gha)|
 |sphinx|[sphinx-mdinclude](https://github.com/omnilib/sphinx-mdinclude)|
+|sphinx|[sphinx-mdx-builder](https://github.com/PedramNavid/sphinx-mdx-builder)|
 |sphinx|[sphinx-needs](https://github.com/useblocks/sphinx-needs)|
 |sphinx|[sphinx-nested-apidoc](https://github.com/arunanshub/sphinx-nested-apidoc)|
 |sphinx|[sphinx-polyversion](https://github.com/real-yfprojects/sphinx-polyversion)|
 |sphinx|[sphinx-preview](https://github.com/useblocks/sphinx-preview)|
 |sphinx|[Sphinx-testify](https://github.com/BasicWolf/sphinx-testify)|
 |sphinx|[sphinx_click_custom](https://github.com/RhetTbull/sphinx_click_custom)|
+|sphinx|[sphinx_lfs_content](https://github.com/ssciwr/sphinx_lfs_content)|
 |sphinx|[sphinxcontrib-bibtex](https://github.com/mcmtroffaes/sphinxcontrib-bibtex)|
 |sphinx|[sphinxcontrib-constdata](https://documatt.gitlab.io/sphinxcontrib-constdata/table.html)|
 |sphinx|[sphinxcontrib-fulltoc](https://github.com/sphinx-contrib/fulltoc)|
@@ -63,3 +67,4 @@
 |sphinx|[sphinxcontrib.external-links](https://github.com/finleyfamily/sphinxcontrib.external-links)|
 |sphinx|[sphinxnotes-project](https://github.com/sphinx-notes/project)|
 |sphinx|[SPHinXsys](https://github.com/Xiangyu-Hu/SPHinXsys)|
+|sphinx,lsp|[Esbonio](https://github.com/swyddfa/esbonio)|

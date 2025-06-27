@@ -75,6 +75,7 @@
 |vscodium,edit|[Compare Folders](https://github.com/moshfeu/vscode-compare-folders)||
 |vscodium,syanx|[KiCad Syntax Highlighter](https://github.com/danielmeza/kicad-syntax-vscode)|DanielMeza.kicad-syntax-highlighter|
 |vscodium,syntax|[SQLite3 Editor](https://github.com/yy0931/sqlite3-editor)||
+|vscodium,lsp|[Tinymist Typst](https://github.com/Myriad-Dreamin/tinymist)||
 
 ## Extra
 

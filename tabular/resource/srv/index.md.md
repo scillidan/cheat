@@ -122,7 +122,6 @@
 |srv,lan|[Network scanner & notification framework](https://github.com/jokob-sk/NetAlertX)|
 |srv,latex|[VS Code LaTeX Devcontainer](https://github.com/a-nau/latex-devcontainer)|
 |srv,linkding,singlefile|[Linkding Archiver](https://github.com/sebw/linkding-archiver)|
-|srv,lsp,reason|[Reason Language Server](https://github.com/jaredly/reason-language-server)|
 |srv,lyric|[Song Database](https://github.com/mathisdt/sdb2)|
 |srv,mail|[Maddy Mail Server](https://github.com/foxcpp/maddy)|
 |srv,mail|[Mail-in-a-Box](https://github.com/mail-in-a-box/mailinabox)|

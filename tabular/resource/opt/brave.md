@@ -28,7 +28,6 @@
 |brave|Active|[Hide Scrollbar](https://chrome.google.com/webstore/detail/hide-scrollbar/mljepckcnbghmcdmaebjhejiplcngbkm)|
 |brave|Active|[Image downloader - Imageye](https://imageye.net)|
 |brave|Active|[Imagus](https://github.com/TheFantasticWarrior/chrome-extension-imagus)|
-|brave|Active|[Immersive Translate - Translate Web & PDF](https://github.com/immersive-translate/immersive-translate)|
 |brave|Active|[JSON Formatter](https://github.com/callumlocke/json-formatter)|
 |brave|Active|[KeePassXC-Browser](https://github.com/keepassxreboot/keepassxc-browser)|
 |brave|Active|[Kokoro TTS Reader](https://github.com/Mithadon/obsidian-kokoro-tts-plugin)|
@@ -134,6 +133,7 @@
 |brave|[Global Speed](https://github.com/polywock/globalSpeed)|
 |brave|[Hypothesis - Web & PDF Annotation](https://github.com/hypothesis/browser-extension)|
 |brave|[ImageQuilts](http://imagequilts.com)|
+|brave|[Immersive Translate - Translate Web & PDF](https://github.com/immersive-translate/immersive-translate)|
 |brave|[Jiffy Reader](https://github.com/ansh/jiffyreader.com)|
 |brave|[Json Bookmarks](https://github.com/1nfiniteloop/json-bookmarks)|
 |brave|[Link to Text Fragment](https://github.com/GoogleChromeLabs/link-to-text-fragment)|

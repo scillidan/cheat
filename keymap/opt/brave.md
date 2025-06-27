@@ -30,7 +30,6 @@
 |Brave|Gitako - GitHub file tree - Toggle sidebar|A-S-t|
 |Brave|GoFullPage - Full Page Screen Capture|Activate the extension|A-S-p|
 |Brave|Image downloader - Imageye|Activate the extension|A-S-i|
-|Brave|Immersive Translate - Translate Web & PDF|Translate Webpage/Show Original Text|A-S-z|
 |Brave|Linkclump|Opened as New Tabs|mbtn_left-a|
 |Brave|Linkclump|Copied to clipboard|mbtn_right-a|
 |Brave|MarkDownload - Markdown Web Clipper|Activate the extension|A-S-m|
@@ -61,5 +60,4 @@
 |Brave|Read Later|Save to Read later|
 |Brave|Screen Ruler - Measure The Web|Screen Ruler|
 |Brave|SingleFile|/|
-|Brave|Immersive Translate - Translate Web & PDF|Translate to Simplified Chinese(Alt+Shift+Z)|
 |Brave|Monica: ChatGPT AI Assistant|Translate webpage/Display original text|

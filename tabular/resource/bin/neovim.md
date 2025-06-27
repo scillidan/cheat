@@ -110,6 +110,7 @@
 |neovim,treesitter|[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)|
 |neovim,treesitter|[Treesitter-indent-object.nvim](https://github.com/kiyoon/treesitter-indent-object.nvim)|
 |neovim,tmux|[tmux-navigator.nvim](https://github.com/connordeckers/tmux-navigator.nvim)
+|neovim,ui,theme|[ThemeSwitch](https://github.com/nishu-murmu/ThemeSwitch.nvim)|
 |neovim,ui,theme|[Tokyo Night](https://github.com/folke/tokyonight.nvim)|
 |neovim,ui,theme|[vanta.nvim](https://github.com/emanuel2718/vanta.nvim)|
 |neovim,ui|[nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)|
