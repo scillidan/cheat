@@ -19,6 +19,8 @@
 |note,mutt|[Configuring mutt to work with gmail and yandex](https://gist.github.com/lazyfrost/ca4807e185d5e6816bf1)|
 |note,pi-pico|[Raspberry Pi Pico audio player](https://lucstechblog.blogspot.com/2025/02/raspberry-pi-pico-audio-player.html)|
 |note,podman|[Quadlet: Running Podman containers under systemd](https://mo8it.com/blog/quadlet/)|
+|note,rpi|[Arch Linux ARM on a Raspberry Pi 5 Model B](https://kiljan.org/2023/11/24/arch-linux-arm-on-a-raspberry-pi-5-model-b/)|
+|note,rpi|[Arch Linux on Raspberry Pi 5: Back from the trenches](http://blog.hellonico.info/posts/iot/arch_on_raspberry/)|
 |note,sendto|[video-compare - Practical tips](https://github.com/pixop/video-compare?tab=readme-ov-file#practical-tips)|
 |note,split-keyboard|[My personalised 55% split keyboard](https://leanrada.com/notes/my-personalised-keyboard/)|
 |note,terminal-color-scheme|[Let's Create a Terminal Color Scheme](https://hamvocke.com/blog/lets-create-a-terminal-color-scheme/)|
