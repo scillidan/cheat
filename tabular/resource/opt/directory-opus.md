@@ -22,6 +22,7 @@
 
 |tag|link|
 |:-|:-|
+|windows10,dopus|[DeleteFromFiles (Delete files from text files)](https://resource.dopus.com/t/deletefromfiles-delete-files-from-text-files/56270)|
 |windows10,dopus,cd|[GoRootArchive](https://resource.dopus.com/t/gorootarchive-jump-back-to-the-root-of-an-archive/51408)|
 |windows10,dopus,clean|[Folder Cleaner](https://resource.dopus.com/t/folder-cleaner-delete-folders-but-keep-files/52555)|
 |windows10,dopus,clipboard|[Paste URL from clipboard as .url file](https://resource.dopus.com/t/paste-url-from-clipboard-as-url-file/44678)|

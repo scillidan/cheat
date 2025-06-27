@@ -223,6 +223,7 @@
 |bin,du|[go DiskUsage()](https://github.com/dundee/gdu)|
 |bin,du|[lsdsk](https://github.com/rasa/lsdsk)|
 |bin,editor|[micro](https://github.com/zyedidia/micro)|
+|bin,editor|[Edit](https://github.com/microsoft/edit)|
 |bin,email|[PingMe CLI](https://github.com/kha7iq/pingme)|
 |bin,encrypt|[File Injector](https://github.com/carlospuenteg/File-Injector)|
 |bin,encrypt|[Stegano](https://github.com/steganogram/stegano-rs)|
