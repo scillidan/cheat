@@ -1,0 +1,95 @@
+# [Godot](https://godotengine.org/)
+
+## reference
+
+- [Godot Recipes](https://kidscancode.org/godot_recipes/4.x/)
+- [Dialogic 2](https://docs.dialogic.pro/introduction.html)
+- [Configuring neovim's LSP to work with Godot](https://ericlathrop.com/2024/02/configuring-neovim-s-lsp-to-work-with-godot/)
+
+## resource
+
+### cache
+
+- #2d [A Star 2D Grid Node](https://github.com/Firemanarg/godot-astar-2d-grid-node) _download_
+- #2d [Parallax2D Preview](https://github.com/KoBeWi/Godot-Parallax2D-Preview) _download_
+- #2d [TileMapLayer Basics in 4.3](https://github.com/Goldenlion5648/TileMapLayersTutorial) _download_
+- #3d [SceneTexture - Icon/Thumbnail Generation](https://github.com/ydeltastar/godot-scene-texture)
+- #audio [Godot Audio Events](https://github.com/FreekDS/GodotAudioEvents) _download_
+- #audio [Kenney Interface Sounds](https://github.com/Calinou/kenney-interface-sounds) _download_
+- #audio [Kenney UI Audio](https://github.com/Calinou/kenney-ui-audio) _download_
+- #audio [LFO](https://not-jam.itch.io/lfo-for-godot) _download_
+- #audio [Resonate](https://github.com/hugemenace/resonate) _download_
+- #audio [Sound Manager](https://github.com/nathanhoad/godot_sound_manager) _download_
+- #avg [Cursor Shape Previewer](https://github.com/zaevi/godot-cursor-shape-previewer) _download_
+- #avg [Dialogic 2](https://github.com/dialogic-godot/dialogic)|source|
+- #avg [Dialogue Engine](https://github.com/Rubonnek/dialogue-engine) _download_
+- #avg [Dialogue Nodes](https://github.com/nagidev/DialogueNodes) _download_
+- #avg [gdsam for Godot](https://github.com/deadpixelsociety/gdsam-plugin) _download_
+- #avg [Popochiu](https://github.com/carenalgas/popochiu) _download_
+- #avg [Puzzle Dependencies](https://github.com/nathanhoad/godot_puzzle_dependencies) _download_
+- #avg [RichTextLabel2](https://github.com/chairfull/GodotRichTextLabel2) _download_
+- #avg [Theatre](https://github.com/nndda/Theatre) _download_
+- #avg [Universal Fade](https://github.com/KoBeWi/Godot-Universal-Fade) _download_
+- #data [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector) _download_
+- #data [Text Database](https://github.com/KoBeWi/Godot-Text-Database) _download_
+- #develop [AutoSaver Toggle for Godot Editor (C#)](https://github.com/vrravalos/AutoSaver-for-Godot) _download_
+- #develop [Dock Slot Expander](https://github.com/bypell/dock_slot_expander) _download_
+- #develop [GDScript ECS framework](https://github.com/yihrmc/gdscript-ecs) _download_
+- #develop [GDShell](https://github.com/Kubulambula/Godot-GDShell) _download_
+- #develop [Godot ECS](https://github.com/baiXfeng/godot-ecs) _download_
+- #develop [Godot Essentials](https://gitlab.com/godot-tools/godot-essentials) _download_
+- #develop [Godot Gameplay Systems](https://github.com/OctoD/godot-gameplay-systems) _download_
+- #develop [Godot Rollback Netcode](https://gitlab.com/snopek-games/godot-rollback-netcode) _download_
+- #develop [Godot Tabs](https://github.com/Cevantime/godot_tabs) _download_
+- #develop [Godot Traits](https://github.com/Earewien/godot-traits)
+- #develop [Godot-SQLite](https://github.com/2shady4u/godot-sqlite) _download_
+- #develop [GodotSize](https://github.com/the-sink/godotsize) _download_
+- #develop [Inspector Extender - Buttons, Warnings, More](https://github.com/don-tnowe/godot-inspector-extender) _download_
+- #develop [Minimal Godot Theme](https://github.com/passivestar/godot-minimal-theme)|source|
+- #develop [Minimize Web Build](https://github.com/markushevpro/godot-minimize-html-build)
+- #develop [Panku Console](https://github.com/Ark2000/PankuConsole) _download_
+- #develop [Prefab](https://github.com/KoBeWi/Godot-Prefab) _download_
+- #develop [Saturn - Simple Cascade State Machine](https://github.com/GumpDev/saturn) _download_
+- #develop [Script Panel +](https://github.com/Loregret/script-panel-plus/) _download_
+- #develop [Script-IDE](https://github.com/Maran23/script-ide) _download_
+- #develop [Tracer](https://github.com/wyvernbw/tracer.gd) _download_
+- #develop [Visibility shortcut](https://github.com/Janders1800/godot-visibility-shortcut) _download_
+- #develop [YAT - Yet Another Terminal (C#)](https://github.com/MASSHUU12/godot-yat) _download_
+- #font [Font Generator for Godot 4](https://martin-senges.itch.io/font-generator-for-godot-4) _download_
+- #font [TextureFont](https://github.com/Mickeon/Godot-Texture-Font) _download_
+- #input [Action Icon](https://github.com/KoBeWi/Godot-Action-Icon) _download_
+- #input [Controller Icons](https://github.com/rsubtil/controller_icons/) _download_
+- #input [ControlsRemap resource](https://github.com/KoBeWi/Godot-Input-Remap) _download_
+- #input [G.U.I.D.E - Godot Unified Input Detection Engine](https://github.com/godotneers/G.U.I.D.E)
+- #input [Godot_multidirectional_joystick for Godot 4](https://github.com/JstnJrg/Godot_multidirectional_joystick) _download_
+- #input [InputController](https://github.com/sscovil/godot-input-controller-addon) _download_
+- #input [Inputty](https://codeberg.org/MxSophie/Inputty) _download_
+- #itch [Github To Itch](https://github.com/MeagherGames/github_to_itch) _download_
+- #rpg [GDrama](https://github.com/moraguma/GDrama) _download_
+- #rpg [Scene Palette](https://github.com/cixil/godot-scene-palette) _download_
+- #rpg [Template for pathfinding games](https://github.com/xolatgames/Pathfinding/) _download_
+- #rpg [Wyvernshield 2 - Character Upgrades for Combat Systems](https://github.com/don-tnowe/godot-wyvernshield-triggers) _download_
+- #rpg [YATI (Yet Another Tiled Importer)](https://github.com/Kiamo2/YATI) _download_
+- #scene [Indie Blueprint Scene Transition](https://github.com/ninetailsrabbit/indie-blueprint-scene-transition)
+- #scene [Scene Manager (2)](https://github.com/m-canton/godot-scene-manager) _download_
+- #scene [Scene Manager (3)](https://github.com/maktoobgar/scene_manager) _download_
+- #scene [Scene Manager](https://github.com/glass-brick/Scene-Manager) _download_
+- #steam [GodotSteam GDExtension](https://github.com/GodotSteam/GodotSteam)
+- #steam [Sync Deck](https://github.com/Michael-Jalloh/SyncDeck) _download_
+- #text [Clyde Dialogue](https://github.com/viniciusgerevini/godot-clyde-dialogue) _download_
+- #text [Label Font Auto Sizer - Godot 4](https://github.com/LuisEscorza/GodotLabelFontAutoSizer) _download_
+- #text [Monologue](https://github.com/atomic-junky/Monologue) _download_
+- #text [POT Word - POT and PO file editor](https://github.com/diklor/pot_word) _download_
+- #tile [TileMapDual](https://github.com/pablogila/TileMapDual/)
+- #translate [Fluent Translation](https://github.com/RedMser/godot-fluent-translation) _download_
+- #ui [2D Shapes](https://github.com/TechnocatDev/2d-shapes) _download_
+- #ui [Anima for Godot 4](https://github.com/ceceppa/anima-godot-4) _download_
+- #ui [AnimatedButton](https://github.com/AdilDevStuff/AnimatedButton) _download_
+- #ui [Color Preview](https://github.com/Qubus0/GodotColorPreview) _download_
+- #ui [GameGUI](https://github.com/brombres/Godot-GameGUI) _download_
+- #ui [Godot Card Parallax](https://github.com/Trixelized/godotCardParallax) _download_
+- #ui [Godot GIF](https://github.com/BOTLANNER/godot-gif) _download_
+- #ui [Godot QOI](https://github.com/DmitriySalnikov/godot_qoi) _download_
+- #ui [ShaderV - 2D Visual Shader Node Library (Godot 4)](https://github.com/arkology/ShaderV) _download_
+- #ui [SmoothScroll](https://github.com/SpyrexDE/SmoothScroll) _download_
+- #ui [Spin Button - Horizontal Selector with extended options](https://github.com/yudinikita/godot-spin-button) _download_

@@ -1,0 +1,52 @@
+[book]
+title = "cheat"
+authors = ["scillidan"]
+description = ""
+language = "en"
+# multilingual = false
+src = "src"
+
+[output.html]
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
+no-section-label = true
+git-repository-icon = "fa-github"
+git-repository-url = "https://github.com/scillidan/cheat"
+edit-url-template = "https://github.com/scillidan/cheat/main/{path}"
+additional-css = ["./assets/css/mdbook-admonish.css"]
+
+[output.html.print]
+enable = true
+page-break = true
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.code.hidelines]
+bash = "#"
+
+[output.html.playground]
+runnable = false
+
+# [output.epub]
+# additional-css = ["assets/css/epub.css"]
+# use-default-css = false
+# cover-image = "ebook-cover.png"
+# additional-resources = ["assets/font/Open-Sans-Regular.ttf"]
+# no-section-label = true
+# curly-quotes = true
+# epub-version = 3
+# footnote-backrefs = true
+
+[prepocessor.force-relative-links]
+after = ["links"]
+
+[preprocessor.admonish]
+after = ["links"]
+command = "mdbook-admonish"
+assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.tailor]
+
+[preprocessor.embedify]

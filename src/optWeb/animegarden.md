@@ -1,0 +1,3 @@
+# [AnimeGarden](https://github.com/yjl9903/AnimeGarden)
+
+![](https://img.shields.io/github/license/yjl9903/Anime) ![](https://img.shields.io/github/last-commit/scillidan/AnimeGarden/main?label=last%20commit%20(fork))

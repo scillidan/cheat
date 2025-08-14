@@ -1,0 +1,31 @@
+# [MeloTTS](https://github.com/myshell-ai/MeloTTS)
+
+![](https://img.shields.io/github/license/myshell-ai/MeloTTS)
+
+## install
+
+```sh
+git clone --depth=1 https://github.com/myshell-ai/MeloTTS
+uv venv --python 3.10
+.venv\Scripts\activate.bat
+uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+uv pip install -e .
+uv pip install hf_transfer
+python -m unidic download
+```
+
+## usage
+
+```sh
+melo "Hello" temp.wav --language EN
+melo --device cuda --language EN "<text>" temp.wav && ffplay -autoexit temp.wav
+```
+
+```sh
+# With Web UI
+python melo/app.py
+```
+
+[^1]: [运行web_demo_gradio.py报gbk解码错误，cli和streamlit则可以正常运行](https://github.com/THUDM/ChatGLM3/discussions/1009)
+
+![melotts](/_image/optWeb/melotts.png)

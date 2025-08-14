@@ -1,0 +1,615 @@
+# [Neovim](https://neovim.io)
+
+> Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. [neovim.io]
+
+> Neovim是一个基于Vim的文本编辑器，旨在提高可扩展性和可用性，以鼓励新的应用程序和贡献。 [neovim.io]
+
+## install
+
+```sh
+# Arch
+sudo pacman -S neovim
+# Windows 10
+scoop insatll neovim
+```
+
+### Build from source
+
+[^1] [^2] [^3]
+
+```sh
+# Ubuntu 22 ARM
+sudo apt-get install ninja-build gettext cmake unzip curl
+```
+
+1. Get `Source code` from [Neovim - Releases](https://github.com/neovim/neovim/releases).
+2. Decompress it to `neovim/`.
+
+```sh
+cd neovim
+# rm -r build
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+make install
+ln -s ~/neovim/bin/nvim ~/.local/bin/
+# rm -rf ~/.local/share/nvim/lazy/
+nvim
+```
+
+## Personal do
+
+```sh
+# Arch
+sudo pacman -S \
+	ffmpegthumbnailer
+yay -S --noconfirm \
+	pdftoppm \
+	epub-thumbnailer-git \
+	wordnet-common
+mkdir -p ~/.config/nvim/dictionary
+wget ~/.config/nvim/dictionary/word.txt https://raw.githubusercontent.com/dwyl/english-words/refs/heads/master/words.txt
+```
+
+```sh
+# Windows 10
+set "NEOVIM_CONFIG=%LOCALAPPDATA%\nvim"
+# set "NEOVIM_DATA=%LOCALAPPDATA%\nvim-data"
+del "%NEOVIM_CONFIG%\cheatsheet.txt"
+del "%NEOVIM_CONFIG%\init.lua"
+rmdir /S /Q "%NEOVIM_CONFIG%\lua"
+mklink "%NEOVIM_CONFIG%\cheatsheet.txt" "%DOTFILES_DIR%\.config\nvim\cheatsheet.txt"
+mklink "%NEOVIM_CONFIG%\init.lua" "%DOTFILES_DIR%\.config\nvim\init.lua"
+mklink /J "%NEOVIM_CONFIG%\lua" "%DOTFILES_DIR%\.config\nvim\lua"
+```
+
+## config
+
+### Configure LSP
+
+- [Configuring Language Server Protocol (LSP) in Neovim](https://linovox.com/configuring-language-server-protocol-lsp-in-neovim/)
+- [neovim的LSP配置这一块](https://www.bilibili.com/video/BV1iG7rzTEaz)
+
+### Configure CMP
+
+- [How to Install and Use nvim cmp Autocompletion](https://linovox.com/install-and-use-nvim-cmp/)
+- [Autocomplete with nvim-cmp](https://www.jonashietala.se/blog/2024/05/26/autocomplete_with_nvim-cmp/)
+
+## Neovim headless service
+
+```admonish
+Not recommended. I suspect it once kill my RPI-5's os.
+```
+
+On Ubuntu 24 ARM:
+
+```sh
+vim ~/.config/systemd/user/nvim-headless.service
+```
+
+```
+[Unit]
+Description=Start Neovim Headless Server
+
+[Service]
+ExecStart=nvim --headless --listen 0.0.0.0:1234
+Restart=on-failure
+User=<username>
+
+[Install]
+WantedBy=default.target
+```
+
+```sh
+systemctl --user daemon-reload
+systemctl --user enable --now nvim-headless
+```
+
+On Windows10:
+
+```sh
+C:\Users\User\Scoop\apps\git\current\usr\bin\ssh.exe <username>@<your_host> -L 1234:0.0.0.0:1234 -- /home/<your_host>/.local/bin/nvim --headless --listen 0.0.0.0:1234
+neovide --server <your_host>:1234
+```
+
+## reference
+
+- #blog [Neovim configuration on Windows 10](https://jdhao.github.io/2018/11/15/neovim_configuration_windows/)
+- #document [Neovim - Guide to using Lua in Nvim](https://neovim.io/doc/user/lua-guide.html)
+- #post [Nvim warning](https://github.com/LunarWatcher/auto-pairs#nvim-warning)
+- #post [Why you switched from Neovim to Vim?](https://www.reddit.com/r/vim/comments/16cdbyd/why_you_switched_from_neovim_to_vim/)
+- #sheet [Paul Gorman's Vim Cheatsheet](https://paulgorman.org/technical/vim.html)
+- #video [优化neovim启动速度](https://www.bilibili.com/video/BV1ohWqeSETr)
+- #video [重写neovim配置，新的开始](https://www.bilibili.com/video/BV1UHWoetEz3)
+- [Copy all the lines to clipboard](https://ctan.org/tex-archive/macros/latex/contrib/gitinfo2)
+- [How do I change my language in my init.lua? - neovim](https://vi.stackexchange.com/questions/36426/how-do-i-change-my-language-in-my-init-lua-neovim)
+- [How to use WSL's bash shell as default terminal of gvim/windows 10?](https://vi.stackexchange.com/questions/16386/how-to-use-wsls-bash-shell-as-default-terminal-of-gvim-windows-10)
+- [Only just discovered 'set signcolumn=number', I like it](https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/)
+- [Why does `ESC` move the cursor back in vim?](https://unix.stackexchange.com/questions/11402/why-does-esc-move-the-cursor-back-in-vim)
+
+## cross-reference
+
+- #theme [vanta.nvim.md](/bin/neovim/vanta.nvim.md)
+
+## resource
+
+### mark
+
+- #help [Nvim Cheat Sheet](https://github.com/Djancyp/cheat-sheet)
+- #cmp [Blink Completion (blink.cmp)](https://github.com/Saghen/blink.cmp)
+- #cmp [blink-cmp-conventional-commits](https://github.com/disrupted/blink-cmp-conventional-commits)
+- #cmp [blink-cmp-dictionary](https://github.com/Kaiser-Yang/blink-cmp-dictionary)
+- #cmp [blink-cmp-latex](https://github.com/erooke/blink-cmp-latex)
+- #cmp [blink-cmp-npm](https://github.com/alexandre-abrioux/blink-cmp-npm.nvim)
+- #cmp [blink-emoji.nvim](https://github.com/moyiz/blink-emoji.nvim)
+- #cmp [blink-ripgrep.nvim](https://github.com/mikavilpas/blink-ripgrep.nvim)
+- #cmp [blink.compat](https://github.com/Saghen/blink.compat)
+- #cmp [css-vars.nvim](https://github.com/jdrupal-dev/css-vars.nvim)
+- #cmp [gitmoji.nvim](https://github.com/Dynge/gitmoji.nvim)
+- #console [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- #dap [DAP (Debug Adapter Protocol)](https://github.com/mfussenegger/nvim-dap)
+- #dap [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text)
+- #dap #python [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python)
+- #dap #ui [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+- #debug [Trouble](https://github.com/folke/trouble.nvim)
+- #deveplop [LÖVE 2D](https://github.com/S1M0N38/love2d.nvim)
+- #document [devdocs.nvim](https://github.com/maskudo/devdocs.nvim)
+- #edit [auto-save.nvim](https://github.com/Pocco81/auto-save.nvim)
+- #edit [flash.nvim](https://github.com/folke/flash.nvim)
+- #edit [Hodur](https://github.com/vodchella/hodur.nvim)
+- #edit [multiple-cursors.nvim](https://github.com/brenton-leighton/multiple-cursors.nvim)
+- #edit [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- #edit [tabout.nvim](https://github.com/abecodes/tabout.nvim)
+- #edit [time-machine.nvim](https://github.com/y3owk1n/time-machine.nvim)
+- #edit [tssorter.nvim](https://github.com/mtrajano/tssorter.nvim)
+- #edit #bookmark [arrow.nvim](https://github.com/otavioschwanck/arrow.nvim)
+- #edit #escape [Houdini](https://github.com/TheBlob42/houdini.nvim)
+- #edit #fold [nvim-origami](https://github.com/chrisgrieser/nvim-origami)
+- #edit #move [move-lines.nvim](https://github.com/kobbikobb/move-lines.nvim)
+- #edit #navigate [Beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)
+- #edit #navigate [Glance](https://github.com/DNLHC/glance.nvim)
+- #edit #navigate [Goto Preview](https://github.com/rmagatti/goto-preview)
+- #edit #replace [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim)
+- #edit #table [csvview.nvim](https://github.com/hat0uma/csvview.nvim)
+- #edit #view [fsread.nvim](https://github.com/rewhile/fsread.nvim)
+- #edit #view [tiny-glimmer.nvim](https://github.com/rachartier/tiny-glimmer.nvim)
+- #edit #view [Twilight](https://github.com/folke/twilight.nvim)
+- #edit #yank [nvim-neoclip.lua](https://github.com/AckslD/nvim-neoclip.lua)
+- #epub [epub.nvim](https://github.com/CrystalDime/epub.nvim)
+- #explorer [oil-git-status](https://github.com/refractalize/oil-git-status.nvim)
+- #explorer [oil.nvim](https://github.com/stevearc/oil.nvim)
+- #font [OpenType Sanitizer](https://github.com/khaledhosny/ots)
+- #formatter [conform.nvim](https://github.com/stevearc/conform.nvim)
+- #formatter [mason-conform.nvim](https://github.com/zapling/mason-conform.nvim)
+- #git [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- #highlight [colorizer.lua](https://github.com/catgoose/nvim-colorizer.lua)
+- #highlight [log-highlight.nvim](https://github.com/fei6409/log-highlight.nvim)
+- #key [timseriakov/spamguard.nvim](https://github.com/timseriakov/spamguard.nvim)
+- #key [Which Key](https://github.com/folke/which-key.nvim)
+- #latex [bibcite.nvim](https://github.com/Aidavdw/bibcite.nvim)
+- #latex [luasnip-latex-snippets](https://github.com/iurimateus/luasnip-latex-snippets.nvim)
+- #lsp [mason-lspconfig.nvim](https://github.com/mason-org/mason-lspconfig.nvim)
+- #lsp [mason.nvim](https://github.com/williamboman/mason.nvim)
+- #lsp [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- #lsp [nvim-navic](https://github.com/SmiteshP/nvim-navic)
+- #lsp #linter [mason-nvim-lint](https://github.com/rshkarin/mason-nvim-lint)
+- #lsp #linter [nvim-lint](https://github.com/mfussenegger/nvim-lint)
+- #lsp #server [lsp-setup.nvim](https://github.com/junnplus/lsp-setup.nvim)
+- #lsp #type [wezterm-types](https://github.com/justinsgithub/wezterm-types)
+- #markdown [nvim-mdlink](https://github.com/Nedra1998/nvim-mdlink)
+- #markdown [nvim-toc](https://github.com/richardbizik/nvim-toc)
+- #mini [mini.align](https://github.com/echasnovski/mini.align)
+- #mini [mini.comment](https://github.com/echasnovski/mini.comment)
+- #mini [mini.cursorword](https://github.com/echasnovski/mini.cursorword)
+- #mini [mini.diff](https://github.com/echasnovski/mini.diff)
+- #mini [mini.git](https://github.com/echasnovski/mini-git)
+- #mini [mini.icons](https://github.com/echasnovski/mini.icons)
+- #mini [mini.move](https://github.com/echasnovski/mini.move)
+- #mini [mini.splitjoin](https://github.com/echasnovski/mini.splitjoin)
+- #mini [mini.statusline](https://github.com/echasnovski/mini.statusline)
+- #mini [mini.surround](https://github.com/echasnovski/mini.surround)
+- #mini [mini.trailspace](https://github.com/echasnovski/mini.trailspace)
+- #other [feed.nvim](https://github.com/neo451/feed.nvim)
+- #other [reverb.nvim](https://github.com/whleucka/reverb.nvim)
+- #other #dictionary [dict-popup.nvim](https://github.com/Nealium/dict-popup.nvim)
+- #other #dictionary [dictd.nvim](https://github.com/carlinigraphy/dictd.nvim)
+- #other #translate [translate-shell.vim](https://github.com/echuraev/translate-shell.vim)
+- #other #translate [translate.nvim](https://github.com/uga-rosa/translate.nvim)
+- #project [Neovim project manager plugin](https://github.com/coffebar/neovim-project)
+- #project [warp.nvim](https://github.com/y3owk1n/warp.nvim)
+- #qol [mkdir.nvim](https://github.com/jghauser/mkdir.nvim)
+- #qol [snacks.nvim](https://github.com/folke/snacks.nvim)
+- #qol #config [neoconf.nvim](https://github.com/folke/neoconf.nvim)
+- #qol #session [auto-session](https://github.com/rmagatti/auto-session)
+- #setup [lazy.nvim](https://github.com/folke/lazy.nvim)
+- #setup [lazydev.nvim](https://github.com/folke/lazydev.nvim)
+- #snips [Friendly Snippets](https://github.com/rafamadriz/friendly-snippets)
+- #snips [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- #telescope [Telescope Lazy Plugins](https://github.com/polirritmico/telescope-lazy-plugins.nvim)
+- #telescope [Telescope Zoxide](https://github.com/jvgrootveld/telescope-zoxide)
+- #telescope [telescope-dap.nvim](https://github.com/nvim-telescope/telescope-dap.nvim)
+- #telescope [telescope-egrepify.nvim](https://github.com/fdschmidt93/telescope-egrepify.nvim)
+- #telescope [telescope-gitmoji.nvim](https://github.com/olacin/telescope-gitmoji.nvim)
+- #telescope [telescope-glyph.nvim](https://github.com/alduraibi/telescope-glyph.nvim)
+- #telescope [telescope-heading.nvim](https://github.com/crispgm/telescope-heading.nvim)
+- #telescope [telescope-lazy.nvim](https://github.com/tsakirist/telescope-lazy.nvim)
+- #telescope [Telescope-media-files.nvim](https://github.com/nvim-telescope/telescope-media-files.nvim)
+- #telescope [telescope-repo.nvim](https://github.com/cljoly/telescope-repo.nvim)
+- #telescope [telescope-undo.nvim](https://github.com/debugloop/telescope-undo.nvim)
+- #telescope [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- #telescope [toggleterm-manager.nvim](https://github.com/ryanmsnyder/toggleterm-manager.nvim)
+- #telescope #cmd [cheatsheet.nvim](https://github.com/sudormrfbin/cheatsheet.nvim)
+- #telescope #cmd [telescope-cmdline.nvim](https://github.com/jonarrien/telescope-cmdline.nvim)
+- #telescope #edit [telescope-emoji.nvim](https://github.com/xiyaowong/telescope-emoji.nvim)
+- #edit [import.nvim](https://github.com/piersolenski/telescope-nvim)
+- #telescope #history [telescope-frecency.nvim](https://github.com/nvim-telescope/telescope-frecency.nvim)
+- #telescope #latex [telescope-bibtex](https://github.com/nvim-telescope/telescope-bibtex.nvim)
+- #telescope #navigate [telescope-tabs](https://github.com/LukasPietzschmann/telescope-tabs)
+- #telescope #search [Adjacent.nvim](https://github.com/MaximilianLloyd/adjacent.nvim)
+- #telescope #search [dir-telescope.nvim](https://github.com/princejoogie/dir-telescope.nvim)
+- #telescope #search [telescope-everything.nvim](https://github.com/Verf/telescope-everything.nvim)
+- #tmux [tmux-navigator.nvim](https://github.com/connordeckers/tmux-navigator.nvim)
+- #treesitter [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- #treesitter [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
+- #treesitter [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- #treesitter [Treesitter-indent-object.nvim](https://github.com/kiyoon/treesitter-indent-object.nvim)
+- #ui [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- #window [git-dev.nvim](https://github.com/moyiz/git-dev.nvim)
+- #window [Vimade](https://github.com/TaDaa/vimade)
+- #window [WinShift.nvim](https://github.com/sindrets/winshift.nvim)
+- #workspace [workspaces.nvim](https://github.com/natecraddock/workspaces.nvim)
+
+### cache
+
+- #bookmark [bookmarks.nvim](https://github.com/heilgar/bookmarks.nvim)
+- #buffer [Buffon](https://github.com/francescarpi/buffon.nvim)
+- #buffer [Githubify](https://github.com/manugoyal/githubify)
+- #buffer [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+- #buffer [no-neck-pain.nvim](https://github.com/shortcuts/no-neck-pain.nvim)
+- #cmp [blink-cmp-git](https://github.com/Kaiser-Yang/blink-cmp-git)
+- #cmp [blink-cmp-im](https://github.com/yehuohan/blink-cmp-im)
+- #cmp [blink-cmp-spell](https://github.com/ribru17/blink-cmp-spell)
+- #cmp [blink-nerdfont.nvim](https://github.com/MahanRahmati/blink-nerdfont.nvim)
+- #cmp [cmp-lsp-rimels](https://github.com/liubianshi/cmp-lsp-rimels)
+- #cmp [cmp-pandoc-references](https://github.com/jmbuhr/cmp-pandoc-references)
+- #cmp [compl.nvim](https://github.com/brianaung/compl.nvim)
+- #cmp [ecolog.nvim](https://github.com/ssstba/ecolog.nvim)
+- #cmp [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- #cmp [vim-dadbod-completion](https://github.com/kristijanhusak/vim-dadbod-completion)
+- #comment [Comment.nvim](https://github.com/numToStr/Comment.nvim)
+- #comment [ts-comments.nvim](https://github.com/folke/ts-comments.nvim)
+- #comment [vim-hidecomments](https://github.com/wangfanstar/vim-hidecomments)
+- #config [Neovim minimal LaTeX configuration](https://github.com/WhiteBlackGoose/nvim-latex-preconfig)
+- #console [Better Term](https://github.com/CRAG666/betterTerm.nvim)
+- #console [Lua console](https://github.com/YaroSpace/lua-console.nvim)
+- #console [tmux-compile.nvim](https://github.com/karshPrime/tmux-compile.nvim)
+- #console [trun.nvim](https://github.com/Veirt/trun.nvim)
+- #dap #lua [one-small-step-for-vimkind](https://github.com/jbyuki/one-small-step-for-vimkind)
+- #dap #ui [nvim-dap-view](https://github.com/igorlfs/nvim-dap-view)
+- #dap [DAPInstall](https://github.com/ravenxrz/DAPInstall.nvim)
+- #dap [dap-breakpoints.nvim](https://github.com/Carcuis/dap-breakpoints.nvim)
+- #deveplop [BuildScript Plugin](https://github.com/kosekidev/build-script)
+- #deveplop [DepSync](https://github.com/robertazzopardi/depsync.nvim)
+- #deveplop [Lazy local patcher](https://github.com/polirritmico/lazy-local-patcher.nvim)
+- #deveplop [commons.nvim](https://github.com/linrongbin16/commons.nvim)
+- #deveplop [nvim-px-to-rem](https://github.com/jsongerber/nvim-px-to-rem)
+- #deveplop [pathlib.nvim](https://github.com/pysan3/pathlib.nvim)
+- #deveplop [py-requirements.nvim](https://github.com/MeanderingProgrammer/py-requirements.nvim)
+- #deveplop [swenv.nvim](https://github.com/AckslD/swenv.nvim)
+- #deveplop [templatory.nvim](https://github.com/dheerajshenoy/templatory.nvim)
+- #docset [dash-docs.nvim](https://github.com/sei40kr/dash-docs.nvim)
+- #docset [nvim-telescope-zeal-cli](https://gitlab.com/ivan-cukic/nvim-telescope-zeal-cli)
+- #docset [zeal-lynx-cli](https://github.com/Sanix-Darker/zeal-lynx-cli)
+- #document [Zeavim](https://github.com/KabbAmine/zeavim.vim)
+- #edie #ime [cmp-flypy.nvim](https://github.com/wasden/cmp-flypy.nvim)
+- #edit #bookmark [Lspmark.nvim](https://github.com/tristone13th/lspmark.nvim)
+- #edit #bookmark [bookmarks.nvim](https://github.com/crusj/bookmarks.nvim)
+- #edit #bookmark [spelunk.nvim](https://github.com/EvWilson/spelunk.nvim)
+- #edit #comment [nvim-hemingway](https://github.com/javiorfo/nvim-hemingway)
+- #edit #csv [Decisive.nvim](https://github.com/emmanueltouzery/decisive.nvim)
+- #edit #fold [foldtext.nvim](https://github.com/OXY2DEV/foldtext.nvim)
+- #edit #fold [nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)
+- #edit #ime [fcitx5.nvim](https://github.com/tonyfettes/fcitx5.nvim)
+- #edit #ime [jam.nvim](https://github.com/uga-rosa/jam.nvim)
+- #edit #license [header.nvim](https://github.com/attilarepka/header.nvim)
+- #edit #mode [true-zen.nvim](https://github.com/Pocco81/true-zen.nvim)
+- #edit #mode [zen-mode.nvim](https://github.com/folke/zen-mode.nvim)
+- #edit #move [Treewalker.nvim](https://github.com/aaronik/Treewalker.nvim)
+- #edit #wrap [Vim-ArgWrap](https://git.foosoft.net/alex/vim-argwrap)
+- #edit [Coerce](https://github.com/gregorias/coerce.nvim)
+- #edit [Emojify.nvim](https://github.com/ronisbr/emojify.nvim)
+- #edit [Multicursors.nvim](https://github.com/smoka7/multicursors.nvim)
+- #edit [Neoscroll](https://github.com/karb94/neoscroll.nvim)
+- #edit [Neovim GhostText](https://github.com/wallpants/ghost-text.nvim)
+- #edit [Pinmd](https://github.com/mistgc/pinmd.nvim)
+- #edit [Refjump](https://github.com/mawkler/refjump.nvim)
+- #edit [Smooth Cursor](https://github.com/gen740/SmoothCursor.nvim)
+- #edit [Streamer Mode](https://github.com/Kolkhis/streamer-mode.nvim)
+- #edit [SuEdit](https://github.com/Grafcube/suedit.nvim)
+- #edit [VimSaver](https://github.com/kopsha/vim-saver)
+- #edit [align.nvim](https://github.com/jokesper/align.nvim)
+- #edit [clippy.nvim](https://github.com/petersid2022/clippy.nvim)
+- #edit [commentless.nvim](https://github.com/soemre/commentless.nvim)
+- #edit [dial.nvim](https://github.com/monaqa/dial.nvim)
+- #edit [gyoza.vim](https://github.com/mityu/vim-gyoza)
+- #edit [im-switch.nvim](https://github.com/drop-stones/im-switch.nvim)
+- #edit [img-clip.nvim](https://github.com/hakonharnes/img-clip.nvim)
+- #edit [in-and-out.nvim](https://github.com/ysmb-wtsg/in-and-out.nvim)
+- #edit [interlaced.nvim](https://github.com/tanloong/interlaced.nvim)
+- #edit [join.nvim](https://github.com/jakeru/join.nvim)
+- #edit [jumper.nvim](https://github.com/homerours/jumper.nvim)
+- #edit [keepcursor.nvim](https://github.com/rlychrisg/keepcursor.nvim)
+- #edit [leap.nvim](https://github.com/ggandor/leap.nvim)
+- #edit [namu.nvim](https://github.com/bassamsdata/namu.nvim)
+- #edit [navigate-note.nvim](https://github.com/you-n-g/navigate-note.nvim)
+- #edit [navimark.nvim](https://github.com/zongben/navimark.nvim)
+- #edit [numb.nvim](https://github.com/nacro90/numb.nvim)
+- #edit [nvim-surround](https://github.com/kylechui/nvim-surround)
+- #edit [nvumi](https://github.com/josephburgess/nvumi)
+- #edit [referencer.nvim](https://github.com/romus204/referencer.nvim)
+- #edit [remember.nvim](https://github.com/vladdoster/remember.nvim)
+- #edit [rip-substitute](https://github.com/chrisgrieser/nvim-rip-substitute)
+- #edit [scalpel.nvim](https://github.com/wassimk/scalpel.nvim)
+- #edit [sort.nvim](https://github.com/sQVe/sort.nvim)
+- #edit [swap.nvim](https://github.com/tigion/swap.nvim)
+- #edit [tele-tabby.nvim](https://github.com/TC72/telescope-tele-tabby.nvim)
+- #edit [text-case.nvim](https://github.com/johmsalas/text-case.nvim)
+- #edit [truncateline.nvim](https://github.com/rlychrisg/truncateline.nvim)
+- #edit [vim-sandwich](https://github.com/machakann/vim-sandwich)
+- #edit [visimatch.nvim](https://github.com/wurli/visimatch.nvim)
+- #explorer [Command-T](https://github.com/wincent/command-t)
+- #explorer [Grapple.nvim](https://github.com/cbochs/grapple.nvim)
+- #explorer [Neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- #explorer [Rnvimr](https://github.com/kevinhwang91/rnvimr)
+- #explorer [Triptych.nvim](https://github.com/simonmclean/triptych.nvim)
+- #explorer [browser-bookmarks.nvim](https://github.com/dhruvmanila/browser-bookmarks.nvim)
+- #explorer [dired.nvim](https://github.com/X3eRo0/dired.nvim)
+- #explorer [fm-nvim](https://github.com/is0n/fm-nvim)
+- #explorer [netrw.nvim](https://github.com/prichrd/netrw.nvim)
+- #explorer [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- #explorer [open-browser.vim](https://github.com/tyru/open-browser.vim)
+- #explorer [ranger.nvim](https://github.com/kelly-lin/ranger.nvim)
+- #explorer [sidebar.nvim](https://github.com/sidebar-nvim/sidebar.nvim)
+- #explorer [vfiler.vim](https://github.com/obaland/vfiler.vim)
+- #explorer [vim-sidebar-manager](https://github.com/brglng/vim-sidebar-manager)
+- #font [otf2ttf](https://github.com/awesometoolbox/otf2ttf)
+- #formatter [stylua-nvim](https://github.com/ckipp01/stylua-nvim)
+- #git #diff [axkirillov/unified.nvim](https://github.com/axkirillov/unified.nvim)
+- #git #issue [Octo.nvim](https://github.com/pwntester/octo.nvim)
+- #git [Diffview.nvim](https://github.com/sindrets/diffview.nvim)
+- #git [conflict-juggler.nvim](https://github.com/pv-hernandez/conflict-juggler.nvim)
+- #git [gitblame.nvim](https://github.com/ring0-rootkit/gitblame.nvim)
+- #git [gitpad.nvim](https://github.com/yujinyuz/gitpad.nvim)
+- #git [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
+- #git [nvim-git-fixer](https://github.com/LhKipp/nvim-git-fixer)
+- #git [telescope-code-fence.nvim](https://github.com/chip/telescope-code-fence.nvim)
+- #git [telescope-git-conflicts.nvim](https://github.com/Snikimonkd/telescope-git-conflicts.nvim)
+- #git [telescope-git-diffs.nvim](https://github.com/paopaol/telescope-git-diffs.nvim)
+- #git [telescope-git-submodules.nvim](https://github.com/agoodshort/telescope-git-submodules.nvim)
+- #gui [Goneovim](https://github.com/akiyosi/goneovim)
+- #gui [roarie-commands](https://github.com/lalbornoz/roarie-commands.vim)
+- #highlight [Modicator.nvim](https://github.com/mawkler/modicator.nvim)
+- #highlight [NeoColumn.nvim](https://github.com/ecthelionvi/NeoColumn.nvim)
+- #highlight [Paint](https://github.com/folke/paint.nvim)
+- #highlight [Rainbow delimiters for Neovim](https://gitlab.com/HiPhish/rainbow-delimiters.nvim)
+- #highlight [STCursorword](https://github.com/sontungexpt/stcursorword)
+- #highlight [Syntax Highlighted Cursor](https://github.com/ukyouz/syntax-highlighted-cursor.nvim)
+- #highlight [colorful-menu.nvim](https://github.com/xzbdmw/colorful-menu.nvim)
+- #highlight [multicolumn.nvim](https://github.com/fmbarina/multicolumn.nvim)
+- #highlight [nvim-cursorline](https://github.com/ya2s/nvim-cursorline)
+- #highlight [whitespace.nvim](https://github.com/johnfrankmorgan/whitespace.nvim)
+- #history [Memento.nvim](https://github.com/gaborvecsei/memento.nvim)
+- #ime [rime.nvim](https://github.com/Freed-Wu/rime.nvim)
+- #key [Mapper](https://github.com/gregorias/nvim-mapper)
+- #key [commander.nvim](https://github.com/FeiyouG/commander.nvim)
+- #key [keymap-stats.nvim](https://github.com/gmatheu/keymap-stats.nvim)
+- #key [legendary.nvim](https://github.com/mrjones2014/legendary.nvim)
+- #latex [LuaSnip-LaTeX-Snippets](https://github.com/evesdropper/luasnip-latex-snippets.nvim)
+- #latex [PDF Preview](https://github.com/franco-ruggeri/pdf-preview.nvim)
+- #latex [VimTeX](https://github.com/lervag/vimtex)
+- #latex [nvim-cmp Lua LaTeX Symbols](https://github.com/amarz45/nvim-cmp-lua-latex-symbols)
+- #latex [rnoweb-nvim](https://github.com/bamonroe/rnoweb-nvim)
+- #license [header.nvim](https://github.com/attilarepka/header.nvim)
+- #llm [Aider Plugin for Neovim](https://github.com/joshuavial/aider.nvim)
+- #llm [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim)
+- #llm [CodeCompanion](https://github.com/olimorris/codecompanion.nvim)
+- #llm [Smear cursor for Neovim](https://github.com/sphamba/smear-cursor.nvim)
+- #llm [Telescope GPT](https://github.com/HPRIOR/telescope-gpt)
+- #llm [arena.nvim](https://github.com/dzfrias/arena.nvim)
+- #llm [avante.nvim](https://github.com/yetone/avante.nvim)
+- #llm [llm.nvim](https://github.com/Kurama622/llm.nvim)
+- #llm [nvim-aider](https://github.com/GeorgesAlkhouri/nvim-aider)
+- #llm [ollama.nvim](https://github.com/nomnivore/ollama.nvim)
+- #llm [parrot.nvim](https://github.com/frankroeder/parrot.nvim)
+- #llm [yarepl.nvim](https://github.com/milanglacier/yarepl.nvim)
+- #lsp #deveplop [none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)
+- #lsp [Harper](https://github.com/elijah-potter/harper)
+- #lsp [dev-tools.nvim](https://github.com/yarospace/dev-tools.nvim)
+- #lsp [lazy-lsp.nvim](https://github.com/dundalek/lazy-lsp.nvim)
+- #lsp [lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim)
+- #lsp [lspkind-nvim](https://github.com/onsails/lspkind.nvim)
+- #lsp [rime-ls](https://github.com/wlh320/rime-ls)
+- #markdown #table [A markdown table editor](https://github.com/SCJangra/table-nvim)
+- #markdown [headlines.nvim](https://github.com/lukas-reineke/headlines.nvim)
+- #markdown [kiwi.nvim](https://github.com/serenevoid/kiwi.nvim)
+- #markdown [markdown-toc](https://github.com/ChuufMaster/markdown-toc)
+- #markdown [markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)
+- #markdown [markdowny.nvim](https://github.com/antonk52/markdowny.nvim)
+- #markdown [marknav.nvim](https://github.com/daenikon/marknav.nvim)
+- #markdown [md-table-tidy.nvim](https://github.com/timantipov/md-table-tidy.nvim)
+- #markdown [mkdnflow.nvim](https://github.com/jakewvincent/mkdnflow.nvim)
+- #markdown [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)
+- #markdown [peek.nvim](https://github.com/toppair/peek.nvim)
+- #mini [mini.bracketed](https://github.com/echasnovski/mini.bracketed)
+- #mini [mini.clue](https://github.com/echasnovski/mini.clue)
+- #mini [mini.colors](https://github.com/echasnovski/mini.colors)
+- #mini [mini.hipatterns](https://github.com/echasnovski/mini.hipatterns)
+- #mini [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
+- #mini [mini.operators](https://github.com/echasnovski/mini.operators)
+- #mini [mini.pairs](https://github.com/echasnovski/mini.pairs)
+- #mini [mini.pick](https://github.com/echasnovski/mini.pick)
+- #mini [mini.sessions](https://github.com/echasnovski/mini.sessions)
+- #move [eyeliner.nvim](https://github.com/jinh0/eyeliner.nvim)
+- #mpv #youtube [mpv.nvim](https://github.com/tamton-aquib/mpv.nvim)
+- #navigate [aerial.nvim](https://github.com/stevearc/aerial.nvim)
+- #navigate [nvim-bqf](https://github.com/kevinhwang91/nvim-bqf)
+- #opt #tmux [tmux-navigator.nvim](https://github.com/connordeckers/tmux-navigator.nvim)
+- #opt [dps-joplin](https://github.com/tomato3713/dps-joplin)
+- #opt [plugin_neovim](https://github.com/pieces-app/plugin_neovim)
+- #other #dictionary [dict.nvim](https://github.com/jalvesaq/dict.nvim)
+- #other #dictionary [dictionary.nvim](https://github.com/chrscchrn/dictionary.nvim)
+- #other #hex [hexer.nvim](https://github.com/theKnightsOfRohan/hexer.nvim)
+- #other #macro [NeoComposer.nvim](https://github.com/ecthelionvi/NeoComposer.nvim)
+- #other #note [Memo.nvim](https://github.com/KIMGEONUNG/memo.nvim)
+- #other #sftp [Transmit.nvim](https://github.com/DevDec/transmit.nvim)
+- #other #translate [Trans.nvim](https://github.com/JuanZoran/Trans.nvim)
+- #other #translate [dps-translate-vim](https://github.com/Omochice/dps-translate-vim)
+- #other #watch [funzzy.nvim](https://github.com/cristianoliveira/funzzy.nvim)
+- #other [NVIM-RSS](https://github.com/EMPAT94/nvim-rss)
+- #other [Neovim Simple Note Plugin](https://github.com/rguruprakash/simple-note.nvim)
+- #other [cellular-automaton.nvim](https://github.com/Eandrju/cellular-automaton.nvim)
+- #other [color-picker.nvim](https://github.com/ziontee113/color-picker.nvim)
+- #other [decipher.nvim](https://github.com/MisanthropicBit/decipher.nvim)
+- #other [dexercism.vim](https://github.com/pyonk/dexercism.vim)
+- #other [neovimpv](https://github.com/queue-miscreant/neovimpv)
+- #other [sqlpilot.nvim](https://github.com/rsdot/sqlpilot.nvim)
+- #other [vim-todo](https://github.com/wsdjeg/vim-todo)
+- #pdf [nougat.nvim](https://github.com/facebookresearch/nougat)
+- #pdf [nvim-pandoc-pdf](https://github.com/kaymmm/nvim-pandoc-pdf)
+- #pdf [nvim-texis](https://github.com/jhofscheier/nvim-texis)
+- #preset [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+- #preset [LazyVim](https://github.com/LazyVim/LazyVim)
+- #preset [LunarVim](https://github.com/LunarVim/LunarVim)
+- #preset [Neorg](https://github.com/nvim-neorg/neorg)
+- #preset [NvChad](https://github.com/NvChad/NvChad)
+- #preset [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
+- #preset [mini.nvim](https://github.com/echasnovski/mini.nvim)
+- #preset [oxocarbon.nvim](https://github.com/nyoom-engineering/oxocarbon.nvim)
+- #run [LitREPL](https://github.com/sergei-mironov/litrepl)
+- #run [Molten](https://github.com/benlubas/molten-nvim)
+- #run [Notebook Navigator](https://github.com/GCBallesteros/NotebookNavigator.nvim)
+- #run [Slime for neovim](https://github.com/Mackrics/neoslime)
+- #run [code_runner.vim](https://github.com/MajorZiploc/code_runner.vim)
+- #run [codi.vim](https://github.com/metakirby5/codi.vim)
+- #run [compal.nvim](https://github.com/sashetophizika/compal.nvim)
+- #run [flow.nvim](https://github.com/arjunmahishi/flow.nvim)
+- #run [nvim-fuel](https://github.com/javiorfo/nvim-fuel)
+- #run [runner.nvim](https://github.com/MarcHamamji/runner.nvim)
+- #run [sendline](https://github.com/bugsbugsbux/sendline)
+- #run [tshunkyPy](https://github.com/jeff-dh/tshunkyPy.nvim)
+- #screenshot [Freeze Neovim Plugin](https://github.com/AlejandroSuero/freeze-code.nvim)
+- #screenshot [code-shot.nvim](https://github.com/niuiic/code-shot.nvim)
+- #screenshot [codesnap](https://github.com/mistricky/codesnap.nvim)
+- #screenshot [freeze.nvim](https://github.com/ndom91/freeze.nvim)
+- #search [bible-verse.nvim](https://github.com/anthony-halim/bible-verse.nvim)
+- #search [fzfx.nvim](https://github.com/linrongbin16/fzfx.nvim)
+- #session [Persistence](https://github.com/folke/persistence.nvim)
+- #session [Session Lens](https://github.com/rmagatti/session-lens)
+- #session [sessions.nvim](https://github.com/natecraddock/sessions.nvim)
+- #setup #load [lz.n](https://github.com/nvim-neorocks/lz.n)
+- #setup [activate.nvim](https://github.com/roobert/activate.nvim)
+- #setup [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- #setup [rocks.nvim](https://github.com/nvim-neorocks/rocks.nvim)
+- #setup [vim-plug](https://github.com/junegunn/vim-plug)
+- #ssh [Remote SSH](https://github.com/inhesrom/remote-ssh.nvim)
+- #statusline [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- #synax [dpp.vim](https://github.com/Shougo/dpp.vim)
+- #synax [vim-detect-indent](https://github.com/kg8m/vim-detect-indent)
+- #syntax [nvim-lilypond-suite](https://github.com/martineausimon/nvim-lilypond-suite)
+- #syntax [toggle-quotes.nvim](https://github.com/paul-louyot/toggle-quotes.nvim)
+- #syntax [vim-typo](https://github.com/tani/vim-typo)
+- #syntax [zk-nvim](https://github.com/mickael-menu/zk-nvim)
+- #tabline [Minimal-tabline.nvim](https://github.com/koenverburg/minimal-tabline.nvim)
+- #task [Macrothis.nvim](https://github.com/desdic/macrothis.nvim)
+- #task [overseer.nvim](https://github.com/stevearc/overseer.nvim)
+- #telescope #dir [Whaler](https://github.com/salorak/whaler.nvim)
+- #telescope #dir [telescope-search-dir-picker](https://github.com/smilovanovic/telescope-search-dir-picker.nvim)
+- #telescope #snips [telescope-luasnip](https://github.com/benfowler/telescope-luasnip.nvim)
+- #telescope #snips [telescope-ultisnips.nvim](https://github.com/fhill2/telescope-ultisnips.nvim)
+- #telescope #task [Telescope tasks](https://github.com/lpoto/telescope-tasks.nvim)
+- #telescope #task [telescope-asynctasks.nvim](https://github.com/GustavoKatel/telescope-asynctasks.nvim)
+- #telescope [Telescope recent files extension](https://github.com/smartpde/telescope-recent-files)
+- #telescope [Telescope-github.nvim](https://github.com/nvim-telescope/telescope-github.nvim)
+- #telescope [telescope-all-recent.nvim](https://github.com/prochri/telescope-all-recent.nvim)
+- #telescope [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
+- #telescope [telescope-git-branch](https://github.com/mrloop/telescope-git-branch.nvim)
+- #telescope [telescope-git-diffs.nvim](https://github.com/paopaol/telescope-git-diffs.nvim)
+- #telescope [telescope-hop.nvim](https://github.com/nvim-telescope/telescope-hop.nvim)
+- #telescope [telescope-menu.nvim](https://github.com/octarect/telescope-menu.nvim)
+- #telescope [telescope-monorepos](https://github.com/rishabhjain9191/telescope-monorepos)
+- #telescope [telescope-openbrowser.nvim](https://github.com/tamago324/telescope-openbrowser.nvim)
+- #telescope [telescope-packer.nvim](https://github.com/nvim-telescope/telescope-packer.nvim)
+- #telescope [telescope-picker-list.nvim](https://github.com/OliverChao/telescope-picker-list.nvim)
+- #telescope [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim)
+- #telescope [telescope-software-licenses.nvim](https://github.com/chip/telescope-software-licenses.nvim)
+- #telescope [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)
+- #telescope [telescope-youtube-mpv.nvim](https://github.com/4542elgh/telescope-youtube-mpv.nvim)
+- #telescope [telescope-z.nvim](https://github.com/nvim-telescope/telescope-z.nvim)
+- #terminal [ErgoTerm](https://github.com/waiting-for-dev/ergoterm.nvim)
+- #terminal [floatty.nvim](https://github.com/ingur/floatty.nvim)
+- #theme [gruvbox.nvim](https://gitlab.com/motaz-shokry/gruvbox.nvim)
+- #todo [todotxt.nvim](https://github.com/phrmendes/todotxt.nvim)
+- #treesitter [nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
+- #treesitter [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
+- #ui #statusline [battery.nvim](https://github.com/justinhj/battery.nvim)
+- #ui #statusline [lsp-progress.nvim](https://github.com/linrongbin16/lsp-progress.nvim)
+- #ui #statusline [slimline.nvim](https://github.com/sschleemilch/slimline.nvim)
+- #ui #statusline [yasl.nvim](https://github.com/brianaung/yasl.nvim)
+- #ui #theme [Artimux](https://github.com/tribhuwan-kumar/Artimux)
+- #ui #theme [External themes](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes)
+- #ui #theme [Gruvbox Flat](https://github.com/eddyekofo94/gruvbox-flat.nvim)
+- #ui #theme [Iceberg](https://github.com/cocopon/iceberg.vim)
+- #ui #theme [Kyoto Night NeoVim](https://github.com/shrikecode/kyotonight.vim)
+- #ui #theme [Last Color](https://github.com/raddari/last-color.nvim)
+- #ui #theme [Min Theme](https://github.com/datsfilipe/min-theme.nvim)
+- #ui #theme [Neon](https://github.com/rafamadriz/neon)
+- #ui #theme [Nightfox](https://github.com/EdenEast/nightfox.nvim)
+- #ui #theme [Styler](https://github.com/folke/styler.nvim)
+- #ui #theme [The Ink](https://github.com/JWW127/theink)
+- #ui #theme [ThemeSwitch](https://github.com/nishu-murmu/ThemeSwitch.nvim)
+- #ui #theme [Themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
+- #ui #theme [Themify](https://github.com/LmanTW/themify.nvim)
+- #ui #theme [Tokyo Night](https://github.com/folke/tokyonight.nvim)
+- #ui #theme [colorbox.nvim](https://github.com/linrongbin16/colorbox.nvim)
+- #ui #theme [lackluster](https://github.com/slugbyte/lackluster.nvim)
+- #ui #theme [newpaper.nvim](https://github.com/yorik1984/newpaper.nvim)
+- #ui #theme [northernlights.vim](https://github.com/m-gail/northernlights.vim)
+- #ui [Noice](https://github.com/folke/noice.nvim)
+- #ui [nvim-notify](https://github.com/rcarriga/nvim-notify)
+- #ui [tiny-devicons-auto-colors.nvim](https://github.com/rachartier/tiny-devicons-auto-colors.nvim)
+- #ui [visual-whitespace.nvim](https://github.com/mcauley-penney/visual-whitespace.nvim)
+- #uml [nvim-soil](https://github.com/chaosystema/nvim-soil)
+- #version [Bob](https://github.com/MordechaiHadad/bob)
+- #version [nvs (Neovim Version Switcher)](https://github.com/y3owk1n/nvs)
+- #view [Markdown to PDF](https://github.com/arminveres/md-pdf.nvim)
+- #winbar [barbecue.nvim](https://github.com/utilyre/barbecue.nvim)
+- #winbar [bars.nvim](https://github.com/OXY2DEV/bars.nvim)
+- #winbar [do.nvim](https://github.com/nocksock/do.nvim)
+- #winbar [incline.nvim](https://github.com/b0o/incline.nvim)
+- #window [tint.nvim](https://github.com/levouh/tint.nvim)
+- #window [win-mover.nvim](https://github.com/ycdzj/win-mover.nvim)
+- #window [winmove.nvim](https://github.com/MisanthropicBit/winmove.nvim)
+- #workdir [rooter.nvim](https://github.com/wsdjeg/rooter.nvim)
+- #yank [YankBank](https://github.com/ptdewey/yankbank-nvim)
+- #yank [karen-yank](https://github.com/tenxsoydev/karen-yank.nvim)
+- #yank [yanklines.nvim](https://github.com/obergodmar/yanklines.nvim)
+- #yank [yanklock.nvim](https://github.com/daltongd/yanklock.nvim)
+- [Filetype Based Template Plugin For Neovim](https://github.com/doganalper/template.nvim)
+- [Luarocks.nvim](https://github.com/camspiers/luarocks)
+- [NeoDoc.nvim](https://github.com/SunnyTamang/neodoc.nvim)
+- [Text-to-speech in neovim](https://github.com/johannww/tts.nvim)
+- [famous-quotes.nvim](https://github.com/mahyarmirrashed/famous-quotes.nvim)
+- [gitlab.nvim](https://github.com/harrisoncramer/GitLab.nvim)
+- [neotest-busted](https://github.com/MisanthropicBit/neotest-busted)
+- [nvim-luxmotion](https://github.com/LuxVim/nvim-luxmotion)
+- [rgflow.nvim](https://github.com/mangelozzi/rgflow.nvim)
+- [sshfs.nvim](https://github.com/uhs-robert/sshfs.nvim)
+
+### cancel
+
+- #edit [yanky.nvim](https://github.com/gbprod/yanky.nvim)
+- #search #document [nvim-devdocs](https://github.com/warpaint9299/nvim-devdocs)
+- #search #document [nvim-devdocs](https://github.com/luckasRanarison/nvim-devdocs)
+
+[^1]: [PPA not working with lazy.nvim](https://www.reddit.com/r/neovim/comments/166fpfb/ppa_not_working_with_lazynvim/)
+[^2]: [Neovim - Build prerequisites](https://github.com/neovim/neovim/blob/master/BUILD.md#build-prerequisites)
+[^3]: [Install from source](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-source)
+
