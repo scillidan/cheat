@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>directory-opus - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/opt/_windows/directory-opus.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="directory-opus"><a class="header" href="#directory-opus"><a href="https://gpsoft.com.au">Directory Opus</a></a></h1>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
+<ul>
+<li>设置 → 选项 → 工具栏 → 图标 → 导入</li>
+<li>设置 → 自定义工具栏 → 快捷键</li>
+<li>设置 → 文件类型 → 文件类型群组 → Archives → 编辑 → Ctrl + 左键双击 → <code>SmartZip.exe x {allfilepath}</code></li>
+<li>设置 → 文件类型 → 系统文件类型 → URL:Magnet URI → 编辑 → open → 编辑<code>C:\Users\User\Scoop\apps\qbittorrent-enhanced\current\qbittorrent.exe "%1"</code></li>
+</ul>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li><a href="https://www.gpsoft.com.au/help/opus12/index.html#!Documents/Codes_for_passing_filenames.htm">Codes for passing filenames</a></li>
+<li><a href="https://resource.dopus.com/t/how-do-i-edit-the-folder-background-context-menu/35712/2">How do I edit the folder background context menu?</a></li>
+<li><a href="https://resource.dopus.com/t/how-to-create-a-icon-set/3415/20">How to create a Icon set?</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#backup <a href="https://resource.dopus.com/t/automatic-backup-of-opus-config/16485">Automatic backup of Opus config?</a></li>
+<li>#exif <a href="https://github.com/PolarGoose/DirectoryOpus-ExifToolColumns-Plugin">DirectoryOpus-ExifToolColumns-Plugin</a></li>
+<li>#exif <a href="https://resource.dopus.com/t/photo-exif/35015">Photo Exif</a></li>
+<li>#file <a href="https://resource.dopus.com/t/extended-functionality-for-f2/43765">Extended functionality for F2</a></li>
+<li>#file <a href="https://resource.dopus.com/t/fastcopy-how-to-integrate-or-install-it-integration-use-commands/35158">FastCopy - How to Integrate or Install It</a></li>
+<li>#file <a href="https://resource.dopus.com/t/folder-packer/48891">Folder packer+</a></li>
+<li>#file <a href="https://resource.dopus.com/t/smart-archive-extraction-enhanced/40637">Smart archive extraction</a></li>
+<li>#file <a href="https://resource.dopus.com/t/tool-hash-file-creation-validation/24378">Tool: Hash file creation &amp; validation</a></li>
+<li>#filter <a href="https://resource.dopus.com/t/save-and-restore-quickfilter-settings/43718">Save and restore QuickFilter settings</a></li>
+<li>#icon <a href="https://resource.dopus.com/t/directory-opus-12-flat-aeicon-set-v1-0/29096">Directory Opus 12 Flat AEicon Set v1.0</a></li>
+<li>#icon <a href="https://resource.dopus.com/t/directory-opus-basic-icons-v2-0-delta-drop-in-replacement/25840/2">Directory Opus BASIC Icons</a></li>
+<li>#mediainfo <a href="https://github.com/cy-gh/DOpus_CuMediaExtenders">CuMediaExtenders</a></li>
+<li>#mediainfo <a href="https://resource.dopus.com/t/printmeta-write-metadata-to-text-files/42786">PrintMeta</a></li>
+<li>#theme <a href="https://resource.dopus.com/t/simple-windows-10-dark-theme/30055">Simple Windows 10 Dark Theme</a></li>
+<li>#view <a href="https://resource.dopus.com/t/cycle-through-layouts/51223">Cycle through Layouts</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#cd <a href="https://resource.dopus.com/t/gorootarchive-jump-back-to-the-root-of-an-archive/51408">GoRootArchive</a></li>
+<li>#clean <a href="https://resource.dopus.com/t/folder-cleaner-delete-folders-but-keep-files/52555">Folder Cleaner</a></li>
+<li>#clipboard <a href="https://resource.dopus.com/t/paste-url-from-clipboard-as-url-file/44678">Paste URL from clipboard as .url file</a></li>
+<li>#command <a href="https://resource.dopus.com/t/script-for-running-various-commands-when-entering-specific-paths/51839/2">Running Various Commands When Entering Specific Paths</a></li>
+<li>#copy <a href="https://resource.dopus.com/t/copyrecreatepath-recreate-paths-for-archive-files/51431">CopyRecreatePath</a></li>
+<li>#copy <a href="https://resource.dopus.com/t/fastcopy-buttons-drop-menu/9351">FastCopy Buttons &amp; Drop Menu</a></li>
+<li>#download <a href="https://resource.dopus.com/t/download-file-from-clipboard-url-directly-to-folder/44679">Download file from clipboard URL directly to folder</a></li>
+<li>#explorer <a href="https://github.com/mrfearless/MOSViewer">MOSViewer</a></li>
+<li>#file <a href="https://resource.dopus.com/t/better-new-text-document-script/50180">Better New Text Document"" Script""</a></li>
+<li>#file <a href="https://resource.dopus.com/t/scripts-to-copy-file-folder-name-s-or-path-s-with-automatic-surrounding-quotes-based-on-spaces/51122">copy file/folder name(s) or path(s) ...</a></li>
+<li>#file <a href="https://resource.dopus.com/t/organize-files-into-group-based-folders/53805/1">Organize Files into Group-Based Folders</a></li>
+<li>#filter <a href="https://resource.dopus.com/t/everythingfoldersize-use-everything-to-calculate-folder-sizes/44281">EverythingFolderSize</a></li>
+<li>#filter <a href="https://resource.dopus.com/t/filter-by-column-filter-bar-for-all-columns/47559">Filter by Column</a></li>
+<li>#foobar2000 <a href="https://resource.dopus.com/t/watchfoobar-monitor-what-foobar2000-is-playing/51286">WatchFoobar</a></li>
+<li>#git <a href="https://resource.dopus.com/t/open-remote-url-for-git-repositories/49447/1">Open Remote URL for git repositories</a></li>
+<li>#history <a href="https://resource.dopus.com/t/reopen-multiple-closed-tabs-via-gui-or-a-command/50158">Reopen multiple closed tabs via GUI or a command</a></li>
+<li>#icon <a href="https://resource.dopus.com/t/icontools-extract-single-icons-from-iconset-html-reference-page/51407">IconTools</a></li>
+<li>#image <a href="https://resource.dopus.com/t/button-crop-image-fixed-ratio/44741">Button - Crop Image Fixed Ratio</a></li>
+<li>#image <a href="https://resource.dopus.com/t/resize-image/49090">Resize image</a></li>
+<li>#log <a href="https://resource.dopus.com/t/commonlogger-a-logger-for-opus-js-scripting/52058">CommonLogger</a></li>
+<li>#metadata <a href="https://resource.dopus.com/t/backupmeta-backup-and-restore-opus-metadata/45497">BackupMeta</a></li>
+<li>#metadata <a href="https://github.com/PolarGoose/DirectoryOpus-TextFileEncoding-plugin">DirectoryOpus-TextFileEncoding-plugin</a></li>
+<li>#pdf <a href="https://resource.dopus.com/t/column-to-display-page-count-in-word-and-pdf-documents/55876">Column to display page count in Word and PDF documents</a></li>
+<li>#project <a href="https://resource.dopus.com/t/current-projects-buttons-hotkeys/48908">Current Projects buttons (+hotkeys)</a></li>
+<li>#retroarch <a href="https://resource.dopus.com/t/command-createretroarchplaylist/52127">CreateRetroArchPlaylist</a></li>
+<li>#search <a href="https://github.com/TheZoc/EverythingDopus/">EverythingDopus</a></li>
+<li>#shortcut <a href="https://resource.dopus.com/t/script-command-for-copying-shortcut-lnk-targets-including-arguments/51593">copying Shortcut (.lnk) targets</a></li>
+<li>#signature <a href="https://resource.dopus.com/t/column-verify-digital-signatures/51462">Column - Verify Digital Signatures</a></li>
+<li>#torrent <a href="https://resource.dopus.com/t/column-torrentinfo-bt-bdecode-parsing-torrent-file-to-generate-metadata-columns/49741">Column_TorrentInfo</a></li>
+<li>#tree <a href="https://resource.dopus.com/t/script-command-for-copying-tree-view-of-selected-files-folders/51628">copying tree view of selected files &amp; folders</a></li>
+<li>#v13 <a href="https://resource.dopus.com/t/do-meta-wizard-command/48578">DO Meta Wizard Command</a></li>
+<li>#v13 <a href="https://resource.dopus.com/t/exiftool-custom-columns/38975">ExifTool Custom Columns</a></li>
+<li>#v13 <a href="https://resource.dopus.com/t/mp3-tag-file/48563">Mp3 Tag File</a></li>
+<li>#v13 <a href="https://resource.dopus.com/t/recenttocollection-create-a-collection-from-recent-folders/48571">RecentToCollection</a></li>
+<li>#viewer <a href="https://gist.github.com/ScribbleGhost/e88738769df7f67a335eae634500cbe1">Sync viewer and file selection</a></li>
+<li><a href="https://resource.dopus.com/t/deletefromfiles-delete-files-from-text-files/56270">DeleteFromFiles (Delete files from text files)</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../opt/_windows/detect-it-easy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../opt/_windows/ditto.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../opt/_windows/detect-it-easy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../opt/_windows/ditto.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

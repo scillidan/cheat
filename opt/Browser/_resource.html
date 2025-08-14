@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Browser - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/opt/Browser/_resource.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="opt_browser"><a class="header" href="#opt_browser">opt_Browser</a></h1>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#chrome #firefox <a href="https://webextension.org/listing/screen-brightness.html">Adjust Page Brightness</a></li>
+<li>#chrome #firefox <a href="https://augmentedsteam.com">Augmented Steam</a></li>
+<li>#chrome #firefox <a href="https://github.com/Ademking/BetterViewer">BetterViewer</a></li>
+<li>#chrome #firefox <a href="https://webextension.org/listing/block-site.html">Block Site</a></li>
+<li>#chrome #firefox <a href="https://github.com/xifangczy/cat-catch">cat-catch</a></li>
+<li>#chrome #firefox <a href="https://github.com/Cookie-AutoDelete/Cookie-AutoDelete">Cookie AutoDelete</a></li>
+<li>#chrome #firefox <a href="https://cookie-editor.cgagnier.ca">Cookie-Editor</a></li>
+<li>#chrome #firefox <a href="https://darkreader.org">Dark Reader</a></li>
+<li>#chrome #firefox <a href="https://distill.io/">Distill Web Monitor</a></li>
+<li>#chrome #firefox <a href="https://github.com/floccusAddon">floccus bookmarks sync</a></li>
+<li>#chrome #firefox <a href="https://github.com/kairi003/Get-cookies.txt-LOCALLY">Get cookies.txt LOCALLY</a></li>
+<li>#chrome #firefox <a href="https://github.com/0ui/gif-scrubber">GIF Scrubber</a></li>
+<li>#chrome #firefox <a href="https://github.com/EnixCoda/Gitako">Gitako</a></li>
+<li>#chrome #firefox <a href="https://github.com/cyclotruc/gitingest">GitIngest</a></li>
+<li>#chrome #firefox <a href="https://gitzip.org">GitZip for github</a></li>
+<li>#chrome #firefox <a href="https://github.com/TheFantasticWarrior/chrome-extension-imagus">Imagus</a></li>
+<li>#chrome #firefox <a href="https://github.com/translate-tools/linguist">Linguist</a></li>
+<li>#chrome #firefox <a href="https://github.com/benblack86/linkclump">Linkclump</a></li>
+<li>#chrome #firefox <a href="https://github.com/md-reader/md-reader">Markdown Reader</a></li>
+<li>#chrome #firefox <a href="https://github.com/luandersonn/Modern-scrollbar">Modern scrollbar</a></li>
+<li>#chrome #firefox <a href="https://github.com/htrinter/Open-Multiple-URLs">Open Multiple URLs</a></li>
+<li>#chrome #firefox <a href="https://github.com/rNeomy/reader-view/">Reader View</a></li>
+<li>#chrome #firefox <a href="https://github.com/einaregilsson/Redirector">Redirector</a></li>
+<li>#chrome #firefox <a href="https://github.com/DIYgod/RSSHub-Radar">RSSHub Radar</a></li>
+<li>#chrome #firefox <a href="https://github.com/simov/screenshot-capture">Screenshot Capture</a></li>
+<li>#chrome #firefox <a href="https://github.com/gildas-lormeau/SingleFile">SingleFile</a></li>
+<li>#chrome #firefox <a href="https://github.com/FallenMax/smart-toc">Smart TOC</a></li>
+<li>#chrome #firefox <a href="https://steamdb.info/extension">SteamDB</a></li>
+<li>#chrome #firefox <a href="https://add0n.com/stylus.html">Stylus</a></li>
+<li>#chrome #firefox <a href="https://iorate.github.io/ublacklist/docs">uBlacklist</a></li>
+<li>#chrome #firefox <a href="https://github.com/gorhill/uBlock">uBlock Origin</a></li>
+<li>#chrome #firefox <a href="https://github.com/philc/vimium">Vimium</a></li>
+<li>#chrome #firefox <a href="https://github.com/violentmonkey/violentmonkey">Violentmonkey</a></li>
+<li>#chrome #firefox <a href="https://github.com/themoeway/yomitan">Yomitan Popup Dictionary</a></li>
+<li>#chrome <a href="https://github.com/zaki-yama/copy-title-and-url-as-markdown">Copy Title and Url as Markdown Style</a></li>
+<li>#chrome <a href="https://gofullpage.com">GoFullPage - Full Page Screen Capture</a></li>
+<li>#chrome <a href="https://chrome.google.com/webstore/detail/hide-scrollbar/mljepckcnbghmcdmaebjhejiplcngbkm">Hide Scrollbar</a></li>
+<li>#chrome <a href="https://imageye.net">Imageye</a></li>
+<li>#chrome <a href="https://github.com/callumlocke/json-formatter">JSON Formatter</a></li>
+<li>#chrome <a href="https://mega.io/extensions">MEGA</a></li>
+<li>#chrome <a href="https://chrome.google.com/webstore/detail/prevue-popup/afencccmfcofdgnigbenkpplpanigajd">Prevue Popup</a></li>
+<li>#chrome <a href="https://github.com/willbchang/chrome-read-later">Read Later</a></li>
+<li>#chrome <a href="https://acarabott.github.io/tabToWindow">Tab to Window/Popup</a></li>
+<li>#chrome <a href="https://chrome.google.com/webstore/detail/table-range-select-and-co/klojbfbefcejadioohmnkhjmbmecfapg">Table Range Select &amp; Copy (Like in Firefox!)</a></li>
+<li>#chrome <a href="https://github.com/guilryder/chrome-extensions/tree/main/urlintitle">URL in title</a></li>
+<li>#chrome <a href="https://github.com/useful-forks/useful-forks.github.io">Useful Forks</a></li>
+<li>#firefox <a href="https://github.com/nathanbw/copy-title-as-link">Copy Page Title As Link</a></li>
+<li>#firefox <a href="https://addons.mozilla.org/en-US/firefox/addon/hide-scrollbars">hide-scrollbars</a></li>
+<li>#firefox <a href="https://github.com/guidodinello/Smart-Clippy">Smart Clippy</a></li>
+</ul>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li>#chrome #firefox <a href="https://github.com/alexmdodge/github-diff-explorer">GitHub Diff Explorer</a></li>
+</ul>
+<h3 id="extra"><a class="header" href="#extra">extra</a></h3>
+<ul>
+<li>#chrome #firefox <a href="https://github.com/ActivityWatch/aw-watcher-web">ActivityWatch Web Watcher</a></li>
+<li>#chrome #firefox <a href="https://languagetool.org">AI Grammar Checker &amp; Paraphraser – LanguageTool</a></li>
+<li>#chrome #firefox <a href="https://automa.site">Automa</a></li>
+<li>#chrome #firefox <a href="https://earthview.withgoogle.com">Earth View from Google Earth</a></li>
+<li>#chrome #firefox <a href="https://github.com/brandon1024/find">find+ Regex Find-in-Page Tool</a></li>
+<li>#chrome #firefox <a href="https://github.com/immersive-translate/immersive-translate">Immersive Translate - Translate Web &amp; PDF</a></li>
+<li>#chrome #firefox <a href="https://github.com/gbaptista/luminous">Luminous: JavaScript events blocker</a></li>
+<li>#chrome #firefox <a href="https://github.com/deathau/markdownload">MarkDownload - Markdown Web Clipper</a></li>
+<li>#chrome #firefox <a href="https://www.modernwiki.app">Modern for Wikipedia</a></li>
+<li>#chrome #firefox <a href="https://octolinker.vercel.app">OctoLinker</a></li>
+<li>#chrome #firefox <a href="https://github.com/Automattic/harper">Private Grammar Checking - Harper</a></li>
+<li>#chrome #firefox <a href="https://github.com/didierfred/SimpleModifyHeaders">simple-modify-headers</a></li>
+<li>#chrome <a href="https://github.com/wangmeijian/auto_clipboard">Auto Clipboard</a></li>
+<li>#chrome <a href="https://github.com/painty/CSS-Used-ChromeExt">CSS Used</a></li>
+<li>#chrome <a href="https://github.com/ciaranmag/customchrome">Custom Chrome - Extension Manager</a></li>
+<li>#chrome <a href="https://chromewebstore.google.com/detail/extension-sync/kimbiihomiiklblgkdllffbakadjgako">Extension Sync</a></li>
+<li>#chrome <a href="https://monica.im/home">Monica: ChatGPT AI Assistant</a></li>
+<li>#chrome <a href="https://pixiv.download">Powerful Pixiv Downloader</a></li>
+<li>#chrome <a href="https://chromewebstore.google.com/detail/screen-ruler-measure-the/jfbbgijjljfbolelfkopkhbfjajjampm">Screen Ruler - Measure The Web</a></li>
+<li>#chrome <a href="https://info.sf-explorer.com">SF Explorer</a></li>
+<li>#chrome <a href="https://chrome.google.com/webstore/detail/superb-copy/agdjnnfibbfdffpdljlilaldngfheapb">Superb Copy</a></li>
+<li>#chrome <a href="https://chromewebstore.google.com/detail/vscode-extension-download/hkjdjlmpniknglhaobilgigaigleiebd?pli=1">VSCode Extension Downloader</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#buku <a href="https://github.com/samhh/bukubrow-host">bukubrow-host</a></li>
+<li>#buku <a href="https://github.com/SamHH/bukubrow-webext">bukubrow-webext</a></li>
+<li>#linkding <a href="https://github.com/sissbruecker/linkding-extension">linkding extension</a></li>
+<li>#linkding <a href="https://github.com/fivefold/linkding-injector">linkding injector</a></li>
+<li>#llm <a href="https://docs.anythingllm.com/browser-extension/install">AnythingLLM Browser Companion</a></li>
+<li>#tts <a href="https://speechify.com">Speechify — Text to Speech</a></li>
+<li><a href="https://github.com/birchill/10ten-ja-reader">10ten Japanese Reader (Rikaichamp)</a></li>
+<li><a href="https://mybrowseraddon.com/access-control-allow-origin.html">Allow CORS</a></li>
+<li><a href="https://webextension.org/listing/allow-right-click.html">Allow Right Click</a></li>
+<li><a href="https://aria2e.com">Aria2 Explorer</a></li>
+<li><a href="https://github.com/arxiv-vanity/arxiv-vanity">arXiv Vanity</a></li>
+<li><a href="https://github.com/killergerbah/asbplayer">asbplayer</a></li>
+<li><a href="https://github.com/guoriyue/AutoMouser">AutoMouser</a></li>
+<li><a href="https://github.com/TypeA2/Awoobooru">Awoobooru</a></li>
+<li><a href="https://github.com/berzniz/github_pr_tree">Better Pull Request for GitHub</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/block-image/pehaalcefcjfccdpbckoablngfkfgfgj">Block image</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/bookmark-favicon-changer/acmfnomgphggonodopogfbmkneepfgnh">Bookmark Favicon Changer</a></li>
+<li><a href="https://webextension.org/listing/broken-link-checker.html">Broken Link Checker</a></li>
+<li><a href="https://github.com/kawamataryo/chikamichi">Chikamichi - Quickly find a page -</a></li>
+<li><a href="https://github.com/Rob--W/crxviewer">Chrome extension source viewer</a></li>
+<li><a href="https://github.com/danny0838/content-farm-terminator">Content Farm Terminator</a></li>
+<li><a href="https://github.com/andrewrabon/copy-text-fragment-url">Copy Text Fragment URL</a></li>
+<li><a href="https://github.com/MichinariNukazawa/DanTagCopy_diffusion_tags_clipboard_webextension">DanTagCopy</a></li>
+<li><a href="https://github.com/arianrhodsandlot/devdocs-web-ext">DevDocs Web Ext</a></li>
+<li><a href="https://lovasoa.github.io/dezoomify-extension">Dezoomify</a></li>
+<li><a href="https://github.com/pnlpal/dictionariez">Dictionariez</a></li>
+<li><a href="https://github.com/shivaprsd/doqment">doqment PDF Reader</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/double-read/kcacjknamjmflfkgibhnidhhddiaidao">Double Read</a></li>
+<li><a href="https://webextension.org/listing/save-images.html">Download all Images</a></li>
+<li><a href="https://add0n.com/edit-as-html.html">Edit with Sublime Text</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/emoji-keyboard-online-cop/kgmeffmlnkfnjpgmdndccklfigfhajen">Emoji Keyboard</a></li>
+<li><a href="https://github.com/softvar/enhanced-github">Enhanced GitHub</a></li>
+<li><a href="https://github.com/aykutkardas/enwords">enwords</a></li>
+<li><a href="https://add0n.com/epub-reader.html">ePub Reader</a></li>
+<li><a href="https://github.com/maoserr/epublifier">Epublifier</a></li>
+<li><a href="https://epub.press">EpubPress</a></li>
+<li><a href="https://chromewebstore.google.com/detail/extension-sync/kimbiihomiiklblgkdllffbakadjgakoS">Extension Exporter</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/extension-manager/nddeiknmamlpagmnabfdlljlikeoanch">Extension Manager</a></li>
+<li><a href="https://nodetics.com/feedbro">Feedbro</a></li>
+<li><a href="https://feeder.co">feeder</a></li>
+<li><a href="https://github.com/woodruffw/ff2mpv">ff2mpv</a></li>
+<li><a href="https://github.com/glacambre/firenvim">Firenvim</a></li>
+<li><a href="https://webextension.org/listing/ecleaner.html">Forget Button</a></li>
+<li><a href="https://github.com/xieby1/fullscreen">Fullscreen</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/gif-frames/khkbfocobajjjkojjgpmnhdgbmlnlnef">Gif Frames</a></li>
+<li><a href="https://github.com/ste-xx/gist-userscript-manager">Gist User Script Manager</a></li>
+<li><a href="https://github.com/yamadashy/github-deepwiki">GitHub DeepWiki</a></li>
+<li><a href="https://github.com/lvarayut/github-file-icons">GitHub File Icons</a></li>
+<li><a href="https://github.com/ZhuPeng/github_linker">GitHub Linker</a></li>
+<li><a href="https://github.com/IndexStorm/git-rec-back">GitHub Recommender</a></li>
+<li><a href="https://github.com/zvizvi/GitHub-Web-IDE">GitHub Web IDE</a></li>
+<li><a href="https://github.com/SogoKato/gitlab-project-favicon">GitLab-Project-Favicon</a></li>
+<li><a href="https://github.com/polywock/globalSpeed">Global Speed</a></li>
+<li><a href="https://github.com/hypothesis/browser-extension">Hypothesis - Web &amp; PDF Annotation</a></li>
+<li><a href="http://imagequilts.com">ImageQuilts</a></li>
+<li><a href="https://github.com/ansh/jiffyreader.com">Jiffy Reader</a></li>
+<li><a href="https://github.com/1nfiniteloop/json-bookmarks">Json Bookmarks</a></li>
+<li><a href="https://github.com/keepassxreboot/keepassxc-browser">KeePassXC-Browser</a></li>
+<li><a href="https://chromewebstore.google.com/detail/kiwix-js-browser-extensio/donaljnlmapmngakoipdmehbfcioahhk">Kiwix JS Browser Extension</a></li>
+<li><a href="https://github.com/GoogleChromeLabs/link-to-text-fragment">Link to Text Fragment</a></li>
+<li><a href="https://github.com/dnakov/little-rat">Little Rat</a></li>
+<li><a href="https://memex.garden">Memex</a></li>
+<li><a href="https://github.com/web-infra-dev/midscene">Midscene.js</a></li>
+<li><a href="https://github.com/fiatjaf/module-linker">Module Linker</a></li>
+<li><a href="https://chromewebstore.google.com/detail/mouse-click-enabler/hbbhfdjgphhgaolabinibnfflfoobiaj">Mouse Click Enabler</a></li>
+<li><a href="https://github.com/wtetsu/mouse-dictionary">Mouse Dictionary</a></li>
+<li><a href="https://github.com/ttop32/MouseTooltipTranslator">MouseTooltipTranslator</a></li>
+<li><a href="https://github.com/taupiqueur/chrome-mpv">mpv for Chrome</a></li>
+<li><a href="https://github.com/sylecn/nextpage-we">nextpage</a></li>
+<li><a href="https://noscript.net">NoScript</a></li>
+<li><a href="https://github.com/Ruoyu-Klaus/obsidian-clipper">Obsidian clipper</a></li>
+<li><a href="https://webextension.org/listing/ocr.html">OCR - Image Reader</a></li>
+<li><a href="https://github.com/ninja33/ODH">ODH</a></li>
+<li><a href="https://github.com/herrherrmann/omnivore-list-popup">Omnivore List Popup</a></li>
+<li><a href="https://webextension.org/listing/open-in.html">Open In Firefox</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/open-in-new-tab/cplillmhmcegjlhcbedmgmalbgjpmlkh">Open in new tab</a></li>
+<li><a href="https://github.com/Tatsh/open-in-mpv">open-in-mpv</a></li>
+<li><a href="https://github.com/n4ze3m/page-assist">Page Assist - A Web UI for Local AI Models</a></li>
+<li><a href="https://github.com/vict0rsch/PaperMemory">PaperMemory</a></li>
+<li><a href="https://github.com/Thann/play-with-mpv">Play with MPV</a></li>
+<li><a href="https://github.com/xuejianxianzun/PixivBatchDownloader">Powerful Pixiv Downloader</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/print-edit-we/olnblpmehglpcallpnbgmikjblmkopia">Print Edit WE</a></li>
+<li><a href="https://eff.org/pages/privacy-badger">Privacy Badger</a></li>
+<li><a href="https://github.com/fwextensions/QuicKey">QuicKey</a></li>
+<li><a href="https://ayima.com/insights/redirect-checker.html">Redirect Path</a></li>
+<li><a href="https://github.com/refined-github/refined-github">Refined GitHub</a></li>
+<li><a href="https://github.com/Ajatt-Tools/rikaitan">Rikaitan Popup Dictionary</a></li>
+<li><a href="https://samgipson.com/robots-exclusion-checker-chrome-extension">Robots Exclusion Checke</a></li>
+<li><a href="https://ruffle.rs">Ruffle</a></li>
+<li><a href="https://github.com/crimx/ext-saladict">Saladict - Pop-up Dictionary and Page Translator</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/save-page-we/dhhpefjklgkmgeafimnjhojgjamoafof">Save Page WE</a></li>
+<li><a href="https://github.com/zlwaterfield/scramble">Scramble</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/selection-search/gipnlpdeieaidmmeaichnddnmjmcakoe">Selection Search</a></li>
+<li><a href="https://github.com/frederickk/side-by-side">Side_side</a></li>
+<li><a href="https://parimalam.me/pages/sideview.html">Sideview Plus</a></li>
+<li><a href="https://github.com/tsenart/sight">Sight</a></li>
+<li><a href="https://gelprec.github.io/quick_start_v2.html">Simple mass downloader</a></li>
+<li><a href="https://github.com/warren-bank/crx-simple-modify-headers">Simple Modify Headers - Extended</a></li>
+<li><a href="https://svgexport.io">SVG Export</a></li>
+<li><a href="https://flowapps.co/tabswitcher">Tab Switcher</a></li>
+<li><a href="https://talend.com">Talend API Tester</a></li>
+<li><a href="https://browserstack.com/test-in-internet-explorer">Test IE</a></li>
+<li><a href="https://blaze.today">Text Blaze</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/text-mode/adelhekhakakocomdfejiipdnaadiiib">Text Mode</a></li>
+<li><a href="https://trancy.org">Trancy</a></li>
+<li><a href="https://github.com/lindylearn/unclutter">Unclutter</a></li>
+<li><a href="https://github.com/jk-oster/obsidian-search-for-web">Vault Lens</a></li>
+<li><a href="https://github.com/bijij/ViewImage">View Image</a></li>
+<li><a href="https://github.com/wakatime/browser-wakatime">WakaTime</a></li>
+<li><a href="https://github.com/wallabag/wallabagger">Wallabagger</a></li>
+<li><a href="https://wappalyzer.com">Wappalyzer</a></li>
+<li><a href="https://wikiwand.com">Wikiwand</a></li>
+<li><a href="https://coolx10.com/window-resizer">Window Resizer</a></li>
+<li><a href="https://xbrowsersync.org">xBrowserSync</a></li>
+<li><a href="https://foosoft.net/projects/yomichan">Yomichan</a></li>
+<li><a href="https://github.com/BlueGreenMagick/yomikiri">Yomikiri</a></li>
+<li><a href="https://hcfy.ai">划词翻译</a></li>
+<li><a href="https://github.com/ttop32/MouseTooltipTranslator">鼠标工具提示翻译器</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../opt/zeal.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../opt/Browser/brave.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../opt/zeal.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../opt/Browser/brave.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

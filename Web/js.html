@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>js - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/Web/js.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="js"><a class="header" href="#js">js</a></h1>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#visualize <a href="https://tympanus.net/codrops/2025/06/18/coding-a-3d-audio-visualizer-with-three-js-gsap-web-audio-api/">Coding a 3D Audio Visualizer with Three.js, GSAP &amp; Web Audio API</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#alert <a href="https://sweetalert.js.org">SweetAlert</a></li>
+<li>#analyze <a href="https://umami.is">Umami</a></li>
+<li>#animate <a href="https://docs.manim.community/en/stable/index.html">Manim</a></li>
+<li>#annotate <a href="https://annotatorjs.org">Annotator</a></li>
+<li>#array <a href="https://www.collectionsjs.com">collections.js</a></li>
+<li>#asciinema <a href="https://github.com/asciinema/asciinema-player">asciinema-player</a></li>
+<li>#asciinema <a href="https://github.com/dstein64/gifcast">gifcast</a></li>
+<li>#audio #api <a href="https://github.com/jshanley/blip">Blip.</a></li>
+<li>#audio #dsp <a href="https://github.com/acarabott/audio-dsp-playground">Audio DSP Playground</a></li>
+<li>#audio #play <a href="https://github.com/kylestetz/lissajous">Lissajous</a></li>
+<li>#audio #player <a href="https://aplayer.js.org">APlayer</a></li>
+<li>#audio #synthesizer <a href="https://github.com/desandro/arpeggiator">Web Audio Arpeggiator</a></li>
+<li>#audio #synthesizer <a href="https://github.com/teropa/weq8">weq8</a></li>
+<li>#audio #visual <a href="https://wavesurfer.xyz">Wavesurfer.js</a></li>
+<li>#audio <a href="https://github.com/NUKnightLab/soundcite">Soundcite</a></li>
+<li>#browser <a href="https://addons.mozilla.org/en-US/android/addon/drag-able-full-screen-button/">Drag-able Full-Screen Button</a></li>
+<li>#control <a href="https://alemangui.github.io/pizzicato">Pizzicato</a></li>
+<li>#copy <a href="https://clipboardjs.com">clipboard.js</a></li>
+<li>#copy <a href="https://github.com/LuanEdCosta/copy-image-clipboard">Copy Image Clipboard</a></li>
+<li>#count <a href="https://countdownjs.org">Countdown.js</a></li>
+<li>#detect <a href="https://featurejs.com">Feature.js</a></li>
+<li>#download <a href="https://github.com/404-novel-project/novel-downloader">小说下载器</a></li>
+<li>#editor <a href="https://editorjs.io">Editor.js</a></li>
+<li>#editor <a href="https://github.com/yabwe/medium-editor">MediumEditor</a></li>
+<li>#email <a href="https://emailjs.com">EmailJS</a></li>
+<li>#gif <a href="https://ctrl-freaks.github.io/freezeframe.js">freezeframe.js</a></li>
+<li>#gif <a href="https://captaincodeman.github.io/gif-player/components/gif-player/demo">gif-player</a></li>
+<li>#gif <a href="https://jnordberg.github.io/gif.js">gif.js</a></li>
+<li>#gif <a href="https://matt-way.github.io/gifuct-js">Gifuct-js</a></li>
+<li>#guide <a href="https://github.com/daybrush/guides">Guides</a></li>
+<li>#heatmap <a href="https://www.patrick-wied.at/projects/heatmap-keyboard">heatmap-keyboard</a></li>
+<li>#heatmap <a href="https://www.patrick-wied.at/static/heatmapjs">heatmap.js</a></li>
+<li>#hidden <a href="https://wicky.nillia.ms/headroom.js">Headroom.js</a></li>
+<li>#hidden <a href="https://dollarshaveclub.github.io/shave">Shave</a></li>
+<li>#highlight <a href="https://github.com/acciojob/bold-highlighter-Ankitakamthe153">Bold Highlighter</a></li>
+<li>#highlight <a href="https://markjs.io">mark.js</a></li>
+<li>#highlight <a href="https://github.com/wooorm/starry-night">starry-night</a></li>
+<li>#image #caption <a href="https://captionjs.com">caption.js</a></li>
+<li>#image #example <a href="https://picsum.photos">Lorem Picsum</a></li>
+<li>#image #fit <a href="https://soulwire.github.io/fit.js">fit.js</a></li>
+<li>#image #layout <a href="https://masonry.desandro.com">Masonry</a></li>
+<li>#image #layout <a href="https://github.com/patrickkunka/mixitup">MixItUp</a></li>
+<li>#image #lazy <a href="https://infinite-scroll.com">Infinite Scroll</a></li>
+<li>#image #lazy <a href="https://appelsiini.net/projects/lazyload">Lazy Load Remastered</a></li>
+<li>#image #metadata <a href="https://github.com/exif-js/exif-js">Exif.js</a></li>
+<li>#image #parallax <a href="https://github.com/minimax711/miniparallax">miniparallax</a></li>
+<li>#image #parallax <a href="https://simpleparallax.com">simpleParallax</a></li>
+<li>#image #puzz <a href="https://github.com/lnenad/puzzlip">puzzlip</a></li>
+<li>#image #viewer <a href="https://github.com/fengyuanchen/viewerjs">Viewer.js</a></li>
+<li>#image <a href="https://pepsized.com/demo/beer-slider-responsive-accessible-before-after-slider-demo">Beer Slider</a></li>
+<li>#image <a href="https://tympanus.net/codrops/2025/06/04/building-a-real-time-dithering-shader/">Building a Real-Time Dithering Shader</a></li>
+<li>#image <a href="https://chocolat.insipi.de">chocolat.js</a></li>
+<li>#image <a href="https://scottjehl.github.io/picturefill">Picturefill</a></li>
+<li>#intro <a href="https://driverjs.com">driver.js</a></li>
+<li>#intro <a href="https://introjs.com">Intro.js</a></li>
+<li>#intro <a href="https://tourguidejs.com">TourGuide JS</a></li>
+<li>#itch <a href="https://github.com/6uhrmittag/Itch-Sort-And-Export">Itch-Sort-And-Export</a></li>
+<li>#loader <a href="https://livejs.com">Live.js</a></li>
+<li>#loader <a href="https://requirejs.org">RequireJS</a></li>
+<li>#markdown <a href="https://github.com/arve0/markdown-it-attrs">markdown-it-attrs</a></li>
+<li>#markdown <a href="https://github.com/markdown-it/markdown-it-cjk-breaks">markdown-it-cjk-breaks</a></li>
+<li>#mdxjs <a href="https://mdxjs.com">MDX</a></li>
+<li>#modal <a href="https://github.com/robinparisi/tingle">Tingle.js</a></li>
+<li>#mouse <a href="https://cotton123236.github.io/CottonJS">Cotton.JS</a></li>
+<li>#notify <a href="https://github.com/codrops/NotificationStyles">Notification Styles Inspiration</a></li>
+<li>#notify <a href="https://notifyjs.jpillora.com">Notify.js</a></li>
+<li>#notify <a href="https://silvio-r.github.io/spop">SmallPop</a></li>
+<li>#print <a href="https://printjs.crabbly.com">Print.js</a></li>
+<li>#rule <a href="https://github.com/daybrush/ruler">Ruler</a></li>
+<li>#screenshot <a href="https://github.com/niklasvh/html2canvas">html2canvas</a></li>
+<li>#search <a href="https://docsearch.algolia.com">DocSearch</a></li>
+<li>#table <a href="https://github.com/handsontable/handsontable">Handsontable</a></li>
+<li>#table <a href="https://tabulator.info">Tabulator</a></li>
+<li>#telegram <a href="https://tourmaline.dev">Tourmaline</a></li>
+<li>#time <a href="https://momentjs.com">Moment.js</a></li>
+<li>#timer <a href="https://albert-gonzalez.github.io/easytimer.js">EasyTimer.js</a></li>
+<li>#tooltip <a href="https://atomiks.github.io/tippyjs">Tippy.js</a></li>
+<li>#tooltip <a href="https://calebjacob.github.io/tooltipster">Tooltipster</a></li>
+<li>#translate <a href="https://formatjs.io">Format.js</a></li>
+<li>#trigger <a href="http://imakewebthings.com/waypoints">Waypoints</a></li>
+<li>#typography <a href="https://github.com/google/budoux">BudouX</a></li>
+<li>#typography <a href="https://simplefocus.com/flowtype">FlowType.JS</a></li>
+<li>#typography <a href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a></li>
+<li>#video #api <a href="https://github.com/Vanilagy/mp4-muxer">mp4-muxer</a></li>
+<li>#video <a href="https://github.com/matvp91/indigo-player">indigo-player</a></li>
+<li>#video <a href="https://plyr.io">Plyr</a></li>
+<li>#viewer <a href="https://github.com/daybrush/infinite-viewer">Infinite Viewer</a></li>
+<li>#visualize <a href="https://dash.gallery/dash-clinical-analytics">Clinical Analytics</a></li>
+<li>#visualize <a href="https://dash.gallery/dash-molecule-2d-viewer">Molecule2D</a></li>
+<li>#visualize <a href="https://echarts.apache.org/examples/en/editor.html?c=geo-svg-lines&amp;lang=js">Visit Route</a></li>
+<li><a href="https://github.com/Kalabasa/simple-live-reload">Dead simple live reload module</a></li>
+<li><a href="https://github.com/MikeKovarik/exifr">Exifr</a></li>
+<li><a href="https://github.com/mattdesl/subscapes">Subscapes</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Web/css.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Web/medusa.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Web/css.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Web/medusa.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>sublime-text - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/opt/sublime-text/sublime-text.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="sublime-text"><a class="header" href="#sublime-text"><a href="https://www.sublimetext.com">Sublime Text</a></a></h1>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<pre><code class="language-sh"># Arch
+sudo pacman -S sublime-text
+# Windows 10
+scoop install sublime-text
+</code></pre>
+<pre><code class="language-sh"># Windows 10
+rmdir /S /Q "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User"
+mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_DIR%\.config\sublime-text\Packages\User"
+</code></pre>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<ul>
+<li>Edit → Permute Lines → Unique</li>
+</ul>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#document <a href="https://www.sublimetext.com/docs/scope_naming.html">Scope Naming</a></li>
+<li>#document <a href="https://packagecontrol.io/docs/submitting_a_package">Submitting a Package</a></li>
+<li>#keymap <a href="https://latextools.readthedocs.io/en/latest/keybindings">SublimeText - LaTeXTools</a></li>
+<li>#post <a href="https://medium.com/free-code-camp/a-guide-to-preserving-your-wrists-with-sublime-text-snippets-7541662a53f2">A Guide to Sublime Text Snippets</a></li>
+<li>#post <a href="https://woorkup.com/sublime-text-open-files-same-window">Sublime Text: How to Open Files in the Same Window (New Tab)</a></li>
+<li><a href="https://github.com/tssajo/Minify/issues/80">[Feature Request] Replace Uglify-JS with Terser</a></li>
+<li><a href="https://stackoverflow.com/questions/21023529/how-to-open-files-and-folders-in-same-window-in-sublime-text-on-macos">How to Open files and folders in same window in Sublime Text on macOS?</a></li>
+<li><a href="https://github.com/randy3k/AlignTab/pull/68">Start TableMode with keybind/command</a></li>
+<li><a href="https://stackoverflow.com/questions/23026201/sublime-text-3-how-to-install-plugins-from-github">Sublime Text 3: How to install plugins from Github</a></li>
+<li><a href="https://laravel-news.com/sublime-text-lsp">Using Language Servers in Sublime Text</a></li>
+</ul>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<ul>
+<li><a href="/bin/stylua.html">stylua.md</a></li>
+<li><a href="/bin/tex-fmt.html">tex-fmt.md</a></li>
+<li><a href="/bin/texlab.html">texlab.md</a></li>
+<li><a href="/bin/terser.html">terser.md</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#edit <a href="https://github.com/randy3k/AlignTab">AlignTab</a></li>
+<li>#edit <a href="https://github.com/colinta/SublimeCalculate">Calculate</a></li>
+<li>#edit <a href="https://github.com/nickklaskala/DataWizard">Data Wizard</a></li>
+<li>#edit <a href="https://github.com/NicholasBuse/sublime_DeleteBlankLines">DeleteBlankLines</a></li>
+<li>#edit <a href="https://github.com/sindresorhus/editorconfig-sublime">EditorConfig</a></li>
+<li>#edit <a href="https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value">Inc-Dec-Value</a></li>
+<li>#edit <a href="https://github.com/jbrooksuk/InsertNums">Insert Nums</a></li>
+<li>#edit <a href="https://github.com/Doi9t/SortBy">SortBy</a></li>
+<li>#edit <a href="https://github.com/SublimeText/TrailingSpaces">TrailingSpaces</a></li>
+<li>#edit <a href="https://github.com/mvoidex/UnicodeMath">UnicodeMath</a></li>
+<li>#editorconfig <a href="https://github.com/sindresorhus/editorconfig-sublime">EditorConfig</a></li>
+<li>#filterpipe <a href="https://github.com/rexdf/SublimeChineseConvert">ChineseOpenConvert</a></li>
+<li>#filterpipe <a href="https://github.com/zhouyuexie/ColorConvert">Color Convert</a></li>
+<li>#filterpipe <a href="https://github.com/naoyukik/SublimeConvertFullHalfWidth">ConvertFullHalfWidth</a></li>
+<li>#filterpipe <a href="https://github.com/tylerl/FilterPipes">FilterPipes</a></li>
+<li>#format <a href="https://github.com/jonlabelle/SublimeJsPrettier">JsPrettier</a></li>
+<li>#format <a href="https://github.com/tssajo/Minify">Minify</a></li>
+<li>#formatter <a href="https://github.com/dzhibas/SublimePrettyJson">Pretty JSON</a></li>
+<li>#formatter <a href="https://github.com/aerobounce/Sublime-Pretty-Lua">Pretty Lua</a></li>
+<li>#formatter <a href="https://github.com/aukaost/SublimePrettyYAML">Pretty YAML</a></li>
+<li>#highlight <a href="https://github.com/karlhorky/BlockCursorEverywhere">Block Cursor Everywhere</a></li>
+<li>#highlight <a href="https://facelessuser.github.io/BracketHighlighter">BracketHighlighter</a></li>
+<li>#highlight <a href="https://github.com/Kronuz/ColorHighlight">Color Highlight</a></li>
+<li>#highlight <a href="https://github.com/facelessuser/FindCursor">FindCursor</a></li>
+<li>#highlight <a href="https://github.com/absop/RainbowBrackets">RainbowBrackets</a></li>
+<li>#highlight <a href="https://github.com/Kronuz/TextMarker">Text Marker</a></li>
+<li>#keymap <a href="https://github.com/skuroda/FindKeyConflicts">FindKeyConflicts</a></li>
+<li>#keymap <a href="https://github.com/MiroHibler/sublime-keymaps">Keymaps</a></li>
+<li>#latex <a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a></li>
+<li>#link <a href="https://github.com/jfcherng-sublime/ST-OpenUri">OpenUri</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-basedpyright">LSP-basedpyright</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-css">LSP-css</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-eslint">LSP-eslint</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-html">LSP-html</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-json">LSP-json</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-lua">LSP-lua</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-marksman">LSP-marksman</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-stylelint">LSP-stylelint</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-tailwindcss">LSP-tailwindcss</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-TexLab">LSP-TexLab</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-typescript">LSP-typescript</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-yaml">LSP-yaml</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP">LSP</a></li>
+<li>#search <a href="https://github.com/ukyouz/SublimeText-SimpleFuzzy">Simple Fuzzy</a></li>
+<li>#search <a href="https://github.com/vim-zz/StickySearch">StickySearch</a></li>
+<li>#syntax <a href="https://github.com/ahkscript/SublimeAutoHotkey">AutoHotkey</a></li>
+<li>#syntax <a href="https://github.com/poucotm/Log-Highlight">Log Highlight</a></li>
+<li>#syntax <a href="https://github.com/sal0max/sublime-m3u">M3U Syntax</a></li>
+<li>#syntax <a href="https://github.com/jonschlinkert/sublime-markdown-extended">Markdown Extended</a></li>
+<li>#syntax <a href="https://github.com/retifrav/marlant">MarLant</a></li>
+<li>#syntax <a href="https://github.com/SublimeText/MDX">MDX</a></li>
+<li>#syntax <a href="https://github.com/mechatroner/sublime_rainbow_csv">rainbow_csv</a></li>
+<li>#syntax <a href="https://github.com/adamchainz/sublime-rst-improved">reStructuredText Improved</a></li>
+<li>#ui <a href="https://github.com/SublimeText/AFileIcon">A File Icon</a></li>
+<li>#ui <a href="https://github.com/unknownuser88/PackagesUI">PackagesUI</a></li>
+<li>#view <a href="https://github.com/gh640/SublimeComposerPackageInfo">ComposerPackageInfo</a></li>
+<li>#view <a href="https://github.com/aziz/SublimeHyperClick">HyperClick</a></li>
+<li>#view <a href="https://github.com/alvesjtiago/hover-preview">ImagePreview</a></li>
+<li>#view <a href="https://github.com/predragnikolic/InlineFold">Inline Fold</a></li>
+<li>#view <a href="https://github.com/ned-martin/sublime-text-show-unicode-name">Show Unicode Name</a></li>
+<li>#window <a href="https://github.com/SublimeText/Origami">Origami</a></li>
+<li><a href="https://github.com/Sublime-Instincts/CommandsBrowser">CommandsBrowser</a></li>
+<li><a href="https://github.com/mitranim/sublime-fmt">Fmt</a></li>
+<li><a href="https://github.com/SublimeText/PackageDev">PackageDev</a></li>
+<li><a href="https://github.com/facelessuser/ScopeHunter/">ScopeHunter</a></li>
+<li><a href="https://github.com/wbond/sublime_terminal">Terminal</a></li>
+<li><a href="https://github.com/wakatime/sublime-wakatime">WakaTime</a></li>
+<li><a href="https://github.com/djjcast/mirodark-st2">Mirodark Color Scheme</a></li>
+<li>#arch <a href="https://github.com/kernelp4nic/sublime-open-in-thunar">Open in Thunar</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#bookmark <a href="https://github.com/ibensw/LsBookmarks">ViewBookmarks</a></li>
+<li>#code <a href="https://github.com/pieces-app/plugin_sublime">Pieces</a></li>
+<li>#color <a href="https://github.com/Colorsublime/Colorsublime-Plugin">Colorsublime</a></li>
+<li>#complete <a href="https://github.com/kpym/FrequencyDictionaries">FrequencyDictionaries</a></li>
+<li>#complete <a href="https://github.com/Suor/sublime-hippie-autocomplete">Hippie Autocomplete</a></li>
+<li>#complete <a href="https://github.com/jfcherng-sublime/ST-BootstrapAutocomplete">ST-BootstrapAutocomplete</a></li>
+<li>#config <a href="https://github.com/rexdf/ChineseLocalization">ChineseLocalizations</a></li>
+<li>#config <a href="https://github.com/seanliang/ConvertToUTF8">ConvertToUTF8</a></li>
+<li>#config <a href="https://github.com/mfuentesg/EditorConfigSnippets">EditorConfigSnippets</a></li>
+<li>#config <a href="https://github.com/jfcherng-sublime/ST-WindowsContextMenu">WindowsContextMenu</a></li>
+<li>#config <a href="https://gist.github.com/AWMooreCO/d0308bab265cc8c5e122">Working with AutoHotKey in Sublime Text</a></li>
+<li>#diff <a href="https://github.com/yaroslavyaroslav/Diffable">Diffable</a></li>
+<li>#diff <a href="https://github.com/soandrew/DiffTabs">DiffTabs</a></li>
+<li>#diff <a href="https://github.com/CJTozer/SublimeDiffView">DiffView</a></li>
+<li>#document <a href="https://github.com/farcaller/DashDoc">DashDoc</a></li>
+<li>#document <a href="https://github.com/SublimeText/Zeal">Zeal</a></li>
+<li>#edit <a href="https://github.com/wadetb/Sublime-Text-Advanced-CSV">Advanced CSV</a></li>
+<li>#edit <a href="https://github.com/fermads/sublime-autofold">Auto Fold</a></li>
+<li>#edit <a href="https://github.com/maegul/comment_marks">Comment Marks</a></li>
+<li>#edit <a href="https://github.com/nia40m/sublime-display-nums">Display numbers</a></li>
+<li>#edit <a href="https://github.com/praveenpuglia/github_markdown_snippets">GitHub Markdown Snippets</a></li>
+<li>#edit <a href="https://github.com/ichichikin/sublime-plugin-interactivity">Interactivity</a></li>
+<li>#edit <a href="https://github.com/billymoon/LoremIpsum">LoremIpsum</a></li>
+<li>#edit <a href="https://github.com/motine/MarkdownCodePacker">Markdown Code Packer</a></li>
+<li>#edit <a href="https://github.com/classicist/MarkdownFootnotes">MarkdownFootnotes</a></li>
+<li>#edit <a href="https://github.com/shwk86/multiAlign">multiAlign</a></li>
+<li>#edit <a href="https://github.com/mitchvm/tabnav">TabNav</a></li>
+<li>#edit <a href="https://github.com/jonlabelle/Trimmer">Trimmer</a></li>
+<li>#explorer <a href="https://github.com/math2001/FileManager">FileManager</a></li>
+<li>#filterpipe <a href="https://github.com/leibnizli/ConvertChineseCharacters">ConvertChineseCharacters</a></li>
+<li>#filterpipe <a href="https://github.com/fitnr/SublimeDataConverter">DataConverter</a></li>
+<li>#filterpipe <a href="https://github.com/Fanhuaji/Sublime-Fanhuaji">Fanhuaji</a></li>
+<li>#filterpipe <a href="https://github.com/vsc-cnst/SublimeTextFileFilter">File Filter</a></li>
+<li>#filterpipe <a href="https://github.com/Jonnymcc/sublime_regex_escape">Regex Escape</a></li>
+<li>#format <a href="https://github.com/bitst0rm-pub/Formatter">Formatter</a></li>
+<li>#format <a href="https://github.com/marekpiechut/sublime-rome-formatter">Rome Formatter</a></li>
+<li>#git <a href="https://github.com/frou/st3-gitblame">Git blame</a></li>
+<li>#git <a href="https://github.com/jisaacks/GitGutter">GitGutter</a></li>
+<li>#git <a href="https://github.com/braver/GitHubTools">GitHub Tools</a></li>
+<li>#git <a href="https://github.com/dennykorsukewitz/Sublime-GitHubFileFetcher">GitHubFileFetcher</a></li>
+<li>#git <a href="https://github.com/timbrel/GitSavvy">GitSavvy</a></li>
+<li>#highlight <a href="https://github.com/facelessuser/ColorHelper">ColorHelper</a></li>
+<li>#highlight <a href="https://github.com/Monnoroch/ColorHighlighter">ColorHighlighter</a></li>
+<li>#highlight <a href="https://github.com/ssanj/Linefind">Linefind</a></li>
+<li>#ide <a href="https://github.com/donkirkby/live-py-plugin">Live Coding in Python</a></li>
+<li>#keymap <a href="https://github.com/VonHeikemen/sublime-pro-key-bindings">Programmatic Key Bindings</a></li>
+<li>#link <a href="https://github.com/leonid-shevtsov/ClickableUrls_SublimeText">Clickable Urls</a></li>
+<li>#lint <a href="https://github.com/sindresorhus/sublime-autoprefixer">Autoprefixer</a></li>
+<li>#lint <a href="https://github.com/titoBouzout/Dictionaries">Dictionaries for Sublime Text</a></li>
+<li>#lint <a href="https://github.com/polygonplanet/sublime-text-eslint">ESLint</a></li>
+<li>#lint <a href="https://github.com/gtarawneh/languagetool-sublime">LanguageTool</a></li>
+<li>#lint <a href="https://github.com/patrickrgaffney/SublimeLinter-contrib-staticcheck">Linter-contrib-markdownlint</a></li>
+<li>#lint <a href="https://github.com/ckaznocha/SublimeLinter-contrib-write-good">SblimeLinter-contrib-write-good</a></li>
+<li>#lint <a href="https://github.com/GiovanH/sublimelint-contrib-languagetool">SublimeLint-contrib-LanguageTool</a></li>
+<li>#lint <a href="https://github.com/j616/SublimeLinter-contrib-remark-lint">SublimeLinter-contrib-staticcheck</a></li>
+<li>#lint <a href="https://github.com/SublimeLinter/SublimeLinter-stylelint">SublimeLinter-stylelint</a></li>
+<li>#lint <a href="https://github.com/SublimeLinter/SublimeLinter">SublimeLinter</a></li>
+<li>#lsp <a href="https://github.com/Zinggi/DictionaryAutoComplete">DictionaryAutoComplete</a></li>
+<li>#lsp <a href="https://github.com/kevinfiol/LOVELY2D">LOVELY2D</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-cspell">LSP-cspell</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-Grammarly">LSP-Grammarly</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-lemminx">LSP-lemminx</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-ltex-ls">LSP-ltex-ls</a></li>
+<li>#lsp <a href="https://github.com/sublimelsp/LSP-lua">LSP-lua</a></li>
+<li>#lsp <a href="https://github.com/abhishek72850/pyrock">PyRock</a></li>
+<li>#lsp <a href="https://github.com/ginanjarn/pythontools">PYTHON TOOLS</a></li>
+<li>#lsp <a href="https://github.com/quick-lint/quick-lint-js">quick-lint-js</a></li>
+<li>#lsp <a href="https://github.com/LetsZiggy/StyleLint-Formatter">StyleLint-Formatter</a></li>
+<li>#lsp <a href="https://tabnine.com">Tabnine</a></li>
+<li>#quarto <a href="https://github.com/quarto-dev/quarto-sublime">Quarto</a></li>
+<li>#repo <a href="https://github.com/mitranim/sublime-caser">sublime-caser</a></li>
+<li>#repo <a href="https://github.com/educbraga/ToggleSidebarFocus">ToggleSidebarFocus</a></li>
+<li>#run <a href="https://github.com/jacobdeichert/mask">mask</a></li>
+<li>#run <a href="https://github.com/biozz/sublime-taskfile">Taskfile</a></li>
+<li>#sftp <a href="https://codexns.io/products/sftp_for_sublime">sFTP</a></li>
+<li>#shell <a href="https://github.com/aerobounce/Sublime-Pretty-Shell">Pretty Shell</a></li>
+<li>#shell <a href="https://github.com/Twizzledrizzle/Send-to-Shell">Send-to-Shell</a></li>
+<li>#shell <a href="https://github.com/randy3k/SendCode">SendCode</a></li>
+<li>#shell <a href="https://github.com/phughes3866/ShellRunner">ShellRunner (Linux)</a></li>
+<li>#snippet <a href="https://github.com/regisphilibert/Sublime-Hugo-Snippets">Sublime Text Snippets for Hugo</a></li>
+<li>#ssh <a href="https://github.com/HorlogeSkynet/SSHubl">SSHubl</a></li>
+<li>#syntax <a href="https://github.com/erinzm/sublime-alda">Alda</a></li>
+<li>#syntax <a href="https://chuck.stanford.edu">chuck</a></li>
+<li>#syntax <a href="https://github.com/crbulakites/hum">hum</a></li>
+<li>#syntax <a href="https://github.com/SublimeText-Markdown/MarkdownEditing">MarkdownEditing</a></li>
+<li>#syntax <a href="https://github.com/JohnnyMorganz/StyLua">StyLua</a></li>
+<li>#syntax <a href="https://github.com/YariKartoshe4ka/sublime-svg-viewer">SVG Viewer</a></li>
+<li>#terminal <a href="https://github.com/randy3k/Terminus">Terminus</a></li>
+<li>#toc <a href="https://github.com/naokazuterada/MarkdownTOC">Markdown TOC</a></li>
+<li>#tool <a href="https://github.com/kostasdizas/aw-watcher-sublime">Activity Watch Watcher</a></li>
+<li>#view <a href="https://github.com/futureprogrammer360/Dictionary">Dictionary</a></li>
+<li>#view <a href="https://github.com/jwortmann/quick-view">Live Server</a></li>
+<li>#view <a href="https://github.com/facelessuser/MarkdownPreview">MarkdownPreview</a></li>
+<li>#view <a href="https://github.com/molnarmark/sublime-live-server">QuickView</a></li>
+<li>#window <a href="https://github.com/loggerhead/Layout">Layout</a></li>
+<li>#workspace <a href="https://github.com/kyoobey/ProjectAndWorkspaceManagement">Project And Workspace Management</a></li>
+<li>#workspace <a href="https://github.com/randy3k/ProjectManager">ProjectManager</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../opt/obsidian/obsidian-media-slider.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../opt/sublime-text/jsprettier.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../opt/obsidian/obsidian-media-slider.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../opt/sublime-text/jsprettier.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

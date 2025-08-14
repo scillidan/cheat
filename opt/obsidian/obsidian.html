@@ -1,0 +1,544 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>obsidian - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/opt/obsidian/obsidian.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="obsidian"><a class="header" href="#obsidian"><a href="https://obsidian.md/">Obsidian</a></a></h1>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<pre><code class="language-sh"># Arch
+sudo pacman -S obsidian
+# Windows 10
+scoop install obsidian
+</code></pre>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
+<ul>
+<li>Obsidian
+<ul>
+<li>Settings → Core plugins (On)
+<ul>
+<li>Bookmarks</li>
+<li>Command palette</li>
+<li>File recovery</li>
+<li>Files</li>
+<li>Outline</li>
+<li>Page preview</li>
+<li>Slash commands</li>
+<li>tags view</li>
+<li>Workspaces</li>
+<li>Backlinks</li>
+<li>Outgoing links</li>
+</ul>
+</li>
+<li>Ribbon (Pinned)
+<ul>
+<li>Workspaces: Manage workspace layouts</li>
+<li>Home page: Open homepage</li>
+<li>BRAT: All Commands list</li>
+<li>Media Companion: Open gallery</li>
+<li>Calibre: Open horizontally</li>
+<li>Word Frequency: Show word frequency sidebar</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li><a href="https://help.obsidian.md/embeds">Embed files</a></li>
+<li><a href="https://help.obsidian.md/aliases">Aliases</a></li>
+<li><a href="https://www.obsidianstats.com/posts/2025-05-14-music-notation-plugins">Best Plugins for Writing and Rendering Sheet Music in Obsidian</a></li>
+</ul>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<ul>
+<li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_obsidian_attach.bat">init_obsidian_attach.bat</a></li>
+<li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_obsidian_attach.sh">init_obsidian_attach.sh</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li><a href="https://github.com/czottmann/obsidian-actions-uri">Actions URI</a></li>
+<li><a href="https://github.com/bwya77/autofit-tabs">Autofit Tabs</a></li>
+<li><a href="https://github.com/l1xnan/obsidian-better-export-pdf">Better Export PDF</a></li>
+<li><a href="https://github.com/TfTHacker/obsidian42-brat">BRAT</a></li>
+<li><a href="https://github.com/mugiwara85/CodeblockCustomizer">Codeblock Customizer</a></li>
+<li><a href="https://github.com/elrindir/obsidian-csv-codeblock">CSV Codeblock</a></li>
+<li><a href="https://github.com/coddingtonbear/obsidian-csv-table">CSV Table</a></li>
+<li><a href="https://github.com/MeepTech/obsidian-custom-file-extensions-plugin">Custom File Extensions and Types</a></li>
+<li><a href="https://github.com/blacksmithgu/obsidian-dataview">Dataview</a></li>
+<li><a href="https://github.com/zhouhua/obsidian-export-image">Export Image</a></li>
+<li><a href="https://github.com/ecustic/obsidian-file-color">File Color</a></li>
+<li><a href="https://github.com/LostPaul/obsidian-folder-notes">Folder notes</a></li>
+<li><a href="https://github.com/mirnovov/obsidian-homepage">Homepage</a></li>
+<li><a href="https://github.com/sissilab/obsidian-image-toolkit">Image Toolkit</a></li>
+<li><a href="https://github.com/willem-schlieter/lawlist">LawList: Custom List Styles</a></li>
+<li><a href="https://github.com/kepano/obsidian-minimal-settings">Minimal Theme Settings</a></li>
+<li><a href="https://github.com/dk949/obsidian-mode-manager">Mode manager</a></li>
+<li><a href="https://github.com/czottmann/obsidian-mononote">Mononote</a></li>
+<li><a href="https://github.com/scambier/obsidian-omnisearch">Omnisearch</a></li>
+<li><a href="https://github.com/phibr0/obsidian-open-with">Open with</a></li>
+<li><a href="https://github.com/64MM4-KN1F3/regex-line-filter">Regex Line Filter</a></li>
+<li><a href="https://github.com/cloudhao1999/obsidian-scroll-to-top-plugin">Scroll to Top</a></li>
+<li><a href="https://github.com/ebullient/obsidian-show-whitespace-cm6">Show Whitespace</a></li>
+<li><a href="https://github.com/hoomersinpsom/simple-tab-indent">Simple Tab Indent</a></li>
+<li><a href="https://github.com/Vinzent03/obsidian-sort-and-permute-lines">Sort &amp; Permute lines</a></li>
+<li><a href="https://github.com/Opisek/obsidian-statusbar-organizer">Status Bar Organizer</a></li>
+<li><a href="https://github.com/SilentVoid13/Templater">Templater</a></li>
+<li><a href="https://github.com/tadashi-aikawa/obsidian-various-complements-plugin">Various Complements</a></li>
+<li><a href="https://github.com/22-2/wheel-tab-switcher">Wheel Tab Switcher</a></li>
+<li>#cheat <a href="https://github.com/Clemens-E/obsidian-languagetool-plugin">LanguageTool Integration</a></li>
+<li>#cheat <a href="https://github.com/Nick-de-Bruin/obsidian-media-companion">Media Companion</a></li>
+<li>#cheat <a href="https://github.com/amatya-aditya/obsidian-media-slider">Media Slider</a></li>
+<li>#cheat <a href="https://github.com/scambier/obsidian-text-extractor">Text Extractor</a></li>
+<li>#cheat <a href="https://github.com/pjeby/tag-wrangler">Tag Wrangler</a></li>
+<li>#cheat <a href="https://github.com/vrtmrz/obsidian-tagfolder">TagFolder</a></li>
+<li>#live <a href="https://github.com/namikaze-40p/obsidian-date-inserter">Date Inserter</a></li>
+<li>#live <a href="https://github.com/KraXen72/obsidian-emoji-autocomplete">Emoji Autocomplete</a></li>
+<li>#live <a href="https://github.com/bwydoogh/obsidian-force-view-mode-of-note">Force note view mode</a></li>
+<li>#live <a href="https://github.com/dominiclet/obsidian-note-definitions">Note Definitions</a></li>
+<li>#live <a href="https://github.com/zincplusplus/habit-tracker">Habit Tracker 21</a></li>
+<li>#live <a href="https://github.com/aedans/mtg-card-links">MTG Card Links</a></li>
+<li>#live <a href="https://github.com/patsh90/mpv-obsidian-plugin">mpv links</a></li>
+<li>#live <a href="https://github.com/gtg922r/obsidian-numerals">Numerals</a></li>
+<li>#live <a href="https://github.com/avr/obsidian-reading-time">Reading Time</a></li>
+<li>#live <a href="https://github.com/dy-sh/obsidian-remember-cursor-position">Remember cursor position</a></li>
+<li>#live <a href="https://github.com/timhor/obsidian-sentence-navigator">Sentence Navigator</a></li>
+<li>#live <a href="https://github.com/LiamRiddell/obsidian-solve">Solve</a></li>
+<li>#live <a href="https://github.com/Ebonsignori/obsidian-timeline-schedule">Timeline Schedule</a></li>
+<li>#live <a href="https://github.com/mts7/obsidian-word-frequency">Word Frequency</a></li>
+</ul>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li>#live <a href="https://github.com/Mithadon/obsidian-kokoro-tts-plugin">Kokoro TTS</a></li>
+<li><a href="https://github.com/awfrok/obsidian-plugin-bibtex-entry-view">Bibtex Entry View</a></li>
+<li><a href="https://github.com/hans/obsidian-citation-plugin">Citations</a></li>
+<li><a href="https://github.com/jeetsukumaran/obsidian-focus-tracker">Focus Tracker</a></li>
+<li><a href="https://github.com/bgrundmann/obsidian-fountain">Fountain</a></li>
+<li><a href="https://github.com/uphy/obsidian-reminder">Reminder</a></li>
+<li><a href="https://github.com/vlwkaos/obsidian-smart-excluded">Smart Excluded</a></li>
+<li><a href="https://github.com/filippov112/obsidian-sortable-tables">Sortable Tables</a></li>
+<li><a href="https://github.com/mgmeyers/obsidian-zotero-integration">Zotero Integration</a></li>
+</ul>
+<h3 id="extra"><a class="header" href="#extra">extra</a></h3>
+<ul>
+<li><a href="https://github.com/4Source/settings-profiles-obsidian-plugin">Settings profiles</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#live <a href="https://github.com/caronchen/obsidian-calibre-plugin">Calibre</a></li>
+<li><a href="https://github.com/LordGrimmauld/aw-watcher-obsidian">ActivityWatch</a></li>
+<li><a href="https://github.com/javalent/admonitions">Admonition</a></li>
+<li><a href="https://github.com/tgrosinger/advanced-tables-obsidian">Advanced Tables</a></li>
+<li><a href="https://github.com/Vinzent03/obsidian-advanced-uri">Advanced URI</a></li>
+<li><a href="https://github.com/elias-sundqvist/obsidian-annotator">Annotator</a></li>
+<li><a href="https://github.com/tadashi-aikawa/obsidian-another-quick-switcher">Another Quick Switcher</a></li>
+<li><a href="https://github.com/shanedonburke/obsidian-auto-archive">Auto Archive Plugin for Obsidian</a></li>
+<li><a href="https://github.com/zolrath/obsidian-auto-link-title">Auto Link Title</a></li>
+<li><a href="https://github.com/BrMacCath/Table-of-Contents">Automatic Table</a></li>
+<li><a href="https://github.com/seth10/beautiful-obsidian-contacts">Beautiful Contact Cards</a></li>
+<li><a href="https://github.com/marcjulianschwarz/obsidian-file-link">Better File Link</a></li>
+<li><a href="https://www.obsidianstats.com/plugins/better-heading-hierarchy">Better Heading Hierarchy</a></li>
+<li><a href="https://github.com/Quorafind/Obsidian-Better-Reading-Mode">Better Reading Mode</a></li>
+<li><a href="https://github.com/lukeleppan/better-word-count">Better Word Count</a></li>
+<li><a href="https://github.com/tyler-dot-earth/obsidian-blockreffer">Blockreffer for Obsidian</a></li>
+<li><a href="https://github.com/Lio5n/blue-star">Blue Star</a></li>
+<li><a href="https://github.com/joleaf/obsidian-bpmn-plugin">BPMN-Plugin</a></li>
+<li><a href="https://github.com/gfxholo/calculite">Calculite</a></li>
+<li><a href="https://github.com/ormai/obsidian-card-links">Card Links</a></li>
+<li><a href="https://github.com/roovo/obsidian-card-board">CardBoard</a></li>
+<li><a href="https://github.com/mattang687/obsidian-checkbox-sort">Checkbox Sorter</a></li>
+<li><a href="https://github.com/vrabe/obsidian-cjk-count">CJK Count</a></li>
+<li><a href="https://github.com/DearVikki/obsidian-cloze-plugin">Cloze</a></li>
+<li><a href="https://github.com/chetachiezikeuzor/cMenu-Plugin">cMenu</a></li>
+<li><a href="https://github.com/timhor/obsidian-editor-shortcuts">Code Editor Shortcuts</a></li>
+<li><a href="https://github.com/mayurankv/Obsidian-Code-Styler">Code Styler</a></li>
+<li><a href="https://github.com/peerdraft/obsidian-plugin">Collaboration for Obsidian – Sync, Share, and Edit anywhere</a></li>
+<li><a href="https://github.com/OfficerHalf/obsidian-collapse-all">Collapse All</a></li>
+<li><a href="https://github.com/zweek/commentesque-footnotes">Comment-like footnotes for Obsidian</a></li>
+<li><a href="https://github.com/mgmeyers/obsidian-contextual-typography">Contextual Typography</a></li>
+<li><a href="https://github.com/Alddar/obsidian-copy-inline-code-plugin">Copy Inline Code</a></li>
+<li><a href="https://github.com/czottmann/obsidian-copy-search-url">Copy Search URL</a></li>
+<li><a href="https://github.com/deathau/csv-obsidian">CSV Editor</a></li>
+<li><a href="https://github.com/Sophokles187/data-cards">DataCards</a></li>
+<li><a href="https://github.com/blacksmithgu/datacore">Datacore</a></li>
+<li><a href="https://github.com/ebullient/obsidian-day-planner-og">Day Planner (OG)</a></li>
+<li><a href="https://github.com/RafaelGB/obsidian-db-folder">DB folder</a></li>
+<li><a href="https://github.com/holubj/obsidian-dialogue-plugin">Dialogue</a></li>
+<li><a href="https://github.com/javalent/dice-roller">Dice Roller</a></li>
+<li><a href="https://github.com/Moyf/easy-copy">Easy Copy</a></li>
+<li><a href="https://github.com/Signynt/obsidian-editing-mode-hotkey">Editing Mode Hotkey</a></li>
+<li><a href="https://github.com/PKM-er/obsidian-editing-toolbar">Editing Toolbar</a></li>
+<li><a href="https://github.com/deathau/cm-editor-syntax-highlight-obsidian">Editor Syntax Highlight</a></li>
+<li><a href="https://github.com/Jakowal/obsidian-embedded-timer">Embedded Timers Obsidian Plugin</a></li>
+<li><a href="https://github.com/OlegWock/obsidian-emera">Emera for Obsidian</a></li>
+<li><a href="https://github.com/egradman/obsidian-etherpad-lite">Etherpad-lite Obsidian Plugin</a></li>
+<li><a href="https://github.com/clairefro/obsidian-plugin-etymology-lookup">Etymology Lookup</a></li>
+<li><a href="https://github.com/zsviczian/obsidian-excalidraw-plugin">Excalidraw</a></li>
+<li><a href="https://github.com/ganesshkumar/obsidian-excel-to-markdown-table">Excel to Markdown Table</a></li>
+<li><a href="https://github.com/Mara-Li/obsidian-explorer-hider">Explorer Hider</a></li>
+<li><a href="https://github.com/javalent/fantasy-statblocks">Fantasy Statblocks</a></li>
+<li><a href="https://github.com/kelszo/obsidian-file-explorer-plus">File Explorer++</a></li>
+<li><a href="https://github.com/ozntel/file-tree-alternative">File Tree Alternative Plugin</a></li>
+<li><a href="https://github.com/kepano/flexoki-obsidian">Flexoki</a></li>
+<li><a href="https://github.com/wenlzhang/obsidian-folder-navigator">Folder Navigator</a></li>
+<li><a href="https://github.com/otaviocc/obsidian-microblog">Front Matter Title</a></li>
+<li><a href="https://github.com/Darakah/obsidian-gallery">Gallery</a></li>
+<li><a href="https://github.com/RobTheFiveNine/obsidian-gdscript">GDScript Syntax Highlighting</a></li>
+<li><a href="https://github.com/beaurancourt/obsidian-generic-initiative-tracker">Generic Initiative Tracker</a></li>
+<li><a href="https://github.com/ObsidianPublisher/obsidian-github-publisher">Github Publisher</a></li>
+<li><a href="https://github.com/nota/gyazo-obsidian-plugin">Gyazo viewer for Obsidian</a></li>
+<li><a href="https://github.com/elijah-potter/harper-obsidian-plugin">Harper</a></li>
+<li><a href="https://github.com/pjeby/hot-reload">Hot-Reload Plugin</a></li>
+<li><a href="https://github.com/FlorianWoelki/obsidian-iconize">Iconize</a></li>
+<li><a href="https://github.com/adanielnoel/obsidian-index-notes">Index Notes Plugin for Obsidian</a></li>
+<li><a href="https://github.com/jensmtg/influx">Influx</a></li>
+<li><a href="https://github.com/javalent/initiative-tracker">Initiative Tracker</a></li>
+<li><a href="https://github.com/gapmiss/inline-callouts">Inline Callouts</a></li>
+<li><a href="https://github.com/ahmetildirim/obsidian-inscribe">Inscribe</a></li>
+<li><a href="https://github.com/mgmeyers/obsidian-kanban">Kanban</a></li>
+<li><a href="https://github.com/christianwannerstedt/obsidian-key-value-list">Key-Value list - Obsidian plugin</a></li>
+<li><a href="https://github.com/KrazyManJ/obsidian-keyshots">Keyshots</a></li>
+<li><a href="https://github.com/SamZhang02/obsidian-latex-algorithms">LaTeX Algorithms for Obsidian</a></li>
+<li><a href="https://github.com/artisticat1/obsidian-latex-suite">Latex Suite</a></li>
+<li><a href="https://github.com/MugishoMp/obsidian-editor-width-slider">Line Width Slider</a></li>
+<li><a href="https://github.com/the-c0d3r/obsidian-linked-note-exporter">Linked Note Exporter</a></li>
+<li><a href="https://github.com/platers/obsidian-linter">Linter</a></li>
+<li><a href="https://github.com/kevboh/longform">Longform</a></li>
+<li><a href="https://github.com/JamesCliffordSpratt/macros">Macros Plugin for Obsidian</a></li>
+<li><a href="https://github.com/ganesshkumar/obsidian-table-editor">Markdown Table Editor</a></li>
+<li><a href="https://github.com/carvah/markdown-tree-plugin">Markdown Tree</a></li>
+<li><a href="https://github.com/JichouP/obsidian-marp-plugin">Marp</a></li>
+<li><a href="https://github.com/rivea0/obsidian-match-syntax">MatchSyntax</a></li>
+<li><a href="https://github.com/dartungar/obsidian-mermaid">Mermaid Tools</a></li>
+<li><a href="https://github.com/mProjectsCode/obsidian-meta-bind-plugin">Meta Bind Plugin</a></li>
+<li><a href="https://github.com/maybe-hello-world/midi-logger">MIDI Logger</a></li>
+<li><a href="https://github.com/artisticat1/nl-syntax-highlighting">Natural Language Syntax Highlighting</a></li>
+<li><a href="https://github.com/Synaptic-Labs-AI/NeuroVox">NeuroVox</a></li>
+<li><a href="https://github.com/isaaclyman/novel-word-count-obsidian">Novel Word Count</a></li>
+<li><a href="https://github.com/j4ckofalltrades/obsideck">obsideck</a></li>
+<li><a href="https://github.com/dkleinbe/obsidian-asciinema-player">Obsidian Asciinema cast file viewer plugin</a></li>
+<li><a href="https://github.com/johansatge/obsidian-automatic-table-of-contents">Obsidian Automatic Table Of Contents</a></li>
+<li><a href="https://github.com/slnsys/obsidian-canvas2document">Obsidian Canvas2Document</a></li>
+<li><a href="https://github.com/olvidalo/obsidian-chord-sheets">Obsidian Chord Sheets</a></li>
+<li><a href="https://github.com/jgchristopher/obsidian-clipper">Obsidian Clipper</a></li>
+<li><a href="https://github.com/mokeyish/obsidian-enhancing-export">Obsidian Enhancing Export</a></li>
+<li><a href="https://github.com/skirt-owner/flower-plugin">Obsidian Flower Plugin</a></li>
+<li><a href="https://github.com/chuangcaleb/obsidian-fountain-live">Obsidian Fountain</a></li>
+<li><a href="https://github.com/anpigon/obsidian-joplin-plugin">Obsidian Joplin Sync Plugin</a></li>
+<li><a href="https://github.com/zhaoshenzhai/obsidian-mathlinks">Obsidian MathLinks</a></li>
+<li><a href="https://github.com/hyoban/obsidian-memos-plugin">Obsidian Memos Plugin</a></li>
+<li><a href="https://github.com/seebin/obsidian-minio-uploader-plugin">Obsidian Minio Uploader Plugin</a></li>
+<li><a href="https://github.com/benmatselby/obsidian-multi-cursor">Obsidian Multi-cursor</a></li>
+<li><a href="https://github.com/Hugo-COLLIN/obsidian-quick-settings-switchs">Obsidian Quick Settings Switch for Plugins</a></li>
+<li><a href="https://github.com/NicoNekoru/obsidan-advanced-table-xt">Obsidian Sheets</a></li>
+<li><a href="https://github.com/mProjectsCode/obsidian-shiki-plugin">Obsidian Shiki Plugin</a></li>
+<li><a href="https://github.com/ShacharHarshuv/obsidian-song-form-diagram">Obsidian Song Form Diagram</a></li>
+<li><a href="https://github.com/gitobsidiantutorial/obsidian-tabs">Obsidian Tabs</a></li>
+<li><a href="https://github.com/lumetrium/obsidian-teleprompter">Obsidian Teleprompter</a></li>
+<li><a href="https://github.com/revolter/obsidian-track-a-lot-plugin">Obsidian Track-a-Lot Plugin</a></li>
+<li><a href="https://github.com/devidw/obsidian-to-hugo">Obsidian Vault to Hugo Content</a></li>
+<li><a href="https://github.com/MichaelMahlberg/obsidian-venn-tags">Obsidian Venn Tags</a></li>
+<li><a href="https://github.com/vschroeter/obsidian-virtual-linker">Obsidian Virtual Linker Plugin (Glossary Plugin)</a></li>
+<li><a href="https://github.com/huseyz/obsidian-wallabag">Obsidian Wallabag Plugin</a></li>
+<li><a href="https://github.com/Raboro/Obsidian-Birthday-Tracker-Plugin">Obsidian-Birthday-Tracker-Plugin</a></li>
+<li><a href="https://github.com/gasparschott/obsidian-continuous-mode">obsidian-continuous-mode</a></li>
+<li><a href="https://github.com/chenshutian9610/obsidian-pagescroll-plugin">obsidian-pagescroll-plugin</a></li>
+<li><a href="https://github.com/ytliu74/obsidian-pseudocode">Obsidian-Pseudocode</a></li>
+<li><a href="https://github.com/chad-bennett/obsidian-publish-css">obsidian-publish-css</a></li>
+<li><a href="https://github.com/lukemt/obsidian-opener">Opener: New Tab by Default</a></li>
+<li><a href="https://github.com/vslinko/obsidian-outliner">Outliner</a></li>
+<li><a href="https://github.com/ozntel/oz-image-in-editor-obsidian">Ozan's Image in Editor Plugin</a></li>
+<li><a href="https://github.com/OliverBalfour/obsidian-pandoc">Pandoc</a></li>
+<li><a href="https://github.com/keathmilligan/obsidian-paste-reformatter">Paste Reformatter</a></li>
+<li><a href="https://github.com/denolehov/obsidian-url-into-selection">Paste URL into selection</a></li>
+<li><a href="https://github.com/Mocca101/obsidian-plugin-groups">Plugin Groups</a></li>
+<li><a href="https://github.com/swar8080/obsidian-plugin-update-tracker">Plugin Update Tracker</a></li>
+<li><a href="https://github.com/semanticdata/obsidian-pomodoro">PomoBar</a></li>
+<li><a href="https://github.com/LoyalPotato/potato-indexer">Potato Indexer</a></li>
+<li><a href="https://github.com/marijnbent/obsidian-print">Print</a></li>
+<li><a href="https://github.com/marcusolsson/obsidian-projects">Projects</a></li>
+<li><a href="https://github.com/chrisgrieser/obsidian-proofreader">Proofreader</a></li>
+<li><a href="https://github.com/saberzero1/quartz-syncer">Quartz Syncer</a></li>
+<li><a href="https://github.com/nothingislost/obsidian-query-control">Query Control</a></li>
+<li><a href="https://github.com/liufree/obsidian-querydash">QueryDash</a></li>
+<li><a href="https://github.com/joeyuping/quick_latex_obsidian">Quick Latex for Obsidian</a></li>
+<li><a href="https://github.com/bwya77/obsidian-quick-peek-sidebar">Quick Peek Sidebar</a></li>
+<li><a href="https://github.com/3C0D/obsidian-quick-plugin-switcher">Quick Plugin Switcher (QPS)</a></li>
+<li><a href="https://github.com/darlal/obsidian-switcher-plus">Quick Switcher++</a></li>
+<li><a href="https://github.com/dominikmayer/obsidian-reader-mode">Reader Mode</a></li>
+<li><a href="https://github.com/tgrosinger/recent-files-obsidian">Recent Files</a></li>
+<li><a href="https://github.com/AlessandroRuggiero/script-launcher">Script Launcher</a></li>
+<li><a href="https://github.com/omeyenburg/obsidian-scrolling">Scrolling</a></li>
+<li><a href="https://github.com/Mom0aut/obsidian-search-everywhere">Search Everywhere</a></li>
+<li><a href="https://github.com/timhor/obsidian-sentence-navigator">Sentence Navigator</a></li>
+<li><a href="https://github.com/mProjectsCode/obsidian-shiki-plugin">Shiki Highlighter</a></li>
+<li><a href="https://github.com/band/obsidian-folder-filelist">Simple Folder Filelist for Obsidian</a></li>
+<li><a href="https://github.com/eatcodeplay/obsidian-simple-table-math">Simple Table Math</a></li>
+<li><a href="https://github.com/ccmdi/smart-link-formatter">smart-link-formatter</a></li>
+<li><a href="https://github.com/LiamRiddell/obsidian-solve">Solve</a></li>
+<li><a href="https://github.com/andrewmcgivery/obsidian-soundscapes">Soundscapes</a></li>
+<li><a href="https://github.com/julzerinos/spellcheck-toggler-obsidian-plugin">Spellcheck Toggler</a></li>
+<li><a href="https://github.com/mProjectsCode/obsidian-meta-bind-plugin-docs">Starlight Starter Kit: Basics</a></li>
+<li><a href="https://github.com/mgmeyers/obsidian-style-settings">Style Settings</a></li>
+<li><a href="https://github.com/Mara-Li/obsidian-symbol-linking">Symbol Linking</a></li>
+<li><a href="https://github.com/LBF38/obsidian-syncthing-integration">Syncthing integration</a></li>
+<li><a href="https://github.com/GnoxNahte/obsidian-tab-panels">Tab Panels</a></li>
+<li><a href="https://github.com/PandaNocturne/obsidian-collapse-table-plugin">Table Collapse Plugin</a></li>
+<li><a href="https://github.com/Taialt97/Tag-Flow">Tag Flow for Obsidian</a></li>
+<li><a href="https://github.com/alexobenauer/obsidian-tag-navigator">Tag Navigator</a></li>
+<li><a href="https://github.com/mgeduld/obsidian-tagged-documents-viewer">Tagged Document Viewer</a></li>
+<li><a href="https://github.com/christianwannerstedt/obsidian-tags-overview">Tags overview</a></li>
+<li><a href="https://github.com/ebullient/obsidian-task-collector">Task Collector (TC</a></li>
+<li><a href="https://github.com/Leonezz/obsidian-tasks-calendar-wrapper">Tasks Calendar Wrapper</a></li>
+<li><a href="https://github.com/callumalpass/obsidian-template-filename">Template Filename</a></li>
+<li><a href="https://github.com/polyipseity/obsidian-terminal">Terminal</a></li>
+<li><a href="https://github.com/wth461694678/text-block-timer">Text Block Timer</a></li>
+<li><a href="https://github.com/nhaouari/obsidian-textgenerator-plugin">Text Generator</a></li>
+<li><a href="https://github.com/javalent/the-calendarium">The Calendarium</a></li>
+<li><a href="https://github.com/nzani/mfs-obsidian-plugin">The Map File System</a></li>
+<li><a href="https://github.com/aNNiMON/obsidian-timelive">Timelive Plugin</a></li>
+<li><a href="https://github.com/djmango/obsidian-transcription">Transcription</a></li>
+<li><a href="https://github.com/limpido/obsidian-tree-diagram">Tree Diagram</a></li>
+<li><a href="https://github.com/davisriedel/obsidian-typewriter-mode">Typewriter Mode for Obsidian</a></li>
+<li><a href="https://github.com/deathau/cm-typewriter-scroll-obsidian">Typewriter Scroll</a></li>
+<li><a href="https://github.com/Netajam/obsidian_note_uid_generator">UID Generator Plugin for Obsidian</a></li>
+<li><a href="https://github.com/artemDvoryadkin/obsidian-vim-marker-sharpener">Vim Marker Sharpener</a></li>
+<li><a href="https://github.com/Kovah/obsidian-wakatime">Wakatime / Wakapi</a></li>
+<li><a href="https://github.com/LuigiCerone/obsidian-water-tracker">Water Tracker</a></li>
+<li><a href="https://github.com/learnerchen-forever/wewrite">WeWrite</a></li>
+<li><a href="https://github.com/22-2/wheel-tab-switcher">Wheel Tab Switcher</a></li>
+<li><a href="https://github.com/RafaelGB/Obsidian-ZettlelFlow">ZettleFlow</a></li>
+<li><a href="https://github.com/dongguaguaguagua/zhihu_obsidian">Zhihu</a></li>
+<li><a href="https://github.com/vslinko/obsidian-zoom">Zoom</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../opt/mpv/webtorrent-mpv-hook.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../opt/obsidian/obsidian-kokoro-tts-plugin.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../opt/mpv/webtorrent-mpv-hook.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../opt/obsidian/obsidian-kokoro-tts-plugin.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>clamav - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/bin/clamav.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="clamav"><a class="header" href="#clamav"><a href="https://www.clamav.net/">ClamAV</a></a></h1>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<h3 id="arch"><a class="header" href="#arch">Arch</a></h3>
+<p>[^1] [^2]</p>
+<pre><code class="language-sh">sudo pacman -S clamav
+sudo vim /etc/clamav/freshclam.conf
+</code></pre>
+<pre><code class="language-sh">sudo vim /etc/clamav/clamd.conf
+</code></pre>
+<pre><code># https://wiki.archlinux.org/title/ClamAV#Configuration
+
+# Modify the following
+ExtendedDetectionInfo yes
+MaxDirectoryRecursion 20
+DetectPUA yes
+HeuristicAlerts yes
+ScanPE yes
+ScanELF yes
+ScanOLE2 yes
+ScanPDF yes
+ScanSWF yes
+ScanXMLDOCS yes
+ScanHWP3 yes
+ScanOneNote yes
+ScanMail yes
+ScanHTML yes
+ScanArchive yes
+Bytecode yes
+AlertBrokenExecutables yes
+AlertBrokenMedia yes
+AlertEncrypted yes
+AlertEncryptedArchive yes
+AlertEncryptedDoc yes
+AlertOLE2Macros yes
+AlertPartitionIntersection yes
+
+OnAccessMaxFileSize 100M
+OnAccessIncludePath /home
+OnAccessPrevention no
+OnAccessExtraScanning yes
+OnAccessExcludeUname clamav
+
+VirusEvent /etc/clamav/virus-event.bash
+</code></pre>
+<pre><code class="language-sh">sudo vim /etc/sudoers.d/clamav
+</code></pre>
+<pre><code>clamav ALL = (ALL) NOPASSWD: SETENV: /usr/bin/notify-send
+</code></pre>
+<pre><code class="language-sh">sudo vim /etc/clamav/virus-event.bash
+</code></pre>
+<pre><code class="language-bash"><span class="boring"> https://wiki.archlinux.org/title/ClamAV#Creating_notification_popups_for_alerts
+</span>
+<span class="boring">!/bin/bash
+</span>PATH=/usr/bin
+ALERT="Signature detected by clamav: $CLAM_VIRUSEVENT_VIRUSNAME in $CLAM_VIRUSEVENT_FILENAME"
+
+<span class="boring"> Send an alert to all graphical users.
+</span>for ADDRESS in /run/user/*; do
+	USERID=${ADDRESS#/run/user/}
+	/usr/bin/sudo -u "#$USERID" DBUS_SESSION_BUS_ADDRESS="unix:path=$ADDRESS/bus" PATH=${PATH} \
+		/usr/bin/notify-send -w -u critical -i dialog-warning "Virus found!" "$ALERT"
+done
+</code></pre>
+<pre><code class="language-sh">sudo vim /etc/systemd/system/clamav-clamonacc.service
+</code></pre>
+<pre><code># clamonacc systemd service file primarily the work of ChadDevOps &amp; Aaron Brighton
+# See: https://medium.com/@aaronbrighton/installation-configuration-of-clamav-antivirus-on-ubuntu-18-04-a6416bab3b41#a340
+
+[Unit]
+Description=ClamAV On-Access Scanner
+Documentation=man:clamonacc(8) man:clamd.conf(5) https://www.clamav.net/documents
+Requires=clamav-daemon.service
+After=clamav-daemon.service syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=
+ExecStart=/usr/sbin/clamonacc -F --fdpass --log=/var/log/clamav/clamonacc.log
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<pre><code class="language-sh"># sudo mkdir /etc/systemd/system/clamav-clamonacc.service.d
+# sudo chown clamav:clamav /var/log/clamav/clamonacc.log
+sudo systemctl daemon-reload
+sudo systemctl restart clamav-daemon.service
+sudo systemctl enable --now clamav-clamonacc.service
+</code></pre>
+<h3 id="freshclam"><a class="header" href="#freshclam">freshclam</a></h3>
+<pre><code class="language-sh">sudo freshclam
+sudo systemctl enable --now clamav-freshclam.service
+</code></pre>
+<h3 id="clamav-milter"><a class="header" href="#clamav-milter">clamav-milter</a></h3>
+<pre><code class="language-sh">sudo vim /etc/clamav/clamav-milter.conf
+</code></pre>
+<pre><code># https://wiki.archlinux.org/title/ClamAV#Using_the_milter
+
+# Modify the following
+MilterSocket /tmp/clamav-milter.socket
+MilterSocketMode 660
+FixStaleSocket yes
+User clamav
+MilterSocketGroup clamav
+PidFile /run/clamav/clamav-milter.pid
+TemporaryDirectory /tmp
+ClamdSocket unix:/run/clamav/clamd.ctl
+LogSyslog yes
+LogInfected Basic
+</code></pre>
+<pre><code class="language-sh">sudo vim /etc/systemd/system/clamav-milter.service
+</code></pre>
+<pre><code># https://wiki.archlinux.org/title/ClamAV#Using_the_milter
+
+[Unit]
+Description='ClamAV Milter'
+After=clamav-daemon.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/clamav-milter --config-file /etc/clamav/clamav-milter.conf
+Restart=Always
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<pre><code class="language-sh">sudo systemctl enable --now clamav-milter.service
+</code></pre>
+<h3 id="fangfrish"><a class="header" href="#fangfrish">Fangfrish</a></h3>
+<pre><code class="language-sh">sudo mkdir -m 0770 -p /var/lib/fangfrisch
+sudo chgrp clamav /var/lib/fangfrisch
+su root
+cd /var/lib/fangfrisch
+python3 -m venv venv
+source venv/bin/activate
+</code></pre>
+<pre><code class="language-sh">pip install fangfrisch
+</code></pre>
+<pre><code class="language-sh">vim /etc/fangfrisch.conf
+</code></pre>
+<pre><code># Minimal example configuration, meant for testing.
+
+[DEFAULT]
+db_url = sqlite:////var/lib/fangfrisch/db.sqlite
+local_directory = /var/lib/clamav
+
+[urlhaus]
+enabled = yes
+</code></pre>
+<pre><code class="language-sh">fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
+# su &lt;user&gt;
+# sudo /var/lib/fangfrisch/venv/bin/fangfrisch --conf /etc/fangfrisch.conf initdb
+</code></pre>
+<h3 id="windows-10"><a class="header" href="#windows-10">Windows 10</a></h3>
+<pre><code class="language-sh">scoop install clamav
+mkdir -p &lt;path_to&gt;\ClamAV\database
+subl &lt;path_to&gt;\freshclam.conf
+</code></pre>
+<pre><code>DatabaseDirectory "&lt;path_to&gt;/ClamAV/database"
+</code></pre>
+<pre><code class="language-sh"># Update database
+freshclam
+</code></pre>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<pre><code class="language-sh"># Test
+curl https://secure.eicar.org/eicar.com.txt | clamscan -
+</code></pre>
+<pre><code class="language-sh"># Scan a directory.
+clamscan -r -i &lt;dir&gt;
+</code></pre>
+<pre><code class="language-sh"># Scan a file with specified limits.
+clamscan -v -a --max-filesize=1000M --max-scansize=1000M --alert-exceeds-max=yes &lt;file&gt;
+</code></pre>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#document <a href="https://docs.clamav.net/">ClamAV Document</a></li>
+<li><a href="https://aws.amazon.com/cn/blogs/china/deploy-clamav-on-ec2-with-realtime-scan-and-centralized-alarm/">在 EC2 Linux 操作系统上部署 ClamAV 并开启实时防护、集中日志采集和统一告警</a></li>
+</ul>
+<h2 id="troubleshoot"><a class="header" href="#troubleshoot">troubleshoot</a></h2>
+<ul>
+<li><a href="https://github.com/Cisco-Talos/clamav/issues/1315">Clamscan on Windows does not skip large files (&gt;2 GB) and outputs error reports cl_scandesc_callback: Can't fstat descriptor 3 instead</a></li>
+<li><a href="https://github.com/Cisco-Talos/clamav/issues/1178">1.3.0, clamonacc error message "ClamMisc: Unexpected issue; Daemon failed to scan"</a></li>
+</ul>
+<p>[^1] <a href="https://wiki.archlinux.org/title/ClamAV">ClamAV</a>
+[^2] <a href="https://bbs.archlinux.org/viewtopic.php?id=267222">[SOLVED] clamav-clamonacc won't start (easily)</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../bin/chezmoi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../bin/clean-css.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../bin/chezmoi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../bin/clean-css.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>mkdocs/mkdocs - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/Web/mkdocs/mkdocs.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="mkdocs"><a class="header" href="#mkdocs"><a href="https://mkdocs.org">MkDocs</a></a></h1>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#audio <a href="https://github.com/jfcmontmorency/mkdocs-audio">MkDocs Audio</a></li>
+<li>#image <a href="https://github.com/blueswen/mkdocs-glightbox">MkDocs GLightbox</a></li>
+<li>#index <a href="https://github.com/apenwarr/mkdocs-exclude">File exclude plugin for mkdocs</a></li>
+<li>#index <a href="https://github.com/chrieke/mkdocs-exclude-search">mkdocs-exclude-search</a></li>
+<li>#link <a href="https://github.com/JakubAndrysek/mkdocs-open-in-new-tab">MkDocs - Open in a new tab plugin</a></li>
+<li>#link <a href="https://github.com/zachhannum/mkdocs-autolinks-plugin">MkDocs Autolinks Plugin</a></li>
+<li>#meta <a href="https://github.com/jaywhj/mkdocs-document-dates">mkdocs-document-dates</a></li>
+<li>#minify <a href="https://github.com/byrnereese/mkdocs-minify-plugin">mkdocs-minify-plugin</a></li>
+<li>#navigate <a href="https://github.com/oprypin/mkdocs-literate-nav">mkdocs-literate-nav</a></li>
+<li>#theme <a href="https://squidfunk.github.io/mkdocs-material">Material for MkDocs</a></li>
+<li>#video <a href="https://github.com/soulless-viewer/mkdocs-video">MkDocs Video</a></li>
+<li><a href="https://github.com/adamb70/mdx-breakless-lists">Breakless Lists Markdown Extension</a></li>
+<li><a href="https://github.com/radude/mdx_truly_sane_lists">Mdx Truly Sane Lists</a></li>
+<li><a href="https://github.com/pawamoy/mkdocs-llmstxt">mkdocs-llmstxt</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#admonition <a href="https://github.com/PGijsbers/admonitions">GitHub Admonitions for MkDocs</a></li>
+<li>#admonition <a href="https://github.com/oprypin/markdown-callouts">markdown-callouts</a></li>
+<li>#codeblock <a href="https://github.com/JulesTopart/mkdocs-pseudocode">MkDocs Pseudocode Plugin</a></li>
+<li>#field <a href="https://github.com/Enveloppe/mkdocs-embed_file-plugin">Embed File</a></li>
+<li>#field <a href="https://github.com/six-two/mkdocs-placeholder-plugin">MkDocs Placeholder Plugin</a></li>
+<li>#field <a href="https://github.com/seapagan/mkdocs-run-shell-cmd-plugin">MkDocs Plugin : run-shell-cmd</a></li>
+<li>#field <a href="https://github.com/supcik/mkdocs-calendar-plugin">mkdocs-calendar-plugin</a></li>
+<li>#field <a href="//github.com/Enveloppe/mkdocs-custom-tags-attributes">mkdocs-custom-tags-attributes</a></li>
+<li>#field <a href="https://github.com/fralau/mkdocs_macros_plugin">Mkdocs-Macros</a></li>
+<li>#image <a href="https://github.com/ASypula/mkdocs-image-formatter-plugin">Image-formatter</a></li>
+<li>#image <a href="https://github.com/g-provost/lightgallery-markdown">Lightgallery markdown Extension</a></li>
+<li>#image <a href="https://github.com/Evidlo/markdown_captions">markdown_captions</a></li>
+<li>#image <a href="https://github.com/temperlang/svg-inline-mkdocs-plugin">Mkdocs Plugin to inline SVGs</a></li>
+<li>#image <a href="https://github.com/JakubAndrysek/mkdocs-resize-images">MkDocs Resize Images Plugin</a></li>
+<li>#index <a href="https://github.com/xvik/gradle-mkdocs-plugin">Gradle Mkdocs plugin</a></li>
+<li>#index <a href="https://github.com/DariuszPorowski/mkdocs-file-filter-plugin">MkDocs File Filter Plugin</a></li>
+<li>#index <a href="https://github.com/raphael-mammeri/mkdocs-enumerate-and-reference">Mkdocs Plugin for Enhanced Referencing and Enumeration</a></li>
+<li>#index <a href="https://github.com/six-two/mkdocs-remove-sections-plugin">MkDocs Remove Sections Plugin</a></li>
+<li>#index <a href="https://github.com/mihaigalos/mkdocs-breadcrumbs-plugin">mkdocs-breadcrumbs</a></li>
+<li>#index <a href="https://github.com/backstage/mkdocs-monorepo-plugin">mkdocs-monorepo-plugin</a></li>
+<li>#index <a href="https://github.com/jdoiro3/mkdocs-multirepo-plugin">mkdocs-multirepo-plugin</a></li>
+<li>#index <a href="https://github.com/oprypin/mkdocs-same-dir">mkdocs-same-dir</a></li>
+<li>#index <a href="https://github.com/oprypin/mkdocs-section-index">mkdocs-section-index</a></li>
+<li>#index <a href="https://github.com/athackst/mkdocs-simple-plugin">mkdocs-simple-plugin</a></li>
+<li>#index <a href="https://github.com/sondregronas/mkdocs-submodule-edit-uri">mkdocs-submodule-edit-uri</a></li>
+<li>#link <a href="https://github.com/cmitu/mkdocs-altlink-plugin">Alternate Link</a></li>
+<li>#link <a href="https://github.com/Aetherinox/mkdocs-link-embeds">Link Embeds Plugin: mkdocs</a></li>
+<li>#link <a href="https://github.com/six-two/mkdocs-backlinks-section-plugin">MkDocs Backlinks Section Plugin</a></li>
+<li>#link <a href="https://github.com/OctoPrint/mkdocs-site-urls">MkDocs Site URLs Plugin</a></li>
+<li>#link <a href="https://github.com/christophdebaene/mkdocs-link-favicon">mkdocs-link-favicon</a></li>
+<li>#link <a href="https://github.com/mkdocs/mkdocs-redirects">mkdocs-redirects</a></li>
+<li>#list <a href="https://github.com/adamb70/mdx-breakless-lists">Breakless Lists Markdown Extension</a></li>
+<li>#list <a href="https://github.com/radude/mdx_truly_sane_lists">Mdx Truly Sane Lists</a></li>
+<li>#list <a href="https://github.com/six-two/mkdocs-extract-listings-plugin">mkdocs-extract-listings-plugin</a></li>
+<li>#meta <a href="https://neoteroi.dev/mkdocs-plugins/contribs/">Contribs</a></li>
+<li>#meta <a href="https://github.com/six-two/mkdocs-auto-tag-plugin">mkdocs-auto-tag-plugin</a></li>
+<li>#meta <a href="https://github.com/sondregronas/mkdocs-footermatter">mkdocs-footermatter</a></li>
+<li>#meta <a href="https://github.com/timvink/mkdocs-git-authors-plugin">mkdocs-git-authors-plugin</a></li>
+<li>#meta <a href="https://github.com/ojacques/mkdocs-git-committers-plugin-2">mkdocs-git-committers-plugin-2</a></li>
+<li>#meta <a href="https://github.com/tombreit/mkdocs-git-latest-changes-plugin">mkdocs-git-latest-changes-plugin</a></li>
+<li>#meta <a href="https://github.com/timvink/mkdocs-git-revision-date-localized-plugin">mkdocs-git-revision-date-localized-plugin</a></li>
+<li>#meta <a href="https://github.com/prcr/mkdocs-meta-descriptions-plugin">mkdocs-meta-descriptions-plugin</a></li>
+<li>#meta <a href="https://github.com/timmeinerzhagen/mkdocs-meta-manager">mkdocs-meta-manager</a></li>
+<li>#minify <a href="https://github.com/manuzhang/mkdocs-htmlproofer-plugin">mkdocs-htmlproofer-plugin</a></li>
+<li>#minify <a href="https://github.com/monosans/mkdocs-minify-html-plugin">mkdocs-minify-html-plugin</a></li>
+<li>#navigate <a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a></li>
+<li>#navigate <a href="https://github.com/Andre601/mkdocs-pagenav-generator">mkdocs-pagenav-generator</a></li>
+<li>#pdf <a href="https://github.com/adrienbrignon/mkdocs-exporter">MkDocs Exporter</a></li>
+<li>#pdf <a href="https://github.com/iSOLveIT/mkdocs-pdf-generate">MkDocs PDF Generate</a></li>
+<li>#pdf <a href="https://github.com/smaxtec/mkdocs-pdf-with-js-plugin">MkDocs PDF with JS Plugin</a></li>
+<li>#pdf <a href="https://github.com/supcik/mkdocs-pdf2image-plugin">mkdocs-pdf2image-plugin</a></li>
+<li>#pdf <a href="https://timvink.github.io/mkdocs-print-site-plugin/print_page.html#how-to-export-html">mkdocs-print-site-plugin</a></li>
+<li>#pdf <a href="https://github.com/orzih/mkdocs-with-pdf">PDF Generate Plugin for MkDocs</a></li>
+<li>#publish <a href="https://github.com/six-two/mkdocs-vercel-pw-plugin">MkDocs Vercel Password Protection Plugin</a></li>
+<li>#synax <a href="https://github.com/LukeCarrier/mkdocs-drawio-exporter">Diagrams.net (Draw.io) Exporter for MkDocs</a></li>
+<li>#synax <a href="https://github.com/uliska/markdown-lilypond">markdown-lilypond</a></li>
+<li>#synax <a href="https://github.com/haoda-li/mkdocs-plotly-plugin">Mkdocs Plotly Plugin</a></li>
+<li>#synax <a href="https://github.com/sondregronas/mkdocs-callouts">mkdocs-callouts</a></li>
+<li>#synax <a href="https://github.com/landmaj/mkdocs-d2-plugin">mkdocs-d2-plugin</a></li>
+<li>#synax <a href="https://github.com/MikhailKravets/mkdocs_puml">mkdocs_puml</a></li>
+<li>#synax <a href="https://github.com/greenape/mknotebooks">mknotebooks</a></li>
+<li>#table <a href="https://timvink.github.io/mkdocs-table-reader-plugin/">mkdocs-table-reader-plugin</a></li>
+<li>#tag <a href="https://github.com/JonasDoesThings/mkdocs-exclude-tagged-files">MKDocs Exclude Tagged Files</a></li>
+<li>#tag <a href="https://github.com/jldiaz/mkdocs-plugin-tags">Tags</a></li>
+<li>#theme <a href="https://github.com/pawamoy/mkdocs-gallery">Gallery of MkDocs themes</a></li>
+<li>#theme <a href="https://github.com/WSOFT-Project/lantana">Lantana</a></li>
+<li>#toc <a href="https://github.com/timvink/mkdocs-enumerate-headings-plugin">mkdocs-enumerate-headings-plugin</a></li>
+<li>#toc <a href="https://github.com/tombreit/mkdocs-pagetree-plugin">mkdocs-pagetree-plugin</a></li>
+<li>#toc <a href="https://github.com/try0/mkdocs-toc-md">mkdocs-toc-md</a></li>
+<li>#toc <a href="https://github.com/zachhannum/mkdocs-toc-sidebar-plugin">mkdocs-toc-sidebar-plugin</a></li>
+<li>#toc <a href="https://github.com/alanpt/mkdocs-pagelist-plugin">PageListPlugin for MkDocs</a></li>
+<li>#todo <a href="https://github.com/costantinoai/mkdocs-task-collector">mkdocs-task-collector</a></li>
+<li>#video <a href="https://github.com/pa-decarvalho/mkdocs-asciinema-player">mkdocs-asciinema-player</a></li>
+<li><a href="https://github.com/byrnereese/linkchecker-mkdocs">Link Checker for Mkdocs-based static generated sites</a></li>
+<li><a href="https://github.com/KyleKing/mdformat-mkdocs">mdformat-mkdocs</a></li>
+<li><a href="https://github.com/iolanta-tech/mkdocs-iolanta">mkdocs + iolanta</a></li>
+<li><a href="https://github.com/skyface753/mkdocs-quiz">MkDocs Quiz Plugin</a></li>
+<li><a href="https://github.com/bdallard/mkdocs_quiz">Mkdocs Quiz</a></li>
+<li><a href="https://github.com/Guts/mkdocs-rss-plugin">MkDocs RSS plugin</a></li>
+<li><a href="https://github.com/ultrabug/mkdocs-static-i18n">MkDocs static i18n plugin</a></li>
+<li><a href="https://github.com/AIboy996/mkdocs-ai-summary">mkdocs-ai-summary</a></li>
+<li><a href="https://github.com/idlesign/mkdocs-apidescribed-plugin">mkdocs-apidescribed-plugin</a></li>
+<li><a href="https://github.com/jcayers20/mkdocs-autoapi">mkdocs-autoapi</a></li>
+<li><a href="https://github.com/joapuiib/mkdocs-data-plugin">mkdocs-data-plugin</a></li>
+<li><a href="https://github.com/unverbuggt/mkdocs-encryptcontent-plugin">mkdocs-encryptcontent-plugin</a></li>
+<li><a href="https://github.com/oprypin/mkdocs-gen-files">mkdocs-gen-files</a></li>
+<li><a href="https://github.com/pawelsikora/mkdocs-git-show-history-log-plugin">mkdocs-git-show-history-log-plugin</a></li>
+<li><a href="https://github.com/TonyCrane/mkdocs-heti-plugin">mkdocs-heti-plugin</a></li>
+<li><a href="https://github.com/mondeja/mkdocs-include-markdown-plugin">mkdocs-include-markdown-plugin</a></li>
+<li><a href="https://github.com/NickCrews/mkdocs-jupyterlite">mkdocs-jupyterlite</a></li>
+<li><a href="https://github.com/mkusz/mkdocs-publisher">mkdocs-publisher</a></li>
+<li><a href="https://github.com/itdependsnetworks/mkdocs-python-classy">mkdocs-python-classy</a></li>
+<li><a href="https://github.com/TonyCrane/mkdocs-statistics-plugin">mkdocs-statistics-plugin</a></li>
+<li><a href="https://github.com/fralau/mkdocs-test">MkDocs-Test</a></li>
+<li><a href="https://github.com/twardoch/mkdocs-text-export-plugin">mkdocs-text-export-plugin</a></li>
+<li><a href="https://github.com/JakubAndrysek/mkdocs-typedoc">Mkdocs-Typedoc Plugin</a></li>
+<li><a href="https://mkdocstrings.github.io">mkdocstrings</a></li>
+<li><a href="https://github.com/phil65/mkdocs_mknodes">MkNodes</a></li>
+<li><a href="https://github.com/DerwenAI/mkrefs">MkRefs</a></li>
+<li><a href="https://github.com/bczsalba/Termage">Termage</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../Web/mdbook/mdbook-tailor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../Web/mkdocs/mkdocs-material.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../Web/mdbook/mdbook-tailor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../Web/mkdocs/mkdocs-material.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

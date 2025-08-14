@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>krita - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/opt/krita.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="krita"><a class="header" href="#krita"><a href="https://krita.org/en/">Krita</a></a></h1>
+<blockquote>
+<p>The origin of Krita can be traced to Matthias Ettrich's at the 1998 Linux Kongress. Matthias wanted to show the ease with which it was possible to hack a Qt GUI around an existing application, and the application he chose to demo it with was GIMP. His patch was never published, but did cause problems with the GIMP community at the time.<br />
+Not being in a position to work together, people within the KDE project decided to start their own image editor application Development focused on an application that was part of the KOffice suite, called KImage, by Michael Koch. Renamed to KImageShop, this was the start of Krita.<br />
+At the 31st of May, 1999, the KImageShop project officially kicked off with a mail by Matthias Elter. The basic idea back then was to make KImageShop a GUI shell around ImageMagick. It was going to be a corba-based application with out-of-process filter plugins, compatible with GIMP plugins, which are also out-of-process, though of course not corba-based.<br />
+The name KImageShop fell foul of trademark law in Germany, and KImageShop was renamed to Krayon, which also appeared to infringe on an existing trademark, so Krayon was finally renamed to Krita in 2002.<br />
+Initial development was slow, but picked up strongly from 2003, resulting in the first public release with KOffice 1.4 in 2004. In 2005, Krita gained support for CMYK, Lab, YCbCr, XYZ color models and high bit depth channels, as well as OpenGL support.<br />
+From 2004 to 2009, Krita was strongly focusing on being a generic image manipulation/painting application in the style of Photoshop or GIMP. Since 2009, the focus is squarely on painting: the Krita community aims to make Krita the best painting application for cartoonists, illustrators, and concept artists.<br />
+From 2009 onwards, the Krita project started funding community members to work on Krita by way of student jobs, in addition to development funded through Google Summer of Code. This experiment has resulted in a huge jump in stability and performance.<br />
+In 2012, the Krita community created the Krita Foundation, to provide more support for development. [krita.org]</p>
+</blockquote>
+<blockquote>
+<p>Krita的起源可以追溯到1998年Linux Kongress上的Matthias Ettrich。Matthias希望展示围绕现有应用程序制作Qt图形用户界面的简便性，他选择用GIMP进行演示。他的补丁从未发布，但当时确实造成了GIMP社区的一些问题。<br />
+由于无法合作，KDE项目内的人决定开始他们自己的图像编辑应用程序开发，专注于KOffice套件中的一款名为KImage的应用程序，由Michael Koch开发。改名为KImageShop，这标志着Krita的开始。<br />
+1999年5月31日，KImageShop项目通过Matthias Elter的邮件正式开启。那时的基本想法是将KImageShop作为ImageMagick的图形用户界面外壳。它将是一个基于CORBA的应用程序，带有进程外过滤器插件，兼容GIMP插件，后者同样是进程外的，当然不是基于CORBA的。<br />
+KImageShop这个名称在德国违反了商标法，因此KImageShop被改名为Krayon，但Krayon似乎也侵犯了现有商标，因此Krayon最终在2002年更名为Krita。<br />
+最初的开发进展缓慢，但从2003年开始迅速提升，导致2004年与KOffice 1.4一起发布了第一个公开版本。在2005年，Krita获得对CMYK、Lab、YCbCr、XYZ色彩模型和高位深通道以及OpenGL支持的支持。<br />
+从2004年到2009年，Krita主要专注于成为一款类似于Photoshop或GIMP的一般图像处理/绘画应用程序。自2009年以来，重心明确转向绘画：Krita社区旨在使Krita成为漫画家、插画家和概念艺术家最佳的绘画应用程序。<br />
+从2009年开始，Krita项目开始通过学生工作形式为社区成员提供资金，以参与Krita的开发，此外还有通过Google Summer of Code资助的开发。这一实验导致了稳定性和性能的大幅提升。<br />
+在2012年，Krita社区创建了Krita基金会，以提供更多开发支持。 [krita.org]</p>
+</blockquote>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<pre><code class="language-sh"># Arch
+sudo pacman -S krita
+# Windows 10
+scoop install krita
+</code></pre>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#document <a href="https://docs.krita.org/en/index.html">Krita</a></li>
+<li>#keymap <a href="https://www.graphicsandprogramming.net/pdf/krita-shortcuts-hotkeys-english.pdf">Krita - shortcuts/hotkeys</a></li>
+<li><a href="https://vladar.bearblog.dev/hexagonal-maps-with-inkscape-and-krita/">Hexagonal maps with Inkscape and Krita</a></li>
+<li><a href="https://vladar.bearblog.dev/public-domain-art-preparation-monochrome/">Public Domain art preparation: monochrome</a></li>
+<li><a href="https://vladar.bearblog.dev/public-domain-art-preparation-in-color/">Public Domain art preparation: in color</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../opt/kicad.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../opt/libreoffice.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../opt/kicad.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../opt/libreoffice.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

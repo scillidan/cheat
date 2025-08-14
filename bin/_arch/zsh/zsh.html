@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>zsh - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/bin/_arch/zsh/zsh.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="zsh"><a class="header" href="#zsh"><a href="https://www.zsh.org">Zsh</a></a></h1>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<pre><code class="language-sh">sudo pacman -S zsh zsh-completions
+</code></pre>
+<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
+<pre><code class="language-sh">sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/subnixr/minimal  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/minimal
+git clone --depth=1 https://github.com/const-void/rose-pine-man ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/rose-pine-man
+rm ~/.zshrc
+git init
+git remote add origin https://github.com/scillidan/dotfiles.git
+git branch -M main
+git pull origin main
+</code></pre>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#document <a href="https://zsh-user-guide.netlify.app/zshguide">Zsh User's Guide</a></li>
+</ul>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<ul>
+<li><a href="/bin/_arch/zsh/wd.html">wd.md</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#alias <a href="https://github.com/zplugin/zsh-exa">Zsh exa</a></li>
+<li>#alias <a href="https://github.com/mass8326/zsh-chezmoi">zsh-chezmoi</a></li>
+<li>#cmp <a href="https://github.com/Aloxaf/fzf-tab">fzf-tab</a></li>
+<li>#fzf <a href="https://github.com/lincheney/fzf-tab-completion">fzf-tab-completion</a></li>
+<li>#fzf <a href="https://github.com/zsh-users/zsh-completions">zsh-completions</a></li>
+<li>#fzf <a href="https://github.com/sunlei/zsh-ssh">zsh-ssh</a></li>
+<li>#help <a href="https://github.com/rhorno/oh-my-zsh-git-plugin-cheatsheet">Oh My Zsh Git Plugin Cheatsheet</a></li>
+<li>#help <a href="https://github.com/const-void/rose-pine-man">rose-pine-man</a></li>
+<li>#help <a href="https://github.com/Freed-Wu/zsh-help">zsh-help</a></li>
+<li>#jump <a href="https://github.com/mfaerevaag/wd">wd</a></li>
+<li>#jumper <a href="https://github.com/Kikolator/proj-jumper">proj-jumper</a></li>
+<li>#mode <a href="https://github.com/jeffreytse/zsh-vi-mode">Zsh Vi Mode</a></li>
+<li>#setup <a href="https://github.com/zdharma-continuum/zinit">zinit</a></li>
+<li>#theme <a href="https://github.com/subnixr/minimal">minimal</a></li>
+<li><a href="https://github.com/zdharma-continuum/fast-syntax-highlighting">fast-syntax-highlighting</a></li>
+<li><a href="https://github.com/wfxr/forgit">forgit</a></li>
+<li><a href="https://github.com/vxfemboy/zsh-smart-files">Smart Files Plugin for Zsh</a></li>
+<li><a href="https://github.com/AndydeCleyre/zpy">zpy</a></li>
+<li><a href="https://codeberg.org/tranzystorekk/zellij.zsh">Zsh plugin for Zellij</a></li>
+<li><a href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a></li>
+<li><a href="https://github.com/singular0/zsh-env-secrets">zsh-env-secrets</a></li>
+<li><a href="https://github.com/nyoungstudios/zsh-history-on-success">zsh-history-on-success</a></li>
+<li><a href="https://github.com/lgdevlop/zsh-smart-insert">zsh-smart-insert</a></li>
+<li><a href="https://github.com/raisedadead/zsh-snr">zsh-snr</a></li>
+<li><a href="https://github.com/raisedadead/zsh-touchplus">zsh-touchplus</a></li>
+<li><a href="https://github.com/z-shell/zsh-zoxide">zsh-zoxide</a></li>
+</ul>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li><a href="https://github.com/pressdarling/codex-zsh-plugin">codex Oh My Zsh Plugin</a></li>
+<li><a href="https://github.com/mafredri/zsh-async">zsh-async</a></li>
+<li><a href="https://github.com/SckyzO/zsh-sshinfo">Zsh SSHInfo Plugin</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#alias <a href="https://github.com/olets/zsh-abbr">zsh-abbr</a>|</li>
+<li>#backup <a href="https://github.com/zdharma-continuum/zsnapshot">Zsnapshot</a></li>
+<li>#backup <a href="https://github.com/Skylor-Tang/zshrc-sync">zshrc-sync</a></li>
+<li>#cd <a href="https://github.com/sgpthomas/zsh-up-dir">ZSH Up dir</a></li>
+<li>#cd <a href="https://github.com/johncassol/cdh">cdh</a></li>
+<li>#cd <a href="https://github.com/Tarrasch/zsh-bd">zsh-bd</a></li>
+<li>#clear <a href="https://github.com/Valiev/almostontop">almostontop</a></li>
+<li>#clear <a href="https://github.com/givensuman/zsh-allclear">zsh-allclear</a></li>
+<li>#clipboard <a href="https://github.com/soup-ms/zshcp">zshcp: Zsh Clipboard Manager Plugin</a></li>
+<li>#color <a href="https://github.com/SaltedBlowfish/zsh-shellcolor">zsh-shellcolors</a></li>
+<li>#complete <a href="https://github.com/matthieusb/act">Actiona Zsh plugin</a></li>
+<li>#database <a href="https://github.com/ruslan-korneev/pgconnect-zsh">PostgreSQL Connection Plugin for Oh My Zsh</a></li>
+<li>#database <a href="https://github.com/stiliajohny/historikeeper">historikeeper</a></li>
+<li>#device <a href="https://github.com/A-delta/zsh-airpods-battery">zsh-airpods-battery</a></li>
+<li>#find <a href="https://github.com/aubreypwd/zsh-plugin-fd">fd</a></li>
+<li>#font,preview <a href="https://github.com/7sDream/fontfor">FontFor</a></li>
+<li>#font,preview <a href="https://github.com/sdushantha/fontpreview">fontpreview</a></li>
+<li>#fzf <a href="https://github.com/ckp95/fwf">fwf</a></li>
+<li>#fzf <a href="https://github.com/tom-power/fzf-tab-widgets">fzf-tab widgets</a></li>
+<li>#gh <a href="https://github.com/hjdarnel/org-hopper">org-hopper</a></li>
+<li>#git <a href="https://github.com/dvigo/git-commit-prefixer">git-commit-prefixer</a></li>
+<li>#git <a href="https://github.com/yuki-yano/zeno.zsh">zeno.zsh</a></li>
+<li>#help <a href="https://github.com/james-w/fzf-cheatsheets">fzf-cheatsheets</a></li>
+<li>#highlight <a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></li>
+<li>#highlight <a href="https://github.com/ascii-soup/zsh-url-highlighter">zsh-url-highlighter</a></li>
+<li>#history <a href="https://github.com/zdharma-continuum/history-search-multi-word">history-search-multi-word - zsh plugin</a></li>
+<li>#jump <a href="https://github.com/agkozak/zsh-z">Zsh-z</a></li>
+<li>#jump <a href="https://github.com/andrewferrier/fzf-z">fzf-z</a></li>
+<li>#ls <a href="https://github.com/wintermi/zsh-lsd">zsh-lsd</a></li>
+<li>#neovim <a href="https://github.com/dacarey/zsh-nvim-switcher">zsh-nvim-switcher</a></li>
+<li>#notify <a href="https://github.com/MichaelAquilina/zsh-auto-notify">ZSH Auto-Notify</a></li>
+<li>#nvm <a href="https://github.com/martvdmoosdijk/zsh-nvm-auto-use">zsh-nvm-auto-use</a></li>
+<li>#nvm <a href="https://github.com/spencerbeggs/zsh-nvm-pnpm-auto-switch">zsh-nvm-pnpm-auto-switch</a></li>
+<li>#playground <a href="https://github.com/unixorn/awesome-zsh-plugins">jq zsh plugin</a></li>
+<li>#prompt <a href="https://github.com/Bigyls/Bigyls-zsh-theme">Bigyls-zsh-theme</a></li>
+<li>#prompt <a href="https://github.com/Lloyd-Leo/parrot-htb-zsh-theme">parot-htb-zsh-theme</a></li>
+<li>#ranger <a href="https://github.com/rc2dev/ranger-zshz">ranger-zshz</a></li>
+<li>#ranger <a href="https://github.com/NiziL/ranger.plugin.zsh">ranger.plugin.zsh</a></li>
+<li>#setup <a href="https://github.com/zplug/zplug">zplug</a></li>
+<li>#setup <a href="https://github.com/mattmc3/zsh_unplugged">zsh_unplugged</a></li>
+<li>#skim <a href="https://github.com/okhiroyuki/zsh-git-switch-branch-skim">zsh-git-switch-branch-skim</a></li>
+<li>#skim <a href="https://github.com/okhiroyuki/zsh-select-history-skim">zsh-select-history-skim</a></li>
+<li>#ssh <a href="https://github.com/twfksh/zsh-ssh-agent">zsh-ssh-agent</a></li>
+<li>#tailscale <a href="https://github.com/hsrzq/PluginForTailscale">Zsh Plugin For Tailscale</a></li>
+<li>#tailscale <a href="https://github.com/HeroesLament/zsh-tailscale-plugin">zsh-tailscale-plugin</a></li>
+<li>#theme <a href="https://github.com/eendroroy/alien-minimal">alien-minimal</a></li>
+<li>#theme <a href="https://github.com/meshkinyar/berghain.zsh-theme">berghain.zsh-theme</a></li>
+<li>#theme <a href="https://github.com/skippyr/club-house">club-house</a></li>
+<li>#uv <a href="https://github.com/matthiasha/zsh-uv-env">zsh-uv-env</a></li>
+<li><a href="https://github.com/alalik/pycalc">Pycalc Oh My Zsh Plugin</a></li>
+<li><a href="https://github.com/arzzen/calc.plugin.zsh">Simple zsh calculator</a></li>
+<li><a href="https://github.com/tolkonepiu/vscode-shell-integration-zsh-plugin">VS Code Shell Integration Zsh Plugin</a></li>
+<li><a href="https://github.com/muePatrick/zsh-ai-commands">ZSH AI Commands</a></li>
+<li><a href="https://github.com/GowayLee/zsh_web_search">ZSH Web Search</a></li>
+<li><a href="https://github.com/babasbot/auto-fortune-cowsay-zsh">auto-fortune-cowsay-zsh</a></li>
+<li><a href="https://github.com/adi-li/zsh-cwebpb">cwebpb</a></li>
+<li><a href="https://github.com/chaosimpact/sops-crypt">sops-crypt</a></li>
+<li><a href="https://github.com/Dhaiwat10/zenquotes">zenquotes</a></li>
+<li><a href="https://github.com/maximux13/zsh-auto-source-file">zsh-auto-source-file</a></li>
+<li><a href="https://github.com/drkhsh/zsh-banner">zsh-banner</a></li>
+<li><a href="https://github.com/onurhanak/zsh-journal">zsh-journal</a></li>
+<li><a href="https://github.com/wintermi/zsh-mise">zsh-mise</a></li>
+<li><a href="https://github.com/SukkaW/zsh-proxy">zsh-proxy</a></li>
+<li><a href="https://github.com/cnlee1702/zsh-system-update">zsh-system-update</a></li>
+<li><a href="https://github.com/OfferPi/zsh-warrior">zsh-warrior)</a></li>
+<li><a href="https://github.com/bepisdev/zshclean">zshclean</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../bin/_arch/zellij/zjstatus.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../bin/_arch/zsh/wd.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../bin/_arch/zellij/zjstatus.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../bin/_arch/zsh/wd.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

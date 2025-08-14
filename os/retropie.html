@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>retropie - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/os/retropie.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="retropie"><a class="header" href="#retropie"><a href="https://retropie.org.uk/">RetroPie</a></a></h1>
+<h2 id="pi-os-rpi-5"><a class="header" href="#pi-os-rpi-5">Pi OS (RPI-5)</a></h2>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>
+<h3 id="install"><a class="header" href="#install">install</a></h3>
+<pre><code class="language-sh">sudo apt install rpi-imager
+wget https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2025-05-13/2025-05-13-raspios-bookworm-arm64-lite.img.xz
+lsblk
+sudo rpi-imager --cli --first-run-script ./firstrun.sh 2025-05-13-raspios-bookworm-arm64-lite.img.xz /dev/nvmeXnX
+sudo shutdown now
+</code></pre>
+<pre><code class="language-sh">sudo apt update
+sudo apt upgrade
+sudo raspi-config
+</code></pre>
+<p>Locallisation Options → Locale → Enter <code>&lt;Space&gt;</code> to select/unselect → <code>en_US-UTF-8 UTF-8</code> → OK → <code>en_US-UTF-8</code> → OK → Finish.</p>
+<pre><code class="language-sh">sudo reboot now
+</code></pre>
+<pre><code class="language-sh">sudo update-locale LANGUAGE="en_US:en"
+sudo update-locale LC_ALL=en_US.UTF-8
+sudo reboot now
+</code></pre>
+<pre><code class="language-sh">locale
+</code></pre>
+<pre><code class="language-sh">sudo apt install git lsb-release
+git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup
+cd RetroPie-Setup
+chmod +x retropie_setup.sh
+sudo ./retropie_setup.sh
+</code></pre>
+<ol>
+<li>Basic Install → Yes</li>
+<li>Update → Yes</li>
+</ol>
+<h3 id="setup"><a class="header" href="#setup">setup</a></h3>
+<pre><code class="language-sh">sudo ~/RetroPie-Setup/retropie_setup.sh
+# In EmulationStation, you can clink `&lt;Start&gt;` → RetroPie Configuration → RestroPie Setup
+</code></pre>
+<ol>
+<li>Configuration/tools
+<ul>
+<li>autostart → Start EmulationStation at boot → OK.</li>
+<li>bluetooth
+<ol>
+<li>Pair and Connect to Bluetooth Device → <code>&lt;your_controller&gt;</code> → OK → DisplayYesNo.</li>
+<li>(Optional) Configurate bluetooth connect mode → boot → OK.</li>
+</ol>
+</li>
+<li>(Optional) wifi → Connect to WiFi network → <code>&lt;your_wifi&gt;</code> → Entry <code>&lt;your_wifipasswd&gt;</code> → Ok.</li>
+<li>(Optional) samba
+<ol>
+<li>Install RetroPie Samba shares → Ok.</li>
+<li>Manually edit /etc/samba/smb.conf → <code>workgroup = SMBGPRP</code>.</li>
+<li>Restart Samba service.</li>
+<li>Default Samba Shares and paths:
+<ul>
+<li><code>roms</code>, <code>/home/user/RetroPie/roms</code></li>
+<li><code>bios</code>, <code>/home/user/RetroPie/BIOS</code></li>
+<li><code>configs</code>, <code>/opt/retropie/configs</code></li>
+<li><code>splashscreens</code> <code>/home/user/RetroPie/splashscreens</code></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Perform reboot</li>
+</ol>
+<h2 id="gpi-case-2"><a class="header" href="#gpi-case-2">GPi CASE 2</a></h2>
+<h3 id="setup-1"><a class="header" href="#setup-1">setup</a></h3>
+<p><sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">3</a></sup> <sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">4</a></sup></p>
+<ol>
+<li>Connect to a keyboard.</li>
+<li><Start> → RetroPie (Configuration)
+<ul>
+<li>File Manager → Used <A> to enter, Find and run <code>/boot/gpi.sh</code>.</li>
+<li>WiFi → Connect to WiFi.</li>
+<li>(Optional) Interface Options → SSH → Yes.</li>
+</ul>
+</li>
+<li>On PC, connect with:
+<pre><code>host `retropie` (or ip-address)
+port `22`
+username `pi`
+password `raspberry`
+</code></pre>
+</li>
+</ol>
+<h2 id="optional"><a class="header" href="#optional">optional</a></h2>
+<h3 id="bluetooth-adapter"><a class="header" href="#bluetooth-adapter">Bluetooth adapter</a></h3>
+<p><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">5</a></sup></p>
+<pre><code class="language-sh">sudo apt install bluetooth pi-bluetooth bluez
+sudo vim /boot/firmware/config.txt
+</code></pre>
+<pre><code># Add on bottom
+[all]
+dtoverlay=disable-bt
+</code></pre>
+<pre><code class="language-sh">sudo reboot
+</code></pre>
+<h3 id="enable-xbox-controller-adapter"><a class="header" href="#enable-xbox-controller-adapter">Enable Xbox controller adapter</a></h3>
+<p><sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">6</a></sup></p>
+<pre><code class="language-sh">git clone --depth=1 https://github.com/medusalix/xow
+cd xow
+make BUILD=RELEASE
+sudo make install
+sudo apt install cabextract
+chmod +x ./firmware.sh
+sudo ./firmware.sh
+sudo systemctl enable --now xow
+sudo systemctl status xow
+# sudo systemctl stop xow
+# sudo systemctl disable xow
+# sudo make uninstall
+</code></pre>
+<h3 id="enable-pegasus-frontend"><a class="header" href="#enable-pegasus-frontend">Enable Pegasus Frontend</a></h3>
+<p><sup class="footnote-reference" id="fr-7-1"><a href="#footnote-7">7</a></sup></p>
+<ol>
+<li>RetroPie (Configuration) → RetroPie Setup → Configuration/tools.
+<ol>
+<li>Manage packages → Manage experimental packages → <code>pegasus-fe</code> → Install from pre-compiled binary.</li>
+<li>autostart → Manally edit /opt/retropie/configs/all/autostart.sh → <code>pegasus-fe</code>.</li>
+</ol>
+</li>
+<li>Reboot.</li>
+</ol>
+<h3 id="emulator-löve-experimental"><a class="header" href="#emulator-löve-experimental">Emulator Löve (Experimental)</a></h3>
+<p><sup class="footnote-reference" id="fr-8-1"><a href="#footnote-8">8</a></sup> <sup class="footnote-reference" id="fr-9-1"><a href="#footnote-9">9</a></sup></p>
+<ol>
+<li>RetroPie (Configuration) → RetroPie Setup → Manage packages → Manage optional packages → <code>love-0.10.2</code> or <code>love</code>.</li>
+<li>Add <code>&lt;game&gt;.love</code> <code>&lt;path_to&gt;/roms/love/</code>.</li>
+</ol>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<ol>
+<li>Configure keymap: <code>&lt;Start&gt;</code> → Main Menu → Configure Input → Hold a key on controller to set.</li>
+<li>Refresh roms: <code>&lt;Start&gt;</code> → Main Menu → Quit → Restart EmulationStation → Game listing will be refreshing.</li>
+</ol>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#document <a href="https://retropie.org.uk/docs/">RetroPie</a></li>
+<li>#document <a href="https://pidoc.cn/">树莓派文档</a></li>
+<li><a href="https://retropie.org.uk/docs/Transferring-Roms/#sftp">RetroPie - SFTP</a></li>
+<li><a href="https://retropie.org.uk/docs/Transferring-Roms/">Transferring Roms</a></li>
+<li><a href="https://retropie.org.uk/docs/8Bitdo-Controller/">Setting up an 8bitdo Bluetooth controller</a></li>
+<li><a href="https://retropie.org.uk/docs/Virtual-Gamepad/">Virtual Gamepad</a></li>
+<li><a href="https://github.com/sbidolach/mobile-gamepad">Mobile Gamepad</a></li>
+</ul>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<ol>
+<li><a href="/dev/gpi-case-2.html">gpi-case-2.md</a></li>
+<li><a href="/os/raspberry-pi-os.html">raspberry-pi-os.md</a></li>
+</ol>
+<ul>
+<li><a href="/optGame/curse-of-the-arrow.html">curse-of-the-arrow.md</a></li>
+<li><a href="/opt/es-de/es-de.html">es-de.md</a></li>
+<li><a href="/optGame/mari0.html">mari0.md</a></li>
+<li><a href="/optGame/nxengine-evo-rpi.html">nxengine-evo-rpi.md</a></li>
+<li><a href="/optGame/pegasus-frontend.html">pegasus-frontend.md</a></li>
+</ul>
+<p><img src="/_image/os/retropie.png" alt="retropie" /></p>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://github.com/danielfreer/raspberrypi5-retropie-setup/blob/main/Configure_OS.md">Configure_OS.md</a> <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p><a href="https://github.com/danielfreer/raspberrypi5-retropie-setup/blob/main/Install_RetroPie.md">Install_RetroPie.md</a> <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-5">
+<p><a href="https://navendu.me/posts/retropie-gpi-case-2-setup/">Retro Gaming With RetroPie, GPi CASE 2, and a Raspberry Pi</a> <a href="#fr-5-1">↩</a></p>
+</li>
+<li id="footnote-6">
+<p><a href="https://retropie.org.uk/docs/SSH/">RetroPie - SSH</a> <a href="#fr-6-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p><a href="https://pimylifeup.com/raspberry-pi-bluetooth/">Bluetooth on the Raspberry</a> <a href="#fr-3-1">↩</a></p>
+</li>
+<li id="footnote-4">
+<p><a href="https://github.com/medusalix/xow">xow</a> <a href="#fr-4-1">↩</a></p>
+</li>
+<li id="footnote-7">
+<p><a href="https://pegasus-frontend.org/docs/user-guide/platform-raspberry/#retropie">Pegasus Docs - Platform Notes: Raspberry</a> <a href="#fr-7-1">↩</a></p>
+</li>
+<li id="footnote-8">
+<p><a href="https://retropie.org.uk/docs/Love/">RetroPie Docs - Love</a> <a href="#fr-8-1">↩</a></p>
+</li>
+<li id="footnote-9">
+<p><a href="https://forum.recalbox.com/topic/19222/pygame-l%C3%B6ve-love2d-in-recalbox">PyGame LÖVE (love2d) in RecalBox</a> <a href="#fr-9-1">↩</a></p>
+</li>
+</ol>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../os/recalbox.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../os/ubuntu-22-arm.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../os/recalbox.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../os/ubuntu-22-arm.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

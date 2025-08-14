@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>srv - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/srv/_resource.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="srv"><a class="header" href="#srv">srv</a></h1>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<ul>
+<li><a href="/srv/nginx.html">nginx.md</a></li>
+<li><a href="/srv/snapdrop.html">snapdrop.md</a></li>
+<li><a href="/srv/ttydbridge.html">ttydbridge.md</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#activitywatch <a href="https://github.com/ActivityWatch/activitywatch">ActivityWatch</a></li>
+<li>#activitywatch <a href="https://github.com/ActivityWatch/aw-watcher-web">ActivityWatch Web Watcher</a></li>
+<li>#activitywatch <a href="https://github.com/ActivityWatch/aw-watcher-input">aw-watcher-input</a></li>
+<li>#activitywatch <a href="https://github.com/Alwinator/aw-watcher-utilization">aw-watcher-utilization</a></li>
+<li>#database <a href="https://github.com/simonw/datasette">Datasette</a></li>
+<li>#github-action #mkdocs <a href="https://squidfunk.github.io/mkdocs-material/publishing-your-site">Publishing your site</a></li>
+<li>#github-action <a href="https://github.com/gitleaks/gitleaks-action">Gitleaks Action</a></li>
+<li>#grammar <a href="https://github.com/languagetool-org/languagetool">LanguageTool</a></li>
+<li>#jackett <a href="https://github.com/Jackett/Jackett">Jackett</a></li>
+<li>#manga <a href="https://github.com/Suwayomi/Suwayomi-Server">Suwayomi-Server</a></li>
+</ul>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li>#cdn <a href="https://github.com/fontsource/font-files">font-files</a></li>
+<li>#document <a href="https://github.com/goodreasonai/abbey">Abbey</a></li>
+<li>#latex <a href="https://github.com/overleaf/overleaf">Overleaf</a></li>
+<li>#learn <a href="https://github.com/yangchuansheng/anki-sync-server">anki-sync-server</a></li>
+<li>#recipe <a href="https://github.com/typesense/showcase-recipe-search">Instant Recipe Search</a></li>
+<li>#sync <a href="https://github.com/linuxserver/docker-resilio-sync">Resilio-sync</a></li>
+<li>#sync <a href="https://github.com/linuxserver/docker-syncthing">Syncthing</a></li>
+<li><a href="https://github.com/muety/wakapi">wakapi</a></li>
+</ul>
+<h3 id="extra"><a class="header" href="#extra">extra</a></h3>
+<ul>
+<li>#dict <a href="https://github.com/meetDeveloper/freeDictionaryAPI">Free Dictionary API</a></li>
+<li>#ci <a href="https://github.com/SimonWaldherr/HowTo-Deploy-LaTeX-Documents">Howto Deploy LaTeX Documents</a></li>
+<li>#github-action <a href="https://github.com/actions/configure-pages">configure-pages</a></li>
+<li>#github-action <a href="https://github.com/actions/deploy-pages">deploy-pages</a></li>
+<li>#github-action <a href="https://github.com/kujov/gitlab-sync">GitLab Sync - GitHub Action</a></li>
+<li>#github-action <a href="https://github.com/AnimMouse/torrent-webseed-creator">Torrent Webseed Creator</a></li>
+<li>#jackett <a href="https://gist.github.com/wilmardo/cffb41d694edd069c28d585d2e20e0fc">jackett.md</a></li>
+<li>#jellyfin <a href="https://github.com/jellyfin/jellyfin-mpv-shim">Jellyfin MPV Shim</a></li>
+<li>#jellyfin <a href="https://github.com/jellyfin/jellyfin-plugin-opensubtitles">Jellyfin OpenSubtitles Plugin</a></li>
+<li>#jellyfin <a href="https://jellyfin.org/">Jellyfin</a></li>
+<li>#manga <a href="https://github.com/gotson/komga">Komga</a></li>
+<li>#markdown <a href="https://github.com/markserv/markserv">Markserv</a></li>
+<li>#monitor <a href="https://github.com/netdata/netdata">Netdata</a></li>
+<li>#npm <a href="https://pm2.keymetrics.io/">PM2</a></li>
+<li>#paper <a href="https://github.com/paperless-ngx/paperless-ngx">Paperless-ngx</a></li>
+<li>#plex <a href="https://github.com/iwalton3/plex-mpv-shim">MPV Shim for Plex</a></li>
+<li>#plex <a href="https://plex.tv/">Plex</a></li>
+<li>#rss #miniflux <a href="https://github.com/miniflux/v2">Miniflux 2</a></li>
+<li>#rss #miniflux <a href="https://github.com/rootknight/Miniflux-Theme-Reeder">miniflux-theme-reeder</a></li>
+<li>#torrent <a href="https://github.com/linuxserver/docker-qbittorrent">Qbittorrent</a></li>
+<li>#linkding <a href="https://github.com/sebw/linkding-archiver">Linkding Archiver</a></li>
+<li>#linkding <a href="https://github.com/sissbruecker/linkding-extension">linkding extension</a></li>
+<li>#linkding <a href="https://github.com/fivefold/linkding-injector">linkding injector</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#alert <a href="https://github.com/keephq/keep">Keep</a></li>
+<li>#analytic <a href="https://github.com/matomo-org/matomo">Matomo</a></li>
+<li>#archive <a href="https://github.com/ArchiveBox/ArchiveBox">ArchiveBox</a></li>
+<li>#arr <a href="https://github.com/morpheus65535/bazarr">Bazarr</a></li>
+<li>#arr <a href="https://github.com/Prowlarr/Prowlarr">Prowlarr</a></li>
+<li>#arr <a href="https://github.com/linuxserver/docker-radarr">Raddrr</a></li>
+<li>#arr <a href="https://github.com/Sonarr/Sonarr">Sonarr</a></li>
+<li>#audio <a href="https://lidarr.audio">Lidarr</a></li>
+<li>#automation <a href="https://github.com/ansible/ansible">Ansible</a></li>
+<li>#backup <a href="https://github.com/restic/restic">restic</a></li>
+<li>#backup <a href="https://github.com/linuxserver/docker-rsnapshot">rsnapshot</a></li>
+<li>#book <a href="https://github.com/simjanos-dev/LinguaCafe">LinguaCafe</a></li>
+<li>#buku <a href="https://github.com/jarun/buku/tree/master/bukuserver">bukuserver</a></li>
+<li>#cdn <a href="https://github.com/pcpl2/EasyImageCdn">EasyImageCdn</a></li>
+<li>#cdn <a href="https://github.com/Pixboost/transformimgs">TransformImgs</a></li>
+<li>#chat <a href="https://github.com/chatwoot/chatwoot">Chatwoot</a></li>
+<li>#clipboard <a href="https://github.com/Jeric-X/SyncClipboard">SyncClipboard</a></li>
+<li>#cloud #message <a href="https://github.com/gotify/server">gotify</a></li>
+<li>#cloud #proxy <a href="https://github.com/traefik/traefik">Traefik</a></li>
+<li>#cms <a href="https://github.com/payloadcms/payload">Payload</a></li>
+<li>#cms <a href="https://github.com/hcmut-odoo/posify">POSIFY</a></li>
+<li>#cms <a href="https://github.com/manawiki/repay">RePay</a></li>
+<li>#community <a href="https://github.com/flarum/flarum">Flarum</a></li>
+<li>#data <a href="https://github.com/gitrows/gitrows">GitRows</a></li>
+<li>#data <a href="https://qri.io">Qri</a></li>
+<li>#data-optimize <a href="https://github.com/Unmanic/unmanic">Unmanic</a></li>
+<li>#database <a href="https://github.com/mathesar-foundation/mathesar">Mathesar</a></li>
+<li>#database <a href="https://github.com/paradedb/paradedb">ParadeDB</a></li>
+<li>#database <a href="https://github.com/surrealdb/surrealdb">SurrealDB</a></li>
+<li>#development <a href="https://github.com/hoppscotch/hoppscotch">Hoppscotch</a></li>
+<li>#development <a href="https://github.com/Infisical/infisical">Infisical</a></li>
+<li>#dns <a href="https://github.com/AdguardTeam/AdGuardHome">AdGuardHome</a></li>
+<li>#dns <a href="https://github.com/coredns/coredns">CoreDNS</a></li>
+<li>#dns <a href="https://github.com/DNSCrypt/dnscrypt-proxy">dnscrypt-proxy</a></li>
+<li>#dns <a href="https://github.com/pi-hole/pi-hole">Pi-hole</a></li>
+<li>#dns <a href="https://github.com/cunnie/sslip.io">sslip.io</a></li>
+<li>#dns #monitor <a href="https://github.com/Lissy93/AdGuardian-Term">AdGuardian-Term</a></li>
+<li>#ebook <a href="https://github.com/crocodilestick/Calibre-Web-Automated">Calibre-Web Automated</a></li>
+<li>#ebook <a href="https://github.com/calibrain/calibre-web-automated-book-downloader">Calibre-Web-Automated-Book-Downloader</a></li>
+<li>#edit <a href="https://livebook.dev">Livebook</a></li>
+<li>#editor <a href="https://github.com/ekzhang/rustpad">Rustpad</a></li>
+<li>#erp <a href="https://github.com/frappe/erpnext">ERPNext</a></li>
+<li>#erp <a href="https://github.com/dotnet/eShop">eShop</a></li>
+<li>#erp <a href="https://github.com/ever-co/ever-gauzy">Ever Gauzy Platform</a></li>
+<li>#file <a href="https://github.com/svenstaro/miniserve">miniserve</a></li>
+<li>#file-share <a href="https://github.com/TobiasMarschner/ferrishare">FerriShare</a></li>
+<li>#finance <a href="https://github.com/maybe-finance/maybe">Maybe</a></li>
+<li>#firewall <a href="https://github.com/pfsense/pfsense">pfSense</a></li>
+<li>#game <a href="https://github.com/jhj0411jhj/torchlight2_lan_game_server_tool">Torchlight 2 Lan Game Server Tool</a></li>
+<li>#gist <a href="https://github.com/MaxLeiter/Drift">Drift</a></li>
+<li>#gist <a href="https://github.com/thomiceli/opengist">Opengist</a></li>
+<li>#git <a href="https://github.com/kubernetes/git-sync">git-sync</a></li>
+<li>#git <a href="https://github.com/gogs/gogs">Gogs</a></li>
+<li>#github-action <a href="https://github.com/peaceiris/actions-hugo">actions-hugo</a></li>
+<li>#github-action <a href="https://github.com/SimonWaldherr/BookTemplate">Generating PDF Documents with Quarto, LaTeX, and GitHub Actions</a></li>
+<li>#github-action <a href="https://github.com/marketplace/actions/logseq-publish-spa">Logseq Publish SPA</a></li>
+<li>#github-action <a href="https://github.com/dineshsonachalam/markdown-autodocs">Markdown autodocs</a></li>
+<li>#github-action <a href="https://github.com/BaileyJM02/markdown-to-pdf">Markdown to PDF</a></li>
+<li>#github-action <a href="https://github.com/benfalk/action-mdbook">MdBook Github Action with Plugin Support</a></li>
+<li>#github-action <a href="https://github.com/sylingd/tencent-cos-and-cdn-action">Tencent Cloud COS and CDN action</a></li>
+<li>#home-assistant <a href="https://github.com/home-assistant/core">Home Assistant</a></li>
+<li>#homepage <a href="https://github.com/IceWhaleTech/CasaOS">CasaOS</a></li>
+<li>#host <a href="https://github.com/coollabsio/coolify">coolify</a></li>
+<li>#host <a href="https://yunohost.org">YunoHost</a></li>
+<li>#hypothesis <a href="https://via.hypothes.is/https://github.com/hypothesis/via">via</a></li>
+<li>#image <a href="https://github.com/wagoodman/dive">dive</a></li>
+<li>#image #pull <a href="https://github.com/containerd/stargz-snapshotter">Stargz Snapshotter</a></li>
+<li>#image-board <a href="https://github.com/danbooru/danbooru">danbooru</a></li>
+<li>#ims <a href="https://grocy.info">Grocy</a></li>
+<li>#ims <a href="https://github.com/inventree/inventree">InvenTree</a></li>
+<li>#issue <a href="https://github.com/princeton-nlp/SWE-agent">SWE-agent</a></li>
+<li>#jira <a href="https://github.com/makeplane/plane">Plane</a></li>
+<li>#karaok <a href="https://github.com/karaokemugen/karaokemugen-server">Karaoke Mugen Server</a></li>
+<li>#karaok <a href="https://gitlab.com/karaokemugen/code/karaokemugen-server">Karaoke Mugen Server</a></li>
+<li>#kubernete <a href="https://github.com/derailed/k9s">K9s</a></li>
+<li>#kubernete <a href="https://github.com/sachaos/viddy">Viddy</a></li>
+<li>#lan <a href="https://github.com/jokob-sk/NetAlertX">Network scanner &amp; notification framework</a></li>
+<li>#latex <a href="https://github.com/a-nau/latex-devcontainer">VS Code LaTeX Devcontainer</a></li>
+<li>#lyric <a href="https://github.com/mathisdt/sdb2">Song Database</a></li>
+<li>#mail <a href="https://github.com/foxcpp/maddy">Maddy Mail Server</a></li>
+<li>#mail <a href="https://github.com/mail-in-a-box/mailinabox">Mail-in-a-Box</a></li>
+<li>#manga <a href="https://github.com/Kareadita/Kavita">Kavita</a></li>
+<li>#manga <a href="https://github.com/Kareadita/Kavita">Kavita</a></li>
+<li>#manga <a href="https://github.com/g3ru1a/mangadb-api">MangaDB API</a></li>
+<li>#manga <a href="https://github.com/mylar3/mylar3">Mylar3</a></li>
+<li>#manga <a href="https://github.com/stumpapp/stump">Stump</a></li>
+<li>#monitor <a href="https://github.com/henrygd/beszel">Beszel</a></li>
+<li>#monitor <a href="https://github.com/glanceapp/glance">Glance</a></li>
+<li>#monitor <a href="https://github.com/healthchecks/healthchecks">Healthchecks</a></li>
+<li>#monitor <a href="https://github.com/alexjustesen/speedtest-tracker">Speedtest Tracker</a></li>
+<li>#monitor <a href="https://github.com/louislam/uptime-kuma">Uptime Kuma</a></li>
+<li>#monitor #drive <a href="https://github.com/AnalogJ/scrutiny">scrutiny</a></li>
+<li>#mpv <a href="https://github.com/aramrw/mpv-shelf">Mpv Shelf</a></li>
+<li>#music <a href="https://mopidy.com/">Mopidy</a></li>
+<li>#music <a href="https://github.com/navidrome/navidrome">Navidrome</a></li>
+<li>#music <a href="https://github.com/Splamy/TS3AudioBot">TS3AudioBot</a></li>
+<li>#network <a href="https://github.com/netbox-community/netbox">NetBox</a></li>
+<li>#novel <a href="https://github.com/AtsumeruDev/Atsumeru">Atsumeru</a></li>
+<li>#oms <a href="https://github.com/hydra-billing/homs">HOMS</a></li>
+<li>#oms <a href="https://github.com/medusajs/medusa">Medusa</a></li>
+<li>#os <a href="https://github.com/dockur/macos">OSX</a></li>
+<li>#os <a href="https://github.com/HeyPuter/puter">Puter</a></li>
+<li>#os <a href="https://github.com/SerenityOS/serenity">SerenityOS</a></li>
+<li>#os <a href="https://github.com/dockur/windows">Windows</a></li>
+<li>#pay <a href="https://github.com/juspay/hyperswitch">Hyperswitch</a></li>
+<li>#photo <a href="https://github.com/xemle/home-gallery">HomeGallery</a></li>
+<li>#photo <a href="https://github.com/immich-app/immich">Immich</a></li>
+<li>#platform <a href="https://github.com/Dokploy/dokploy">Dokploy</a></li>
+<li>#podcast <a href="https://github.com/akhilrex/podgrab">Podgrab</a></li>
+<li>#ppsspp <a href="https://github.com/Souler/ppsspp-adhoc-server">PPSSPP Adhoc Server</a></li>
+<li>#prod <a href="https://github.com/PostHog/posthog">PostHog</a></li>
+<li>#qa <a href="https://github.com/apache/incubator-answer">Answer</a></li>
+<li>#read <a href="https://github.com/bayang/jelu">JELU</a></li>
+<li>#read-later <a href="https://github.com/omnivore-app/omnivore">Omnivore</a></li>
+<li>#read-later <a href="https://github.com/wallabag/wallabag">wallabag</a></li>
+<li>#retroarch <a href="https://github.com/NickHeap2/retroarch-asset-server">RetroArch asset server</a></li>
+<li>#rpi <a href="https://github.com/pi-hole/pi-hole">Pi-hole</a></li>
+<li>#search <a href="https://manticoresearch.com">Manticore Search</a></li>
+<li>#search <a href="https://github.com/meilisearch/MeiliSearch">Meilisearch</a></li>
+<li>#serve <a href="https://github.com/denonia/jisho">辞書</a></li>
+<li>#steam <a href="https://github.com/HerrEurobeat/steam-comment-service-bot">Steam Comment Bot</a></li>
+<li>#stream <a href="https://github.com/AlexxIT/go2rtc">go2rtc</a></li>
+<li>#stream <a href="https://github.com/bluenviron/mediamtx">MediaMTX</a></li>
+<li>#stream <a href="https://github.com/LizardByte/Sunshine">Sunshine</a></li>
+<li>#stream <a href="https://github.com/Syncplay/syncplay">Syncplay</a></li>
+<li>#tag <a href="https://github.com/featbit/featbit">FeatBit</a></li>
+<li>#telephony <a href="https://github.com/fonoster/fonoster">fonoster</a></li>
+<li>#torrent <a href="https://github.com/sergiotapia/magnetissimo">Magnetissimo</a></li>
+<li>#torrent <a href="https://github.com/sergiotapia/torrentinim">Torrentinim</a></li>
+<li>#track <a href="https://github.com/solidtime-io/solidtime">solidtime</a></li>
+<li>#translate <a href="https://github.com/yym68686/DeepLX">DeepLX API Load Balancer</a></li>
+<li>#translate <a href="https://github.com/OwO-Network/DeepLX">DeepLX</a></li>
+<li>#translate <a href="https://github.com/OwO-Network/DeepLX">DeepLX</a></li>
+<li>#translate <a href="https://github.com/mozilla/pontoon">Pontoon</a></li>
+<li>#translate <a href="https://github.com/tolgee/tolgee-platform">Tolgee</a></li>
+<li>#translate <a href="https://github.com/WeblateOrg/weblate">Weblate</a></li>
+<li>#update <a href="https://containrrr.dev/watchtower">Watchtower</a></li>
+<li>#video <a href="https://github.com/zebradots/loopi">loopi</a></li>
+<li>#voice <a href="https://github.com/speaches-ai/speaches">Speaches</a></li>
+<li>#voice <a href="https://github.com/pluja/whishper">Whishper</a></li>
+<li>#voice-assistant <a href="https://github.com/leon-ai/leon">Leon</a></li>
+<li>#voice-assistant <a href="https://github.com/NaomiProject/Naomi">Naomi</a></li>
+<li>#weather <a href="https://github.com/chubin/wttr.in">wttr.in</a></li>
+<li>#web-security <a href="https://github.com/bunkerity/bunkerweb">BunkerWeb</a></li>
+<li>#webdav <a href="https://github.com/hacdias/webdav">webdav</a></li>
+<li>#wireles <a href="https://github.com/linuxserver/docker-unifi-network-application">Unifi-network-application</a></li>
+<li>#write <a href="https://github.com/linuxserver/docker-hedgedoc">HedgeDoc</a></li>
+<li>#yomitan <a href="https://github.com/aramrw/yomichan_audio_server">Add Audio Server to Yomichan/Yomitan</a></li>
+<li>#yomitan <a href="https://github.com/themoeway/local-audio-yomichan">Local Audio Server for Yomichan</a></li>
+<li>#yomitan <a href="https://github.com/aramrw/yomichan_audio_server">yomichan_audio_server</a></li>
+<li><a href="https://github.com/9001/copyparty">copyparty</a></li>
+<li><a href="https://github.com/frappe/hrms">Frappe HR</a></li>
+<li><a href="https://github.com/NginxProxyManager/nginx-proxy-manager">nginx-proxy-manager</a></li>
+<li><a href="https://github.com/dgtlmoon/changedetection.io">Web Site Change Detection, Restock monitoring and notifications.</a></li>
+</ul>
+<h3 id="cancel"><a class="header" href="#cancel">cancel</a></h3>
+<ul>
+<li>#archive <a href="https://github.com/linuxserver/docker-sabnzbd">Sabnzbd</a></li>
+<li>#book <a href="https://github.com/dubyte/dir2opds">dir2opds</a></li>
+<li>#book <a href="https://github.com/patexoid/ForeverLib">ForeverLib</a></li>
+<li>#cheat <a href="https://github.com/chubin/cheat.sh">cheat.sh</a></li>
+<li>#file-share <a href="https://github.com/linuxserver/docker-pydio-cells">Pydio-cells</a></li>
+<li>#finance <a href="https://github.com/akaunting/akaunting">Akaunting</a></li>
+<li>#finance <a href="https://github.com/maybe-finance/maybe">maybe</a></li>
+<li>#github-action <a href="https://github.com/actions/upload-artifact">upload-artifact</a></li>
+<li>#ims <a href="https://github.com/hay-kot/homebox">HomeBox</a></li>
+<li>#notify <a href="https://github.com/huginn/huginn">Huginn</a></li>
+<li>#notify <a href="https://github.com/binwiederhier/ntfy">ntfy</a></li>
+<li>#rss <a href="https://github.com/DocNow/diffengine">diffengine</a></li>
+<li>#rss <a href="https://github.com/nkanaev/yarr">yarr</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../os/windows/wsl.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../srv/anki-sync-server.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../os/windows/wsl.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../srv/anki-sync-server.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

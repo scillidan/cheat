@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html lang="en" class="ayu sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>uconsole-cm4 - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "ayu";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/dev/uconsole-cm4.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="uconsole-cm4"><a class="header" href="#uconsole-cm4"><a href="https://www.clockworkpi.com/uconsole">Uconsole CM4</a></a></h1>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> <sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup></p>
+<h2 id="install-arch-linux-arm"><a class="header" href="#install-arch-linux-arm">Install Arch Linux ARM</a></h2>
+<pre><code class="language-sh">sudo wipefs --all /dev/sdc
+sudo fdisk --list
+sudo fdisk /dev/sdc
+sudo mkfs.vfat /dev/sdc1
+sudo mkfs.ext4 /dev/sdc2
+</code></pre>
+<pre><code class="language-sh">sudo umount /mnt/boot
+sudo umount /mnt
+</code></pre>
+<pre><code class="language-sh">sudo fdisk --list
+sudo mount /dev/sdc2 /mnt
+sudo mkdir /mnt/boot
+sudo mount /dev/sdc1 /mnt/boot
+</code></pre>
+<pre><code class="language-sh">sudo pacman -Sy
+sudo pacman -S qemu-user-static qemu-user-static-binfmt arch-install-scripts
+</code></pre>
+<pre><code class="language-sh">sudo bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C /mnt
+ls -l /mnt
+sudo genfstab -U /mnt | sudo tee -a /mnt/etc/fstab
+</code></pre>
+<pre><code class="language-sh">sudo arch-chroot /mnt
+pacman-key --init
+pacman-key --populate archlinuxarm
+pacman -Sy raspberrypi-bootloader firmware-raspberrypi
+pacman -R linux-aarch64
+</code></pre>
+<pre><code class="language-sh">pacman -U --noconfirm linux-uconsole-cm3-rpi64*.pkg.zst
+pacman -U --noconfirm ap6256-firmware*.pkg.tar
+</code></pre>
+<pre><code class="language-sh">git clone --depth=1 https://github.com/PotatoMania/uconsole-cm3
+# git clone --depth=1 https://github.com/systematiccaos/uconsole-cm3-cm4
+cd uconsole-cm3/PKGBUILDs/linux-uconsole-cm3-rpi64
+git clone --depth=1 -b rpi-6.1.y https://github.com/raspberrypi/linux.git
+tar -czvf linux.tar.gz linux
+cd linux
+git status
+git restore --source=HEAD :/
+</code></pre>
+<pre><code class="language-sh">sudo pacman -S cpio pahole aarch64-linux-gnu-gcc make flex bison patch
+makepkg
+pacman -Syu
+</code></pre>
+<pre><code class="language-sh">useradd -m auruser
+passwd auruser
+echo "auruser ALL=(ALL) ALL" &gt; /etc/sudoers.d/auruser
+chmod 440 /etc/sudoers.d/auruser
+chmod u+w /home/auruser/ap6256-firmware
+pacman -S fakeroot sudo
+su - auruser
+ls -l /home/auruser/ap6256-firmware
+export PKGDEST=/tmp/my_package_destination
+export SRCDEST=/tmp/my_source_directory
+export BUILDDIR=/tmp/my_build_directory
+makepkg
+pacman -U /tmp/my_package_destination/ap6256-firmware-0.1.20231120-1-any.pkg.tar.xz
+</code></pre>
+<pre><code class="language-sh">sudo vim /mnt/boot/config.txt
+</code></pre>
+<pre><code>ignore_lcd=1
+disable_fw_kms_setup=1
+max_framebuffers=2
+arm_boost=1
+
+# setup headphone detect pin
+gpio=10=ip,np
+
+# boot kernel directly
+kernel=Image.gz
+arm_64bit=1
+initramfs initramfs-linux.img followkernel
+
+# overlays
+dtoverlay=dwc2,dr_mode=host
+dtoverlay=vc4-kms-v3d
+dtoverlay=audremap,pins_12_13
+dtparam=audio=on
+dtoverlay=uconsole
+</code></pre>
+<pre><code class="language-sh">pacman -S iwe
+sudo vim /mnt/boot/config.txt
+</code></pre>
+<pre><code>[all]
+ignore_lcd=1
+disable_fw_kms_setup=1
+disable_audio_dither
+pwm_sample_bits=20
+
+# setup headphone detect pin
+gpio=10=ip,np
+
+# boot custom kernel
+kernel=Image.gz
+arm_64bit=1
+initramfs initramfs-linux.img followkernel
+
+dtoverlay=dwc2,dr_mode=host
+dtoverlay=audremap,pins_12_13
+dtparam=audio=on
+
+[pi3]
+dtoverlay=vc4-kms-v3d
+dtoverlay=uconsole
+
+[cm4]
+arm_boost=1
+max_framebuffers=2
+dtoverlay=vc4-kms-v3d-pi4
+dtoverlay=uconsole,cm4
+
+[all]
+# whatever you need
+</code></pre>
+<pre><code class="language-sh">sudo umount /mnt/boot /mnt
+</code></pre>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li><a href="https://github.com/clockworkpi/DevTerm/wiki/Create-DevTerm-CM4-OS-image-from-scratch">Create DevTerm CM4 OS image from scratch</a></li>
+<li><a href="https://github.com/clockworkpi/uConsole/wiki/How-uConsole-CM4-OS-image-made">How uConsole CM4 OS image made</a></li>
+</ul>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://github.com/PotatoMania/uconsole-cm3">How to install ArchLinux on uConsole/CM3 from scratch</a> <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p><a href="https://github.com/PotatoMania/uconsole-cm3/blob/dev/doc/how-to-install-archlinux-from-scratch.md">uConsole CM3</a> <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p><a href="https://github.com/PotatoMania/uconsole-cm3-arch-image-builder/issues/1">Wifi not working on CM4</a> <a href="#fr-3-1">↩</a></p>
+</li>
+</ol>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dev/raspberry-pi-5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../lib/_resource.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dev/raspberry-pi-5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../lib/_resource.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
