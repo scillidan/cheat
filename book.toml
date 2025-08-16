@@ -7,7 +7,7 @@ language = "en"
 src = "src"
 
 [output.html]
-default-theme = "ayu"
+default-theme = "Light"
 preferred-dark-theme = "ayu"
 no-section-label = true
 git-repository-icon = "fa-github"
