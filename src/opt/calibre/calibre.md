@@ -159,4 +159,4 @@ URL: http://<your_host>:<port>/?models=librarian%3Alatest-clone&q={word}
 ![lookup_01](/_image/opt/calibre/lookup_01.png)
 ![lookup_02](/_image/opt/calibre/lookup_02.png)
 
-{% embed bilibili id="<id>" loading="lazy" %}
+{% embed bilibili id="BV1BKYBzBEqU" loading="lazy" %}

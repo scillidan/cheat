@@ -40,4 +40,4 @@ yay -S --noconfirm videosubfinder
 
 - [rapidvideocr.md](/bin/rapidvideocr.md)
 
-{% embed bilibili id="<id>" loading="lazy" %}
+{% embed bilibili id="BV17Y6dYcEaH" loading="lazy" %}

@@ -10,4 +10,4 @@
 	- Kokoro API URL → `http://localhost:8880/v1`
 	- Chunk Size (characters) → `1500 (Higher-end systems)`
 
-{% embed bilibili id="<id>" loading="lazy" %}
+{% embed bilibili id="BV1zwYBz3Emk" loading="lazy" %}

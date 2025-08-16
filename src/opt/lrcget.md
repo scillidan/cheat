@@ -17,4 +17,4 @@ yay -S --noconfirm lrcget-bin
 
 ![lrcget](/_image/opt/lrcget.png)
 
-{% embed bilibili id="<id>" loading="lazy" %}
+{% embed bilibili id="BV1bpYBzoERE" loading="lazy" %}

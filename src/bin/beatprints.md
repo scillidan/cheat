@@ -53,4 +53,4 @@ beatprints
 
 [^1]: [CLI Setup](https://beatprints.readthedocs.io/en/latest/guidebook/cli.html)
 
-{% embed bilibili id="<id>" loading="lazy" %}
+{% embed bilibili id="BV1GwomYTEJn" loading="lazy" %}

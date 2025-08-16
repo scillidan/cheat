@@ -38,4 +38,4 @@ python -m pip install onnx==1.16.0 onnxoptimizer==0.3.13 onnxruntime-gpu==1.17.1
 
 ![chainner](/_image/opt/chainner.png)
 
-{% embed bilibili id="<id>" loading="lazy" %}
+{% embed bilibili id="BV188G2zaEts" loading="lazy" %}

@@ -2,7 +2,7 @@
 
 > SFT And RLHF models using Knowledge of Universal Character and Relationship Attributes for Japanese to Chinese Translation in Light Novel & Galgame Domain. [SakuraLLM/SakuraLLM]
 
-> SFT和RLHF模型利用通用角色和关系属性的知识进行轻小说和美少女游戏领域的日译中翻译。 [GPT-4o mini]
+> SFT和RLHF模型利用通用角色和关系属性的知识进行轻小说和美少女游戏领域的日译中翻译。 [SakuraLLM/SakuraLLM]
 
 ## install
 

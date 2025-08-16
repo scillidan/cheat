@@ -1,10 +1,10 @@
 # [syncabook](https://github.com/r4victor/syncabook)
 
 > syncabook is a set of tools for creating ebooks with synchronized text and audio (a.k.a. read along, read aloud; like Amazon's Whispersync). You start with a list of text files (plaintext or XTML) and a list of audio files (.wav or .mp3) and get an ebook in the open EPUB3 with Media Overlays format.  
-> The synchronization is done automatically using the afaligner library. It is a forced aligner that works by synthesizing text and then aligning synthesized and recorded audio using a variation of the DTW (Dynamic Time Warping) algorithm. For alignment details, please refer to the afaligner repository. [r4victor/syncabook]
+> The synchronization is done automatically using the afaligner library. It is a forced aligner that works by synthesizing text and then aligning synthesized and recorded audio using a variation of the DTW (Dynamic Time Warping) algorithm. [r4victor/syncabook]
 
 > syncabook是一套用于创建带有同步文本和音频的电子书的工具（也称为“跟读”、“朗读”；类似于亚马逊的Whispersync）。你可以从一系列文本文件（纯文本或XTML）和一系列音频文件（.wav或.mp3）开始，最终得到一个采用开放EPUB3带媒体叠加格式的电子书。  
-> 同步是通过使用afaligner库自动完成的。它是一个强制对齐器，通过合成文本并使用DTW（动态时间规整）算法的一种变体对合成音频和录制音频进行对齐。有关对齐的详细信息，请参考afaligner代码库。 [r4victor/syncabook]
+> 同步是通过使用afaligner库自动完成的。它是一个强制对齐器，通过合成文本并使用DTW（动态时间规整）算法的一种变体对合成音频和录制音频进行对齐。 [r4victor/syncabook]
 
 ## install
 
@@ -101,4 +101,4 @@ sudo docker run --rm -v ~/Git/_/synclibrivox/books:/books -it scillidan/syncaboo
 
 [^1]: [Installing aeneas - Linux](https://github.com/readbeyond/aeneas/blob/master/wiki/INSTALL.md#linux)
 
-{% embed bilibili id="<id>" loading="lazy" %}
+{% embed bilibili id="BV1hJYBzfEpt" loading="lazy" %}
