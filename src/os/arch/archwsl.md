@@ -134,7 +134,6 @@ systemd=true
 - [pylanguagetool.md](/bin/pylanguagetool.md)
 - [python.md](/lib/python/python.md)
 - [rembg.md](/bin/rembg.md)
-- [rename.md](/bin/rename.md)
 - [retype.md](/Web/retype.md)
 - [ripgrep.md](/bin/ripgrep.md)
 - [rsync.md](/bin/rsync.md)

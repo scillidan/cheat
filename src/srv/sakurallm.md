@@ -1,5 +1,9 @@
 # [SakuraLLM](https://github.com/SakuraLLM/SakuraLLM)
 
+> SFT And RLHF models using Knowledge of Universal Character and Relationship Attributes for Japanese to Chinese Translation in Light Novel & Galgame Domain. [SakuraLLM/SakuraLLM]
+
+> SFT和RLHF模型利用通用角色和关系属性的知识进行轻小说和美少女游戏领域的日译中翻译。 [GPT-4o mini]
+
 ## install
 
 ```sh
@@ -32,3 +36,5 @@ python translate_epub.py --trust_remote_code --model_name_or_path models/sakura-
 
 [^1]: [Sakura模型部署教程-本地运行-Transformers模型](https://github.com/SakuraLLM/tutorial/blob/main/tutorial-local-transformers.md)
 [^2]: [各种推理引擎的使用说明](https://github.com/SakuraLLM/SakuraLLM/blob/main/usage.md)
+
+{% embed bilibili id="BV1V1421X7zL" loading="lazy" %}

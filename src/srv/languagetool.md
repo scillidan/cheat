@@ -1,4 +1,30 @@
-# [LanguageTool](https://languagetool.org/)
+# [LanguageTool](https://languagetool.org)
+
+> LanguageTool is an advanced AI-based writing assistant and text editor designed to improve writing quality. It goes beyond simple spelling and grammar checking by offering features like:  
+> - Detection and correction of grammar, spelling, and punctuation errors  
+> - Style improvements, including suggestions to avoid overused or redundant words  
+> - Support for more than 20 languages  
+> - Fixing formatting inconsistencies such as times, numbers, and currency  
+> - Personalized features like a personal dictionary and style guide  
+> - Integration with various platforms and applications, including web browsers, Microsoft Word, Google Docs, LibreOffice, and more  
+> - An online editor and browser extensions to check text while typing on the web  
+> - Advanced AI and open-source technology behind it  
+> - Premium options with enhanced error detection, unlimited rephrasing, and team collaboration features  
+> It is available as free and premium versions, with the core being open-source and downloadable for offline use. LanguageTool is designed to help users write precisely, clearly, and stylishly across different types of texts and languages.  
+> In short, LanguageTool is a comprehensive grammar, style, and spell checker that acts as a powerful writing assistant to make your writing error-free and polished.  [perplexity.ai]
+
+> LanguageTool是一款先进的基于AI的写作助手和文本编辑器，旨在提高写作质量。它超越了简单的拼写和语法检查，提供以下功能：  
+> - 检测和修正语法、拼写和标点错误  
+> - 风格改进，包括避免使用过多或冗余词汇的建议  
+> - 支持超过20种语言  
+> - 修复时间、数字和货币等格式不一致  
+> - 个性化功能，如个人词典和风格指南  
+> - 与各种平台和应用的集成，包括网络浏览器、Microsoft Word、Google Docs、LibreOffice等  
+> - 在线编辑器和浏览器扩展，在线输入时进行文本检查  
+> - 背后的先进AI技术和开源技术  
+> - 付费选项包括增强的错误检测、无限重写和团队协作功能  
+> 它有免费的和付费的版本，核心功能为开源，可离线下载使用。LanguageTool旨在帮助用户在不同类型的文本和语言中写作精准、清晰和风格优雅。  
+> 简而言之，LanguageTool是一个全面的语法、风格和拼写检查工具，作为强大的写作助手，帮助您使写作无误且精练。 [GPT-4o mini]
 
 ## install
 
@@ -82,3 +108,5 @@ Create shortcut of `languagetool_service.vbs`, put it into `C:\Users\User\AppDat
 [^1]: [LanguageTool embedded HTTP Server](https://dev.languagetool.org/http-server)
 [^2]: [Anyone self-hosting languagetool?](https://www.reddit.com/r/selfhosted/comments/ksvmii/anyone_selfhosting_languagetool/)
 [^3]: [Finding errors using n-gram data](https://dev.languagetool.org/finding-errors-using-n-gram-data)
+
+{% embed bilibili id="BV13c411t7QS" loading="lazy" %}

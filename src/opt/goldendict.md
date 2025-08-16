@@ -1,5 +1,9 @@
 # [GoldenDict](https://github.com/goldendict/goldendict)
 
+> GoldenDict是一款开源的桌面端词典检索应用，跨平台，支持多种词典格式。它有十分丰富的可配置项，包括字典组，拼写检查、单词发音、语音合成、在线翻译等等。 [scillidan, "配置GoldenDict"]
+
+> GoldenDict is an open-source desktop dictionary lookup application that is cross-platform and supports multiple dictionary formats. It features a wide range of configurable options, including dictionary groups, spell checking, word pronunciation, text-to-speech, online translation, and more. [GPT-4o mini]
+
 ## install
 
 ```sh
@@ -58,3 +62,7 @@ git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
 - [GoldenDict-openai-translator](https://github.com/Twinblade-i/goldendict-openai-translator)
 - [Tencent-Translator-rs](https://github.com/mingerfan/Tencent-Translator-rs)
 - [TMX to Goldendict Convertor](https://github.com/Celso-Scott/TMX-to-Goldendict-Converter)
+
+{% embed bilibili id="BV1pw411V761" loading="lazy" %}
+{% embed bilibili id="BV1CC4y1S77c" loading="lazy" %}
+{% embed bilibili id="BV1cK41187up" loading="lazy" %}

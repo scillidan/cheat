@@ -1,4 +1,4 @@
-# [immich](https://immich.app/)
+# [immich](https://immich.app)
 
 ## install
 

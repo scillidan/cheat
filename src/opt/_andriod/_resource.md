@@ -62,6 +62,7 @@
 - #reader [Readium Kotlin Toolkit](https://github.com/readium/kotlin-toolkit) _release_
 - #reader [Storyteller](https://gitlab.com/smoores/storyteller) _release_
 - [Droid Pad](https://github.com/umer0586/DroidPad) _release_
+- [Torrent Search](https://github.com/prajwalch/TorrentSearch/releases) _release_
 
 ### cache
 

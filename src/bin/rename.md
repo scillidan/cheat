@@ -6,3 +6,9 @@
 # Node.js
 pnpm add -g @innocenzi/rename
 ```
+
+## usage
+
+```sh
+rn
+```

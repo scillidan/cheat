@@ -27,6 +27,10 @@ git pull origin main
 
 - [wd.md](/bin/_arch/zsh/wd.md)
 
+## troubleshoot
+
+- [Fix key settings (Home/End/Insert/Delete) in .zshrc when running Zsh in Terminator Terminal Emulator - Stack Overflow](https://stackoverflow.com/questions/8638012/fix-key-settings-home-end-insert-delete-in-zshrc-when-running-zsh-in-terminat)
+
 ## resource
 
 ### mark

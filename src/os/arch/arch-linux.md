@@ -284,6 +284,7 @@ sudo pacman -Rns \
 - [weixin.md](/opt/weixin.md)
 - [wezterm.md](/opt/wezterm.md)
 - [xnconvert.md](/opt/xnconvert.md)
+- [yoga-image-optimizer.md](/opt/yoga-image-optimizer.md)
 - [yt-dlp.md](/bin/yt-dlp.md)
 - [zeal.md](/opt/zeal.md)
 

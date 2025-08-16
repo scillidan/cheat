@@ -5,6 +5,7 @@
 ### mark
 
 - #chrome #firefox [Adjust Page Brightness](https://webextension.org/listing/screen-brightness.html)
+- #chrome #firefox [Allow Right Click](https://webextension.org/listing/allow-right-click.html)
 - #chrome #firefox [Augmented Steam](https://augmentedsteam.com)
 - #chrome #firefox [BetterViewer](https://github.com/Ademking/BetterViewer)
 - #chrome #firefox [Block Site](https://webextension.org/listing/block-site.html)
@@ -22,6 +23,7 @@
 - #chrome #firefox [Imagus](https://github.com/TheFantasticWarrior/chrome-extension-imagus)
 - #chrome #firefox [Linguist](https://github.com/translate-tools/linguist)
 - #chrome #firefox [Linkclump](https://github.com/benblack86/linkclump)
+- #chrome #firefox [Live Stream Downloader](https://webextension.org/listing/hls-downloader.html)
 - #chrome #firefox [Markdown Reader](https://github.com/md-reader/md-reader)
 - #chrome #firefox [Modern scrollbar](https://github.com/luandersonn/Modern-scrollbar)
 - #chrome #firefox [Open Multiple URLs](https://github.com/htrinter/Open-Multiple-URLs)
@@ -93,7 +95,6 @@
 - #tts [Speechify — Text to Speech](https://speechify.com)
 - [10ten Japanese Reader (Rikaichamp)](https://github.com/birchill/10ten-ja-reader)
 - [Allow CORS](https://mybrowseraddon.com/access-control-allow-origin.html)
-- [Allow Right Click](https://webextension.org/listing/allow-right-click.html)
 - [Aria2 Explorer](https://aria2e.com)
 - [arXiv Vanity](https://github.com/arxiv-vanity/arxiv-vanity)
 - [asbplayer](https://github.com/killergerbah/asbplayer)
