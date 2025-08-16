@@ -29,16 +29,6 @@ bash = "#"
 [output.html.playground]
 runnable = false
 
-# [output.epub]
-# additional-css = ["assets/css/epub.css"]
-# use-default-css = false
-# cover-image = "ebook-cover.png"
-# additional-resources = ["assets/font/Open-Sans-Regular.ttf"]
-# no-section-label = true
-# curly-quotes = true
-# epub-version = 3
-# footnote-backrefs = true
-
 [prepocessor.force-relative-links]
 after = ["links"]
 
