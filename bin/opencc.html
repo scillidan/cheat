@@ -194,6 +194,12 @@ uv venv .opencc --python 3.10
 mklink %USERPROFILE%\.local\bin\opencc.exe %CD%\.opencc\Lib\site-packages\opencc\clib\bin\opencc.exe
 deactivate.bat
 </code></pre>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<pre><code class="language-sh"># Arch
+opencc -c /usr/share/opencc/t2s.json -i input.txt -o output.txt
+# Windows 10
+opencc -c &lt;path_to&gt;/.opencc/Lib/site-packages/opencc/clib/share/opencc/t2s.json -i input.txt -o output.txt
+</code></pre>
 
                     </main>
 
