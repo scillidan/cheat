@@ -148,9 +148,13 @@ Settings → Settings Manager → Default Applications.
 
 ## Window Manager
 
-- Settings → Windows Manager
-	- Style → Materia-dark-compact
-	- Keyboard[^2]
+- Settings
+	- Windows Manager
+		- Style → Materia-dark-compact
+		- Keyboard[^2]
+	- Windows Manager Tweaks
+		- Accessibility
+			- Key used to grab and move windows → `Super`
 
 ## Others
 

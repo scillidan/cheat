@@ -88,6 +88,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 - #lsp [LSP](https://github.com/sublimelsp/LSP)
 - #search [Simple Fuzzy](https://github.com/ukyouz/SublimeText-SimpleFuzzy)
 - #search [StickySearch](https://github.com/vim-zz/StickySearch)
+- #snippet [SnippetMaker](https://github.com/jugyo/SublimeSnippetMaker)
 - #syntax [AutoHotkey](https://github.com/ahkscript/SublimeAutoHotkey)
 - #syntax [Log Highlight](https://github.com/poucotm/Log-Highlight)
 - #syntax [M3U Syntax](https://github.com/sal0max/sublime-m3u)

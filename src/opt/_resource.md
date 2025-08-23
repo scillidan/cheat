@@ -82,6 +82,7 @@
 - #video [Video Duplicate Finder](https://github.com/0x90d/videoduplicatefinder) _release_
 - #video [video-compare](https://github.com/pixop/video-compare) _release_
 - #video [Shutter Encoder](https://github.com/paulpacifico/shutter-encoder)
+- [ClamAV](https://www.clamav.net)
 
 ### later
 
@@ -91,9 +92,10 @@
 - #graphic [Krita](https://github.com/KDE/krita)
 - #pcb [KiCad](https://gitlab.com/kicad/code/kicad)
 - #pcb [LibrePCB](https://github.com/LibrePCB/LibrePCB)
+- #record [Kooha](https://github.com/SeaDve/Kooha)
+- #record [menyoki](https://github.com/orhun/menyoki)
 - #video [Shotcut](https://github.com/mltframework/shotcut)
 - [Anki](https://apps.ankiweb.net)
-- [ClamAV](https://www.clamav.net)
 
 ### extra
 
@@ -254,8 +256,9 @@
 - #ocr [Kamite](https://github.com/fauu/Kamite)
 - #ocr [Manga OCR](https://github.com/kha-white/manga-ocr)
 - #ocr [mokuro](https://github.com/kha-white/mokuro)
-- #orc [OCR-CopyPastePad](https://github.com/FlyingFathead/OCR-CopyPastePad)
+- #ocr [OCR-CopyPastePad](https://github.com/FlyingFathead/OCR-CopyPastePad)
 - #ocr [pix2tex - LaTeX OCR](https://github.com/lukas-blecher/LaTeX-OCR)
+- #ocr [pyTranslateOCR](https://github.com/MoonDragon-MD/pyTranslateOCR)
 - #ocr [SickZil-Machine](https://github.com/KUR-creative/SickZil-Machine)
 - #office [OpenOffice](https://github.com/apache/openoffice)
 - #password #keepass [KeePass](https://keepass.info)

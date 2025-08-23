@@ -163,6 +163,7 @@ scoop install mpv
 - #linux [Auto mpv A-V delay on bluetooth device](https://github.com/fatihkaan22/mpv-bluetooth-av-delay)
 - #linux [copy-subtitle.lua](https://github.com/linguisticmind/mpv-scripts)
 - #linux [foo_mpv](https://github.com/sammoth/foo_mpv)
+- #linux [genmon-mpv](https://gitlab.com/christosangel/genmon-mpv)
 - #linux [gpufreq](https://github.com/CounterPillow/mpv-gpufreq)
 - #linux [interSubs](https://github.com/oltodosel/intersubs)
 - #linux [libass_sub_selector](https://github.com/po5/libass_sub_selector)

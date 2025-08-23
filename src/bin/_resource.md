@@ -106,6 +106,7 @@
 - #segment [mecab](https://taku910.github.io/mecab/)
 - #subtitle [subaligner](https://github.com/baxtree/subaligner)
 - #tree [Untree](https://github.com/codeinred/untree)
+- [Lue](https://github.com/superstarryeyes/lue)
 - [opencubicplayer](https://github.com/mywave82/opencubicplayer)
 
 ### cache

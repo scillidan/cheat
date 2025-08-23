@@ -35,7 +35,7 @@
 - #devdocs [devdocs-offline](https://github.com/dimitry-ishenko-cpp/devdocs-offline)
 - #dictd [ClipDict](https://github.com/github-young/ClipDict)
 - #docker [podman-tui](https://github.com/containers/podman-tui)
-- #dotfile [rcm](https://github.com/thoughtbot/rcm)
+- #dotfiles [rcm](https://github.com/thoughtbot/rcm)
 - #dryrun [try](https://github.com/binpash/try)
 - #env [Autoenv](https://github.com/hyperupcall/autoenv)
 - #env [direnv](https://direnv.net)

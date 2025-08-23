@@ -103,6 +103,7 @@
 - [MkDocs static i18n plugin](https://github.com/ultrabug/mkdocs-static-i18n)
 - [mkdocs-ai-summary](https://github.com/AIboy996/mkdocs-ai-summary)
 - [mkdocs-apidescribed-plugin](https://github.com/idlesign/mkdocs-apidescribed-plugin)
+- [mk-append-to-head](https://github.com/marcelaodev/mk-append-to-head)
 - [mkdocs-autoapi](https://github.com/jcayers20/mkdocs-autoapi)
 - [mkdocs-data-plugin](https://github.com/joapuiib/mkdocs-data-plugin)
 - [mkdocs-encryptcontent-plugin](https://github.com/unverbuggt/mkdocs-encryptcontent-plugin)

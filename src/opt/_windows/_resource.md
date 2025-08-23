@@ -6,7 +6,7 @@
 
 - #archive [SmartZip](https://github.com/vvyoko/SmartZip)
 - #audio [AudioShell](https://audioshell.en.lo4d.com/windows) _download_
-- #audio [CUETools](http://cue.tools/wiki/Main_Page) _download_
+- #audio [CUETools](https://github.com/gchudov/cuetools.net) _release_
 - #audio [Mp3tag](https://mp3tag.de) _download_
 - #audiobook [AudioBookConverter](https://github.com/yermak/AudioBookConverter) _release_
 - #clipboard [Ditto](https://github.com/sabrogden/Ditto)

@@ -12,7 +12,7 @@
 
 ```sh
 # Arch
-sudo pacman -S fcitx5-im fcitx5-rime
+sudo pacman -S fcitx5-im fcitx5-gtk fcitx5-qt fcitx5-rime
 ```
 
 ```sh
@@ -24,18 +24,21 @@ scoop install rime
 
 ```sh
 # Arch
-mkdir ~/.config/environment.d/
-vim ~/.config/environment.d/im.conf
+vim ~/.xprofile
 ```
 
 ```
-# Fix fcitx problem
-GTK_IM_MODULE=fcitx
-QT_IM_MODULE=fcitx
-XMODIFIERS=@im=fcitx
-SDL_IM_MODULE=fcitx
-GLFW_IM_MODULE=ibus
+export GTK_IM_MODULE="fcitx"
+export QT_IM_MODULE="fcitx"
+export XMODIFIERS="@im=fcitx"
+export INPUT_METHOD="fcitx"
+export XIM="fcitx"
+export XIM_PROGRAM="fcitx"
+export SDL_IM_MODULE="fcitx"
+export GLFW_IM_MODULE="ibus"
 ```
+
+Then reboot.
 
 - Xfce → Setttings → Fcitx 5 Configuration
 	- Input Method → Available Input Method → Select `Rime` → Move to left.
@@ -77,7 +80,7 @@ git clone --depth=1 https://github.com/iDvel/rime-ice
 - [rime-easy-en](https://github.com/BlindingDark/rime-easy-en)
 - [Rime-Lua-GoogleTranslate](https://github.com/JACKCHAN000/Rime-Lua-GoogleTranslate)
 
-[^1]: [10. 安装输入法 - archlinux简明指南](https://arch.icekylin.online/guide/rookie/desktop-env-and-app#_10-%E5%AE%89%E8%A3%85%E8%BE%93%E5%85%A5%E6%B3%95)
+[^1]: [Can't awaken the input method(fcitx5)](https://github.com/alacritty/alacritty/issues/6528)
 
 ![rime](/_image/opt/rime.png)
 

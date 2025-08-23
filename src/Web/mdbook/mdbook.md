@@ -92,6 +92,8 @@ mdbook build
 - [mdbook-org](https://github.com/zweifisch/mdbook-org)
 - [mdBook-pagetoc](https://github.com/JorelAli/mdBook-pagetoc)
 - [mdbook-pandoc](https://github.com/max-heller/mdbook-pandoc)
+- [mdbook-pdf](https://github.com/HollowMan6/mdbook-pdf)
+- [mdBook PlantUML](https://github.com/sytsereitsma/mdbook-plantuml)
 - [mdbook-reading-time](https://github.com/pawurb/mdbook-reading-time)
 - [mdbook-reading](https://github.com/rust-project-primer/mdbook-reading)
 - [mdbook-readme](https://github.com/jason-hchsieh/mdbook-readme)
