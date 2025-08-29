@@ -4,7 +4,7 @@
 
 ```sh
 # Arch
-yay -S --noconfirm xnconvert-bin
+yay -S --noconfirm xnconvert
 # Windows 10
 scoop install xnconvert
 ```

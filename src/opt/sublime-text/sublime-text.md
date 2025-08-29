@@ -142,6 +142,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 - #edit [Markdown Code Packer](https://github.com/motine/MarkdownCodePacker)
 - #edit [MarkdownFootnotes](https://github.com/classicist/MarkdownFootnotes)
 - #edit [multiAlign](https://github.com/shwk86/multiAlign)
+- #edit [RegReplace](https://github.com/facelessuser/RegReplace)
 - #edit [TabNav](https://github.com/mitchvm/tabnav)
 - #edit [Trimmer](https://github.com/jonlabelle/Trimmer)
 - #explorer [FileManager](https://github.com/math2001/FileManager)

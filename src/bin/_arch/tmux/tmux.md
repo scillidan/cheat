@@ -9,11 +9,19 @@ sudo pacman -S tmux
 ## Personal do
 
 ```sh
-yay -S --noconfirm tmuxinator
 git clone --depth=1 https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone --depth=1 https://github.com/jimeh/tmuxifier ~/.tmuxifier
 chmod +x ~/.tmuxifier/bin/tmuxifier
 ~/.tmux/plugins/tpm/bin/install_plugins
+```
+
+## command
+
+```sh
+# Save session
+tmux detach
+# Restore session
+tmux attach
 ```
 
 ## reference
@@ -62,6 +70,7 @@ chmod +x ~/.tmuxifier/bin/tmuxifier
 - [tmux-nerd-font-window-name](https://github.com/joshmedeski/tmux-nerd-font-window-name)
 - [tmux-pane-focus](https://github.com/graemedavidson/tmux-pane-focus)
 - [tmux-tokyo-night](https://github.com/fabioluciano/tmux-tokyo-night)
+- [tmux-translator](https://github.com/sainnhe/tmux-translator)
 - [tmux-which-key](https://github.com/alexwforsythe/tmux-which-key)
 - [tmux-window-name](https://github.com/ofirgall/tmux-window-name)
 - [tmuxake](https://github.com/nkh/tmuxake)

@@ -64,6 +64,7 @@ make html
 - [Pharaoh](https://github.com/Infineon/pharaoh-dev)
 - [Read the Docs Sphinx Theme](https://github.com/readthedocs/sphinx_rtd_theme)
 - [Simple Sphinx XML Sitemap Extension](https://github.com/mdrideout/simple-sphinx-xml-sitemap)
+- [Sphinx Callouts](https://github.com/jdillard/sphinx-callouts)
 - [Sphinx CodeLinks](https://github.com/useblocks/sphinx-codelinks)
 - [Sphinx Combine](https://github.com/adamtheturtle/sphinx-combine)
 - [Sphinx Comments](https://github.com/executablebooks/sphinx-comments)

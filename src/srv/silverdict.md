@@ -2,6 +2,8 @@
 
 ## install
 
+### From source
+
 ```sh
 # Ubuntu 22 ARM
 git clone --depth=1 https://github.com/Crissium/SilverDict
@@ -40,11 +42,31 @@ WantedBy=multi-user.target
 sudo systemctl enable --now silverdict
 ```
 
-## usage
+### Docker compose
 
-```admonish
-If you are not sure whether the dictionary file is formatted, specially for the `.mdx` format, you could choose to import it from tab `Dictionarys` for testing.
+```sh
+mkdir silverdict
+cd silverdict
+vim docker-compose.yml
 ```
+
+```yaml
+services:
+  silverdict:
+    image: mathdodger/silverdict:latest
+    container_name: silverdict
+    ports:
+      - "2628:2628"
+    volumes:
+      - .silverdict:/root/.silverdict
+      - /<path_to_dictionaries>:/dictionary
+```
+
+```sh
+sudo docker compose up -d
+```
+
+## usage
 
 - SilverDict → More → Library
 	- Sources
@@ -53,16 +75,11 @@ If you are not sure whether the dictionary file is formatted, specially for the 
 		3. Go tab `Dictionarys`, check import results.
 		4. More → Query → Search <word>, check results.
 	- Dictionaries
-		- Add
+		- For example, add:
 			```
-			Name: ecdict
-			Filename: <path_to_dicts>/stardict-ecdict-2.4.2/stardict-ecdict-2.4.2.ifo
+			Name: HanYuDaCiDian
+			Filename: <path_to>/<dict>.ifo
 			Type: StarDict (.ifo)
-			```
-			```
-			Name: 汉语大词典(简体精排).mdx
-			Filename: <path_to_dicts>/汉语大词典/汉语大词典(简体精排).mdx
-			Type: MDict (.mdx)
 			```
 		2. Do nothing before importing finished.
 	- Groups
@@ -71,15 +88,22 @@ If you are not sure whether the dictionary file is formatted, specially for the 
 			 Group name: zh
 			 Group language(s): zh
 			 ```
-		2. Group `zh` → Edit dictionaries → 汉语大词典 (On)
-		3. Default Group → Edit dictionaries → 汉语大词典 (Off)
-- (Optional) SilverDict → More → Settings → Create n-gram index.
+		2. Group `zh` → Edit dictionaries → `<dict_name> (On)
+		3. Default Group → Edit dictionaries → `<dict_name> (Off)
+
+## Optional
+
+- SilverDict → More → Settings
+	- Create n-gram index
 
 ## reference
 
 - #document [Crissium/SilverDict Wiki](https://github.com/Crissium/SilverDict/wiki)
 	- [server](https://github.com/Crissium/SilverDict/wiki/server#notes)
 	- [general notes](https://github.com/Crissium/SilverDict/wiki/general-notes#enabling-additional-features)
+	- [Morphology analysis](https://github.com/Crissium/SilverDict/wiki/general-notes#morphology-analysis)
+	- [Transliteration)](https://github.com/Crissium/SilverDict/wiki/general-notes#transliteration)
+	- [Full text search](https://github.com/Crissium/SilverDict/wiki/general-notes#full-text-search)
 - [[REQUEST] hub.docker.com? · Issue #20 · Crissium/SilverDict](https://github.com/Crissium/SilverDict/issues/20)
 
 ## cross-reference

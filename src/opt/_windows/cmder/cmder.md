@@ -98,6 +98,7 @@ Cmder → Settings → Import → `user-ConEmu.xml`.
 ### cache
 
 - #clink [CheatCompletions](https://github.com/HeyItsJono/CheatCompletions)
+- #clink [snapline](https://github.com/ahrvoje/snapline)
 - [clink-flex-prompt](https://github.com/chrisant996/clink-flex-prompt)
 - [z.lua](https://github.com/skywind3000/z.lua)
 

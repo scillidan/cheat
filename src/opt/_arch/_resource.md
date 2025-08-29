@@ -5,17 +5,17 @@
 ### mark
 
 - #audio [Flacon](https://github.com/flacon/flacon)
+- #flatpak #shortcut [Pins](https://flathub.org/apps/io.github.fabrialberio.pinapp)
 - #game [Lutris](https://lutris.net)
 - #rofi [Rofi](https://github.com/davatorium/rofi)
-- #shortcut [Pins](https://flathub.org/apps/io.github.fabrialberio.pinapp)
+- #screenshot [Flameshot](https://github.com/flameshot-org/flameshot)
 - [xone](https://github.com/medusalix/xone)
 
 ### later
 
 - #image [Halftone](https://github.com/tfuxu/Halftone)
-- #screenshot [Flameshot](https://github.com/flameshot-org/flameshot)
-- #viewer [Gwenview](https://invent.kde.org/graphics/gwenview)
-- #windows [Bottles](https://github.com/bottlesdevs/Bottles)
+- #flatpak [Bazaar](https://flathub.org/apps/io.github.kolunmi.Bazaar)
+- [icon-explorer](/opt/_arch/icon-explorer.md)
 - [Loopers](https://github.com/mwylde/loopers)
 
 ### extra
@@ -24,8 +24,6 @@
 
 ### cache
 
-- [clamav-desktop](https://github.com/ivangabriele/clamav-desktop)
-- #window [i3](https://github.com/i3/i3)
 - #@i3 [autotiling](https://github.com/nwg-piotr/autotiling)
 - #audio [NoiseTorch-ng](https://github.com/noisetorch/NoiseTorch)
 - #audiobook [Cozy](https://github.com/geigi/cozy)
@@ -53,8 +51,12 @@
 - #theme [Material-Original gtk theme](https://github.com/Macintosh98/Material-Original)
 - #tv [Open TV](https://github.com/Fredolx/open-tv)
 - #video [multiplex](https://github.com/pojntfx/multiplex)
+- #viewer [Gwenview](https://invent.kde.org/graphics/gwenview)
 - #viewer [Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer](https://codeberg.org/nsxiv/nsxiv)
 - #window [QuickTile](https://github.com/ssokolow/quicktile)
+- #window [i3](https://github.com/i3/i3)
+- #windows [Bottles](https://github.com/bottlesdevs/Bottles)
 - [Asteria](https://github.com/alamahant/Asteria)
 - [Cave Story NX](https://gitlab.com/coringao/cavestory-nx)
-
+- [WinApps](https://github.com/winapps-org/winapps)
+- [clamav-desktop](https://github.com/ivangabriele/clamav-desktop)

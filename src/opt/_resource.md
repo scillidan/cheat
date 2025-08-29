@@ -96,6 +96,7 @@
 - #record [menyoki](https://github.com/orhun/menyoki)
 - #video [Shotcut](https://github.com/mltframework/shotcut)
 - [Anki](https://apps.ankiweb.net)
+- #flathub [Bazaar](https://flathub.org/apps/io.github.kolunmi.Bazaar)
 
 ### extra
 

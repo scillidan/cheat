@@ -34,3 +34,4 @@ bat --list-themes | fzf --preview="bat --theme={} --color=always <file>"
 ```sh
 bat
 ```
+

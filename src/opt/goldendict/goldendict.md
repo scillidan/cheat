@@ -38,6 +38,7 @@ git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
 
 - #blog [配置GoldenDict](https://scillidan.github.io/YAFA-site/blog/goldendict/)
 - #blog [配置GoldenDict·番外](https://scillidan.github.io/YAFA-site/blog/goldendict-expand/)
+- #guide [How to create your own dictionary in mdx file format | by Otto Lin](https://medium.com/@cia1099/how-to-create-your-own-dictionary-in-mdx-file-format-ec1f75509bf3)
 - [configuration Folder cannot be found with a flatpak installation · Issue #1492 · goldendict/goldendict](https://github.com/goldendict/goldendict/issues/1492)
 
 ## cross-reference
@@ -54,6 +55,7 @@ git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
 ### cache
 
 - [Acute](https://terokarvinen.com/2017/acute-0-2-2-integrate-help-commands-to-single-interface-pydoc3-puppet-describe-and-man-in-goldendict/?fromSearch=acute)
+- [Flexible Text Copy Adapter (FTCA)](https://github.com/voothi/ftca)
 - [gd-frequency](https://github.com/toytoi/gd-frequency)
 - [GD-Translator - An AI Translator as a GoldenDict Extension](https://github.com/xrysamuel/GD-Translator)
 - [goldenDict-browser-helper](https://github.com/fthvgb1/goldendict-browser-helper)

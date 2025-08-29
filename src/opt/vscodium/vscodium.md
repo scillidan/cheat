@@ -12,7 +12,7 @@
 
 ```sh
 ## Arch
-#yay -S --noconfirm vscodium-bin vscodium-bin-marketplace
+yay -S --noconfirm vscodium-bin vscodium-bin-marketplace
 # Windows 10
 scoop install vscodium
 ```
@@ -91,7 +91,7 @@ VSCodium → Settings → Open Settings (JSON):
 - #llm [Mintlify Doc Writer](https://github.com/mintlify/vscode-docs)
 - #profile [Snippets Manager](https://github.com/zjffun/vscode-snippets-manager)
 - #profile [Syncing](https://github.com/nonoroazoro/vscode-syncing)
-- #profile [VSIX Manager](https://github.com/zokugun/vscode-vsix-manager)
+- #profile [VSIX [Manager](https://github.com/zokugun/vscode-vsix-manager](managerhttpsgithubcomzokugunvscodevsixmanager.md))
 - #project [Project Manager](https://github.com/alefragnani/vscode-project-manager)
 - #rename [Batch Rename](https://github.com/JannisX11/batch-rename)
 - #syntax [AHK++ (AutoHotkey Plus Plus)](https://github.com/mark-wiemer/ahkpp)
@@ -119,7 +119,6 @@ VSCodium → Settings → Open Settings (JSON):
 - #theme [Vanta](https://github.com/orellazri/vanta) _OrelLazri.vanta_
 - [Cron Tasks](https://github.com/zokugun/vscode-cron)
 - [filesize](https://github.com/mkxml/vscode-filesize)
-- [WakaTime](https://github.com/wakatime/vscode-wakatime)
 
 ### later
 
@@ -245,7 +244,9 @@ VSCodium → Settings → Open Settings (JSON):
 - [VSCode Archive](https://github.com/tjx666/vscode-archive)
 - [vscode-open](https://github.com/robertohuertasm/vscode-open)
 - [vscode-pets](https://github.com/tonybaloney/vscode-pets)
+- [WakaTime](https://github.com/wakatime/vscode-wakatime)
 - [Wokwi Simulator](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode)
 - [Zip Tools](https://github.com/AdamRaichu/vscode-zip-viewer.git)
 - [微信小程序开发工具](https://github.com/crazyurus/miniprogram-vscode-extension)
 - [腾讯云代码助手 CodeBuddy](https://marketplace.visualstudio.com/items?itemName=Tencent-Cloud.coding-copilot)
+

@@ -100,4 +100,5 @@
 - #visualize [Visit Route](https://echarts.apache.org/examples/en/editor.html?c=geo-svg-lines&lang=js)
 - [Dead simple live reload module](https://github.com/Kalabasa/simple-live-reload)
 - [Exifr](https://github.com/MikeKovarik/exifr)
+- [stardict.js](https://github.com/tuxor1337/stardict.js)
 - [Subscapes](https://github.com/mattdesl/subscapes)

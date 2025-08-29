@@ -27,3 +27,4 @@ sdcv <word>
 - #blog [A command line dictionary.](https://nchrs.xyz/stardict.html)
 - [StarDictFileFormat](https://stardict-4.sourceforge.net/StarDictFileFormat)
 - [Embedding images: StarDict](https://github.com/nikita-moor/latin-dictionary/issues/2#issuecomment-496029572)
+- [XML Dictionary Exchange Format](https://xdxf.sourceforge.net/)
