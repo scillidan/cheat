@@ -184,6 +184,7 @@
                     <main>
                         <h1 id="silverdict"><a class="header" href="#silverdict"><a href="https://github.com/Crissium/SilverDict">SilverDict</a></a></h1>
 <h2 id="install"><a class="header" href="#install">install</a></h2>
+<h3 id="from-source"><a class="header" href="#from-source">From source</a></h3>
 <pre><code class="language-sh"># Ubuntu 22 ARM
 git clone --depth=1 https://github.com/Crissium/SilverDict
 cd SilverDict/client
@@ -214,18 +215,24 @@ WantedBy=multi-user.target
 </code></pre>
 <pre><code class="language-sh">sudo systemctl enable --now silverdict
 </code></pre>
+<h3 id="docker-compose"><a class="header" href="#docker-compose">Docker compose</a></h3>
+<pre><code class="language-sh">mkdir silverdict
+cd silverdict
+vim docker-compose.yml
+</code></pre>
+<pre><code class="language-yaml">services:
+  silverdict:
+    image: mathdodger/silverdict:latest
+    container_name: silverdict
+    ports:
+      - "2628:2628"
+    volumes:
+      - .silverdict:/root/.silverdict
+      - /&lt;path_to_dictionaries&gt;:/dictionary
+</code></pre>
+<pre><code class="language-sh">sudo docker compose up -d
+</code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
-<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
-<div class="admonition-title">
-<div id="admonition-note-title">
-<p>Note</p>
-</div>
-<a class="admonition-anchor-link" href="#admonition-note"></a>
-</div>
-<div>
-<p>If you are not sure whether the dictionary file is formatted, specially for the <code>.mdx</code> format, you could choose to import it from tab <code>Dictionarys</code> for testing.</p>
-</div>
-</div>
 <ul>
 <li>SilverDict → More → Library
 <ul>
@@ -239,14 +246,10 @@ WantedBy=multi-user.target
 </li>
 <li>Dictionaries
 <ul>
-<li>Add
-<pre><code>Name: ecdict
-Filename: &lt;path_to_dicts&gt;/stardict-ecdict-2.4.2/stardict-ecdict-2.4.2.ifo
+<li>For example, add:
+<pre><code>Name: HanYuDaCiDian
+Filename: &lt;path_to&gt;/&lt;dict&gt;.ifo
 Type: StarDict (.ifo)
-</code></pre>
-<pre><code>Name: 汉语大词典(简体精排).mdx
-Filename: &lt;path_to_dicts&gt;/汉语大词典/汉语大词典(简体精排).mdx
-Type: MDict (.mdx)
 </code></pre>
 </li>
 </ul>
@@ -261,13 +264,20 @@ Type: MDict (.mdx)
 Group language(s): zh
 </code></pre>
 </li>
-<li>Group <code>zh</code> → Edit dictionaries → 汉语大词典 (On)</li>
-<li>Default Group → Edit dictionaries → 汉语大词典 (Off)</li>
+<li>Group <code>zh</code> → Edit dictionaries → `&lt;dict_name&gt; (On)</li>
+<li>Default Group → Edit dictionaries → `&lt;dict_name&gt; (Off)</li>
 </ol>
 </li>
 </ul>
 </li>
-<li>(Optional) SilverDict → More → Settings → Create n-gram index.</li>
+</ul>
+<h2 id="optional"><a class="header" href="#optional">Optional</a></h2>
+<ul>
+<li>SilverDict → More → Settings
+<ul>
+<li>Create n-gram index</li>
+</ul>
+</li>
 </ul>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
@@ -275,6 +285,9 @@ Group language(s): zh
 <ul>
 <li><a href="https://github.com/Crissium/SilverDict/wiki/server#notes">server</a></li>
 <li><a href="https://github.com/Crissium/SilverDict/wiki/general-notes#enabling-additional-features">general notes</a></li>
+<li><a href="https://github.com/Crissium/SilverDict/wiki/general-notes#morphology-analysis">Morphology analysis</a></li>
+<li><a href="https://github.com/Crissium/SilverDict/wiki/general-notes#transliteration">Transliteration)</a></li>
+<li><a href="https://github.com/Crissium/SilverDict/wiki/general-notes#full-text-search">Full text search</a></li>
 </ul>
 </li>
 <li><a href="https://github.com/Crissium/SilverDict/issues/20">[REQUEST] hub.docker.com? · Issue #20 · Crissium/SilverDict</a></li>

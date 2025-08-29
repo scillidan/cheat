@@ -187,11 +187,16 @@
 <pre><code class="language-sh">sudo pacman -S tmux
 </code></pre>
 <h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh">yay -S --noconfirm tmuxinator
-git clone --depth=1 https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+<pre><code class="language-sh">git clone --depth=1 https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone --depth=1 https://github.com/jimeh/tmuxifier ~/.tmuxifier
 chmod +x ~/.tmuxifier/bin/tmuxifier
 ~/.tmux/plugins/tpm/bin/install_plugins
+</code></pre>
+<h2 id="command"><a class="header" href="#command">command</a></h2>
+<pre><code class="language-sh"># Save session
+tmux detach
+# Restore session
+tmux attach
 </code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
@@ -238,6 +243,7 @@ chmod +x ~/.tmuxifier/bin/tmuxifier
 <li><a href="https://github.com/joshmedeski/tmux-nerd-font-window-name">tmux-nerd-font-window-name</a></li>
 <li><a href="https://github.com/graemedavidson/tmux-pane-focus">tmux-pane-focus</a></li>
 <li><a href="https://github.com/fabioluciano/tmux-tokyo-night">tmux-tokyo-night</a></li>
+<li><a href="https://github.com/sainnhe/tmux-translator">tmux-translator</a></li>
 <li><a href="https://github.com/alexwforsythe/tmux-which-key">tmux-which-key</a></li>
 <li><a href="https://github.com/ofirgall/tmux-window-name">tmux-window-name</a></li>
 <li><a href="https://github.com/nkh/tmuxake">tmuxake</a></li>
