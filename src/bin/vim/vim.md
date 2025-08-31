@@ -1,10 +1,26 @@
 # [Vim](https://github.com/vim/vim)
 
+## install
+
 ```sh
 # Arch
 sudo pacman -S vim
 # Windows 10
 scoop install vim
+```
+
+## Personal do
+
+[^1]
+
+```sh
+vim ~/.vimrc
+```
+
+```
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
 ```
 
 ## cross-reference
@@ -79,5 +95,7 @@ scoop install vim
 - #write [goyo.vim](https://github.com/junegunn/goyo.vim)
 - #write [limelight.vim](https://github.com/junegunn/limelight.vim)
 - #cmp [ncm2](https://github.com/ncm2/ncm2)
+
+[^1]: [python - How to maintain tabs when pasting in Vim - Stack Overflow](https://stackoverflow.com/questions/12584465/how-to-maintain-tabs-when-pasting-in-vim)
 
 ![gvim](/_image/opt/gvim.png)

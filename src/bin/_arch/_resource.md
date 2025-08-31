@@ -11,7 +11,7 @@
 - #tmux [tmux](https://github.com/tmux/tmux)
 - #translate [Translate Shell](https://github.com/soimort/translate-shell)
 - #zsh [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-- [ranger](https://github.com/ranger/ranger)
+- [bookmarks.txt](https://github.com/soulim/bookmarks.txt)
 
 ### later
 
@@ -81,3 +81,5 @@
 - [clipscreen](https://github.com/splitbrain/clipscreen)
 - [getNF](https://github.com/ronniedroid/getnf)
 - [loop](https://github.com/Miserlou/Loop)
+- [ranger](https://github.com/ranger/ranger)
+

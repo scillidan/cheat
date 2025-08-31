@@ -1,8 +1,8 @@
 # [wakapi](https://github.com/muety/wakapi)
 
-## Docker
+## install
 
-### DockerHub
+### Docker compose
 
 ```sh
 mkdir wakapi

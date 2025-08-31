@@ -331,3 +331,4 @@
 - #tabby [Docker plugin for Tabby Terminal](https://github.com/eugeny/tabby-docker)
 - #tabby [Noctis Color Schemes](https://github.com/aaronhuggins/tabby-colors-noctis)
 - [abogen](https://github.com/denizsafak/abogen)
+- [Windrecorder](https://github.com/yuka-friends/Windrecorder)
