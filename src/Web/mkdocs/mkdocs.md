@@ -114,6 +114,7 @@
 - [mkdocs-jupyterlite](https://github.com/NickCrews/mkdocs-jupyterlite)
 - [mkdocs-publisher](https://github.com/mkusz/mkdocs-publisher)
 - [mkdocs-python-classy](https://github.com/itdependsnetworks/mkdocs-python-classy)
+- [mkdocs-recently-updated-docs](https://github.com/jaywhj/mkdocs-recently-updated-docs)
 - [mkdocs-statistics-plugin](https://github.com/TonyCrane/mkdocs-statistics-plugin)
 - [MkDocs-Test](https://github.com/fralau/mkdocs-test)
 - [mkdocs-text-export-plugin](https://github.com/twardoch/mkdocs-text-export-plugin)

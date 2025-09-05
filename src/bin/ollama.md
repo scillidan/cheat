@@ -28,4 +28,8 @@ OLLAMA_HOST=0.0.0.0
 OLLAMA_ORIGINS=*
 ```
 
+## reference
+
+- #post [Navigating the World of Open-Source Large Language Models]https://www.bentoml.com/blog/navigating-the-world-of-large-language-models)
+
 [^1]: [Ollama Connection issues FAQ help](https://github.com/Mintplex-Labs/anything-llm/issues/1640)

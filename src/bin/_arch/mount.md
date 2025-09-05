@@ -7,7 +7,6 @@
 [^1]
 
 ```sh
-sudo pacman -S thunar-volman gvfs
 # sudo pacman -S gvfs-smb
 logout
 # Re-login

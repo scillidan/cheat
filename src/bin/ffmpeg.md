@@ -74,6 +74,7 @@ ffmpeg -i "$1" -map 0:s:0 -c:s copy _.sup
 ## reference
 
 - #document [FFmpeg](https://ffmpeg.org/ffmpeg.html)
+- #post [Web video codec guide](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Video_codecs)
 - [ffmpeg GIF to MP4](https://gist.github.com/gvoze32/95f96992a443e73c4794c342a44e0811)
 - [gif.to.video](https://github.com/kinglisky/gif.to.video/blob/master/doc.md)
 - [How to do I convert an animated gif to an mp4 or mv4 on the command line?](https://unix.stackexchange.com/questions/40638/how-to-do-i-convert-an-animated-gif-to-an-mp4-or-mv4-on-the-command-line)

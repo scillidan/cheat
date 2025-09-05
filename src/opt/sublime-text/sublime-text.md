@@ -50,6 +50,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 - #edit [EditorConfig](https://github.com/sindresorhus/editorconfig-sublime)
 - #edit [Inc-Dec-Value](https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value)
 - #edit [Insert Nums](https://github.com/jbrooksuk/InsertNums)
+- #edit [RegReplace](https://github.com/facelessuser/RegReplace)
 - #edit [SortBy](https://github.com/Doi9t/SortBy)
 - #edit [TrailingSpaces](https://github.com/SublimeText/TrailingSpaces)
 - #edit [UnicodeMath](https://github.com/mvoidex/UnicodeMath)

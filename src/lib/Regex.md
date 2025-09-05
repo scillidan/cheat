@@ -1,5 +1,12 @@
 # Regex
 
+## Personal do
+
+```
+!\[\]\(https?:\/\/[^)]+\.(jpg|png|webp)\) | `![]()` in Markdown
+_[a-zA-Z\s'",;\.\?\!:-]+_									| `_<word>_` in Markdown
+```
+
 ## reference
 
 - #sheet [RegEX cheatsheet](https://cheatsheets.zip/regex)

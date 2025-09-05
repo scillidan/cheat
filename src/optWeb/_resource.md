@@ -16,6 +16,7 @@
 
 - #audio [Fish Speech](https://github.com/fishaudio/fish-speech)
 - #audio [Lipsync Generator: Rhubarb & Whisper AI](https://github.com/fralapo/LipSyncify)
+- #audio [WhisperLiveKit](https://github.com/QuentinFuxa/WhisperLiveKit)
 - [ComfyUI-Auto_installer](https://huggingface.co/UmeAiRT/ComfyUI-Auto_installer)
 - [NoiseCraft](https://github.com/maximecb/noisecraft)
 - [Satori](https://github.com/vercel/satori)

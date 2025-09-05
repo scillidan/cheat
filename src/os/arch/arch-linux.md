@@ -166,12 +166,37 @@ umount -R /mnt
 shutdown -h now
 ```
 
+[^6]
+
+```sh
+lsblk -o name,mountpoint,size,uuid
+# Get UUID of Swap Partition
+sudo vim /etc/default/grub
+```
+
+```
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=5 nowatchdog resume=UUID=<swap_uuid>"
+```
+
+```sh
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo vim /etc/mkinitcpio.conf
+```
+
+```
+HOOKS=(base udev resume ...)
+```
+
+```sh
+sudo mkinitcpio -P
+sudo reboot
+```
+
 ## Personal do
 
 ```sh
 sudo pacman -S \
 	ark
-	# autotiling
 	# neomutt
 	# restic
 ```
@@ -295,7 +320,7 @@ sudo pacman -Rns \
 
 ### Bluetooth service was skipped because of an unmet condition check ...
 
-[^6]
+[^7]
 
 ```sh
 sudo modprobe bluetooth
@@ -308,7 +333,8 @@ systemctl status bluetooth
 [^3]: [System time](https://wiki.archlinux.org/title/System_time)
 [^4]: [Localization](https://wiki.archlinux.org/title/Localization)
 [^5]: [Localization/Simplified Chinese](https://wiki.archlinux.org/title/Localization/Simplified_Chinese)
-[^6]: [Bluetooth not working on computer](https://www.linuxquestions.org/questions/linux-hardware-18/bluetooth-not-working-on-computer-4175724971/)
+[^6]: [可选配置（进阶篇）- 休眠（hibernate）设置](https://arch.icekylin.online/guide/advanced/optional-cfg-2.html#%F0%9F%92%A4-%E4%BC%91%E7%9C%A0-hibernate-%E8%AE%BE%E7%BD%AE)
+[^7]: [Bluetooth not working on computer](https://www.linuxquestions.org/questions/linux-hardware-18/bluetooth-not-working-on-computer-4175724971/)
 
 ![arch-linux-arm_ucon](/_image/os/arch-linux-arm_ucon.png)
 ![arch-linux](/_image/os/arch-linux.png)
