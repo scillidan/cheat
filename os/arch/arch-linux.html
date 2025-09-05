@@ -284,10 +284,24 @@ vim /etc/default/grub
 umount -R /mnt
 shutdown -h now
 </code></pre>
+<p><sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">6</a></sup></p>
+<pre><code class="language-sh">lsblk -o name,mountpoint,size,uuid
+# Get UUID of Swap Partition
+sudo vim /etc/default/grub
+</code></pre>
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="loglevel=5 nowatchdog resume=UUID=&lt;swap_uuid&gt;"
+</code></pre>
+<pre><code class="language-sh">sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo vim /etc/mkinitcpio.conf
+</code></pre>
+<pre><code>HOOKS=(base udev resume ...)
+</code></pre>
+<pre><code class="language-sh">sudo mkinitcpio -P
+sudo reboot
+</code></pre>
 <h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
 <pre><code class="language-sh">sudo pacman -S \
 	ark
-	# autotiling
 	# neomutt
 	# restic
 </code></pre>
@@ -407,7 +421,7 @@ shutdown -h now
 </ul>
 <h2 id="troubleshoot"><a class="header" href="#troubleshoot">troubleshoot</a></h2>
 <h3 id="bluetooth-service-was-skipped-because-of-an-unmet-condition-check-"><a class="header" href="#bluetooth-service-was-skipped-because-of-an-unmet-condition-check-">Bluetooth service was skipped because of an unmet condition check ...</a></h3>
-<p><sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">6</a></sup></p>
+<p><sup class="footnote-reference" id="fr-7-1"><a href="#footnote-7">7</a></sup></p>
 <pre><code class="language-sh">sudo modprobe bluetooth
 sudo systemctl restart bluetooth
 systemctl status bluetooth
@@ -431,7 +445,10 @@ systemctl status bluetooth
 <p><a href="https://wiki.archlinux.org/title/Localization/Simplified_Chinese">Localization/Simplified Chinese</a> <a href="#fr-5-1">↩</a></p>
 </li>
 <li id="footnote-6">
-<p><a href="https://www.linuxquestions.org/questions/linux-hardware-18/bluetooth-not-working-on-computer-4175724971/">Bluetooth not working on computer</a> <a href="#fr-6-1">↩</a></p>
+<p><a href="https://arch.icekylin.online/guide/advanced/optional-cfg-2.html#%F0%9F%92%A4-%E4%BC%91%E7%9C%A0-hibernate-%E8%AE%BE%E7%BD%AE">可选配置（进阶篇）- 休眠（hibernate）设置</a> <a href="#fr-6-1">↩</a></p>
+</li>
+<li id="footnote-7">
+<p><a href="https://www.linuxquestions.org/questions/linux-hardware-18/bluetooth-not-working-on-computer-4175724971/">Bluetooth not working on computer</a> <a href="#fr-7-1">↩</a></p>
 </li>
 </ol>
                     </main>
