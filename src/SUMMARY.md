@@ -140,6 +140,7 @@
   - [projz_renpy_translation](bin/projz_renpy_translation.md)
   - [pylanguagetool](bin/pylanguagetool.md)
   - [pyxelate](bin/pyxelate.md)
+  - [pypinyin](bin/pypinyin.md)
   - [qsv](bin/qsv.md)
   - [rapidvideocr](bin/rapidvideocr.md)
   - [rclone](bin/rclone.md)

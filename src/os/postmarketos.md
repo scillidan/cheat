@@ -12,5 +12,8 @@
 3. 拔掉USB → 电源键+音量上键 → FastBoot Mode
 4. 插上USB → 在PC上运行`fastboot oem unlock`
 
-- [postmarketOS Wiki - OnePlus 5](https://wiki.postmarketos.org/wiki/OnePlus_5_(oneplus-cheeseburger))
+## reference
+
+- #blog [The E-Ink Smartphone That I Adore & Despise - Hisense A7 Review](https://chuck.is/a7/)
+- #document [postmarketOS Wiki - OnePlus 5](https://wiki.postmarketos.org/wiki/OnePlus_5_(oneplus-cheeseburger))
 - [Enable USB Debugging and OEM Unlock](https://doc.e.foundation/pages/enable-usb-debugging)

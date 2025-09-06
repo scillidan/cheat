@@ -51,6 +51,7 @@ magick mogrify -format png "$1"
 
 ## reference
 
+- #blog [Image Dithering: Eleven Algorithms and Source Code](https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html)
 - #option [ImageMagick](https://imagemagick.org/script/command-line-processing.php)
 - #post [Image file type and format guide](https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types)
 - [Recommendation for compressing JPG files with ImageMagick](https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick)

@@ -81,6 +81,7 @@ mdbook build
 - [mdbook-indexing](https://github.com/daviddrysdale/mdbook-indexing)
 - [mdBook-KaTeX](https://github.com/lzanini/mdbook-katex)
 - [mdbook-langtabs](https://github.com/nx10/mdbook-langtabs)
+- [mdbook-last-changed](https://github.com/badboy/mdbook-last-changed)
 - [mdbook-latex](https://github.com/lbeckman314/mdbook-latex)
 - [mdbook-link-forever](https://tonywu6.github.io/mdbookkit/link-forever/)
 - [mdbook-lint](https://github.com/joshrotenberg/mdbook-lint)

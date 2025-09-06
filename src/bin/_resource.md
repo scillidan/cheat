@@ -46,6 +46,7 @@
 - #mkdir [Mkdirs](https://github.com/dolanor/mkdirs)
 - #music [BeatPrints](https://github.com/TrueMyst/BeatPrints)
 - #neovim [Neovim](https://github.com/neovim/neovim)
+- #pinyin [pinyin-sort](https://github.com/Acture/pinyin-sort)
 - #prompt [Starship](https://github.com/starship/starship)
 - #python [pip_search](https://github.com/victorgarric/pip_search)
 - #regex [grex](https://github.com/pemistahl/grex)
