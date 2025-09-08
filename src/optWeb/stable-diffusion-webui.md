@@ -188,6 +188,8 @@ webui-user.bat
 [^3]: [Installing xFormers](https://github.com/facebookresearch/xformers#installing-xformers)
 [^4]: [Command Line Arguments and Settings](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings)
 
+## annex
+
 ![stable-diffusion-webui](/_image/optWeb/stable-diffusion-webui.png)
 
-{% embed bilibili id="BV1Z45Hz5E2e" loading="lazy" %}
+[stable-diffusion-webui.mp4](https://scillidan.github.io/media_cheat/opt/stable-diffusion-webui.mp4), ([bilibili](https://www.bilibili.com/video/BV1Z45Hz5E2e)

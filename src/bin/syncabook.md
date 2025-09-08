@@ -1,4 +1,4 @@
-# [syncabook](https://github.com/r4victor/syncabook)
+s# [syncabook](https://github.com/r4victor/syncabook)
 
 > syncabook is a set of tools for creating ebooks with synchronized text and audio (a.k.a. read along, read aloud; like Amazon's Whispersync). You start with a list of text files (plaintext or XTML) and a list of audio files (.wav or .mp3) and get an ebook in the open EPUB3 with Media Overlays format.  
 > The synchronization is done automatically using the afaligner library. It is a forced aligner that works by synthesizing text and then aligning synthesized and recorded audio using a variation of the DTW (Dynamic Time Warping) algorithm. [r4victor/syncabook]
@@ -26,10 +26,10 @@ vim Dockerfile
 FROM python:3.9-slim
 
 RUN apt update -q \
-    && apt install --no-install-recommends -yq espeak \
-    libespeak-dev \
-    ffmpeg \
-    && apt install -yq gcc
+	&& apt install --no-install-recommends -yq espeak \
+	libespeak-dev \
+	ffmpeg \
+	&& apt install -yq gcc
 
 RUN pip install --upgrade pip
 RUN pip install numpy==1.23.4
@@ -101,4 +101,6 @@ sudo docker run --rm -v ~/Git/_/synclibrivox/books:/books -it scillidan/syncaboo
 
 [^1]: [Installing aeneas - Linux](https://github.com/readbeyond/aeneas/blob/master/wiki/INSTALL.md#linux)
 
-{% embed bilibili id="BV1hJYBzfEpt" loading="lazy" %}
+## annex
+
+[syncabook.mp4](https://scillidan.github.io/media_cheat/bin/syncabook.mp4), ([bilibili](https://www.bilibili.com/video/BV1hJYBzfEpt)

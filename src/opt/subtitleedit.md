@@ -23,4 +23,6 @@ scoop install subtitleedit
 
 - Subtitle Edit → Auto-translate → Select `Ollama` or `LM Studio` → Translate
 
-{% embed bilibili id="" loading="lazy" %}
+## annex
+
+[subtitle-edit_subtitle-translate.mp4](https://scillidan.github.io/media_cheat/opt/subtitle-edit_subtitle-translate.mp4), ([bilibili](https://www.bilibili.com/video/)

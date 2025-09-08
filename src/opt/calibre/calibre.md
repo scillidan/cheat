@@ -155,8 +155,10 @@ URL: http://<your_host>:<port>/?models=librarian%3Alatest-clone&q={word}
 [^2]: [How To Enable Sidebar in Calibre Ebook Viewer](https://www.youtube.com/watch?v=rJfbcTlvujQ)
 [^3]: [Adding Dictionary In Calibre Ebook](https://www.youtube.com/watch?v=_lN1N90c8zw)
 
+## annex
+
 ![calibre](/_image/srv/calibre.png)
 ![lookup_01](/_image/opt/calibre/lookup_01.png)
 ![lookup_02](/_image/opt/calibre/lookup_02.png)
 
-{% embed bilibili id="BV1BKYBzBEqU" loading="lazy" %}
+[calibre_read-aloud.mp4](https://scillidan.github.io/media_cheat/opt/calibre_read-aloud.mp4), ([bilibili](https://www.bilibili.com/video/BV1BKYBzBEqU)

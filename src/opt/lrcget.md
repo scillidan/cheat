@@ -15,6 +15,8 @@
 yay -S --noconfirm lrcget-bin
 ```
 
+## annex
+
 ![lrcget](/_image/opt/lrcget.png)
 
-{% embed bilibili id="BV1bpYBzoERE" loading="lazy" %}
+[lrcget.mp4](https://scillidan.github.io/media_cheat/opt/lrcget.mp4), ([bilibili](https://www.bilibili.com/video/BV1bpYBzoERE)

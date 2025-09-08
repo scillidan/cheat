@@ -10,4 +10,4 @@
 	- Kokoro API URL → `http://localhost:8880/v1`
 	- Chunk Size (characters) → `1500 (Higher-end systems)`
 
-{% embed bilibili id="BV1zwYBz3Emk" loading="lazy" %}
+[kokoro-tts-reader.mp4](https://scillidan.github.io/media_cheat/opt/Browser/kokoro-tts-reader.mp4), ([bilibili](https://www.bilibili.com/video/BV1zwYBz3Emk)

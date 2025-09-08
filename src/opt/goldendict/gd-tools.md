@@ -6,4 +6,4 @@
 
 > 该脚本输出带有可点击字符的句子，并从该字符开始搜索最长可用的字典条目（来自预定义列表）。目前，它依赖于rdricpp进行去词形变化。它还提供较小子字符串的可用条目的链接。 [Ajatt-Tools/gd-tools]
 
-{% embed bilibili id="BV1pC411Y7mu" loading="lazy" %}
+[goldendict-ng_gd-marisa.mp4](https://scillidan.github.io/media_cheat/opt/goldendict-ng_gd-marisa.mp4), ([bilibili](https://www.bilibili.com/video/BV1pC411Y7mu)

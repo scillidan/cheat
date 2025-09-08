@@ -30,8 +30,23 @@ git clone --depth=1 https://github.com/VimWei/GoldenDictOCR
 
 ```sh
 git clone --depth=1 https://gist.github.com/e95773454d79dc047aeed016fb00daef tencenttrans_2zh_zh2en
+```
+
+```sh
 git clone --depth=1 https://github.com/LibreOffice/dictionaries
+```
+
+### Dark theme
+
+```sh
 git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
+cd GoldenDict-Full-Dark-Theme
+sudo ln -sfn $(pwd)/GoldenDict/extras /usr/share/goldendict/extras
+sudo ln -sfn $(pwd)/GoldenDict/icons /usr/share/goldendict/icons
+ln -sfn $(pwd)/GoldenDict/fonts $HOME/.config/goldendict/fonts
+mkdir -p $HOME/.config/goldendict/styles/Dark
+(cat "$(pwd)/GoldenDict/styles/Dark/article-style.css"; curl -s https://raw.githubusercontent.com/scillidan/dotfiles/refs/heads/main/.config/_goldendict/article-style_user.css) > "$HOME/.config/goldendict/styles/Dark/article-style.css"
+ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styles/Dark/qt-style.css
 ```
 
 ## reference
@@ -65,6 +80,8 @@ git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
 - [Tencent-Translator-rs](https://github.com/mingerfan/Tencent-Translator-rs)
 - [TMX to Goldendict Convertor](https://github.com/Celso-Scott/TMX-to-Goldendict-Converter)
 
-{% embed bilibili id="BV1pw411V761" loading="lazy" %}
-{% embed bilibili id="BV1CC4y1S77c" loading="lazy" %}
-{% embed bilibili id="BV1cK41187up" loading="lazy" %}
+## annex
+
+[goldendict_pronunciation.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_pronunciation.mp4), ([bilibili](https://www.bilibili.com/video/BV1pw411V761)
+[goldendict_umi-ocr.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_umi-ocr.mp4), ([bilibili](https://www.bilibili.com/video/BV1CC4y1S77c)
+[goldendict_goldendictocr.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_goldendictocr.mp4), ([bilibili](https://www.bilibili.com/video/BV1cK41187up)

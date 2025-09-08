@@ -10,5 +10,7 @@
 mpv --input-ipc-server=/./pipe/kamite-mpvsocket --sub-file="$2" --sid=2 --secondary-sid=1 --secondary-sub-visibility=no --save-position-on-quit "$1"
 ```
 
-{% embed bilibili id="BV1JN4y1f7Wc" loading="lazy" %}
-{% embed bilibili id="BV1YN411E7Ra" loading="lazy" %}
+## annex
+
+[kamite_01.mp4](https://scillidan.github.io/media_cheat/opt/kamite_01.mp4), ([bilibili](https://www.bilibili.com/video/BV1JN4y1f7Wc)
+[kamite_01.mp4](https://scillidan.github.io/media_cheat/opt/kamite_02.mp4), ([bilibili](https://www.bilibili.com/video/BV1YN411E7Ra)

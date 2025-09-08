@@ -93,7 +93,7 @@ For running it liked service, create `languagetool_service.cmd` from the command
 
 ```
 Set WshShell = CreateObject("WScript.Shell")
-  WshShell.Run chr(34) & "languagetool_service.cmd" & Chr(34), 0
+	WshShell.Run chr(34) & "languagetool_service.cmd" & Chr(34), 0
 Set WshShell = Nothing
 ```
 
@@ -109,4 +109,6 @@ Create shortcut of `languagetool_service.vbs`, put it into `C:\Users\User\AppDat
 [^2]: [Anyone self-hosting languagetool?](https://www.reddit.com/r/selfhosted/comments/ksvmii/anyone_selfhosting_languagetool/)
 [^3]: [Finding errors using n-gram data](https://dev.languagetool.org/finding-errors-using-n-gram-data)
 
-{% embed bilibili id="BV13c411t7QS" loading="lazy" %}
+## annex
+
+[languagetool.mp4](https://scillidan.github.io/media_cheat/opt/Browser/languagetool.mp4), ([bilibili](https://www.bilibili.com/video/BV13c411t7QS)

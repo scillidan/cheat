@@ -620,4 +620,3 @@ neovide --server <your_host>:1234
 [^1]: [PPA not working with lazy.nvim](https://www.reddit.com/r/neovim/comments/166fpfb/ppa_not_working_with_lazynvim/)
 [^2]: [Neovim - Build prerequisites](https://github.com/neovim/neovim/blob/master/BUILD.md#build-prerequisites)
 [^3]: [Install from source](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-source)
-

@@ -82,6 +82,8 @@ git clone --depth=1 https://github.com/iDvel/rime-ice
 
 [^1]: [Can't awaken the input method(fcitx5)](https://github.com/alacritty/alacritty/issues/6528)
 
+# annexs
+
 ![rime](/_image/opt/rime.png)
 
-{% embed bilibili id="BV1gJ4m1M7Ea" loading="lazy" %}
+[rime_init_windows.mp4](https://scillidan.github.io/media_cheat/opt/rime_init_windows.mp4), ([bilibili](https://www.bilibili.com/video/BV1gJ4m1M7Ea)

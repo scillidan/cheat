@@ -36,6 +36,8 @@ python -m pip install onnx==1.16.0 onnxoptimizer==0.3.13 onnxruntime-gpu==1.17.1
 
 [^1]: [chaiNNer does not respect system proxy settings](https://github.com/chaiNNer-org/chaiNNer/issues/3043)
 
+## annex
+
 ![chainner](/_image/opt/chainner.png)
 
-{% embed bilibili id="BV188G2zaEts" loading="lazy" %}
+[chainner.mp4](https://scillidan.github.io/media_cheat/opt/chainner.mp4), ([bilibili](https://www.bilibili.com/video/BV188G2zaEts)

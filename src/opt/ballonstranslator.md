@@ -28,7 +28,10 @@ python launch.py
 	- DL Module → Translator
 	- General → Typesetting → Auto layout (Off)
 
+
+## annexs
+
 ![ballonstranslator](/_image/opt/ballonstranslator.png)
 
-{% embed bilibili id="BV1zf421S7gY" loading="lazy" %}
-{% embed bilibili id="BV1zw4m117Ak" loading="lazy" %}
+[ballonstranslator_sakurallm.mp4](https://scillidan.github.io/media_cheat/opt/ballonstranslator_sakurallm.mp4), ([bilibili](https://www.bilibili.com/video/BV1zf421S7gY)
+[ballonstranslator_deeplx.mp4](https://scillidan.github.io/media_cheat/opt/ballonstranslator_deeplx.mp4), ([bilibili](https://www.bilibili.com/video/BV1zw4m117Ak)

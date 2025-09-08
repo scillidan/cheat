@@ -80,4 +80,6 @@ tmux attach
 
 - [tmux-navigator.nvim](https://github.com/connordeckers/tmux-navigator.nvim)
 
+## annex
+
 ![color_vanta](/_image/opt/tmux/color_vanta.png)

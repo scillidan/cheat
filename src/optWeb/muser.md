@@ -64,4 +64,4 @@ npm run start
 [^2]: [Install TensorFlow with pip](https://www.tensorflow.org/install/pip)
 [^3]: [Python pip 清华安装源被封禁下载](https://rewrz.com/archive/tsinghua-pip-source-blocked-requests)
 
-{% embed bilibili id="BV1QwomYKEJh" loading="lazy" %}
+[muser_batch-script.mp4](https://scillidan.github.io/media_cheat/optWeb/muser_batch-script.mp4), ([bilibili](https://www.bilibili.com/video/BV1QwomYKEJh)

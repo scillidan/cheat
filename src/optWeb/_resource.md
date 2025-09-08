@@ -108,6 +108,7 @@
 - #voice [Dia](https://github.com/nari-labs/dia)
 - #voice [faster-whisper-GUI](https://github.com/CheshireCC/faster-whisper-GUI)
 - [Album App for Django](https://github.com/jobsta/albumapp-django)
+- [CADAM](https://github.com/Adam-CAD/CADAM)
 - [changedetection.io](https://github.com/dgtlmoon/changedetection.io)
 - [ChartDB](https://github.com/chartdb/chartdb)
 - [Cosmos Keyboards](https://github.com/rianadon/Cosmos-Keyboards)

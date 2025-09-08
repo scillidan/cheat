@@ -86,6 +86,8 @@ launch: "/home/<user>/RetroArch/retroarch" -L "/home/<user>/RetroArch/cores/flyc
 - #theme [Retro Mega](https://github.com/djfumberger/retromega)
 - #theme [Slick theme for Pegasus](https://github.com/buzz/pegasus-theme-slick)
 
+## annex
+
 ![pegasus-g](/_image/optGame/pegasus-g.png)
 
-{% embed bilibili id="BV154421S7vs" loading="lazy" %}
+[pegasus-frontend_init_windows.mp4](https://scillidan.github.io/media_cheat/opt/pegasus-frontend_init_windows.mp4), ([bilibili](https://www.bilibili.com/video/BV154421S7vs)

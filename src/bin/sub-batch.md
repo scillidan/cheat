@@ -24,4 +24,6 @@ sub-batch alass
 sub-batch time-mpv
 ```
 
-{% embed bilibili id="BV1gH4y1P7rb" loading="lazy" %}
+## annex
+
+[sub-batch.mp4](https://scillidan.github.io/media_cheat/bin/sub-batch.mp4), ([bilibili](https://www.bilibili.com/video/BV1gH4y1P7rb)
