@@ -16,6 +16,10 @@
 }
 ```
 
+## example
+
+[demo.tex](https://github.com/MartinScharrer/adjustbox/blob/main/demo.tex)
+
 ## cross-reference
 
 - [adjustbox_ex1.md](/lib/latex/_example/adjustbox_ex1.md)

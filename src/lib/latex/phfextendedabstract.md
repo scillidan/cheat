@@ -17,3 +17,32 @@
 > - 页面边距使用geometry包进行了调整。（如果您想进一步更改它们，只需调用\geometry{...}。参见geometry包的文档。）  
 > - 列表，即itemize和enumerate环境，使用enumitem包进行了自定义，以减少空间。您还可以获得一个enumerate*环境，将其项目排版为内联，呈现在一个段落中。（注意，如果您选择通过不包括enumitem的pkgset=选项加载包集，则此自定义将不起作用。）  
 > - 默认情况下，我们加载phfthm包并设置自定义的定理样式，以便其突出而与章节和段落标题形成良好的对比。 [ctan.org/pkg/phfextendedabstract]
+
+## quickstart
+
+```tex
+% Bug here
+\documentclass[papertype=a4paper]{phfextendedabstract}
+\usepackage{hyperref}
+
+\begin{document}
+\title{Title goes here}
+\author{Author 1}
+\author{Author 2}
+\maketitle
+\section{Introduction.}
+Lorem ipsum ...
+\section{Results.}
+We had some cool results about
+\begin{enumerate*}
+\item a first result,
+\item a second result,
+\item a final result.
+\end{enumerate*}
+\paragraph{First result.}
+Here’s a first result ...
+\paragraph{Second result.}
+Here’s another result ...
+...
+\end{document}
+```

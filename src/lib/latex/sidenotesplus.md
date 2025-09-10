@@ -11,3 +11,7 @@
 > 命令\sidenote模仿\footnote命令，提供标记（数字、字母、罗马数字）引用。然而，也可以指定无编号和自定义符号。  
 > 只有在指定包选项alerton时，临时侧面提醒才会显示。提醒在文档开发过程中非常有用，可以作为待办事项提醒。  
 > 此外，对于图形和表格，标题也可以放置在边缘中。同时，也提供了图形、表格和文本的全宽环境。如果需要额外空间放置公式，文本环境可以部分扩展。 [ctan.org/pkg/sidenotesplus]
+
+## example
+
+[tests-sidenoteplus.tex](https://github.com/anton-vrba/sidenotesplus/blob/main/tests-sidenoteplus.tex)

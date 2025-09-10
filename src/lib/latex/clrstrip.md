@@ -9,8 +9,9 @@
 ```tex
 \usepackage{xcolor}
 \usepackage{clrstrip}
+```
 
-\begin{document}
+```tex
 \begin{colorstrip}{red!5}
 	\blindduck
 \end{colorstrip}

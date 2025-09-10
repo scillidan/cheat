@@ -12,7 +12,7 @@ sudo tailscale up
 ```
 
 ```sh
-# Windows 10
+# Windows [10](../../../../Asset/file_iso/windows10_x64_cn.iso)
 scoop install tailscale
 ```
 

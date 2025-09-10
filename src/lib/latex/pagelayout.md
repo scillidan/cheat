@@ -9,3 +9,43 @@
 > Inkscape的集成允许您创建框阴影。  
 > ImageMagick的集成允许您配置位图图形的压缩和锐化，以导出文档的网页、打印或预览版本。并行图像优化、缓存和草稿模式使得即使对于包含大量照片和图形的大型文档也能快速创建PDF并实现高效的工作流程。  
 > pagelayout类还集成了PGF/TikZ和tcolorbox LaTeX包。 [ctan.org/pkg/pagelayout]
+
+## quickstart
+
+```tex
+\documentclass[draft,grid,graphpaper,preflight,optimize={density=600}]{pagelayout}
+\usepackage{microtype}
+
+\pagewidth=5.5cm
+\pageheight=4cm
+\margin=5mm
+\gutter=5mm
+\bleed=2mm
+\setpagecolor{white}
+
+\begin{document}
+  \newtemplate{my template}{
+    \setgrid{
+      {[2]{3!}{2!}}
+    }
+    \placeholder{0 0 1 1}
+    \placeholder{0 1 1 2}
+  }
+  \template{my template}{}
+
+  \nogrid
+  \newborder{my border}{width = 1mm, color = white, radius = 5mm}
+  \newshadow{my shadow}{size = 7}
+  \template{my template}{
+    \graphic[
+      scale=1.05,
+      hpos=0,
+      vpos=0.3,
+      shadow=my shadow,
+      border=my border,
+      border radius=0mm
+			% A exampleImage.jpg here.
+			]{exampleImage}
+  }
+\end{document}
+```

@@ -8,21 +8,21 @@
 
 ```tex
 \documentclass[letterpaper,twoside]{article}
-
 \usepackage{xcolor}
 \usepackage{blowup}
-
 \AddToHook{shipout/background}{
     \put(0,0){\textcolor{green!30}{\rule[-\paperheight]{\paperwidth}{\paperheight}}}
 }
 \blowUp{target=a4,pos=c}
 
 \begin{document}
-
 Letter-size document on A4-size paper
-
 \end{document}
 ```
+
+## example
+
+[blowup-ex1.tex](https://github.com/rolfn/blowup/blob/master/blowup-ex1.tex)
 
 ## requirement
 

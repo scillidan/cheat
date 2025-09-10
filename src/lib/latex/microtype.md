@@ -9,3 +9,15 @@
 > 这些功能可以应用于可定制的字体集，所有微排版方面的字体设置都可以以简单和灵活的方式进行配置。提供了各种字体的设置。  
 > 请注意，字符突出需要pdfTeX、LuaTeX或XeTeX。字体扩展可以在pdfTeX或LuaTeX下工作。该包默认启用突出和扩展功能，如果可以安全地假定它们可以正常工作。禁用连字需要pdfTeX或LuaTeX，而单词间距和字距的调整仅在pdfTeX下有效。字母间距在pdfTeX、LuaTeX或XeTeX下可用。  
 > 替代包“letterspace”也支持plain TeX，仅提供字母间距的用户命令，省略对所有其他扩展的支持。 [ctan.org/pkg/microtype]
+
+## quickstart
+
+```tex
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage[protrusion=true,expansion]{microtype}}
+
+\begin{document}
+\lipsum[1-2]
+\end{document}
+```

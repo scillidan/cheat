@@ -23,6 +23,7 @@ scoop install yazi
 - [custom-shell.yazi](https://github.com/AnirudhG07/custom-shell.yazi)
 - [epub-preview.yazi](https://github.com/kirasok/epub-preview.yazi)
 - [fr.yazi](https://github.com/lpnh/fr.yazi)
+- [Hevi Preview Plugin for Yazi](https://github.com/lihuax-me/hevi.yazi)
 - [lazygit.yazi](https://github.com/Lil-Dank/lazygit.yazi)
 - [mediainfo.yazi](https://github.com/boydaihungst/mediainfo.yazi)
 - [piper.yazi](https://github.com/yazi-rs/plugins/tree/main/piper.yazi)

@@ -34,3 +34,7 @@ incorporates colorblind-safeness into the writing process, making it both less c
 
 \end{document}
 ```
+
+## example
+
+[colorblind_doc.tex](https://github.com/simon-pfahler/colorblind/blob/main/colorblind_doc.tex)

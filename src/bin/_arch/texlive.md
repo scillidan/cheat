@@ -15,6 +15,12 @@ tlmgr update --list
 sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr update --all
 ```
 
+## command
+
+```sh
+tlmgr search --global <pkg>
+```
+
 ## Upgrade from 2024 to 2025
 
 ```sh

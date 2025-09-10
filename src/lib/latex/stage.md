@@ -17,3 +17,31 @@
 > - 支持自动文本的定制和翻译（例如，将“The End”改为其他字词），
 > - 符合戏剧剧本的常见手稿标准格式，
 > - 与LaTeX的轻松集成，方便编剧准备提交的剧本。 [ctan.org/pkg/stage]
+
+## quickstart
+
+```tex
+\documentclass{stage}
+
+\title{}
+\author{}
+% \address{}
+
+\begin{document}
+\maketitle
+%%% Uncomment the following line to add a quote page.
+% \quotepage{Quote}{Author}
+%%% Uncomment the next few lines to add a cast page.
+% \begin{castpage}
+%
+\addcharacter{Name}{Description}
+%
+% \end{castpage}
+% The magic happens here...
+%
+% \act
+% \scene
+% \opensd{Opening stage directions.}
+% \dialog{who}{what}
+\end{document}
+```

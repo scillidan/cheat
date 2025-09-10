@@ -11,6 +11,7 @@
 	- [LaTeX tables: Advanced features](https://vladar.bearblog.dev/latex-tables-advanced-features/)
 	- [LaTeX page geometry and layout](https://vladar.bearblog.dev/latex-page-geometry-and-layout/)
 - #blog [A Quick Guide to LaTeX](https://lambdaland.org/posts/2025-02-06_latex_bootstrap/)
+- #blog [A guide to supercharged mathematical typesetting](https://ejmastnak.com/tutorials/vim-latex/intro/)
 - #blog [Neovim as a LaTex Development Environment](https://blog.epheme.re/software/nvim-latex.html)
 - #document [Documentation - Overleaf, Online LaTeX Editor](https://www.overleaf.com/learn)
 	- [Supported entry types](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
