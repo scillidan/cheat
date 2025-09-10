@@ -182,77 +182,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="blowup-ex1tex"><a class="header" href="#blowup-ex1tex"><a href="https://github.com/rolfn/blowup/blob/master/blowup-ex1.tex">blowup-ex1.tex</a></a></h1>
-<p>This is a LaTeX document that defines a letter-sized page formatted for printing on A4 paper. Let's break down the key components of the code step by step:</p>
-<ul>
-<li>
-<p><strong>Document Class Declaration</strong>:</p>
-<pre><code class="language-latex">\documentclass[letterpaper,twoside]{article}
-</code></pre>
-<p>This sets up the document to use the <code>article</code> class, specifying that the paper size is letter and enabling double-sided printing.</p>
-</li>
-<li>
-<p><strong>Package Inclusions</strong>:</p>
-<pre><code class="language-latex">\usepackage{array,xcolor}
-</code></pre>
-<p>This imports the <code>array</code> package for enhanced table features and the <code>xcolor</code> package for color manipulation.</p>
-</li>
-<li>
-<p><strong>Background Color</strong>:</p>
-<pre><code class="language-latex">\AddToHook{shipout/background}{%
-  \put(0,0){\textcolor{green!30}{\rule[-\paperheight]{\paperwidth}{\paperheight}}}%
-}
-</code></pre>
-<p>This defines a hook that places a light green background on the document, covering the entire page using the <code>\textcolor</code> command.</p>
-</li>
-<li>
-<p><strong>Default Font and Indentation</strong>:</p>
-<pre><code class="language-latex">\renewcommand\familydefault{\sfdefault}
-\setlength\parindent{0pt}
-</code></pre>
-<p>These commands set the default font to sans-serif and remove paragraph indentation.</p>
-</li>
-<li>
-<p><strong>Remove Page Numbers</strong>:</p>
-<pre><code class="language-latex">\pagestyle{empty}
-</code></pre>
-<p>This disables the display of page numbers.</p>
-</li>
-<li>
-<p><strong>Using the blowup Package</strong>:</p>
-<pre><code class="language-latex">\usepackage{blowup}
-\blowUp{target=a4,pos=c}
-</code></pre>
-<p>The <code>blowup</code> package is used here to ensure that the content is scaled appropriately to fit A4 paper, while maintaining its position centered on the page.</p>
-</li>
-<li>
-<p><strong>Document Content</strong>:</p>
-<pre><code class="language-latex">\begin{document}
-\null\vfill
-\huge\centering
-Letter-size document on A4-size paper
-...
-\end{document}
-</code></pre>
-<p>The content begins with adding vertical spacing (<code>\null\vfill</code> ensures that the heading is centered on the page). The header text is set to a large size and centered.</p>
-</li>
-<li>
-<p><strong>Table of Sizes</strong>:</p>
-<pre><code class="language-latex">\begin{tabular}{|&gt;{\bfseries}l&lt;{:}r&lt;{\,mm}!{$\times$}r&lt;{\,mm}|} \hline
-  ...
-\end{tabular}
-</code></pre>
-<p>A tabular environment is defined here, with formatting that makes the first column bold. It lists various paper sizes alongside their dimensions.</p>
-</li>
-<li>
-<p><strong>Page Break</strong>:</p>
-<pre><code class="language-latex">\newpage\null 2nd page\dots
-</code></pre>
-<p>This command creates a new page, with a placeholder for more text on the second page.</p>
-</li>
-</ul>
-<p>The document ultimately provides information on the letter-size paper's dimensions when printed on A4 paper, along with a clear layout and design.</p>
-<p>If you have further questions or need specific clarifications about any part, feel free to ask!</p>
+                        <h1 id="blowup_ex1"><a class="header" href="#blowup_ex1">blowup_ex1</a></h1>
 
                     </main>
 

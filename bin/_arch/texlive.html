@@ -192,6 +192,9 @@ sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr option repository https://mi
 tlmgr update --list
 sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr update --all
 </code></pre>
+<h2 id="command"><a class="header" href="#command">command</a></h2>
+<pre><code class="language-sh">tlmgr search --global &lt;pkg&gt;
+</code></pre>
 <h2 id="upgrade-from-2024-to-2025"><a class="header" href="#upgrade-from-2024-to-2025">Upgrade from 2024 to 2025</a></h2>
 <pre><code class="language-sh">sudo cp -a /usr/local/texlive/2024 /usr/local/texlive/2025
 cd /usr/local/texlive/2025
@@ -201,7 +204,7 @@ sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr option repository https://mi
 sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr update --self --all
 luaotfload-tool -fu
 </code></pre>
-<h2 id="command"><a class="header" href="#command">command</a></h2>
+<h2 id="command-1"><a class="header" href="#command-1">command</a></h2>
 <pre><code class="language-sh">pdflatex --shell-escape "$1"
 </code></pre>
 <h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>

@@ -206,8 +206,18 @@ cd "%USERPROFILE%/Usr/Source/goldendict"
 git clone --depth=1 https://github.com/VimWei/GoldenDictOCR
 </code></pre>
 <pre><code class="language-sh">git clone --depth=1 https://gist.github.com/e95773454d79dc047aeed016fb00daef tencenttrans_2zh_zh2en
-git clone --depth=1 https://github.com/LibreOffice/dictionaries
-git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
+</code></pre>
+<pre><code class="language-sh">git clone --depth=1 https://github.com/LibreOffice/dictionaries
+</code></pre>
+<h3 id="dark-theme"><a class="header" href="#dark-theme">Dark theme</a></h3>
+<pre><code class="language-sh">git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
+cd GoldenDict-Full-Dark-Theme
+sudo ln -sfn $(pwd)/GoldenDict/extras /usr/share/goldendict/extras
+sudo ln -sfn $(pwd)/GoldenDict/icons /usr/share/goldendict/icons
+ln -sfn $(pwd)/GoldenDict/fonts $HOME/.config/goldendict/fonts
+mkdir -p $HOME/.config/goldendict/styles/Dark
+(cat "$(pwd)/GoldenDict/styles/Dark/article-style.css"; curl -s https://raw.githubusercontent.com/scillidan/dotfiles/refs/heads/main/.config/_goldendict/article-style_user.css) &gt; "$HOME/.config/goldendict/styles/Dark/article-style.css"
+ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styles/Dark/qt-style.css
 </code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
@@ -239,9 +249,10 @@ git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
 <li><a href="https://github.com/mingerfan/Tencent-Translator-rs">Tencent-Translator-rs</a></li>
 <li><a href="https://github.com/Celso-Scott/TMX-to-Goldendict-Converter">TMX to Goldendict Convertor</a></li>
 </ul>
-<iframe allowfullscreen name="bilibili" loading="lazy" src="https://player.bilibili.com/player.html?bvid=BV1pw411V761&danmaku=0" style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background: black"></iframe>
-<iframe allowfullscreen name="bilibili" loading="lazy" src="https://player.bilibili.com/player.html?bvid=BV1CC4y1S77c&danmaku=0" style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background: black"></iframe>
-<iframe allowfullscreen name="bilibili" loading="lazy" src="https://player.bilibili.com/player.html?bvid=BV1cK41187up&danmaku=0" style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background: black"></iframe>
+<h2 id="annex"><a class="header" href="#annex">annex</a></h2>
+<p><a href="https://scillidan.github.io/media_cheat/opt/goldendict_pronunciation.mp4">goldendict_pronunciation.mp4</a>, (<a href="https://www.bilibili.com/video/BV1pw411V761">bilibili</a>
+<a href="https://scillidan.github.io/media_cheat/opt/goldendict_umi-ocr.mp4">goldendict_umi-ocr.mp4</a>, (<a href="https://www.bilibili.com/video/BV1CC4y1S77c">bilibili</a>
+<a href="https://scillidan.github.io/media_cheat/opt/goldendict_goldendictocr.mp4">goldendict_goldendictocr.mp4</a>, (<a href="https://www.bilibili.com/video/BV1cK41187up">bilibili</a></p>
 
                     </main>
 
