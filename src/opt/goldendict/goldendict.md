@@ -70,6 +70,7 @@ ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styl
 ### cache
 
 - [Acute](https://terokarvinen.com/2017/acute-0-2-2-integrate-help-commands-to-single-interface-pydoc3-puppet-describe-and-man-in-goldendict/?fromSearch=acute)
+- [editor for goldendict-dictionary entries](https://github.com/maxdymko/goldendict-dictionary-editor)
 - [Flexible Text Copy Adapter (FTCA)](https://github.com/voothi/ftca)
 - [gd-frequency](https://github.com/toytoi/gd-frequency)
 - [GD-Translator - An AI Translator as a GoldenDict Extension](https://github.com/xrysamuel/GD-Translator)

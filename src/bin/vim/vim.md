@@ -38,6 +38,7 @@ set noexpandtab
 - #cursor [autocursor.vim](https://github.com/yukimemi/autocursor.vim)
 - #devdocs [vim-devdocs](https://github.com/romainl/vim-devdocs)
 - #device [vim-spirv](https://github.com/kbenzie/vim-spirv)
+- #dictionary [vim-stardict](https://github.com/phongvcao/vim-stardict)
 - #dictionary [goldendict.vim](https://github.com/jiazhoulvke/goldendict.vim)
 - #dictionary [victionary](https://github.com/farconics/victionary)
 - #dictionary [vimdict](https://github.com/koonix/vimdict)

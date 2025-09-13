@@ -1,5 +1,10 @@
 # bin
 
+## reference
+
+- #document [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
+- #post [10 Essential Terminal Commands Every Developer Should Know](https://www.trevorlasn.com/blog/10-essential-terminal-commands-every-developer-should-know)
+
 ## resource
 
 ### mark

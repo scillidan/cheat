@@ -336,5 +336,7 @@ systemctl status bluetooth
 [^6]: [可选配置（进阶篇）- 休眠（hibernate）设置](https://arch.icekylin.online/guide/advanced/optional-cfg-2.html#%F0%9F%92%A4-%E4%BC%91%E7%9C%A0-hibernate-%E8%AE%BE%E7%BD%AE)
 [^7]: [Bluetooth not working on computer](https://www.linuxquestions.org/questions/linux-hardware-18/bluetooth-not-working-on-computer-4175724971/)
 
+## annex
+
 ![arch-linux-arm_ucon](/_image/os/arch-linux-arm_ucon.png)
 ![arch-linux](/_image/os/arch-linux.png)
