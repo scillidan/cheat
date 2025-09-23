@@ -69,6 +69,7 @@
 - #loader [RequireJS](https://requirejs.org)
 - #markdown [markdown-it-attrs](https://github.com/arve0/markdown-it-attrs)
 - #markdown [markdown-it-cjk-breaks](https://github.com/markdown-it/markdown-it-cjk-breaks)
+- #media [Mediabunny](https://github.com/Vanilagy/mediabunny)
 - #mdxjs [MDX](https://mdxjs.com)
 - #modal [Tingle.js](https://github.com/robinparisi/tingle)
 - #mouse [Cotton.JS](https://cotton123236.github.io/CottonJS)

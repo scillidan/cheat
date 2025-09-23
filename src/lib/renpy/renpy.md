@@ -27,6 +27,10 @@
 3. 如果在gradle相关的步骤提示`需要下载gradle`，这可能是个bug。可以把`gradle-8.5-bin.zip`放进`C:\Users\User\.gradle\wrapper\dists\gradle-8.5-bin\<一串字符>\`下。重启renpy.exe，再试一次
 4. 如果出现未知错误，可尝试关闭梯子。重启renpy.exe再试
 
+## reference
+
+- #document [Ren'Py Documentation](https://www.renpy.org/doc/html/index.html)
+
 ## resource
 
 ### mark

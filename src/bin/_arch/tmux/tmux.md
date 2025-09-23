@@ -58,6 +58,7 @@ tmux attach
 - #session [Smug - tmux session manager](https://github.com/ivaaaan/smug)
 - #session [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - #theme [Artimux](https://github.com/tribhuwan-kumar/Artimux)
+- [DVD Video](https://github.com/integrii/dvd)
 - [Tmux Configuration](https://github.com/samoshkin/tmux-config)
 - [tmux-autoreload](https://github.com/b0o/tmux-autoreload)
 - [tmux-better-mouse-mode](https://github.com/nhdaly/tmux-better-mouse-mode)

@@ -135,8 +135,8 @@ neovide --server <your_host>:1234
 
 - #help [Nvim Cheat Sheet](https://github.com/Djancyp/cheat-sheet)
 - #project [warp.nvim](https://github.com/y3owk1n/warp.nvim)
-- #qol [mkdir.nvim](https://github.com/jghauser/mkdir.nvim)
 - #project [Neovim project manager plugin](https://github.com/coffebar/neovim-project)
+- #qol [mkdir.nvim](https://github.com/jghauser/mkdir.nvim)
 - #other #translate [translate-shell.vim](https://github.com/echuraev/translate-shell.vim)
 - #other #translate [translate.nvim](https://github.com/uga-rosa/translate.nvim)
 - #other #dictionary [dictd.nvim](https://github.com/carlinigraphy/dictd.nvim)
@@ -489,6 +489,7 @@ neovide --server <your_host>:1234
 - #preset [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
 - #preset [mini.nvim](https://github.com/echasnovski/mini.nvim)
 - #preset [oxocarbon.nvim](https://github.com/nyoom-engineering/oxocarbon.nvim)
+- #project [project.nvim](https://github.com/DrKJeff16/project.nvim)
 - #run [LitREPL](https://github.com/sergei-mironov/litrepl)
 - #run [Molten](https://github.com/benlubas/molten-nvim)
 - #run [Notebook Navigator](https://github.com/GCBallesteros/NotebookNavigator.nvim)
@@ -610,6 +611,7 @@ neovide --server <your_host>:1234
 - [rgflow.nvim](https://github.com/mangelozzi/rgflow.nvim)
 - [store.nvim](https://github.com/alex-popov-tech/store.nvim)
 - [sshfs.nvim](https://github.com/uhs-robert/sshfs.nvim)
+- [timers.nvim](https://github.com/ravsii/timers.nvim)
 - [vim-yazi](https://github.com/yukimura1227/vim-yazi)
 
 ### cancel
@@ -617,6 +619,7 @@ neovide --server <your_host>:1234
 - #edit [yanky.nvim](https://github.com/gbprod/yanky.nvim)
 - #search #document [nvim-devdocs](https://github.com/warpaint9299/nvim-devdocs)
 - #search #document [nvim-devdocs](https://github.com/luckasRanarison/nvim-devdocs)
+- [godotdev.nvim](https://github.com/Mathijs-Bakker/godotdev.nvim)
 
 [^1]: [PPA not working with lazy.nvim](https://www.reddit.com/r/neovim/comments/166fpfb/ppa_not_working_with_lazynvim/)
 [^2]: [Neovim - Build prerequisites](https://github.com/neovim/neovim/blob/master/BUILD.md#build-prerequisites)

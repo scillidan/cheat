@@ -19,4 +19,12 @@ sudo pacman -S winetricks
 yay -S dxvk-bin
 ```
 
+[^2]
+
+```sh
+# Optional
+sudo pacman -S gamemode
+```
+
 [^1]: [How to Install and Use Lutris on Arch Linux](https://www.siberoloji.com/how-to-install-and-use-lutris-on-arch-linux/)
+[^2]: [How to Install and Configure Vulkan on Arch Linux](https://www.siberoloji.com/arch-linux-howtos-install-and-configure-vulkan/)

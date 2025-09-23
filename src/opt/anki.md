@@ -113,4 +113,4 @@
 - #web [VocabSieve](https://github.com/FreeLanguageTools/vocabsieve)
 - #web [web](https://github.com/2anki/web)
 - #wiki [Ankipedia](https://github.com/ctrlaltwill/ankipedia)
-
+- [Kardenwort](https://github.com/kardenwort/20250913122858-kardenwort)

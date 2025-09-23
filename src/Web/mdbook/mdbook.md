@@ -70,6 +70,7 @@ mdbook build
 - [mdbook-blush](https://github.com/TheSignPainter98/mdbook-blush)
 - [mdbook-cmdrun](https://github.com/FauconFan/mdbook-cmdrun)
 - [mdbook-codeblocks](https://github.com/Roms1383/mdbook-codeblocks)
+- [mdbook-codetags](https://github.com/madbrain/mdbook-codetags)
 - [mdbook-curly-quotes](https://github.com/arminha/mdbook-curly-quotes)
 - [mdbook-docgen](https://github.com/yokurang/mdbook-docgen)
 - [mdbook-files](https://github.com/xfbs/mdbook-files)

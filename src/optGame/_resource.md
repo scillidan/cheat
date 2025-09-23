@@ -35,7 +35,8 @@
 - [Farm&Shoot](https://matteo-dalessandro.itch.io/farmshoot)
 - [Gaunt Valkyr](https://ember-paw-games.itch.io/gaunt-valkyr)
 - [Hamster than Light](https://korogames.itch.io/htl)
-- [Paper Soldiers](https://andriy-bychkovskyi.itch.io/paper-soldiers)
+	- [Paper Soldiers](https://andriy-bychkovskyi.itch.io/paper-solssssssssadddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssqqqers)
+- [retriggere](https://unnamecollective.itch.io/retriggered)
 - [The Only Tower](https://giantlight.itch.io/the-only-tower)
 
 ### cache
