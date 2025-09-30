@@ -352,6 +352,7 @@
   - [go](lib/go/go.md)
     - [goenv](lib/go/goenv.md)
     - [gvm](lib/go/gvm.md)
+	- [godot](lib/godot/godot.md)
   - [latex](lib/latex/latex.md)
     - [\listfiles](lib/latex/_command/listfiles.md)
     - [\null](lib/latex/_command/null.md)

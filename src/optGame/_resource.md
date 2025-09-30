@@ -42,6 +42,7 @@
 ### cache
 
 - #3ds [Citra](https://citra-emulator.com)
+- #c [Balatro-GBA](https://github.com/cellos51/balatro-gba)
 - #c [dungeonrush](https://github.com/rapiz1/DungeonRush)
 - #js [snakisms](https://github.com/pippinbarr/SNAKISMS)
 - #love [ARR World](https://windmillgames.itch.io/arr-world)
@@ -72,6 +73,7 @@
 - [Catanatron](https://github.com/bcollazo/catanatron)
 - [Cave Story MD](https://github.com/andwn/cave-story-md)
 - [Doukutsu Randamu](https://trashboxbobylev.itch.io/doukutsu-randamu)
+- [Face To Face](https://samgames.itch.io/face-to-face?ref=warpdoor.com)
 - [FinalBurn Neo](https://github.com/libretro/FBNeo)
 - [Jenka Dungeon](https://kasityo-crew.itch.io/jenka-dungeon)
 - [Kingsvein](https://radcodex.itch.io/kingsvein)
