@@ -15,6 +15,11 @@ sudo pacman -S alacritty
 scoop install alacritty
 ```
 
+```sh
+# Preview image in yazi
+sudo pacman -S ueberzugpp
+```
+
 ## reference
 
 - #document [Alacritty](https://alacritty.org/config-alacritty.html)

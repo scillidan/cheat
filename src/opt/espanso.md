@@ -23,3 +23,9 @@ mklink /J "%SCOOP_HOME%\apps\espanso\current\.espanso\match" "%DOTFILES_DIR%\.co
 
 - #document [Espanso](https://espanso.org/docs/get-started/)
 - [Variables](https://espanso.org/docs/matches/variables/)
+
+## resource
+
+- [All Emojis](https://hub.espanso.org/all-emojis)
+- [Greek Letters based on Latex](https://hub.espanso.org/greek-letters-improved)
+- [Math symbols based on Latex](https://hub.espanso.org/math-symbols)

@@ -38,6 +38,13 @@ mkdir ~/.config/yazi/
 mkdir %AppData%\yazi\config\
 ```
 
+## command
+
+```sh
+ya pkg add <pkg>
+ya pkg upgrade
+```
+
 ## reference
 
 - #document [Yazi](https://yazi-rs.github.io/docs/installation)
