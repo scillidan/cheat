@@ -9,6 +9,35 @@ sudo pacman -S yazi
 scoop install yazi
 ```
 
+## Personal do
+
+```sh
+ya pkg add gosxrgxx/flexoki-dark.yazi
+ya pkg add gosxrgxx/flexoki-light.yazi
+ya pkg add AnirudhG07/custom-shell.yazi
+ya pkg add kirasok/epub-preview.yazi
+ya pkg add lihuax-me/hevi.yazi
+ya pkg add Lil-Dank/lazygit.yazi
+ya pkg add boydaihungst/mediainfo.yazi
+ya pkg add NoponyAsked/sxiv.yazi
+ya pkg add WhoSowSee/whoosh.yazi
+ya pkg add yazi-rs/plugins:piper
+# Arch
+ya pkg add lpnh/fr.yazi
+ya pkg add uhs-robert/recycle-bin.yazi
+```
+
+## setting
+
+[^1]
+
+```sh
+# Unix-like
+mkdir ~/.config/yazi/
+# Windows 10
+mkdir %AppData%\yazi\config\
+```
+
 ## reference
 
 - #document [Yazi](https://yazi-rs.github.io/docs/installation)
@@ -39,3 +68,4 @@ scoop install yazi
 
 - [duckdb.yazi](https://github.com/wylie102/duckdb.yazi)
 
+[^1]: [Yazi - Configuration](https://yazi-rs.github.io/docs/configuration/overview/)

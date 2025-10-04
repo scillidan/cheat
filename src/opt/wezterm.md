@@ -9,12 +9,13 @@ sudo pacman -S wezterm
 scoop install wezterm
 ```
 
-## Personal do
+## setting
 
 ```sh
+# Arch
+~/.config/wezterm/wezterm.lua
 # Windows 10
-del "%SCOOP_HOME%\apps\wezterm\current\wezterm.lua"
-mklink "%SCOOP_HOME%\apps\wezterm\current\wezterm.lua" "%DOTFILES_DIR%\.config\wezterm\wezterm.lua"
+%USERPROFILE%\scoop\apps\wezterm\current\wezterm.lua
 ```
 
 ## reference

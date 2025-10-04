@@ -310,7 +310,7 @@ sudo pacman -Rns \
 - [video-compare.md](/opt/video-compare.md)
 - [weixin.md](/opt/weixin.md)
 - [wezterm.md](/opt/wezterm.md)
-- [wine](/optGame/wine.md)
+- #arch [wine](/optGame/wine.md)
 - [xnconvert.md](/opt/xnconvert.md)
 - [yoga-image-optimizer.md](/opt/yoga-image-optimizer.md)
 - [yt-dlp.md](/bin/yt-dlp.md)
