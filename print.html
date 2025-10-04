@@ -4792,6 +4792,10 @@ mkdir ~/.config/yazi/
 # Windows 10
 mkdir %AppData%\yazi\config\
 </code></pre>
+<h2 id="command-11"><a class="header" href="#command-11">command</a></h2>
+<pre><code class="language-sh">ya pkg add &lt;pkg&gt;
+ya pkg upgrade
+</code></pre>
 <h2 id="reference-20"><a class="header" href="#reference-20">reference</a></h2>
 <ul>
 <li>#document <a href="https://yazi-rs.github.io/docs/installation">Yazi</a></li>
@@ -4859,7 +4863,7 @@ scoop install yt-dlp
 <li>Decompress it to <code>yt-dlp-ChromeCookieUnlock/</code>.</li>
 <li>(Windows 10) Move <code>yt-dlp-ChromeCookieUnlock\</code> into <code>C:\Users\User\AppData\Roaming\yt-dlg\plugins\</code>.</li>
 </ol>
-<h2 id="command-11"><a class="header" href="#command-11">command</a></h2>
+<h2 id="command-12"><a class="header" href="#command-12">command</a></h2>
 <pre><code class="language-sh"># List available formats for a given URL
 yt-dlp -F "&lt;url_1&gt;"
 
@@ -5107,7 +5111,7 @@ reboot
 <pre><code class="language-sh">export GIO_MODULE_DIR=/usr/lib/x86_64-linux-gnu/gio/modules/
 flatpak install flathub
 </code></pre>
-<h2 id="command-12"><a class="header" href="#command-12">command</a></h2>
+<h2 id="command-13"><a class="header" href="#command-13">command</a></h2>
 <pre><code class="language-sh">flatpak install flathub &lt;application_id&gt;
 flatpak uninstall &lt;application_id&gt;
 flatpak list --app
@@ -5155,7 +5159,7 @@ sudo apt install vsftpd
 <h2 id="usage-101"><a class="header" href="#usage-101">usage</a></h2>
 <pre><code class="language-sh">gpg --full-generate-key
 </code></pre>
-<h2 id="command-13"><a class="header" href="#command-13">command</a></h2>
+<h2 id="command-14"><a class="header" href="#command-14">command</a></h2>
 <pre><code class="language-sh"># Create a GnuPG directory and sync files from the user's GnuPG directory.
 mkdir &lt;path_to&gt;/gnupg
 rsync -av --progress ~/.gnupg/ &lt;path_to&gt;/gnupg
@@ -5519,7 +5523,7 @@ sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr option repository https://mi
 tlmgr update --list
 sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr update --all
 </code></pre>
-<h2 id="command-14"><a class="header" href="#command-14">command</a></h2>
+<h2 id="command-15"><a class="header" href="#command-15">command</a></h2>
 <pre><code class="language-sh">tlmgr search --global &lt;pkg&gt;
 </code></pre>
 <h2 id="upgrade-from-2024-to-2025"><a class="header" href="#upgrade-from-2024-to-2025">Upgrade from 2024 to 2025</a></h2>
@@ -5531,7 +5535,7 @@ sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr option repository https://mi
 sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr update --self --all
 luaotfload-tool -fu
 </code></pre>
-<h2 id="command-15"><a class="header" href="#command-15">command</a></h2>
+<h2 id="command-16"><a class="header" href="#command-16">command</a></h2>
 <pre><code class="language-sh">pdflatex --shell-escape "$1"
 </code></pre>
 <h2 id="cross-reference-5"><a class="header" href="#cross-reference-5">cross-reference</a></h2>
@@ -5618,7 +5622,7 @@ git clone --depth=1 https://github.com/jimeh/tmuxifier ~/.tmuxifier
 chmod +x ~/.tmuxifier/bin/tmuxifier
 ~/.tmux/plugins/tpm/bin/install_plugins
 </code></pre>
-<h2 id="command-16"><a class="header" href="#command-16">command</a></h2>
+<h2 id="command-17"><a class="header" href="#command-17">command</a></h2>
 <pre><code class="language-sh"># Save session
 tmux detach
 # Restore session
@@ -6806,6 +6810,7 @@ neovide --server &lt;your_host&gt;:1234
 <li>#formatter <a href="https://github.com/stevearc/conform.nvim">conform.nvim</a></li>
 <li>#edit #view <a href="https://github.com/rachartier/tiny-glimmer.nvim">tiny-glimmer.nvim</a></li>
 <li>#edit #yank <a href="https://github.com/AckslD/nvim-neoclip.lua">nvim-neoclip.lua</a></li>
+<li>#explorer <a href="https://github.com/mikavilpas/yazi.nvim">A Neovim Plugin for yazi</a></li>
 <li>#explorer <a href="https://github.com/stevearc/oil.nvim">oil.nvim</a></li>
 <li>#edit #view <a href="https://github.com/folke/twilight.nvim">Twilight</a></li>
 <li>#explorer <a href="https://github.com/refractalize/oil-git-status.nvim">oil-git-status</a></li>
@@ -7164,6 +7169,7 @@ neovide --server &lt;your_host&gt;:1234
 <li><a href="https://github.com/MisanthropicBit/neotest-busted">neotest-busted</a></li>
 <li><a href="https://github.com/LuxVim/nvim-luxmotion">nvim-luxmotion</a></li>
 <li><a href="https://github.com/3ZsForInsomnia/pacer.nvim">pacer.nvim</a></li>
+<li><a href="https://github.com/hat0uma/prelive.nvim">prelive.nvim</a></li>
 <li><a href="https://github.com/mangelozzi/rgflow.nvim">rgflow.nvim</a></li>
 <li><a href="https://github.com/alex-popov-tech/store.nvim">store.nvim</a></li>
 <li><a href="https://github.com/uhs-robert/sshfs.nvim">sshfs.nvim</a></li>
@@ -7760,7 +7766,7 @@ _[a-zA-Z\s'",;\.\?\!:-]+_									| `_&lt;word&gt;_` in Markdown
 \W    | not a word character
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sql"><a class="header" href="#sql">SQL</a></h1>
-<h2 id="command-17"><a class="header" href="#command-17">command</a></h2>
+<h2 id="command-18"><a class="header" href="#command-18">command</a></h2>
 <pre><code class="language-sql">-- Generate feed URLs based on subscription type.
 IF(ISNUMBER(SEARCH("release", [subscribe])), CONCATENATE([url], "/releases.atom"), IF(ISNUMBER(SEARCH("commit", [subscribe])), CONCATENATE([url], "/commits.atom"), ""))
 </code></pre>
@@ -9512,6 +9518,9 @@ sudo pacman -S alacritty
 # Windows 10
 scoop install alacritty
 </code></pre>
+<pre><code class="language-sh"># Preview image in yazi
+sudo pacman -S ueberzugpp
+</code></pre>
 <h2 id="reference-71"><a class="header" href="#reference-71">reference</a></h2>
 <ul>
 <li>#document <a href="https://alacritty.org/config-alacritty.html">Alacritty</a></li>
@@ -10133,6 +10142,12 @@ mklink /J "%SCOOP_HOME%\apps\espanso\current\.espanso\match" "%DOTFILES_DIR%\.co
 <li>#document <a href="https://espanso.org/docs/get-started/">Espanso</a></li>
 <li><a href="https://espanso.org/docs/matches/variables/">Variables</a></li>
 </ul>
+<h2 id="resource-32"><a class="header" href="#resource-32">resource</a></h2>
+<ul>
+<li><a href="https://hub.espanso.org/all-emojis">All Emojis</a></li>
+<li><a href="https://hub.espanso.org/greek-letters-improved">Greek Letters based on Latex</a></li>
+<li><a href="https://hub.espanso.org/math-symbols">Math symbols based on Latex</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="etcher"><a class="header" href="#etcher"><a href="https://github.com/balena-io/etcher">Etcher</a></a></h1>
 <h2 id="install-259"><a class="header" href="#install-259">install</a></h2>
 <pre><code class="language-sh"># Arch
@@ -10308,7 +10323,7 @@ ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styl
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_goldendict.bat">init_goldendict.bat</a></li>
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_goldendict.sh">init_goldendict.sh</a></li>
 </ul>
-<h2 id="resource-32"><a class="header" href="#resource-32">resource</a></h2>
+<h2 id="resource-33"><a class="header" href="#resource-33">resource</a></h2>
 <h3 id="later-11"><a class="header" href="#later-11">later</a></h3>
 <ul>
 <li><a href="https://github.com/Ajatt-Tools/gd-tools">GoldenDict tools</a></li>
@@ -10452,7 +10467,7 @@ Joplin是“优先离线”的，这意味着您的所有数据始终保存在�
 所有平台均提供全文搜索，以快速找到所需信息。应用程序可以通过插件和主题进行自定义，您也可以轻松创建自己的插件和主题。<br />
 该应用程序支持Windows、Linux、macOS、Android和iOS。还提供Web Clipper，可以从浏览器保存网页和屏幕截图，支持Firefox和Chrome。 [laurent22/joplin]</p>
 </blockquote>
-<h2 id="resource-33"><a class="header" href="#resource-33">resource</a></h2>
+<h2 id="resource-34"><a class="header" href="#resource-34">resource</a></h2>
 <h3 id="mark-21"><a class="header" href="#mark-21">mark</a></h3>
 <ul>
 <li>#calendar <a href="https://github.com/hieuthi/joplin-plugin-life-calendar">Life Calendar</a></li>
@@ -10645,7 +10660,7 @@ yay -S --noconfirm localsend-bin
 scoop install localsend
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="logseq"><a class="header" href="#logseq"><a href="https://github.com/logseq/logseq">Logseq</a></a></h1>
-<h2 id="resource-34"><a class="header" href="#resource-34">resource</a></h2>
+<h2 id="resource-35"><a class="header" href="#resource-35">resource</a></h2>
 <h3 id="mark-22"><a class="header" href="#mark-22">mark</a></h3>
 <ul>
 <li>edit <a href="https://github.com/YU000jp/logseq-plugin-blank-line">Blank Line</a></li>
@@ -11257,7 +11272,7 @@ git clone --depth=1 https://github.com/iDvel/rime-ice
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_rime.bat">init_rime.bat</a></li>
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_rime.sh">init_rime.sh</a></li>
 </ul>
-<h2 id="resource-35"><a class="header" href="#resource-35">resource</a></h2>
+<h2 id="resource-36"><a class="header" href="#resource-36">resource</a></h2>
 <ul>
 <li><a href="https://github.com/iDvel/rime-ice">雾凇拼音</a></li>
 <li><a href="https://github.com/sdadonkey/rime-english">Rime English输入方案</a></li>
@@ -11355,7 +11370,7 @@ scoop install subtitleedit
 <h2 id="annex-12"><a class="header" href="#annex-12">annex</a></h2>
 <p><a href="https://scillidan.github.io/media_cheat/opt/subtitle-edit_subtitle-translate.mp4">subtitle-edit_subtitle-translate.mp4</a>, (<a href="https://www.bilibili.com/video/">bilibili</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tabby-1"><a class="header" href="#tabby-1"><a href="https://github.com/Eugeny/tabby">Tabby</a></a></h1>
-<h2 id="resource-36"><a class="header" href="#resource-36">resource</a></h2>
+<h2 id="resource-37"><a class="header" href="#resource-37">resource</a></h2>
 <ul>
 <li><a href="https://github.com/eugeny/tabby-save-output">Save Output</a></li>
 <li><a href="https://github.com/flkns/tabby-quick-restart">Tabby Quick Restart Plugin</a></li>
@@ -11695,7 +11710,7 @@ scoop install zeal
 </code></pre>
 <p><img src="opt//_image/opt/zeal.png" alt="zeal" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="opt_browser"><a class="header" href="#opt_browser">opt_Browser</a></h1>
-<h2 id="resource-37"><a class="header" href="#resource-37">resource</a></h2>
+<h2 id="resource-38"><a class="header" href="#resource-38">resource</a></h2>
 <h3 id="mark-23"><a class="header" href="#mark-23">mark</a></h3>
 <ul>
 <li>#chrome #firefox <a href="https://webextension.org/listing/screen-brightness.html">Adjust Page Brightness</a></li>
@@ -12093,7 +12108,7 @@ This repository contains dictionaries for Yomitan, a Japanese dictionary browser
 <li><a href="https://github.com/MarvNC/yomitan-dictionaries/blob/master/how-to-make-yomichan-dictionaries.md">How Do I Make A Yomichan Dictionary?</a></li>
 <li><a href="https://github.com/yomidevs/yomitan/blob/master/docs/development/language-features.md">Contributing to a Language</a></li>
 </ul>
-<h2 id="resource-38"><a class="header" href="#resource-38">resource</a></h2>
+<h2 id="resource-39"><a class="header" href="#resource-39">resource</a></h2>
 <ul>
 <li>#dictionary <a href="https://github.com/stephenmk/Jitendex">Jitendex</a></li>
 <li>#dictionary <a href="https://github.com/kamui-fin/yomi-freq">Yomichan Frequency List Generator</a></li>
@@ -12105,7 +12120,7 @@ This repository contains dictionaries for Yomitan, a Japanese dictionary browser
 <li><a href="https://github.com/themoeway/yomichan-dict-css">yomichan-dict-css</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="opt_andriod"><a class="header" href="#opt_andriod">opt_andriod</a></h1>
-<h2 id="resource-39"><a class="header" href="#resource-39">resource</a></h2>
+<h2 id="resource-40"><a class="header" href="#resource-40">resource</a></h2>
 <h3 id="mark-24"><a class="header" href="#mark-24">mark</a></h3>
 <ul>
 <li>
@@ -12520,7 +12535,7 @@ proot-distro login archlinux
 <p><a href="https://github.com/atuinsh/atuin/issues/51#issuecomment-1641211422">Disabling the up-arrow key rebinding?</a> <a href="#fr-5-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="opt_arch"><a class="header" href="#opt_arch">opt_arch</a></h1>
-<h2 id="resource-40"><a class="header" href="#resource-40">resource</a></h2>
+<h2 id="resource-41"><a class="header" href="#resource-41">resource</a></h2>
 <h3 id="mark-25"><a class="header" href="#mark-25">mark</a></h3>
 <ul>
 <li>#audio <a href="https://github.com/flacon/flacon">Flacon</a></li>
@@ -12762,7 +12777,7 @@ sudo systemctl enable --now preload
 <ul>
 <li><a href="https://wiki.archlinux.org/title/Sway">Sway - ArchWiki</a></li>
 </ul>
-<h2 id="resource-41"><a class="header" href="#resource-41">resource</a></h2>
+<h2 id="resource-42"><a class="header" href="#resource-42">resource</a></h2>
 <h3 id="cache-37"><a class="header" href="#cache-37">cache</a></h3>
 <ul>
 <li><a href="https://github.com/dawsers/scroll">scroll</a></li>
@@ -12878,7 +12893,7 @@ sudo systemctl enable --now cronie.service
 <h2 id="install-346"><a class="header" href="#install-346">install</a></h2>
 <pre><code class="language-sh">sudo pacman -S rofi
 </code></pre>
-<h2 id="resource-42"><a class="header" href="#resource-42">resource</a></h2>
+<h2 id="resource-43"><a class="header" href="#resource-43">resource</a></h2>
 <h3 id="mark-26"><a class="header" href="#mark-26">mark</a></h3>
 <ul>
 <li><a href="https://github.com/svenstaro/rofi-calc">rofi-calc</a></li>
@@ -13209,7 +13224,7 @@ tar -xvf Chroma-White-S.tar.xz
 	~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 	...
 </code></pre>
-<h2 id="resource-43"><a class="header" href="#resource-43">resource</a></h2>
+<h2 id="resource-44"><a class="header" href="#resource-44">resource</a></h2>
 <h3 id="cache-39"><a class="header" href="#cache-39">cache</a></h3>
 <ul>
 <li><a href="https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin/start">Clipman - xfce4-clipman-plugin</a></li>
@@ -13236,7 +13251,7 @@ chmod +x ./xfce-setup-shortcuts.sh
 <pre><code class="language-sh">./xfce-setup-shortcuts.sh
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="opt_windows"><a class="header" href="#opt_windows">opt_windows</a></h1>
-<h2 id="resource-44"><a class="header" href="#resource-44">resource</a></h2>
+<h2 id="resource-45"><a class="header" href="#resource-45">resource</a></h2>
 <h3 id="mark-27"><a class="header" href="#mark-27">mark</a></h3>
 <ul>
 <li>#archive <a href="https://github.com/vvyoko/SmartZip">SmartZip</a></li>
@@ -13549,7 +13564,7 @@ scoop install bulk-rename-command
 <li><a href="https://resource.dopus.com/t/how-do-i-edit-the-folder-background-context-menu/35712/2">How do I edit the folder background context menu?</a></li>
 <li><a href="https://resource.dopus.com/t/how-to-create-a-icon-set/3415/20">How to create a Icon set?</a></li>
 </ul>
-<h2 id="resource-45"><a class="header" href="#resource-45">resource</a></h2>
+<h2 id="resource-46"><a class="header" href="#resource-46">resource</a></h2>
 <h3 id="mark-28"><a class="header" href="#mark-28">mark</a></h3>
 <ul>
 <li>#backup <a href="https://resource.dopus.com/t/automatic-backup-of-opus-config/16485">Automatic backup of Opus config?</a></li>
@@ -14019,7 +14034,7 @@ terminal = "C:\Users\User\.local\bin\alacritty_command.lnk"
 <li><a href="https://github.com/Keypirinha/Packages/pull/41">Add provider for chromium based edge bookmarks</a></li>
 <li><a href="https://community.brave.com/t/copy-past-bookmark-folder-to-new-location/437841">Copy &amp; Past bookmark folder to new location</a></li>
 </ul>
-<h2 id="resource-46"><a class="header" href="#resource-46">resource</a></h2>
+<h2 id="resource-47"><a class="header" href="#resource-47">resource</a></h2>
 <h3 id="mark-29"><a class="header" href="#mark-29">mark</a></h3>
 <ul>
 <li><a href="https://github.com/Fuhrmann/keypirinha-theme-builder">keypirinha-theme-builder</a></li>
@@ -14470,7 +14485,7 @@ mklink "%CMDER_HOME%\config\cdz.lua" %CMDER_SRC%\owl-cmder-tools\config\cdz.lua"
 <li><a href="https://stackoverflow.com/questions/40909459/set-path-with-multiple-lines">set PATH with multiple lines</a></li>
 <li><a href="https://help.gnome.org/users/gnome-terminal/stable/app-terminal-sizes.html.en">Terminal sizes</a></li>
 </ul>
-<h2 id="resource-47"><a class="header" href="#resource-47">resource</a></h2>
+<h2 id="resource-48"><a class="header" href="#resource-48">resource</a></h2>
 <h3 id="mark-30"><a class="header" href="#mark-30">mark</a></h3>
 <ul>
 <li>#clink <a href="https://github.com/mwmi/clink-carapace">clink carapace</a></li>
@@ -14544,7 +14559,7 @@ scoop install mpv
 <li><a href="opt/mpv//bin/subliminal.html">subliminal.md</a></li>
 <li><a href="opt/mpv//opt/mpv/webtorrent-mpv-hook.html">webtorrent-mpv-hook.md</a></li>
 </ul>
-<h2 id="resource-48"><a class="header" href="#resource-48">resource</a></h2>
+<h2 id="resource-49"><a class="header" href="#resource-49">resource</a></h2>
 <h3 id="mark-31"><a class="header" href="#mark-31">mark</a></h3>
 <ul>
 <li>#chapter <a href="https://github.com/dyphire/mpv-scripts">chapter-make-read.lua</a></li>
@@ -14897,7 +14912,7 @@ scoop install obsidian
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_obsidian_attach.bat">init_obsidian_attach.bat</a></li>
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_obsidian_attach.sh">init_obsidian_attach.sh</a></li>
 </ul>
-<h2 id="resource-49"><a class="header" href="#resource-49">resource</a></h2>
+<h2 id="resource-50"><a class="header" href="#resource-50">resource</a></h2>
 <h3 id="mark-32"><a class="header" href="#mark-32">mark</a></h3>
 <ul>
 <li><a href="https://github.com/czottmann/obsidian-actions-uri">Actions URI</a></li>
@@ -15249,7 +15264,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 <li><a href="opt/sublime-text//bin/texlab.html">texlab.md</a></li>
 <li><a href="opt/sublime-text//bin/terser.html">terser.md</a></li>
 </ul>
-<h2 id="resource-50"><a class="header" href="#resource-50">resource</a></h2>
+<h2 id="resource-51"><a class="header" href="#resource-51">resource</a></h2>
 <h3 id="mark-33"><a class="header" href="#mark-33">mark</a></h3>
 <ul>
 <li>#edit <a href="https://github.com/randy3k/AlignTab">AlignTab</a></li>
@@ -15519,7 +15534,7 @@ scoop install vscodium
 <li><a href="opt/vscodium//bin/mcp_godot_rag.html">mcp_godot_rag.md</a></li>
 <li><a href="opt/vscodium//bin/n8n-mcp-server.html">n8n-mcp-server.md</a></li>
 </ul>
-<h2 id="resource-51"><a class="header" href="#resource-51">resource</a></h2>
+<h2 id="resource-52"><a class="header" href="#resource-52">resource</a></h2>
 <h3 id="mark-34"><a class="header" href="#mark-34">mark</a></h3>
 <ul>
 <li>#complete <a href="https://github.com/atishay/vscode-allautocomplete">All Autocomplete</a></li>
@@ -15736,7 +15751,7 @@ scoop install vscodium
 <p><a href="https://ltex-plus.github.io/ltex-plus/vscode-ltex-plus/installation-usage-vscode-ltex-plus.html#first-alternative-download-the-offline-version-of-ltex">First Alternative: Download the Offline Version of LTEX+</a> <a href="#fr-1-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="optgame"><a class="header" href="#optgame">optGame</a></h1>
-<h2 id="resource-52"><a class="header" href="#resource-52">resource</a></h2>
+<h2 id="resource-53"><a class="header" href="#resource-53">resource</a></h2>
 <h3 id="mark-35"><a class="header" href="#mark-35">mark</a></h3>
 <ul>
 <li><a href="https://github.com/hydralauncher/hydra">hydra</a> <em>release</em></li>
@@ -16103,7 +16118,7 @@ launch: "/home/&lt;user&gt;/RetroArch/retroarch" -L "/home/&lt;user&gt;/RetroArc
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.bat">init_pegasus.bat</a></li>
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.sh">init_pegasus.sh</a></li>
 </ul>
-<h2 id="resource-53"><a class="header" href="#resource-53">resource</a></h2>
+<h2 id="resource-54"><a class="header" href="#resource-54">resource</a></h2>
 <h3 id="mark-36"><a class="header" href="#mark-36">mark</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/y-muller/retromega-sleipnir">Sleipnir</a></li>
@@ -16220,7 +16235,7 @@ yay -S --noconfirm emulationstation-de
 </ul>
 </li>
 </ul>
-<h2 id="resource-54"><a class="header" href="#resource-54">resource</a></h2>
+<h2 id="resource-55"><a class="header" href="#resource-55">resource</a></h2>
 <h3 id="cache-50"><a class="header" href="#cache-50">cache</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/Siddy212/iconic-es-de">Iconic (ES-DE Version)</a></li>
@@ -16244,7 +16259,7 @@ git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="optweb"><a class="header" href="#optweb">optWeb</a></h1>
-<h2 id="resource-55"><a class="header" href="#resource-55">resource</a></h2>
+<h2 id="resource-56"><a class="header" href="#resource-56">resource</a></h2>
 <h3 id="mark-37"><a class="header" href="#mark-37">mark</a></h3>
 <ul>
 <li><a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI</a></li>
@@ -16708,7 +16723,7 @@ set HSA_OVERRIDE_GFX_VERSION=10.3.0
 <ul>
 <li><a href="https://developer.nvidia.com/cuda-12-8-0-download-archive">CUDA Toolkit 12.8</a></li>
 </ul>
-<h2 id="resource-56"><a class="header" href="#resource-56">resource</a></h2>
+<h2 id="resource-57"><a class="header" href="#resource-57">resource</a></h2>
 <h3 id="mark-38"><a class="header" href="#mark-38">mark</a></h3>
 <ul>
 <li><a href="https://github.com/ltdrdata/ComfyUI-Manager">ComfyUI Manager</a></li>
@@ -16813,7 +16828,7 @@ API base: https://api.openai.com
 </li>
 <li>Studio → llama 3.1 → Context → Add → <code>&lt;knowledge&gt;</code></li>
 </ol>
-<h2 id="resource-57"><a class="header" href="#resource-57">resource</a></h2>
+<h2 id="resource-58"><a class="header" href="#resource-58">resource</a></h2>
 <h3 id="cache-53"><a class="header" href="#cache-53">cache</a></h3>
 <ul>
 <li><a href="https://dify101.com/market/claude-thinking-Content-Editing">Content Editing</a></li>
@@ -17727,7 +17742,7 @@ sudo docker compose up -d
 <ul>
 <li><a href="https://lobehub.com/docs/self-hosting/platform/vercel">Deploy LobeChat with Vercel</a></li>
 </ul>
-<h2 id="resource-58"><a class="header" href="#resource-58">resource</a></h2>
+<h2 id="resource-59"><a class="header" href="#resource-59">resource</a></h2>
 <h3 id="mark-39"><a class="header" href="#mark-39">mark</a></h3>
 <ul>
 <li>#develop #General <a href="https://lobechat.com/discover/assistant/prompt-gpt">PromptGPT</a></li>
@@ -18209,7 +18224,7 @@ sudo docker compose up -d
 <li><a href="https://docs.openwebui.com/tutorials/tips/rag-tutorial/">Tutorial: Configuring RAG with Open WebUI Documentation</a></li>
 <li><a href="https://docs.openwebui.com/tutorials/integrations/browser-search-engine/#step-2-add-open-webui-as-a-custom-search-engine">Add Open WebUI as a Custom Search Engine</a></li>
 </ul>
-<h2 id="resource-59"><a class="header" href="#resource-59">resource</a></h2>
+<h2 id="resource-60"><a class="header" href="#resource-60">resource</a></h2>
 <h3 id="mark-40"><a class="header" href="#mark-40">mark</a></h3>
 <ul>
 <li>#function <a href="https://openwebui.com/f/pad4651/add_to_memories_action_button">Add to Memories Action Button</a></li>
@@ -18788,7 +18803,7 @@ webui-user.bat
 <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6589">How to make web-ui available on local network</a></li>
 <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1561">Choosing which GPU to use when running</a></li>
 </ul>
-<h2 id="resource-60"><a class="header" href="#resource-60">resource</a></h2>
+<h2 id="resource-61"><a class="header" href="#resource-61">resource</a></h2>
 <h3 id="mark-41"><a class="header" href="#mark-41">mark</a></h3>
 <ul>
 <li>#action <a href="https://github.com/Mikubill/sd-webui-controlnet">ControlNet for Stable Diffusion WebUI</a> <em>sd-webui-controlnet</em></li>
@@ -19293,7 +19308,7 @@ pnpm build
 <li>Deployment <code>gh-pages</code> → Domains → <code>yomi-reader-git-gh-pages**.vercel.app</code>.</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="os"><a class="header" href="#os">os</a></h1>
-<h2 id="resource-61"><a class="header" href="#resource-61">resource</a></h2>
+<h2 id="resource-62"><a class="header" href="#resource-62">resource</a></h2>
 <h3 id="cache-57"><a class="header" href="#cache-57">cache</a></h3>
 <ul>
 <li>camera|<a href="https://github.com/blakeblackshear/frigate">Frigate</a></li>
@@ -20371,7 +20386,7 @@ makepkg -si
 <p><a href="https://mirrors.ustc.edu.cn/help/archlinuxarm.html">Arch Linux ARM</a> <a href="#fr-2-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="users-and-groups"><a class="header" href="#users-and-groups"><a href="https://wiki.archlinux.org/title/Users_and_groups">Users and groups</a></a></h1>
-<h2 id="command-18"><a class="header" href="#command-18">command</a></h2>
+<h2 id="command-19"><a class="header" href="#command-19">command</a></h2>
 <pre><code class="language-sh"># Add user
 sudo useradd -m &lt;user&gt;
 sudo passwd &lt;user&gt;
@@ -20491,7 +20506,7 @@ C:\Program Files\Sublime Text;
 # C:\Users\User\Scoop\apps\yarn\current\global\node_modules\.bin;
 # C:\Users\User\Scoop\apps\sioyek\current;
 </code></pre>
-<h2 id="command-19"><a class="header" href="#command-19">command</a></h2>
+<h2 id="command-20"><a class="header" href="#command-20">command</a></h2>
 <pre><code class="language-sh"># Get Windows environments
 SET
 </code></pre>
@@ -20900,7 +20915,7 @@ guiApplications=false
 <li><a href="srv//srv/snapdrop.html">snapdrop.md</a></li>
 <li><a href="srv//srv/ttydbridge.html">ttydbridge.md</a></li>
 </ul>
-<h2 id="resource-62"><a class="header" href="#resource-62">resource</a></h2>
+<h2 id="resource-63"><a class="header" href="#resource-63">resource</a></h2>
 <h3 id="mark-42"><a class="header" href="#mark-42">mark</a></h3>
 <ul>
 <li>#activitywatch <a href="https://github.com/ActivityWatch/activitywatch">ActivityWatch</a></li>
@@ -21422,7 +21437,7 @@ jobs:
 <ul>
 <li><a href="https://docs.datasette.io/en/stable/full_text_search.html#configuring-fts-using-sqlite-utils">Configuring FTS using sqlite-utils</a></li>
 </ul>
-<h2 id="resource-63"><a class="header" href="#resource-63">resource</a></h2>
+<h2 id="resource-64"><a class="header" href="#resource-64">resource</a></h2>
 <h3 id="mark-43"><a class="header" href="#mark-43">mark</a></h3>
 <ul>
 <li><a href="https://github.com/simonw/datasette-backup">datasette-backup</a></li>
@@ -21765,7 +21780,7 @@ sudo docker run -p 8080:80 --rm nginx
 <pre><code class="language-sh"># Do a text for NVIDIA Container Toolkit
 sudo docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 </code></pre>
-<h2 id="command-20"><a class="header" href="#command-20">command</a></h2>
+<h2 id="command-21"><a class="header" href="#command-21">command</a></h2>
 <pre><code class="language-sh"># Update
 sudo docker compose down
 sudo docker compose pull
@@ -22426,7 +22441,7 @@ Set WshShell = Nothing
 <li>Create shortcut of <code>start_linkding.vbs</code>.</li>
 <li>Put the shortcut into <code>C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\</code>.</li>
 </ol>
-<h2 id="command-21"><a class="header" href="#command-21">command</a></h2>
+<h2 id="command-22"><a class="header" href="#command-22">command</a></h2>
 <pre><code class="language-sh">linkding --url "http://&lt;your_host&gt;:8002" --token "&lt;token&gt;" bookmarks all -q $1 ^
   | jq ".results[]" ^
   | ramda -c -o csv ^
@@ -22643,7 +22658,7 @@ vim docker-compose.yml
 sudo docker volume create traefik_data
 sudo docker compose up -d
 </code></pre>
-<h2 id="resource-64"><a class="header" href="#resource-64">resource</a></h2>
+<h2 id="resource-65"><a class="header" href="#resource-65">resource</a></h2>
 <h3 id="cache-61"><a class="header" href="#cache-61">cache</a></h3>
 <ul>
 <li><a href="https://n8n.io/workflows/697-archive-spotifys-discover-weekly-playlist/">Archive Spotify's discover weekly playlist</a></li>
@@ -23653,7 +23668,7 @@ sudo zerotier-cli listnetworks
 <p><a href="https://discuss.zerotier.com/t/debian-11-with-ufw-firewall-is-blocking-zerotier/13072">Debian 11 with ufw firewall is blocking zerotier - General Discussion - ZeroTier Discussions</a> <a href="#fr-1-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="web"><a class="header" href="#web">Web</a></h1>
-<h2 id="resource-65"><a class="header" href="#resource-65">resource</a></h2>
+<h2 id="resource-66"><a class="header" href="#resource-66">resource</a></h2>
 <h3 id="mark-44"><a class="header" href="#mark-44">mark</a></h3>
 <ul>
 <li>#book <a href="https://vivliostyle.org">Vivliostyle</a></li>
@@ -23706,7 +23721,7 @@ sudo zerotier-cli listnetworks
 <li><a href="https://github.com/theseus-os/Theseus">Theseus OS</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="css"><a class="header" href="#css">css</a></h1>
-<h2 id="resource-66"><a class="header" href="#resource-66">resource</a></h2>
+<h2 id="resource-67"><a class="header" href="#resource-67">resource</a></h2>
 <h3 id="cache-63"><a class="header" href="#cache-63">cache</a></h3>
 <ul>
 <li>#github <a href="https://github.com/sindresorhus/github-markdown-css">github-markdown-css</a></li>
@@ -23718,7 +23733,7 @@ sudo zerotier-cli listnetworks
 <li>#latex <a href="https://latex.vercel.app/">LaTeX.css</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="js"><a class="header" href="#js">js</a></h1>
-<h2 id="resource-67"><a class="header" href="#resource-67">resource</a></h2>
+<h2 id="resource-68"><a class="header" href="#resource-68">resource</a></h2>
 <h3 id="mark-45"><a class="header" href="#mark-45">mark</a></h3>
 <ul>
 <li>#visualize <a href="https://tympanus.net/codrops/2025/06/18/coding-a-3d-audio-visualizer-with-three-js-gsap-web-audio-api/">Coding a 3D Audio Visualizer with Three.js, GSAP &amp; Web Audio API</a></li>
@@ -23878,7 +23893,7 @@ make html
 </li>
 <li>#sheet <a href="https://github.com/radeklat/sphinx-rest-cheatsheet">radeklat/sphinx-rest-cheatsheet</a></li>
 </ul>
-<h2 id="resource-68"><a class="header" href="#resource-68">resource</a></h2>
+<h2 id="resource-69"><a class="header" href="#resource-69">resource</a></h2>
 <h3 id="mark-46"><a class="header" href="#mark-46">mark</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/pradyunsg/furo">Furo</a></li>
@@ -24056,7 +24071,7 @@ scoop install hugo-extended
 </ul>
 </li>
 </ul>
-<h2 id="resource-69"><a class="header" href="#resource-69">resource</a></h2>
+<h2 id="resource-70"><a class="header" href="#resource-70">resource</a></h2>
 <h3 id="mark-47"><a class="header" href="#mark-47">mark</a></h3>
 <ul>
 <li>#shortcode <a href="https://github.com/mfg92/hugo-shortcode-gallery">hugo-shortcode-gallery</a></li>
@@ -24128,7 +24143,7 @@ mdbook build
 <li><a href="Web/mdbook//Web/mdbook/mdbook-force-relative-links.html">mdbook-force-relative-links.md</a></li>
 <li><a href="Web/mdbook//Web/mdbook/mdbook-tailor.html">mdbook-tailor.md</a></li>
 </ul>
-<h2 id="resource-70"><a class="header" href="#resource-70">resource</a></h2>
+<h2 id="resource-71"><a class="header" href="#resource-71">resource</a></h2>
 <h3 id="extra-17"><a class="header" href="#extra-17">extra</a></h3>
 <ul>
 <li><a href="https://github.com/bradjc/mdbook-chapter-list">Chapter Listing plugin for mdbook</a></li>
@@ -24257,7 +24272,7 @@ after = ["links"]
 [preprocessor.tailor]
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mkdocs"><a class="header" href="#mkdocs"><a href="https://mkdocs.org">MkDocs</a></a></h1>
-<h2 id="resource-71"><a class="header" href="#resource-71">resource</a></h2>
+<h2 id="resource-72"><a class="header" href="#resource-72">resource</a></h2>
 <h3 id="mark-48"><a class="header" href="#mark-48">mark</a></h3>
 <ul>
 <li>#audio <a href="https://github.com/jfcmontmorency/mkdocs-audio">MkDocs Audio</a></li>
