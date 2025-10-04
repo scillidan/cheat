@@ -66,7 +66,6 @@
 - #subtitle [字幕机翻](https://github.com/1c7/Translate-Subtitle-File)
 - #sync [MEGAsync](https://mega.io/desktop) _download_
 - #sync [Syncthing](https://syncthing.net) _download_
-- #terminal [Wez's Terminal](https://github.com/wez/wezterm) _release_
 - #text-expander [Espanso](https://github.com/espanso/espanso)
 - #torrent-download [qBittorrent-Enhanced-Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition)
 - #video #metadata [MediaInfo](https://mediaarea.net/en/MediaInfo) _download_
