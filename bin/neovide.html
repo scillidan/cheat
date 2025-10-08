@@ -195,6 +195,15 @@ sudo pacman -S neovide
 # Windows 10
 scoop install neovide
 </code></pre>
+<h2 id="setting"><a class="header" href="#setting">setting</a></h2>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
+<pre><code class="language-sh"># Arch
+mkdir ~/.config/neovide
+vim ~/.config/neovide/config.toml
+# Windows 10
+mkdir %APPDATA%\neovide
+subl %APPDATA%\neovide\config.toml
+</code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <pre><code class="language-sh"># Launch Neovide with specific settings
 neovide --size=1250x720 --frame none --no-tabs --wsl archwsl
@@ -208,7 +217,11 @@ neovide --server &lt;your_host&gt;:1234
 <li><a href="https://neovide.dev/configuration.html">Neovide - Configuration</a></li>
 <li><a href="https://github.com/neovide/neovide/discussions/2853">Run Neovide on remote SSH system</a></li>
 </ul>
-
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://neovide.dev/config-file.html">Config File - Neovide</a> <a href="#fr-1-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

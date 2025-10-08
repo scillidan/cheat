@@ -297,6 +297,7 @@
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="ctan"><a class="header" href="#ctan">ctan</a></h1>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: left">pdf</th><th style="text-align: left">topic</th><th style="text-align: left">link_ctan</th><th style="text-align: left">link_source</th><th style="text-align: left">link_readme</th><th style="text-align: left">maintainer</th></tr></thead><tbody>
+<tr><td style="text-align: left"><a href="https://mirrors.ctan.org/graphics/pgf/contrib/kksymbols/kksymbols-doc.pdf"><img src="https://scillidan.github.io/image_latex/kksymbols.webp" width="30"></a></td><td style="text-align: left">luatex, graphics symbols, experimental, latex3, text symbol, pgf tikz</td><td style="text-align: left"><a href="https://ctan.org/pkg/kksymbols">KKsymbols – LaTeX commands for enclosing characters in circles, squares, diamonds, or brackets</a></td><td style="text-align: left"><a href="https://mirrors.ctan.org/graphics/pgf/contrib/kksymbols/README">Readme</a></td><td style="text-align: left">KKTeX</td><td style="text-align: left"></td></tr>
 <tr><td style="text-align: left"><a href="https://mirrors.ctan.org/macros/latex/contrib/mathador/doc/mathador-doc.pdf"><img src="https://scillidan.github.io/image_latex/mathador.webp" width="30"></a></td><td style="text-align: left">graphics, games, pgf tikz</td><td style="text-align: left"><a href="https://ctan.org/pkg/mathador">mathador – LaTeX commands for the French game “Mathador”</a></td><td style="text-align: left"><a href="https://github.com/cpierquet/latex-packages">mathador</a></td><td style="text-align: left"><a href="https://mirrors.ctan.org/macros/latex/contrib/mathador/README.md">Readme</a></td><td style="text-align: left">Cédric Pierquet</td></tr>
 <tr><td style="text-align: left"><a href="https://mirrors.ctan.org/graphics/pgf/contrib/fretplot/doc_fretplot.pdf"><img src="https://scillidan.github.io/image_latex/fretplot.webp" width="30"></a></td><td style="text-align: left">diagrams, graphics, music, luatex, pgf tikz</td><td style="text-align: left"><a href="https://ctan.org/pkg/fretplot">fretplot – Create scale and chord diagrams for guitar-like instruments</a></td><td style="text-align: left"><a href="https://github.com/8vasu/fretplot">fretplot</a></td><td style="text-align: left"><a href="https://mirrors.ctan.org/graphics/pgf/contrib/fretplot/README.md">Readme</a></td><td style="text-align: left">Soumendra Ganguly</td></tr>
 <tr><td style="text-align: left"><a href="http://mirrors.ctan.org/macros/latex/contrib/cleveref/cleveref.pdf"><img src="https://scillidan.github.io/image_latex/cleveref.webp" width="30"></a></td><td style="text-align: left">label and references</td><td style="text-align: left"><a href="https://www.ctan.org/pkg/cleveref">cleveref – Intelligent cross-referencing</a></td><td style="text-align: left"><a href="https://www.ctan.org/tex-archive/macros/latex/contrib/cleveref">cleveref</a></td><td style="text-align: left"><a href="https://mirrors.ctan.org/macros/latex/contrib/cleveref/README">Readme</a></td><td style="text-align: left">Toby Cubitt</td></tr>
@@ -2266,7 +2267,7 @@ uv tool install ass2srt
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ast-grep"><a class="header" href="#ast-grep"><a href="https://github.com/ast-grep/ast-grep">ast-grep</a></a></h1>
 <h2 id="install-8"><a class="header" href="#install-8">install</a></h2>
 <pre><code class="language-sh"># Arch
-sudo pacman -S ast-grep
+[[[sudo](sudo.md](sudosudomd.md](sudosudomdsudosudomdmd.md))) pacman -S ast-grep
 # Windows 10
 scoop install ast-grep
 </code></pre>
@@ -3161,7 +3162,7 @@ npm run build
 <h2 id="install-56"><a class="header" href="#install-56">install</a></h2>
 <pre><code class="language-sh">go install -v github.com/razonyang/gopencc@latest
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="grep"><a class="header" href="#grep"><a href="https://www.gnu.org/software/grep/">grep</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="grep"><a class="header" href="#grep"><a href="https://www.gnu.org/softwiare/grep/">grep</a></a></h1>
 <h2 id="reference-9"><a class="header" href="#reference-9">reference</a></h2>
 <ul>
 <li>#lession <a href="https://techgoeasy.com/unix-tutorial-grep-command/">30 Practical Grep command in unix with examples which you should check</a></li>
@@ -3672,6 +3673,15 @@ sudo pacman -S neovide
 # Windows 10
 scoop install neovide
 </code></pre>
+<h2 id="setting"><a class="header" href="#setting">setting</a></h2>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
+<pre><code class="language-sh"># Arch
+mkdir ~/.config/neovide
+vim ~/.config/neovide/config.toml
+# Windows 10
+mkdir %APPDATA%\neovide
+subl %APPDATA%\neovide\config.toml
+</code></pre>
 <h2 id="usage-48"><a class="header" href="#usage-48">usage</a></h2>
 <pre><code class="language-sh"># Launch Neovide with specific settings
 neovide --size=1250x720 --frame none --no-tabs --wsl archwsl
@@ -3685,7 +3695,11 @@ neovide --server &lt;your_host&gt;:1234
 <li><a href="https://neovide.dev/configuration.html">Neovide - Configuration</a></li>
 <li><a href="https://github.com/neovide/neovide/discussions/2853">Run Neovide on remote SSH system</a></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="npms-cli"><a class="header" href="#npms-cli"><a href="https://github.com/npms-io/npms-cli">npms-cli</a></a></h1>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://neovide.dev/config-file.html">Config File - Neovide</a> <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="npms-cli"><a class="header" href="#npms-cli"><a href="https://github.com/npms-io/npms-cli">npms-cli</a></a></h1>
 <h2 id="install-89"><a class="header" href="#install-89">install</a></h2>
 <pre><code class="language-sh"># Node.js
 pnpm add -g npms-cli
@@ -4771,21 +4785,21 @@ sudo pacman -S yazi
 scoop install yazi
 </code></pre>
 <h2 id="personal-do-3"><a class="header" href="#personal-do-3">Personal do</a></h2>
-<pre><code class="language-sh">ya pkg add gosxrgxx/flexoki-dark.yazi
-ya pkg add gosxrgxx/flexoki-light.yazi
-ya pkg add AnirudhG07/custom-shell.yazi
-ya pkg add kirasok/epub-preview.yazi
-ya pkg add lihuax-me/hevi.yazi
-ya pkg add Lil-Dank/lazygit.yazi
-ya pkg add boydaihungst/mediainfo.yazi
-ya pkg add NoponyAsked/sxiv.yazi
-ya pkg add WhoSowSee/whoosh.yazi
+<pre><code class="language-sh">ya pkg add gosxrgxx/flexoki-dark
+ya pkg add gosxrgxx/flexoki-light
+ya pkg add AnirudhG07/custom-shell
+ya pkg add lihuax-me/hevi
+ya pkg add Lil-Dank/lazygit
+ya pkg add boydaihungst/mediainfo
+ya pkg add WhoSowSee/whoosh
 ya pkg add yazi-rs/plugins:piper
-# Arch
-ya pkg add lpnh/fr.yazi
-ya pkg add uhs-robert/recycle-bin.yazi
+# Only Arch
+ya pkg add kirasok/epub-preview
+ya pkg add NoponyAsked/sxiv
+ya pkg add lpnh/fr
+ya pkg add uhs-robert/recycle-bin
 </code></pre>
-<h2 id="setting"><a class="header" href="#setting">setting</a></h2>
+<h2 id="setting-1"><a class="header" href="#setting-1">setting</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
 <pre><code class="language-sh"># Unix-like
 mkdir ~/.config/yazi/
@@ -5859,6 +5873,7 @@ git pull origin main
 <li>#theme <a href="https://github.com/meshkinyar/berghain.zsh-theme">berghain.zsh-theme</a></li>
 <li>#theme <a href="https://github.com/skippyr/club-house">club-house</a></li>
 <li>#uv <a href="https://github.com/matthiasha/zsh-uv-env">zsh-uv-env</a></li>
+<li><a href="https://github.com/ivomac/zsh-fzf-nav">FZF Nav Plugin</a></li>
 <li><a href="https://github.com/alalik/pycalc">Pycalc Oh My Zsh Plugin</a></li>
 <li><a href="https://github.com/arzzen/calc.plugin.zsh">Simple zsh calculator</a></li>
 <li><a href="https://github.com/tolkonepiu/vscode-shell-integration-zsh-plugin">VS Code Shell Integration Zsh Plugin</a></li>
@@ -6690,140 +6705,141 @@ neovide --server &lt;your_host&gt;:1234
 <h2 id="resource-18"><a class="header" href="#resource-18">resource</a></h2>
 <h3 id="mark-14"><a class="header" href="#mark-14">mark</a></h3>
 <ul>
-<li>#help <a href="https://github.com/Djancyp/cheat-sheet">Nvim Cheat Sheet</a></li>
-<li>#project <a href="https://github.com/y3owk1n/warp.nvim">warp.nvim</a></li>
-<li>#project <a href="https://github.com/coffebar/neovim-project">Neovim project manager plugin</a></li>
-<li>#qol <a href="https://github.com/jghauser/mkdir.nvim">mkdir.nvim</a></li>
-<li>#other #translate <a href="https://github.com/echuraev/translate-shell.vim">translate-shell.vim</a></li>
-<li>#other #translate <a href="https://github.com/uga-rosa/translate.nvim">translate.nvim</a></li>
-<li>#other #dictionary <a href="https://github.com/carlinigraphy/dictd.nvim">dictd.nvim</a></li>
-<li>#qol <a href="https://github.com/folke/snacks.nvim">snacks.nvim</a></li>
-<li>#qol #session <a href="https://github.com/rmagatti/auto-session">auto-session</a></li>
-<li>#snips <a href="https://github.com/L3MON4D3/LuaSnip">LuaSnip</a></li>
-<li>#qol #config <a href="https://github.com/folke/neoconf.nvim">neoconf.nvim</a></li>
-<li>#snips <a href="https://github.com/rafamadriz/friendly-snippets">Friendly Snippets</a></li>
-<li>#setup <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a></li>
-<li>#setup <a href="https://github.com/folke/lazydev.nvim">lazydev.nvim</a></li>
-<li>#telescope <a href="https://github.com/polirritmico/telescope-lazy-plugins.nvim">Telescope Lazy Plugins</a></li>
-<li>#other #dictionary <a href="https://github.com/Nealium/dict-popup.nvim">dict-popup.nvim</a></li>
-<li>#other <a href="https://github.com/neo451/feed.nvim">feed.nvim</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.diff">mini.diff</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini-git">mini.git</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.cursorword">mini.cursorword</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.align">mini.align</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.comment">mini.comment</a></li>
-<li>#other <a href="https://github.com/whleucka/reverb.nvim">reverb.nvim</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.icons">mini.icons</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.splitjoin">mini.splitjoin</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.trailspace">mini.trailspace</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.move">mini.move</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.surround">mini.surround</a></li>
-<li>#mini <a href="https://github.com/echasnovski/mini.statusline">mini.statusline</a></li>
-<li>#markdown <a href="https://github.com/richardbizik/nvim-toc">nvim-toc</a></li>
-<li>#telescope <a href="https://github.com/jvgrootveld/telescope-zoxide">Telescope Zoxide</a></li>
-<li>#telescope <a href="https://github.com/fdschmidt93/telescope-egrepify.nvim">telescope-egrepify.nvim</a></li>
-<li>#telescope #search <a href="https://github.com/Verf/telescope-everything.nvim">telescope-everything.nvim</a></li>
-<li>#tmux <a href="https://github.com/connordeckers/tmux-navigator.nvim">tmux-navigator.nvim</a></li>
-<li>#telescope #search <a href="https://github.com/princejoogie/dir-telescope.nvim">dir-telescope.nvim</a></li>
-<li>#telescope #navigate <a href="https://github.com/LukasPietzschmann/telescope-tabs">telescope-tabs</a></li>
-<li>#telescope #search <a href="https://github.com/MaximilianLloyd/adjacent.nvim">Adjacent.nvim</a></li>
-<li>#telescope #latex <a href="https://github.com/nvim-telescope/telescope-bibtex.nvim">telescope-bibtex</a></li>
-<li>#treesitter <a href="https://github.com/lukas-reineke/indent-blankline.nvim">indent-blankline.nvim</a></li>
-<li>#treesitter <a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a></li>
-<li>#window <a href="https://github.com/TaDaa/vimade">Vimade</a></li>
-<li>#treesitter <a href="https://github.com/nvim-treesitter/nvim-treesitter-context">nvim-treesitter-context</a></li>
-<li>#window <a href="https://github.com/moyiz/git-dev.nvim">git-dev.nvim</a></li>
-<li>#treesitter <a href="https://github.com/kiyoon/treesitter-indent-object.nvim">Treesitter-indent-object.nvim</a></li>
-<li>#ui <a href="https://github.com/nvim-tree/nvim-web-devicons">nvim-web-devicons</a></li>
-<li>#telescope <a href="https://github.com/nvim-telescope/telescope-dap.nvim">telescope-dap.nvim</a></li>
-<li>#telescope #history <a href="https://github.com/smartpde/telescope-recent-files">Telescope recent files extension</a></li>
-<li>#telescope #edit <a href="https://github.com/xiyaowong/telescope-emoji.nvim">telescope-emoji.nvim</a></li>
-<li>#telescope <a href="https://github.com/tsakirist/telescope-lazy.nvim">telescope-lazy.nvim</a></li>
-<li>#telescope <a href="https://github.com/nvim-telescope/telescope-media-files.nvim">Telescope-media-files.nvim</a></li>
-<li>#telescope <a href="https://github.com/crispgm/telescope-heading.nvim">telescope-heading.nvim</a></li>
-<li>#telescope <a href="https://github.com/olacin/telescope-gitmoji.nvim">telescope-gitmoji.nvim</a></li>
-<li>#telescope <a href="https://github.com/alduraibi/telescope-glyph.nvim">telescope-glyph.nvim</a></li>
-<li>#telescope <a href="https://github.com/cljoly/telescope-repo.nvim">telescope-repo.nvim</a></li>
-<li>#telescope <a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a></li>
-<li>#telescope #cmd <a href="https://github.com/jonarrien/telescope-cmdline.nvim">telescope-cmdline.nvim</a></li>
-<li>#telescope <a href="https://github.com/debugloop/telescope-undo.nvim">telescope-undo.nvim</a></li>
-<li>#telescope #cmd <a href="https://github.com/sudormrfbin/cheatsheet.nvim">cheatsheet.nvim</a></li>
-<li>#telescope <a href="https://github.com/ryanmsnyder/toggleterm-manager.nvim">toggleterm-manager.nvim</a></li>
-<li>#window <a href="https://github.com/sindrets/winshift.nvim">WinShift.nvim</a></li>
-<li>#markdown <a href="https://github.com/Nedra1998/nvim-mdlink">nvim-mdlink</a></li>
-<li>#lsp #server <a href="https://github.com/junnplus/lsp-setup.nvim">lsp-setup.nvim</a></li>
-<li>#edit <a href="https://github.com/Pocco81/auto-save.nvim">auto-save.nvim</a></li>
-<li>#edit <a href="https://github.com/folke/flash.nvim">flash.nvim</a></li>
-<li>#edit <a href="https://github.com/piersolenski/telescope-nvim">import.nvim</a></li>
-<li>#edit <a href="https://github.com/leath-dub/snipe.nvim">Snipe.nvim</a></li>
-<li>#document <a href="https://github.com/maskudo/devdocs.nvim">devdocs.nvim</a></li>
-<li>#debug <a href="https://github.com/folke/trouble.nvim">Trouble</a></li>
-<li>#deveplop <a href="https://github.com/S1M0N38/love2d.nvim">LÖVE 2D</a></li>
-<li>#dap #ui <a href="https://github.com/rcarriga/nvim-dap-ui">nvim-dap-ui</a></li>
-<li>#edit <a href="https://github.com/vodchella/hodur.nvim">Hodur</a></li>
-<li>#edit <a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a></li>
-<li>#edit #bookmark <a href="https://github.com/otavioschwanck/arrow.nvim">arrow.nvim</a></li>
-<li>#edit #bookmark <a href="https://github.com/crusj/bookmarks.nvim">bookmarks.nvim</a></li>
-<li>#edit <a href="https://github.com/brenton-leighton/multiple-cursors.nvim">multiple-cursors.nvim</a></li>
-<li>#edit <a href="https://github.com/mtrajano/tssorter.nvim">tssorter.nvim</a></li>
-<li>#edit <a href="https://github.com/abecodes/tabout.nvim">tabout.nvim</a></li>
-<li>#edit <a href="https://github.com/y3owk1n/time-machine.nvim">time-machine.nvim</a></li>
-<li>#edit #escape <a href="https://github.com/TheBlob42/houdini.nvim">Houdini</a></li>
-<li>#dap #python <a href="https://github.com/mfussenegger/nvim-dap-python">nvim-dap-python</a></li>
-<li>#dap <a href="https://github.com/mfussenegger/nvim-dap">DAP (Debug Adapter Protocol)</a></li>
-<li>#cmp <a href="https://github.com/erooke/blink-cmp-latex">blink-cmp-latex</a></li>
-<li>#cmp <a href="https://github.com/alexandre-abrioux/blink-cmp-npm.nvim">blink-cmp-npm</a></li>
-<li>#cmp <a href="https://github.com/Kaiser-Yang/blink-cmp-dictionary">blink-cmp-dictionary</a></li>
+<li>#cheatsheet <a href="https://github.com/saxon1964/neovim-tips">Neovim Tips Plugin</a></li>
 <li>#cmp <a href="https://github.com/Saghen/blink.cmp">Blink Completion (blink.cmp)</a></li>
 <li>#cmp <a href="https://github.com/disrupted/blink-cmp-conventional-commits">blink-cmp-conventional-commits</a></li>
-<li>#dap <a href="https://github.com/theHamsta/nvim-dap-virtual-text">nvim-dap-virtual-text</a></li>
+<li>#cmp <a href="https://github.com/Kaiser-Yang/blink-cmp-dictionary">blink-cmp-dictionary</a></li>
+<li>#cmp <a href="https://github.com/erooke/blink-cmp-latex">blink-cmp-latex</a></li>
+<li>#cmp <a href="https://github.com/alexandre-abrioux/blink-cmp-npm.nvim">blink-cmp-npm</a></li>
 <li>#cmp <a href="https://github.com/moyiz/blink-emoji.nvim">blink-emoji.nvim</a></li>
-<li>#cmp <a href="https://github.com/Saghen/blink.compat">blink.compat</a></li>
-<li>#console <a href="https://github.com/akinsho/toggleterm.nvim">toggleterm.nvim</a></li>
 <li>#cmp <a href="https://github.com/mikavilpas/blink-ripgrep.nvim">blink-ripgrep.nvim</a></li>
-<li>#cmp <a href="https://github.com/Dynge/gitmoji.nvim">gitmoji.nvim</a></li>
+<li>#cmp <a href="https://github.com/Saghen/blink.compat">blink.compat</a></li>
 <li>#cmp <a href="https://github.com/jdrupal-dev/css-vars.nvim">css-vars.nvim</a></li>
-<li>#lsp #type <a href="https://github.com/justinsgithub/wezterm-types">wezterm-types</a></li>
+<li>#cmp <a href="https://github.com/Dynge/gitmoji.nvim">gitmoji.nvim</a></li>
+<li>#console <a href="https://github.com/akinsho/toggleterm.nvim">toggleterm.nvim</a></li>
+<li>#dap #python <a href="https://github.com/mfussenegger/nvim-dap-python">nvim-dap-python</a></li>
+<li>#dap #ui <a href="https://github.com/rcarriga/nvim-dap-ui">nvim-dap-ui</a></li>
+<li>#dap <a href="https://github.com/mfussenegger/nvim-dap">DAP (Debug Adapter Protocol)</a></li>
+<li>#dap <a href="https://github.com/theHamsta/nvim-dap-virtual-text">nvim-dap-virtual-text</a></li>
+<li>#debug <a href="https://github.com/folke/trouble.nvim">Trouble</a></li>
+<li>#deveplop <a href="https://github.com/S1M0N38/love2d.nvim">LÖVE 2D</a></li>
+<li>#document <a href="https://github.com/maskudo/devdocs.nvim">devdocs.nvim</a></li>
+<li>#edit #bookmark <a href="https://github.com/otavioschwanck/arrow.nvim">arrow.nvim</a></li>
+<li>#edit #bookmark <a href="https://github.com/crusj/bookmarks.nvim">bookmarks.nvim</a></li>
+<li>#edit #escape <a href="https://github.com/TheBlob42/houdini.nvim">Houdini</a></li>
 <li>#edit #fold <a href="https://github.com/chrisgrieser/nvim-origami">nvim-origami</a></li>
-<li>#edit #navigate <a href="https://github.com/DanilaMihailov/beacon.nvim">Beacon.nvim</a></li>
-<li>#key <a href="https://github.com/folke/which-key.nvim">Which Key</a></li>
-<li>#latex <a href="https://github.com/Aidavdw/bibcite.nvim">bibcite.nvim</a></li>
-<li>#key <a href="https://github.com/timseriakov/spamguard.nvim">timseriakov/spamguard.nvim</a></li>
-<li>#highlight <a href="https://github.com/catgoose/nvim-colorizer.lua">colorizer.lua</a></li>
-<li>#highlight <a href="https://github.com/fei6409/log-highlight.nvim">log-highlight.nvim</a></li>
-<li>#git <a href="https://github.com/lewis6991/gitsigns.nvim">gitsigns.nvim</a></li>
-<li>#latex <a href="https://github.com/iurimateus/luasnip-latex-snippets.nvim">luasnip-latex-snippets</a></li>
-<li>#lsp <a href="https://github.com/williamboman/mason.nvim">mason.nvim</a></li>
-<li>#lsp #linter <a href="https://github.com/mfussenegger/nvim-lint">nvim-lint</a></li>
-<li>#lsp <a href="https://github.com/mason-org/mason-lspconfig.nvim">mason-lspconfig.nvim</a></li>
-<li>#lsp #linter <a href="https://github.com/rshkarin/mason-nvim-lint">mason-nvim-lint</a></li>
-<li>#lsp <a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig</a></li>
-<li>#lsp <a href="https://github.com/SmiteshP/nvim-navic">nvim-navic</a></li>
 <li>#edit #move <a href="https://github.com/kobbikobb/move-lines.nvim">move-lines.nvim</a></li>
-<li>#formatter <a href="https://github.com/zapling/mason-conform.nvim">mason-conform.nvim</a></li>
-<li>#font <a href="https://github.com/khaledhosny/ots">OpenType Sanitizer</a></li>
-<li>#edit #table <a href="https://github.com/hat0uma/csvview.nvim">csvview.nvim</a></li>
-<li>#edit #view <a href="https://github.com/rewhile/fsread.nvim">fsread.nvim</a></li>
-<li>#edit #replace <a href="https://github.com/MagicDuck/grug-far.nvim">grug-far.nvim</a></li>
+<li>#edit #navigate <a href="https://github.com/DanilaMihailov/beacon.nvim">Beacon.nvim</a></li>
 <li>#edit #navigate <a href="https://github.com/DNLHC/glance.nvim">Glance</a></li>
 <li>#edit #navigate <a href="https://github.com/rmagatti/goto-preview">Goto Preview</a></li>
-<li>#formatter <a href="https://github.com/stevearc/conform.nvim">conform.nvim</a></li>
+<li>#edit #replace <a href="https://github.com/MagicDuck/grug-far.nvim">grug-far.nvim</a></li>
+<li>#edit #table <a href="https://github.com/hat0uma/csvview.nvim">csvview.nvim</a></li>
+<li>#edit #view <a href="https://github.com/rewhile/fsread.nvim">fsread.nvim</a></li>
 <li>#edit #view <a href="https://github.com/rachartier/tiny-glimmer.nvim">tiny-glimmer.nvim</a></li>
-<li>#edit #yank <a href="https://github.com/AckslD/nvim-neoclip.lua">nvim-neoclip.lua</a></li>
-<li>#explorer <a href="https://github.com/mikavilpas/yazi.nvim">A Neovim Plugin for yazi</a></li>
-<li>#explorer <a href="https://github.com/stevearc/oil.nvim">oil.nvim</a></li>
 <li>#edit #view <a href="https://github.com/folke/twilight.nvim">Twilight</a></li>
-<li>#explorer <a href="https://github.com/refractalize/oil-git-status.nvim">oil-git-status</a></li>
+<li>#edit #yank <a href="https://github.com/AckslD/nvim-neoclip.lua">nvim-neoclip.lua</a></li>
+<li>#edit <a href="https://github.com/Pocco81/auto-save.nvim">auto-save.nvim</a></li>
+<li>#edit <a href="https://github.com/folke/flash.nvim">flash.nvim</a></li>
+<li>#edit <a href="https://github.com/vodchella/hodur.nvim">Hodur</a></li>
+<li>#edit <a href="https://github.com/piersolenski/telescope-nvim">import.nvim</a></li>
+<li>#edit <a href="https://github.com/brenton-leighton/multiple-cursors.nvim">multiple-cursors.nvim</a></li>
+<li>#edit <a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a></li>
+<li>#edit <a href="https://github.com/leath-dub/snipe.nvim">Snipe.nvim</a></li>
+<li>#edit <a href="https://github.com/abecodes/tabout.nvim">tabout.nvim</a></li>
+<li>#edit <a href="https://github.com/y3owk1n/time-machine.nvim">time-machine.nvim</a></li>
+<li>#edit <a href="https://github.com/mtrajano/tssorter.nvim">tssorter.nvim</a></li>
 <li>#epub <a href="https://github.com/CrystalDime/epub.nvim">epub.nvim</a></li>
+<li>#explorer <a href="https://github.com/mikavilpas/yazi.nvim">A Neovim Plugin for yazi</a></li>
+<li>#explorer <a href="https://github.com/refractalize/oil-git-status.nvim">oil-git-status</a></li>
+<li>#explorer <a href="https://github.com/stevearc/oil.nvim">oil.nvim</a></li>
+<li>#font <a href="https://github.com/khaledhosny/ots">OpenType Sanitizer</a></li>
+<li>#formatter <a href="https://github.com/stevearc/conform.nvim">conform.nvim</a></li>
+<li>#formatter <a href="https://github.com/zapling/mason-conform.nvim">mason-conform.nvim</a></li>
+<li>#git <a href="https://github.com/lewis6991/gitsigns.nvim">gitsigns.nvim</a></li>
+<li>#help <a href="https://github.com/Djancyp/cheat-sheet">Nvim Cheat Sheet</a></li>
+<li>#highlight <a href="https://github.com/catgoose/nvim-colorizer.lua">colorizer.lua</a></li>
+<li>#highlight <a href="https://github.com/fei6409/log-highlight.nvim">log-highlight.nvim</a></li>
+<li>#key <a href="https://github.com/timseriakov/spamguard.nvim">timseriakov/spamguard.nvim</a></li>
+<li>#key <a href="https://github.com/folke/which-key.nvim">Which Key</a></li>
+<li>#latex <a href="https://github.com/Aidavdw/bibcite.nvim">bibcite.nvim</a></li>
+<li>#latex <a href="https://github.com/iurimateus/luasnip-latex-snippets.nvim">luasnip-latex-snippets</a></li>
+<li>#lsp #linter <a href="https://github.com/rshkarin/mason-nvim-lint">mason-nvim-lint</a></li>
+<li>#lsp #linter <a href="https://github.com/mfussenegger/nvim-lint">nvim-lint</a></li>
+<li>#lsp #server <a href="https://github.com/junnplus/lsp-setup.nvim">lsp-setup.nvim</a></li>
+<li>#lsp #type <a href="https://github.com/justinsgithub/wezterm-types">wezterm-types</a></li>
+<li>#lsp <a href="https://github.com/mason-org/mason-lspconfig.nvim">mason-lspconfig.nvim</a></li>
+<li>#lsp <a href="https://github.com/williamboman/mason.nvim">mason.nvim</a></li>
+<li>#lsp <a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig</a></li>
+<li>#lsp <a href="https://github.com/SmiteshP/nvim-navic">nvim-navic</a></li>
+<li>#markdown <a href="https://github.com/Nedra1998/nvim-mdlink">nvim-mdlink</a></li>
+<li>#markdown <a href="https://github.com/richardbizik/nvim-toc">nvim-toc</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.align">mini.align</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.comment">mini.comment</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.cursorword">mini.cursorword</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.diff">mini.diff</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini-git">mini.git</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.icons">mini.icons</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.move">mini.move</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.splitjoin">mini.splitjoin</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.statusline">mini.statusline</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.surround">mini.surround</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.trailspace">mini.trailspace</a></li>
+<li>#other #dictionary <a href="https://github.com/Nealium/dict-popup.nvim">dict-popup.nvim</a></li>
+<li>#other #dictionary <a href="https://github.com/carlinigraphy/dictd.nvim">dictd.nvim</a></li>
+<li>#other #translate <a href="https://github.com/echuraev/translate-shell.vim">translate-shell.vim</a></li>
+<li>#other #translate <a href="https://github.com/uga-rosa/translate.nvim">translate.nvim</a></li>
+<li>#other <a href="https://github.com/neo451/feed.nvim">feed.nvim</a></li>
+<li>#other <a href="https://github.com/whleucka/reverb.nvim">reverb.nvim</a></li>
+<li>#project <a href="https://github.com/coffebar/neovim-project">Neovim project manager plugin</a></li>
+<li>#project <a href="https://github.com/y3owk1n/warp.nvim">warp.nvim</a></li>
+<li>#qol #config <a href="https://github.com/folke/neoconf.nvim">neoconf.nvim</a></li>
+<li>#qol #session <a href="https://github.com/rmagatti/auto-session">auto-session</a></li>
+<li>#qol <a href="https://github.com/jghauser/mkdir.nvim">mkdir.nvim</a></li>
+<li>#qol <a href="https://github.com/folke/snacks.nvim">snacks.nvim</a></li>
+<li>#setup <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a></li>
+<li>#setup <a href="https://github.com/folke/lazydev.nvim">lazydev.nvim</a></li>
+<li>#snips <a href="https://github.com/rafamadriz/friendly-snippets">Friendly Snippets</a></li>
+<li>#snips <a href="https://github.com/L3MON4D3/LuaSnip">LuaSnip</a></li>
+<li>#telescope #cmd <a href="https://github.com/sudormrfbin/cheatsheet.nvim">cheatsheet.nvim</a></li>
+<li>#telescope #cmd <a href="https://github.com/jonarrien/telescope-cmdline.nvim">telescope-cmdline.nvim</a></li>
+<li>#telescope #edit <a href="https://github.com/xiyaowong/telescope-emoji.nvim">telescope-emoji.nvim</a></li>
+<li>#telescope #history <a href="https://github.com/smartpde/telescope-recent-files">Telescope recent files extension</a></li>
+<li>#telescope #latex <a href="https://github.com/nvim-telescope/telescope-bibtex.nvim">telescope-bibtex</a></li>
+<li>#telescope #navigate <a href="https://github.com/LukasPietzschmann/telescope-tabs">telescope-tabs</a></li>
+<li>#telescope #search <a href="https://github.com/MaximilianLloyd/adjacent.nvim">Adjacent.nvim</a></li>
+<li>#telescope #search <a href="https://github.com/princejoogie/dir-telescope.nvim">dir-telescope.nvim</a></li>
+<li>#telescope #search <a href="https://github.com/Verf/telescope-everything.nvim">telescope-everything.nvim</a></li>
+<li>#telescope <a href="https://github.com/polirritmico/telescope-lazy-plugins.nvim">Telescope Lazy Plugins</a></li>
+<li>#telescope <a href="https://github.com/jvgrootveld/telescope-zoxide">Telescope Zoxide</a></li>
+<li>#telescope <a href="https://github.com/nvim-telescope/telescope-dap.nvim">telescope-dap.nvim</a></li>
+<li>#telescope <a href="https://github.com/fdschmidt93/telescope-egrepify.nvim">telescope-egrepify.nvim</a></li>
+<li>#telescope <a href="https://github.com/olacin/telescope-gitmoji.nvim">telescope-gitmoji.nvim</a></li>
+<li>#telescope <a href="https://github.com/alduraibi/telescope-glyph.nvim">telescope-glyph.nvim</a></li>
+<li>#telescope <a href="https://github.com/crispgm/telescope-heading.nvim">telescope-heading.nvim</a></li>
+<li>#telescope <a href="https://github.com/tsakirist/telescope-lazy.nvim">telescope-lazy.nvim</a></li>
+<li>#telescope <a href="https://github.com/nvim-telescope/telescope-media-files.nvim">Telescope-media-files.nvim</a></li>
+<li>#telescope <a href="https://github.com/cljoly/telescope-repo.nvim">telescope-repo.nvim</a></li>
+<li>#telescope <a href="https://github.com/debugloop/telescope-undo.nvim">telescope-undo.nvim</a></li>
+<li>#telescope <a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a></li>
+<li>#telescope <a href="https://github.com/ryanmsnyder/toggleterm-manager.nvim">toggleterm-manager.nvim</a></li>
+<li>#tmux <a href="https://github.com/connordeckers/tmux-navigator.nvim">tmux-navigator.nvim</a></li>
+<li>#treesitter <a href="https://github.com/lukas-reineke/indent-blankline.nvim">indent-blankline.nvim</a></li>
+<li>#treesitter <a href="https://github.com/nvim-treesitter/nvim-treesitter-context">nvim-treesitter-context</a></li>
+<li>#treesitter <a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a></li>
+<li>#treesitter <a href="https://github.com/kiyoon/treesitter-indent-object.nvim">Treesitter-indent-object.nvim</a></li>
+<li>#ui <a href="https://github.com/nvim-tree/nvim-web-devicons">nvim-web-devicons</a></li>
+<li>#ui <a href="https://github.com/lewis6991/satellite.nvim">satellite.nvim</a></li>
+<li>#window <a href="https://github.com/moyiz/git-dev.nvim">git-dev.nvim</a></li>
+<li>#window <a href="https://github.com/TaDaa/vimade">Vimade</a></li>
+<li>#window <a href="https://github.com/sindrets/winshift.nvim">WinShift.nvim</a></li>
 <li>#workspace <a href="https://github.com/natecraddock/workspaces.nvim">workspaces.nvim</a></li>
-<li>#cheatsheet <a href="https://github.com/saxon1964/neovim-tips">Neovim Tips Plugin</a></li>
 </ul>
 <h3 id="cache-17"><a class="header" href="#cache-17">cache</a></h3>
 <ul>
 <li>#bookmark <a href="https://github.com/heilgar/bookmarks.nvim">bookmarks.nvim</a></li>
+<li>#buffer <a href="https://github.com/akinsho/bufferline.nvim">bufferline.nvim</a></li>
 <li>#buffer <a href="https://github.com/francescarpi/buffon.nvim">Buffon</a></li>
 <li>#buffer <a href="https://github.com/manugoyal/githubify">Githubify</a></li>
-<li>#buffer <a href="https://github.com/akinsho/bufferline.nvim">bufferline.nvim</a></li>
 <li>#buffer <a href="https://github.com/shortcuts/no-neck-pain.nvim">no-neck-pain.nvim</a></li>
 <li>#cmp <a href="https://github.com/Kaiser-Yang/blink-cmp-git">blink-cmp-git</a></li>
 <li>#cmp <a href="https://github.com/yehuohan/blink-cmp-im">blink-cmp-im</a></li>
@@ -6845,12 +6861,12 @@ neovide --server &lt;your_host&gt;:1234
 <li>#console <a href="https://github.com/Veirt/trun.nvim">trun.nvim</a></li>
 <li>#dap #lua <a href="https://github.com/jbyuki/one-small-step-for-vimkind">one-small-step-for-vimkind</a></li>
 <li>#dap #ui <a href="https://github.com/igorlfs/nvim-dap-view">nvim-dap-view</a></li>
-<li>#dap <a href="https://github.com/ravenxrz/DAPInstall.nvim">DAPInstall</a></li>
 <li>#dap <a href="https://github.com/Carcuis/dap-breakpoints.nvim">dap-breakpoints.nvim</a></li>
+<li>#dap <a href="https://github.com/ravenxrz/DAPInstall.nvim">DAPInstall</a></li>
 <li>#deveplop <a href="https://github.com/kosekidev/build-script">BuildScript Plugin</a></li>
+<li>#deveplop <a href="https://github.com/linrongbin16/commons.nvim">commons.nvim</a></li>
 <li>#deveplop <a href="https://github.com/robertazzopardi/depsync.nvim">DepSync</a></li>
 <li>#deveplop <a href="https://github.com/polirritmico/lazy-local-patcher.nvim">Lazy local patcher</a></li>
-<li>#deveplop <a href="https://github.com/linrongbin16/commons.nvim">commons.nvim</a></li>
 <li>#deveplop <a href="https://github.com/jsongerber/nvim-px-to-rem">nvim-px-to-rem</a></li>
 <li>#deveplop <a href="https://github.com/pysan3/pathlib.nvim">pathlib.nvim</a></li>
 <li>#deveplop <a href="https://github.com/MeanderingProgrammer/py-requirements.nvim">py-requirements.nvim</a></li>
@@ -6860,7 +6876,6 @@ neovide --server &lt;your_host&gt;:1234
 <li>#docset <a href="https://gitlab.com/ivan-cukic/nvim-telescope-zeal-cli">nvim-telescope-zeal-cli</a></li>
 <li>#docset <a href="https://github.com/Sanix-Darker/zeal-lynx-cli">zeal-lynx-cli</a></li>
 <li>#document <a href="https://github.com/KabbAmine/zeavim.vim">Zeavim</a></li>
-<li>#edit #ime <a href="https://github.com/wasden/cmp-flypy.nvim">cmp-flypy.nvim</a></li>
 <li>#edit #bookmark <a href="https://github.com/yuriescl/minimal-bookmarks.nvim">A minimal bookmarks plugin for Neovim</a></li>
 <li>#edit #bookmark <a href="https://github.com/walkersumida/fusen.nvim">fusen.nvim</a></li>
 <li>#edit #bookmark <a href="https://github.com/tristone13th/lspmark.nvim">Lspmark.nvim</a></li>
@@ -6870,6 +6885,7 @@ neovide --server &lt;your_host&gt;:1234
 <li>#edit #csv <a href="https://github.com/emmanueltouzery/decisive.nvim">Decisive.nvim</a></li>
 <li>#edit #fold <a href="https://github.com/OXY2DEV/foldtext.nvim">foldtext.nvim</a></li>
 <li>#edit #fold <a href="https://github.com/kevinhwang91/nvim-ufo">nvim-ufo</a></li>
+<li>#edit #ime <a href="https://github.com/wasden/cmp-flypy.nvim">cmp-flypy.nvim</a></li>
 <li>#edit #ime <a href="https://github.com/tonyfettes/fcitx5.nvim">fcitx5.nvim</a></li>
 <li>#edit #ime <a href="https://github.com/uga-rosa/jam.nvim">jam.nvim</a></li>
 <li>#edit #license <a href="https://github.com/attilarepka/header.nvim">header.nvim</a></li>
@@ -6877,21 +6893,13 @@ neovide --server &lt;your_host&gt;:1234
 <li>#edit #mode <a href="https://github.com/folke/zen-mode.nvim">zen-mode.nvim</a></li>
 <li>#edit #move <a href="https://github.com/aaronik/Treewalker.nvim">Treewalker.nvim</a></li>
 <li>#edit #wrap <a href="https://git.foosoft.net/alex/vim-argwrap">Vim-ArgWrap</a></li>
-<li>#edit <a href="https://github.com/gregorias/coerce.nvim">Coerce</a></li>
-<li>#edit <a href="https://github.com/ronisbr/emojify.nvim">Emojify.nvim</a></li>
-<li>#edit <a href="https://github.com/smoka7/multicursors.nvim">Multicursors.nvim</a></li>
-<li>#edit <a href="https://github.com/karb94/neoscroll.nvim">Neoscroll</a></li>
-<li>#edit <a href="https://github.com/wallpants/ghost-text.nvim">Neovim GhostText</a></li>
-<li>#edit <a href="https://github.com/mistgc/pinmd.nvim">Pinmd</a></li>
-<li>#edit <a href="https://github.com/mawkler/refjump.nvim">Refjump</a></li>
-<li>#edit <a href="https://github.com/gen740/SmoothCursor.nvim">Smooth Cursor</a></li>
-<li>#edit <a href="https://github.com/Kolkhis/streamer-mode.nvim">Streamer Mode</a></li>
-<li>#edit <a href="https://github.com/Grafcube/suedit.nvim">SuEdit</a></li>
-<li>#edit <a href="https://github.com/kopsha/vim-saver">VimSaver</a></li>
 <li>#edit <a href="https://github.com/jokesper/align.nvim">align.nvim</a></li>
 <li>#edit <a href="https://github.com/petersid2022/clippy.nvim">clippy.nvim</a></li>
+<li>#edit <a href="https://github.com/gregorias/coerce.nvim">Coerce</a></li>
 <li>#edit <a href="https://github.com/soemre/commentless.nvim">commentless.nvim</a></li>
 <li>#edit <a href="https://github.com/monaqa/dial.nvim">dial.nvim</a></li>
+<li>#edit <a href="https://github.com/ronisbr/emojify.nvim">Emojify.nvim</a></li>
+<li>#edit <a href="https://github.com/wsdjeg/format.nvim">format.nvim</a></li>
 <li>#edit <a href="https://github.com/mityu/vim-gyoza">gyoza.vim</a></li>
 <li>#edit <a href="https://github.com/drop-stones/im-switch.nvim">im-switch.nvim</a></li>
 <li>#edit <a href="https://github.com/hakonharnes/img-clip.nvim">img-clip.nvim</a></li>
@@ -6901,44 +6909,54 @@ neovide --server &lt;your_host&gt;:1234
 <li>#edit <a href="https://github.com/homerours/jumper.nvim">jumper.nvim</a></li>
 <li>#edit <a href="https://github.com/rlychrisg/keepcursor.nvim">keepcursor.nvim</a></li>
 <li>#edit <a href="https://github.com/ggandor/leap.nvim">leap.nvim</a></li>
+<li>#edit <a href="https://github.com/smoka7/multicursors.nvim">Multicursors.nvim</a></li>
 <li>#edit <a href="https://github.com/bassamsdata/namu.nvim">namu.nvim</a></li>
 <li>#edit <a href="https://github.com/you-n-g/navigate-note.nvim">navigate-note.nvim</a></li>
 <li>#edit <a href="https://github.com/zongben/navimark.nvim">navimark.nvim</a></li>
+<li>#edit <a href="https://github.com/karb94/neoscroll.nvim">Neoscroll</a></li>
+<li>#edit <a href="https://github.com/wallpants/ghost-text.nvim">Neovim GhostText</a></li>
 <li>#edit <a href="https://github.com/nacro90/numb.nvim">numb.nvim</a></li>
 <li>#edit <a href="https://github.com/kylechui/nvim-surround">nvim-surround</a></li>
 <li>#edit <a href="https://github.com/josephburgess/nvumi">nvumi</a></li>
+<li>#edit <a href="https://github.com/mistgc/pinmd.nvim">Pinmd</a></li>
 <li>#edit <a href="https://github.com/romus204/referencer.nvim">referencer.nvim</a></li>
+<li>#edit <a href="https://github.com/mawkler/refjump.nvim">Refjump</a></li>
 <li>#edit <a href="https://github.com/vladdoster/remember.nvim">remember.nvim</a></li>
 <li>#edit <a href="https://github.com/chrisgrieser/nvim-rip-substitute">rip-substitute</a></li>
 <li>#edit <a href="https://github.com/wassimk/scalpel.nvim">scalpel.nvim</a></li>
+<li>#edit <a href="https://github.com/gen740/SmoothCursor.nvim">Smooth Cursor</a></li>
 <li>#edit <a href="https://github.com/sQVe/sort.nvim">sort.nvim</a></li>
+<li>#edit <a href="https://github.com/Kolkhis/streamer-mode.nvim">Streamer Mode</a></li>
+<li>#edit <a href="https://github.com/Grafcube/suedit.nvim">SuEdit</a></li>
 <li>#edit <a href="https://github.com/tigion/swap.nvim">swap.nvim</a></li>
 <li>#edit <a href="https://github.com/TC72/telescope-tele-tabby.nvim">tele-tabby.nvim</a></li>
 <li>#edit <a href="https://github.com/johmsalas/text-case.nvim">text-case.nvim</a></li>
 <li>#edit <a href="https://github.com/rlychrisg/truncateline.nvim">truncateline.nvim</a></li>
 <li>#edit <a href="https://github.com/machakann/vim-sandwich">vim-sandwich</a></li>
+<li>#edit <a href="https://github.com/kopsha/vim-saver">VimSaver</a></li>
 <li>#edit <a href="https://github.com/wurli/visimatch.nvim">visimatch.nvim</a></li>
-<li>#explorer <a href="https://github.com/wincent/command-t">Command-T</a></li>
-<li>#explorer <a href="https://github.com/cbochs/grapple.nvim">Grapple.nvim</a></li>
-<li>#explorer <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">Neo-tree.nvim</a></li>
-<li>#explorer <a href="https://github.com/kevinhwang91/rnvimr">Rnvimr</a></li>
-<li>#explorer <a href="https://github.com/simonmclean/triptych.nvim">Triptych.nvim</a></li>
 <li>#explorer <a href="https://github.com/dhruvmanila/browser-bookmarks.nvim">browser-bookmarks.nvim</a></li>
+<li>#explorer <a href="https://github.com/wincent/command-t">Command-T</a></li>
 <li>#explorer <a href="https://github.com/X3eRo0/dired.nvim">dired.nvim</a></li>
 <li>#explorer <a href="https://github.com/is0n/fm-nvim">fm-nvim</a></li>
+<li>#explorer <a href="https://github.com/A7Lavinraj/fyler.nvim">Fyler.nvim</a></li>
+<li>#explorer <a href="https://github.com/cbochs/grapple.nvim">Grapple.nvim</a></li>
+<li>#explorer <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">Neo-tree.nvim</a></li>
 <li>#explorer <a href="https://github.com/prichrd/netrw.nvim">netrw.nvim</a></li>
 <li>#explorer <a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua</a></li>
 <li>#explorer <a href="https://github.com/tyru/open-browser.vim">open-browser.vim</a></li>
 <li>#explorer <a href="https://github.com/kelly-lin/ranger.nvim">ranger.nvim</a></li>
+<li>#explorer <a href="https://github.com/kevinhwang91/rnvimr">Rnvimr</a></li>
 <li>#explorer <a href="https://github.com/sidebar-nvim/sidebar.nvim">sidebar.nvim</a></li>
+<li>#explorer <a href="https://github.com/simonmclean/triptych.nvim">Triptych.nvim</a></li>
 <li>#explorer <a href="https://github.com/obaland/vfiler.vim">vfiler.vim</a></li>
 <li>#explorer <a href="https://github.com/brglng/vim-sidebar-manager">vim-sidebar-manager</a></li>
 <li>#font <a href="https://github.com/awesometoolbox/otf2ttf">otf2ttf</a></li>
 <li>#formatter <a href="https://github.com/ckipp01/stylua-nvim">stylua-nvim</a></li>
 <li>#git #diff <a href="https://github.com/axkirillov/unified.nvim">axkirillov/unified.nvim</a></li>
 <li>#git #issue <a href="https://github.com/pwntester/octo.nvim">Octo.nvim</a></li>
-<li>#git <a href="https://github.com/sindrets/diffview.nvim">Diffview.nvim</a></li>
 <li>#git <a href="https://github.com/pv-hernandez/conflict-juggler.nvim">conflict-juggler.nvim</a></li>
+<li>#git <a href="https://github.com/sindrets/diffview.nvim">Diffview.nvim</a></li>
 <li>#git <a href="https://github.com/ring0-rootkit/gitblame.nvim">gitblame.nvim</a></li>
 <li>#git <a href="https://github.com/yujinyuz/gitpad.nvim">gitpad.nvim</a></li>
 <li>#git <a href="https://github.com/kdheepak/lazygit.nvim">lazygit.nvim</a></li>
@@ -6949,43 +6967,43 @@ neovide --server &lt;your_host&gt;:1234
 <li>#git <a href="https://github.com/agoodshort/telescope-git-submodules.nvim">telescope-git-submodules.nvim</a></li>
 <li>#gui <a href="https://github.com/akiyosi/goneovim">Goneovim</a></li>
 <li>#gui <a href="https://github.com/lalbornoz/roarie-commands.vim">roarie-commands</a></li>
+<li>#highlight <a href="https://github.com/xzbdmw/colorful-menu.nvim">colorful-menu.nvim</a></li>
 <li>#highlight <a href="https://github.com/mawkler/modicator.nvim">Modicator.nvim</a></li>
+<li>#highlight <a href="https://github.com/fmbarina/multicolumn.nvim">multicolumn.nvim</a></li>
 <li>#highlight <a href="https://github.com/ecthelionvi/NeoColumn.nvim">NeoColumn.nvim</a></li>
+<li>#highlight <a href="https://github.com/ya2s/nvim-cursorline">nvim-cursorline</a></li>
 <li>#highlight <a href="https://github.com/folke/paint.nvim">Paint</a></li>
 <li>#highlight <a href="https://gitlab.com/HiPhish/rainbow-delimiters.nvim">Rainbow delimiters for Neovim</a></li>
 <li>#highlight <a href="https://github.com/sontungexpt/stcursorword">STCursorword</a></li>
 <li>#highlight <a href="https://github.com/ukyouz/syntax-highlighted-cursor.nvim">Syntax Highlighted Cursor</a></li>
-<li>#highlight <a href="https://github.com/xzbdmw/colorful-menu.nvim">colorful-menu.nvim</a></li>
-<li>#highlight <a href="https://github.com/fmbarina/multicolumn.nvim">multicolumn.nvim</a></li>
-<li>#highlight <a href="https://github.com/ya2s/nvim-cursorline">nvim-cursorline</a></li>
 <li>#highlight <a href="https://github.com/johnfrankmorgan/whitespace.nvim">whitespace.nvim</a></li>
 <li>#history <a href="https://github.com/gaborvecsei/memento.nvim">Memento.nvim</a></li>
 <li>#ime <a href="https://github.com/Freed-Wu/rime.nvim">rime.nvim</a></li>
-<li>#key <a href="https://github.com/gregorias/nvim-mapper">Mapper</a></li>
 <li>#key <a href="https://github.com/FeiyouG/commander.nvim">commander.nvim</a></li>
 <li>#key <a href="https://github.com/gmatheu/keymap-stats.nvim">keymap-stats.nvim</a></li>
 <li>#key <a href="https://github.com/mrjones2014/legendary.nvim">legendary.nvim</a></li>
+<li>#key <a href="https://github.com/gregorias/nvim-mapper">Mapper</a></li>
 <li>#latex <a href="https://github.com/evesdropper/luasnip-latex-snippets.nvim">LuaSnip-LaTeX-Snippets</a></li>
-<li>#latex <a href="https://github.com/franco-ruggeri/pdf-preview.nvim">PDF Preview</a></li>
-<li>#latex <a href="https://github.com/lervag/vimtex">VimTeX</a></li>
 <li>#latex <a href="https://github.com/amarz45/nvim-cmp-lua-latex-symbols">nvim-cmp Lua LaTeX Symbols</a></li>
+<li>#latex <a href="https://github.com/franco-ruggeri/pdf-preview.nvim">PDF Preview</a></li>
 <li>#latex <a href="https://github.com/bamonroe/rnoweb-nvim">rnoweb-nvim</a></li>
+<li>#latex <a href="https://github.com/lervag/vimtex">VimTeX</a></li>
 <li>#license <a href="https://github.com/attilarepka/header.nvim">header.nvim</a></li>
 <li>#llm <a href="https://github.com/joshuavial/aider.nvim">Aider Plugin for Neovim</a></li>
-<li>#llm <a href="https://github.com/jackMort/ChatGPT.nvim">ChatGPT.nvim</a></li>
-<li>#llm <a href="https://github.com/olimorris/codecompanion.nvim">CodeCompanion</a></li>
-<li>#llm <a href="https://github.com/sphamba/smear-cursor.nvim">Smear cursor for Neovim</a></li>
-<li>#llm <a href="https://github.com/HPRIOR/telescope-gpt">Telescope GPT</a></li>
 <li>#llm <a href="https://github.com/dzfrias/arena.nvim">arena.nvim</a></li>
 <li>#llm <a href="https://github.com/yetone/avante.nvim">avante.nvim</a></li>
+<li>#llm <a href="https://github.com/jackMort/ChatGPT.nvim">ChatGPT.nvim</a></li>
+<li>#llm <a href="https://github.com/olimorris/codecompanion.nvim">CodeCompanion</a></li>
 <li>#llm <a href="https://github.com/Kurama622/llm.nvim">llm.nvim</a></li>
 <li>#llm <a href="https://github.com/GeorgesAlkhouri/nvim-aider">nvim-aider</a></li>
 <li>#llm <a href="https://github.com/nomnivore/ollama.nvim">ollama.nvim</a></li>
 <li>#llm <a href="https://github.com/frankroeder/parrot.nvim">parrot.nvim</a></li>
+<li>#llm <a href="https://github.com/sphamba/smear-cursor.nvim">Smear cursor for Neovim</a></li>
+<li>#llm <a href="https://github.com/HPRIOR/telescope-gpt">Telescope GPT</a></li>
 <li>#llm <a href="https://github.com/milanglacier/yarepl.nvim">yarepl.nvim</a></li>
 <li>#lsp #deveplop <a href="https://github.com/nvimtools/none-ls.nvim">none-ls.nvim</a></li>
-<li>#lsp <a href="https://github.com/elijah-potter/harper">Harper</a></li>
 <li>#lsp <a href="https://github.com/yarospace/dev-tools.nvim">dev-tools.nvim</a></li>
+<li>#lsp <a href="https://github.com/elijah-potter/harper">Harper</a></li>
 <li>#lsp <a href="https://github.com/dundalek/lazy-lsp.nvim">lazy-lsp.nvim</a></li>
 <li>#lsp <a href="https://github.com/ray-x/lsp_signature.nvim">lsp_signature.nvim</a></li>
 <li>#lsp <a href="https://github.com/onsails/lspkind.nvim">lspkind-nvim</a></li>
@@ -7024,45 +7042,45 @@ neovide --server &lt;your_host&gt;:1234
 <li>#other #macro <a href="https://github.com/ecthelionvi/NeoComposer.nvim">NeoComposer.nvim</a></li>
 <li>#other #note <a href="https://github.com/KIMGEONUNG/memo.nvim">Memo.nvim</a></li>
 <li>#other #sftp <a href="https://github.com/DevDec/transmit.nvim">Transmit.nvim</a></li>
-<li>#other #translate <a href="https://github.com/JuanZoran/Trans.nvim">Trans.nvim</a></li>
 <li>#other #translate <a href="https://github.com/Omochice/dps-translate-vim">dps-translate-vim</a></li>
+<li>#other #translate <a href="https://github.com/JuanZoran/Trans.nvim">Trans.nvim</a></li>
 <li>#other #watch <a href="https://github.com/cristianoliveira/funzzy.nvim">funzzy.nvim</a></li>
-<li>#other <a href="https://github.com/EMPAT94/nvim-rss">NVIM-RSS</a></li>
-<li>#other <a href="https://github.com/rguruprakash/simple-note.nvim">Neovim Simple Note Plugin</a></li>
 <li>#other <a href="https://github.com/Eandrju/cellular-automaton.nvim">cellular-automaton.nvim</a></li>
 <li>#other <a href="https://github.com/ziontee113/color-picker.nvim">color-picker.nvim</a></li>
 <li>#other <a href="https://github.com/MisanthropicBit/decipher.nvim">decipher.nvim</a></li>
 <li>#other <a href="https://github.com/pyonk/dexercism.vim">dexercism.vim</a></li>
+<li>#other <a href="https://github.com/rguruprakash/simple-note.nvim">Neovim Simple Note Plugin</a></li>
 <li>#other <a href="https://github.com/queue-miscreant/neovimpv">neovimpv</a></li>
+<li>#other <a href="https://github.com/EMPAT94/nvim-rss">NVIM-RSS</a></li>
 <li>#other <a href="https://github.com/rsdot/sqlpilot.nvim">sqlpilot.nvim</a></li>
 <li>#other <a href="https://github.com/wsdjeg/vim-todo">vim-todo</a></li>
 <li>#pdf <a href="https://github.com/facebookresearch/nougat">nougat.nvim</a></li>
 <li>#pdf <a href="https://github.com/kaymmm/nvim-pandoc-pdf">nvim-pandoc-pdf</a></li>
 <li>#pdf <a href="https://github.com/jhofscheier/nvim-texis">nvim-texis</a></li>
 <li>#preset <a href="https://github.com/AstroNvim/AstroNvim">AstroNvim</a></li>
+<li>#preset <a href="https://github.com/nvim-lua/kickstart.nvim">kickstart.nvim</a></li>
 <li>#preset <a href="https://github.com/LazyVim/LazyVim">LazyVim</a></li>
 <li>#preset <a href="https://github.com/LunarVim/LunarVim">LunarVim</a></li>
+<li>#preset <a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a></li>
 <li>#preset <a href="https://github.com/nvim-neorg/neorg">Neorg</a></li>
 <li>#preset <a href="https://github.com/NvChad/NvChad">NvChad</a></li>
-<li>#preset <a href="https://github.com/nvim-lua/kickstart.nvim">kickstart.nvim</a></li>
-<li>#preset <a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a></li>
 <li>#preset <a href="https://github.com/nyoom-engineering/oxocarbon.nvim">oxocarbon.nvim</a></li>
 <li>#project <a href="https://github.com/DrKJeff16/project.nvim">project.nvim</a></li>
-<li>#run <a href="https://github.com/sergei-mironov/litrepl">LitREPL</a></li>
-<li>#run <a href="https://github.com/benlubas/molten-nvim">Molten</a></li>
-<li>#run <a href="https://github.com/GCBallesteros/NotebookNavigator.nvim">Notebook Navigator</a></li>
-<li>#run <a href="https://github.com/Mackrics/neoslime">Slime for neovim</a></li>
 <li>#run <a href="https://github.com/MajorZiploc/code_runner.vim">code_runner.vim</a></li>
 <li>#run <a href="https://github.com/metakirby5/codi.vim">codi.vim</a></li>
 <li>#run <a href="https://github.com/sashetophizika/compal.nvim">compal.nvim</a></li>
 <li>#run <a href="https://github.com/arjunmahishi/flow.nvim">flow.nvim</a></li>
+<li>#run <a href="https://github.com/sergei-mironov/litrepl">LitREPL</a></li>
+<li>#run <a href="https://github.com/benlubas/molten-nvim">Molten</a></li>
+<li>#run <a href="https://github.com/GCBallesteros/NotebookNavigator.nvim">Notebook Navigator</a></li>
 <li>#run <a href="https://github.com/javiorfo/nvim-fuel">nvim-fuel</a></li>
 <li>#run <a href="https://github.com/MarcHamamji/runner.nvim">runner.nvim</a></li>
 <li>#run <a href="https://github.com/bugsbugsbux/sendline">sendline</a></li>
+<li>#run <a href="https://github.com/Mackrics/neoslime">Slime for neovim</a></li>
 <li>#run <a href="https://github.com/jeff-dh/tshunkyPy.nvim">tshunkyPy</a></li>
-<li>#screenshot <a href="https://github.com/AlejandroSuero/freeze-code.nvim">Freeze Neovim Plugin</a></li>
 <li>#screenshot <a href="https://github.com/niuiic/code-shot.nvim">code-shot.nvim</a></li>
 <li>#screenshot <a href="https://github.com/mistricky/codesnap.nvim">codesnap</a></li>
+<li>#screenshot <a href="https://github.com/AlejandroSuero/freeze-code.nvim">Freeze Neovim Plugin</a></li>
 <li>#screenshot <a href="https://github.com/ndom91/freeze.nvim">freeze.nvim</a></li>
 <li>#search <a href="https://github.com/anthony-halim/bible-verse.nvim">bible-verse.nvim</a></li>
 <li>#search <a href="https://github.com/linrongbin16/fzfx.nvim">fzfx.nvim</a></li>
@@ -7085,18 +7103,18 @@ neovide --server &lt;your_host&gt;:1234
 <li>#tabline <a href="https://github.com/koenverburg/minimal-tabline.nvim">Minimal-tabline.nvim</a></li>
 <li>#task <a href="https://github.com/desdic/macrothis.nvim">Macrothis.nvim</a></li>
 <li>#task <a href="https://github.com/stevearc/overseer.nvim">overseer.nvim</a></li>
-<li>#telescope #dir <a href="https://github.com/salorak/whaler.nvim">Whaler</a></li>
 <li>#telescope #dir <a href="https://github.com/smilovanovic/telescope-search-dir-picker.nvim">telescope-search-dir-picker</a></li>
+<li>#telescope #dir <a href="https://github.com/salorak/whaler.nvim">Whaler</a></li>
+<li>#telescope #history <a href="https://github.com/nvim-telescope/telescope-frecency.nvim">telescope-frecency.nvim</a></li>
 <li>#telescope #snips <a href="https://github.com/benfowler/telescope-luasnip.nvim">telescope-luasnip</a></li>
 <li>#telescope #snips <a href="https://github.com/fhill2/telescope-ultisnips.nvim">telescope-ultisnips.nvim</a></li>
 <li>#telescope #task <a href="https://github.com/lpoto/telescope-tasks.nvim">Telescope tasks</a></li>
 <li>#telescope #task <a href="https://github.com/GustavoKatel/telescope-asynctasks.nvim">telescope-asynctasks.nvim</a></li>
-<li>#telescope #history <a href="https://github.com/nvim-telescope/telescope-frecency.nvim">telescope-frecency.nvim</a></li>
-<li>#telescope <a href="https://github.com/nvim-telescope/telescope-github.nvim">Telescope-github.nvim</a></li>
 <li>#telescope <a href="https://github.com/prochri/telescope-all-recent.nvim">telescope-all-recent.nvim</a></li>
 <li>#telescope <a href="https://github.com/nvim-telescope/telescope-file-browser.nvim">telescope-file-browser.nvim</a></li>
 <li>#telescope <a href="https://github.com/mrloop/telescope-git-branch.nvim">telescope-git-branch</a></li>
 <li>#telescope <a href="https://github.com/paopaol/telescope-git-diffs.nvim">telescope-git-diffs.nvim</a></li>
+<li>#telescope <a href="https://github.com/nvim-telescope/telescope-github.nvim">Telescope-github.nvim</a></li>
 <li>#telescope <a href="https://github.com/nvim-telescope/telescope-hop.nvim">telescope-hop.nvim</a></li>
 <li>#telescope <a href="https://github.com/octarect/telescope-menu.nvim">telescope-menu.nvim</a></li>
 <li>#telescope <a href="https://github.com/rishabhjain9191/telescope-monorepos">telescope-monorepos</a></li>
@@ -7114,6 +7132,7 @@ neovide --server &lt;your_host&gt;:1234
 <li>#theme <a href="https://github.com/flashcodes-themayankjha/fkthemes.nvim">FkThemes.nvim</a></li>
 <li>#theme <a href="https://gitlab.com/motaz-shokry/gruvbox.nvim">gruvbox.nvim</a></li>
 <li>#theme <a href="https://github.com/Erl-koenig/theme-hub.nvim">ThemeHub.nvim</a></li>
+<li>#theme <a href="https://github.com/BonnyAD9/TypeDark">TypeDark</a></li>
 <li>#todo <a href="https://github.com/phrmendes/todotxt.nvim">todotxt.nvim</a></li>
 <li>#treesitter <a href="https://github.com/nvim-treesitter/nvim-treesitter-refactor">nvim-treesitter-refactor</a></li>
 <li>#treesitter <a href="https://github.com/nvim-treesitter/nvim-treesitter-textobjects">nvim-treesitter-textobjects</a></li>
@@ -7122,24 +7141,24 @@ neovide --server &lt;your_host&gt;:1234
 <li>#ui #statusline <a href="https://github.com/sschleemilch/slimline.nvim">slimline.nvim</a></li>
 <li>#ui #statusline <a href="https://github.com/brianaung/yasl.nvim">yasl.nvim</a></li>
 <li>#ui #theme <a href="https://github.com/tribhuwan-kumar/Artimux">Artimux</a></li>
+<li>#ui #theme <a href="https://github.com/linrongbin16/colorbox.nvim">colorbox.nvim</a></li>
 <li>#ui #theme <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes">External themes</a></li>
 <li>#ui #theme <a href="https://github.com/eddyekofo94/gruvbox-flat.nvim">Gruvbox Flat</a></li>
 <li>#ui #theme <a href="https://github.com/cocopon/iceberg.vim">Iceberg</a></li>
 <li>#ui #theme <a href="https://github.com/shrikecode/kyotonight.vim">Kyoto Night NeoVim</a></li>
+<li>#ui #theme <a href="https://github.com/slugbyte/lackluster.nvim">lackluster</a></li>
 <li>#ui #theme <a href="https://github.com/raddari/last-color.nvim">Last Color</a></li>
 <li>#ui #theme <a href="https://github.com/datsfilipe/min-theme.nvim">Min Theme</a></li>
 <li>#ui #theme <a href="https://github.com/rafamadriz/neon">Neon</a></li>
+<li>#ui #theme <a href="https://github.com/yorik1984/newpaper.nvim">newpaper.nvim</a></li>
 <li>#ui #theme <a href="https://github.com/EdenEast/nightfox.nvim">Nightfox</a></li>
+<li>#ui #theme <a href="https://github.com/m-gail/northernlights.vim">northernlights.vim</a></li>
 <li>#ui #theme <a href="https://github.com/folke/styler.nvim">Styler</a></li>
 <li>#ui #theme <a href="https://github.com/JWW127/theink">The Ink</a></li>
-<li>#ui #theme <a href="https://github.com/nishu-murmu/ThemeSwitch.nvim">ThemeSwitch</a></li>
 <li>#ui #theme <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">Themes</a></li>
+<li>#ui #theme <a href="https://github.com/nishu-murmu/ThemeSwitch.nvim">ThemeSwitch</a></li>
 <li>#ui #theme <a href="https://github.com/LmanTW/themify.nvim">Themify</a></li>
 <li>#ui #theme <a href="https://github.com/folke/tokyonight.nvim">Tokyo Night</a></li>
-<li>#ui #theme <a href="https://github.com/linrongbin16/colorbox.nvim">colorbox.nvim</a></li>
-<li>#ui #theme <a href="https://github.com/slugbyte/lackluster.nvim">lackluster</a></li>
-<li>#ui #theme <a href="https://github.com/yorik1984/newpaper.nvim">newpaper.nvim</a></li>
-<li>#ui #theme <a href="https://github.com/m-gail/northernlights.vim">northernlights.vim</a></li>
 <li>#ui <a href="https://github.com/folke/noice.nvim">Noice</a></li>
 <li>#ui <a href="https://github.com/rcarriga/nvim-notify">nvim-notify</a></li>
 <li>#ui <a href="https://github.com/rachartier/tiny-devicons-auto-colors.nvim">tiny-devicons-auto-colors.nvim</a></li>
@@ -7156,23 +7175,23 @@ neovide --server &lt;your_host&gt;:1234
 <li>#window <a href="https://github.com/ycdzj/win-mover.nvim">win-mover.nvim</a></li>
 <li>#window <a href="https://github.com/MisanthropicBit/winmove.nvim">winmove.nvim</a></li>
 <li>#workdir <a href="https://github.com/wsdjeg/rooter.nvim">rooter.nvim</a></li>
-<li>#yank <a href="https://github.com/ptdewey/yankbank-nvim">YankBank</a></li>
 <li>#yank <a href="https://github.com/tenxsoydev/karen-yank.nvim">karen-yank</a></li>
+<li>#yank <a href="https://github.com/ptdewey/yankbank-nvim">YankBank</a></li>
 <li>#yank <a href="https://github.com/obergodmar/yanklines.nvim">yanklines.nvim</a></li>
 <li>#yank <a href="https://github.com/daltongd/yanklock.nvim">yanklock.nvim</a></li>
+<li><a href="https://github.com/mahyarmirrashed/famous-quotes.nvim">famous-quotes.nvim</a></li>
 <li><a href="https://github.com/doganalper/template.nvim">Filetype Based Template Plugin For Neovim</a></li>
+<li><a href="https://github.com/harrisoncramer/GitLab.nvim">gitlab.nvim</a></li>
 <li><a href="https://github.com/camspiers/luarocks">Luarocks.nvim</a></li>
 <li><a href="https://github.com/SunnyTamang/neodoc.nvim">NeoDoc.nvim</a></li>
-<li><a href="https://github.com/johannww/tts.nvim">Text-to-speech in neovim</a></li>
-<li><a href="https://github.com/mahyarmirrashed/famous-quotes.nvim">famous-quotes.nvim</a></li>
-<li><a href="https://github.com/harrisoncramer/GitLab.nvim">gitlab.nvim</a></li>
 <li><a href="https://github.com/MisanthropicBit/neotest-busted">neotest-busted</a></li>
 <li><a href="https://github.com/LuxVim/nvim-luxmotion">nvim-luxmotion</a></li>
 <li><a href="https://github.com/3ZsForInsomnia/pacer.nvim">pacer.nvim</a></li>
 <li><a href="https://github.com/hat0uma/prelive.nvim">prelive.nvim</a></li>
 <li><a href="https://github.com/mangelozzi/rgflow.nvim">rgflow.nvim</a></li>
-<li><a href="https://github.com/alex-popov-tech/store.nvim">store.nvim</a></li>
 <li><a href="https://github.com/uhs-robert/sshfs.nvim">sshfs.nvim</a></li>
+<li><a href="https://github.com/alex-popov-tech/store.nvim">store.nvim</a></li>
+<li><a href="https://github.com/johannww/tts.nvim">Text-to-speech in neovim</a></li>
 <li><a href="https://github.com/ravsii/timers.nvim">timers.nvim</a></li>
 <li><a href="https://github.com/yukimura1227/vim-yazi">vim-yazi</a></li>
 </ul>
@@ -9521,13 +9540,24 @@ scoop install alacritty
 <pre><code class="language-sh"># Preview image in yazi
 sudo pacman -S ueberzugpp
 </code></pre>
+<h2 id="setting-2"><a class="header" href="#setting-2">setting</a></h2>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
+<pre><code class="language-sh"># Arch
+vim $HOME/.config/alacritty/alacritty.toml
+# Windows 10
+subl %APPDATA%\alacritty\alacritty.toml
+</code></pre>
 <h2 id="reference-71"><a class="header" href="#reference-71">reference</a></h2>
 <ul>
 <li>#document <a href="https://alacritty.org/config-alacritty.html">Alacritty</a></li>
 <li>(Windows 10) <a href="https://github.com/alacritty/alacritty/issues/3301#issuecomment-753320506">How can I configure alacritty to work with MSYS2?</a></li>
 <li><a href="https://convoluted.bearblog.dev/alacritty-config-example-guide/">An Example and Concise Guide to Alacritty Configuration through TOML</a></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="anki"><a class="header" href="#anki"><a href="https://apps.ankiweb.net/">Anki</a></a></h1>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://alacritty.org/config-alacritty.html">Config - Alacritty</a> <a href="#fr-1-1">↩</a></p>
+</li>
+</ol><div style="break-before: page; page-break-before: always;"></div><h1 id="anki"><a class="header" href="#anki"><a href="https://apps.ankiweb.net/">Anki</a></a></h1>
 <h2 id="optional-2"><a class="header" href="#optional-2">optional</a></h2>
 <ul>
 <li>Tools → Preferences → Syncing.
@@ -11009,7 +11039,7 @@ sudo pacman -S dmidecode
 systemctl status libvirtd
 sudo usermod -aG libvirt,kvm $(whoami)
 </code></pre>
-<pre><code class="language-sh">lsmod | grep kvm
+<pre><code class="language-sh">[[[[[[[[[[[[[tsmod](tsmod.md](tsmodtsmodmd.md](tsmodtsmodmdtsmodtsmodmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdmdmd.md](tsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdtsmodtsmodmdtsmodtsmodmdmdtsmodtsmodmdtsmodtsmodmdmdmdmdmdmdmdmdmdmdmdmd.md))))))))))))) | grep kvm
 sudo modprobe kvm
 # AMD
 sudo modprobe kvm_amd
@@ -11653,7 +11683,7 @@ sudo pacman -S wezterm
 # Windows 10
 scoop install wezterm
 </code></pre>
-<h2 id="setting-1"><a class="header" href="#setting-1">setting</a></h2>
+<h2 id="setting-3"><a class="header" href="#setting-3">setting</a></h2>
 <pre><code class="language-sh"># Arch
 ~/.config/wezterm/wezterm.lua
 # Windows 10
@@ -24339,6 +24369,7 @@ after = ["links"]
 <li>#minify <a href="https://github.com/monosans/mkdocs-minify-html-plugin">mkdocs-minify-html-plugin</a></li>
 <li>#navigate <a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a></li>
 <li>#navigate <a href="https://github.com/Andre601/mkdocs-pagenav-generator">mkdocs-pagenav-generator</a></li>
+<li>#note <a href="https://github.com/virtualguard101/mkdocs-note">MkDocs-Note</a></li>
 <li>#pdf <a href="https://github.com/adrienbrignon/mkdocs-exporter">MkDocs Exporter</a></li>
 <li>#pdf <a href="https://github.com/iSOLveIT/mkdocs-pdf-generate">MkDocs PDF Generate</a></li>
 <li>#pdf <a href="https://github.com/smaxtec/mkdocs-pdf-with-js-plugin">MkDocs PDF with JS Plugin</a></li>
