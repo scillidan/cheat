@@ -119,6 +119,7 @@ git pull origin main
 - #theme [berghain.zsh-theme](https://github.com/meshkinyar/berghain.zsh-theme)
 - #theme [club-house](https://github.com/skippyr/club-house)
 - #uv [zsh-uv-env](https://github.com/matthiasha/zsh-uv-env)
+- [FZF Nav Plugin](https://github.com/ivomac/zsh-fzf-nav)
 - [Pycalc Oh My Zsh Plugin](https://github.com/alalik/pycalc)
 - [Simple zsh calculator](https://github.com/arzzen/calc.plugin.zsh)
 - [VS Code Shell Integration Zsh Plugin](https://github.com/tolkonepiu/vscode-shell-integration-zsh-plugin)

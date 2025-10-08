@@ -68,6 +68,7 @@
 - #minify [mkdocs-minify-html-plugin](https://github.com/monosans/mkdocs-minify-html-plugin)
 - #navigate [MkDocs Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
 - #navigate [mkdocs-pagenav-generator](https://github.com/Andre601/mkdocs-pagenav-generator)
+- #note [MkDocs-Note](https://github.com/virtualguard101/mkdocs-note)
 - #pdf [MkDocs Exporter](https://github.com/adrienbrignon/mkdocs-exporter)
 - #pdf [MkDocs PDF Generate](https://github.com/iSOLveIT/mkdocs-pdf-generate)
 - #pdf [MkDocs PDF with JS Plugin](https://github.com/smaxtec/mkdocs-pdf-with-js-plugin)

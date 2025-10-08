@@ -20,8 +20,21 @@ scoop install alacritty
 sudo pacman -S ueberzugpp
 ```
 
+## setting
+
+[^1]
+
+```sh
+# Arch
+vim $HOME/.config/alacritty/alacritty.toml
+# Windows 10
+subl %APPDATA%\alacritty\alacritty.toml
+```
+
 ## reference
 
 - #document [Alacritty](https://alacritty.org/config-alacritty.html)
 - (Windows 10) [How can I configure alacritty to work with MSYS2?](https://github.com/alacritty/alacritty/issues/3301#issuecomment-753320506)
 - [An Example and Concise Guide to Alacritty Configuration through TOML](https://convoluted.bearblog.dev/alacritty-config-example-guide/)
+
+[^1]: [Config - Alacritty](https://alacritty.org/config-alacritty.html)

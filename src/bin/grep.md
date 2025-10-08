@@ -1,4 +1,4 @@
-# [grep](https://www.gnu.org/software/grep/)
+# [grep](https://www.gnu.org/softwiare/grep/)
 
 ## reference
 

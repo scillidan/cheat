@@ -12,19 +12,19 @@ scoop install yazi
 ## Personal do
 
 ```sh
-ya pkg add gosxrgxx/flexoki-dark.yazi
-ya pkg add gosxrgxx/flexoki-light.yazi
-ya pkg add AnirudhG07/custom-shell.yazi
-ya pkg add kirasok/epub-preview.yazi
-ya pkg add lihuax-me/hevi.yazi
-ya pkg add Lil-Dank/lazygit.yazi
-ya pkg add boydaihungst/mediainfo.yazi
-ya pkg add NoponyAsked/sxiv.yazi
-ya pkg add WhoSowSee/whoosh.yazi
+ya pkg add gosxrgxx/flexoki-dark
+ya pkg add gosxrgxx/flexoki-light
+ya pkg add AnirudhG07/custom-shell
+ya pkg add lihuax-me/hevi
+ya pkg add Lil-Dank/lazygit
+ya pkg add boydaihungst/mediainfo
+ya pkg add WhoSowSee/whoosh
 ya pkg add yazi-rs/plugins:piper
-# Arch
-ya pkg add lpnh/fr.yazi
-ya pkg add uhs-robert/recycle-bin.yazi
+# Only Arch
+ya pkg add kirasok/epub-preview
+ya pkg add NoponyAsked/sxiv
+ya pkg add lpnh/fr
+ya pkg add uhs-robert/recycle-bin
 ```
 
 ## setting

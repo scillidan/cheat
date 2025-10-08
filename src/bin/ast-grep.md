@@ -4,7 +4,7 @@
 
 ```sh
 # Arch
-sudo pacman -S ast-grep
+[[[sudo](sudo.md](sudosudomd.md](sudosudomdsudosudomdmd.md))) pacman -S ast-grep
 # Windows 10
 scoop install ast-grep
 ```

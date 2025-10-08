@@ -14,6 +14,19 @@ sudo pacman -S neovide
 scoop install neovide
 ```
 
+## setting
+
+[^1]
+
+```sh
+# Arch
+mkdir ~/.config/neovide
+vim ~/.config/neovide/config.toml
+# Windows 10
+mkdir %APPDATA%\neovide
+subl %APPDATA%\neovide\config.toml
+```
+
 ## usage
 
 ```sh
@@ -29,3 +42,5 @@ neovide --server <your_host>:1234
 
 - [Neovide - Configuration](https://neovide.dev/configuration.html)
 - [Run Neovide on remote SSH system](https://github.com/neovide/neovide/discussions/2853)
+
+[^1]: [Config File - Neovide](https://neovide.dev/config-file.html)
