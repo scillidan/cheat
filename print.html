@@ -19933,7 +19933,7 @@ free        | Linux filesystem | /
 mkswap /dev/nvme?n1p?
 mkfs.btrfs -L Arch /dev/nvme?n1p?
 </code></pre>
-<pre><code class="language-sh">mount -t btrfs -o compress=zstd /dev/nvmex?1p? /mnt
+<pre><code class="language-sh">mount -t btrfs -o compress=zstd /dev/nvme?n1p? /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
 umount /mnt
