@@ -45,7 +45,7 @@ mkfs.btrfs -L Arch /dev/nvme?n1p?
 ```
 
 ```sh
-mount -t btrfs -o compress=zstd /dev/nvmex?1p? /mnt
+mount -t btrfs -o compress=zstd /dev/nvme?n1p? /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
 umount /mnt
