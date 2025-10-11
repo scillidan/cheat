@@ -27,20 +27,18 @@ arch
 
 ```sh
 sudo pacman -Syyu \
-	base-devel \
-	editorconfig-checker \
 	inetutils \
 	less \
 	unzip \
 	wget \
 	xsel
+# editorconfig-checker \
 ```
 
 ```sh
 yay -S --noconfirm \
 	fuzzy-pkg-finder \
 	paru
-	# win32yank
 ```
 
 ## WSL Optionals

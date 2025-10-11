@@ -73,12 +73,12 @@ Settings → Mouse and Touchpad → Theme → `<theme>`.
 
 ### Configure desktop
 
-Settings → Desktop → Desktop → Icons → Icon type → None.
+Settings → Desktop → Desktop Icons → Icon type → None.
 
 ### Configure thunar
 
 - Thunar → View
-	- Show Hidden Files
+	- Show Hidden Files (On)
 	- Configure Toolbar
 		- New Tab (On)
 		- Split View (On)

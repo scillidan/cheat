@@ -4,7 +4,7 @@
 
 ```sh
 # Arch
-sudo Pacman -S git
+sudo pacman -S git
 # Windows 10
 scoop install	git
 ```

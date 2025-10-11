@@ -20,6 +20,7 @@ uv pip install hf_transfer
 [^2]
 
 ```sh
+# Arch
 # sudo pacman -S nvidia nvidia-utils nvidia-container-toolkit
 mkdir mineru
 cd mineru

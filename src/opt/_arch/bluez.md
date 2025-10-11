@@ -6,7 +6,6 @@
 
 ```sh
 sudo pacman -S bluez bluez-utils blueman
-sudo pacman -S bluez-firmware
 sudo systemctl enable --now bluetooth
 ```
 

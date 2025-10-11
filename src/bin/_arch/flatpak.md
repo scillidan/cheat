@@ -44,9 +44,9 @@ flatpak list --app
 ## Personal do
 
 ```sh
-# flatpak install flathub com.qq.QQ
+flatpak install flathub com.qq.QQ
 # flatpak install flathub com.wps.Office
-# flatpak install flathub com.baidu.NetDisk
+flatpak install flathub com.baidu.NetDisk
 ```
 
 [^1]: [[Bug]: "SSL peer certificate or SSH remote key was not OK" during extra-data download, only on Ubuntu-based distros](https://github.com/flatpak/flatpak/issues/5253)

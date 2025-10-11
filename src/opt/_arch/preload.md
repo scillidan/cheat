@@ -3,6 +3,6 @@
 ## install
 
 ```sh
-yay -S preload
+yay -S --noconfirm preload
 sudo systemctl enable --now preload
 ```

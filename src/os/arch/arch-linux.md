@@ -33,33 +33,34 @@ cfdisk /dev/nvme?n1
 
 ```
 size        | type             | comment
-256M        | EFI System       | /boot
+1G          | EFI System       | /boot
 32G*0.6=18G | Linux Swap       |
 free        | Linux filesystem | /
 ```
 
 ```sh
-mkfs.fat -F32 /dev/nvme?n1p?
-mkswap /dev/nvme?n1p?
-mkfs.btrfs -L Arch /dev/nvme?n1p?
+mkfs.fat -F32 /dev/nvme?n1p1
+mkswap /dev/nvme?n1p2
+mkfs.btrfs -L Arch /dev/nvme?n1p3
 ```
 
 ```sh
-mount -t btrfs -o compress=zstd /dev/nvme?n1p? /mnt
+mount -t btrfs -o compress=zstd /dev/nvme?n1p3 /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
+btrfs subvolume list -p /mnt
 umount /mnt
 ```
 
 ```sh
-mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme?n1p? /mnt
-mkdir /mnt/home
-mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvme?n1p? /mnt/home
+mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme?n1p3 /mnt
+mkdir -p /mnt/home
+mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvme?n1p3 /mnt/home
 mkdir -p /mnt/boot
 # Mount EFI
-mount /dev/nvme?n1p? /mnt/boot
+mount /dev/nvme?n1p1 /mnt/boot
 # Mount Linux Swap
-swapon /dev/nvmexn1pn
+swapon /dev/nvme?n1p2
 ```
 
 ```sh
@@ -145,8 +146,20 @@ EDITOR=vim visudo
 ```
 
 ```sh
-# pacman -S intel-ucode # Intel
-pacman -S amd-ucode # AMD
+# AMD CPU
+pacman -S amd-ucode
+# AMD GPU
+sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
+# Intel CPU
+pacman -S intel-ucode
+# NVIDIA GPU
+sudo pacman -Syu linux-headers
+sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-dkms
+sudo mkinitcpio -P
+sudo modprobe nvidia
+```
+
+```sh
 pacman -S grub efibootmgr os-prober
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH
 vim /etc/default/grub
@@ -164,6 +177,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 exit
 umount -R /mnt
 shutdown -h now
+sudo systemctl enable --now NetworkManager
 ```
 
 [^6]
@@ -194,12 +208,6 @@ sudo reboot
 
 ## Personal do
 
-```sh
-sudo pacman -S \
-	ark
-	# neomutt
-	# restic
-```
 
 ```sh
 sudo pacman -Rns \
@@ -223,13 +231,14 @@ sudo pacman -Rns \
 
 1. [archwsl.md](/os/arch/archwsl.md)
 2. [pacman.md](/bin/_arch/pacman.md)
-3. [flatpak.md](/bin/_arch/flatpak.md)
-4. [pipewire.md](/opt/_arch/pipewire.md)
-5. [bluez.md](/opt/_arch/bluez.md)
-6. [openssh.md](/bin/_arch/openssh.md)
-7. [tigervnc.md](/opt/_arch/tigervnc.md)
-8. [firewalld.md](/bin/_arch/firewalld.md)
-9. [mount.md](/bin/_arch/mount.md)
+3. [yay](bin/_arch/yay.md)
+4. [flatpak.md](/bin/_arch/flatpak.md)
+5. [pipewire.md](/opt/_arch/pipewire.md)
+6. [bluez.md](/opt/_arch/bluez.md)
+7. [openssh.md](/bin/_arch/openssh.md)
+8. (Optional) [tigervnc.md](/opt/_arch/tigervnc.md)
+9. [firewalld.md](/bin/_arch/firewalld.md)
+10. [mount.md](/bin/_arch/mount.md)
 
 - #arch [ark](opt/_arch/ark.md)
 - #arch [auto-cpufreq.md](/opt/_arch/auto-cpufreq.md)
@@ -248,6 +257,7 @@ sudo pacman -Rns \
 - #arch [sdcv.md](/bin/_arch/sdcv.md)
 - #arch [steam.md](/optGame/steam.md)
 - #arch [texlive.md](/bin/_arch/texlive.md)
+- #arch [wine](/optGame/wine.md)
 - #arch [xfce.md](/opt/_arch/xfce/xfce.md)
 - #arch [xone.md](/optGame/_arch/xone.md)
 - #arch [zathura.md](/opt/_arch/zathura.md)
@@ -310,7 +320,6 @@ sudo pacman -Rns \
 - [video-compare.md](/opt/video-compare.md)
 - [weixin.md](/opt/weixin.md)
 - [wezterm.md](/opt/wezterm.md)
-- #arch [wine](/optGame/wine.md)
 - [xnconvert.md](/opt/xnconvert.md)
 - [yoga-image-optimizer.md](/opt/yoga-image-optimizer.md)
 - [yt-dlp.md](/bin/yt-dlp.md)

@@ -4,6 +4,15 @@
 
 [^1] [^2]
 
+### Intel + NVIDIA
+
+```sh
+# Waiting fixed. 
+sudo pacman -S lightdm lightdm-gtk-greeter
+```
+
+### AMD
+
 ```sh
 sudo pacman -S lightdm lightdm-webkit2-greeter
 ```
@@ -29,6 +38,8 @@ sudo vim /etc/lightdm/lightdm-webkit2-greeter.conf
 webkit_theme = minimal
 ```
 
+## usage
+
 ```sh
 sudo systemctl enable --now lightdm
 ```
@@ -39,3 +50,7 @@ sudo systemctl enable --now lightdm
 
 [^1]: [Arch linux install lightdm (Light Display Manager)](https://gist.github.com/miguelmota/5087fb8d92599efc4748c134846c8daf)
 [^2]: [A minimal LightDM WebKit2 theme](https://github.com/TheTerrior/lightdm-minimal)
+
+## troubleshoot
+
+- [Black screen when trying to use lightdm-webkit2-greeter](https://www.reddit.com/r/archlinux/comments/1fyhxhu/black_screen_when_trying_to_use/)

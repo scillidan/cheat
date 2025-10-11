@@ -13,6 +13,7 @@ sudo systemctl enable --now firewalld
 ```
 
 ```sh
+# Optional
 sudo firewall-cmd --get-default-zone
 sudo firewall-cmd --list-all-zones
 sudo firewall-cmd --zone=home --list-all

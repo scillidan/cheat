@@ -15,4 +15,4 @@ cd yay
 makepkg
 sudo pacman -U yay-bin*.pkg.tar.xz
 yay
-``` 
+```

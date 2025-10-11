@@ -5,8 +5,6 @@
 [^1]
 
 ```sh
-# AMD GPUs gpu driver
-sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
 # Vulkan
 sudo pacman -S vulkan-tools
 # Lutris
