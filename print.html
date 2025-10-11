@@ -5079,7 +5079,8 @@ asdf set -u ruby 2.7.2
 <h2 id="usage-99"><a class="header" href="#usage-99">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl enable --now firewalld
 </code></pre>
-<pre><code class="language-sh">sudo firewall-cmd --get-default-zone
+<pre><code class="language-sh"># Optional
+sudo firewall-cmd --get-default-zone
 sudo firewall-cmd --list-all-zones
 sudo firewall-cmd --zone=home --list-all
 </code></pre>
@@ -5131,9 +5132,9 @@ flatpak uninstall &lt;application_id&gt;
 flatpak list --app
 </code></pre>
 <h2 id="personal-do-5"><a class="header" href="#personal-do-5">Personal do</a></h2>
-<pre><code class="language-sh"># flatpak install flathub com.qq.QQ
+<pre><code class="language-sh">flatpak install flathub com.qq.QQ
 # flatpak install flathub com.wps.Office
-# flatpak install flathub com.baidu.NetDisk
+flatpak install flathub com.baidu.NetDisk
 </code></pre>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
@@ -5380,6 +5381,7 @@ open-codex --provider ollama --full-context --model qwen2.5-coder:7b
 <pre><code class="language-sh">sudo vim /etc/ssh/sshd_config
 </code></pre>
 <pre><code>PubkeyAuthentication yes
+# AuthorizedKeysFile ...
 PasswordAuthentication no
 </code></pre>
 <pre><code class="language-sh">sudo systemctl restart sshd
@@ -5390,9 +5392,10 @@ PasswordAuthentication no
 <p>Client PC:</p>
 <pre><code class="language-sh">mkdir ~/.ssh
 vim ~/.ssh/authorized_keys
+vim ~/.ssh/authorized_keys2
 # Paste into
 chmod 700 ~/.ssh
-chmod 600 ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys*
 </code></pre>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
@@ -6205,7 +6208,7 @@ git clone --depth=1 https://github.com/ScoopInstaller/Java
 <div style="break-before: page; page-break-before: always;"></div><h1 id="git"><a class="header" href="#git"><a href="https://git-scm.com/">git</a></a></h1>
 <h2 id="install-211"><a class="header" href="#install-211">install</a></h2>
 <pre><code class="language-sh"># Arch
-sudo Pacman -S git
+sudo pacman -S git
 # Windows 10
 scoop install	git
 </code></pre>
@@ -12639,7 +12642,6 @@ sudo systemctl enable --now auto-cpufreq
 <h2 id="install-329"><a class="header" href="#install-329">install</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>
 <pre><code class="language-sh">sudo pacman -S bluez bluez-utils blueman
-sudo pacman -S bluez-firmware
 sudo systemctl enable --now bluetooth
 </code></pre>
 <h2 id="usage-168"><a class="header" href="#usage-168">usage</a></h2>
@@ -12729,6 +12731,11 @@ sudo systemctl restart grub-btrfsd.service
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lightdm-display-manager"><a class="header" href="#lightdm-display-manager"><a href="https://github.com/canonical/lightdm">LightDM Display Manager</a></a></h1>
 <h2 id="install-337"><a class="header" href="#install-337">install</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>
+<h3 id="intel--nvidia"><a class="header" href="#intel--nvidia">Intel + NVIDIA</a></h3>
+<pre><code class="language-sh"># Waiting fixed. 
+sudo pacman -S lightdm lightdm-gtk-greeter
+</code></pre>
+<h3 id="amd"><a class="header" href="#amd">AMD</a></h3>
 <pre><code class="language-sh">sudo pacman -S lightdm lightdm-webkit2-greeter
 </code></pre>
 <pre><code class="language-sh">git clone --depth=1 https://github.com/TheTerrior/lightdm-minimal
@@ -12744,11 +12751,16 @@ greeter-session=lightdm-webkit2-greeter
 </code></pre>
 <pre><code>webkit_theme = minimal
 </code></pre>
+<h2 id="usage-170"><a class="header" href="#usage-170">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl enable --now lightdm
 </code></pre>
 <h2 id="reference-100"><a class="header" href="#reference-100">reference</a></h2>
 <ul>
 <li><a href="https://wiki.archlinux.org/title/LightDM">LightDM - ArchWiki</a></li>
+</ul>
+<h2 id="troubleshoot-9"><a class="header" href="#troubleshoot-9">troubleshoot</a></h2>
+<ul>
+<li><a href="https://www.reddit.com/r/archlinux/comments/1fyhxhu/black_screen_when_trying_to_use/">Black screen when trying to use lightdm-webkit2-greeter</a></li>
 </ul>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
@@ -12761,7 +12773,7 @@ greeter-session=lightdm-webkit2-greeter
 <h2 id="install-338"><a class="header" href="#install-338">install</a></h2>
 <pre><code class="language-sh">sudo pacman -S nitrogen
 </code></pre>
-<h2 id="usage-170"><a class="header" href="#usage-170">usage</a></h2>
+<h2 id="usage-171"><a class="header" href="#usage-171">usage</a></h2>
 <p>nitrogen → Preferences → Add → <code>&lt;wallpaper_dir&gt;</code> → OK → Apply.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="nsxiv"><a class="header" href="#nsxiv"><a href="https://github.com/nsxiv/nsxiv">nsxiv</a></a></h1>
 <h2 id="install-339"><a class="header" href="#install-339">install</a></h2>
@@ -12770,7 +12782,7 @@ greeter-session=lightdm-webkit2-greeter
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ocrdesktop"><a class="header" href="#ocrdesktop"><a href="https://github.com/chrys87/ocrdesktop">ocrdesktop</a></a></h1>
 <pre><code class="language-sh">yay -S ocrdesktop
 </code></pre>
-<h2 id="usage-171"><a class="header" href="#usage-171">usage</a></h2>
+<h2 id="usage-172"><a class="header" href="#usage-172">usage</a></h2>
 <pre><code class="language-sh">ocrdesktop -l eng -x 1
 </code></pre>
 <h2 id="reference-101"><a class="header" href="#reference-101">reference</a></h2>
@@ -12789,7 +12801,7 @@ sudo pacman -S pavucontrol
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="preload"><a class="header" href="#preload"><a href="http://sourceforge.net/projects/preload">preload</a></a></h1>
 <h2 id="install-341"><a class="header" href="#install-341">install</a></h2>
-<pre><code class="language-sh">yay -S preload
+<pre><code class="language-sh">yay -S --noconfirm preload
 sudo systemctl enable --now preload
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="sway"><a class="header" href="#sway"><a href="https://swaywm.org/">sway</a></a></h1>
@@ -12820,7 +12832,7 @@ sudo pacman -S tigervnc
 # Windows 10
 scoop install tigervnc
 </code></pre>
-<h2 id="usage-172"><a class="header" href="#usage-172">usage</a></h2>
+<h2 id="usage-173"><a class="header" href="#usage-173">usage</a></h2>
 <h3 id="arch-6"><a class="header" href="#arch-6">Arch</a></h3>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> <sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup> <sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup></p>
 <pre><code class="language-sh">vncpasswd
@@ -12980,7 +12992,7 @@ sudo systemctl enable --now cronie.service
 sudo pacman -Sy tesseract tesseract-data-eng imagemagick scrot xsel rofi sdcv links
 chmod +x ./dict.sh
 </code></pre>
-<h2 id="usage-173"><a class="header" href="#usage-173">usage</a></h2>
+<h2 id="usage-174"><a class="header" href="#usage-174">usage</a></h2>
 <pre><code class="language-sh">dict.sh
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="kaomoji-rofi"><a class="header" href="#kaomoji-rofi"><a href="https://gitlab.com/ceda_ei/kaomoji-rofi">Kaomoji Rofi</a></a></h1>
@@ -12989,28 +13001,28 @@ chmod +x ./dict.sh
 cd kaomoji-rofi
 chmod +x ./kaomoji.sh
 </code></pre>
-<h2 id="usage-174"><a class="header" href="#usage-174">usage</a></h2>
+<h2 id="usage-175"><a class="header" href="#usage-175">usage</a></h2>
 <pre><code class="language-sh">kaomoji.sh
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rofi-calc"><a class="header" href="#rofi-calc"><a href="https://github.com/svenstaro/rofi-calc">rofi-calc</a></a></h1>
 <h2 id="install-349"><a class="header" href="#install-349">install</a></h2>
 <pre><code class="language-sh">sudo pacman -S rofi-calc
 </code></pre>
-<h2 id="usage-175"><a class="header" href="#usage-175">usage</a></h2>
+<h2 id="usage-176"><a class="header" href="#usage-176">usage</a></h2>
 <pre><code class="language-sh">rofi -show calc -modi calc -no-show-match -no-sort
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rofi-gpaste"><a class="header" href="#rofi-gpaste"><a href="https://github.com/yusufaktepe/rofi-gpaste">rofi-gpaste</a></a></h1>
 <h2 id="install-350"><a class="header" href="#install-350">install</a></h2>
 <pre><code class="language-sh">yay -S --noconfirm rofi-gpaste-git
 </code></pre>
-<h2 id="usage-176"><a class="header" href="#usage-176">usage</a></h2>
+<h2 id="usage-177"><a class="header" href="#usage-177">usage</a></h2>
 <pre><code class="language-sh">rofi-gpaste
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rofi-pass"><a class="header" href="#rofi-pass"><a href="https://github.com/carnager/rofi-pass">rofi-pass</a></a></h1>
 <h2 id="install-351"><a class="header" href="#install-351">install</a></h2>
 <pre><code class="language-sh">sudo pacman -S rofi-pass
 </code></pre>
-<h2 id="usage-177"><a class="header" href="#usage-177">usage</a></h2>
+<h2 id="usage-178"><a class="header" href="#usage-178">usage</a></h2>
 <pre><code class="language-sh">rofi-pass
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rofi-scripts"><a class="header" href="#rofi-scripts"><a href="https://github.com/miroslavvidovic/rofi-scripts">rofi-scripts</a></a></h1>
@@ -13019,7 +13031,7 @@ chmod +x ./kaomoji.sh
 cd rofi-scripts
 chmod +x ./web-search.sh
 </code></pre>
-<h2 id="usage-178"><a class="header" href="#usage-178">usage</a></h2>
+<h2 id="usage-179"><a class="header" href="#usage-179">usage</a></h2>
 <pre><code class="language-sh">web-search.sh
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rofi-shortcuts"><a class="header" href="#rofi-shortcuts"><a href="https://github.com/Zeioth/rofi-shortcuts">rofi-shortcuts</a></a></h1>
@@ -13033,21 +13045,21 @@ cp ./rofi-shortcuts.sh ~/.local/share/rofi/rofi-shortcuts/rofi-shortcuts.sh
 chmod u+x ~/.local/share/rofi/rofi-shortcuts/rofi-shortcuts.sh
 ln -sf ~/.local/share/rofi/rofi-shortcuts/rofi-shortcuts.sh ~/.local/bin/rofi-shortcuts
 </code></pre>
-<h2 id="usage-179"><a class="header" href="#usage-179">usage</a></h2>
+<h2 id="usage-180"><a class="header" href="#usage-180">usage</a></h2>
 <pre><code class="language-sh">rofi-shortcuts
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rofi-zeal"><a class="header" href="#rofi-zeal"><a href="https://github.com/Zeioth/rofi-zeal">rofi-zeal</a></a></h1>
 <h2 id="install-354"><a class="header" href="#install-354">install</a></h2>
 <pre><code class="language-sh">yay -S --noconfirm rofi-zeal-git
 </code></pre>
-<h2 id="usage-180"><a class="header" href="#usage-180">usage</a></h2>
+<h2 id="usage-181"><a class="header" href="#usage-181">usage</a></h2>
 <pre><code class="language-sh">rofi-zeal
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rofimoji"><a class="header" href="#rofimoji"><a href="https://github.com/fdw/rofimoji">Rofimoji</a></a></h1>
 <h2 id="install-355"><a class="header" href="#install-355">install</a></h2>
 <pre><code class="language-sh">sudo pacman -S rofimoji
 </code></pre>
-<h2 id="usage-181"><a class="header" href="#usage-181">usage</a></h2>
+<h2 id="usage-182"><a class="header" href="#usage-182">usage</a></h2>
 <pre><code class="language-sh">rofimoji
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="xfce"><a class="header" href="#xfce"><a href="https://wiki.archlinux.org/title/Xfce">Xfce</a></a></h1>
@@ -13094,12 +13106,12 @@ tar -xvf Chroma-White-S.tar.xz
 </code></pre>
 <p>Settings → Mouse and Touchpad → Theme → <code>&lt;theme&gt;</code>.</p>
 <h3 id="configure-desktop"><a class="header" href="#configure-desktop">Configure desktop</a></h3>
-<p>Settings → Desktop → Desktop → Icons → Icon type → None.</p>
+<p>Settings → Desktop → Desktop Icons → Icon type → None.</p>
 <h3 id="configure-thunar"><a class="header" href="#configure-thunar">Configure thunar</a></h3>
 <ul>
 <li>Thunar → View
 <ul>
-<li>Show Hidden Files</li>
+<li>Show Hidden Files (On)</li>
 <li>Configure Toolbar
 <ul>
 <li>New Tab (On)</li>
@@ -13551,7 +13563,7 @@ chmod +x ./xfce-setup-shortcuts.sh
 <h2 id="install-359"><a class="header" href="#install-359">install</a></h2>
 <pre><code class="language-sh">scoop install bleachbit
 </code></pre>
-<h2 id="usage-182"><a class="header" href="#usage-182">usage</a></h2>
+<h2 id="usage-183"><a class="header" href="#usage-183">usage</a></h2>
 <ul>
 <li>Windows Explorer → 缩略图(On) → 清空</li>
 </ul>
@@ -13811,7 +13823,7 @@ Windows.old
 <h2 id="install-370"><a class="header" href="#install-370">install</a></h2>
 <pre><code class="language-sh">scoop install everythingtoolbar
 </code></pre>
-<h2 id="usage-183"><a class="header" href="#usage-183">usage</a></h2>
+<h2 id="usage-184"><a class="header" href="#usage-184">usage</a></h2>
 <ul>
 <li>更多
 <ul>
@@ -13841,7 +13853,7 @@ Windows.old
 <h2 id="install-372"><a class="header" href="#install-372">install</a></h2>
 <pre><code class="language-sh">scoop install fsviewer
 </code></pre>
-<h2 id="usage-184"><a class="header" href="#usage-184">usage</a></h2>
+<h2 id="usage-185"><a class="header" href="#usage-185">usage</a></h2>
 <ul>
 <li>设置 → 设置
 <ul>
@@ -13869,7 +13881,7 @@ Windows.old
 <h2 id="install-373"><a class="header" href="#install-373">install</a></h2>
 <pre><code class="language-sh">scoop install ffmpeg-batch
 </code></pre>
-<h2 id="usage-185"><a class="header" href="#usage-185">usage</a></h2>
+<h2 id="usage-186"><a class="header" href="#usage-186">usage</a></h2>
 <ul>
 <li>流多路复用 → 字幕轨 → 保存轨道</li>
 </ul>
@@ -13892,7 +13904,7 @@ uv pip install -r requirements.txt
 scripts\generate-cmd.bat gui-subtrans
 scripts\generate-cmd.bat llm-subtrans
 </code></pre>
-<h2 id="usage-186"><a class="header" href="#usage-186">usage</a></h2>
+<h2 id="usage-187"><a class="header" href="#usage-187">usage</a></h2>
 <pre><code class="language-sh">gui-subtrans
 </code></pre>
 <h2 id="optional-4"><a class="header" href="#optional-4">optional</a></h2>
@@ -13905,7 +13917,7 @@ scripts\generate-cmd.bat llm-subtrans
 </ul>
 </li>
 </ul>
-<h2 id="usage-187"><a class="header" href="#usage-187">usage</a></h2>
+<h2 id="usage-188"><a class="header" href="#usage-188">usage</a></h2>
 <ul>
 <li>Open file → Select <code>&lt;subtitle&gt;</code> → Project Settings → Entry <code>Movie Name</code>, <code>Target Language</code> → Start.</li>
 </ul>
@@ -13996,7 +14008,7 @@ Executable: krita.exe
 </ul>
 </li>
 </ul>
-<h2 id="usage-188"><a class="header" href="#usage-188">usage</a></h2>
+<h2 id="usage-189"><a class="header" href="#usage-189">usage</a></h2>
 <ol>
 <li>Open a image with IrfanView.</li>
 <li>(Optional) Hold and drag left mouse button → <code>Shift+Up/Down/Left/Right</code> → <code>Alt+Up/Down/Left/Right</code> → <code>Ctrl+y</code> to crop.</li>
@@ -14178,7 +14190,7 @@ unzip Solarized.zip -d Solarized
 <h2 id="install-386"><a class="header" href="#install-386">install</a></h2>
 <pre><code class="language-sh">scoop install miktex
 </code></pre>
-<h2 id="usage-189"><a class="header" href="#usage-189">usage</a></h2>
+<h2 id="usage-190"><a class="header" href="#usage-190">usage</a></h2>
 <ul>
 <li>MiKTeX Console → Tasks
 <ul>
@@ -14379,7 +14391,7 @@ It executes and controls console apps such as x265, mkvmerge, ffmpeg, etc. and u
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="wallpaper-engine"><a class="header" href="#wallpaper-engine"><a href="https://wallpaperengine.io/">Wallpaper Engine</a></a></h1>
-<h2 id="usage-190"><a class="header" href="#usage-190">usage</a></h2>
+<h2 id="usage-191"><a class="header" href="#usage-191">usage</a></h2>
 <ol>
 <li>新建 ... 关闭.</li>
 <li>编辑 → 在资源管理器中打开 → file.json.</li>
@@ -14422,7 +14434,7 @@ Bitrate: 96
 <h2 id="install-407"><a class="header" href="#install-407">install</a></h2>
 <pre><code class="language-sh">scoop install winscp
 </code></pre>
-<h2 id="usage-191"><a class="header" href="#usage-191">usage</a></h2>
+<h2 id="usage-192"><a class="header" href="#usage-192">usage</a></h2>
 <ul>
 <li>WinSCP → Synchronize:
 <pre><code>Local directory: roms\
@@ -15226,7 +15238,7 @@ pip install -r requirements.txt
 <p><a href="https://github.com/Mithadon/obsidian-kokoro-tts-plugin#manual-installation">https://github.com/Mithadon/obsidian-kokoro-tts-plugin#manual-installation</a> <a href="#fr-1-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="media-slider"><a class="header" href="#media-slider"><a href="https://github.com/amatya-aditya/obsidian-media-slider">Media Slider</a></a></h1>
-<h2 id="usage-192"><a class="header" href="#usage-192">usage</a></h2>
+<h2 id="usage-193"><a class="header" href="#usage-193">usage</a></h2>
 <pre><code class="language-md">```media-slider
 ---
 sliderId: my-slider
@@ -15270,7 +15282,7 @@ scoop install sublime-text
 rmdir /S /Q "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User"
 mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_DIR%\.config\sublime-text\Packages\User"
 </code></pre>
-<h2 id="usage-193"><a class="header" href="#usage-193">usage</a></h2>
+<h2 id="usage-194"><a class="header" href="#usage-194">usage</a></h2>
 <ul>
 <li>Edit → Permute Lines → Unique</li>
 </ul>
@@ -15914,9 +15926,7 @@ flatpak install flathub sh.fhs.ksre
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lutris"><a class="header" href="#lutris"><a href="https://lutris.net/">Lutris</a></a></h1>
 <h2 id="install-419"><a class="header" href="#install-419">install</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
-<pre><code class="language-sh"># AMD GPUs gpu driver
-sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
-# Vulkan
+<pre><code class="language-sh"># Vulkan
 sudo pacman -S vulkan-tools
 # Lutris
 sudo pacman -S lutris
@@ -16279,7 +16289,7 @@ yay -S --noconfirm emulationstation-de
 <pre><code class="language-sh">cd ES-DE/themes
 git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 </code></pre>
-<h2 id="usage-194"><a class="header" href="#usage-194">usage</a></h2>
+<h2 id="usage-195"><a class="header" href="#usage-195">usage</a></h2>
 <ul>
 <li>ES-DE → Setting → UI Settings
 <ul>
@@ -16453,7 +16463,7 @@ python manage.py makemigrations albums
 python manage.py migrate
 python manage.py compilemessages
 </code></pre>
-<h2 id="usage-195"><a class="header" href="#usage-195">usage</a></h2>
+<h2 id="usage-196"><a class="header" href="#usage-196">usage</a></h2>
 <pre><code class="language-sh">python manage.py runserver localhost:8010
 </code></pre>
 <p>Visit <code>http://localhost:8010/albums</code>.</p>
@@ -16464,7 +16474,7 @@ python manage.py compilemessages
 <pre><code class="language-sh">git clone --depth=1 https://github.com/gsuberland/altium_js
 cd altium_js
 </code></pre>
-<h2 id="usage-196"><a class="header" href="#usage-196">usage</a></h2>
+<h2 id="usage-197"><a class="header" href="#usage-197">usage</a></h2>
 <p>Open <code>altium_sch.html</code>.</p>
 <p><img src="optWeb//_image/optWeb/altium_js.png" alt="altium_js" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="animegarden"><a class="header" href="#animegarden"><a href="https://github.com/yjl9903/AnimeGarden">AnimeGarden</a></a></h1>
@@ -16487,7 +16497,7 @@ uv pip install torch --index-url https://download.pytorch.org/whl/cu121
 uv pip install .
 uv pip install gradio
 </code></pre>
-<h2 id="usage-197"><a class="header" href="#usage-197">usage</a></h2>
+<h2 id="usage-198"><a class="header" href="#usage-198">usage</a></h2>
 <pre><code class="language-sh">python webui.py
 </code></pre>
 <p><img src="optWeb//_image/optWeb/bark-webui.png" alt="bark-webui" /></p>
@@ -16515,7 +16525,7 @@ nvm use 16.13.2
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-198"><a class="header" href="#usage-198">usage</a></h2>
+<h2 id="usage-199"><a class="header" href="#usage-199">usage</a></h2>
 <pre><code class="language-sh">serve -s build -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/calcutext.png" alt="calcutext" /></p>
@@ -16528,7 +16538,7 @@ uv venv
 .venv\Scripts\activate.bat
 uv pip install -e .
 </code></pre>
-<h2 id="usage-199"><a class="header" href="#usage-199">usage</a></h2>
+<h2 id="usage-200"><a class="header" href="#usage-200">usage</a></h2>
 <pre><code class="language-sh">python changedetection.py
 # pm2 start changedetection.py --name changedetection --interpreter ".venv/Scripts/python.exe" --cwd "changedetection.io"
 </code></pre>
@@ -16543,7 +16553,7 @@ cd Chat2DB
 vim docker-compose.yml
 # Copy from https://github.com/CodePhiliaX/Chat2DB/blob/main/docker/docker-compose.yml
 </code></pre>
-<h2 id="usage-200"><a class="header" href="#usage-200">usage</a></h2>
+<h2 id="usage-201"><a class="header" href="#usage-201">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>
 <p>Visit <code>http://&lt;your_host&gt;:10824</code>, login with user <code>chat2db</code>, password <code>chat2db</code>.</p>
@@ -16557,7 +16567,7 @@ cd web
 npm ci
 npm run build
 </code></pre>
-<h2 id="usage-201"><a class="header" href="#usage-201">usage</a></h2>
+<h2 id="usage-202"><a class="header" href="#usage-202">usage</a></h2>
 <pre><code class="language-sh">npm run dev
 </code></pre>
 <p>Visit <code>http://localhost:3000/chatgpt-subtitle-translator</code>.</p>
@@ -16573,7 +16583,7 @@ nvm use 16.20.0
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-202"><a class="header" href="#usage-202">usage</a></h2>
+<h2 id="usage-203"><a class="header" href="#usage-203">usage</a></h2>
 <p>Open <code>./dist/&lt;the_one&gt;.htm</code>.</p>
 <p><img src="optWeb//_image/optWeb/cheatsheet-generator.png" alt="cheatsheet-generator" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cl-calc"><a class="header" href="#cl-calc"><a href="https://github.com/ovk/clcalc">CL Calc</a></a></h1>
@@ -16584,7 +16594,7 @@ cd clcalc
 npm install
 node node_modules/gulp/bin/gulp.js
 </code></pre>
-<h2 id="usage-203"><a class="header" href="#usage-203">usage</a></h2>
+<h2 id="usage-204"><a class="header" href="#usage-204">usage</a></h2>
 <pre><code class="language-sh">serve -s dist -p 4321
 </code></pre>
 <p>If app take up <code>4321</code> port, visit <code>chrome://serviceworker-internals/?devtools</code> and unregister it.</p>
@@ -16606,7 +16616,7 @@ cd cnvrt
 pnpm install
 pnpm build
 </code></pre>
-<h2 id="usage-204"><a class="header" href="#usage-204">usage</a></h2>
+<h2 id="usage-205"><a class="header" href="#usage-205">usage</a></h2>
 <pre><code class="language-sh">pnpm start
 </code></pre>
 <p><img src="optWeb//_image/optWeb/cnvrt.png" alt="cnvrt" /></p>
@@ -16618,7 +16628,7 @@ cd codi.link
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-205"><a class="header" href="#usage-205">usage</a></h2>
+<h2 id="usage-206"><a class="header" href="#usage-206">usage</a></h2>
 <pre><code class="language-sh">serve -s dist -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/codi-link.png" alt="codi-link" /></p>
@@ -16792,7 +16802,7 @@ cd dgmjs
 npm install
 npm build
 </code></pre>
-<h2 id="usage-206"><a class="header" href="#usage-206">usage</a></h2>
+<h2 id="usage-207"><a class="header" href="#usage-207">usage</a></h2>
 <pre><code class="language-sh">npm run dev
 </code></pre>
 <p><img src="optWeb//_image/optWeb/dgmjs.png" alt="dgmjs" /></p>
@@ -16807,7 +16817,7 @@ nvm use 16.20.0
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-207"><a class="header" href="#usage-207">usage</a></h2>
+<h2 id="usage-208"><a class="header" href="#usage-208">usage</a></h2>
 <pre><code class="language-sh">npm run start
 </code></pre>
 <p><img src="optWeb//_image/optWeb/diceroller.png" alt="diceroller" /></p>
@@ -16819,7 +16829,7 @@ npm run build
 cd dify/docker
 cp .env.example .env
 </code></pre>
-<h2 id="usage-208"><a class="header" href="#usage-208">usage</a></h2>
+<h2 id="usage-209"><a class="header" href="#usage-209">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose --env-file .env up -d
 </code></pre>
 <h3 id="create-chatbot-and-knowledge-bases"><a class="header" href="#create-chatbot-and-knowledge-bases">Create chatbot and knowledge bases</a></h3>
@@ -16894,7 +16904,7 @@ uv venv
 uv pip install git+https://github.com/mindee/doctr.git#egg=python-doctr[torch,viz]
 uv pip install streamlit&gt;=1.0.0
 </code></pre>
-<h2 id="usage-209"><a class="header" href="#usage-209">usage</a></h2>
+<h2 id="usage-210"><a class="header" href="#usage-210">usage</a></h2>
 <pre><code class="language-sh">set USE_TORCH=1
 streamlit run demo/app.py
 </code></pre>
@@ -16909,7 +16919,7 @@ cd Drawflow
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-210"><a class="header" href="#usage-210">usage</a></h2>
+<h2 id="usage-211"><a class="header" href="#usage-211">usage</a></h2>
 <p>Open <code>./docs/index.html</code>.</p>
 <p><img src="optWeb//_image/optWeb/drawflow.png" alt="drawflow" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="easy-webpage-summarizer"><a class="header" href="#easy-webpage-summarizer"><a href="https://github.com/cobanov/easy-web-summarizer">Easy Webpage Summarizer</a></a></h1>
@@ -16922,7 +16932,7 @@ uv venv
 uv pip install -r requirements.txt
 ollama pull llama3:instruct
 </code></pre>
-<h2 id="usage-211"><a class="header" href="#usage-211">usage</a></h2>
+<h2 id="usage-212"><a class="header" href="#usage-212">usage</a></h2>
 <pre><code class="language-sh">## As CLI
 python app/webui.py -u &lt;url&gt;
 </code></pre>
@@ -16960,7 +16970,7 @@ uv python -m nltk.downloader punkt_tab
 uv pip install mecab mecab-python3 unidic
 python -m unidic download
 </code></pre>
-<h2 id="usage-212"><a class="header" href="#usage-212">usage</a></h2>
+<h2 id="usage-213"><a class="header" href="#usage-213">usage</a></h2>
 <pre><code class="language-sh">python app.py
 </code></pre>
 <pre><code class="language-sh">python app.py --headless True --use_custom_model True --ebook &lt;ebook_file_path&gt; --voice &lt;target_voice_file_path&gt; --language &lt;language&gt; --custom_model &lt;custom_model_path&gt; --custom_config &lt;custom_config_path&gt; --custom_vocab &lt;custom_vocab_path&gt;
@@ -16977,7 +16987,7 @@ cd epub-manga-creator
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-213"><a class="header" href="#usage-213">usage</a></h2>
+<h2 id="usage-214"><a class="header" href="#usage-214">usage</a></h2>
 <pre><code class="language-sh">serve -s build -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/epub-manga-creator.png" alt="epub-manga-creator" /></p>
@@ -16987,7 +16997,7 @@ npm run build
 <pre><code class="language-sh">git clone --depth=1 https://github.com/pgaskin/ePubViewer
 cd ePubViewer
 </code></pre>
-<h2 id="usage-214"><a class="header" href="#usage-214">usage</a></h2>
+<h2 id="usage-215"><a class="header" href="#usage-215">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 # pm2 serve . 4321 --name epubvidewer --spa
 </code></pre>
@@ -17004,7 +17014,7 @@ cd etytree
 yarn
 yarn build
 </code></pre>
-<h2 id="usage-215"><a class="header" href="#usage-215">usage</a></h2>
+<h2 id="usage-216"><a class="header" href="#usage-216">usage</a></h2>
 <pre><code class="language-sh">yarn dev
 </code></pre>
 <p><img src="optWeb//_image/optWeb/etytree.png" alt="etytree" /></p>
@@ -17016,7 +17026,7 @@ cd excalidraw
 yarn
 yarn build
 </code></pre>
-<h2 id="usage-216"><a class="header" href="#usage-216">usage</a></h2>
+<h2 id="usage-217"><a class="header" href="#usage-217">usage</a></h2>
 <pre><code class="language-sh">yarn start
 </code></pre>
 <p><img src="optWeb//_image/optWeb/excalidraw.png" alt="excalidraw" /></p>
@@ -17027,7 +17037,7 @@ yarn build
 cd excalith-start-page
 yarn
 </code></pre>
-<h2 id="usage-217"><a class="header" href="#usage-217">usage</a></h2>
+<h2 id="usage-218"><a class="header" href="#usage-218">usage</a></h2>
 <pre><code class="language-sh">yarn dev
 # pm2 start yarn --watch --name "excalith-start-page" -- dev
 </code></pre>
@@ -17042,7 +17052,7 @@ uv venv
 uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 uv pip install -e .
 </code></pre>
-<h2 id="usage-218"><a class="header" href="#usage-218">usage</a></h2>
+<h2 id="usage-219"><a class="header" href="#usage-219">usage</a></h2>
 <pre><code class="language-sh">uv pip install hf_transfer
 f5-tts_infer-gradio
 </code></pre>
@@ -17090,7 +17100,7 @@ subl config.json5
 "output_dir": "&lt;output_dir&gt;",
 "language": "Chinese",
 </code></pre>
-<h2 id="usage-219"><a class="header" href="#usage-219">usage</a></h2>
+<h2 id="usage-220"><a class="header" href="#usage-220">usage</a></h2>
 <pre><code class="language-sh">## As CLI
 python cli.py --whisper_implementation "faster-whisper" --vad "silero-vad-skip-gaps" --auto_parallel true --vad_parallel_devices 0 --model "large-v2" --language "Chinese" --initial_prompt="对于普通话句子，以中文简体输出" --diarization_num_speakers 1 --auth_token &lt;hf_token&gt; --output_dir "C:/Users/User/Downloads" &lt;input&gt;
 </code></pre>
@@ -17124,7 +17134,7 @@ cd fastgpt
 curl -O https://raw.githubusercontent.com/labring/FastGPT/main/projects/app/data/config.json
 curl -o docker-compose.yml https://raw.githubusercontent.com/labring/FastGPT/main/files/docker/docker-compose-pgvector.yml
 </code></pre>
-<h2 id="usage-220"><a class="header" href="#usage-220">usage</a></h2>
+<h2 id="usage-221"><a class="header" href="#usage-221">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>
 <hr>
@@ -17145,7 +17155,7 @@ subl .eslintrc.json
 <pre><code class="language-sh">yarn install
 yarn build
 </code></pre>
-<h2 id="usage-221"><a class="header" href="#usage-221">usage</a></h2>
+<h2 id="usage-222"><a class="header" href="#usage-222">usage</a></h2>
 <pre><code class="language-sh">yarn start -- -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/favycon.png" alt="favycon" /></p>
@@ -17155,7 +17165,7 @@ yarn build
 <pre><code class="language-sh">git clone --depth=1 https://github.com/ozdefir/finetuneas
 cd finetuneas
 </code></pre>
-<h2 id="usage-222"><a class="header" href="#usage-222">usage</a></h2>
+<h2 id="usage-223"><a class="header" href="#usage-223">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/finetuneas.png" alt="finetuneas" /></p>
@@ -17176,7 +17186,7 @@ uv pip install hf_transfer
 <li>Create folder <code>checkpoints/</code>.</li>
 <li>Download <a href="https://huggingface.co/fishaudio/openaudio-s1-mini/tree/main">fishaudio/openaudio-s1-mini</a> into <code>checkpoints\openaudio-s1-mini</code>.</li>
 </ol>
-<h2 id="usage-223"><a class="header" href="#usage-223">usage</a></h2>
+<h2 id="usage-224"><a class="header" href="#usage-224">usage</a></h2>
 <pre><code class="language-sh"># As GUI
 python -m tools.run_webui --llama-checkpoint-path "checkpoints/openaudio-s1-mini" --decoder-checkpoint-path "checkpoints/openaudio-s1-mini/codec.pth" --decoder-config-name modded_dac_vq
 </code></pre>
@@ -17201,7 +17211,7 @@ cd flatdraw
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-224"><a class="header" href="#usage-224">usage</a></h2>
+<h2 id="usage-225"><a class="header" href="#usage-225">usage</a></h2>
 <pre><code class="language-sh">npm run dev
 </code></pre>
 <p><img src="optWeb//_image/optWeb/flatdraw.png" alt="flatdraw" /></p>
@@ -17212,7 +17222,7 @@ cd flood
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-225"><a class="header" href="#usage-225">usage</a></h2>
+<h2 id="usage-226"><a class="header" href="#usage-226">usage</a></h2>
 <pre><code class="language-sh">pm2 start npm --name "flood" -- run start
 pm2 save
 </code></pre>
@@ -17232,7 +17242,7 @@ URL: http://&lt;your_host&gt;:&lt;port&gt;
 Username: &lt;qBittorrent_user&gt;
 Password: &lt;qBittorrent_passwd&gt;
 </code></pre>
-<h2 id="troubleshoot-9"><a class="header" href="#troubleshoot-9">troubleshoot</a></h2>
+<h2 id="troubleshoot-10"><a class="header" href="#troubleshoot-10">troubleshoot</a></h2>
 <h3 id="forget-username-or-password"><a class="header" href="#forget-username-or-password">Forget username or password</a></h3>
 <ol>
 <li><code>rm -rf ~/.local/shared/flood/</code>.</li>
@@ -17247,7 +17257,7 @@ cd flowchart-fun
 pnpm install
 pnpm build
 </code></pre>
-<h2 id="usage-226"><a class="header" href="#usage-226">usage</a></h2>
+<h2 id="usage-227"><a class="header" href="#usage-227">usage</a></h2>
 <pre><code class="language-sh">serve -s app/build -p 4321
 # pm2 serve app\build\ 4321 --name flowchart-fun --spa
 </code></pre>
@@ -17263,7 +17273,7 @@ npm i -g pnpm@9.12.0 @microsoft/rush@5.140.0
 rush update
 rush build
 </code></pre>
-<h2 id="usage-227"><a class="header" href="#usage-227">usage</a></h2>
+<h2 id="usage-228"><a class="header" href="#usage-228">usage</a></h2>
 <pre><code class="language-sh">rush dev:docs
 rush dev:demo-fixed-layout
 rush dev:demo-free-layout
@@ -17279,7 +17289,7 @@ cd FocusTide
 yarn install
 yarn generate
 </code></pre>
-<h2 id="usage-228"><a class="header" href="#usage-228">usage</a></h2>
+<h2 id="usage-229"><a class="header" href="#usage-229">usage</a></h2>
 <pre><code class="language-sh">serve dist -p 4321
 # pm2 serve dist 4321 --name focustide --spa
 </code></pre>
@@ -17301,7 +17311,7 @@ cd gifconverter
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-229"><a class="header" href="#usage-229">usage</a></h2>
+<h2 id="usage-230"><a class="header" href="#usage-230">usage</a></h2>
 <pre><code class="language-sh">npm run dev
 </code></pre>
 <p><img src="optWeb//_image/optWeb/gifconverter.png" alt="gifconverter" /></p>
@@ -17312,7 +17322,7 @@ npm run build
 cd gifsicle-wasm-browser
 npm install
 </code></pre>
-<h2 id="usage-230"><a class="header" href="#usage-230">usage</a></h2>
+<h2 id="usage-231"><a class="header" href="#usage-231">usage</a></h2>
 <pre><code class="language-sh">serve -s docs -p 4321
 # pm2 serve docs 4321 --name gifsicle-wasm-browser --spa
 </code></pre>
@@ -17324,7 +17334,7 @@ npm install
 <pre><code class="language-sh">git clone --depth=1 https://github.com/emmanpbarrameda/GIT.RAWify
 cd GIT.RAWify
 </code></pre>
-<h2 id="usage-231"><a class="header" href="#usage-231">usage</a></h2>
+<h2 id="usage-232"><a class="header" href="#usage-232">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 # pm2 serve . 4321 --name git-rawify --spa
 </code></pre>
@@ -17374,7 +17384,7 @@ cargo install --force wasm-opt
 npm install vite --save-dev
 npm run build
 </code></pre>
-<h2 id="usage-232"><a class="header" href="#usage-232">usage</a></h2>
+<h2 id="usage-233"><a class="header" href="#usage-233">usage</a></h2>
 <pre><code class="language-sh">pm2 serve dist 4321 --name graphite --spa
 </code></pre>
 <hr>
@@ -17389,7 +17399,7 @@ cd guitar-tabs-editor
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-233"><a class="header" href="#usage-233">usage</a></h2>
+<h2 id="usage-234"><a class="header" href="#usage-234">usage</a></h2>
 <pre><code class="language-sh">npm start
 </code></pre>
 <h2 id="optional-6"><a class="header" href="#optional-6">optional</a></h2>
@@ -17406,7 +17416,7 @@ npm run build
 <pre><code class="language-sh">git clone --depth=1 https://github.com/island205/h2m
 cd h2m
 </code></pre>
-<h2 id="usage-234"><a class="header" href="#usage-234">usage</a></h2>
+<h2 id="usage-235"><a class="header" href="#usage-235">usage</a></h2>
 <p>Open <code>index.html</code>.</p>
 <p><img src="optWeb//_image/optWeb/h2m.png" alt="h2m" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="headscale-ui"><a class="header" href="#headscale-ui"><a href="https://github.com/gurucomputing/headscale-ui">Headscale-UI</a></a></h1>
@@ -17433,7 +17443,7 @@ npm add -g serve
 cd hot-chain-svg
 yarn
 </code></pre>
-<h2 id="usage-235"><a class="header" href="#usage-235">usage</a></h2>
+<h2 id="usage-236"><a class="header" href="#usage-236">usage</a></h2>
 <pre><code class="language-sh">yarn start
 </code></pre>
 <p><img src="optWeb//_image/optWeb/hot-chain-svg.png" alt="hot-chain-svg" /></p>
@@ -17447,7 +17457,7 @@ nvm use 16.20.0
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-236"><a class="header" href="#usage-236">usage</a></h2>
+<h2 id="usage-237"><a class="header" href="#usage-237">usage</a></h2>
 <pre><code class="language-sh">serve -s build -l 4321
 # pm2 serve build 4321 --name image-editor --watch --spa
 </code></pre>
@@ -17470,7 +17480,7 @@ uv venv --python 3.10
 uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 uv pip install -e .
 </code></pre>
-<h2 id="usage-237"><a class="header" href="#usage-237">usage</a></h2>
+<h2 id="usage-238"><a class="header" href="#usage-238">usage</a></h2>
 <pre><code class="language-sh">cd IOPaint/web_app
 npm run dev
 </code></pre>
@@ -17519,7 +17529,7 @@ nvm use 16.20.0
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-238"><a class="header" href="#usage-238">usage</a></h2>
+<h2 id="usage-239"><a class="header" href="#usage-239">usage</a></h2>
 <pre><code class="language-sh">serve -s build -l 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/js-image-carver.png" alt="js-image-carver" /></p>
@@ -17529,7 +17539,7 @@ npm run build
 <pre><code class="language-sh">git clone --depth=1 https://github.com/myrriad/jsetymology
 cd jsetymology
 </code></pre>
-<h2 id="usage-239"><a class="header" href="#usage-239">usage</a></h2>
+<h2 id="usage-240"><a class="header" href="#usage-240">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/jsetymology.png" alt="jsetymology" /></p>
@@ -17538,7 +17548,7 @@ cd jsetymology
 <p><img src="optWeb//_image/optWeb/json-crack.png" alt="json-crack" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="khoj"><a class="header" href="#khoj"><a href="https://github.com/khoj-ai/khoj">Khoj</a></a></h1>
 <p><img src="https://img.shields.io/github/license/khoj-ai/khoj" alt="" /></p>
-<h2 id="usage-240"><a class="header" href="#usage-240">usage</a></h2>
+<h2 id="usage-241"><a class="header" href="#usage-241">usage</a></h2>
 <pre><code class="language-sh"># Pip
 uv venv
 .venv\Scripts\activate.bat
@@ -17566,7 +17576,7 @@ cd kiwix-js-pwa
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-241"><a class="header" href="#usage-241">usage</a></h2>
+<h2 id="usage-242"><a class="header" href="#usage-242">usage</a></h2>
 <pre><code class="language-sh">npm run serve
 # pm2 serve dist 5173 --name kiwix-js-pwa --spa --env production
 </code></pre>
@@ -17584,7 +17594,7 @@ cd kiwix-js
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-242"><a class="header" href="#usage-242">usage</a></h2>
+<h2 id="usage-243"><a class="header" href="#usage-243">usage</a></h2>
 <pre><code class="language-sh">npm run serve
 # pm2 serve dist 5173 --name kiwix-js --spa --env production
 </code></pre>
@@ -17605,7 +17615,7 @@ pip install torch --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 pip install hf_transfer
 </code></pre>
-<h2 id="usage-243"><a class="header" href="#usage-243">usage</a></h2>
+<h2 id="usage-244"><a class="header" href="#usage-244">usage</a></h2>
 <pre><code class="language-sh">## As CLI
 python tts_demo.py
 </code></pre>
@@ -17626,7 +17636,7 @@ cd ../demo
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-244"><a class="header" href="#usage-244">usage</a></h2>
+<h2 id="usage-245"><a class="header" href="#usage-245">usage</a></h2>
 <pre><code class="language-sh">cd kokoro/demo
 npm run preview
 </code></pre>
@@ -17680,7 +17690,7 @@ pip install -U "huggingface_hub[cli]"
 # set HF_ENDPOINT=https://hf-mirror.com
 huggingface-cli download KwaiVGI/LivePortrait --local-dir pretrained_weights --exclude "*.git*" "README.md" "docs"
 </code></pre>
-<h2 id="usage-245"><a class="header" href="#usage-245">usage</a></h2>
+<h2 id="usage-246"><a class="header" href="#usage-246">usage</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
 <pre><code class="language-sh">## As CLI
 python inference.py
@@ -17728,7 +17738,7 @@ cp .env .env.bak
 # sed -i -e 's/3210/3310/g' -e 's/9000/9100/g' -e 's/9001/9101/g' -e 's/8000/8100/g' .env
 sed -i 's/localhost/&lt;your_ip&gt;/g' .env
 </code></pre>
-<h2 id="usage-246"><a class="header" href="#usage-246">usage</a></h2>
+<h2 id="usage-247"><a class="header" href="#usage-247">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>
 <ol>
@@ -17756,7 +17766,7 @@ pnpm install
 set NODE_OPTIONS=--max-old-space-size=4096
 pnpm build
 </code></pre>
-<h2 id="usage-247"><a class="header" href="#usage-247">usage</a></h2>
+<h2 id="usage-248"><a class="header" href="#usage-248">usage</a></h2>
 <pre><code class="language-sh">pnpm start
 # pm2 start pnpm --name lobe-chat -- run start
 </code></pre>
@@ -17919,7 +17929,7 @@ cd localpdfmerger
 yarn
 yarn build
 </code></pre>
-<h2 id="usage-248"><a class="header" href="#usage-248">usage</a></h2>
+<h2 id="usage-249"><a class="header" href="#usage-249">usage</a></h2>
 <pre><code class="language-sh">yarn start
 </code></pre>
 <h2 id="optional-8"><a class="header" href="#optional-8">optional</a></h2>
@@ -17939,7 +17949,7 @@ cd lookscanned.io
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-249"><a class="header" href="#usage-249">usage</a></h2>
+<h2 id="usage-250"><a class="header" href="#usage-250">usage</a></h2>
 <pre><code class="language-sh">serve -s dist -p 4321
 </code></pre>
 <p>If app take up <code>4321</code> port, visit <code>chrome://serviceworker-internals/?devtools</code> and unregister it.</p>
@@ -17953,7 +17963,7 @@ npm install
 npm audit fix --force
 npm run build
 </code></pre>
-<h2 id="usage-250"><a class="header" href="#usage-250">usage</a></h2>
+<h2 id="usage-251"><a class="header" href="#usage-251">usage</a></h2>
 <pre><code class="language-sh">serve -s docs -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/lrc_editor.png" alt="lrc_editor" /></p>
@@ -17978,7 +17988,7 @@ venv\Scripts\activate.bat
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 </code></pre>
-<h2 id="usage-251"><a class="header" href="#usage-251">usage</a></h2>
+<h2 id="usage-252"><a class="header" href="#usage-252">usage</a></h2>
 <pre><code class="language-sh">python -m manga_translator -v --mode web --use-gpu
 </code></pre>
 <h2 id="optional-9"><a class="header" href="#optional-9">optional</a></h2>
@@ -17997,7 +18007,7 @@ npm install
 npm audit fix --force
 npm run build
 </code></pre>
-<h2 id="usage-252"><a class="header" href="#usage-252">usage</a></h2>
+<h2 id="usage-253"><a class="header" href="#usage-253">usage</a></h2>
 <pre><code class="language-sh">serve -s dist -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/mangarepack.png" alt="mangarepack" /></p>
@@ -18008,7 +18018,7 @@ npm run build
 cd markdownlint
 npm install
 </code></pre>
-<h2 id="usage-253"><a class="header" href="#usage-253">usage</a></h2>
+<h2 id="usage-254"><a class="header" href="#usage-254">usage</a></h2>
 <pre><code class="language-sh">npm run build-demo
 </code></pre>
 <p>Open <code>./demo/default.htm</code>.</p>
@@ -18024,7 +18034,7 @@ uv pip install -e .
 uv pip install hf_transfer
 python -m unidic download
 </code></pre>
-<h2 id="usage-254"><a class="header" href="#usage-254">usage</a></h2>
+<h2 id="usage-255"><a class="header" href="#usage-255">usage</a></h2>
 <pre><code class="language-sh">melo "Hello" temp.wav --language EN
 melo --device cuda --language EN "&lt;text&gt;" temp.wav &amp;&amp; ffplay -autoexit temp.wav
 </code></pre>
@@ -18041,7 +18051,7 @@ cd mermaid-live-editor
 yarn install
 yarn build
 </code></pre>
-<h2 id="usage-255"><a class="header" href="#usage-255">usage</a></h2>
+<h2 id="usage-256"><a class="header" href="#usage-256">usage</a></h2>
 <pre><code class="language-sh">serve -s docs -l 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/mermaid-live-editor.png" alt="mermaid-live-editor" /></p>
@@ -18058,7 +18068,8 @@ uv pip install hf_transfer
 </code></pre>
 <h3 id="docker-compose-1"><a class="header" href="#docker-compose-1">Docker compose</a></h3>
 <p><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>
-<pre><code class="language-sh"># sudo pacman -S nvidia nvidia-utils nvidia-container-toolkit
+<pre><code class="language-sh"># Arch
+# sudo pacman -S nvidia nvidia-utils nvidia-container-toolkit
 mkdir mineru
 cd mineru
 wget https://gcore.jsdelivr.net/gh/opendatalab/MinerU@master/docker/compose.yaml
@@ -18073,7 +18084,7 @@ pip install modelscope
 wget https://gcore.jsdelivr.net/gh/opendatalab/MinerU@master/scripts/download_models.py -O download_models.py
 python download_models.py
 </code></pre>
-<h2 id="usage-256"><a class="header" href="#usage-256">usage</a></h2>
+<h2 id="usage-257"><a class="header" href="#usage-257">usage</a></h2>
 <pre><code class="language-sh"># Cli
 mineru -p &lt;input_path&gt; -o &lt;output_path&gt;
 # WebUI
@@ -18097,7 +18108,7 @@ cd miniPaint
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-257"><a class="header" href="#usage-257">usage</a></h2>
+<h2 id="usage-258"><a class="header" href="#usage-258">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 # pm2 serve . 4321 --name minipaint --spa
 </code></pre>
@@ -18167,7 +18178,7 @@ cd noisecraft
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-258"><a class="header" href="#usage-258">usage</a></h2>
+<h2 id="usage-259"><a class="header" href="#usage-259">usage</a></h2>
 <pre><code class="language-sh">npm run watch
 </code></pre>
 <p><img src="optWeb//_image/opt/noisecraft.png" alt="noisecraft" /></p>
@@ -18180,7 +18191,7 @@ cd notecalc3
 # cargo install --force wasm-pack
 # wasm-pack build --release --target no-modules frontend-web
 </code></pre>
-<h2 id="usage-259"><a class="header" href="#usage-259">usage</a></h2>
+<h2 id="usage-260"><a class="header" href="#usage-260">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/notecalc3.png" alt="notecalc3" /></p>
@@ -18190,7 +18201,7 @@ cd notecalc3
 <pre><code class="language-sh">git clone --depth=1 https://github.com/SteveRidout/notepad-calculator
 cd notepad-calculator
 </code></pre>
-<h2 id="usage-260"><a class="header" href="#usage-260">usage</a></h2>
+<h2 id="usage-261"><a class="header" href="#usage-261">usage</a></h2>
 <p>Open <code>index.html</code>.</p>
 <p><img src="optWeb//_image/optWeb/notepad-calculator.png" alt="notepad-calculator" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ollama-deep-researcher"><a class="header" href="#ollama-deep-researcher"><a href="https://github.com/langchain-ai/ollama-deep-researcher">Ollama Deep Researcher</a></a></h1>
@@ -18204,7 +18215,7 @@ uv venv --python 3.11
 uv pip install -e .
 uv pip install -U "langgraph-cli[inmem]"
 </code></pre>
-<h2 id="usage-261"><a class="header" href="#usage-261">usage</a></h2>
+<h2 id="usage-262"><a class="header" href="#usage-262">usage</a></h2>
 <pre><code class="language-sh">langgraph dev
 </code></pre>
 <p><img src="optWeb//_image/optWeb/ollama_deep_researcher.png" alt="ollama_deep_researcher" /></p>
@@ -18233,7 +18244,7 @@ vim docker-compose.yml
 			- .data:/app/backend/data
 		restart: always
 </code></pre>
-<h2 id="usage-262"><a class="header" href="#usage-262">usage</a></h2>
+<h2 id="usage-263"><a class="header" href="#usage-263">usage</a></h2>
 <pre><code class="language-sh"># Pip
 open-webui serve
 </code></pre>
@@ -18285,7 +18296,7 @@ cd ordered-dither-maker
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-263"><a class="header" href="#usage-263">usage</a></h2>
+<h2 id="usage-264"><a class="header" href="#usage-264">usage</a></h2>
 <pre><code class="language-sh">serve -s docs -p 4321
 </code></pre>
 <p>If app take up <code>4321</code> port, visit <code>chrome://serviceworker-internals/?devtools</code> and unregister it.</p>
@@ -18302,7 +18313,7 @@ npm install
 npm audit fix --force
 npm run build
 </code></pre>
-<h2 id="usage-264"><a class="header" href="#usage-264">usage</a></h2>
+<h2 id="usage-265"><a class="header" href="#usage-265">usage</a></h2>
 <pre><code class="language-sh">serve -s dist -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/pdf-duplex-scan.png" alt="pdf-duplex-scan" /></p>
@@ -18318,7 +18329,7 @@ npm install
 npm install -g gulp-cli
 gulp generic
 </code></pre>
-<h2 id="usage-265"><a class="header" href="#usage-265">usage</a></h2>
+<h2 id="usage-266"><a class="header" href="#usage-266">usage</a></h2>
 <pre><code class="language-sh">dufs build/generic
 # pm2 serve -s build/generic -p 4321 --name pdfjs --spa
 </code></pre>
@@ -18338,7 +18349,7 @@ cd pdf-margins
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-266"><a class="header" href="#usage-266">usage</a></h2>
+<h2 id="usage-267"><a class="header" href="#usage-267">usage</a></h2>
 <pre><code class="language-sh">serve -s build -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/pdf-margins.png" alt="pdf-margins" /></p>
@@ -18351,7 +18362,7 @@ uv venv --python 3.12
 .venv\Scripts\activate.bat
 uv pip install torch==2.6.0 torchaudio==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
 </code></pre>
-<h2 id="usage-267"><a class="header" href="#usage-267">usage</a></h2>
+<h2 id="usage-268"><a class="header" href="#usage-268">usage</a></h2>
 <pre><code class="language-sh">uv pip install deepspeed-0.11.2+cuda124-cp312-cp312-win_amd64.whl
 uv pip install lxml-5.3.0-cp312-cp312-win_amd64.whl
 uv pip install -r requirements.txt
@@ -18368,7 +18379,7 @@ uv venv --python 3.10
 .venv\Scripts\activate.bat
 uv pip install -e .
 </code></pre>
-<h2 id="usage-268"><a class="header" href="#usage-268">usage</a></h2>
+<h2 id="usage-269"><a class="header" href="#usage-269">usage</a></h2>
 <pre><code class="language-sh">pdf2zh -i
 </code></pre>
 <p><img src="optWeb//_image/optWeb/pdfmathtranslate.png" alt="pdfmathtranslate" /></p>
@@ -18380,7 +18391,7 @@ cd pdfme
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-269"><a class="header" href="#usage-269">usage</a></h2>
+<h2 id="usage-270"><a class="header" href="#usage-270">usage</a></h2>
 <pre><code class="language-sh">serve -s build -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/pdfme.png" alt="pdfme" /></p>
@@ -18433,7 +18444,7 @@ cd potluck
 yarn
 yarn build
 </code></pre>
-<h2 id="usage-270"><a class="header" href="#usage-270">usage</a></h2>
+<h2 id="usage-271"><a class="header" href="#usage-271">usage</a></h2>
 <pre><code class="language-sh">serve -s dist -p 4321
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="programming-fonts"><a class="header" href="#programming-fonts"><a href="https://github.com/braver/programmingfonts">Programming Fonts</a></a></h1>
@@ -18443,7 +18454,7 @@ yarn build
 cd programmingfonts
 npm install
 </code></pre>
-<h2 id="usage-271"><a class="header" href="#usage-271">usage</a></h2>
+<h2 id="usage-272"><a class="header" href="#usage-272">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/programmingfonts.png" alt="programmingfonts" /></p>
@@ -18459,7 +18470,7 @@ nvm use 16.20.0
 npm install
 npm run generate
 </code></pre>
-<h2 id="usage-272"><a class="header" href="#usage-272">usage</a></h2>
+<h2 id="usage-273"><a class="header" href="#usage-273">usage</a></h2>
 <pre><code class="language-sh">npm run start
 # pm2 start npm --name "qr-designer" -- run start
 </code></pre>
@@ -18499,7 +18510,7 @@ cd quiver
 <li>Download <code>zip</code> form [KaTeX - Releases] (https://github.com/KaTeX/KaTeX/releases).</li>
 <li>Decompress and move <code>katex/</code> into <code>src/</code>.</li>
 </ol>
-<h2 id="usage-273"><a class="header" href="#usage-273">usage</a></h2>
+<h2 id="usage-274"><a class="header" href="#usage-274">usage</a></h2>
 <pre><code class="language-sh">serve -s src -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/quiver.png" alt="quiver" /></p>
@@ -18513,7 +18524,7 @@ uv venv
 .venv\Scripts\activate.bat
 uv pip install -e .
 </code></pre>
-<h2 id="usage-274"><a class="header" href="#usage-274">usage</a></h2>
+<h2 id="usage-275"><a class="header" href="#usage-275">usage</a></h2>
 <pre><code class="language-sh">uv pip install hf_transfer
 python -m rag_chatbot --host localhost &amp; ngrok http 4321
 </code></pre>
@@ -18526,7 +18537,7 @@ sudo sysctl -w vm.max_map_count=262144
 git clone --depth=1 https://github.com/infiniflow/ragflow
 cd ragflow
 </code></pre>
-<h2 id="usage-275"><a class="header" href="#usage-275">usage</a></h2>
+<h2 id="usage-276"><a class="header" href="#usage-276">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose -f docker/docker-compose.yml up -d
 docker logs -f ragflow-server
 </code></pre>
@@ -18541,7 +18552,7 @@ docker logs -f ragflow-server
 cd reaflow
 npm install
 </code></pre>
-<h2 id="usage-276"><a class="header" href="#usage-276">usage</a></h2>
+<h2 id="usage-277"><a class="header" href="#usage-277">usage</a></h2>
 <pre><code class="language-sh">npm run start
 </code></pre>
 <p><img src="optWeb//_image/optWeb/reaflow.png" alt="reaflow" /></p>
@@ -18553,7 +18564,7 @@ cd recoded
 npm install --legacy-peer-deps
 npm run build
 </code></pre>
-<h2 id="usage-277"><a class="header" href="#usage-277">usage</a></h2>
+<h2 id="usage-278"><a class="header" href="#usage-278">usage</a></h2>
 <pre><code class="language-sh">serve -s build -p 4321
 # pm2 serve build 4321 --name recoded --spa
 </code></pre>
@@ -18567,7 +18578,7 @@ cd reference
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-278"><a class="header" href="#usage-278">usage</a></h2>
+<h2 id="usage-279"><a class="header" href="#usage-279">usage</a></h2>
 <pre><code class="language-sh">npm run dev
 # hexo g
 # pm2 serve public 4321 --name reference --watch --spa
@@ -18593,7 +18604,7 @@ nvm install 10.21.0
 nvm use 10.21.0
 npm install
 </code></pre>
-<h2 id="usage-279"><a class="header" href="#usage-279">usage</a></h2>
+<h2 id="usage-280"><a class="header" href="#usage-280">usage</a></h2>
 <pre><code class="language-sh">gulp
 # pm2 start "...\gulp-cli\bin\gulp.js" --interpreter "...\.nvm\v10.21.0\node.exe" -n regexr
 </code></pre>
@@ -18638,7 +18649,7 @@ subl package.json
 <pre><code class="language-sh">npm install
 npm run build
 </code></pre>
-<h2 id="usage-280"><a class="header" href="#usage-280">usage</a></h2>
+<h2 id="usage-281"><a class="header" href="#usage-281">usage</a></h2>
 <pre><code class="language-sh">serve -s build -p 4321
 # pm2 serve build 4321 --name reminiflux --spa
 </code></pre>
@@ -18658,7 +18669,7 @@ API key: &lt;paste_to&gt;
 cd reportbro-designer
 npm install
 </code></pre>
-<h2 id="usage-281"><a class="header" href="#usage-281">usage</a></h2>
+<h2 id="usage-282"><a class="header" href="#usage-282">usage</a></h2>
 <pre><code class="language-sh">npm run build-prod
 </code></pre>
 <p>Open <code>./demos/default.html</code>.</p>
@@ -18675,7 +18686,7 @@ nvm install 16.20.0
 nvm use 16.20.0
 pnpm install
 </code></pre>
-<h2 id="usage-282"><a class="header" href="#usage-282">usage</a></h2>
+<h2 id="usage-283"><a class="header" href="#usage-283">usage</a></h2>
 <pre><code class="language-sh">pnpm dev:playground -- -p 4321
 # set PORT=4321 &amp;&amp; pm2 start -n "satori" --cwd "./" "./node_modules/turbo/bin/turbo" -- dev --filter=satori-playground...
 </code></pre>
@@ -18708,7 +18719,7 @@ sudo docker compose --env-file .env up -d
 cd signature_pad
 npm install
 </code></pre>
-<h2 id="usage-283"><a class="header" href="#usage-283">usage</a></h2>
+<h2 id="usage-284"><a class="header" href="#usage-284">usage</a></h2>
 <pre><code class="language-sh">npm run serve
 </code></pre>
 <h3 id="deploy-with-vercel-2"><a class="header" href="#deploy-with-vercel-2">Deploy with Vercel</a></h3>
@@ -18725,7 +18736,7 @@ cd sketch-to-lineart
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-284"><a class="header" href="#usage-284">usage</a></h2>
+<h2 id="usage-285"><a class="header" href="#usage-285">usage</a></h2>
 <pre><code class="language-sh">serve -s docs -p 4321
 </code></pre>
 <p>If app take up <code>4321</code> port, visit <code>chrome://serviceworker-internals/?devtools</code> and unregister it.</p>
@@ -18753,7 +18764,7 @@ subl package.json
 <pre><code class="language-sh">npm install
 npm run build
 </code></pre>
-<h2 id="usage-285"><a class="header" href="#usage-285">usage</a></h2>
+<h2 id="usage-286"><a class="header" href="#usage-286">usage</a></h2>
 <pre><code class="language-sh">cd snippet-box/build
 node server.js
 </code></pre>
@@ -18763,7 +18774,7 @@ node server.js
 <h2 id="install-519"><a class="header" href="#install-519">install</a></h2>
 <pre><code class="language-sh">pipx install sqlite-web
 </code></pre>
-<h2 id="usage-286"><a class="header" href="#usage-286">usage</a></h2>
+<h2 id="usage-287"><a class="header" href="#usage-287">usage</a></h2>
 <pre><code class="language-sh">sqlite_web &lt;db_file&gt;
 </code></pre>
 <p><img src="optWeb//_image/optWeb/sqlite-web.png" alt="sqlite-web" /></p>
@@ -18777,7 +18788,7 @@ cd sreadium
 <li>Put <code>*.epub</code> into <code>epub_content/</code>.</li>
 <li>Modify `epub_library.opds.</li>
 </ol>
-<h2 id="usage-287"><a class="header" href="#usage-287">usage</a></h2>
+<h2 id="usage-288"><a class="header" href="#usage-288">usage</a></h2>
 <pre><code class="language-sh">serve -s . -p 4321
 # pm2 serve . 4321 --name sreadium --spa
 </code></pre>
@@ -18794,7 +18805,7 @@ python -m venv .venv
 </code></pre>
 <pre><code class="language-batch">set COMMANDLINE_ARGS="--use-directml"
 </code></pre>
-<h2 id="usage-288"><a class="header" href="#usage-288">usage</a></h2>
+<h2 id="usage-289"><a class="header" href="#usage-289">usage</a></h2>
 <pre><code class="language-sh">pip install hf_transfer
 webui-user.bat
 </code></pre>
@@ -18818,7 +18829,7 @@ subl webui-user.bat
 set XFORMERS_MORE_DETAILS=1
 </code></pre>
 <p>Download type <code>Checkpoint *</code> and put file <code>*.safetensors</code> into <code>models/Stable-diffusion</code>. Liked <a href="https://civitai.com/models/18022/earth-satellite-image-map-generator-mix">Earth Satellite Image Map Generator Mix</a>.</p>
-<h2 id="usage-289"><a class="header" href="#usage-289">usage</a></h2>
+<h2 id="usage-290"><a class="header" href="#usage-290">usage</a></h2>
 <pre><code class="language-sh">pip install hf_transfer
 webui-user.bat
 </code></pre>
@@ -19036,7 +19047,7 @@ nvm use 16.20.0
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-290"><a class="header" href="#usage-290">usage</a></h2>
+<h2 id="usage-291"><a class="header" href="#usage-291">usage</a></h2>
 <pre><code class="language-sh">cd streamlit_image_crop/frontend
 serve -s build -l 4321
 </code></pre>
@@ -19063,7 +19074,7 @@ cd svg-path-editor
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-291"><a class="header" href="#usage-291">usage</a></h2>
+<h2 id="usage-292"><a class="header" href="#usage-292">usage</a></h2>
 <pre><code class="language-sh">serve -s dist/svg-path-editor -l 4321
 </code></pre>
 <p>If app take up <code>4321</code> port, visit <code>chrome://serviceworker-internals/?devtools</code> and unregister it.</p>
@@ -19076,7 +19087,7 @@ cd svgedit
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-292"><a class="header" href="#usage-292">usage</a></h2>
+<h2 id="usage-293"><a class="header" href="#usage-293">usage</a></h2>
 <pre><code class="language-sh">serve -s dist/editor -l 4321
 </code></pre>
 <h3 id="deploy-with-vercel-3"><a class="header" href="#deploy-with-vercel-3">Deploy with Vercel</a></h3>
@@ -19093,7 +19104,7 @@ cd svgomg
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-293"><a class="header" href="#usage-293">usage</a></h2>
+<h2 id="usage-294"><a class="header" href="#usage-294">usage</a></h2>
 <pre><code class="language-sh">serve -s build -p 4321
 </code></pre>
 <p><img src="optWeb//_image/optWeb/svgomg.png" alt="svgomg" /></p>
@@ -19104,7 +19115,7 @@ npm run build
 cd tab-editor
 npm install
 </code></pre>
-<h2 id="usage-294"><a class="header" href="#usage-294">usage</a></h2>
+<h2 id="usage-295"><a class="header" href="#usage-295">usage</a></h2>
 <pre><code class="language-sh">npm start
 </code></pre>
 <h2 id="optional-15"><a class="header" href="#optional-15">optional</a></h2>
@@ -19136,7 +19147,7 @@ npm install
 npm audit fix --force
 npx prettier --write .
 </code></pre>
-<h2 id="usage-295"><a class="header" href="#usage-295">usage</a></h2>
+<h2 id="usage-296"><a class="header" href="#usage-296">usage</a></h2>
 <pre><code class="language-sh">npm run dist
 </code></pre>
 <p>Open <code>dist/tikzcd-editor-v0.9.0/index.html</code>.</p>
@@ -19148,7 +19159,7 @@ npx prettier --write .
 cd tldraw
 yarn
 </code></pre>
-<h2 id="usage-296"><a class="header" href="#usage-296">usage</a></h2>
+<h2 id="usage-297"><a class="header" href="#usage-297">usage</a></h2>
 <pre><code class="language-sh">yarn dev
 </code></pre>
 <p>Visit <code>http://localhost:5420/develop</code>.</p>
@@ -19169,7 +19180,7 @@ uv pip install -r requirements-windows.txt
 <li>Get <code>model.ckpt</code> from <a href="https://huggingface.co/Doubiiu/ToonCrafter/tree/main">Doubiiu/ToonCrafter</a><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup>.</li>
 <li>Put it into <code>checkpoints\tooncrafter_512_interp_v1\model.ckpt</code>.</li>
 </ol>
-<h2 id="usage-297"><a class="header" href="#usage-297">usage</a></h2>
+<h2 id="usage-298"><a class="header" href="#usage-298">usage</a></h2>
 <pre><code class="language-sh">set XFORMERS_FORCE_DISABLE_TRITON="1"
 python gradio_app.py
 </code></pre>
@@ -19189,7 +19200,7 @@ uv venv --python 3.9
 .venv\Scripts\activate.bat
 uv pip install flask flask-cors flask-socketio python-socketio requests tqdm aiohttp lxml ebooklib
 </code></pre>
-<h2 id="usage-298"><a class="header" href="#usage-298">usage</a></h2>
+<h2 id="usage-299"><a class="header" href="#usage-299">usage</a></h2>
 <pre><code class="language-sh">python translation_api.py
 </code></pre>
 <p><img src="optWeb//_image/optWeb/translatebookwithllm.png" alt="translatebookwithllm" /></p>
@@ -19201,7 +19212,7 @@ cd url-encoder
 npm install
 npm run build
 </code></pre>
-<h2 id="usage-299"><a class="header" href="#usage-299">usage</a></h2>
+<h2 id="usage-300"><a class="header" href="#usage-300">usage</a></h2>
 <pre><code class="language-sh">npm run start
 # pm2 serve build 4321 --name url-encoder --spa
 </code></pre>
@@ -19217,7 +19228,7 @@ vim .env
 OLLAMA_MODEL=llama3.1
 OLLAMA_EMBED_MODEL=mxbai-embed-large
 </code></pre>
-<h2 id="usage-300"><a class="header" href="#usage-300">usage</a></h2>
+<h2 id="usage-301"><a class="header" href="#usage-301">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose --env-file .env up -d --build
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="video-gif-web-converter"><a class="header" href="#video-gif-web-converter"><a href="https://github.com/nabigraphics/video-gif-web-converter">video-gif-web-converter</a></a></h1>
@@ -19229,7 +19240,7 @@ npm install
 npm audit fix --force
 npm run build
 </code></pre>
-<h2 id="usage-301"><a class="header" href="#usage-301">usage</a></h2>
+<h2 id="usage-302"><a class="header" href="#usage-302">usage</a></h2>
 <pre><code class="language-sh">npm start
 </code></pre>
 <p><img src="optWeb//_image/optWeb/video-gif-web-converter.png" alt="video-gif-web-converter" /></p>
@@ -19247,7 +19258,7 @@ npm install
 cargo install --force wasm-pack
 wasm-pack build
 </code></pre>
-<h2 id="usage-302"><a class="header" href="#usage-302">usage</a></h2>
+<h2 id="usage-303"><a class="header" href="#usage-303">usage</a></h2>
 <pre><code class="language-sh">npm start
 </code></pre>
 <p><img src="optWeb//_image/optWeb/visionmagic.png" alt="visionmagic" /></p>
@@ -19260,7 +19271,7 @@ wasm-pack build
 </ol>
 <pre><code class="language-sh">cd vivliostyle-viewer
 </code></pre>
-<h2 id="usage-303"><a class="header" href="#usage-303">usage</a></h2>
+<h2 id="usage-304"><a class="header" href="#usage-304">usage</a></h2>
 <pre><code class="language-sh">serve -s viewer -p 4321
 # pm2 serve viewer 4321 --name vivliostyle-viewer --spa
 </code></pre>
@@ -19294,7 +19305,7 @@ yay -S --noconfirm vtracer
 # Cargo
 cargo install --force vtracer
 </code></pre>
-<h2 id="usage-304"><a class="header" href="#usage-304">usage</a></h2>
+<h2 id="usage-305"><a class="header" href="#usage-305">usage</a></h2>
 <pre><code class="language-sh"># Web App
 serve -s . -p 4321
 </code></pre>
@@ -19315,7 +19326,7 @@ uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu1
 uv pip install -r requirements.txt
 uv pip install hf_transfer
 </code></pre>
-<h2 id="usage-305"><a class="header" href="#usage-305">usage</a></h2>
+<h2 id="usage-306"><a class="header" href="#usage-306">usage</a></h2>
 <pre><code class="language-sh">user-start-webui.bat
 </code></pre>
 <p><img src="optWeb//_image/optWeb/whisper-webui.png" alt="whisper-webui" /></p>
@@ -19327,7 +19338,7 @@ cd woah
 pnpm install
 pnpm build
 </code></pre>
-<h2 id="usage-306"><a class="header" href="#usage-306">usage</a></h2>
+<h2 id="usage-307"><a class="header" href="#usage-307">usage</a></h2>
 <pre><code class="language-sh">serve -s dist -p 4321
 </code></pre>
 <p>If app take up <code>4321</code> port, visit <code>chrome://serviceworker-internals/?devtools</code> and unregister it.</p>
@@ -19548,7 +19559,7 @@ deb https://mirrors.ustc.edu.cn/debian bullseye-updates main contrib non-free
 <p><a href="https://mirrors.ustc.edu.cn/help/raspbian.html">USTC Mirror Help - Raspbian</a> <a href="#fr-2-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="recalbox-1"><a class="header" href="#recalbox-1"><a href="https://www.recalbox.com/">Recalbox</a></a></h1>
-<h2 id="usage-307"><a class="header" href="#usage-307">usage</a></h2>
+<h2 id="usage-308"><a class="header" href="#usage-308">usage</a></h2>
 <ul>
 <li>Menu → Controller settings → Pair a bluetooth controller.</li>
 <li>Menu → UI Settings
@@ -19720,7 +19731,7 @@ sudo systemctl status xow
 <li>RetroPie (Configuration) → RetroPie Setup → Manage packages → Manage optional packages → <code>love-0.10.2</code> or <code>love</code>.</li>
 <li>Add <code>&lt;game&gt;.love</code> <code>&lt;path_to&gt;/roms/love/</code>.</li>
 </ol>
-<h2 id="usage-308"><a class="header" href="#usage-308">usage</a></h2>
+<h2 id="usage-309"><a class="header" href="#usage-309">usage</a></h2>
 <ol>
 <li>Configure keymap: <code>&lt;Start&gt;</code> → Main Menu → Configure Input → Hold a key on controller to set.</li>
 <li>Refresh roms: <code>&lt;Start&gt;</code> → Main Menu → Quit → Restart EmulationStation → Game listing will be refreshing.</li>
@@ -19926,27 +19937,28 @@ vim /etc/pacman.d/mirrorlist
 cfdisk /dev/nvme?n1
 </code></pre>
 <pre><code>size        | type             | comment
-256M        | EFI System       | /boot
+1G          | EFI System       | /boot
 32G*0.6=18G | Linux Swap       |
 free        | Linux filesystem | /
 </code></pre>
-<pre><code class="language-sh">mkfs.fat -F32 /dev/nvme?n1p?
-mkswap /dev/nvme?n1p?
-mkfs.btrfs -L Arch /dev/nvme?n1p?
+<pre><code class="language-sh">mkfs.fat -F32 /dev/nvme?n1p1
+mkswap /dev/nvme?n1p2
+mkfs.btrfs -L Arch /dev/nvme?n1p3
 </code></pre>
-<pre><code class="language-sh">mount -t btrfs -o compress=zstd /dev/nvme?n1p? /mnt
+<pre><code class="language-sh">mount -t btrfs -o compress=zstd /dev/nvme?n1p3 /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
+btrfs subvolume list -p /mnt
 umount /mnt
 </code></pre>
-<pre><code class="language-sh">mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme?n1p? /mnt
-mkdir /mnt/home
-mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvme?n1p? /mnt/home
+<pre><code class="language-sh">mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme?n1p3 /mnt
+mkdir -p /mnt/home
+mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvme?n1p3 /mnt/home
 mkdir -p /mnt/boot
 # Mount EFI
-mount /dev/nvme?n1p? /mnt/boot
+mount /dev/nvme?n1p1 /mnt/boot
 # Mount Linux Swap
-swapon /dev/nvmexn1pn
+swapon /dev/nvme?n1p2
 </code></pre>
 <pre><code class="language-sh">pacstrap /mnt base base-devel linux linux-firmware btrfs-progs
 </code></pre>
@@ -19993,9 +20005,19 @@ EDITOR=vim visudo
 <pre><code># Uncomment
 %wheel ALL=(ALL:ALL) ALL
 </code></pre>
-<pre><code class="language-sh"># pacman -S intel-ucode # Intel
-pacman -S amd-ucode # AMD
-pacman -S grub efibootmgr os-prober
+<pre><code class="language-sh"># AMD CPU
+pacman -S amd-ucode
+# AMD GPU
+sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
+# Intel CPU
+pacman -S intel-ucode
+# NVIDIA GPU
+sudo pacman -Syu linux-headers
+sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-dkms
+sudo mkinitcpio -P
+sudo modprobe nvidia
+</code></pre>
+<pre><code class="language-sh">pacman -S grub efibootmgr os-prober
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH
 vim /etc/default/grub
 </code></pre>
@@ -20006,6 +20028,7 @@ vim /etc/default/grub
 <pre><code class="language-sh">exit
 umount -R /mnt
 shutdown -h now
+sudo systemctl enable --now NetworkManager
 </code></pre>
 <p><sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">6</a></sup></p>
 <pre><code class="language-sh">lsblk -o name,mountpoint,size,uuid
@@ -20023,11 +20046,6 @@ sudo vim /etc/mkinitcpio.conf
 sudo reboot
 </code></pre>
 <h2 id="personal-do-26"><a class="header" href="#personal-do-26">Personal do</a></h2>
-<pre><code class="language-sh">sudo pacman -S \
-	ark
-	# neomutt
-	# restic
-</code></pre>
 <pre><code class="language-sh">sudo pacman -Rns \
 	xfce4-dict \
 	xfce4-terminal \
@@ -20048,11 +20066,12 @@ sudo reboot
 <ol>
 <li><a href="os/arch//os/arch/archwsl.html">archwsl.md</a></li>
 <li><a href="os/arch//bin/_arch/pacman.html">pacman.md</a></li>
+<li><a href="os/arch/bin/_arch/yay.html">yay</a></li>
 <li><a href="os/arch//bin/_arch/flatpak.html">flatpak.md</a></li>
 <li><a href="os/arch//opt/_arch/pipewire.html">pipewire.md</a></li>
 <li><a href="os/arch//opt/_arch/bluez.html">bluez.md</a></li>
 <li><a href="os/arch//bin/_arch/openssh.html">openssh.md</a></li>
-<li><a href="os/arch//opt/_arch/tigervnc.html">tigervnc.md</a></li>
+<li>(Optional) <a href="os/arch//opt/_arch/tigervnc.html">tigervnc.md</a></li>
 <li><a href="os/arch//bin/_arch/firewalld.html">firewalld.md</a></li>
 <li><a href="os/arch//bin/_arch/mount.html">mount.md</a></li>
 </ol>
@@ -20074,6 +20093,7 @@ sudo reboot
 <li>#arch <a href="os/arch//bin/_arch/sdcv.html">sdcv.md</a></li>
 <li>#arch <a href="os/arch//optGame/steam.html">steam.md</a></li>
 <li>#arch <a href="os/arch//bin/_arch/texlive.html">texlive.md</a></li>
+<li>#arch <a href="os/arch//optGame/wine.html">wine</a></li>
 <li>#arch <a href="os/arch//opt/_arch/xfce/xfce.html">xfce.md</a></li>
 <li>#arch <a href="os/arch//optGame/_arch/xone.html">xone.md</a></li>
 <li>#arch <a href="os/arch//opt/_arch/zathura.html">zathura.md</a></li>
@@ -20136,13 +20156,12 @@ sudo reboot
 <li><a href="os/arch//opt/video-compare.html">video-compare.md</a></li>
 <li><a href="os/arch//opt/weixin.html">weixin.md</a></li>
 <li><a href="os/arch//opt/wezterm.html">wezterm.md</a></li>
-<li>#arch <a href="os/arch//optGame/wine.html">wine</a></li>
 <li><a href="os/arch//opt/xnconvert.html">xnconvert.md</a></li>
 <li><a href="os/arch//opt/yoga-image-optimizer.html">yoga-image-optimizer.md</a></li>
 <li><a href="os/arch//bin/yt-dlp.html">yt-dlp.md</a></li>
 <li><a href="os/arch//opt/zeal.html">zeal.md</a></li>
 </ul>
-<h2 id="troubleshoot-10"><a class="header" href="#troubleshoot-10">troubleshoot</a></h2>
+<h2 id="troubleshoot-11"><a class="header" href="#troubleshoot-11">troubleshoot</a></h2>
 <h3 id="bluetooth-service-was-skipped-because-of-an-unmet-condition-check-"><a class="header" href="#bluetooth-service-was-skipped-because-of-an-unmet-condition-check-">Bluetooth service was skipped because of an unmet condition check ...</a></h3>
 <p><sup class="footnote-reference" id="fr-7-1"><a href="#footnote-7">7</a></sup></p>
 <pre><code class="language-sh">sudo modprobe bluetooth
@@ -20175,7 +20194,7 @@ systemctl status bluetooth
 <p><a href="https://www.linuxquestions.org/questions/linux-hardware-18/bluetooth-not-working-on-computer-4175724971/">Bluetooth not working on computer</a> <a href="#fr-7-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="appimage"><a class="header" href="#appimage"><a href="https://appimage.org/">AppImage</a></a></h1>
-<h2 id="usage-309"><a class="header" href="#usage-309">usage</a></h2>
+<h2 id="usage-310"><a class="header" href="#usage-310">usage</a></h2>
 <ul>
 <li>Thunar → <code>&lt;app&gt;.AppImage</code> → Properties → Permissions → Allow this file to run as a program.</li>
 <li>Or <code>chmod +x &lt;app&gt;.AppImage</code>.</li>
@@ -20214,18 +20233,16 @@ arch
 </code></pre>
 <h2 id="personal-do-27"><a class="header" href="#personal-do-27">Personal do</a></h2>
 <pre><code class="language-sh">sudo pacman -Syyu \
-	base-devel \
-	editorconfig-checker \
 	inetutils \
 	less \
 	unzip \
 	wget \
 	xsel
+# editorconfig-checker \
 </code></pre>
 <pre><code class="language-sh">yay -S --noconfirm \
 	fuzzy-pkg-finder \
 	paru
-	# win32yank
 </code></pre>
 <h2 id="wsl-optionals"><a class="header" href="#wsl-optionals">WSL Optionals</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
@@ -20344,7 +20361,7 @@ systemd=true
 &lt;ip&gt;	github.com
 &lt;ip&gt;	raw.githubusercontent.com
 </code></pre>
-<h2 id="usage-310"><a class="header" href="#usage-310">usage</a></h2>
+<h2 id="usage-311"><a class="header" href="#usage-311">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl restart systemd-resolved
 </code></pre>
 <hr>
@@ -20404,7 +20421,7 @@ cd Pacman-Static
 makepkg -si
 ./pacman-static -Syyu
 </code></pre>
-<h2 id="troubleshoot-11"><a class="header" href="#troubleshoot-11">troubleshoot</a></h2>
+<h2 id="troubleshoot-12"><a class="header" href="#troubleshoot-12">troubleshoot</a></h2>
 <ul>
 <li><a href="https://forum.manjaro.org/t/pacman-and-networkmanager-are-not-working/174998/10">Pacman and NetworkManager are not working</a></li>
 <li><a href="https://github.com/Jguer/yay/issues/2262#issuecomment-1707751669">Unable to install yay via makepkg</a></li>
@@ -20743,7 +20760,7 @@ mklink "%SendTo%\yoga.bat" "%DirSendTo%\yoga.bat"
 <li>#windows <a href="os/windows//opt/_windows/winsshterm.html">winsshterm.md</a></li>
 <li><a href="os/windows//opt/tightvnc.html">tightvnc.md</a></li>
 </ul>
-<h2 id="troubleshoot-12"><a class="header" href="#troubleshoot-12">troubleshoot</a></h2>
+<h2 id="troubleshoot-13"><a class="header" href="#troubleshoot-13">troubleshoot</a></h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=y6wMvTldfQo">Fix problems with Opus OGG files in Windows 10</a></li>
 </ul>
@@ -21196,7 +21213,7 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 </code></pre>
-<h2 id="usage-311"><a class="header" href="#usage-311">usage</a></h2>
+<h2 id="usage-312"><a class="header" href="#usage-312">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl enable --now anki-sync-server
 </code></pre>
 <h2 id="cross-reference-41"><a class="header" href="#cross-reference-41">cross-reference</a></h2>
@@ -21239,7 +21256,7 @@ cd beaverhabits
 vim docker-compose.yml
 # Copy from https://github.com/daya0576/beaverhabits?tab=readme-ov-file#self-hosting
 </code></pre>
-<h2 id="usage-312"><a class="header" href="#usage-312">usage</a></h2>
+<h2 id="usage-313"><a class="header" href="#usage-313">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>
 <p>Beaver Habit Tracker → More → Add.</p>
@@ -21330,7 +21347,7 @@ Restart=on-abnormal
 [Install]
 WantedBy=multi-user.target
 </code></pre>
-<h2 id="usage-313"><a class="header" href="#usage-313">usage</a></h2>
+<h2 id="usage-314"><a class="header" href="#usage-314">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl enable --now calibre-web
 </code></pre>
 <ol>
@@ -21565,7 +21582,7 @@ Restart=on-abnormal
 [Install]
 WantedBy=multi-user.target
 </code></pre>
-<h2 id="usage-314"><a class="header" href="#usage-314">usage</a></h2>
+<h2 id="usage-315"><a class="header" href="#usage-315">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl enable --now deeplx.service
 </code></pre>
 <h2 id="reference-155"><a class="header" href="#reference-155">reference</a></h2>
@@ -21702,7 +21719,7 @@ database wikdict-en-zh {
 </code></pre>
 <pre><code class="language-sh">sudo systemctl enable --now dictd.service
 </code></pre>
-<h2 id="usage-315"><a class="header" href="#usage-315">usage</a></h2>
+<h2 id="usage-316"><a class="header" href="#usage-316">usage</a></h2>
 <pre><code class="language-sh">dict --host localhost --port 2528 -I -v
 dict -h localhost -p 2528 -d &lt;database&gt; &lt;word&gt;
 </code></pre>
@@ -21801,7 +21818,7 @@ location = "https://docker.1panel.live"
 <pre><code class="language-sh">sudo systemctl daemon-reload
 sudo systemctl restart docker
 </code></pre>
-<h2 id="usage-316"><a class="header" href="#usage-316">usage</a></h2>
+<h2 id="usage-317"><a class="header" href="#usage-317">usage</a></h2>
 <p><sup class="footnote-reference" id="fr-4-1"><a href="#footnote-4">4</a></sup> <sup class="footnote-reference" id="fr-5-1"><a href="#footnote-5">5</a></sup></p>
 <pre><code class="language-sh"># Do a test
 sudo docker run -p 8080:80 --rm nginx
@@ -21923,7 +21940,7 @@ RestartSec=10
 [Install]
 WantedBy=multi-user.target
 </code></pre>
-<h2 id="usage-317"><a class="header" href="#usage-317">usage</a></h2>
+<h2 id="usage-318"><a class="header" href="#usage-318">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl start --now gitea.service
 sudo chmod 750 /etc/gitea
 sudo chmod 640 /etc/gitea/app.ini
@@ -22419,7 +22436,7 @@ uv pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser --username=&lt;user&gt; --email=&lt;email&gt;
 </code></pre>
-<h2 id="usage-318"><a class="header" href="#usage-318">usage</a></h2>
+<h2 id="usage-319"><a class="header" href="#usage-319">usage</a></h2>
 <pre><code class="language-sh">cd linkding
 npm run dev
 </code></pre>
@@ -22491,13 +22508,13 @@ Set WshShell = Nothing
 <p><a href="https://github.com/fair-workflows/nanopub/issues/106">ModuleNotFoundError: No module named 'ruamel'</a> <a href="#fr-3-1">↩</a></p>
 </li>
 </ol><div style="break-before: page; page-break-before: always;"></div><h1 id="lm-studio"><a class="header" href="#lm-studio"><a href="https://lmstudio.ai">LM Studio</a></a></h1>
-<h2 id="usage-319"><a class="header" href="#usage-319">usage</a></h2>
+<h2 id="usage-320"><a class="header" href="#usage-320">usage</a></h2>
 <ul>
 <li>Discover → Select the LLM → Choose a download option → Check <code>Full GPU Offload Possible</code> → Download.</li>
 <li>Chat → Select a model to load → Select the LLM.</li>
 <li>Developer → Enable CORS (On) → Serve on Local Network (on) → Select a model to load → Start Server.</li>
 </ul>
-<h2 id="troubleshoot-13"><a class="header" href="#troubleshoot-13">troubleshoot</a></h2>
+<h2 id="troubleshoot-14"><a class="header" href="#troubleshoot-14">troubleshoot</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
 <ol>
 <li>Install LM Studio.</li>
@@ -22599,7 +22616,7 @@ PORT=8070
 <pre><code class="language-sh"># In a new terminal session
 miniflux -config-file miniflux.conf
 </code></pre>
-<h2 id="usage-320"><a class="header" href="#usage-320">usage</a></h2>
+<h2 id="usage-321"><a class="header" href="#usage-321">usage</a></h2>
 <pre><code class="language-sh"># Backup data
 pg_dump -U miniflux -h 127.0.0.1 -p 5432 -F t miniflux &gt; miniflux.tar
 </code></pre>
@@ -23030,7 +23047,7 @@ uv pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llam
 <li>Here, I download <code>q2k</code> of <a href="https://huggingface.co/SakuraLLM/Sakura-14B-Qwen2beta-v0.9.2-GGUF">Sakura-14B-Qwen2beta-v0.9.2-GGUF</a>.</li>
 <li>Put the files into <code>models/</code>.</li>
 </ol>
-<h2 id="usage-321"><a class="header" href="#usage-321">usage</a></h2>
+<h2 id="usage-322"><a class="header" href="#usage-322">usage</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>
 <pre><code class="language-sh"># As API
 python server.py --trust_remote_code --model_name_or_path models/sakura-13b-lnovel-v0.9b-Q2_K.gguf --model_version 0.9 --no-auth --llama_cpp --use_gpu --log debug
@@ -23147,7 +23164,7 @@ yarn run indexer:transformDataset
 yarn run indexer:importToTypesense
 yarn start
 </code></pre>
-<h2 id="troubleshoot-14"><a class="header" href="#troubleshoot-14">troubleshoot</a></h2>
+<h2 id="troubleshoot-15"><a class="header" href="#troubleshoot-15">troubleshoot</a></h2>
 <ul>
 <li><a href="https://github.com/rbenv/ruby-build/issues/930">Build Failing - Arch Linux · Issue #930 · rbenv/ruby-build</a></li>
 </ul>
@@ -23201,7 +23218,7 @@ vim docker-compose.yml
 </code></pre>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>
-<h2 id="usage-322"><a class="header" href="#usage-322">usage</a></h2>
+<h2 id="usage-323"><a class="header" href="#usage-323">usage</a></h2>
 <ul>
 <li>SilverDict → More → Library
 <ul>
@@ -23349,7 +23366,7 @@ sudo systemctl enable --now suwayomi
 sudo firewall-cmd --zone=home --add-port=4567/tcp --permanent
 sudo firewall-cmd --reload
 </code></pre>
-<h2 id="usage-323"><a class="header" href="#usage-323">usage</a></h2>
+<h2 id="usage-324"><a class="header" href="#usage-324">usage</a></h2>
 <ol>
 <li>The service may take several minutes to start until you can see it.</li>
 <li>Visit <code>http://&lt;your_host&gt;:4567</code>.</li>
@@ -23406,7 +23423,7 @@ sudo apt-get update
 sudo apt-get install tailscale
 sudo tailscale up
 </code></pre>
-<pre><code class="language-sh"># Windows [10](../../../../Asset/file_iso/windows10_x64_cn.iso)
+<pre><code class="language-sh"># Windows 10
 scoop install tailscale
 </code></pre>
 <pre><code class="language-sh"># Arch
@@ -23424,10 +23441,10 @@ vim .env
 # Copy from https://help.teable.io/deployment/docker-compose#docker-compose
 sudo docker-compose pull
 </code></pre>
-<h2 id="usage-324"><a class="header" href="#usage-324">usage</a></h2>
+<h2 id="usage-325"><a class="header" href="#usage-325">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose --env-file .env up -d
 </code></pre>
-<h2 id="troubleshoot-15"><a class="header" href="#troubleshoot-15">troubleshoot</a></h2>
+<h2 id="troubleshoot-16"><a class="header" href="#troubleshoot-16">troubleshoot</a></h2>
 <ul>
 <li><a href="https://www.reddit.com/r/docker/comments/yk0x2l/cors_error_after_dockerizing_how_to_fix/">CORS error after Dockerizing? How to fix?</a></li>
 </ul>
@@ -23567,7 +23584,7 @@ vim .env
 <pre><code>APP_SECRET=&lt;random_string&gt;
 PGPASSWORD_SUPERUSER=&lt;password&gt;
 </code></pre>
-<h2 id="usage-325"><a class="header" href="#usage-325">usage</a></h2>
+<h2 id="usage-326"><a class="header" href="#usage-326">usage</a></h2>
 <pre><code class="language-sh">sudo docker compose --env-file .env up -d
 </code></pre>
 <p><img src="srv//_image/srv/twenty.png" alt="twenty" /></p>
@@ -23883,7 +23900,7 @@ sudo zerotier-cli listnetworks
 <pre><code class="language-sh"># Node.js
 pnpm add -g retypeapp
 </code></pre>
-<h2 id="usage-326"><a class="header" href="#usage-326">usage</a></h2>
+<h2 id="usage-327"><a class="header" href="#usage-327">usage</a></h2>
 <pre><code class="language-sh">mkdir &lt;dir&gt;
 cd &lt;dir&gt;
 retype start
@@ -23907,7 +23924,7 @@ uv venv
 .venv\Scripts\activate.bat
 uv pip install furo myst-parser
 </code></pre>
-<h2 id="usage-327"><a class="header" href="#usage-327">usage</a></h2>
+<h2 id="usage-328"><a class="header" href="#usage-328">usage</a></h2>
 <pre><code class="language-sh">sphinx-quickstart
 # make clean
 make html
@@ -24027,7 +24044,7 @@ make
 ln -s stagit ~/.local/bin/
 ln -s stagit-index ~/.local/bin/
 </code></pre>
-<h2 id="usage-328"><a class="header" href="#usage-328">usage</a></h2>
+<h2 id="usage-329"><a class="header" href="#usage-329">usage</a></h2>
 <pre><code class="language-sh">mkdir &lt;dir&gt;
 cd &lt;dir&gt;
 cp &lt;path_to_stagit&gt;/style.css ./
@@ -24055,7 +24072,7 @@ ln -s logo.png &lt;subdir2&gt;/
 <pre><code class="language-sh"># Node.js
 pnpm add -g @vivliostyle/cli
 </code></pre>
-<h2 id="usage-329"><a class="header" href="#usage-329">usage</a></h2>
+<h2 id="usage-330"><a class="header" href="#usage-330">usage</a></h2>
 <pre><code class="language-sh">mkdir &lt;dir&gt;
 cd &lt;dir&gt;
 vivliostyle init
@@ -24139,7 +24156,7 @@ git clone --depth=1 https://github.com/paposeco/quietfoodie themes/quietfoodie
 subl hugo.toml
 # Refer to https://github.com/paposeco/quietfoodie?tab=readme-ov-file#configuration
 </code></pre>
-<h2 id="usage-330"><a class="header" href="#usage-330">usage</a></h2>
+<h2 id="usage-331"><a class="header" href="#usage-331">usage</a></h2>
 <pre><code class="language-sh"># Serve
 hugo serve
 # Build
@@ -24154,7 +24171,7 @@ hugo build
 <h2 id="install-612"><a class="header" href="#install-612">install</a></h2>
 <pre><code class="language-sh">cargo install --force mdbook
 </code></pre>
-<h2 id="usage-331"><a class="header" href="#usage-331">usage</a></h2>
+<h2 id="usage-332"><a class="header" href="#usage-332">usage</a></h2>
 <pre><code class="language-sh">mdbook init &lt;yourbook&gt;
 cd &lt;yourbook&gt;
 # Serve
@@ -24272,7 +24289,7 @@ mdbook-admonish install
 <pre><code class="language-sh"># Cargo
 cargo install --force mdbook-embedify
 </code></pre>
-<h2 id="usage-332"><a class="header" href="#usage-332">usage</a></h2>
+<h2 id="usage-333"><a class="header" href="#usage-333">usage</a></h2>
 <pre><code class="language-toml"># book.toml
 [preprocessor.embedify]
 </code></pre>
@@ -24289,7 +24306,7 @@ cargo install --force mdbook-embedify
 <h2 id="install-615"><a class="header" href="#install-615">install</a></h2>
 <pre><code class="language-sh">cargo install --force mdbook-force-relative-links
 </code></pre>
-<h2 id="usage-333"><a class="header" href="#usage-333">usage</a></h2>
+<h2 id="usage-334"><a class="header" href="#usage-334">usage</a></h2>
 <pre><code class="language-toml"># book.toml
 [prepocessor.force-relative-links]
 after = ["links"]
@@ -24298,7 +24315,7 @@ after = ["links"]
 <h2 id="install-616"><a class="header" href="#install-616">install</a></h2>
 <pre><code class="language-sh">cargo install --force mdbook-tailor
 </code></pre>
-<h2 id="usage-334"><a class="header" href="#usage-334">usage</a></h2>
+<h2 id="usage-335"><a class="header" href="#usage-335">usage</a></h2>
 <pre><code class="language-toml"># book.toml
 [preprocessor.tailor]
 </code></pre>
@@ -24435,7 +24452,7 @@ uv venv
 .venv\Scripts\activate.bat
 uv pip install mkdocs-material
 </code></pre>
-<h2 id="usage-335"><a class="header" href="#usage-335">usage</a></h2>
+<h2 id="usage-336"><a class="header" href="#usage-336">usage</a></h2>
 <pre><code class="language-sh">mkdocs new .
 subl config.yaml
 </code></pre>
@@ -24452,7 +24469,7 @@ subl config.yaml
 </li>
 <li>#github-action <a href="https://squidfunk.github.io/mkdocs-material/publishing-your-site/">Publishing your site - Material for MkDocs</a></li>
 </ul>
-<h2 id="troubleshoot-16"><a class="header" href="#troubleshoot-16">troubleshoot</a></h2>
+<h2 id="troubleshoot-17"><a class="header" href="#troubleshoot-17">troubleshoot</a></h2>
 <ul>
 <li><a href="https://github.com/squidfunk/mkdocs-material/issues/5526">Pymdown extensions dependency issue · Issue #5526 · squidfunk/mkdocs-material</a></li>
 </ul>

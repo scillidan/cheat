@@ -203,27 +203,28 @@ vim /etc/pacman.d/mirrorlist
 cfdisk /dev/nvme?n1
 </code></pre>
 <pre><code>size        | type             | comment
-256M        | EFI System       | /boot
+1G          | EFI System       | /boot
 32G*0.6=18G | Linux Swap       |
 free        | Linux filesystem | /
 </code></pre>
-<pre><code class="language-sh">mkfs.fat -F32 /dev/nvme?n1p?
-mkswap /dev/nvme?n1p?
-mkfs.btrfs -L Arch /dev/nvme?n1p?
+<pre><code class="language-sh">mkfs.fat -F32 /dev/nvme?n1p1
+mkswap /dev/nvme?n1p2
+mkfs.btrfs -L Arch /dev/nvme?n1p3
 </code></pre>
-<pre><code class="language-sh">mount -t btrfs -o compress=zstd /dev/nvme?n1p? /mnt
+<pre><code class="language-sh">mount -t btrfs -o compress=zstd /dev/nvme?n1p3 /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
+btrfs subvolume list -p /mnt
 umount /mnt
 </code></pre>
-<pre><code class="language-sh">mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme?n1p? /mnt
-mkdir /mnt/home
-mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvme?n1p? /mnt/home
+<pre><code class="language-sh">mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme?n1p3 /mnt
+mkdir -p /mnt/home
+mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvme?n1p3 /mnt/home
 mkdir -p /mnt/boot
 # Mount EFI
-mount /dev/nvme?n1p? /mnt/boot
+mount /dev/nvme?n1p1 /mnt/boot
 # Mount Linux Swap
-swapon /dev/nvmexn1pn
+swapon /dev/nvme?n1p2
 </code></pre>
 <pre><code class="language-sh">pacstrap /mnt base base-devel linux linux-firmware btrfs-progs
 </code></pre>
@@ -270,9 +271,19 @@ EDITOR=vim visudo
 <pre><code># Uncomment
 %wheel ALL=(ALL:ALL) ALL
 </code></pre>
-<pre><code class="language-sh"># pacman -S intel-ucode # Intel
-pacman -S amd-ucode # AMD
-pacman -S grub efibootmgr os-prober
+<pre><code class="language-sh"># AMD CPU
+pacman -S amd-ucode
+# AMD GPU
+sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon
+# Intel CPU
+pacman -S intel-ucode
+# NVIDIA GPU
+sudo pacman -Syu linux-headers
+sudo pacman -S nvidia nvidia-utils nvidia-settings nvidia-dkms
+sudo mkinitcpio -P
+sudo modprobe nvidia
+</code></pre>
+<pre><code class="language-sh">pacman -S grub efibootmgr os-prober
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH
 vim /etc/default/grub
 </code></pre>
@@ -283,6 +294,7 @@ vim /etc/default/grub
 <pre><code class="language-sh">exit
 umount -R /mnt
 shutdown -h now
+sudo systemctl enable --now NetworkManager
 </code></pre>
 <p><sup class="footnote-reference" id="fr-6-1"><a href="#footnote-6">6</a></sup></p>
 <pre><code class="language-sh">lsblk -o name,mountpoint,size,uuid
@@ -300,11 +312,6 @@ sudo vim /etc/mkinitcpio.conf
 sudo reboot
 </code></pre>
 <h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh">sudo pacman -S \
-	ark
-	# neomutt
-	# restic
-</code></pre>
 <pre><code class="language-sh">sudo pacman -Rns \
 	xfce4-dict \
 	xfce4-terminal \
@@ -325,11 +332,12 @@ sudo reboot
 <ol>
 <li><a href="/os/arch/archwsl.html">archwsl.md</a></li>
 <li><a href="/bin/_arch/pacman.html">pacman.md</a></li>
+<li><a href="bin/_arch/yay.html">yay</a></li>
 <li><a href="/bin/_arch/flatpak.html">flatpak.md</a></li>
 <li><a href="/opt/_arch/pipewire.html">pipewire.md</a></li>
 <li><a href="/opt/_arch/bluez.html">bluez.md</a></li>
 <li><a href="/bin/_arch/openssh.html">openssh.md</a></li>
-<li><a href="/opt/_arch/tigervnc.html">tigervnc.md</a></li>
+<li>(Optional) <a href="/opt/_arch/tigervnc.html">tigervnc.md</a></li>
 <li><a href="/bin/_arch/firewalld.html">firewalld.md</a></li>
 <li><a href="/bin/_arch/mount.html">mount.md</a></li>
 </ol>
@@ -351,6 +359,7 @@ sudo reboot
 <li>#arch <a href="/bin/_arch/sdcv.html">sdcv.md</a></li>
 <li>#arch <a href="/optGame/steam.html">steam.md</a></li>
 <li>#arch <a href="/bin/_arch/texlive.html">texlive.md</a></li>
+<li>#arch <a href="/optGame/wine.html">wine</a></li>
 <li>#arch <a href="/opt/_arch/xfce/xfce.html">xfce.md</a></li>
 <li>#arch <a href="/optGame/_arch/xone.html">xone.md</a></li>
 <li>#arch <a href="/opt/_arch/zathura.html">zathura.md</a></li>
@@ -413,7 +422,6 @@ sudo reboot
 <li><a href="/opt/video-compare.html">video-compare.md</a></li>
 <li><a href="/opt/weixin.html">weixin.md</a></li>
 <li><a href="/opt/wezterm.html">wezterm.md</a></li>
-<li>#arch <a href="/optGame/wine.html">wine</a></li>
 <li><a href="/opt/xnconvert.html">xnconvert.md</a></li>
 <li><a href="/opt/yoga-image-optimizer.html">yoga-image-optimizer.md</a></li>
 <li><a href="/bin/yt-dlp.html">yt-dlp.md</a></li>

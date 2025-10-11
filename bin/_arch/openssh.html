@@ -196,6 +196,7 @@
 <pre><code class="language-sh">sudo vim /etc/ssh/sshd_config
 </code></pre>
 <pre><code>PubkeyAuthentication yes
+# AuthorizedKeysFile ...
 PasswordAuthentication no
 </code></pre>
 <pre><code class="language-sh">sudo systemctl restart sshd
@@ -206,9 +207,10 @@ PasswordAuthentication no
 <p>Client PC:</p>
 <pre><code class="language-sh">mkdir ~/.ssh
 vim ~/.ssh/authorized_keys
+vim ~/.ssh/authorized_keys2
 # Paste into
 chmod 700 ~/.ssh
-chmod 600 ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys*
 </code></pre>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
