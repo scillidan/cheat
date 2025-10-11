@@ -12,6 +12,7 @@ cd MinerU
 uv venv
 source .venv/bin/activate
 uv pip install -U "mineru[core]"
+uv pip install hf_transfer
 ```
 
 ### Docker compose
