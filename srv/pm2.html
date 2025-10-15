@@ -195,9 +195,17 @@ pm2 dump
 pm2 startup
 # pm2 unstartup
 </code></pre>
-<h2 id="configuare-apache"><a class="header" href="#configuare-apache">Configuare Apache</a></h2>
+<pre><code class="language-sh"># Restore from dump file after reboot
+pm2 resurrect
+</code></pre>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
+<h3 id="windows-10"><a class="header" href="#windows-10">Windows 10</a></h3>
+<pre><code class="language-sh">set "PM2_HOME=C:\ProgramData\pm2\home"
+set "PM2_INSTALL_DIRECTORY=C:\ProgramData\npm\npm\node_modules\pm2"
+set "PM2_SERVICE_DIRECTORY=C:\ProgramData\pm2\service"
+</code></pre>
+<h3 id="configuare-apache-on-rocky-linux"><a class="header" href="#configuare-apache-on-rocky-linux">Configuare Apache on Rocky Linux</a></h3>
 <p><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> <sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup></p>
-<h3 id="rocky-linux"><a class="header" href="#rocky-linux">Rocky Linux</a></h3>
 <pre><code class="language-sh">pm2 start npm --name "&lt;app_name&gt;" --watch -- start
 </code></pre>
 <p>Create a new VirtualHost configuration with subdomain names:</p>

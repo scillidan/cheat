@@ -224,6 +224,12 @@ git tag v0.0.1
 git push origin v0.0.1
 </code></pre>
 <h3 id="other"><a class="header" href="#other">Other</a></h3>
+<pre><code class="language-sh">git config --global http.proxy "socks5://127.0.0.1:&lt;port&gt;"
+git config --global --unset http.proxy
+</code></pre>
+<pre><code class="language-sh">git config --global http.sslVerify true
+git config --global http.sslVerify false
+</code></pre>
 <pre><code class="language-sh"># Undo and re-push
 git fetch --all
 git reset --hard &lt;commit-hash&gt;

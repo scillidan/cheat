@@ -191,12 +191,17 @@ scoop install python310
 <pre><code class="language-sh">python -m pip install pipx
 pipx ensurepath
 </code></pre>
-<h2 id="publish-python-package"><a class="header" href="#publish-python-package">Publish python package</a></h2>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<h3 id="publish-python-package"><a class="header" href="#publish-python-package">Publish python package</a></h3>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
 <pre><code class="language-sh">python -m pip install -e .
 python -m pip install build twine
 python setup.py sdist bdist_wheel
 python -m build
+</code></pre>
+<h3 id="other"><a class="header" href="#other">Other</a></h3>
+<pre><code class="language-sh">pip install -e . --index-url https://pypi.org/simple
+pip cache purge
 </code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>

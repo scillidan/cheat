@@ -217,12 +217,12 @@ cd devdocs
 vim docker-compose.yml
 </code></pre>
 <pre><code class="language-yaml">services:
-	devdocs:
-		image: ghcr.io/freecodecamp/devdocs:latest
-		container_name: devdocs
-		ports:
-			- "9292:9292"
-		restart: always
+  devdocs:
+    image: ghcr.io/freecodecamp/devdocs:latest
+    container_name: devdocs
+    ports:
+      - "9292:9292"
+    restart: always
 </code></pre>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>

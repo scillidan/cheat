@@ -183,11 +183,23 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="npm"><a class="header" href="#npm"><a href="https://www.npmjs.com/">NPM</a></a></h1>
-<h2 id="publish-npm-package"><a class="header" href="#publish-npm-package">Publish npm package</a></h2>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<h3 id="publish-npm-package"><a class="header" href="#publish-npm-package">Publish npm package</a></h3>
 <pre><code class="language-sh">npm login
 npm init
 npm publish
 # npm version patch
+</code></pre>
+<h3 id="other"><a class="header" href="#other">Other</a></h3>
+<pre><code class="language-sh">npm config set proxy http://127.0.0.1:&lt;port&gt;
+npm config set https-proxy http://127.0.0.1:&lt;port&gt;
+npm config get proxy
+npm config get https-proxy
+</code></pre>
+<pre><code class="language-sh">npm config delete proxy
+npm config delete https-proxy
+npm config get proxy
+npm config get https-proxy
 </code></pre>
 
                     </main>
