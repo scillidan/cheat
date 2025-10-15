@@ -8,3 +8,9 @@ yay -S --noconfirm autocast
 # Cargo
 cargo install --force autocast
 ```
+
+## usage
+
+```sh
+autocast input.yaml output.cast
+```

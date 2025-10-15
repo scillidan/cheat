@@ -8,6 +8,9 @@ git clone --depth=1 https://github.com/wlh320/rime-ls
 cd rime-ls
 git fetch --tags
 git checkout v0.4.1
+set "LIBRIME_LIB_DIR=%USERPROFILE%\Usr\Lib\rime\dist\lib"
+set "LIBRIME_INCLUDE_DIR=%USERPROFILE%\Usr\Lib\rime\dist\include"
+set "LIB=%USERPROFILE%\Usr\Lib\rime\dist\lib"
 cargo build --release
 ```
 

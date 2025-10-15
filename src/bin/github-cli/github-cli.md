@@ -9,10 +9,22 @@ sudo pacman -S github-cli
 scoop install gh
 ```
 
+## config
+
+```sh
+# Windows 10
+set "GH_CONFIG_DIR=%USERPROFILE%\.config\gh"
+```
+
 ## usage
 
 ```sh
 gh auth login
+```
+
+```sh
+gh extension install <user/repo>
+gh extension remove <user/repo>
 ```
 
 ## cross-reference

@@ -58,7 +58,8 @@ sudo docker run --rm -it <user>/syncabook:latest -h
 
 ### Windows 10
 
-Get `aeneas-win64-setup-*.exe` from [Releases - sillsdev/aeneas-installer](https://github.com/sillsdev/aeneas-installer/releases).
+1. Get `aeneas-win64-setup-*.exe` from [Releases - sillsdev/aeneas-installer](https://github.com/sillsdev/aeneas-installer/releases).
+2. `set "AENEAS_FORCE_CEW=True"`
 
 ## usage
 

@@ -12,3 +12,7 @@ pnpm add -g @innocenzi/rename
 ```sh
 rn
 ```
+
+## reference
+
+- [Configuration](https://github.com/innocenzi/rename?tab=readme-ov-file#configuration)

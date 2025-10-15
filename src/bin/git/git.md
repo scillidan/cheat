@@ -65,6 +65,16 @@ git push origin v0.0.1
 ### Other
 
 ```sh
+git config --global http.proxy "socks5://127.0.0.1:<port>"
+git config --global --unset http.proxy
+```
+
+```sh
+git config --global http.sslVerify true
+git config --global http.sslVerify false
+```
+
+```sh
 # Undo and re-push
 git fetch --all
 git reset --hard <commit-hash>

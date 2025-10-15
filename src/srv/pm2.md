@@ -17,11 +17,24 @@ pm2 startup
 # pm2 unstartup
 ```
 
-## Configuare Apache
+```sh
+# Restore from dump file after reboot
+pm2 resurrect
+```
+
+## config
+
+### Windows 10
+
+```sh
+set "PM2_HOME=C:\ProgramData\pm2\home"
+set "PM2_INSTALL_DIRECTORY=C:\ProgramData\npm\npm\node_modules\pm2"
+set "PM2_SERVICE_DIRECTORY=C:\ProgramData\pm2\service"
+```
+
+### Configuare Apache on Rocky Linux
 
 [^2] [^3]
-
-### Rocky Linux
 
 ```sh
 pm2 start npm --name "<app_name>" --watch -- start

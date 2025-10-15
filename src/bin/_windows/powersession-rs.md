@@ -5,3 +5,10 @@
 ```sh
 scoop install powersession-rs
 ```
+
+## usage
+
+```sh
+powersession rec file.cast
+powersession play file.cast
+```

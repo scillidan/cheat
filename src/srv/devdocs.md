@@ -54,12 +54,12 @@ vim docker-compose.yml
 
 ```yaml
 services:
-	devdocs:
-		image: ghcr.io/freecodecamp/devdocs:latest
-		container_name: devdocs
-		ports:
-			- "9292:9292"
-		restart: always
+  devdocs:
+    image: ghcr.io/freecodecamp/devdocs:latest
+    container_name: devdocs
+    ports:
+      - "9292:9292"
+    restart: always
 ```
 
 ```sh

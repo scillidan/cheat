@@ -14,7 +14,9 @@ python -m pip install pipx
 pipx ensurepath
 ```
 
-## Publish python package
+## usage
+
+### Publish python package
 
 [^1]
 
@@ -23,6 +25,13 @@ python -m pip install -e .
 python -m pip install build twine
 python setup.py sdist bdist_wheel
 python -m build
+```
+
+### Other
+
+```sh
+pip install -e . --index-url https://pypi.org/simple
+pip cache purge
 ```
 
 ## reference
