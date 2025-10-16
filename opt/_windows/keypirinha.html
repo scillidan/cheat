@@ -182,71 +182,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="keypirinha"><a class="header" href="#keypirinha"><a href="https://keypirinha.com">Keypirinha</a></a></h1>
-<h2 id="install"><a class="header" href="#install">install</a></h2>
-<pre><code class="language-sh">scoop install keypirinha
-</code></pre>
-<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh">rmdir /S /Q "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\User"
-mklink /J "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\User" "%DOTFILES_DIR%\.config\_windows_keypirinha\Profile\User"
-mkdir "%USERPROFILE%/Usr/File"
-</code></pre>
-<pre><code class="language-sh">cd "%USERPROFILE%\Usr\File"
-git clone --depth=1 https://github.com/scillidan/file_keypirinha_pkg
-rmdir /S /Q "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\InstalledPackages"
-mklink /J "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\InstalledPackages" "%USERPROFILE%\Usr\File\file_keypirinha_pkg"
-</code></pre>
-<pre><code class="language-sh">cd "%USERPROFILE%\Usr\RepoFork"
-git clone --depth=1 https://github.com/scillidan/Keypirinha-PuzzTools
-</code></pre>
-<ol>
-<li>Alacritty → MBtm → Create Shortcut</li>
-<li>Shortcut → MBtm → Properties → Target → `&lt;path_to&gt;\alacritty.exe --config-file "&lt;path_to&gt;\alacritty.toml"  --working-directory "C:\Users\User" --command"</li>
-<li>Keypirinha → MBtn_R → Configure Keypirinha
-<pre><code>[external]
-terminal = "C:\Users\User\.local\bin\alacritty_command.lnk"
-</code></pre>
-</li>
-</ol>
-<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
-<ul>
-<li><a href="https://github.com/Keypirinha/Packages/pull/41">Add provider for chromium based edge bookmarks</a></li>
-<li><a href="https://community.brave.com/t/copy-past-bookmark-folder-to-new-location/437841">Copy &amp; Past bookmark folder to new location</a></li>
-</ul>
-<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
-<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
-<ul>
-<li><a href="https://github.com/Fuhrmann/keypirinha-theme-builder">keypirinha-theme-builder</a></li>
-</ul>
-<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
-<ul>
-<li>[Keypirinha_SearchCSV](https://github.com/novamostra/Keypirinha_SearchCSV</li>
-<li>[Keypirinha Plugin: Audio Switcher](https://github.com/armotic/keypirinha-audioswitcher</li>
-<li>[Keypirinha Plugin: ChronoTools](https://github.com/NMeJa/keypirinha-chronotools</li>
-<li>[Keypirinha Plugin: epoch](https://github.com/prayzzz/keypirinha-epoch</li>
-<li>[Keypirinha Plugin: FakerData](https://github.com/Fuhrmann/keypirinha-faker-data</li>
-<li>[Keypirinha Plugin: foobar2000](https://github.com/tuteken/Keypirinha-Plugin-foobar2000</li>
-<li>[Keypirinha Plugin: Git-Fork](https://github.com/fran-f/keypirinha-git-fork</li>
-<li>[Keypirinha Plugin: MovieDB](https://github.com/Fuhrmann/keypirinha-moviedb</li>
-<li>[Keypirinha Plugin: MyIP](https://github.com/Fuhrmann/keypirinha-myip</li>
-<li>[Keypirinha Plugin: QR Code](https://github.com/thisisleobro/Keypirinha-qrcode</li>
-<li>[Keypirinha Plugin: quicknote-markdown](https://github.com/NopenAI/keypirinha-quicknote-markdown</li>
-<li>[Keypirinha Plugin: Steam](https://github.com/EhsanKia/keypirinha-plugins/tree/master/keypirinha-steam</li>
-<li>[Keypirinha WindowsApps](https://github.com/ueffel/Keypirinha-WindowsApps</li>
-<li>[keypirinha-allmygames](https://github.com/TanninOne/keypirinha-allmygames</li>
-<li>[keypirinha-chocolatey](https://github.com/dufferzafar/keypirinha-chocolatey</li>
-<li>[keypirinha-devdocs](https://github.com/theZetrax/keypirinha-devdocs</li>
-<li>[keypirinha-monitorcontrol](https://github.com/ccarpo/keypirinha-monitorcontrol</li>
-<li>[keypirinha-notionSearcher](https://github.com/wolloda/keypirinha-notionSearcher</li>
-<li>[keypirinha-Playnite](https://github.com/SomeoneIsWorking/keypirinha-Playnite</li>
-<li>[Keypirinha-Plugin-Ditto](https://github.com/tuteken/Keypirinha-Plugin-Ditto</li>
-<li>[Keypirinha-Recoll](https://github.com/marcus-at-localhost/Keypirinha-Recoll</li>
-<li>[keypirinha-terminal-profiles](https://github.com/fran-f/keypirinha-terminal-profiles</li>
-<li>[PackageControl-Server](https://github.com/ueffel/PackageControl-Server</li>
-<li>[PowerSwitch Plugin for Keypirinha](https://github.com/NMeJa/keypirinha-powerswitch</li>
-</ul>
-<p><img src="/_image/opt/_windows/keypirinha/color_fakenight.png" alt="color_fakenight" />
-<img src="/_image/opt/_windows/keypirinha/color_vanta.png" alt="color_vanta" /></p>
+                        <h1 id="keypirinha"><a class="header" href="#keypirinha">keypirinha</a></h1>
 
                     </main>
 

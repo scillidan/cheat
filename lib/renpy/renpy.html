@@ -184,31 +184,63 @@
                     <main>
                         <h1 id="renpy"><a class="header" href="#renpy"><a href="https://www.renpy.org">Renpy</a></a></h1>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
-<h3 id="build-distributions"><a class="header" href="#build-distributions">Build Distributions</a></h3>
+<h3 id="build-distributions-windows-10"><a class="header" href="#build-distributions-windows-10">Build Distributions (Windows 10)</a></h3>
 <ol>
 <li>Download <code>SDK.zip</code> from <a href="https://www.renpy.org/latest.html">Download Ren'Py</a>.</li>
 <li>Decompress it to <code>renpy-*-sdk\</code>.</li>
 <li>Run <code>renpy-*-sdk\renpy.exe</code>.</li>
-<li>preferences → General → Projects Directory → <code>C:\Users\User\Project\renpy</code> → Return.</li>
-<li>Go to <code>C:\Users\User\Project\renpy</code>，<code>git clone --depth=1 https://codeberg.org/fhs/katawa-shoujo-re-engineered</code>.</li>
+<li>preferences → General → Projects Directory → <code>&lt;path_to&gt;\proj_renpy</code> → Return.</li>
+<li><code>cd &lt;path_to&gt;\proj_renpy</code>.</li>
+<li><code>git clone --depth=1 https://codeberg.org/fhs/katawa-shoujo-re-engineered</code>.</li>
 <li>Renpy → PROJECTS → refresh → Select <code>katawa-shoujo-re-engineered</code>.</li>
 <li>Build Distributions → Build.</li>
 </ol>
-<h3 id="build-android"><a class="header" href="#build-android">Build Android</a></h3>
+<h3 id="build-android-windows-10"><a class="header" href="#build-android-windows-10">Build Android (Windows 10)</a></h3>
 <ol>
-<li>Renpy → Android → Build</li>
+<li>Install <a href="https://www.oracle.com/java/technologies/downloads/">JDK</a> and <a href="https://gradle.org/">Gradle</a>. For example:</li>
+<li>Download and Decompress <code>OpenJDK21U-jdk_x64_windows_hotspot_21.0.4_7.zip</code> to <code>jdk-21.04\</code>.</li>
+<li>Download and Decompress <code>gradle-8.5-bin.zip</code> to <code>gradle-8.5\</code>. Or put <code>gradle-8.5-bin.zip</code> into <code>%USERPROFILE%\.gradle\wrapper\dists\gradle-8.5-bin\&lt;some_string&gt;\</code>.</li>
+<li>Add <code>jdk-21.04\bin</code>, <code>gradle-8.5\bin</code> into PATH.</li>
+<li>Restart Renpy.</li>
+</ol>
+<ul>
+<li>Renpy → Android → Build
+<ol>
 <li>Install SDK</li>
 <li>Generate Keys</li>
 <li>Build Package</li>
-<li>这个步骤会检测环境要求，需要JDK和Gradle</li>
-<li>这里会涉及到Library文件的存放位置。我个人没分CDEF盘，只有C盘，也优先使用软件的便携版，一般就是压缩包。下面步骤就根据你的实际情况做修改</li>
-<li>按照提示下载JDK和Gradle的文件。解压<code>OpenJDK21U-jdk_x64_windows_hotspot_21.0.4_7.zip</code>到<code>C:\Users\User\Lib\jdk-21.04</code></li>
-<li>解压<code>gradle-8.5-bin.zip</code>到<code>C:\Users\User\Lib\gradle-8.5</code></li>
-<li>Windows设置 → 查看高级系统设置 → 环境变量 → 用户变量 → 选中Path → 编辑 → 新建 → <code>C:\Users\User\Lib\jdk-21.04\bin</code> → 再新建 → <code>C:\Users\User\Lib\gradle-8.5\bin</code></li>
-<li>重启<code>renpy.exe</code> → Andriod → Build Package</li>
-<li>如果在gradle相关的步骤提示<code>需要下载gradle</code>，这可能是个bug。可以把<code>gradle-8.5-bin.zip</code>放进<code>C:\Users\User\.gradle\wrapper\dists\gradle-8.5-bin\&lt;一串字符&gt;\</code>下。重启renpy.exe，再试一次</li>
-<li>如果出现未知错误，可尝试关闭梯子。重启renpy.exe再试</li>
 </ol>
+</li>
+</ul>
+<h2 id="build-renpy-documentation-ubuntu-2404-arm"><a class="header" href="#build-renpy-documentation-ubuntu-2404-arm">Build renpy documentation (Ubuntu 24.04 ARM)</a></h2>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
+<pre><code class="language-sh">sudo apt install virtualenvwrapper python3-dev libavcodec-dev libavformat-dev libswresample-dev libswscale-dev libharfbuzz-dev libfreetype6-dev libfribidi-dev libsdl2-dev libsdl2-image-dev libsdl2-gfx-dev libsdl2-mixer-dev libsdl2-ttf-dev libjpeg-dev
+. /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+mkvirtualenv renpy
+pip install -U setuptools future six typing pefile requests ecdsa
+pip install -U "cython&lt;3.0.0"
+</code></pre>
+<pre><code class="language-sh">git clone --depth=1 https://www.github.com/renpy/pygame_sdl2
+pushd pygame_sdl2
+python setup.py install
+python install_headers.py $VIRTUAL_ENV
+popd
+</code></pre>
+<pre><code class="language-sh">LATEST_RELEASE=$(curl -s https://api.github.com/repos/renpy/renpy/releases/latest | jq -r .tag_name)
+wget https://github.com/renpy/renpy/archive/refs/tags/$LATEST_RELEASE.zip
+unzip $LATEST_RELEASE.zip
+pushd renpy-*
+pushd module
+python setup.py install
+cd ..
+pushd sphinx
+pip install -U sphinx sphinx_rtd_theme sphinx_rtd_dark_mode
+./build.sh
+</code></pre>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<ul>
+<li><a href="/opt/zeal.html">zeal.md</a></li>
+</ul>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
 <li>#document <a href="https://www.renpy.org/doc/html/index.html">Ren'Py Documentation</a></li>
@@ -430,7 +462,11 @@
 <li>#vscode <a href="https://github.com/LuqueDaniel/vscode-language-renpy">Ren'Py Language for Visual Studio Code</a></li>
 <li>#vscode <a href="https://github.com/tiliv/renpy-vscode-template">Ren'Py VSCode Project Template</a></li>
 </ul>
-
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://github.com/renpy/renpy#compiling-the-modules">renpy - Compiling the Modules</a> <a href="#fr-1-1">↩</a></p>
+</li>
+</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

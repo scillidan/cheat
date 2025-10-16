@@ -187,6 +187,61 @@
 <pre><code class="language-sh"># Pip
 uv tool install doc2dash
 </code></pre>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<pre><code class="language-sh"># See &lt;Document&gt;.docset/Contents/Info.plist
+doc2dash --name &lt;identifier&gt; -f ./build/html
+mv &lt;identifier&gt;.docset &lt;Document&gt;.docset
+# Put icon.png, icon@2x.png into &lt;Document&gt;.docset/
+vim &lt;DocumentName&gt;.docset/Contents/Info.plist
+</code></pre>
+<pre><code>&lt;key&gt;CFBundleName&lt;/key&gt;
+&lt;string&gt;Document (Version)&lt;/string&gt;
+</code></pre>
+<h2 id="push-to-kapelidash-user-contributions"><a class="header" href="#push-to-kapelidash-user-contributions">Push to <a href="https://github.com/Kapeli/Dash-User-Contributions">Kapeli/Dash-User-Contributions</a></a></h2>
+<p>[^1]</p>
+<ol>
+<li>Fork https://github.com/Kapeli/Dash-User-Contributions</li>
+<li>Fork Repo → Sync fork → Update branch</li>
+</ol>
+<pre><code class="language-sh">git clone https://github.com/&lt;your&gt;/Dash-User-Contributions
+cd Dash-User-Contributions
+# Sync to upstream
+git pull
+git checkout -b "&lt;DocumentName&gt;-&lt;Version&gt;"
+tar --exclude='.DS_Store' -cvzf &lt;DocumentName&gt;.tgz &lt;DocumentName&gt;.docset
+mv &lt;DocumentName&gt;.tgz Dash-User-Contributions/docsets/&lt;DocumentName&gt;/
+vim Dash-User-Contributions/docsets/&lt;DocumentName&gt;/docset.json
+</code></pre>
+<pre><code class="language-json">{
+    "name": "Document Name",
+    "version": "&lt;Version&gt;",
+    "archive": "&lt;DocumentName&gt;.tgz"
+}
+</code></pre>
+<pre><code class="language-sh"># If you build a specific versions
+mv &lt;DocumentName-Version&gt;.tgz Dash-User-Contributions/docsets/&lt;DocumentName&gt;/versions/&lt;SpecificVersion&gt;/
+vim Dash-User-Contributions/docsets/&lt;DocumentName&gt;/docset.json
+</code></pre>
+<pre><code class="language-sh">    "specific_versions": [
+        {
+            "version": "&lt;SpecificVersion&gt;",
+            "archive": "versions/&lt;SpecificVersion&gt;/&lt;DocumentName&gt;.tgz"
+        },
+        ...
+    ]
+</code></pre>
+<pre><code class="language-sh">git add .
+git commit -m "Update &lt;DocumentName&gt; to Version&gt;"
+git push -u origin &lt;DocumentName&gt;-&lt;Versison&gt;
+
+Visit `https://github.com/&lt;your&gt;/Dash-User-Contributions` → Create Pull requests → Waiting check and merge.
+
+## reference
+
+- [Docset Contribution Checklist](https://github.com/Kapeli/Dash-User-Contributions/wiki/Docset-Contribution-Checklist#docset-requirements)
+
+[^1]: [Contributions](https://github.com/MarcDiethelm/contributing)
+</code></pre>
 
                     </main>
 
