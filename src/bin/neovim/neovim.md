@@ -262,6 +262,10 @@ neovide --server <your_host>:1234
 - #window [WinShift.nvim](https://github.com/sindrets/winshift.nvim)
 - #workspace [workspaces.nvim](https://github.com/natecraddock/workspaces.nvim)
 
+### later
+
+- #git [csc.nvim](https://github.com/yus-works/csc.nvim)
+
 ### cache
 
 - #bookmark [bookmarks.nvim](https://github.com/heilgar/bookmarks.nvim)
@@ -291,6 +295,8 @@ neovide --server <your_host>:1234
 - #dap #ui [nvim-dap-view](https://github.com/igorlfs/nvim-dap-view)
 - #dap [dap-breakpoints.nvim](https://github.com/Carcuis/dap-breakpoints.nvim)
 - #dap [DAPInstall](https://github.com/ravenxrz/DAPInstall.nvim)
+- #database [mssql.nvim](https://github.com/Kurren123/mssql.nvim)
+- #database [Dbout.nvim](https://github.com/zongben/dbout.nvim)
 - #deveplop [BuildScript Plugin](https://github.com/kosekidev/build-script)
 - #deveplop [commons.nvim](https://github.com/linrongbin16/commons.nvim)
 - #deveplop [DepSync](https://github.com/robertazzopardi/depsync.nvim)
@@ -381,6 +387,7 @@ neovide --server <your_host>:1234
 - #explorer [vim-sidebar-manager](https://github.com/brglng/vim-sidebar-manager)
 - #font [otf2ttf](https://github.com/awesometoolbox/otf2ttf)
 - #formatter [stylua-nvim](https://github.com/ckipp01/stylua-nvim)
+- #git #commit [aicommits.nvim](https://github.com/404pilo/aicommits.nvim)
 - #git #diff [axkirillov/unified.nvim](https://github.com/axkirillov/unified.nvim)
 - #git #issue [Octo.nvim](https://github.com/pwntester/octo.nvim)
 - #git [conflict-juggler.nvim](https://github.com/pv-hernandez/conflict-juggler.nvim)
@@ -511,6 +518,7 @@ neovide --server <your_host>:1234
 - #screenshot [Freeze Neovim Plugin](https://github.com/AlejandroSuero/freeze-code.nvim)
 - #screenshot [freeze.nvim](https://github.com/ndom91/freeze.nvim)
 - #search [bible-verse.nvim](https://github.com/anthony-halim/bible-verse.nvim)
+- #search [fzf-nerdfont.nvim](https://github.com/stephansama/fzf-nerdfont.nvim)
 - #search [fzfx.nvim](https://github.com/linrongbin16/fzfx.nvim)
 - #session [Persistence](https://github.com/folke/persistence.nvim)
 - #session [Session Lens](https://github.com/rmagatti/session-lens)
@@ -610,6 +618,7 @@ neovide --server <your_host>:1234
 - [famous-quotes.nvim](https://github.com/mahyarmirrashed/famous-quotes.nvim)
 - [Filetype Based Template Plugin For Neovim](https://github.com/doganalper/template.nvim)
 - [gitlab.nvim](https://github.com/harrisoncramer/GitLab.nvim)
+- [i18n.nvim](https://github.com/yelog/i18n.nvim)
 - [Luarocks.nvim](https://github.com/camspiers/luarocks)
 - [NeoDoc.nvim](https://github.com/SunnyTamang/neodoc.nvim)
 - [neotest-busted](https://github.com/MisanthropicBit/neotest-busted)

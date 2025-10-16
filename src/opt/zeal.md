@@ -9,4 +9,20 @@ sudo pacman -S zeal
 scoop install zeal
 ```
 
+## config
+
+Zeal → Edit → Preferences → Docset storage → `<path_to>/docsets`
+
+## usage
+
+- Zeal → Tools → Docsets
+  - For offical docsets → Available → Refresh → Select one document → Download
+  - For 3rd docsets → Installed → Add feed → Fill Feed URL → OK
+
+You can get Feed URL from [Zeal User Contributions & Cheat Sheets](https://zealusercontributions.vercel.app/docsets).
+
+## cross-reference
+
+- [keypirinha-zealous.md](/opt/_windows/keypirinha/keypirinha.md)
+
 ![zeal](/_image/opt/zeal.png)

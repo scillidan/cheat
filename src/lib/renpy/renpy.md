@@ -2,30 +2,66 @@
 
 ## usage
 
-### Build Distributions
+### Build Distributions (Windows 10)
 
 1. Download `SDK.zip` from [Download Ren'Py](https://www.renpy.org/latest.html).
 2. Decompress it to `renpy-*-sdk\`.
 3. Run `renpy-*-sdk\renpy.exe`.
-4. preferences → General → Projects Directory → `C:\Users\User\Project\renpy` → Return.
-5. Go to `C:\Users\User\Project\renpy`，`git clone --depth=1 https://codeberg.org/fhs/katawa-shoujo-re-engineered`.
-6. Renpy → PROJECTS → refresh → Select `katawa-shoujo-re-engineered`.
-7. Build Distributions → Build.
+4. preferences → General → Projects Directory → `<path_to>\proj_renpy` → Return.
+5. `cd <path_to>\proj_renpy`.
+6. `git clone --depth=1 https://codeberg.org/fhs/katawa-shoujo-re-engineered`.
+7. Renpy → PROJECTS → refresh → Select `katawa-shoujo-re-engineered`.
+8. Build Distributions → Build.
 
-### Build Android
+### Build Android (Windows 10)
 
-1. Renpy → Android → Build
+1. Install [JDK](https://www.oracle.com/java/technologies/downloads/) and [Gradle](https://gradle.org/). For example:
+  1. Download and Decompress `OpenJDK21U-jdk_x64_windows_hotspot_21.0.4_7.zip` to `jdk-21.04\`.
+  2. Download and Decompress `gradle-8.5-bin.zip` to `gradle-8.5\`. Or put `gradle-8.5-bin.zip` into `%USERPROFILE%\.gradle\wrapper\dists\gradle-8.5-bin\<some_string>\`.
+2. Add `jdk-21.04\bin`, `gradle-8.5\bin` into PATH.
+3. Restart Renpy.
+
+- Renpy → Android → Build
   1. Install SDK
   2. Generate Keys
   3. Build Package
-2. 这个步骤会检测环境要求，需要JDK和Gradle
-  1. 这里会涉及到Library文件的存放位置。我个人没分CDEF盘，只有C盘，也优先使用软件的便携版，一般就是压缩包。下面步骤就根据你的实际情况做修改
-  2. 按照提示下载JDK和Gradle的文件。解压`OpenJDK21U-jdk_x64_windows_hotspot_21.0.4_7.zip`到`C:\Users\User\Lib\jdk-21.04`
-  3. 解压`gradle-8.5-bin.zip`到`C:\Users\User\Lib\gradle-8.5`
-  4. Windows设置 → 查看高级系统设置 → 环境变量 → 用户变量 → 选中Path → 编辑 → 新建 → `C:\Users\User\Lib\jdk-21.04\bin` → 再新建 → `C:\Users\User\Lib\gradle-8.5\bin`
-  5. 重启`renpy.exe` → Andriod → Build Package
-3. 如果在gradle相关的步骤提示`需要下载gradle`，这可能是个bug。可以把`gradle-8.5-bin.zip`放进`C:\Users\User\.gradle\wrapper\dists\gradle-8.5-bin\<一串字符>\`下。重启renpy.exe，再试一次
-4. 如果出现未知错误，可尝试关闭梯子。重启renpy.exe再试
+
+## Build renpy documentation (Ubuntu 24.04 ARM)
+
+[^1]
+
+```sh
+sudo apt install virtualenvwrapper python3-dev libavcodec-dev libavformat-dev libswresample-dev libswscale-dev libharfbuzz-dev libfreetype6-dev libfribidi-dev libsdl2-dev libsdl2-image-dev libsdl2-gfx-dev libsdl2-mixer-dev libsdl2-ttf-dev libjpeg-dev
+. /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+mkvirtualenv renpy
+pip install -U setuptools future six typing pefile requests ecdsa
+pip install -U "cython<3.0.0"
+```
+
+```sh
+git clone --depth=1 https://www.github.com/renpy/pygame_sdl2
+pushd pygame_sdl2
+python setup.py install
+python install_headers.py $VIRTUAL_ENV
+popd
+```
+
+```sh
+LATEST_RELEASE=$(curl -s https://api.github.com/repos/renpy/renpy/releases/latest | jq -r .tag_name)
+wget https://github.com/renpy/renpy/archive/refs/tags/$LATEST_RELEASE.zip
+unzip $LATEST_RELEASE.zip
+pushd renpy-*
+pushd module
+python setup.py install
+cd ..
+pushd sphinx
+pip install -U sphinx sphinx_rtd_theme sphinx_rtd_dark_mode
+./build.sh
+```
+
+## cross-reference
+
+- [zeal.md](/opt/zeal.md)
 
 ## reference
 
@@ -248,3 +284,6 @@
 - #variable [RenPy Cheat Generator](https://github.com/lure0xaos/rpycg)
 - #vscode [Ren'Py Language for Visual Studio Code](https://github.com/LuqueDaniel/vscode-language-renpy)
 - #vscode [Ren'Py VSCode Project Template](https://github.com/tiliv/renpy-vscode-template)
+
+[^1]: [renpy - Compiling the Modules](https://github.com/renpy/renpy#compiling-the-modules)
+

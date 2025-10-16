@@ -13,7 +13,7 @@
 Add into Environment:
 
 ```
-EDITOR=subl
+EDITOR=nvim
 # Lib
 CARGO_HOME=C:\Users\User\.cargo
 CARGO_TARGET_DIR=C:\Users\User\.cargo\tmp
@@ -25,6 +25,9 @@ LUA_PATH=C:\gcc-lua-install\lua-5.4.8;C:\Users\User\AppData\Roaming\luarocks\sha
 LUA_CPATH=C:\gcc-lua-install\lua-5.4.8\src;C:\Users\User\AppData\Roaming\luarocks\lib\lua\5.4\?.dll
 PIPX_HOME=C:\Users\User\.pipx
 PNPM_HOME=C:\Users\User\.pnpm
+# Bin
+BASH=C:\Users\User\Scoop\shims\bash.exe
+SSH=C:\Users\User\Scoop\apps\git\current\usr\bin\ssh.exe
 ## By scoop
 LIBCLANG_PATH=C:\Users\User\Scoop\apps\llvm\current\bin
 LLVM_LIB_DIR=C:\Users\User\Scoop\apps\llvm\current\lib
@@ -37,7 +40,7 @@ MAGICK_HOME=C:\Users\User\Scoop\apps\imagemagick\current
 OLLAMA_HOST=0.0.0.0
 OLLAMA_ORIGINS=*
 TESSDATA_PREFIX=C:\Users\User\Scoop\apps\tesseract-languages\current
-# For init.sh
+# Other
 DOTFILES_DIR=C:\Users\User\Usr\Git\dotfiles
 PEGASUS_HOME=C:\Users\User\Scoop\apps\pegasus\current
 SCOOP_HOME=C:\Users\User\Scoop
