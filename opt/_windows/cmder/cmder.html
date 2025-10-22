@@ -194,7 +194,6 @@ git clone --depth=1 https://github.com/chrisant996/clink-gizmos
 git clone --depth=1 https://github.com/davidmarek/clink-git-extensions
 git clone --depth=1 https://github.com/mwmi/clink-carapace
 git clone --depth=1 https://github.com/shunsambongi/clink-zoxide
-git clone --depth=1 https://github.com/tadashi-aikawa/owl-cmder-tools
 </code></pre>
 <pre><code class="language-sh">set "CMDER_HOME=%USERPROFILE%\Usr\Opt\cmder_mini"
 set "CMDER_SRC=%USERPROFILE%\Usr\Source\cmder"
@@ -236,9 +235,6 @@ mklink "%CMDER_HOME%\vendor\matchicons.lua" %CMDER_SRC%\clink-gizmos\matchicons.
 
 del "%CMDER_HOME%\vendor\zoxide.lua
 mklink "%CMDER_HOME%\vendor\zoxide.lua" %CMDER_SRC%\clink-zoxide\zoxide.lua"
-
-del "%CMDER_HOME%\config\cdz.lua"
-mklink "%CMDER_HOME%\config\cdz.lua" %CMDER_SRC%\owl-cmder-tools\config\cdz.lua"
 </code></pre>
 <h2 id="config"><a class="header" href="#config">config</a></h2>
 <p>Cmder → Settings → Import → <code>user-ConEmu.xml</code>.</p>
@@ -252,16 +248,7 @@ mklink "%CMDER_HOME%\config\cdz.lua" %CMDER_SRC%\owl-cmder-tools\config\cdz.lua"
 <h2 id="resource"><a class="header" href="#resource">resource</a></h2>
 <h3 id="mark"><a class="header" href="#mark">mark</a></h3>
 <ul>
-<li>#clink <a href="https://github.com/mwmi/clink-carapace">clink carapace</a></li>
-<li>#clink <a href="https://github.com/chrisant996/clink-gizmos">Clink Gizmos</a> <em>commit</em></li>
-<li>#clink <a href="https://github.com/vladimir-kotikov/clink-completions">clink-completions</a> <em>release</em></li>
-<li>#clink <a href="https://github.com/davidmarek/clink-git-extensions">clink-git-extensions</a> <em>commit</em></li>
-<li>#clink <a href="https://github.com/chrisant996/clink-fzf">FZF integration for Clink</a> <em>commit</em></li>
-<li>#clink <a href="https://github.com/HeyItsJono/HomeClink">HomeClink</a> <em>commit</em></li>
-<li>#clink <a href="https://github.com/shunsambongi/clink-zoxide">zoxide support for clink</a> <em>commit</em></li>
-<li><a href="https://github.com/chrisant996/clink">Clink</a> <em>release</em></li>
 <li><a href="https://github.com/Maximus5/ConEmu">ConEmu</a> <em>release</em></li>
-<li><a href="https://github.com/tadashi-aikawa/owl-cmder-tools">Owl Cmder Tools</a></li>
 </ul>
 <h3 id="extra"><a class="header" href="#extra">extra</a></h3>
 <ul>
@@ -269,11 +256,10 @@ mklink "%CMDER_HOME%\config\cdz.lua" %CMDER_SRC%\owl-cmder-tools\config\cdz.lua"
 </ul>
 <h3 id="cache"><a class="header" href="#cache">cache</a></h3>
 <ul>
-<li>#clink <a href="https://github.com/HeyItsJono/CheatCompletions">CheatCompletions</a></li>
-<li>#clink <a href="https://github.com/ahrvoje/snapline">snapline</a></li>
-<li><a href="https://github.com/chrisant996/clink-flex-prompt">clink-flex-prompt</a></li>
+<li><a href="https://github.com/tadashi-aikawa/owl-cmder-tools">Owl Cmder Tools</a></li>
 <li><a href="https://github.com/skywind3000/z.lua">z.lua</a></li>
 </ul>
+<h2 id="annex"><a class="header" href="#annex">annex</a></h2>
 <p><img src="/_image/opt/_windows/cmder/colorcheme_fakenight.png" alt="colorcheme_fakenight" />
 <img src="/_image/opt/_windows/cmder/colorscheme_vanta.png" alt="colorscheme_vanta" /></p>
 
