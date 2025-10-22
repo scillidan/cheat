@@ -5,6 +5,22 @@
 - #document [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
 - #post [10 Essential Terminal Commands Every Developer Should Know](https://www.trevorlasn.com/blog/10-essential-terminal-commands-every-developer-should-know)
 
+## cross-reference
+
+### mark
+
+- [git.md](bin/git/git.md)
+- [github-cli.md](bin/github-cli/github-cli.md)
+- [neovim.md](bin/neovim/neovim.md)
+
+### later
+
+- [image-theming.md](bin/image-theming.md)
+
+### cache
+
+- [ugrep.md](bin/ugrep.md)
+
 ## resource
 
 ### mark

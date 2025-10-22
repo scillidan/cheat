@@ -244,7 +244,6 @@
     - [yay](bin/_arch/yay.md)
     - [zeal-lynx-cli](bin/_arch/zeal-lynx-cli.md)
     - [tmux](bin/_arch/tmux/tmux.md)
-      - [tmux-thumbs](bin/_arch/tmux/tmux-thumbs.md)
     - [zellij](bin/_arch/zellij/zellij.md)
       - [zjstatus](bin/_arch/zellij/zjstatus.md)
     - [zsh](bin/_arch/zsh/zsh.md)

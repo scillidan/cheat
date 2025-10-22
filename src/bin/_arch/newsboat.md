@@ -37,4 +37,10 @@ newsboat
 
 - #document [Newsboat](https://newsboat.org/releases/2.10/docs/newsboat.html)
 
+## resource
+
+### cache
+
+- [link-handler](https://github.com/mrdotx/link-handler)
+
 [^1]: [ArchWiki - Newsboat](https://wiki.archlinux.org/title/Newsboat)

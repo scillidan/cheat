@@ -12,7 +12,7 @@ sudo pacman -S zellij
 vim ~/.zshrc
 ```
 
-```
+```sh
 export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"
 export ZELLIJ_CONFIG_FILE="$HOME/.config/zellij/user.kdl"
 
@@ -43,6 +43,8 @@ alias zw='zellij --layout=swap'
 - [Does zellij support changing tab's name according to pane file system path automatically?](https://www.reddit.com/r/zellij/comments/10skez0/does_zellij_support_changing_tabs_name_according/)
 
 ## cross-reference
+
+### mark
 
 - [zjstatus.md](/bin/_arch/zellij/zjstatus.md)
 

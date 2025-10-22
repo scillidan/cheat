@@ -27,7 +27,7 @@
 
 ## cross-reference
 
-- #arch [texlive.md](/bin/_arch/texlive.md)
+- #Arch [texlive.md](/bin/_arch/texlive.md)
 - #windows [miktex.md](/opt/_windows/miktex.md)
 
 ## resource

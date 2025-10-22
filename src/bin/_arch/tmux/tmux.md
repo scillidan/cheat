@@ -32,6 +32,13 @@ tmux attach
 - [tmux configuration: set style -g with bold attribute changes colors](https://github.com/alacritty/alacritty/issues/2138)
 - [tpm is installed but the plugins are not fetched](https://github.com/tmux-plugins/tpm/issues/193)
 
+## cross-reference
+
+### mark
+
+- [tmux-thumbs](bin/_arch/tmux/tmux-thumbs.md)
+- [tmuxp](bin/_arch/tmux/tmuxp.md)
+
 ## troubleshoot
 
 - [I get error 127 when trying to install.](https://github.com/tmux-plugins/tpm/issues/67)
@@ -55,6 +62,7 @@ tmux attach
 ### cache
 
 - #ranger [ranger-tmux](https://github.com/joouha/ranger_tmux)
+- #session [Session Sauce](https://github.com/ChrisPenner/session-sauce)
 - #session [Smug - tmux session manager](https://github.com/ivaaaan/smug)
 - #session [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
 - #theme [Artimux](https://github.com/tribhuwan-kumar/Artimux)

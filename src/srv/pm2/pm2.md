@@ -67,7 +67,7 @@ sudo vim /etc/httpd/conf.d/sub.domain.com.conf
 
 ## cross-reference
 
-- [pm2-installer.md](/bin/_windows/pm2-installer.md)
+- [pm2-installer.md](/srv/pm2/pm2-installer.md)
 
 [^1]: [Persistent applications](https://pm2.keymetrics.io/docs/usage/startup/)
 [^2]: [How to specify a port number for pm2](https://stackoverflow.com/questions/31502351/how-to-specify-a-port-number-for-pm2)

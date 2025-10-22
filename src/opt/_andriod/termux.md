@@ -46,16 +46,12 @@ ls /usr
 ```sh
 pkg install \
   7zip \
-  agg \
-  asciinema \
   aspell \
   aspell-en \
   atuin \
   bat \
   carapace \
-  carapace \
   chafa \
-  cmus \
   curl \
   dictd \
   eza \
@@ -63,28 +59,23 @@ pkg install \
   fd \
   fzf \
   gh \
-  gh \
   git \
   glow \
   gnupg \
   jq \
   lazygit \
   less \
-  lua51 \
+  lua53 \
   neovim \
-  newsboat \
   openssh \
   pass \
   python \
   python-pip \
   ripgrep \
   rust \
-  rust \
   sdcv \
   starship \
   tealdeer \
-  tealdeer \
-  tere \
   tmux \
   translate-shell \
   uv \
@@ -93,7 +84,11 @@ pkg install \
   yq \
   zoxide \
   zsh \
-  zsh-completions \
+  zsh-completions
+  # agg \
+  # asciinema \
+  # cmus \
+  # newsboat \
 ```
 
 ```sh

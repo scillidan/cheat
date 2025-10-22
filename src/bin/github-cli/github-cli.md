@@ -29,19 +29,18 @@ gh extension remove <user/repo>
 
 ## cross-reference
 
+### mark
+
 - [gh-clone-org.md](/bin/github-cli/gh-clone-org.md)
+
+### later
+
 - [gh-download.md](/bin/github-cli/gh-download.md)
 - [gh-tidy.md](/bin/github-cli/gh-tidy.md)
 
 ## resource
 
-### mark
-
-- #branch [Tidy](https://github.com/HaywardMorihara/gh-tidy)
-- #download [gh-download](https://github.com/yuler/gh-download)
-- #org [gh-clone-org](https://github.com/matt-bartel/gh-clone-org)
-
-### extra
+### later
 
 - #download [gh-install](https://github.com/redraw/gh-install)
 - #pr [gh-combine-prs](https://github.com/rnorth/gh-combine-prs)

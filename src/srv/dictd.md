@@ -118,8 +118,14 @@ dict -h localhost -p 2528 -d <database> <word>
 
 - [dict-ecdict.md](/bin/dict-ecdict.md)
 
+### cache
+
+- [ClipDict](https://github.com/github-young/ClipDict)
+
 ## asset
 
 - [file_dictd](https://github.com/scillidan/file_dictd)
+
+## resource
 
 [^1]: [dictd.conf](https://gist.github.com/wind0204/d65c7d1b5d7794c4c7fa1a02d5151acc)

@@ -115,11 +115,11 @@ scoop install mpv
 
 ### cache
 
+- #Arch [Mpv Subs Popout](https://github.com/sdaqo/mpv-subs-popout)
+- #Arch [mpv-omniGlass](https://github.com/guarapicci/mpv-omniGlass)
 - #anki [Immersive](https://github.com/Ben-Kerman/immersive)
 - #anki [mpvacious](https://github.com/ajatt-tools/mpvacious)
 - #anki [mvp2anki](https://github.com/SenneH/mpv2anki)
-- #arch [Mpv Subs Popout](https://github.com/sdaqo/mpv-subs-popout)
-- #arch [mpv-omniGlass](https://github.com/guarapicci/mpv-omniGlass)
 - #audio [ff-silence](https://github.com/mesvam/ff-silence)
 - #audio [mpv-skipsilence](https://github.com/ferreum/mpv-skipsilence)
 - #bilibili [bdanmaku](https://github.com/UlyssesZh/bdanmaku)

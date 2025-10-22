@@ -43,6 +43,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 
 ### mark
 
+- #Arch [Open in Thunar](https://github.com/kernelp4nic/sublime-open-in-thunar)
 - #edit [AlignTab](https://github.com/randy3k/AlignTab)
 - #edit [Calculate](https://github.com/colinta/SublimeCalculate)
 - #edit [Data Wizard](https://github.com/nickklaskala/DataWizard)
@@ -113,7 +114,6 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 - [Terminal](https://github.com/wbond/sublime_terminal)
 - [WakaTime](https://github.com/wakatime/sublime-wakatime)
 - [Mirodark Color Scheme](https://github.com/djjcast/mirodark-st2)
-- #arch [Open in Thunar](https://github.com/kernelp4nic/sublime-open-in-thunar)
 
 ### cache
 

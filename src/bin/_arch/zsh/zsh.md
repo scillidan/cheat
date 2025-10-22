@@ -25,7 +25,16 @@ git pull origin main
 
 ## cross-reference
 
+### mark
+
 - [wd.md](/bin/_arch/zsh/wd.md)
+
+### cache
+
+- [zpy](bin/_arch/zsh/zpy.md)
+- [zsh-abbr](bin/_arch/zsh/zsh-abbr.md)
+- [zsh-ssh](bin/_arch/zsh/zsh-ssh.md)
+- [zsh-z](bin/_arch/zsh/zsh-z.md)
 
 ## troubleshoot
 
@@ -67,6 +76,7 @@ git pull origin main
 - [codex Oh My Zsh Plugin](https://github.com/pressdarling/codex-zsh-plugin)
 - [zsh-async](https://github.com/mafredri/zsh-async)
 - [Zsh SSHInfo Plugin](https://github.com/SckyzO/zsh-sshinfo)
+- [Zsh Disk Guard Plugin](https://github.com/TomfromBerlin/Zsh-Disk-Guard)
 
 ### cache
 

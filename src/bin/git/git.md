@@ -6,7 +6,7 @@
 # Arch
 sudo pacman -S git
 # Windows 10
-scoop install	git
+scoop install git
 ```
 
 ## Personal do
@@ -107,33 +107,34 @@ squash <will merge into first commit>
 
 ## cross-reference
 
-- #arch [forgit.md](/bin/git/forgit.md)
+### mark
+
+- #Arch [forgit.md](/bin/git/forgit.md)
 - [git-crypt.md](/bin/git/git-crypt.md)
 - [git-sync.md](/bin/git/git-sync.md)
 - [gitleaks.md](/bin/git/gitleaks.md)
 - [lazygit.md](/bin/git/lazygit.md)
 - [multi-git-status.md](/bin/git/multi-git-status.md)
 
+### extra
+
+- [gptcommit.md](/bin/git/gptcommit.md)
+
+### cache
+
+- [cz-cli.md](/bin/git/cz-cli.md)
+- [git-branchless.md](/bin/git/git-branchless.md)
+- [git-cliff.md](/bin/git/git-cliff.md)
+- [git-filter-repo.md](/bin/git/git-filter-repo.md)
+
 ## resource
 
 ### mark
 
-- [git-crypt - transparent file encryption in git](https://github.com/AGWA/git-crypt)
+- #Windows [Git for Windows](https://github.com/git-for-windows/git)
 - [git-sizer](https://github.com/github/git-sizer)
-- [git-sync](https://github.com/simonthum/git-sync)
-- [Gitleaks](https://github.com/gitleaks/gitleaks)
 - [gowl](https://github.com/tadashi-aikawa/gowl)
-- [gptcommit](https://github.com/zurawiki/gptcommit)
-- [Lazygit](https://github.com/jesseduffield/lazygit)
-- [mgitstatus](https://github.com/fboender/multi-git-status)
 - [ugit](https://github.com/Bhupesh-V/ugit)
-
-### later
-
-- [Branchless workflow for Git](https://github.com/arxanas/git-branchless)
-- [commitizen](https://github.com/commitizen/cz-cli)
-- [git-cliff](https://github.com/orhun/git-cliff)
-- [git-filter-repo](https://github.com/newren/git-filter-repo)
 
 ### cache
 

@@ -10,3 +10,9 @@ scoop install curl
 ## reference
 
 - #document [everything curl](https://everything.curl.dev/)
+
+## reference
+
+### mark
+
+- [Reproducible curl binaries](https://github.com/curl/curl-for-win)

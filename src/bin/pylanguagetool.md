@@ -6,7 +6,7 @@
 # uv (Windows 10)
 uv venv .pyLanguagetool
 .pyLanguagetool\Scripts\activate.bat
-uv pip install --upgrade setuptools beautifulsoup4 pyLanguagetool
+uv pip install --upgrade setuptools beautifulsoup4 pylanguagetool
 mklink %USERPROFILE%\.local\bin\pylanguagetool.exe %CD%\.pyLanguagetool\Scripts\pylanguagetool.exe
 deactivate.bat
 ```

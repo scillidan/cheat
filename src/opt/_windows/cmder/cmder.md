@@ -16,7 +16,6 @@ git clone --depth=1 https://github.com/chrisant996/clink-gizmos
 git clone --depth=1 https://github.com/davidmarek/clink-git-extensions
 git clone --depth=1 https://github.com/mwmi/clink-carapace
 git clone --depth=1 https://github.com/shunsambongi/clink-zoxide
-git clone --depth=1 https://github.com/tadashi-aikawa/owl-cmder-tools
 ```
 
 ```sh
@@ -60,9 +59,6 @@ mklink "%CMDER_HOME%\vendor\matchicons.lua" %CMDER_SRC%\clink-gizmos\matchicons.
 
 del "%CMDER_HOME%\vendor\zoxide.lua
 mklink "%CMDER_HOME%\vendor\zoxide.lua" %CMDER_SRC%\clink-zoxide\zoxide.lua"
-
-del "%CMDER_HOME%\config\cdz.lua"
-mklink "%CMDER_HOME%\config\cdz.lua" %CMDER_SRC%\owl-cmder-tools\config\cdz.lua"
 ```
 
 ## config
@@ -80,16 +76,7 @@ Cmder → Settings → Import → `user-ConEmu.xml`.
 
 ### mark
 
-- #clink [clink carapace](https://github.com/mwmi/clink-carapace)
-- #clink [Clink Gizmos](https://github.com/chrisant996/clink-gizmos) _commit_
-- #clink [clink-completions](https://github.com/vladimir-kotikov/clink-completions) _release_
-- #clink [clink-git-extensions](https://github.com/davidmarek/clink-git-extensions) _commit_
-- #clink [FZF integration for Clink](https://github.com/chrisant996/clink-fzf) _commit_
-- #clink [HomeClink](https://github.com/HeyItsJono/HomeClink) _commit_
-- #clink [zoxide support for clink](https://github.com/shunsambongi/clink-zoxide) _commit_
-- [Clink](https://github.com/chrisant996/clink) _release_
 - [ConEmu](https://github.com/Maximus5/ConEmu) _release_
-- [Owl Cmder Tools](https://github.com/tadashi-aikawa/owl-cmder-tools)
 
 ### extra
 
@@ -97,10 +84,10 @@ Cmder → Settings → Import → `user-ConEmu.xml`.
 
 ### cache
 
-- #clink [CheatCompletions](https://github.com/HeyItsJono/CheatCompletions)
-- #clink [snapline](https://github.com/ahrvoje/snapline)
-- [clink-flex-prompt](https://github.com/chrisant996/clink-flex-prompt)
+- [Owl Cmder Tools](https://github.com/tadashi-aikawa/owl-cmder-tools)
 - [z.lua](https://github.com/skywind3000/z.lua)
+
+## annex
 
 ![colorcheme_fakenight](/_image/opt/_windows/cmder/colorcheme_fakenight.png)
 ![colorscheme_vanta](/_image/opt/_windows/cmder/colorscheme_vanta.png)

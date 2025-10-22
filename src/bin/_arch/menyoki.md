@@ -12,4 +12,3 @@ sudo pacman -S menyoki
 # Record 30 frames per second and encode as APNG
 menyoki record apng --fps 30
 ```
-
