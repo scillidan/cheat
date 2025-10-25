@@ -37,6 +37,10 @@ sudo docker compose up -d
 
 ## resource
 
+### later
+
+- [Awesome N8N](https://github.com/restyler/awesome-n8n)
+
 ### cache
 
 - [Archive Spotify's discover weekly playlist](https://n8n.io/workflows/697-archive-spotifys-discover-weekly-playlist/)
@@ -52,6 +56,8 @@ sudo docker compose up -d
 - [Turn on a light to a specific color on any update in GitHub repository](https://n8n.io/workflows/1856-turn-on-a-light-to-a-specific-color-on-any-update-in-github-repository/)
 
 [^1]: [Server setups - Docker-Compose](https://docs.n8n.io/hosting/installation/server-setups/docker-compose/)
+
+## annex
 
 ![n8n_01](/_image/srv/n8n_01.png)
 ![n8n_02](/_image/srv/n8n_02.png)

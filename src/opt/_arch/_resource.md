@@ -17,6 +17,7 @@
 - #flatpak [Bazaar](https://flathub.org/apps/io.github.kolunmi.Bazaar)
 - [icon-explorer](/opt/_arch/icon-explorer.md)
 - [Loopers](https://github.com/mwylde/loopers)
+- [WinBoat](https://github.com/TibixDev/winboat)
 
 ### extra
 

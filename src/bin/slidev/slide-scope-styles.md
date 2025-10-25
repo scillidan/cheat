@@ -1,1 +1,0 @@
-# Slide Scope Styles

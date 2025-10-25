@@ -25,7 +25,7 @@ set noexpandtab
 
 ## cross-reference
 
-- #preset [wim.md](/bin/vim/wim.md)
+- [wim.md](/bin/vim/wim.md)
 
 ## resource
 

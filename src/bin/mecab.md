@@ -13,4 +13,9 @@
 
 ## resource
 
+### cache
+
+- [mecab-ko-msvc](https://github.com/Pusnow/mecab-ko-msvc)
+- [mecab-python3](https://github.com/SamuraiT/mecab-python3)
 - [mecab_dictionaries](https://github.com/tetutaro/mecab_dictionaries)
+- [UniDic](https://clrd.ninjal.ac.jp/unidic)

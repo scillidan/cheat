@@ -12,6 +12,7 @@
 ### later
 
 - #photo [EXIF Photo Blog](https://github.com/sambecker/exif-photo-blog)
+- [EmbedPDF](https://github.com/embedpdf/embed-pdf-viewer)
 
 ### extra
 

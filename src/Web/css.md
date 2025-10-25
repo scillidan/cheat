@@ -11,3 +11,4 @@
 - #image [Elastic Grid Scroll: Creating Lag-Based Layout Animations with GSAP ScrollSmoother](https://tympanus.net/codrops/2025/06/03/elastic-grid-scroll-creating-lag-based-layout-animations-with-gsap-scrollsmoother/)
 - #image [Recreating Palmer’s Draggable Product Grid with GSAP](https://tympanus.net/codrops/2025/09/01/recreating-palmers-draggable-product-grid-with-gsap/)
 - #latex [LaTeX.css](https://latex.vercel.app/)
+- [autosubset](https://github.com/MarcelWaldvogel/autosubset)

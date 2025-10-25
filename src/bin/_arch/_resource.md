@@ -10,7 +10,6 @@
 - [cmus.md](/bin/_arch/cmus.md)
 - [firewalld.md](/bin/_arch/firewalld.md)
 - [flatpak.md](/bin/_arch/flatpak.md)
-- [gnupg.md](/bin/_arch/gnupg.md)
 - [keyd.md](/bin/_arch/keyd.md)
 - [networkmanager.md](/bin/_arch/networkmanager.md)
 - [openssh.md](/bin/_arch/openssh.md)

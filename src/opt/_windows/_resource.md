@@ -83,6 +83,8 @@
 ### later
 
 - #pdf [WinScan2PDF](https://softwareok.com/?seite=Microsoft/WinScan2PDF)
+- [Winhance](https://github.com/memstechtips/Winhance)
+- [Subloader](https://github.com/Valyreon/Subloader)
 
 ### cache
 

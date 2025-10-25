@@ -15,3 +15,10 @@ scoop install tldr
 tldr -c
 tldr -u
 ```
+
+## resource
+
+### cache
+
+- #tldr [tldr++](https://github.com/isacikgoz/tldr)
+- #tldr [tealdeer](https://github.com/dbrgn/tealdeer)

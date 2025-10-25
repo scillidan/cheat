@@ -22,9 +22,17 @@
 - [NoiseCraft](https://github.com/maximecb/noisecraft)
 - [Satori](https://github.com/vercel/satori)
 - [tldraw](https://github.com/tldraw/tldraw)
+- [OCRFlux](https://github.com/chatdoc-com/OCRFlux)
+- [一饭封神](https://github.com/liu-ziting/what-to-eat)
+- [VIM Master](https://github.com/renzorlive/vimmaster)
+- [Nano-Banana](https://github.com/PicoTrex/Awesome-Nano-Banana-images)
+- [File Wizard](https://github.com/LoredCast/filewizard)
+- [Papra](https://github.com/papra-hq/papra)
+- [IndexTTS2](https://github.com/index-tts/index-tts)
 
 ### cache
 
+- [LinuxPDF](https://github.com/ading2210/linuxpdf)
 - #annotate [Hypothesis](https://hypothes.is)
 - #audio [AniPortrait](https://github.com/Zejun-Yang/AniPortrait)
 - #audio [Bark Web UI](https://github.com/makawy7/bark-webui)
@@ -41,6 +49,7 @@
 - #audio [Real-Time Voice Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
 - #audio [VoiceStreamAI](https://github.com/alesaccoia/VoiceStreamAI)
 - #audio [Whisper-WebUI](https://github.com/jhj0517/Whisper-WebUI)
+- #audio [FireRedTTS-2](https://github.com/FireRedTeam/FireRedTTS2)
 - #database [Chat2DB](https://github.com/CodePhiliaX/Chat2DB)
 - #database [SQLite Web](https://github.com/coleifer/sqlite-web)
 - #database [studio](https://github.com/outerbase/studio)

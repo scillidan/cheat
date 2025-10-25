@@ -147,6 +147,7 @@ neovide --server <your_host>:1234
 - [cmp-lsp-rimels.md](bin/neovim/cmp-lsp-rimels.md)
 - [obsidian-nvim.md](bin/neovim/obsidian-nvim.md)
 - [packer-nvim.md](bin/neovim/packer-nvim.md)
+- [lunarvim.md](/bin/neovim/lunarvim.md)
 
 ## resource
 
@@ -242,6 +243,7 @@ neovide --server <your_host>:1234
 - #buffer [buffer-sticks.nvim](https://github.com/ahkohd/buffer-sticks.nvim)
 - #learn [spamguard.nvim](https://github.com/timseriakov/spamguard.nvim)
 - #git [csc.nvim](https://github.com/yus-works/csc.nvim)
+- [LightSwitch.nvim](https://github.com/markgandolfo/lightswitch.nvim)
 
 ### cache
 
@@ -355,6 +357,7 @@ neovide --server <your_host>:1234
 - #git #commit [aicommits.nvim](https://github.com/404pilo/aicommits.nvim)
 - #git #diff [axkirillov/unified.nvim](https://github.com/axkirillov/unified.nvim)
 - #git #issue [Octo.nvim](https://github.com/pwntester/octo.nvim)
+- #git #issue [Git Needy](https://github.com/cd-4/git-needy.nvim)
 - #git [conflict-juggler.nvim](https://github.com/pv-hernandez/conflict-juggler.nvim)
 - #git [Diffview.nvim](https://github.com/sindrets/diffview.nvim)
 - #git [gitblame.nvim](https://github.com/ring0-rootkit/gitblame.nvim)
@@ -407,6 +410,7 @@ neovide --server <your_host>:1234
 - #markdown [headlines.nvim](https://github.com/lukas-reineke/headlines.nvim)
 - #markdown [kiwi.nvim](https://github.com/serenevoid/kiwi.nvim)
 - #markdown [markdown-toc](https://github.com/ChuufMaster/markdown-toc)
+- #markdown [markdown-plus.nvim](https://github.com/YousefHadder/markdown-plus.nvim)
 - #markdown [markdown.nvim](https://github.com/MeanderingProgrammer/markdown.nvim)
 - #markdown [markdowny.nvim](https://github.com/antonk52/markdowny.nvim)
 - #markdown [marknav.nvim](https://github.com/daenikon/marknav.nvim)
@@ -444,7 +448,6 @@ neovide --server <your_host>:1234
 - #pdf [nvim-texis](https://github.com/jhofscheier/nvim-texis)
 - #preset [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 - #preset [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
-- #preset [LunarVim](https://github.com/LunarVim/LunarVim)
 - #preset [Neorg](https://github.com/nvim-neorg/neorg)
 - #preset [NvChad](https://github.com/NvChad/NvChad)
 - #preset [oxocarbon.nvim](https://github.com/nyoom-engineering/oxocarbon.nvim)
@@ -471,7 +474,6 @@ neovide --server <your_host>:1234
 - #session [Persistence](https://github.com/folke/persistence.nvim)
 - #session [Session Lens](https://github.com/rmagatti/session-lens)
 - #session [sessions.nvim](https://github.com/natecraddock/sessions.nvim)
-- #setup #load [lz.n](https://github.com/nvim-neorocks/lz.n)
 - #setup [activate.nvim](https://github.com/roobert/activate.nvim)
 - #setup [rocks.nvim](https://github.com/nvim-neorocks/rocks.nvim)
 - #setup [vim-plug](https://github.com/junegunn/vim-plug)
@@ -531,11 +533,14 @@ neovide --server <your_host>:1234
 - #yank [YankBank](https://github.com/ptdewey/yankbank-nvim)
 - #yank [yanklines.nvim](https://github.com/obergodmar/yanklines.nvim)
 - #yank [yanklock.nvim](https://github.com/daltongd/yanklock.nvim)
+- [databox.nvim](https://github.com/chrisgve/databox.nvim)
 - [famous-quotes.nvim](https://github.com/mahyarmirrashed/famous-quotes.nvim)
 - [Filetype Based Template Plugin For Neovim](https://github.com/doganalper/template.nvim)
 - [gitlab.nvim](https://github.com/harrisoncramer/GitLab.nvim)
 - [i18n.nvim](https://github.com/yelog/i18n.nvim)
 - [Luarocks.nvim](https://github.com/camspiers/luarocks)
+- #loading [lz.n](https://github.com/nvim-neorocks/lz.n)
+- #loading [lze](https://github.com/BirdeeHub/lze)
 - [NeoDoc.nvim](https://github.com/SunnyTamang/neodoc.nvim)
 - [neotest-busted](https://github.com/MisanthropicBit/neotest-busted)
 - [nvim-luxmotion](https://github.com/LuxVim/nvim-luxmotion)

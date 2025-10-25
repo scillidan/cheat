@@ -61,6 +61,7 @@ git pull origin main
 - [fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
 - [forgit](https://github.com/wfxr/forgit)
 - [Smart Files Plugin for Zsh](https://github.com/vxfemboy/zsh-smart-files)
+- [sshinfo for Oh My Zsh](https://github.com/SckyzO/zsh-sshinfo)
 - [zpy](https://github.com/AndydeCleyre/zpy)
 - [Zsh plugin for Zellij](https://codeberg.org/tranzystorekk/zellij.zsh)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
@@ -74,8 +75,8 @@ git pull origin main
 ### later
 
 - [codex Oh My Zsh Plugin](https://github.com/pressdarling/codex-zsh-plugin)
+- [ffexport](https://github.com/Pakrohk/ffexport.plugin.zsh)
 - [zsh-async](https://github.com/mafredri/zsh-async)
-- [Zsh SSHInfo Plugin](https://github.com/SckyzO/zsh-sshinfo)
 - [Zsh Disk Guard Plugin](https://github.com/TomfromBerlin/Zsh-Disk-Guard)
 
 ### cache

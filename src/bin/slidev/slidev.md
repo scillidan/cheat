@@ -45,3 +45,5 @@ pnpm run export
 [^2]: [Exporting](https://sli.dev/guide/exporting)
 [^3]: [Theme and Addons](https://sli.dev/guide/theme-addon)
 [^4]: [Prettier Plugin](https://sli.dev/features/prettier-plugin)
+
+## [annex](/bin/slidev/_annex)
