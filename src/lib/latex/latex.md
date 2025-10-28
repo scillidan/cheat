@@ -30,6 +30,10 @@
 - #Arch [texlive.md](/bin/_arch/texlive.md)
 - #windows [miktex.md](/opt/_windows/miktex.md)
 
+## asset
+
+- [The Island of TeX](https://islandoftex.gitlab.io)
+
 ## resource
 
 ## later

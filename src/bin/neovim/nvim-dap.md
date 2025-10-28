@@ -19,4 +19,5 @@
 - #ui [nvim-dap-view](https://github.com/igorlfs/nvim-dap-view)
 - [dap-breakpoints.nvim](https://github.com/Carcuis/dap-breakpoints.nvim)
 - [DAPInstall](https://github.com/ravenxrz/DAPInstall.nvim)
+- [nvim-dap-envfile](https://github.com/ravsii/nvim-dap-envfile)
 - [one-small-step-for-vimkind](https://github.com/jbyuki/one-small-step-for-vimkind)

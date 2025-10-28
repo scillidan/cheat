@@ -15,12 +15,9 @@ scoop install thunderbird
 
 ## usage
 
-### Outlook email
+### Enable POP and IMAP
 
-1. [Outlook](https://outlook.live.com) email → Settings → Mail → Forwarding and IMAP → POP and IMAP.
-2. Enable `POP`, `IMAP`.
-
-### Yandex email
-
-1. [yandex](https://mail.yandex.com) → Settings → All settings → Email clients.
-2. Enable `IMAP`, `POP`.
+- [Outlook](https://outlook.live.com) → Settings → Mail → Forwarding and IMAP → POP and IMAP.
+- [Yandex Mail](https://mail.yandex.com) → Settings → All settings → Email clients.
+- [QQ邮箱]() → 设置 → 账号 → POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务.
+- [网易邮箱](https://mail.163.com) → POP3/SMTP/IMAP.

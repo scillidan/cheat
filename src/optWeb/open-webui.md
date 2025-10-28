@@ -57,7 +57,7 @@ Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to 
 - [Tutorial: Configuring RAG with Open WebUI Documentation](https://docs.openwebui.com/tutorials/tips/rag-tutorial/)
 - [Add Open WebUI as a Custom Search Engine](https://docs.openwebui.com/tutorials/integrations/browser-search-engine/#step-2-add-open-webui-as-a-custom-search-engine)
 
-## resource
+## [asset]((https://openwebui.com))
 
 ### mark
 
@@ -75,6 +75,8 @@ Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to 
 - #prompt [Code Expert](https://openwebui.com/p/masterdee/code-expert)
 - #prompt [Code Optimization](https://openwebui.com/p/hub/code-optimization)
 - [WebUI Auto Translator](https://openwebui.com/t/nnaoycurt/webui_auto_translator)
+
+## annex
 
 ![open-webui_01](/_image/optWeb/open-webui_01.png)
 ![open-webui_02](/_image/optWeb/open-webui_02.png)

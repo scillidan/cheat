@@ -25,4 +25,10 @@ You can get Feed URL from [Zeal User Contributions & Cheat Sheets](https://zealu
 
 - [keypirinha-zealous.md](/opt/_windows/keypirinha/keypirinha.md)
 
+## asset
+
+- [Dash's user contributed docset feed](https://github.com/hashhar/dash-contrib-docset-feeds)
+
+## annex
+
 ![zeal](/_image/opt/zeal.png)

@@ -243,6 +243,7 @@ neovide --server <your_host>:1234
 - #buffer [buffer-sticks.nvim](https://github.com/ahkohd/buffer-sticks.nvim)
 - #learn [spamguard.nvim](https://github.com/timseriakov/spamguard.nvim)
 - #git [csc.nvim](https://github.com/yus-works/csc.nvim)
+- [filler-begone.nvim](https://github.com/Saghen/filler-begone.nvim)
 - [LightSwitch.nvim](https://github.com/markgandolfo/lightswitch.nvim)
 
 ### cache

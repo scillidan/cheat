@@ -116,6 +116,7 @@ git pull origin main
 - #nvm [zsh-nvm-pnpm-auto-switch](https://github.com/spencerbeggs/zsh-nvm-pnpm-auto-switch)
 - #playground [jq zsh plugin](https://github.com/unixorn/awesome-zsh-plugins)
 - #prompt [Bigyls-zsh-theme](https://github.com/Bigyls/Bigyls-zsh-theme)
+- #prompt [temperatures](https://github.com/groberth/temperatures-zsh)
 - #prompt [parot-htb-zsh-theme](https://github.com/Lloyd-Leo/parrot-htb-zsh-theme)
 - #ranger [ranger-zshz](https://github.com/rc2dev/ranger-zshz)
 - #ranger [ranger.plugin.zsh](https://github.com/NiziL/ranger.plugin.zsh)

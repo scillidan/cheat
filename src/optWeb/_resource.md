@@ -29,6 +29,7 @@
 - [File Wizard](https://github.com/LoredCast/filewizard)
 - [Papra](https://github.com/papra-hq/papra)
 - [IndexTTS2](https://github.com/index-tts/index-tts)
+- [Scribe OCR](https://github.com/scribeocr/scribeocr)
 
 ### cache
 
