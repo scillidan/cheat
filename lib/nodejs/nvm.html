@@ -191,6 +191,9 @@ sudo pacman -S nvm
 <pre><code class="language-sh"># Windows 10
 scoop install nvm
 </code></pre>
+<pre><code class="language-sh"># Termux
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+</code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <pre><code class="language-sh"># Arch
 nvm install --lts
@@ -203,6 +206,11 @@ nvm use lts
 # nvm install iron
 # nvm install hydrogen
 </code></pre>
+<p><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>
+<pre><code class="language-sh"># Termux
+PREFIX= nvm install stable
+PREFIX= nvm use --delete-prefix stable
+</code></pre>
 <h2 id="config"><a class="header" href="#config">config</a></h2>
 <pre><code class="language-sh">vim ~/.nvm/settings.txt
 </code></pre>
@@ -212,9 +220,27 @@ nvm use lts
 <ul>
 <li><a href="https://nodejs.org/en/about/previous-releases">Node.js Releases</a></li>
 </ul>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li><a href="/lib/python/miniconda.html">miniconda.md</a></li>
+<li><a href="/lib/python/pipx.html">pipx.md</a></li>
+<li><a href="/lib/python/pyenv.html">pyenv.md</a></li>
+<li><a href="/lib/python/uv.html">uv.md</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li><a href="/lib/python/jupyter.html">jupyter.md</a></li>
+<li><a href="/lib/python/anaconda.html">anaconda.md</a></li>
+<li><a href="/lib/python/pyenv-virtualenv.html">pyenv-virtualenv.md</a></li>
+<li><a href="/lib/python/virtualenv.html">virtualenv.md</a></li>
+</ul>
 <hr>
 <ol class="footnote-definition"><li id="footnote-1">
 <p><a href="https://github.com/coreybutler/nvm-windows">NVM for Windows</a> <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p><a href="https://github.com/nvm-sh/nvm/issues/1645">nvm is not compatible with the "PREFIX" environment variable: currently set to "/usr/local"</a> <a href="#fr-2-1">↩</a></p>
 </li>
 </ol>
                     </main>
