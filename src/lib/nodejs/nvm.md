@@ -14,6 +14,11 @@ sudo pacman -S nvm
 scoop install nvm
 ```
 
+```sh
+# Termux
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
+
 ## usage
 
 ```sh
@@ -31,6 +36,14 @@ nvm use lts
 # nvm install hydrogen
 ```
 
+[^2]
+
+```sh
+# Termux
+PREFIX= nvm install stable
+PREFIX= nvm use --delete-prefix stable
+```
+
 ## config
 
 ```sh
@@ -45,4 +58,21 @@ node_mirror: https://npmmirror.com/mirrors/node/
 
 - [Node.js Releases](https://nodejs.org/en/about/previous-releases)
 
+## cross-reference
+
+### mark
+
+- [miniconda.md](/lib/python/miniconda.md)
+- [pipx.md](/lib/python/pipx.md)
+- [pyenv.md](/lib/python/pyenv.md)
+- [uv.md](/lib/python/uv.md)
+
+### cache
+
+- [jupyter.md](/lib/python/jupyter.md)
+- [anaconda.md](/lib/python/anaconda.md)
+- [pyenv-virtualenv.md](/lib/python/pyenv-virtualenv.md)
+- [virtualenv.md](/lib/python/virtualenv.md)
+
 [^1]: [NVM for Windows](https://github.com/coreybutler/nvm-windows)
+[^2]: [nvm is not compatible with the "PREFIX" environment variable: currently set to "/usr/local"](https://github.com/nvm-sh/nvm/issues/1645)

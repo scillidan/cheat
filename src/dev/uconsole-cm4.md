@@ -154,6 +154,15 @@ sudo umount /mnt/boot /mnt
 - [Create DevTerm CM4 OS image from scratch](https://github.com/clockworkpi/DevTerm/wiki/Create-DevTerm-CM4-OS-image-from-scratch)
 - [How uConsole CM4 OS image made](https://github.com/clockworkpi/uConsole/wiki/How-uConsole-CM4-OS-image-made)
 
+## resource
+
+### cache
+
+- [uConsole Sway Configuration](https://github.com/emdash/uConsole_sway_config)
+- [Uconsole-i3](https://github.com/dzaczek/Uconsole-i3)
+- [μHub](https://github.com/dotcypress/uhub)
+- [μPico](https://github.com/dotcypress/upico)
+
 [^1]: [How to install ArchLinux on uConsole/CM3 from scratch](https://github.com/PotatoMania/uconsole-cm3)
 [^2]: [uConsole CM3](https://github.com/PotatoMania/uconsole-cm3/blob/dev/doc/how-to-install-archlinux-from-scratch.md)
 [^3]: [Wifi not working on CM4](https://github.com/PotatoMania/uconsole-cm3-arch-image-builder/issues/1)

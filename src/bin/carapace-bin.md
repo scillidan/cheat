@@ -6,5 +6,5 @@
 # Arch
 yay -S --noconfirm carapace-bin
 # Windows 10
-scoop install carapace
+scoop install carapace-bin
 ```

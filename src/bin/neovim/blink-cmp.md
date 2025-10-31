@@ -22,10 +22,18 @@
 - [css-vars.nvim](https://github.com/jdrupal-dev/css-vars.nvim)
 - [gitmoji.nvim](https://github.com/Dynge/gitmoji.nvim)
 
+### later
+
+- [blink-cmp-tmux](https://github.com/mgalliou/blink-cmp-tmux)
+
 ### cache
 
+- [blink-cmp-env](https://github.com/bydlw98/blink-cmp-env)
 - [blink-cmp-git](https://github.com/Kaiser-Yang/blink-cmp-git)
 - [blink-cmp-im](https://github.com/yehuohan/blink-cmp-im)
 - [blink-cmp-spell](https://github.com/ribru17/blink-cmp-spell)
 - [blink-nerdfont.nvim](https://github.com/MahanRahmati/blink-nerdfont.nvim)
+- [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+- [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
 - [cmp-pandoc-references](https://github.com/jmbuhr/cmp-pandoc-references)
+- [cmp-path](https://github.com/hrsh7th/cmp-path)

@@ -25,4 +25,10 @@ rustup update
 - #book [Rust 程序设计语言](https://kaisery.github.io/trpl-zh-cn/title-page.html)
 - #book [Unofficial Bevy Cheat Book](https://bevy-cheatbook.github.io/)
 
+## cross-reference
+
+### cache
+
+- [cargo-sweep.md](/lib/rust/cargo-sweep.md)
+
 [^1]: [How to Install Rust on Ubuntu](https://phoenixnap.com/kb/install-rust-ubuntu)

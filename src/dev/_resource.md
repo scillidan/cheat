@@ -1,5 +1,22 @@
 # dev
 
+## cross-reference
+
+### later
+
+- [Printer.md](/dev/Printer.md)
+- [raspberry-pi-4.md](/dev/raspberry-pi-4.md)
+
+### extra
+
+- [gpi-case-2.md](/dev/gpi-case-2.md)
+
+### cache
+
+- [3D-Printer.md](/dev/3D-Printer.md)
+- [raspberry-pi-5.md](/dev/raspberry-pi-5.md)
+- [uconsole-cm4.md](/dev/uconsole-cm4.md)
+
 ## resource
 
 ### cache
@@ -39,7 +56,6 @@
 - #mouse [The Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
 - #notify [The Guardian Duck](https://github.com/dr-mod/guardian-duck)
 - #pico [ChipSHOUTER-PicoEMP](https://github.com/newaetech/chipshouter-picoemp)
-- #printer [E-TKT](https://github.com/andreisperid/E-TKT)
 - #rpi [3.5inch RPi Display](https://lcdwiki.com/zh/3.5inch_RPi_Display)
 - #rpi [LabStack](https://github.com/JaredC01/LabStack)
 - #rpi [LCD-show-retropie](https://github.com/lcdwiki/LCD-show-retropie)
@@ -52,9 +68,4 @@
 - #share [DeskHop](https://github.com/hrvach/deskhop)
 - #steamdesk [Steam Brick](https://github.com/crastinator-pro/steam-brick)
 - #timer [pomodoro](https://github.com/Rukenshia/pomodoro)
-- #uconsole #i3 [Uconsole-i3](https://github.com/dzaczek/Uconsole-i3)
-- #uconsole #rp2040 [μPico](https://github.com/dotcypress/upico)
-- #uconsole #sway [uConsole Sway Configuration](https://github.com/emdash/uConsole_sway_config)
-- #uconsole #usb [μHub](https://github.com/dotcypress/uhub)
-- #uconsole [uConsole](https://github.com/clockworkpi/uConsole)
 - [Oasis](https://github.com/justbuchanan/oasis)

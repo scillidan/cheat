@@ -52,6 +52,7 @@ pkg install \
   bat \
   carapace \
   chafa \
+  chezmoi \
   curl \
   dictd \
   eza \
@@ -65,7 +66,6 @@ pkg install \
   jq \
   lazygit \
   less \
-  lua53 \
   neovim \
   openssh \
   pass \
@@ -81,6 +81,7 @@ pkg install \
   uv \
   vim \
   wget \
+  yazi \
   yq \
   zoxide \
   zsh \
@@ -97,8 +98,8 @@ cargo install --force \
   eva \
   grex \
   pipe-rename \
-  thes \
   thumbs
+  # thes
 # Pip
 pip install \
   subliminal

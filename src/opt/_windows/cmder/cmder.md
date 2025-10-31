@@ -72,6 +72,12 @@ Cmder → Settings → Import → `user-ConEmu.xml`.
 - [set PATH with multiple lines](https://stackoverflow.com/questions/40909459/set-path-with-multiple-lines)
 - [Terminal sizes](https://help.gnome.org/users/gnome-terminal/stable/app-terminal-sizes.html.en)
 
+## cross-reference
+
+### mark
+
+- [clink-fzf.md](/opt/_windows/cmder/cmder-fzf.md)
+
 ## resource
 
 ### mark

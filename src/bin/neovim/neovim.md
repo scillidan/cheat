@@ -383,6 +383,7 @@ neovide --server <your_host>:1234
 - #key [keymap-stats.nvim](https://github.com/gmatheu/keymap-stats.nvim)
 - #key [legendary.nvim](https://github.com/mrjones2014/legendary.nvim)
 - #key [Mapper](https://github.com/gregorias/nvim-mapper)
+- #latex [LTeX_extra.nvim](https://github.com/barreiroleo/ltex_extra.nvim)
 - #latex [LuaSnip-LaTeX-Snippets](https://github.com/evesdropper/luasnip-latex-snippets.nvim)
 - #latex [nvim-cmp Lua LaTeX Symbols](https://github.com/amarz45/nvim-cmp-lua-latex-symbols)
 - #latex [PDF Preview](https://github.com/franco-ruggeri/pdf-preview.nvim)

@@ -30,6 +30,8 @@ QuickSwitch → MBtn_R → Always AutoSwitch (On)
 ## cross-reference
 
 - #script [startup_autohotkey.bat](https://github.com/scillidan/Shell/blob/main/_windows/Other/startup_autohotkey.bat)
+- [ahk-keyboard-locker.md](/lib/_windows/autohotkey/ahk-keyboard-locker.md)
+- [keymap.md](/lib/_windows/autohotkey/keymap.md)
 
 ## resource
 
@@ -47,6 +49,7 @@ QuickSwitch → MBtn_R → Always AutoSwitch (On)
 
 ### cache
 
+- #autohotkey [ahk](https://github.com/spyoungtech/ahk)
 - #ime [AHK](https://github.com/ouweiya/AHK)
 - #audio [AutoAccent](https://github.com/hamurlik/AutoAccent)
 - #audio [Mute on focus lost](https://github.com/TomiBelan/mute-on-focus-lost)
@@ -116,6 +119,7 @@ QuickSwitch → MBtn_R → Always AutoSwitch (On)
 - #workflow [ahk](https://github.com/Tomshiii/ahk)
 - #workflow [CJK Material Processing](https://github.com/ahlisbon/CJKmaterialProcessing)
 - #workflow [Kevin's AutoHotKey Application](https://github.com/KevinHJoe/Auto-App)
+- [ahk](https://github.com/spyoungtech/ahk)
 - [AHK Command Picker](https://github.com/deadlydog/AHKCommandPicker)
 - [iwck](https://github.com/Nigh/I-wanna-clean-keyboard)
 - [lib-v2](https://github.com/Axlefublr/lib-v2)

@@ -1,34 +1,50 @@
 # opt_andriod
 
+## cross-reference
+
+### mark
+
+- [amaze.md](/opt/_andriod/amaze.md)
+- [f-droid.md](/opt/_andriod/f-droid.md)
+- [librerareader.md](/opt/_andriod/librerareader.md) _obtainium_
+- [termux.md](/opt/_andriod/termux.md)
+
+### extra
+
+- [ankidroid.md](/opt/_andriod/ankidroid.md)
+- [app-manager.md](/opt/_andriod/app-manager.md)
+
+### cache
+
+- [andbible.md](/opt/_andriod/andbible.md)
+- [koreader.md](/opt/_andriod/koreader.md) 
+- [round-sync.md](/opt/_andriod/round-sync.md)
+
 ## resource
 
 ### mark
 
-- #apk [Neo Store](https://github.com/NeoApplications/Neo-Store) _release_
-- #apk [Obtainium](https://github.com/ImranR98/Obtainium) _release_
+- #apk [Neo Store](https://github.com/NeoApplications/Neo-Store)
+- #apk [Obtainium](https://github.com/ImranR98/Obtainium)
 - #browser [Fennec](https://gitlab.com/relan/fennecbuild)
-- #email [FairEmail](https://github.com/M66B/FairEmail) _release_
-- #explorer [Amaze File Manager](https://github.com/TeamAmaze/AmazeFileManager) _release_
+- #email [FairEmail](https://github.com/M66B/FairEmail)
 - #note [蜜蜂便签](https://mp.weixin.qq.com/s/6v_1CnkOGsUgGaRIiXKFIg)
 - #player [AntennaPod](https://github.com/AntennaPod/AntennaPod) _commit_
-- #player [Lissen - Clean Audiobookshelf Player](https://github.com/GrakovNe/lissen-android) _release_
-- #player [mpvKt](https://github.com/abdallahmehiz/mpvKt) _release_
+- #player [Lissen - Clean Audiobookshelf Player](https://github.com/GrakovNe/lissen-android)
+- #player [mpvKt](https://github.com/abdallahmehiz/mpvKt)
 - #player [VLC](https://github.com/videolan/vlc-android) _commit_
-- #reader [Librera Reader](https://github.com/foobnix/LibreraReader) _release_
-- #reader [Mihon App](https://github.com/mihonapp/mihon) _release/|_
-- [Aegis Authenticator](https://github.com/beemdevelopment/Aegis) _release_
-- [Binary Eye](https://github.com/markusfisch/BinaryEye) _release_
-- [LocalSend](https://github.com/localsend/localsend) _release_
+- #reader [Mihon App](https://github.com/mihonapp/mihon)
+- [Aegis Authenticator](https://github.com/beemdevelopment/Aegis)
+- [Binary Eye](https://github.com/markusfisch/BinaryEye)
+- [LocalSend](https://github.com/localsend/localsend)
 - [Tailscale](https://github.com/tailscale/tailscale)
-- [Termux](https://github.com/termux/termux-app) _release_
-
 - [Aegis Authenticator](https://f-droid.org/en/packages/com.beemdevelopment.aegis/) _obtainium_
 - [Amaze](https://f-droid.org/en/packages/com.amaze.filemanager/) _obtainium_
 - [AntennaPod](https://f-droid.org/en/packages/de.danoeh.antennapod/) _obtainium_
 - [Binary Eye](https://f-droid.org/en/packages/de.markusfisch.android.binaryeye) _obtainium_
 - [FairEmail](https://f-droid.org/en/packages/eu.faircode.email) _obtainium_
 - [Fennec F-Droid](https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/) _obtainium_
-- [Librera Reader](https://f-droid.org/en/packages/com.foobnix.pro.pdf.reader/) _obtainium_
+- [Librera Reader](https://f-droid.org/en/packages/com.foobnix.pro.pdf.reader/) 
 - [Lissen: Audiobookshelf client](https://f-droid.org/en/packages/org.grakovne.lissen/) _obtainium_
 - [LocalSend](https://f-droid.org/en/packages/org.localsend.localsend_app) _obtainium_
 - [mpvKt: MPV based media player](https://f-droid.org/en/packages/live.mehiz.mpvkt/) _obtainium_
@@ -40,29 +56,25 @@
 
 ### extra
 
-- #anki [AnkiDroid: Flashcards](https://github.com/ankidroid/Anki-Android) _release_
-- #apk [APK Explorer & Editor](https://github.com/apk-editor/APK-Explorer-Editor) _release_
-- #apk [App Manager](https://github.com/MuntashirAkon/AppManager) _release_
-- #apk [Kanade Apk Extractor](https://github.com/alexrintt/kanade) _release_
-- #apk [LibChecker](https://github.com/LibChecker/LibChecker) _release_
-- #book [AndBible: Bible Study](https://github.com/AndBible/and-bible) _release_
-- #explorer [Material Files](https://github.com/zhanghai/MaterialFiles) _release_
-- #photo [Simple-Gallery](https://github.com/SimpleMobileTools/Simple-Gallery) _release_
-- #stream [Moonlight Game Streaming](https://github.com/moonlight-stream/moonlight-android) _release_
-- #sync [Syncthing-Fork](https://github.com/Catfriend1/syncthing-android) _release_
-- #vnc [bVNC Free](https://github.com/iiordanov/remote-desktop-clients) _release_
-- #vnc [droidVNC-NG](https://github.com/bk138/droidVNC-NG) _release_
-- #wallpaper [Doodle Android: Live Wallpapers](https://github.com/patzly/doodle-android) _release_
+- #apk [APK Explorer & Editor](https://github.com/apk-editor/APK-Explorer-Editor)
+- #apk [Kanade Apk Extractor](https://github.com/alexrintt/kanade)
+- #apk [LibChecker](https://github.com/LibChecker/LibChecker)
+- #explorer [Material Files](https://github.com/zhanghai/MaterialFiles)
+- #photo [Simple-Gallery](https://github.com/SimpleMobileTools/Simple-Gallery)
+- #stream [Moonlight Game Streaming](https://github.com/moonlight-stream/moonlight-android)
+- #sync [Syncthing-Fork](https://github.com/Catfriend1/syncthing-android)
+- #vnc [bVNC Free](https://github.com/iiordanov/remote-desktop-clients)
+- #vnc [droidVNC-NG](https://github.com/bk138/droidVNC-NG)
+- #wallpaper [Doodle Android: Live Wallpapers](https://github.com/patzly/doodle-android)
 
 ### later
 
-- #calibre [Calibre Web Companion](https://github.com/doen1el/calibre-web-companion) _release_
-- #camera [Recording Webcam](https://github.com/TV-Box-Support/Recording-Webcam) _release_
-- #reader [KOReader](https://github.com/koreader/koreader) _release_
-- #reader [Readium Kotlin Toolkit](https://github.com/readium/kotlin-toolkit) _release_
-- #reader [Storyteller](https://gitlab.com/smoores/storyteller) _release_
-- [Droid Pad](https://github.com/umer0586/DroidPad) _release_
-- [Torrent Search](https://github.com/prajwalch/TorrentSearch/releases) _release_
+- #calibre [Calibre Web Companion](https://github.com/doen1el/calibre-web-companion)
+- #camera [Recording Webcam](https://github.com/TV-Box-Support/Recording-Webcam)
+- #reader [Readium Kotlin Toolkit](https://github.com/readium/kotlin-toolkit)
+- #reader [Storyteller](https://gitlab.com/smoores/storyteller)
+- [Droid Pad](https://github.com/umer0586/DroidPad)
+- [Torrent Search](https://github.com/prajwalch/TorrentSearch/releases)
 
 ### cache
 
@@ -90,8 +102,8 @@
 - #rss [Flux News](https://github.com/KevinCFechtel/FluxNews)
 - #scan [OSS Document Scanner](https://github.com/Akylas/OSS-DocumentScanner)
 - #scan [ScanBridge](https://github.com/Chrisimx/ScanBridge)releas
-- #telegram [Forkgram](https://github.com/Forkgram/TelegramAndroid) _release_
-- #telegram [Telegram-FOSS](https://github.com/Telegram-FOSS-Team/Telegram-FOSS) _release_
+- #telegram [Forkgram](https://github.com/Forkgram/TelegramAndroid)
+- #telegram [Telegram-FOSS](https://github.com/Telegram-FOSS-Team/Telegram-FOSS)
 - #termux [Termux:API](https://github.com/termux/termux-api)
 - #termux [Termux:Styling](https://github.com/termux/termux-styling)
 - #termux,style [Termux Style](https://github.com/adi1090x/termux-style)
@@ -105,7 +117,6 @@
 - #translate [Rtranslator](https://github.com/niedev/RTranslator)
 - #ubuntu [Ubuntu on android](https://github.com/RandomCoderOrg/ubuntu-on-android)
 - #wallpaper [Code Rain Wallpaper](https://gitlab.com/_zagura/code-rain-wallpaper)
-- #webdav [Round Sync](https://github.com/newhinton/Round-Sync)
 - #windows [MiceWine Emulator](https://github.com/KreitinnSoftware/MiceWine-Application)
 - #youtube-music [InnerTune](https://github.com/z-huang/InnerTune)
 - [AudioRelay](https://audiorelay.netdownloads)

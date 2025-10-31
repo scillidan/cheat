@@ -17,3 +17,13 @@ sudo make install
 ```sh
 ruby-build 2.7.2 ~/Usr/Lib/ruby-2.7.2
 ```
+
+## cross-reference
+
+### mark
+
+- [rbenv.md](/lib/ruby/rbenv.md)
+
+### cache
+
+- [chruby.md](/lib/ruby/chruby.md)

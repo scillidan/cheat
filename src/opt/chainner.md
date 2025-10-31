@@ -29,6 +29,16 @@ python -m pip install onnx==1.16.0 onnxoptimizer==0.3.13 onnxruntime-gpu==1.17.1
 4. Restart chaiNNer.
 5. Usage with `LOAD MODEL` node and corresponding node for `PROCESSING`.
 
+## Enable Stable Diffusion (External)
+
+```sh
+cd stable-diffusion-webui
+webui-user.bat --api
+```
+
+1. chaiNNer → Settings → Advanced → Enable experimental features → Restart chaiNNer
+2. chaiNNer → Use System Python instead
+
 ## reference
 
 - [What is the difference between PyTorch, NCNN, ONNX?](https://github.com/scillidan/dictionary/blob/main/chat/what-difference/pytorch%2Cncnn%2Connx.md)

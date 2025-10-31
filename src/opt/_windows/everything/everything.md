@@ -61,5 +61,11 @@ scoop install everything
 - #option [Everything](https://www.voidtools.com/support/everything/searching/)
 - #syntax [Searching - voidtools](https://www.voidtools.com/support/everything/searching/)
 
+## cross-reference
+
+### cache
+
+- [everything-toolbar.md](/opt/_windows/everything/everything-toolbar.md)
+
 [^1]: [Omit Recycle Bin Files From Search - voidtools forum](https://www.voidtools.com/forum/viewtopic.php?t=6454)
 [^2]: [Tools Options Exclude "Exclude files" *.tmp :: not working ?? - voidtools forum](https://www.voidtools.com/forum/viewtopic.php?t=11617)

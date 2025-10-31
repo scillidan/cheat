@@ -28,12 +28,12 @@ git pull origin main
 ### mark
 
 - [wd.md](/bin/_arch/zsh/wd.md)
+- [zsh-ssh](bin/_arch/zsh/zsh-ssh.md)
 
 ### cache
 
 - [zpy](bin/_arch/zsh/zpy.md)
 - [zsh-abbr](bin/_arch/zsh/zsh-abbr.md)
-- [zsh-ssh](bin/_arch/zsh/zsh-ssh.md)
 - [zsh-z](bin/_arch/zsh/zsh-z.md)
 
 ## troubleshoot
@@ -120,6 +120,7 @@ git pull origin main
 - #prompt [parot-htb-zsh-theme](https://github.com/Lloyd-Leo/parrot-htb-zsh-theme)
 - #ranger [ranger-zshz](https://github.com/rc2dev/ranger-zshz)
 - #ranger [ranger.plugin.zsh](https://github.com/NiziL/ranger.plugin.zsh)
+- #setup [Rat Zsh](https://github.com/gotokazuki/rat-zsh)
 - #setup [zplug](https://github.com/zplug/zplug)
 - #setup [zsh_unplugged](https://github.com/mattmc3/zsh_unplugged)
 - #skim [zsh-git-switch-branch-skim](https://github.com/okhiroyuki/zsh-git-switch-branch-skim)

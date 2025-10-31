@@ -1,20 +1,48 @@
 # opt_arch
 
+## cross-reference
+
+### mark
+
+- [ark.md](/opt/_arch/ark.md)
+- [auto-cpufreq.md](/opt/_arch/auto-cpufreq.md)
+- [bluez.md](/opt/_arch/bluez.md)
+- [dunst.md](/opt/_arch/dunst.md)
+- [flameshot.md](/opt/_arch/flameshot.md)
+- [lightdm.md](/opt/_arch/lightdm.md)
+- [nsxiv.md](/opt/_arch/nsxiv.md)
+- [pipewire.md](/opt/_arch/pipewire.md)
+- [preload.md](/opt/_arch/preload.md)
+- [rofi.md](/opt/_arch/rofi/rofi.md)
+- [tigervnc.md](/opt/_arch/tigervnc.md)
+- [timeshift.md](/opt/_arch/timeshift.md)
+- [xfce.md](/opt/_arch/xfce/xfce.md)
+- [zathura.md](/opt/_arch/zathura.md)
+
+### extra
+
+- [flacon.md](/opt/_arch/flacon.md)
+- [grub-btrfs.md](/opt/_arch/grub-btrfs.md)
+
+### cache
+
+- [foliate.md](/opt/_arch/foliate.md)
+- [input-leap.md](/opt/_arch/input-leap.md)
+- [komikku.md](/opt/_arch/komikku.md)
+- [nitrogen.md](/opt/_arch/nitrogen.md)
+- [ocrdesktop.md](/opt/_arch/ocrdesktop.md)
+- [sway.md](/opt/_arch/sway.md)
+
 ## resource
 
 ### mark
 
-- #audio [Flacon](https://github.com/flacon/flacon)
-- #flatpak #shortcut [Pins](https://flathub.org/apps/io.github.fabrialberio.pinapp)
-- #game [Lutris](https://lutris.net)
-- #rofi [Rofi](https://github.com/davatorium/rofi)
-- #screenshot [Flameshot](https://github.com/flameshot-org/flameshot)
+- #flatpak [Bazaar](https://flathub.org/apps/io.github.kolunmi.Bazaar)
+- #flatpak [Pins](https://flathub.org/apps/io.github.fabrialberio.pinapp)
 - [xone](https://github.com/medusalix/xone)
 
 ### later
 
-- #image [Halftone](https://github.com/tfuxu/Halftone)
-- #flatpak [Bazaar](https://flathub.org/apps/io.github.kolunmi.Bazaar)
 - [icon-explorer](/opt/_arch/icon-explorer.md)
 - [Loopers](https://github.com/mwylde/loopers)
 - [Pied](https://github.com/Elleo/pied)
@@ -23,11 +51,11 @@
 
 ### extra
 
-- #syncthing [Syncthing Tray](https://github.com/Martchus/syncthingtray) _release_
+- #image [Halftone](https://github.com/tfuxu/Halftone)
+- [Syncthing Tray](https://github.com/Martchus/syncthingtray) _release_
 
 ### cache
 
-- #@i3 [autotiling](https://github.com/nwg-piotr/autotiling)
 - #audio [NoiseTorch-ng](https://github.com/noisetorch/NoiseTorch)
 - #audiobook [Cozy](https://github.com/geigi/cozy)
 - #color [Color Manager](https://github.com/NicklasVraa/Color-manager)
@@ -35,7 +63,6 @@
 - #device [Solaar](https://github.com/pwr-Solaar/Solaar)
 - #device [WatchFlower](https://emeric.io/WatchFlower)
 - #draw [ASCII Draw](https://github.com/Nokse22/ascii-draw)
-- #epub [Foliate](https://github.com/johnfactotum/foliate)
 - #firmware [GNOME Firmware](https://gitlab.gnome.org/World/gnome-firmware)
 - #flatpak [Warehouse](https://github.com/flattool/warehouse)
 - #gnome [gnome-shell-extension-caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
@@ -55,9 +82,9 @@
 - #tv [Open TV](https://github.com/Fredolx/open-tv)
 - #video [multiplex](https://github.com/pojntfx/multiplex)
 - #viewer [Gwenview](https://invent.kde.org/graphics/gwenview)
-- #viewer [Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer](https://codeberg.org/nsxiv/nsxiv)
 - #window [QuickTile](https://github.com/ssokolow/quicktile)
-- #window [i3](https://github.com/i3/i3)
+- #window #i3 [i3](https://github.com/i3/i3)
+- #window #i3 [autotiling](https://github.com/nwg-piotr/autotiling)
 - #windows [Bottles](https://github.com/bottlesdevs/Bottles)
 - [Asteria](https://github.com/alamahant/Asteria)
 - [Cave Story NX](https://gitlab.com/coringao/cavestory-nx)

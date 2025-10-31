@@ -19,4 +19,9 @@ go env -w GOPROXY=https://goproxy.cn,direct
 # go env -w GOPROXY=
 ```
 
+## cross-reference
+
+- [goenv.md](/lib/go/goenv.md)
+- [gvm.md](/lib/go/gvm.md)
+
 [^1]: [Goproxy.cn](https://goproxy.cn/)

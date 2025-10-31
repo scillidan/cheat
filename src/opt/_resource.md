@@ -1,5 +1,17 @@
 # opt
 
+## cross-reference
+
+### later
+
+- [yomi-ninja.md](/opt/yomi-ninja.md)
+
+### extra
+
+- [video-sub-finder.md](/opt/video-sub-finder.md) _download_
+
+### cache
+
 ## resource
 
 ### mark

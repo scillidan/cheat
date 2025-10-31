@@ -1,5 +1,28 @@
 # lib
 
+## cross-reference
+
+### mark
+
+- [Regex.md](/lib/Regex.md)
+- [SQL.md](/lib/SQL.md)
+- [go.md](/lib/go/go.md)
+- [lua.md](/lib/lua/lua.md)
+- [nodejs.md](/lib/nodejs/nodejs.md)
+- [python.md](/lib/python/python.md)
+- [ruby.md](/lib/ruby/ruby.md)
+- [rust.md](/lib/rust/rust.md)
+
+### extra
+
+- [godot.md](/lib/godot/godot.md)
+- [latex.md](/lib/latex/latex.md)
+
+### cache
+
+- [love2d.md](/lib/love2d/love2d.md)
+- [renpy.md](/lib/renpy/renpy.md)
+
 ## resource
 
 ### mark
@@ -22,10 +45,10 @@
 ### later
 
 - #lua [LÖVE](https://love2d.org)
-- #rust [bevy](https://github.com/bevyengine/bevy)
 
 ### cache
 
+- #rust [bevy](https://github.com/bevyengine/bevy)
 - #3d [Instant Neural Graphics Primitives](https://github.com/NVlabs/instant-ngp)
 - #3d [Text2Mesh](https://github.com/threedle/text2mesh)
 - #audio [Amphion](https://github.com/open-mmlab/Amphion)

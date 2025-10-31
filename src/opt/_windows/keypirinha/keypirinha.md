@@ -39,6 +39,12 @@ git clone --depth=1 https://github.com/scillidan/Keypirinha-PuzzTools
 - [Add provider for chromium based edge bookmarks](https://github.com/Keypirinha/Packages/pull/41)
 - [Copy & Past bookmark folder to new location](https://community.brave.com/t/copy-past-bookmark-folder-to-new-location/437841)
 
+## cross-reference
+
+### extra
+
+- [keypirinha-zealous.md](/opt/_windows/keypirinha-zealous.md)
+
 ## resource
 
 ### mark
@@ -71,6 +77,8 @@ git clone --depth=1 https://github.com/scillidan/Keypirinha-PuzzTools
 - [keypirinha-terminal-profiles](https://github.com/fran-f/keypirinha-terminal-profiles
 - [PackageControl-Server](https://github.com/ueffel/PackageControl-Server
 - [PowerSwitch Plugin for Keypirinha](https://github.com/NMeJa/keypirinha-powerswitch
+
+## annex
 
 ![color_fakenight](/_image/opt/_windows/keypirinha/color_fakenight.png)
 ![color_vanta](/_image/opt/_windows/keypirinha/color_vanta.png)

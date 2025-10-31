@@ -24,4 +24,6 @@ scoop install imageglass
 
 ## cross-reference
 
-- [exifglass.md](/opt/_windows/exifglass.md)
+### mark
+
+- [exifglass.md](/opt/_windows/imageglass/exifglass.md)

@@ -182,6 +182,12 @@ git add \
 	...
 ```
 
+## cross-reference
+
+### cache
+
+- [xfce-tile.md](/opt/_arch/xfce/xfce-tile.md)
+
 ## resource
 
 ### cache

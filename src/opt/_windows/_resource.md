@@ -1,90 +1,124 @@
 # opt_windows
 
+## cross-reference
+
+### mark
+
+- [advanced-renamer.md](/opt/_windows/advanced-renamer.md) _download_
+- [ame-wizard.md](/opt/_windows/ame-wizard.md) _download_
+- [autoruns.md](/opt/_windows/autoruns.md)
+- [bulk-rename-utility.md](/opt/_windows/bulk-rename-utility.md) _download_
+- [centertaskbar.md](/opt/_windows/centertaskbar.md)
+- [cmder.md](/opt/_windows/cmder/cmder.md)
+- [deskpins.md](/opt/_windows/deskpins.md) _download_
+- [directory-opus.md](/opt/_windows/directory-opus.md) _download_
+- [ditto.md](/opt/_windows/ditto.md)
+- [dngrep.md](/opt/_windows/dngrep.md)
+- [eartrumpet.md](/opt/_windows/eartrumpet.md) _download_
+- [everything.md](/opt/_windows/everything/everything.md) _download_
+- [geek-uninstaller.md](/opt/_windows/geek-uninstaller.md) _download_
+- [hosts-file-editor.md](/opt/_windows/hosts-file-editor.md)
+- [imageglass.md](/opt/_windows/imageglass/imageglass.md)
+- [irfanview.md](/opt/_windows/irfanview.md)
+- [jpegview.md](/opt/_windows/jpegview.md)
+- [Keypirinha.md](/opt/_windows/Keypirinha/Keypirinha.md)
+- [link-shell-extension.md](/opt/_windows/link-shell-extension.md) _download_
+- [lintalist.md](/opt/_windows/lintalist.md)
+- [lockhunter.md](/opt/_windows/lockhunter.md) _download_
+- [open-shell.md](/opt/_windows/open-shell.md)
+- [open-hash-tab.md](/opt/_windows/open-hash-tab.md)
+- [rapid-environment-editor.md](/opt/_windows/rapid-environment-editor.md) _download_
+- [rbtray.md](/opt/_windows/rbtray.md)
+- [reduce-memory.md](/opt/_windows/reduce-memory.md) _download_
+- [restart-explorer.md](/opt/_windows/restart-explorer.md) _download_
+- [rufus.md](/opt/_windows/rufus.md)
+- [sd-card-formatter.md](/opt/_windows/sd-card-formatter.md) _download_
+- [sharpkeys.md](/opt/_windows/sharpkeys.md)
+- [shellexview.md](/opt/_windows/shellexview.md)
+- [smartzip.md](/opt/_windows/smartzip.md)
+- [sumatrapdf.md](/opt/_windows/sumatrapdf.md)
+- [t-clock.md](/opt/_windows/t-clock.md)
+- [winmerge.md](/opt/_windows/winmerge.md)
+- [winscp.md](/opt/_windows/winscp.md) _download_
+- [winsshterm.md](/opt/_windows/winsshterm.md)
+
+### later
+
+- [magpie.md](/opt/_windows/magpie.md)
+
+### extra
+
+- [carnac.md](/opt/_windows/carnac.md)
+- [cpu-z.md](/opt/_windows/cpu-z.md) _download_
+- [detect-it-easy.md](/opt/_windows/detect-it-easy.md)
+- [gpu-z.md](/opt/_windows/gpu-z.md) _download_
+- [lively.md](/opt/_windows/lively.md)
+- [mp3tag.md](/opt/_windows/mp3tag.md)
+- [mkv-muxing-batch-gui.md](/opt/_windows/mkv-muxing-batch-gui.md)
+- [smart-taskbar.md](/opt/_windows/smart-taskbar.md)
+- [staxrip.md](/opt/_windows/staxrip.md)
+- [subtitles-cleaner.md](/opt/_windows/subtitles-cleaner.md)
+- [wallpaper-engine.md](/opt/_windows/wallpaper-engine.md)
+- [wcap.md](/opt/_windows/wcap.md) _download_
+
+### cache
+
+- [bleachbit.md](/opt/_windows/bleachbit.md)
+- [faststone-image-viewer.md](/opt/_windows/faststone-image-viewer.md)
+- [ffmpeg-batch-av-converter.md](/opt/_windows/ffmpeg-batch-av-converter.md)
+- [fontreg.md](/opt/_windows/fontreg.md)
+- [gpt-subtrans.md](/opt/_windows/gpt-subtrans.md)
+- [hibit-uninstaller.md](/opt/_windows/hibit-uninstaller.md)
+- [image-filter-collection.md](/opt/_windows/image-filter-collection.md)
+- [lessmsi.md](/opt/_windows/lessmsi.md)
+- [nohboard.md](/opt/_windows/nohboard.md)
+- [rapidcrc-unicode.md](/opt/_windows/rapidcrc-unicode.md)
+- [retroeditor.md](/opt/_windows/retroeditor.md)
+- [sendto-menu-editor.md](/opt/_windows/sendto-menu-editor.md)
+- [sforzando.md](/opt/_windows/sforzando.md)
+- [shell-x.md](/opt/_windows/shell-x.md)
+
 ## resource
 
 ### mark
 
-- #archive [SmartZip](https://github.com/vvyoko/SmartZip)
 - #audio [AudioShell](https://audioshell.en.lo4d.com/windows) _download_
-- #audio [CUETools](https://github.com/gchudov/cuetools.net) _release_
-- #audio [Mp3tag](https://mp3tag.de) _download_
-- #audiobook [AudioBookConverter](https://github.com/yermak/AudioBookConverter) _release_
-- #clipboard [Ditto](https://github.com/sabrogden/Ditto)
+- #audio [CUETools](https://github.com/gchudov/cuetools.net)
+- #audiobook [AudioBookConverter](https://github.com/yermak/AudioBookConverter)
 - #copy [FastCopy](https://fastcopy.jp) _download_
-- #desktop [CenterTaskbar](https://github.com/mdhiggins/CenterTaskbar) _release_
-- #desktop [EarTrumpet](https://github.com/File-New-Project/EarTrumpet) _download_
-- #desktop [Lively](https://github.com/rocksdanister/lively)
-- #desktop [Open-Shell](https://github.com/Open-Shell/Open-Shell-Menu)
-- #desktop [Reduce Memory](https://sordum.org/9197/reduce-memory-v1-6) _download_
-- #desktop [SmartTaskbar](https://github.com/ChanpleCai/SmartTaskbar)
-- #desktop [T-Clock Redux](https://github.com/White-Tiger/T-Clock) _release_
-- #desktop [Wallpaper Engine](https://wallpaperengine.io/)
-- #dictionary [PyGlossary](https://github.com/ilius/pyglossary)
-- #diff [WinMerge](https://github.com/WinMerge/winmerge)
 - #explorer [DarkThumbs](https://github.com/fire-eggs/DarkThumbs)
-- #explorer [Directory Opus](https://gpsoft.com.au) _download_|
-- #explorer [Link Shell Extension](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html) _download_
-- #explorer [LockHunter](https://lockhunter.com/index.htm) _download_
-- #explorer [Restart Explorer](https://sordum.org/9192/restart-explorer-v1-7) _download_
-- #explorer [stl-thumb](https://github.com/unlimitedbacon/stl-thumb) _release_
-- #ftp [WinSCP](https://github.com/winscp/winscp) _download_
-- #git [Git Extensions](https://github.com/gitextensions/gitextensions)
-- #grep [dnGrep](https://github.com/dnGrep/dnGrep) _release_
-- #hash [OpenHashTab](https://github.com/namazso/OpenHashTab)
-- #image [IrfanView](https://irfanview.com) _download_
-- #image [JPEGView](https://github.com/sylikc/jpegview)
-- #image [qView](https://github.com/jurplel/qView) _release_
-- #imageglass [ExifGlass](https://github.com/d2phap/ExifGlass) _release_
-- #imageglass [ImageGlass](https://imageglass.org) _release_
-- #imager [Rufus](https://github.com/pbatard/rufus) _release_
-- #input [Carnac](https://github.com/Code52/carnac) _release_
-- #input [NohBoard](https://github.com/ThoNohT/NohBoard) _release_
-- #latex [MiKTeX](https://miktex.org) _download_
-- #luncher [Keypirinha](https://github.com/Keypirinha/Keypirinha)
-- #msys2 [MSYS2 Installer](https://github.com/msys2/msys2-installer)
-- #pdf [Imap](https://github.com/skinan/imap-Image-to-PDF-Converter-Application-For-Windows) _release_
-- #pdf [PDF Arranger](https://github.com/pdfarranger/pdfarranger) _release_
-- #record [wcap](https://github.com/mmozeiko/wcap) _download_
-- #rename [Advanced Renamer](https://advancedrenamer.com) _download_
-- #rename [Bulk Rename Utility](https://www.bulkrenameutility.co.uk) _download_
-- #ssh [WinSSHTerm](https://winsshterm.blogspot.com)
+- #explorer [stl-thumb](https://github.com/unlimitedbacon/stl-thumb)
+- #pdf [Imap](https://github.com/skinan/imap-Image-to-PDF-Converter-Application-For-Windows)
+- #pdf [PDF Arranger](https://github.com/pdfarranger/pdfarranger)
 - #sshfs [SSHFS-Win Manager](https://github.com/evsar3/sshfs-win-manager)
-- #subtitle [Subtitles Cleaner](https://github.com/yuvalsol/SubtitlesCleaner) _release_
-- #subtitle [Video Sub Finder](https://sourceforge.net/projects/videosubfinder/) _download_
-- #terminal [Cmder](https://github.com/cmderdev/cmder)
-- #video [MKVToolNix Batch Tool](https://github.com/iPzard/mkvtoolnix-batch-tool) _release_
-- #video [VidStab GUI](https://github.com/hlorand/vidstabgui) _release_
-- #video [StaxRip](https://github.com/staxrip/staxrip) _release_
+- #video [MKVToolNix Batch Tool](https://github.com/iPzard/mkvtoolnix-batch-tool)
+- #video [VidStab GUI](https://github.com/hlorand/vidstabgui)
 - #window [AltBacktick](https://github.com/akiver/AltBacktick)
-- #window [RectangleWin](https://github.com/ahmetb/RectangleWin) _release_
+- #window [RectangleWin](https://github.com/ahmetb/RectangleWin)
 - #window [resizer2](https://github.com/alvesvaren/resizer2)
 - #window [Sizer](https://www.brianapps.net/sizer) _download_
 - #youtube [ytdlp-interface](https://github.com/ErrorFlynn/ytdlp-interface)
-- [AME Wizard](https://ameliorated.io) _download_
-- [Anki](https://github.com/ankitects/anki) _release_
-- [CPU-Z](https://cpuid.com/softwares/cpu-z.html) _download_
-- [DeskPins](https://efotinis.neocities.org/deskpins) _download_
 - [Device Cleanup Tool](https://www.majorgeeks.com/files/details/device_cleanup_tool.html) _download_
 - [DiskGenius](https://github.com/Kiprey/DiskGeniusCrack)
-- [Everything](https://voidtools.com) _download_
-- [Geek Uninstaller](https://geekuninstaller.com/) _download_
-- [GPU-Z](https://techpowerup.com/gpuz) _download_
-- [HostsFileEditor](https://github.com/scottlerch/HostsFileEditor)
-- [No!! MeiryoUI](https://github.com/Tatsu-syo/noMeiryoUI) _release_
-- [QuickSFV](https://quicksfv.org/)
-- [Rapid Environment Editor](https://rapidee.com/en/about) _download_
+- [No!! MeiryoUI](https://github.com/Tatsu-syo/noMeiryoUI)
+- [QuickSFV](https://quicksfv.org/) _download_
 - [Resource Hacker](https://angusj.com/resourcehacker)
-- [SDCardFormatter](https://sdcard.org/downloads/formatter) _download_
-- [SharpKeys](https://github.com/randyrants/sharpkeys) _release_
-- [ShellExView](https://www.nirsoft.net/utils/shexview.html)
 - [SomeRuler](https://github.com/ZhujinLi/SomeRuler)
-- [Virtual Display Driver](https://github.com/VirtualDisplay/Virtual-Display-Driver) _release_
+- [Virtual Display Driver](https://github.com/VirtualDisplay/Virtual-Display-Driver)
 
 ### later
 
 - #pdf [WinScan2PDF](https://softwareok.com/?seite=Microsoft/WinScan2PDF)
-- [Winhance](https://github.com/memstechtips/Winhance)
+- [Anki](https://github.com/ankitects/anki)
 - [Subloader](https://github.com/Valyreon/Subloader)
+- [Winhance](https://github.com/memstechtips/Winhance)
+
+### extra
+
+- [Driver Booster](https://iobit.com/en/driver-booster.php)
+- [Input Director](https://inputdirector.com)
+- [nexusfont](https://xiles.app)
+- [YOGA Image Optimizer](https://github.com/flozz/yoga-image-optimizer)
 
 ### cache
 
@@ -115,7 +149,6 @@
 - #document [Velocity](https://velocity.silverlakesoftware.com)
 - #editor [BabelPad](https://babelstone.co.uk/Software/BabelPad.html)
 - #editor [TeXstudio](https://www.texstudio.org)
-- #everything [EverythingToolbar](https://github.com/srwi/EverythingToolbar)
 - #exif [ExifToolGUI](https://exiftool.org/gui)
 - #explorer [EasyShell](https://github.com/anb0s/EasyShell)
 - #explorer [FFmpegThumbnails](https://github.com/megakraken/FFmpegThumbnails)
@@ -123,13 +156,11 @@
 - #explorer [Icaros](https://majorgeeks.com/files/details/icaros.html)
 - #explorer [Listary](https://listary.com)
 - #explorer [QuickLook](https://github.com/QL-Win/QuickLook)
-- #explorer [Shell-X](https://github.com/oleg-shilo/shell-x)
 - #explorer [SVG Shell Extensions](https://github.com/EtheaDev/SVGShellExtensions)
 - #explorer [SVG Viewer Extension for Windows Explorer](https://github.com/tibold/svg-explorer-extension)
 - #explorer [Total Commander](https://ghisler.com/)
 - #firewall [simplewall](https://github.com/henrypp/simplewall)
 - #firewall [Windows Firewall Control](https://binisoft.org/wfc)
-- #font [nexusfont](https://xiles.app)
 - #ftp [Core FTP](https://coreftp.com)
 - #ftp [lftp](https://nwgat.ninja/lftp-for-windows)
 - #game [Textractor](https://github.com/Artikash/Textractor)
@@ -144,23 +175,18 @@
 - #grep [grepWin](https://github.com/stefankueng/grepWin)
 - #grep [RoughGrep](https://github.com/vivainio/RoughGrep)
 - #image [Bamboo](https://github.com/christopherwk210/bamboo)
-- #image [FastStone Image Viewer](https://faststone.org/FSViewerDetail.htm)
-- #image [Image Filter Collection](https://github.com/Salmakis/ImageFilterCollection)
 - #image [Img2Palette](https://grinnch.itch.io/img2palette)
 - #image [Pixxia](https://github.com/dhhruv/Pixxia)
 - #image [Real-ESRGAN-GUI](https://github.com/tsukumijima/Real-ESRGAN-GUI)
 - #image [Real-ESRGAN_GUI](https://github.com/net2cn/Real-ESRGAN_GUI)
-- #image [RetroEditor](https://zxretrosoft.itch.io/retroeditor)
 - #image [SoftLK-tools](https://github.com/Captain4LK/SoftLK-tools)
 - #image [waifu2x - Snowshell](https://github.com/YukihoAA/waifu2x_snowshell)
-- #image [YOGA Image Optimizer](https://github.com/flozz/yoga-image-optimizer)
 - #ime [Keyferret](https://keyferret.com)
 - #keyboard [Send Windows Key](https://sordum.org/12894/send-windows-key-v1-1)
 - #keyboard [TouchCursor](https://martin-stone.github.io/touchcursor)
 - #keyboard [Uncap](https://github.com/susam/uncap)
 - #laucher [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher)
 - #midi [OpenMPT](https://openmpt.org)
-- #midi [sforzando](https://plogue.com/products/sforzando.html)
 - #obs [OBS-HUD](https://cobaltdragon.itch.io/obs-hud)
 - #ocr [Snipping-Ocr](https://github.com/thepirat000/Snipping-Ocr)
 - #office [Office Tool Plus](https://github.com/YerongAI/Office-Tool)
@@ -178,7 +204,6 @@
 - #spotify [Spytify](https://github.com/jwallet/spy-spotify)
 - #ssh [MobaXterm](https://mobaxterm.mobatek.net)
 - #ssh [WindTerm](https://github.com/kingToolbox/WindTerm)
-- #startup [Autoruns](https://docs.microsoft.com/zh-cn/sysinternals/downloads/autoruns)
 - #subtitle [Sbubby](https://github.com/kokseen1/Sbubby)
 - #subtitle [Video-subtitle-extractor](https://github.com/YaoFANGUK/video-subtitle-extractor)
 - #tabular [CsvTextEditor](https://github.com/WildGums/CsvTextEditor)
@@ -208,25 +233,20 @@
 - [audio-limiter](https://github.com/dylagit/audio-limiter)
 - [BurntToast](https://github.com/Windos/BurntToast)
 - [Calculator.NET](https://github.com/loresoft/Calculator)
-- [Chocolatey](https://community.chocolatey.org)
 - [clawPDF](https://github.com/clawsoftware/clawPDF)
 - [Copy Dialog Lunar Lander](https://github.com/Sanakan8472/copy-dialog-lunar-lander)
 - [Core Temp](https://alcpu.com/CoreTemp)
 - [CrystalDiskInfo](https://github.com/hiyohiyo/CrystalDiskInfo)
 - [DevToys](https://devtoys.app)
 - [Dns Jumper](https://sordum.org/downloads/?dns-jumper)
-- [Driver Booster](https://iobit.com/en/driver-booster.php)
 - [Driver Store Explorer](https://github.com/lostindark/DriverStoreExplorer)
 - [EitherMouse](https://eithermouse.com)
 - [EZ Game Audio Conversion](https://github.com/SpaceFoon/Ez-Game-Audio-Conversion)
 - [Folder Painter](https://sordum.org/10124/folder-painter-v1-3)
 - [hamster](https://github.com/h3lstudios/hamster)
-- [HiBit Uninstaller](https://hibitsoft.ir/Uninstaller.html)
 - [HWinfo](https://hwinfo.com)
-- [Input Director](https://inputdirector.com)
 - [Just Color Picker](https://annystudio.com/software/colorpicker)
 - [Ketarin](https://github.com/canneverbe/Ketarin)
-- [lessmsi](https://github.com/activescott/lessmsi)
 - [Libre Hardware Monitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor)
 - [Macrium Reflect](https://macrium.com/reflectfree)
 - [MacType](https://github.com/snowie2000/MacType)
@@ -249,11 +269,9 @@
 - [Ruler](https://github.com/sergiye/ruler)
 - [Rulka](https://amanwaf.itch.io/rulka)
 - [SecureUxTheme](https://github.com/namazso/SecureUxTheme)
-- [SendTo Menu Editor](https://sordum.org/10830/sendto-menu-editor-v1-3)
 - [ShoeBox](https://renderhjs.net/shoebox)
 - [Simsapa Dhamma Reader](https://github.com/simsapa/simsapa)
 - [Steam Upload GUI](https://github.com/RPicster/Steam-Upload-GUI)
-- [TightVNC](https://www.tightvnc.com/)
 - [TreeSize](https://jam-software.com/treesize_free)
 - [Twinkle Tray](https://twinkletray.com/)
 - [WinCDEmu](https://github.com/sysprogs/WinCDEmu)
