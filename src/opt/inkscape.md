@@ -16,3 +16,9 @@ sudo pacman -S inkscape
 # Windows 10
 scoop install inkscape
 ```
+
+## resource
+
+### cache
+
+- [TexText](https://github.com/textext/textext)

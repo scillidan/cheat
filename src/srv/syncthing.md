@@ -16,3 +16,9 @@ scoop install syncthing
 ## reference
 
 - #document [Syncthing — Syncthing documentation](https://docs.syncthing.net/users/syncthing.html)
+
+## resource
+
+### cache
+
+- #docker [Syncthing](https://github.com/linuxserver/docker-syncthing)

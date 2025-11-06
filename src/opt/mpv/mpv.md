@@ -22,11 +22,18 @@ scoop install mpv
 
 ## cross-reference
 
+### extra
+
 - #script [init_mpv.bat](https://github.com/scillidan/Shell/blob/main/opt/init_mpv.bat)
 - #script [init_mpv.sh](https://github.com/scillidan/Shell/blob/main/opt/init_mpv.sh)
+- [mpv-handler.md](/opt/mpv/mpv-handler.md)
+- [webtorrent-mpv-hook.md](/opt/mpv/webtorrent-mpv-hook.md)
+
+### cache
+
+- [mpv-cheatsheet.md](/opt/mpv/mpv-cheatsheet.md)
 - [ffsubsync.md](/bin/ffsubsync.md)
 - [subliminal.md](/bin/subliminal.md)
-- [webtorrent-mpv-hook.md](/opt/mpv/webtorrent-mpv-hook.md)
 
 ## resource
 
@@ -71,7 +78,6 @@ scoop install mpv
 - [save-playlist.lua](https://github.com/cogentredtester/mpv-scripts)
 - [show-errors.lua](https://github.com/cogentredtester/mpv-scripts)
 - [thumbfast](https://github.com/po5/thumbfast)
-- [webtorrent-mpv-hook](https://github.com/mrxdst/webtorrent-mpv-hook)
 
 ### later
 
@@ -85,7 +91,6 @@ scoop install mpv
 - #file [open-dir](https://github.com/ayghub/open-dir)
 - #keymap [Leader](https://github.com/Seme4eg/mpv-scripts)
 - #keymap [M-x](https://github.com/Seme4eg/mpv-scripts)
-- #keymap [mpv-cheatsheet](https://github.com/ento/mpv-cheatsheet)
 - #keymap [mpv-search-page](https://github.com/CogentRedTester/mpv-search-page)
 - #playlist [Mpv-Playlistmanager](https://github.com/jonniek/mpv-playlistmanager)
 - #playlist [writename.lua](https://github.com/paradox460/mpv-scripts)
@@ -115,11 +120,11 @@ scoop install mpv
 
 ### cache
 
-- #Arch [Mpv Subs Popout](https://github.com/sdaqo/mpv-subs-popout)
-- #Arch [mpv-omniGlass](https://github.com/guarapicci/mpv-omniGlass)
 - #anki [Immersive](https://github.com/Ben-Kerman/immersive)
 - #anki [mpvacious](https://github.com/ajatt-tools/mpvacious)
 - #anki [mvp2anki](https://github.com/SenneH/mpv2anki)
+- #Arch [Mpv Subs Popout](https://github.com/sdaqo/mpv-subs-popout)
+- #Arch [mpv-omniGlass](https://github.com/guarapicci/mpv-omniGlass)
 - #audio [ff-silence](https://github.com/mesvam/ff-silence)
 - #audio [mpv-skipsilence](https://github.com/ferreum/mpv-skipsilence)
 - #bilibili [bdanmaku](https://github.com/UlyssesZh/bdanmaku)
@@ -159,6 +164,7 @@ scoop install mpv
 - #karaok [mpvRemote](https://github.com/spaghettijeff/mpvRemote)
 - #karaok [simple-mpv-webui](https://github.com/open-dynamix/simple-mpv-webui)
 - #karaok [time.lua](https://github.com/mustaqimM/mpv-scripts)
+- #keymap [mpv-cheatsheet](https://github.com/ento/mpv-cheatsheet)
 - #linux [AmPv](https://github.com/ArkThis/AmPv)
 - #linux [Auto mpv A-V delay on bluetooth device](https://github.com/fatihkaan22/mpv-bluetooth-av-delay)
 - #linux [copy-subtitle.lua](https://github.com/linguisticmind/mpv-scripts)
@@ -246,7 +252,6 @@ scoop install mpv
 - [mpv2gether](https://github.com/filiprogrammer/mpv2gether)
 - [MPV GIF generator script (DanSM-5)](https://github.com/DanSM-5/mpv-gif-generator)
 - [MPV GIF generator script (tyalie)](https://github.com/tyalie/mpv-gif-generator)
-- [mpv handler](https://github.com/akiirui/mpv-handler)
 - [mpv radio title](https://codeberg.org/olivierlm/mpv-radio-title)
 - [mpv Torrserver integration](https://github.com/kritma/mpv-torrserver)
 - [mpv twitch chat](https://github.com/crendking/mpv-twitch-chat)

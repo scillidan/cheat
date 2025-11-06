@@ -18,3 +18,9 @@ scoop install kicad
 ## reference
 
 - #document [KiCad](https://docs.kicad.org/7.0/en/getting_started_in_kicad/getting_started_in_kicad.html)
+
+## resource
+
+### cache
+
+- [KiKit – Automation for KiCAD](https://github.com/yaqwsx/KiKit)

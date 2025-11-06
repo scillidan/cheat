@@ -27,3 +27,9 @@ scoop install gpodder
 			- Enqueue/Resume in media players (On)
 			- Minimize on start (On)
 			- Rename episodes after download (On)
+
+## resource
+
+### cache
+
+- [Normalize Audio](https://gpodder.github.io/docs/extensions/normalizeaudio.html)

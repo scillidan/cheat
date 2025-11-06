@@ -51,6 +51,7 @@
 - [carnac.md](/opt/_windows/carnac.md)
 - [cpu-z.md](/opt/_windows/cpu-z.md) _download_
 - [detect-it-easy.md](/opt/_windows/detect-it-easy.md)
+- [gitextensions.md](/opt/_windows/gitextensions.md)
 - [gpu-z.md](/opt/_windows/gpu-z.md) _download_
 - [lively.md](/opt/_windows/lively.md)
 - [mp3tag.md](/opt/_windows/mp3tag.md)
@@ -118,7 +119,6 @@
 - [Driver Booster](https://iobit.com/en/driver-booster.php)
 - [Input Director](https://inputdirector.com)
 - [nexusfont](https://xiles.app)
-- [YOGA Image Optimizer](https://github.com/flozz/yoga-image-optimizer)
 
 ### cache
 

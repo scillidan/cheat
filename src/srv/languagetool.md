@@ -111,4 +111,4 @@ Create shortcut of `languagetool_service.vbs`, put it into `C:\Users\User\AppDat
 
 ## annex
 
-[languagetool.mp4](https://scillidan.github.io/media_cheat/opt/Browser/languagetool.mp4), ([bilibili](https://www.bilibili.com/video/BV13c411t7QS)
+- [languagetool.mp4](https://scillidan.github.io/media_cheat/opt/Browser/languagetool.mp4) ([bilibili](https://www.bilibili.com/video/BV13c411t7QS)

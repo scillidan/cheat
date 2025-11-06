@@ -58,14 +58,15 @@ ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styl
 
 ## cross-reference
 
-- #script [init_goldendict.bat](https://github.com/scillidan/Shell/blob/main/opt/init_goldendict.bat)
-- #script [init_goldendict.sh](https://github.com/scillidan/Shell/blob/main/opt/init_goldendict.sh)
-
-## resource
-
 ### later
 
-- [GoldenDict tools](https://github.com/Ajatt-Tools/gd-tools)
+- [gd-tools.md](/opt/goldendict/gd-tools.md)
+
+### extra
+
+- #script [init_goldendict.bat](https://github.com/scillidan/Shell/blob/main/opt/init_goldendict.bat)
+
+## resource
 
 ### cache
 
@@ -83,6 +84,6 @@ ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styl
 
 ## annex
 
-[goldendict_pronunciation.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_pronunciation.mp4), ([bilibili](https://www.bilibili.com/video/BV1pw411V761)
-[goldendict_umi-ocr.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_umi-ocr.mp4), ([bilibili](https://www.bilibili.com/video/BV1CC4y1S77c)
-[goldendict_goldendictocr.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_goldendictocr.mp4), ([bilibili](https://www.bilibili.com/video/BV1cK41187up)
+- [goldendict_pronunciation.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_pronunciation.mp4) ([bilibili](https://www.bilibili.com/video/BV1pw411V761))
+- [goldendict_umi-ocr.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_umi-ocr.mp4) ([bilibili](https://www.bilibili.com/video/BV1CC4y1S77c))
+- [goldendict_goldendictocr.mp4](https://scillidan.github.io/media_cheat/opt/goldendict_goldendictocr.mp4) ([bilibili](https://www.bilibili.com/video/BV1cK41187up)

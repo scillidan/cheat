@@ -32,6 +32,7 @@ mkdir lobe-chat
 cd lobe-chat
 vim docker-compose.yml
 # Copy from https://lobehub.com/docs/self-hosting/platform/docker-compose#run-docker-compose-deployment-command
+# sudo docker compose pull
 sudo docker compose up -d
 ```
 

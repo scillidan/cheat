@@ -18,6 +18,12 @@ yay -S --noconfirm emulationstation-de
 	- [Placing games and other resources on network shares - es-de/emulationstation-de](https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#placing-games-and-other-resources-on-network-shares)
 	- [Specific notes for Windows - es-de/emulationstation-de](https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#specific-notes-for-windows)
 
+## cross-reference
+
+### extra
+
+- [iconic-es-de.md](/optGame/es-de/iconic-es-de.md)
+
 ## resource
 
 ### cache
@@ -25,6 +31,8 @@ yay -S --noconfirm emulationstation-de
 - #theme [Iconic (ES-DE Version)](https://github.com/Siddy212/iconic-es-de)
 - #theme [MiSTer Menu UI (for ES-DE)](https://github.com/anthonycaccese/mister-menu-es-de)
 - #theme [Modern](https://gitlab.com/es-de/themes/modern-es-de)
+
+## annex
 
 ![es-de_01](/_image/optGame/es-de_01.png)
 ![es-de_02](/_image/optGame/es-de_02.png)

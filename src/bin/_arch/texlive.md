@@ -5,14 +5,23 @@
 [^1] [^2]
 
 ```sh
+# Arch
 yay -S --noconfirm texlive-installer
+# Termux
+pkg install texlive-installer
 ```
 
 ```sh
+# Arch
 sudo /opt/texlive-installer/install-tl
 sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr option repository https://mirrors.cernet.edu.cn/CTAN/systems/texlive/tlnet
 tlmgr update --list
 sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr update --all
+```
+
+```sh
+# Termux
+termux-install-tl
 ```
 
 ## command

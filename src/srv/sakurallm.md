@@ -39,4 +39,4 @@ python translate_epub.py --trust_remote_code --model_name_or_path models/sakura-
 
 ## annex
 
-[sakurallm.mp4](https://scillidan.github.io/media_cheat/srv/sakurallm.mp4), ([bilibili](https://www.bilibili.com/video/BV1V1421X7zL))
+- [sakurallm.mp4](https://scillidan.github.io/media_cheat/srv/sakurallm.mp4) ([bilibili](https://www.bilibili.com/video/BV1V1421X7zL))

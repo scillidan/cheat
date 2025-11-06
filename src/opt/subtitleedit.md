@@ -25,4 +25,4 @@ scoop install subtitleedit
 
 ## annex
 
-[subtitle-edit_subtitle-translate.mp4](https://scillidan.github.io/media_cheat/opt/subtitle-edit_subtitle-translate.mp4), ([bilibili](https://www.bilibili.com/video/)
+- [subtitle-edit_subtitle-translate.mp4](https://scillidan.github.io/media_cheat/opt/subtitle-edit_subtitle-translate.mp4) ([bilibili](https://www.bilibili.com/video/))

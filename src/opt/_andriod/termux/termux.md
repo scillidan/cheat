@@ -162,6 +162,12 @@ proot-distro login archlinux
 
 - #keymap [Termux](https://wiki.termux.com/wiki/Touch_Keyboard)
 
+## cross-reference
+
+### mark
+
+- [setup-mason-for-termux.md](/opt/_andriod/termux/setup-mason-for-termux.md)
+
 ## troubleshoot
 
 - [apt-get update fails to fetch files, “Temporary failure resolving …” error](https://askubuntu.com/questions/91543/apt-get-update-fails-to-fetch-files-temporary-failure-resolving-error)

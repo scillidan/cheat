@@ -21,6 +21,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 
 ## reference
 
+- #document [ST Community Docs](https://docs.sublimetext.io/guide/)
 - #document [Scope Naming](https://www.sublimetext.com/docs/scope_naming.html)
 - #document [Submitting a Package](https://packagecontrol.io/docs/submitting_a_package)
 - #keymap [SublimeText - LaTeXTools](https://latextools.readthedocs.io/en/latest/keybindings)
@@ -34,10 +35,14 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 
 ## cross-reference
 
+### extra
+
+- [jsprettier.md](/opt/sublime-text/jsprettier.md)
+- [minify.md](/opt/sublime-text/minify.md)
 - [stylua.md](/bin/stylua.md)
+- [terser.md](/bin/terser.md)
 - [tex-fmt.md](/bin/tex-fmt.md)
 - [texlab.md](/bin/texlab.md)
-- [terser.md](/bin/terser.md)
 
 ## resource
 
@@ -60,8 +65,6 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 - #filterpipe [Color Convert](https://github.com/zhouyuexie/ColorConvert)
 - #filterpipe [ConvertFullHalfWidth](https://github.com/naoyukik/SublimeConvertFullHalfWidth)
 - #filterpipe [FilterPipes](https://github.com/tylerl/FilterPipes)
-- #format [JsPrettier](https://github.com/jonlabelle/SublimeJsPrettier)
-- #format [Minify](https://github.com/tssajo/Minify)
 - #formatter [Pretty JSON](https://github.com/dzhibas/SublimePrettyJson)
 - #formatter [Pretty Lua](https://github.com/aerobounce/Sublime-Pretty-Lua)
 - #formatter [Pretty YAML](https://github.com/aukaost/SublimePrettyYAML)

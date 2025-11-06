@@ -2,116 +2,168 @@
 
 ## cross-reference
 
+### mark
+
+- #browser [brave.md](/opt/Browser/brave.md) _download_
+- #browser [librewolf.md](/opt/Browser/librewolf.md) _download_
+- [7-zip.md](/opt/7-zip.md) _download_
+- [alacritty.md](/opt/alacritty.md) _release_
+- [calibre.md](/opt/calibre/calibre.md) _download_
+- [espanso.md](/opt/espanso.md)
+- [github-desktop.md](/opt/github-desktop.md) _download_
+- [gitify.md](/opt/gitify.md)
+- [goldendict.md](/opt/goldendict/goldendict.md)
+- [handbrake.md](/opt/handbrake.md) _download_
+- [kdenlive.md](/opt/kdenlive.md) _download_
+- [libreoffice.md](/opt/libreoffice.md) _download_
+- [localsend.md](/opt/localsend.md)
+- [losslesscut.md](/opt/losslesscut.md)
+- [lrcget.md](/opt/lrcget.md)
+- [mediainfo.md](/opt/mediainfo.md) _download_
+- [mpv.md](/opt/mpv/mpv.md)
+- [obs-studio.md](/opt/obs-studio.md)
+- [obsidian.md](/opt/obsidian/obsidian.md) _release_
+- [quiterss.md](/opt/quiterss.md) _download_
+- [raspberry-pi-imager.md](/opt/raspberry-pi-imager.md) _download_
+- [rime.md](/opt/rime.md)
+- [sublime-text.md](/opt/sublime-text/sublime-text.md) _download_
+- [thunderbird.md](/opt/thunderbird.md) _download_
+- [tightvnc.md](/opt/tightvnc.md)
+- [ventoy.md](/opt/ventoy.md)
+- [vscodium.md](/opt/vscodium/vscodium.md) _release_
+- [wezterm.md](/opt/wezterm.md)
+- [xnconvert.md](/opt/xnconvert.md) _download_
+- [zeal.md](/opt/zeal.md)
+
 ### later
 
+- [anki.md](/opt/anki.md)
+- [audacity.md](/opt/audacity.md) _release_
+- [chainner.md](/opt/chainner.md) _release_
+- [darktable.md](/opt/darktable.md)
+- [dupeguru.md](/opt/dupeguru.md)
+- [fotokilof.md](/opt/fotokilof.md)
+- [freecad.md](/opt/freecad.md)
+- [gimp.md](/opt/gimp.md)
+- [inkscape.md](/opt/inkscape.md)
+- [kicad.md](/opt/kicad.md)
+- [krita.md](/opt/krita.md)
+- [shotcut.md](/opt/shotcut.md)
 - [yomi-ninja.md](/opt/yomi-ninja.md)
+- [rclone-manager.md](/opt/rclone-manager.md)
 
 ### extra
 
+- [abogen.md](/opt/abogen.md)
+- [aegisub.md](/opt/aegisub.md)
+- [clawpdf.md](/opt/clawpdf.md)
+- [cuetools.md](/opt/cuetools.md)
+- [etcher.md](/opt/etcher.md)
+- [gpodder.md](/opt/gpodder.md) _release_
+- [mkvtoolnix.md](/opt/mkvtoolnix.md)
+- [mp3gain.md](/opt/mp3gain.md) _release_
+- [mupdf.md](/opt/mupdf.md) _download_
+- [musescore.md](/opt/musescore.md) _release_
+- [musicbrainz-picard.md](/opt/musicbrainz-picard.md)
+- [pureref.md](/opt/pureref.md) _download_
+- [pyglossary.md](/opt/pyglossary.md)
+- [qtscrcpy.md](/opt/qtscrcpy.md)
+- [sigil.md](/opt/sigil.md) _release_
+- [sioyek.md](/opt/sioyek.md)
+- [snipaste.md](/opt/snipaste.md) _download_
+- [sqlitebrowser.md](/opt/sqlitebrowser.md)
+- [subtitleedit.md](/opt/subtitleedit.md)
+- [tageditor.md](/opt/tageditor.md) _release_
+- [tagscanner.md](/opt/tagscanner.md)
+- [tagspaces.md](/opt/tagspaces.md)
+- [thorium-reader.md](/opt/thorium-reader.md) _release_
+- [umi-ocr.md](/opt/umi-ocr.md)
+- [upscayl.md](/opt/upscayl.md) _release_
+- [video-sub-finder.md](/opt/video-sub-finder.md)
 - [video-sub-finder.md](/opt/video-sub-finder.md) _download_
+- [yoga-image-optimizer.md](/opt/yoga-image-optimizer.md)
 
 ### cache
+
+- [aseprite.md](/opt/aseprite.mD)
+- [audiobookconverter.md](/opt/audiobookconverter.md)
+- [ballonstranslator.md](/opt/ballonstranslator.md)
+- [dbeaver.md](/opt/dbeaver.md)
+- [discord.md](/opt/discord.md)
+- [documentcorrector.md](/opt/documentcorrector.md)
+- [exaile.md](/opt/exaile.md)
+- [exifcleaner.md](/opt/exifcleaner.md) _release_
+- [fastflix.md](/opt/fastflix.md)
+- [fluent-reader.md](/opt/fluent-reader.md)
+- [game2text.md](/opt/game2text.md)
+- [garlmap.md](/opt/garlmap.md)
+- [gmic-qt.md](/opt/gmic-qt.md)
+- [gridplayer.md](/opt/gridplayer.md) _release_
+- [httrack.md](/opt/httrack.md)
+- [joplin.md](/opt/joplin.md)
+- [kamite.md](/opt/kamite.md)
+- [kristall.md](/opt/kristall.md)
+- [libmidi.md](/opt/libmidi.md)
+- [lite-xl.md](/opt/lite-xl.md)
+- [logseq.md](/opt/logseq.md)
+- [nsz.md](/opt/nsz.md)
+- [ocenaudio.md](/opt/ocenaudio.md)
+- [omegat.md](/opt/omegat.md)
+- [osx-kvm.md](/opt/osx-kvm.md)
+- [pdfarranger.md](/opt/pdfarranger.md)
+- [pdfcropmargins.md](/opt/pdfcropmargins.md)
+- [pdfsam.md](/opt/pdfsam.md)
+- [photoshop.md](/opt/photoshop.md)
+- [putty.md](/opt/putty.md)
+- [qemu.md](/opt/qemu.md)
+- [qimgv.md](/opt/qimgv.md)
+- [qownnotes.md](/opt/qownnotes.md)
+- [qview.md](/opt/qview.md)
+- [stirling-pdf.md](/opt/stirling-pdf.md)
+- [tabby.md](/opt/tabby.md)
+- [talking-head-anime-4-demo.md](/opt/talking-head-anime-4-demo.md)
+- [video-compare.md](/opt/video-compare.md)
+- [virtualbox.md](/opt/virtualbox.md)
+- [weixin.md](/opt/weixin.md)
+- [youtube-music.md](/opt/youtube-music.md)
 
 ## resource
 
 ### mark
 
-- #alacritty [Alacritty Theme](https://github.com/alacritty/alacritty-theme)clone|
-- #alacritty [Alacritty](https://github.com/alacritty/alacritty) _release_
-- #archive [7zip](https://7-zip.org) _download_
-- #audio [Audacity](https://github.com/audacity/audacity) _release_
-- #audio [fre:ac](https://github.com/enzo1982/freac) _release_
-- #audio [Tag Editor](https://github.com/Martchus/tageditor) _release_
-- #audio [wxMP3gain](https://github.com/cfgnunes/wxmp3gain) _release_
-- #automation [Selenium](https://github.com/SeleniumHQ/selenium)
-- #book [Calibre](https://calibre-ebook.com) _download_
-- #browser [Brave](https://brave.com) _download_
-- #browser [LibreWolf](https://librewolf.net) _download_
-- #calculate [Qalculate!](https://github.com/Qalculate/qalculate-gtk) _release_
-- #controller [Controller Display by Fred Wood](https://thatsmytrunks.itch.io/controllerdisplay)
-- #dev [VIA](https://github.com/the-via/releases)
-- #dictionary [GoldenDict](https://github.com/goldendict/goldendict)
-- #document [Zeal](https://zealdocs.org)
-- #editor #markdown [Obsidian](https://github.com/obsidianmd/obsidian-releases) _release_
-- #email [Thunderbird](https://thunderbird.net) _download_
-- #epub [Sigil](https://github.com/Sigil-Ebook/Sigil) _release_
-- #epub [Thorium](https://github.com/edrlab/thorium-reader) _release_
-- #exif [ExifCleaner](https://github.com/szTheory/exifcleaner) _release_
-- #file-share [LocalSend](https://github.com/localsend/localsend)
-- #file-type [Detect It Easy (DiE)](https://github.com/horsicq/Detect-It-Easy)
-- #github [GitHub Desktop](https://desktop.github.com) _download_
-- #github [Gitify](https://github.com/gitify-app/gitify)
-- #gpodder [Normalize Audio](https://gpodder.github.io/docs/extensions/normalizeaudio.html)
-- #gui #mtn [qmtn](https://gitlab.com/movie_thumbnailer/qmtn) _release_
-- #gui #neovim [Neovide](https://github.com/neovide/neovide)
-- #ide [VSCodium](https://github.com/VSCodium/vscodium) _release_
-- #image [chaiNNer](https://github.com/joeyballentine/chaiNNer) _release_
-- #image [darktable](https://github.com/darktable-org/darktable)
-- #image [PureRef](https://pureref.com) _download_
-- #image [Upscayl](https://github.com/upscayl/upscayl) _release_
-- #image [XnConvert](https://xnview.com/en/xnconvert) _download_
-- #imager [Etcher](https://github.com/balena-io/etcher)
-- #imager [Raspberry Pi Imager](https://www.raspberrypi.com/software) _download_
-- #imager [Ventoy](https://github.com/ventoy/Ventoy)
-- #ime [Rime](https://github.com/rime/weasel)
-- #lan [Tailscale](https://github.com/tailscale/tailscale) _download_
-- #lyric [LRCGET](https://github.com/tranxuanthang/lrcget)
-- #manga [YACReader](https://github.com/YACReader/yacreader) _release_
-- #media [mpv](https://mpv.io)
-- #midi [Keppy's MIDI Converter](https://github.com/KeppySoftware/KMC) _release_
-- #music [MuseScore](https://github.com/musescore/MuseScore) _release_
-- #music [YouTube Music](https://github.com/th-ch/youtube-music)
-- #ocr [Umi-OCR](https://github.com/hiroi-sora/Umi-OCR)
-- #office [LibreOffice](https://libreoffice.org) _download_
-- #ollama [Ollama](https://github.com/ollama/ollama)
-- #password [KeepassXC](https://github.com/keepassxreboot/keepassxc)
-- #pdf [Imap: Image To PDF Converter](https://github.com/minisoftwarelab/imap-Image-to-PDF-Converter-Application-For-Windows)
-- #pdf [MuPDF](https://github.com/ArtifexSoftware/mupdf) _download_
-- #pdf [Sumatra PDF](https://github.com/sumatrapdfreader/sumatrapdf)
-- #pegasus [Pegasus Frontend](https://github.com/mmatyas/pegasus-frontend)
-- #record [OBS Studio](https://github.com/obsproject/obs-studio)
-- #remote [QtScrcpy](https://github.com/barry-ran/QtScrcpy)
-- #rss [QuiteRSS](https://quiterss.org) _download_
-- #screenshot [Snipaste](https://snipaste.com) _download_
-- #sublime-text [Sublime Text](https://sublimetext.com) _download_
-- #subtitle [Subtitle Edit](https://github.com/SubtitleEdit/subtitleedit)
-- #subtitle [字幕机翻](https://github.com/1c7/Translate-Subtitle-File)
-- #sync [MEGAsync](https://mega.io/desktop) _download_
-- #sync [Syncthing](https://syncthing.net) _download_
-- #text-expander [Espanso](https://github.com/espanso/espanso)
-- #torrent-download [qBittorrent-Enhanced-Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition)
-- #video #metadata [MediaInfo](https://mediaarea.net/en/MediaInfo) _download_
-- #video [FFmpeg Batch AV Converter](https://github.com/eibol/ffmpeg_batch) _release_
-- #video [GridPlayer](https://github.com/vzhd1701/gridplayer) _release_
-- #video [handbrake](https://github.com/tahsinature/hardbrake) _download_
-- #video [HandBrake](https://handbrake.fr) _download_
-- #video [Kdenlive](https://kdenlive.org) _download_
-- #video [LosslessCut](https://github.com/mifi/lossless-cut)
-- #video [Madamiru](https://github.com/mtkennerly/madamiru/) _release_
-- #video [MKV Muxing Batch GUI](https://github.com/yaser01/mkv-muxing-batch-gui) _release_
-- #video [MKVToolNix](https://mkvtoolnix.download)
-- #video [Video Duplicate Finder](https://github.com/0x90d/videoduplicatefinder) _release_
-- #video [video-compare](https://github.com/pixop/video-compare) _release_
-- #video [Shutter Encoder](https://github.com/paulpacifico/shutter-encoder)
 - [ClamAV](https://www.clamav.net)
+- [Keppy's MIDI Converter](https://github.com/KeppySoftware/KMC) _release_
+- [MEGAsync](https://mega.io/desktop) _download_
+- [qBittorrent-Enhanced-Edition](https://github.com/c0re100/qBittorrent-Enhanced-Edition)
+- [Sumatra PDF](https://github.com/sumatrapdfreader/sumatrapdf)
+- [VSCodium](https://github.com/VSCodium/vscodium) _release_
+- [字幕机翻](https://github.com/1c7/Translate-Subtitle-File)
 
 ### later
 
-- #3d [Blender](https://github.com/blender/blender)
-- #graphic [FreeCAD](https://github.com/FreeCAD/FreeCAD)
-- #graphic [Inkscape](https://inkscape.org)
-- #graphic [Krita](https://github.com/KDE/krita)
-- #pcb [KiCad](https://gitlab.com/kicad/code/kicad)
-- #pcb [LibrePCB](https://github.com/LibrePCB/LibrePCB)
-- #record [Kooha](https://github.com/SeaDve/Kooha)
-- #record [menyoki](https://github.com/orhun/menyoki)
-- #video [Shotcut](https://github.com/mltframework/shotcut)
-- [Anki](https://apps.ankiweb.net)
-- #flathub [Bazaar](https://flathub.org/apps/io.github.kolunmi.Bazaar)
+- [Blender](https://github.com/blender/blender)
+- [LibrePCB](https://github.com/LibrePCB/LibrePCB)
+- [Shutter Encoder](https://github.com/paulpacifico/shutter-encoder)
+- [字幕共享计划](https://github.com/foxofice/sub_share)
 
 ### extra
 
-- #podcast [gPodder](https://github.com/gpodder/gpodder) _release_
+- #audio [fre:ac](https://github.com/enzo1982/freac) _release_
+- #audio [Tag Editor](https://github.com/Martchus/tageditor) _release_
+- #video [FFmpeg Batch AV Converter](https://github.com/eibol/ffmpeg_batch) _release_
+- #video [Madamiru](https://github.com/mtkennerly/madamiru/) _release_
+- #video [MKV Muxing Batch GUI](https://github.com/yaser01/mkv-muxing-batch-gui) _release_
+- #video [Video Duplicate Finder](https://github.com/0x90d/videoduplicatefinder) _release_
+- [Barrier](https://github.com/debauchee/barrier)
+- [Controller Display by Fred Wood](https://thatsmytrunks.itch.io/controllerdisplay)
+- [Detect It Easy (DiE)](https://github.com/horsicq/Detect-It-Easy)
+- [KeepassXC](https://github.com/keepassxreboot/keepassxc)
+- [Kopia](https://github.com/kopia/kopia)
+- [Qalculate!](https://github.com/Qalculate/qalculate-gtk) _release_
+- [qmtn](https://gitlab.com/movie_thumbnailer/qmtn) _release_
+- [Unison](https://github.com/bcpierce00/unison) _release_
+- [VIA](https://github.com/the-via/releases)
+- [YACReader](https://github.com/YACReader/yacreader) _release_
 
 ### cache
 
@@ -119,7 +171,6 @@
 - #adb [scrcpy](https://github.com/Genymobile/scrcpy)
 - #audio [AIMP](https://aimp.ru)
 - #audio [AudioRelay](https://audiorelay.net)
-- #audio [Exaile](https://github.com/exaile/exaile)
 - #audio [Garlmap](https://github.com/Jelmerro/Garlmap)
 - #audio [Listen 1](https://github.com/listen1/listen1_desktop)
 - #audio [Moosync](https://github.com/Moosync/Moosync)
@@ -128,18 +179,13 @@
 - #audio [Quod Libet](https://github.com/quodlibet/quodlibet)
 - #audio [Sound Show](https://impronivers.itch.io/sound-show)
 - #audio [Tenacity](https://codeberg.org/tenacityteam/tenacity)
+- #automation [Selenium](https://github.com/SeleniumHQ/selenium)
 - #bluetooth [toolBLEx](https://github.com/emericg/toolBLEx)
-- #browser [Chrome](https://google.com/intl/zh-cn/chrome)
-- #browser [Firefox](https://mozilla.org/en-US/firefox)
-- #browser [Kristall](https://github.com/MasterQ32/kristall)
-- #browser [qutebrowser](https://github.com/qutebrowser/qutebrowser)
-- #browser #qutebrowser [Qutebrowser City Lights](https://github.com/gicrisf/qute-city-lights)
 - #chat [HexChat](https://hexchat.github.io)
 - #cleaner [BleachBit](https://bleachbit.org)
 - #cleaner [Czkawka](https://github.com/qarmin/czkawka)
 - #controller [Input Display](https://moonspod.itch.io/input-display)
 - #cross [CrossPaste](https://github.com/CrossPaste/crosspaste-desktop)
-- #database [DBeaver](https://github.com/dbeaver/dbeaver)
 - #desktop [Zebar](https://github.com/glzr-io/zebar)
 - #dictionary [Game2Text-Lightning](https://github.com/mathewthe2/Game2Text-Lightning)
 - #dictionary [GoldenDict-ng](https://github.com/xiaoyifang/goldendict-ng)
@@ -150,31 +196,25 @@
 - #download [File centipede](https://github.com/filecxx/FileCentipede)
 - #download [IPFS Desktop](https://github.com/ipfs/ipfs-desktop)
 - #download [Persepolis Download Manager](https://github.com/persepolisdm/persepolis)
-- #editor #emacs [Doom Emacs](https://github.com/doomemacs/doomemacs)
-- #editor #emacs [Doom N Λ N O Themes](https://github.com/ronisbr/doom-nano-themes)
-- #editor #emacs [GNU Emacs](https://gnu.org/software/emacs)
-- #editor #emacs [Org Mode](https://orgmode.org)
-- #editor #emacs [Org Rainbow Tags](https://github.com/KaratasFurkan/org-rainbow-tags)
-- #editor #emacs [Org Roam BibTeX](https://github.com/org-roam/org-roam-bibtex)
-- #editor #emacs [Org-roam](https://github.com/org-roam/org-roam)
-- #editor #emacs [Spacemacs](https://github.com/syl20bnr/spacemacs)
-- #editor #emacs [Vulpea](https://github.com/d12frosted/vulpea)
-- #editor #emacs [yomikun](https://github.com/dmgerman/yomikun)
-- #editor #latex [Texmaker](https://xm1math.net/texmaker)
 - #editor #markdown [Asciidoc FX](https://asciidocfx.com)
 - #editor #markdown [MarkText](https://github.com/marktext/marktext)
-- #editor #markdown [QOwnNotes](https://qownnotes.org)
 - #editor #markdown [VNote](https://vnotex.github.io/vnote)
-- #editor #qownnotes [QOwnNotes Web Companion](https://github.com/qownnotes/web-companion)
 - #editor #quarto [quarto-site-template](https://github.com/Openscapes/quarto-website-tutorial)
 - #editor #quarto [Quarto](https://github.com/quarto-dev/quarto-cli)
-- #editor [Joplin](https://github.com/laurent22/joplin/)
-- #editor [Lite XL](https://github.com/lite-xl/lite-xl)
-- #editor [Logseq](https://github.com/logseq/logseq)
 - #editor [Notepad Next](https://github.com/dail8859/NotepadNext)
 - #editor [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus)
 - #editor [Trilium Notes](https://github.com/zadam/trilium)
 - #editor [TriliumNext Notes](https://github.com/TriliumNext/Notes)
+- #emacs [Doom Emacs](https://github.com/doomemacs/doomemacs)
+- #emacs [Doom N Λ N O Themes](https://github.com/ronisbr/doom-nano-themes)
+- #emacs [GNU Emacs](https://gnu.org/software/emacs)
+- #emacs [Org Mode](https://orgmode.org)
+- #emacs [Org Rainbow Tags](https://github.com/KaratasFurkan/org-rainbow-tags)
+- #emacs [Org Roam BibTeX](https://github.com/org-roam/org-roam-bibtex)
+- #emacs [Org-roam](https://github.com/org-roam/org-roam)
+- #emacs [Spacemacs](https://github.com/syl20bnr/spacemacs)
+- #emacs [Vulpea](https://github.com/d12frosted/vulpea)
+- #emacs [yomikun](https://github.com/dmgerman/yomikun)
 - #email [mutt](http://www.mutt.org)
 - #email [SeaMonkey](https://www.seamonkey-project.org/)
 - #encrypt [Cryptomator](https://github.com/cryptomator/cryptomator)
@@ -191,11 +231,7 @@
 - #graphic #cad [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution)
 - #graphic #cad [OpenSCAD](https://github.com/openscad/openscad)
 - #graphic #cad [QCAD](https://github.com/qcad/qcad)
-- #graphic #inkscape [TexText](https://github.com/textext/textext)
-- #graphic #kicad [KiKit – Automation for KiCAD](https://github.com/yaqwsx/KiKit)
-- #graphic [Aseprite](https://dacap.itch.io/aseprite)
 - #graphic [Dotgrid](https://hundredrabbits.itch.io/dotgrid)
-- #graphic [GIMP](https://gimp.org)
 - #graphic [Graphite](https://github.com/GraphiteEditor/Graphite)
 - #graphic [heightmapper](https://github.com/tangrams/heightmapper)
 - #graphic [Nodezator](https://github.com/IndiePython/nodezator)
@@ -219,7 +255,6 @@
 - #image [opti](https://torcado.itch.io/opti)
 - #image [Pineapple Pictures](https://github.com/BLumia/pineapple-pictures)
 - #image [PosteRazor](https://posterazor.sourceforge.io)
-- #image [qimgv](https://github.com/easymodo/qimgv)
 - #image [Quick Picture Viewer](https://github.com/ModuleArt/quick-picture-viewer)
 - #image [RawTherapee](https://rawtherapee.com)
 - #image [Simp](https://github.com/Kl4rry/simp)
@@ -238,21 +273,16 @@
 - #keyboard [KMonad](https://github.com/kmonad/kmonad)
 - #lan [NetBird](https://github.com/netbirdio/netbird)
 - #lan [ZeroTier](https://zerotier.com)
-- #latex [JabRef Bibliography Management](https://github.com/jabref/jabref/)
-- #latex [KLatexFormula](https://klatexformula.sourceforge.io)
 - #laucher [ueli](https://github.com/oliverschwendener/ueli)
 - #laucher [uTools](https://u.tools)
 - #laucher [Wox](https://github.com/Wox-launcher/Wox)
-- #linter #latex [TeXtidote](https://github.com/sylvainhalle/textidote)
 - #llm [LM Studio](https://lmstudio.ai)
 - #log [Klogg](https://github.com/variar/klogg)
 - #lyric [LrcHelper](https://github.com/ludoux/LrcHelper)
-- #manga [BallonsTranslator](https://github.com/dmMaze/BallonsTranslator)
 - #media [vlc](https://www.videolan.org/vlc/)
 - #midi [FamiStudio](https://github.com/BleuBleu/FamiStudio)
 - #midi [Frescobaldi](https://frescobaldi.org)
 - #midi [legumes](https://github.com/LingDong-/legumes)
-- #midi [libmidi](https://github.com/tanluteam/libmidi)
 - #midi [LilyPond](https://gitlab.com/lilypond/lilypond)
 - #midi [LMMS](https://github.com/lmms/lmms)
 - #midi [Orca](https://hundredrabbits.itch.io/orca)
@@ -265,11 +295,9 @@
 - #network [Sniffnet](https://github.com/GyulyVGC/sniffnet)
 - #niimbot [NiimPrintX](https://github.com/labbots/NiimPrintX)
 - #ocr [gImageReader](https://github.com/manisandro/gImageReader)
-- #ocr [Kamite](https://github.com/fauu/Kamite)
 - #ocr [Manga OCR](https://github.com/kha-white/manga-ocr)
 - #ocr [mokuro](https://github.com/kha-white/mokuro)
 - #ocr [OCR-CopyPastePad](https://github.com/FlyingFathead/OCR-CopyPastePad)
-- #ocr [pix2tex - LaTeX OCR](https://github.com/lukas-blecher/LaTeX-OCR)
 - #ocr [pyTranslateOCR](https://github.com/MoonDragon-MD/pyTranslateOCR)
 - #ocr [SickZil-Machine](https://github.com/KUR-creative/SickZil-Machine)
 - #office [OpenOffice](https://github.com/apache/openoffice)
@@ -279,8 +307,6 @@
 - #pdf [Foxit PDF Reader](https://www.foxit.com/pdf-reader/)
 - #pdf [img2pdf](https://github.com/josch/img2pdf)
 - #pdf [Paperlib](https://github.com/GeoffreyChen777/paperlib)
-- #pdf [pdfCropMargins](https://github.com/abarker/pdfCropMargins)
-- #pdf [PDFsam](https://github.com/torakiki/pdfsam)
 - #pdf [PDFStitcher](https://github.com/cfcurtis/pdfstitcher)
 - #pdf [XpdfReader](https://xpdfreader.com/download.html)
 - #pdf [Zotero](https://github.com/zotero/zotero)
@@ -288,15 +314,10 @@
 - #rclone [RcloneTray](https://github.com/dimitrov-adrian/RcloneTray)
 - #remote [RustDesk](https://github.com/rustdesk/rustdesk)
 - #rgb [OpenRGB](https://github.com/CalcProgrammer1/OpenRGB)
-- #rss [Fluent Reader](https://github.com/yang991178/fluent-reader)
 - #rss [Follow](https://github.com/RSSNext/Follow)
-- #scrape [HTTrack](https://httrack.com)
 - #search [Semantra](https://github.com/freedmand/semantra)
 - #share [Bananas Screen Sharing](https://github.com/mistweaverco/bananas)
-- #sharing [Barrier](https://github.com/debauchee/barrier)
-- #snapshot [Kopia](https://github.com/kopia/kopia)
 - #snippet [Pieces](https://pieces.app)
-- #social [Discord](https://discord.com)
 - #spotify [Spicetify](https://github.com/spicetify/spicetify-cli)
 - #spotify [spotify-qt](https://github.com/kraxarn/spotify-qt)
 - #ssh [electerm](https://github.com/electerm/electerm)
@@ -306,17 +327,12 @@
 - #stream [Chatterino 2](https://github.com/Chatterino/chatterino2)
 - #stream [Moonlight PC](https://github.com/moonlight-stream/moonlight-qt)
 - #stream [Streamlink Twitch GUI](https://github.com/streamlink/streamlink-twitch-gui)
-- #subtitle [Aegisub](https://github.com/arch1t3cht/Aegisub)
-- #subtitle [字幕共享计划](https://github.com/foxofice/sub_share)
-- #sync [Unison](https://github.com/bcpierce00/unison)
 - #tabular [Tad](https://github.com/antonycourtney/tad)
-- #terminal [Tabby](https://github.com/Eugeny/tabby)
 - #terminal [Wave Terminal](https://github.com/wavetermdev/waveterm)
 - #timer [Pomodoro](https://github.com/amitmerchant1990/pomolectron)
 - #timer [wnr](https://github.com/RoderickQiu/wnr)
 - #torrent [Torrent File Editor](https://github.com/torrent-file-editor/torrent-file-editor)
 - #translate [LunaTranslator](https://github.com/HIllya51/LunaTranslator)
-- #translate [OmegaT](https://omegat.org)
 - #translate [OpenAl Translator](https://github.com/openai-translator/openai-translator)
 - #video [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)
 - #video [FastFlix](https://github.com/cdgriffith/FastFlix)
@@ -327,19 +343,9 @@
 - #video [VidCutter](https://github.com/ozmartian/vidcutter)
 - #video [Video2X](https://github.com/k4yt3x/video2x)
 - #video [WebmGenerator](https://github.com/dfaker/WebmGenerator)
-- #virtual [QEMU](https://github.com/qemu/qemu)
-- #virtual [VirtualBox](https://www.virtualbox.org/)
 - #voice [TeamSpeak](https://teamspeak.com)
 - #wiki [Zim](https://github.com/zim-desktop-wiki/zim-desktop-wiki)
 - #window #virtual-desktop [SylphyHorn](https://github.com/Grabacr07/SylphyHorn)
 - #youtube [Media Downloader](https://github.com/mhogomchungu/media-downloader)
 - #youtube [YoutubeDownloader](https://github.com/Tyrrrz/YoutubeDownloader)
-- #tabby [Save Output](https://github.com/eugeny/tabby-save-output)
-- #tabby [Tabby Quick Restart Plugin](https://github.com/flkns/tabby-quick-restart)
-- #tabby [Tabby search in browser](https://github.com/composer404/tabby-search-in-browser)
-- #tabby [tabby-trzsz](https://github.com/trzsz/tabby-trzsz)
-- #tabby [terminus-title-control](https://github.com/kbjr/terminus-title-control)
-- #tabby [Docker plugin for Tabby Terminal](https://github.com/eugeny/tabby-docker)
-- #tabby [Noctis Color Schemes](https://github.com/aaronhuggins/tabby-colors-noctis)
-- [abogen](https://github.com/denizsafak/abogen)
 - [Windrecorder](https://github.com/yuka-friends/Windrecorder)

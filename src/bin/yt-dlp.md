@@ -42,4 +42,4 @@ yt-dlp -x --audio-format mp3 --audio-quality 320k -o "%(title)s.%(ext)s" "<url_1
 
 ## annex
 
-[yt-dlp.mp4](https://scillidan.github.io/media_cheat/bin/yt-dlp.mp4), ([bilibili](https://www.bilibili.com/video/BV1QJYBzfEPw)
+- [yt-dlp.mp4](https://scillidan.github.io/media_cheat/bin/yt-dlp.mp4) ([bilibili](https://www.bilibili.com/video/BV1QJYBzfEPw))

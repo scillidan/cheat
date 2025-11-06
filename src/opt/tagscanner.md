@@ -9,4 +9,6 @@ yay -S --noconfirm tagscanner
 scoop install tagscanner
 ```
 
+## annex
+
 ![tagscanner](/_image/opt/tagscanner.png)

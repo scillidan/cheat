@@ -50,4 +50,4 @@ webui-user.bat --api
 
 ![chainner](/_image/opt/chainner.png)
 
-[chainner.mp4](https://scillidan.github.io/media_cheat/opt/chainner.mp4), ([bilibili](https://www.bilibili.com/video/BV188G2zaEts)
+- [chainner.mp4](https://scillidan.github.io/media_cheat/opt/chainner.mp4) ([bilibili](https://www.bilibili.com/video/BV188G2zaEts))

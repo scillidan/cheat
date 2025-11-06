@@ -133,9 +133,11 @@ URL: http://<your_host>:<port>/?models=librarian%3Alatest-clone&q={word}
 
 ## cross-reference
 
+### extra
+
+- [ebook-translator-calibre-plugin.md](/opt/calibre/ebook-translator-calibre-plugin.md)
 - [open-webui.md](/optWeb/open-webui.md)
 - [silverdict.md](/srv/silverdict.md)
-- [ebook-translator-calibre-plugin.md](/opt/calibre/ebook-translator-calibre-plugin.md)
 
 ## resource
 
@@ -161,4 +163,4 @@ URL: http://<your_host>:<port>/?models=librarian%3Alatest-clone&q={word}
 ![lookup_01](/_image/opt/calibre/lookup_01.png)
 ![lookup_02](/_image/opt/calibre/lookup_02.png)
 
-[calibre_read-aloud.mp4](https://scillidan.github.io/media_cheat/opt/calibre_read-aloud.mp4), ([bilibili](https://www.bilibili.com/video/BV1BKYBzBEqU)
+- [calibre_read-aloud.mp4](https://scillidan.github.io/media_cheat/opt/calibre_read-aloud.mp4) ([bilibili](https://www.bilibili.com/video/BV1BKYBzBEqU))

@@ -23,6 +23,7 @@
 
 - [flacon.md](/opt/_arch/flacon.md)
 - [grub-btrfs.md](/opt/_arch/grub-btrfs.md)
+- [qdiskinfo.md](/opt/qdiskinfo.md)
 
 ### cache
 
@@ -43,6 +44,8 @@
 
 ### later
 
+- #flatpak [Kooha](https://github.com/SeaDve/Kooha)
+- #record [menyoki](https://github.com/orhun/menyoki)
 - [icon-explorer](/opt/_arch/icon-explorer.md)
 - [Loopers](https://github.com/mwylde/loopers)
 - [Pied](https://github.com/Elleo/pied)
@@ -51,7 +54,7 @@
 
 ### extra
 
-- #image [Halftone](https://github.com/tfuxu/Halftone)
+- [Halftone](https://github.com/tfuxu/Halftone)
 - [Syncthing Tray](https://github.com/Martchus/syncthingtray) _release_
 
 ### cache

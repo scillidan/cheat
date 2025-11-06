@@ -19,4 +19,4 @@ scoop install staxrip
 
 ## annex
 
-[staxrip.mp4](https://scillidan.github.io/media_cheat/opt/_windows/staxrip.mp4), ([bilibili](https://www.bilibili.com/video/BV15Ti2YHEAP)
+- [staxrip.mp4](https://scillidan.github.io/media_cheat/opt/_windows/staxrip.mp4) ([bilibili](https://www.bilibili.com/video/BV15Ti2YHEAP))

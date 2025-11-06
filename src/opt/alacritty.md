@@ -37,4 +37,10 @@ subl %APPDATA%\alacritty\alacritty.toml
 - (Windows 10) [How can I configure alacritty to work with MSYS2?](https://github.com/alacritty/alacritty/issues/3301#issuecomment-753320506)
 - [An Example and Concise Guide to Alacritty Configuration through TOML](https://convoluted.bearblog.dev/alacritty-config-example-guide/)
 
+## resource
+
+### cache
+
+- [Alacritty Theme](https://github.com/alacritty/alacritty-theme)
+
 [^1]: [Config - Alacritty](https://alacritty.org/config-alacritty.html)

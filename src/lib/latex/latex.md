@@ -95,6 +95,11 @@
 
 ### cache
 
+- #bibliography [JabRef Bibliography Management](https://github.com/jabref/jabref/)
+- #editor [Texmaker](https://xm1math.net/texmaker)
+- #linter [TeXtidote](https://github.com/sylvainhalle/textidote)
+- #math [KLatexFormula](https://klatexformula.sourceforge.io)
+- #ocr [pix2tex - LaTeX OCR](https://github.com/lukas-blecher/LaTeX-OCR)
 - [dnd-5e-latex-template](https://github.com/rpgtex/DND-5e-LaTeX-Template)
 - [geneve_1564](https://github.com/raphink/geneve_1564)
 - [hsrmbeamertheme](https://github.com/benjamin-weiss/hsrmbeamertheme)

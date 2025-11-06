@@ -12,5 +12,5 @@ mpv --input-ipc-server=/./pipe/kamite-mpvsocket --sub-file="$2" --sid=2 --second
 
 ## annex
 
-[kamite_01.mp4](https://scillidan.github.io/media_cheat/opt/kamite_01.mp4), ([bilibili](https://www.bilibili.com/video/BV1JN4y1f7Wc)
-[kamite_01.mp4](https://scillidan.github.io/media_cheat/opt/kamite_02.mp4), ([bilibili](https://www.bilibili.com/video/BV1YN411E7Ra)
+- [kamite_01.mp4](https://scillidan.github.io/media_cheat/opt/kamite_01.mp4) ([bilibili](https://www.bilibili.com/video/BV1JN4y1f7Wc))
+- [kamite_02.mp4](https://scillidan.github.io/media_cheat/opt/kamite_02.mp4) ([bilibili](https://www.bilibili.com/video/BV1YN411E7Ra))

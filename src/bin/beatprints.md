@@ -55,4 +55,4 @@ beatprints
 
 ## annex
 
-[beatprints_batch-script.mp4](https://scillidan.github.io/media_cheat/bin/beatprints_batch-script.mp4), ([bilibili](https://www.bilibili.com/video/BV1GwomYTEJn)
+- [beatprints_batch-script.mp4](https://scillidan.github.io/media_cheat/bin/beatprints_batch-script.mp4) ([bilibili](https://www.bilibili.com/video/BV1GwomYTEJn))

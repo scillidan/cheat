@@ -1,22 +1,44 @@
 # optGame
 
-## resource
+## cross-reference
 
 ### mark
 
-- [hydra](https://github.com/hydralauncher/hydra) _release_
-- [RetroArch](https://retroarch.com) _download_
-- [Skraper](https://www.skraper.net/) _download_
-- #renpy [Katawa Shoujo: Re-Engineered](https://github.com/fleetingheart/ksre)
-- #rust [doukutsu-rs](https://github.com/doukutsu-rs/doukutsu-rs)
+- [es-de.md](/optGame/es-de/es-de.md)
+- [lutris.md](/optGame/lutris.md)
+- [steam.md](/optGame/steam.md)
+- [wine.md](/optGame/wine.md)
+
+### later
+
+- #renpy [katawa-shoujo-re-engineered.md](/optGame/katawa-shoujo-re-engineered.md)
+
+### extra
+ 
+- [ppsspp.md](/optGame/ppsspp.md)
+- [retroarch.md](/optGame/retroarch.md) _download_
+
+### cache
+
+- #love [mari0.md](/optGame/mari0.md)
+- [cave-story-md.md](/optGame/cave-story-md.md)
+- [curse-of-the-arrow.md](/optGame/curse-of-the-arrow.md)
+- [doukutsu-rs.md](/optGame/doukutsu-rs.md)
+- [hydralauncher.md](/optGame/hydralauncher.md) _release_
+- [nxengine-evo-rpi.md](/optGame/nxengine-evo-rpi.md)
+- [nxengine-evo.md](/optGame/nxengine-evo.md)
+- [pegasus-frontend.md](/optGame/pegasus-frontend.md)
+- [slay-the-spire.md](/optGame/slay-the-spire.md)
+
+## resource
 
 ### extra
 
 - #love [BYTEPATH](https://github.com/a327ex/BYTEPATH)
-- #love [mari0](https://github.com/Stabyourself/mari0)
 - #love [SNKMD](https://github.com/sharpdev-me/SNKMD)
 - #love [SNKRX](https://github.com/a327ex/SNKRX)
 - #love [SNKRX](https://github.com/Luminware/SNKRX)
+- [Skraper](https://www.skraper.net/) _download_
 
 ### later
 
@@ -35,7 +57,6 @@
 - [Farm&Shoot](https://matteo-dalessandro.itch.io/farmshoot)
 - [Gaunt Valkyr](https://ember-paw-games.itch.io/gaunt-valkyr)
 - [Hamster than Light](https://korogames.itch.io/htl)
-	- [Paper Soldiers](https://andriy-bychkovskyi.itch.io/paper-solssssssssadddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssqqqers)
 - [retriggere](https://unnamecollective.itch.io/retriggered)
 - [The Only Tower](https://giantlight.itch.io/the-only-tower)
 
@@ -62,8 +83,6 @@
 - #love [Three in a Rogue](https://notexplosive.itch.io/three-in-a-rogue-classic)
 - #love [Untitled Dungeon](https://terribleben.itch.io/untitled-dungeon)
 - #ps [RPCS3](https://github.com/RPCS3/rpcs3)
-- #psp [PPSSPP](https://ppsspp.org)
-- #renpy [Katawa Shoujo: Re-Engineered](https://codeberg.org/fhs/katawa-shoujo-re-engineered)
 - #rpg-marker [Final Fantasy Dog Complete](https://lordbluerouge.itch.io/final-fantasy-dog)
 - #switch [Ryujinx](https://git.ryujinx.app/ryubing/ryujinx)
 - #switch [suyu](https://suyu.dev)
@@ -71,14 +90,12 @@
 - #switch [YuzuToolbox](https://zachar3.itch.io/yuzutoolbox)
 - [Cataclysm: Dark Days Ahead](https://github.com/CleverRaven/Cataclysm-DDA)
 - [Catanatron](https://github.com/bcollazo/catanatron)
-- [Cave Story MD](https://github.com/andwn/cave-story-md)
 - [Doukutsu Randamu](https://trashboxbobylev.itch.io/doukutsu-randamu)
-- [Face To Face](https://samgames.itch.io/face-to-face?ref=warpdoor.com)
+- [Face To Face](https://samgames.itch.io/face-to-face)
 - [FinalBurn Neo](https://github.com/libretro/FBNeo)
 - [Jenka Dungeon](https://kasityo-crew.itch.io/jenka-dungeon)
 - [Kingsvein](https://radcodex.itch.io/kingsvein)
 - [Million Monster Militia](https://dejobaan.itch.io/mmm)
-- [NXEngine-evo](https://github.com/nxengine/nxengine-evo)
 - [OpenRA](https://github.com/OpenRA/OpenRA)
 - [Randomancer](https://riuku.itch.io/randomancer)
 - [Roguewood](https://watabou.itch.io/roguewood)

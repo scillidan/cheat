@@ -50,4 +50,4 @@ magick convert dark.ico -channel RGB -negate light.ico
 
 ## annex
 
-[smartzip.mp4](https://scillidan.github.io/media_cheat/opt/_windows/smartzip.mp4), ([bilibili](https://www.bilibili.com/video/BV1ymi1YNEzf)
+- [smartzip.mp4](https://scillidan.github.io/media_cheat/opt/_windows/smartzip.mp4) ([bilibili](https://www.bilibili.com/video/BV1ymi1YNEzf))

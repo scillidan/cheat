@@ -1,5 +1,25 @@
 # opt_Browser
 
+## cross-reference
+
+### mark
+
+- #chrome #firefox [floccus-bookmarks-sync.md](/opt/Browser/floccus-bookmarks-sync.md)
+- #chrome #firefox [imagus.md](/opt/Browser/imagus.md)
+- #chrome #firefox [linguist.md](/opt/Browser/linguist.md)
+- #chrome #firefox [ublock.md](/opt/Browser/ublock.md)
+- #chrome #firefox [yomitan-dictionaries.md](/opt/Browser/yomitan-dictionaries.md)
+- #chrome [prevue-popup.md](/opt/Browser/prevue-popup.md)
+
+### extra
+
+- #chrome [kokoro-tts-reader.md](/opt/Browser/kokoro-tts-reader.md)
+
+### cache
+
+- #chrome #firefox [immersive-translate.md](/opt/Browser/immersive-translate.md)
+- [linkding-extension.md](/opt/Browser/linkding-extension.md)
+
 ## resource
 
 ### mark
@@ -15,16 +35,13 @@
 - #chrome #firefox [Dark Reader](https://darkreader.org)
 - #chrome #firefox [Distill Web Monitor](https://distill.io/)
 - #chrome #firefox [YouTube dual subtitles](https://www.dual-subtitles.com/)
-- #chrome #firefox [floccus bookmarks sync](https://github.com/floccusAddon)
 - #chrome #firefox [Get cookies.txt LOCALLY](https://github.com/kairi003/Get-cookies.txt-LOCALLY)
 - #chrome #firefox [GIF Scrubber](https://github.com/0ui/gif-scrubber)
 - #chrome #firefox [Gitako](https://github.com/EnixCoda/Gitako)
 - #chrome #firefox [GitIngest](https://github.com/cyclotruc/gitingest)
 - #chrome #firefox [GitZip for github](https://gitzip.org)
 - #chrome #firefox [Imageye](https://imageye.net)
-- #chrome #firefox [Imagus](https://github.com/TheFantasticWarrior/chrome-extension-imagus)
 - #chrome #firefox [Internet Archive Downloader](https://github.com/elementdavv/internet_archive_downloader)
-- #chrome #firefox [Linguist](https://github.com/translate-tools/linguist)
 - #chrome #firefox [Linkclump](https://github.com/benblack86/linkclump)
 - #chrome #firefox [Live Stream Downloader](https://webextension.org/listing/hls-downloader.html)
 - #chrome #firefox [Markdown Reader](https://github.com/md-reader/md-reader)
@@ -40,16 +57,13 @@
 - #chrome #firefox [SteamDB](https://steamdb.info/extension)
 - #chrome #firefox [Stylus](https://add0n.com/stylus.html)
 - #chrome #firefox [uBlacklist](https://iorate.github.io/ublacklist/docs)
-- #chrome #firefox [uBlock Origin](https://github.com/gorhill/uBlock)
 - #chrome #firefox [Vimium](https://github.com/philc/vimium)
 - #chrome #firefox [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
-- #chrome #firefox [Yomitan Popup Dictionary](https://github.com/themoeway/yomitan)
 - #chrome [Copy Title and Url as Markdown Style](https://github.com/zaki-yama/copy-title-and-url-as-markdown)
 - #chrome [GoFullPage - Full Page Screen Capture](https://gofullpage.com)
 - #chrome [Hide Scrollbar](https://chrome.google.com/webstore/detail/hide-scrollbar/mljepckcnbghmcdmaebjhejiplcngbkm)
 - #chrome [JSON Formatter](https://github.com/callumlocke/json-formatter)
 - #chrome [MEGA](https://mega.io/extensions)
-- #chrome [Prevue Popup](https://chrome.google.com/webstore/detail/prevue-popup/afencccmfcofdgnigbenkpplpanigajd)
 - #chrome [Read Later](https://github.com/willbchang/chrome-read-later)
 - #chrome [Tab to Window/Popup](https://acarabott.github.io/tabToWindow)
 - #chrome [Table Range Select & Copy (Like in Firefox!)](https://chrome.google.com/webstore/detail/table-range-select-and-co/klojbfbefcejadioohmnkhjmbmecfapg)
@@ -70,7 +84,6 @@
 - #chrome #firefox [Automa](https://automa.site)
 - #chrome #firefox [Earth View from Google Earth](https://earthview.withgoogle.com)
 - #chrome #firefox [find+ Regex Find-in-Page Tool](https://github.com/brandon1024/find)
-- #chrome #firefox [Immersive Translate - Translate Web & PDF](https://github.com/immersive-translate/immersive-translate)
 - #chrome #firefox [Luminous: JavaScript events blocker](https://github.com/gbaptista/luminous)
 - #chrome #firefox [Modern for Wikipedia](https://www.modernwiki.app)
 - #chrome #firefox [OctoLinker](https://octolinker.vercel.app)
@@ -89,11 +102,14 @@
 
 ### cache
 
+- #browser [Chrome](https://google.com/intl/zh-cn/chrome)
+- #browser [Firefox](https://mozilla.org/en-US/firefox)
 - #buku [bukubrow-host](https://github.com/samhh/bukubrow-host)
 - #buku [bukubrow-webext](https://github.com/SamHH/bukubrow-webext)
-- #linkding [linkding extension](https://github.com/sissbruecker/linkding-extension)
 - #linkding [linkding injector](https://github.com/fivefold/linkding-injector)
 - #llm [AnythingLLM Browser Companion](https://docs.anythingllm.com/browser-extension/install)
+- #qutebrowser [Qutebrowser City Lights](https://github.com/gicrisf/qute-city-lights)
+- #qutebrowser [qutebrowser](https://github.com/qutebrowser/qutebrowser)
 - #tts [Speechify — Text to Speech](https://speechify.com)
 - [10ten Japanese Reader (Rikaichamp)](https://github.com/birchill/10ten-ja-reader)
 - [Allow CORS](https://mybrowseraddon.com/access-control-allow-origin.html)

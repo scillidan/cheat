@@ -192,4 +192,4 @@ webui-user.bat
 
 ![stable-diffusion-webui](/_image/optWeb/stable-diffusion-webui.png)
 
-[stable-diffusion-webui.mp4](https://scillidan.github.io/media_cheat/opt/stable-diffusion-webui.mp4), ([bilibili](https://www.bilibili.com/video/BV1Z45Hz5E2e)
+- [stable-diffusion-webui.mp4](https://scillidan.github.io/media_cheat/opt/stable-diffusion-webui.mp4) ([bilibili](https://www.bilibili.com/video/BV1Z45Hz5E2e))

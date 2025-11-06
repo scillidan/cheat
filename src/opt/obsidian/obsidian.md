@@ -40,8 +40,10 @@ scoop install obsidian
 
 ## cross-reference
 
-- #script [init_obsidian_attach.bat](https://github.com/scillidan/Shell/blob/main/opt/init_obsidian_attach.bat)
-- #script [init_obsidian_attach.sh](https://github.com/scillidan/Shell/blob/main/opt/init_obsidian_attach.sh)
+### later
+
+- [obsidian-kokoro-tts-plugin.md](/opt/obsidian/obsidian-kokoro-tts-plugin.md)
+- [obsidian-media-slider.md](/opt/obsidian/obsidian-media-slider.md)
 
 ## resource
 
@@ -78,7 +80,6 @@ scoop install obsidian
 - [Wheel Tab Switcher](https://github.com/22-2/wheel-tab-switcher)
 - #cheat [LanguageTool Integration](https://github.com/Clemens-E/obsidian-languagetool-plugin)
 - #cheat [Media Companion](https://github.com/Nick-de-Bruin/obsidian-media-companion)
-- #cheat [Media Slider](https://github.com/amatya-aditya/obsidian-media-slider)
 - #cheat [Text Extractor](https://github.com/scambier/obsidian-text-extractor)
 - #cheat [Tag Wrangler](https://github.com/pjeby/tag-wrangler)
 - #cheat [TagFolder](https://github.com/vrtmrz/obsidian-tagfolder)
@@ -99,7 +100,6 @@ scoop install obsidian
 
 ### later
 
-- #live [Kokoro TTS](https://github.com/Mithadon/obsidian-kokoro-tts-plugin)
 - [Bibtex Entry View](https://github.com/awfrok/obsidian-plugin-bibtex-entry-view)
 - [Citations](https://github.com/hans/obsidian-citation-plugin)
 - [Focus Tracker](https://github.com/jeetsukumaran/obsidian-focus-tracker)

@@ -19,4 +19,4 @@ yay -S --noconfirm lrcget-bin
 
 ![lrcget](/_image/opt/lrcget.png)
 
-[lrcget.mp4](https://scillidan.github.io/media_cheat/opt/lrcget.mp4), ([bilibili](https://www.bilibili.com/video/BV1bpYBzoERE)
+- [lrcget.mp4](https://scillidan.github.io/media_cheat/opt/lrcget.mp4) ([bilibili](https://www.bilibili.com/video/BV1bpYBzoERE))

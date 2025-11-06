@@ -24,3 +24,6 @@ scoop install fzf
 
 - [fzf-preview](https://github.com/niksingh710/fzf-preview)
 
+## annex
+
+- [yt-dlp.mp4](https://scillidan.github.io/media_cheat/bin/yt-dlp.mp4) ([bilibili](https://www.bilibili.com/video/BV1QJYBzfEPw))

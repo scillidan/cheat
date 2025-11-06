@@ -8,4 +8,4 @@
 
 ## annex
 
-[musicbrainz-picard.mp4](https://scillidan.github.io/media_cheat/opt/musicbrainz-picard.mp4), ([bilibili](https://www.bilibili.com/video/BV18pYBzoEx5)
+- [musicbrainz-picard.mp4](https://scillidan.github.io/media_cheat/opt/musicbrainz-picard.mp4) ([bilibili](https://www.bilibili.com/video/BV18pYBzoEx5))

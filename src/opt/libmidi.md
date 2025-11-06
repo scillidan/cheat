@@ -6,4 +6,4 @@
 
 ## annex
 
-[immidi.mp4](https://scillidan.github.io/media_cheat/opt/immidi.mp4), ([bilibili](https://www.bilibili.com/video/BV1TW42197xj)
+- [immidi.mp4](https://scillidan.github.io/media_cheat/opt/immidi.mp4) ([bilibili](https://www.bilibili.com/video/BV1TW42197xj))

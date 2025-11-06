@@ -17,7 +17,11 @@ scoop install thunderbird
 
 ### Enable POP and IMAP
 
-- [Outlook](https://outlook.live.com) → Settings → Mail → Forwarding and IMAP → POP and IMAP.
-- [Yandex Mail](https://mail.yandex.com) → Settings → All settings → Email clients.
-- [QQ邮箱]() → 设置 → 账号 → POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务.
-- [网易邮箱](https://mail.163.com) → POP3/SMTP/IMAP.
+- IMAP server: imap.<domain>.com, port 993
+- SMTP server: smtp.<domain>.com, port 465/587
+
+- [Outlook](https://outlook.live.com) → Settings → Mail → Forwarding and IMAP → POP and IMAP
+	Outlook → Account → My Microsoft account → Privacy → Apps and services that can access your data
+- [Yandex Mail](https://mail.yandex.com) → Settings → All settings → Email clients
+- [QQ邮箱](https://wx.mail.qq.com/) → 设置 → 账号 → POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务
+- [网易邮箱](https://mail.163.com) → 设置 → POP3/SMTP/IMAP

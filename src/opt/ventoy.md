@@ -25,4 +25,6 @@ yay -S --noconfirm ventoy-bin
 scoop install ventoy
 ```
 
+## annex
+
 ![ventoy](/_image/opt/ventoy.png)

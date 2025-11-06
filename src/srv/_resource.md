@@ -2,8 +2,15 @@
 
 ## cross-reference
 
+### mark
+
+- [tailscale.md](/srv/tailscale.md) _download_
+
+### later
+
 - [nginx.md](/srv/nginx.md)
 - [snapdrop.md](/srv/snapdrop.md)
+- [syncthing.md](/srv/syncthing.md) _download_
 - [ttydbridge.md](/srv/ttydbridge.md)
 
 ## resource
@@ -29,7 +36,6 @@
 - #learn [anki-sync-server](https://github.com/yangchuansheng/anki-sync-server)
 - #recipe [Instant Recipe Search](https://github.com/typesense/showcase-recipe-search)
 - #sync [Resilio-sync](https://github.com/linuxserver/docker-resilio-sync)
-- #sync [Syncthing](https://github.com/linuxserver/docker-syncthing)
 - [wakapi](https://github.com/muety/wakapi)
 
 ### extra

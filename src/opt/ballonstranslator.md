@@ -33,5 +33,5 @@ python launch.py
 
 ![ballonstranslator](/_image/opt/ballonstranslator.png)
 
-[ballonstranslator_sakurallm.mp4](https://scillidan.github.io/media_cheat/opt/ballonstranslator_sakurallm.mp4), ([bilibili](https://www.bilibili.com/video/BV1zf421S7gY)
-[ballonstranslator_deeplx.mp4](https://scillidan.github.io/media_cheat/opt/ballonstranslator_deeplx.mp4), ([bilibili](https://www.bilibili.com/video/BV1zw4m117Ak)
+- [ballonstranslator_sakurallm.mp4](https://scillidan.github.io/media_cheat/opt/ballonstranslator_sakurallm.mp4) ([bilibili](https://www.bilibili.com/video/BV1zf421S7gY))
+- [ballonstranslator_deeplx.mp4](https://scillidan.github.io/media_cheat/opt/ballonstranslator_deeplx.mp4) ([bilibili](https://www.bilibili.com/video/BV1zw4m117Ak))

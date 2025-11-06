@@ -23,6 +23,10 @@ set shiftwidth=4
 set noexpandtab
 ```
 
+## reference
+
+- #blog [Learn Vim For the Last Time](https://danielmiessler.com/blog/vim)
+
 ## cross-reference
 
 - [wim.md](/bin/vim/wim.md)

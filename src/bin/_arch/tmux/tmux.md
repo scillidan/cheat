@@ -36,8 +36,12 @@ tmux attach
 
 ### mark
 
-- [tmux-thumbs](bin/_arch/tmux/tmux-thumbs.md)
-- [tmuxp](bin/_arch/tmux/tmuxp.md)
+- [tmux-thumbs](/bin/_arch/tmux/tmux-thumbs.md)
+- [tmuxp](/bin/_arch/tmux/tmuxp.md)
+
+### cache
+
+- [tmuxifier.md](/bin/_arch/tmux/tmuxifier.md)
 
 ## troubleshoot
 
@@ -56,7 +60,7 @@ tmux attach
 - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
 - [tmux-thumbs](https://github.com/fcsonline/tmux-thumbs)
 - [tmux-yank](https://github.com/tmux-plugins/tmux-yank)
-- [tmuxifier](https://github.com/jimeh/tmuxifier)
+
 - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
 ### cache

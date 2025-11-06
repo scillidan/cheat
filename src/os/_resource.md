@@ -1,5 +1,32 @@
 # os
 
+## cross-reference
+
+- [arch](/os/arch)
+- [windows10.md](/os/windows/windows10.md)
+
+### mark
+
+- #Arch [Dotfiles.md](/os/Dotfiles.md)
+- #Arch [File-Permission.md](/os/File-Permission.md)
+- [ubuntu-22-arm.md](/os/ubuntu-22-arm.md)
+
+### extra
+
+- [recalbox.md](/os/recalbox.md)
+- [retropie.md](/os/retropie.md)
+
+### cache
+
+- [android-tv.md](/os/android-tv.md)
+- [armbian.md](/os/armbian.md)
+- [bazzite.md](/os/bazzite.md)
+- [home-assistant.md](/os/home-assistant.md)
+- [osmc.md](/os/osmc.md)
+- [postmarketos.md](/os/postmarketos.md)
+- [raspberry-pi-os.md](/os/raspberry-pi-os.md)
+- [ubuntu.md](/os/ubuntu.md)
+
 ## resource
 
 ### cache

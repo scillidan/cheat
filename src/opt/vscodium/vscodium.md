@@ -47,9 +47,13 @@ VSCodium → Settings → Open Settings (JSON):
 
 ## cross-reference
 
-- [godot-mcp.md](/bin/godot-mcp.md)
-- [mcp_godot_rag.md](/bin/mcp_godot_rag.md)
-- [n8n-mcp-server.md](/bin/n8n-mcp-server.md)
+### cache
+
+- #mcp [godot-mcp.md](/bin/godot-mcp.md)
+- #mcp [mcp_godot_rag.md](/bin/mcp_godot_rag.md)
+- #mcp [n8n-mcp-server.md](/bin/n8n-mcp-server.md)
+- [continue.md](/opt/vscodium/continue.md)
+- [ltex-ls-plus.md](/opt/vscodium/ltex-ls-plus.md)
 
 ## resource
 

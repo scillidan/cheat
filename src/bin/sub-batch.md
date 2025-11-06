@@ -26,4 +26,4 @@ sub-batch time-mpv
 
 ## annex
 
-[sub-batch.mp4](https://scillidan.github.io/media_cheat/bin/sub-batch.mp4), ([bilibili](https://www.bilibili.com/video/BV1gH4y1P7rb)
+- [sub-batch.mp4](https://scillidan.github.io/media_cheat/bin/sub-batch.mp4) ([bilibili](https://www.bilibili.com/video/BV1gH4y1P7rb))

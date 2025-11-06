@@ -104,4 +104,4 @@ sudo docker run --rm -v ~/Git/_/synclibrivox/books:/books -it scillidan/syncaboo
 
 ## annex
 
-[syncabook.mp4](https://scillidan.github.io/media_cheat/bin/syncabook.mp4), ([bilibili](https://www.bilibili.com/video/BV1hJYBzfEpt)
+- [syncabook.mp4](https://scillidan.github.io/media_cheat/bin/syncabook.mp4) ([bilibili](https://www.bilibili.com/video/BV1hJYBzfEpt))

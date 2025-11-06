@@ -6,8 +6,9 @@
 
 - [amaze.md](/opt/_andriod/amaze.md)
 - [f-droid.md](/opt/_andriod/f-droid.md)
+- [fair-email.md](/opt/_andriod/fair-email.md)
 - [librerareader.md](/opt/_andriod/librerareader.md) _obtainium_
-- [termux.md](/opt/_andriod/termux.md)
+- [termux.md](/opt/_andriod/termux/termux.md)
 
 ### extra
 
@@ -17,7 +18,7 @@
 ### cache
 
 - [andbible.md](/opt/_andriod/andbible.md)
-- [koreader.md](/opt/_andriod/koreader.md) 
+- [koreader.md](/opt/_andriod/koreader.md)
 - [round-sync.md](/opt/_andriod/round-sync.md)
 
 ## resource
@@ -27,7 +28,6 @@
 - #apk [Neo Store](https://github.com/NeoApplications/Neo-Store)
 - #apk [Obtainium](https://github.com/ImranR98/Obtainium)
 - #browser [Fennec](https://gitlab.com/relan/fennecbuild)
-- #email [FairEmail](https://github.com/M66B/FairEmail)
 - #note [蜜蜂便签](https://mp.weixin.qq.com/s/6v_1CnkOGsUgGaRIiXKFIg)
 - #player [AntennaPod](https://github.com/AntennaPod/AntennaPod) _commit_
 - #player [Lissen - Clean Audiobookshelf Player](https://github.com/GrakovNe/lissen-android)
@@ -73,8 +73,6 @@
 - #camera [Recording Webcam](https://github.com/TV-Box-Support/Recording-Webcam)
 - #reader [Readium Kotlin Toolkit](https://github.com/readium/kotlin-toolkit)
 - #reader [Storyteller](https://gitlab.com/smoores/storyteller)
-- [Droid Pad](https://github.com/umer0586/DroidPad)
-- [Torrent Search](https://github.com/prajwalch/TorrentSearch/releases)
 
 ### cache
 
@@ -82,9 +80,9 @@
 - #camera [AsciiCam](https://github.com/dozingcat/AsciiCam)
 - #camera [Hypocam](https://www.hypocam.com/index.php/app/)
 - #camera [Vector Camera](https://github.com/dozingcat/VectorCamera)
+- #controller [EnigmaDroid](https://github.com/deprec8/enigmadroid)
 - #dictionary [aard2-android](https://github.com/itkach/aard2-android)
 - #dictionary [SilverDict](https://github.com/Crissium/SilverDict-mobile)
-- #controller [EnigmaDroid](https://github.com/deprec8/enigmadroid)
 - #editor [Squircle CE](https://github.com/massivemadness/Squircle-CE)
 - #explorer [File Manager Plus](https://alphainventor.com/file-manager-plus)
 - #game [Forkyz Scanner](https://gitlab.com/Hague/forkyzscanner)
@@ -121,6 +119,7 @@
 - #youtube-music [InnerTune](https://github.com/z-huang/InnerTune)
 - [AudioRelay](https://audiorelay.netdownloads)
 - [aw-android](https://github.com/ActivityWatch/aw-android)
+- [Droid Pad](https://github.com/umer0586/DroidPad)
 - [floccus bookmark sync](https://github.com/floccusaddon/floccus)
 - [Habit Builder](https://github.com/ofalvai/HabitBuilder)
 - [HTTP Shortcuts for Android](https://github.com/Waboodoo/HTTP-Shortcuts)
@@ -129,4 +128,5 @@
 - [Qalculate!](https://f-droid.org/packages/com.jherkenhoff.qalculate)
 - [spacedesk](https://www.spacedesk.net)
 - [Stride](https://github.com/stride-tasks/stride)
+- [Torrent Search](https://github.com/prajwalch/TorrentSearch/releases)
 - [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater)
