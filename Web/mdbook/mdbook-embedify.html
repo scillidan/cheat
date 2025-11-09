@@ -192,17 +192,9 @@ cargo install --force mdbook-embedify
 [preprocessor.embedify]
 </code></pre>
 <pre><code class="language-md"># Bilibili
-&lt;!-- {% embed bilibili id="&lt;id&gt;" loading="lazy" %} --&gt;
-
-&lt;div data-embedify data-app="bilibili" data-option-id="&lt;id&gt;" data-option-loading="lazy" style="display:none"&gt;&lt;/div&gt;
-
-&lt;iframe allowfullscreen name="bilibili" loading="lazy" src="https://player.bilibili.com/player.html?bvid=&lt;id&gt;&amp;danmaku=0" style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background: black"&gt;&lt;/iframe&gt;
+{% embed bilibili id="&lt;id&gt;" loading="lazy" %}
 # Youtube
-&lt;!-- {% embed youtube id="&lt;id&gt;" loading="lazy" %} --&gt;
-
-&lt;div data-embedify data-app="youtube" data-option-id="&lt;id&gt;" data-option-loading="lazy" style="display:none"&gt;&lt;/div&gt;
-
-&lt;iframe allowfullscreen name="youtube" loading="lazy" src="https://www.youtube.com/embed/&lt;id&gt;" style="width: 100%; height: 100%; border: none; aspect-ratio: 16/9; border-radius: 1rem; background: black" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"&gt;&lt;/iframe&gt;
+{% embed youtube id="&lt;id&gt;" loading="lazy" %}
 </code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
