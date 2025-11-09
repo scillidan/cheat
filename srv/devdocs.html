@@ -182,55 +182,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="devdocs"><a class="header" href="#devdocs"><a href="https://github.com/freeCodeCamp/devdocs">DevDocs</a></a></h1>
-<h2 id="install"><a class="header" href="#install">install</a></h2>
-<pre><code class="language-sh">git clone --depth=1 https://github.com/freeCodeCamp/devdocs
-cd devdocs
-cp Gemfile Gemfile.bak
-vim Gemfile
-</code></pre>
-<pre><code>ruby '3.4.1'
-</code></pre>
-<pre><code class="language-sh">rbenv install 3.4.1
-gem install bundler
-bundle install
-</code></pre>
-<h3 id="arch"><a class="header" href="#arch">Arch</a></h3>
-<pre><code class="language-sh"># Docs
-bundle exec thor docs:download --all
-bundle exec thor docs:download --installed
-# Docs be saved into public\docs.
-</code></pre>
-<pre><code class="language-sh"># Sever
-bundle exec rackup
-</code></pre>
-<h3 id="windows-10"><a class="header" href="#windows-10">Windows 10</a></h3>
-<pre><code class="language-sh">scoop install curl gzip
-cd &lt;path_to&gt;\Scoop\shims
-cp gzip.exe gunzip.exe
-cp gzip.shim gunzip.shim
-</code></pre>
-<h2 id="deploy-with-docker-compose"><a class="header" href="#deploy-with-docker-compose">Deploy with Docker compose</a></h2>
-<p><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">1</a></sup></p>
-<pre><code class="language-sh">mkdir devdocs
-cd devdocs
-vim docker-compose.yml
-</code></pre>
-<pre><code class="language-yaml">services:
-  devdocs:
-    image: ghcr.io/freecodecamp/devdocs:latest
-    container_name: devdocs
-    ports:
-      - "9292:9292"
-    restart: always
-</code></pre>
-<pre><code class="language-sh">sudo docker compose up -d
-</code></pre>
-<hr>
-<ol class="footnote-definition"><li id="footnote-3">
-<p><a href="https://github.com/freeCodeCamp/devdocs#using-docker-recommended">Using Docker (Recommended)</a> <a href="#fr-3-1">↩</a></p>
-</li>
-</ol>
+                        <h1 id="devdocs"><a class="header" href="#devdocs">devdocs</a></h1>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

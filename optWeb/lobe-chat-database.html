@@ -182,57 +182,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="lobe-chat-server-database"><a class="header" href="#lobe-chat-server-database"><a href="https://lobehub.com/docs/self-hosting/server-database">Lobe Chat Server Database</a></a></h1>
-<p><img src="https://img.shields.io/github/license/lobehub/lobe-chat" alt="" /></p>
-<h2 id="install"><a class="header" href="#install">install</a></h2>
-<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
-<pre><code class="language-sh">mkdir lobe-chat-database
-cd lobe-chat-database
-# sudo rm -rf data
-# sudo rm -rf s3_data
-bash &lt;(curl -fsSL https://lobe.li/setup.sh) -l en
-# You will see the information following and save them for using it later.
-</code></pre>
-<pre><code>Security secret generation results are as follows:
-LobeChat:
-	- URL: http://localhost:3210
-	- Username: user
-	- Password: &lt;password&gt;
-Casdoor:
-	- URL: http://localhost:8000
-	- Username: admin
-	- Password: &lt;password&gt;
+                        <h1 id="lobe-chat-database"><a class="header" href="#lobe-chat-database">lobe-chat-database</a></h1>
 
-Minio:
-	- URL: http://localhost:9000
-	- Username: admin
-	- Password: &lt;password&gt;
-</code></pre>
-<pre><code class="language-sh">vim docker-compose.yml
-# Copy from https://lobehub.com/docs/self-hosting/platform/docker-compose#run-docker-compose-deployment-command
-</code></pre>
-<pre><code class="language-sh"># Replace string `localhost` to `&lt;your_ip&gt;` for using on local. `&lt;local_domain&gt;` seems not work here.
-cp .env .env.bak
-# sed -i -e 's/3210/3310/g' -e 's/9000/9100/g' -e 's/9001/9101/g' -e 's/8000/8100/g' .env
-sed -i 's/localhost/&lt;your_ip&gt;/g' .env
-</code></pre>
-<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
-<pre><code class="language-sh">sudo docker compose up -d
-</code></pre>
-<ol>
-<li>Visit <code>http://&lt;your_ip&gt;:8000</code>, login with <code>admin</code> and <code>&lt;password&gt;</code>.</li>
-<li>Casdorr → Identity → Applications → LobeChat → Edit.</li>
-<li>Redirect URLs → Add → <code>http://&lt;your_ip&gt;:3210/api/auth/callback/casdoor</code> → Save &amp; Exit.</li>
-</ol>
-<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
-<ul>
-<li><a href="https://lobehub.com/docs/self-hosting/server-database/vercel">Deploying Server Database Version on Vercel</a></li>
-</ul>
-<hr>
-<ol class="footnote-definition"><li id="footnote-1">
-<p><a href="https://lobehub.com/docs/self-hosting/server-database/docker-compose">Deploying LobeChat Server Database Version with Docker Compose</a> <a href="#fr-1-1">↩</a></p>
-</li>
-</ol>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

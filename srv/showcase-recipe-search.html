@@ -182,40 +182,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="instant-recipe-search"><a class="header" href="#instant-recipe-search"><a href="https://github.com/typesense/showcase-recipe-search">Instant Recipe Search</a></a></h1>
-<h2 id="install"><a class="header" href="#install">install</a></h2>
-<pre><code class="language-sh">git clone --depth=1 https://github.com/typesense/showcase-recipe-search
-cd showcase-recipe-search
-</code></pre>
-<h3 id="windows-10"><a class="header" href="#windows-10">Windows 10</a></h3>
-<pre><code class="language-sh">rbenv install 2.7.2
-rbenv shell 2.7.2
-gem install bundler -v 2.4.22
-bundle install
-corepack enable
-mv yarn.lock yarn.lock.bk
-yarn
-</code></pre>
-<pre><code class="language-sh">git clone --depth=1 https://github.com/typesense/typesense
-cd typesense
-mkdir build
-cd build
-cmake ..
-make
-mkdir -p ~/typesense-server-data
-./bin/typesense-server --data-dir ~/typesense-server-data --api-key=xyz --listen-port 8108 --enable-cors
-</code></pre>
-<pre><code class="language-sh"># Require docker
-cp .env.development .env
-set BATCH_SIZE=1000
-yarn run indexer:transformDataset
-yarn run indexer:importToTypesense
-yarn start
-</code></pre>
-<h2 id="troubleshoot"><a class="header" href="#troubleshoot">troubleshoot</a></h2>
-<ul>
-<li><a href="https://github.com/rbenv/ruby-build/issues/930">Build Failing - Arch Linux · Issue #930 · rbenv/ruby-build</a></li>
-</ul>
+                        <h1 id="showcase-recipe-search"><a class="header" href="#showcase-recipe-search">showcase-recipe-search</a></h1>
 
                     </main>
 
