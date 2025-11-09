@@ -4,10 +4,10 @@
 
 ### mark
 
+- #Arch [lutris.md](/optGame/_arch/lutris.md)
+- #Arch [wine.md](/optGame/_arch/wine.md)
 - [es-de.md](/optGame/es-de/es-de.md)
-- [lutris.md](/optGame/lutris.md)
 - [steam.md](/optGame/steam.md)
-- [wine.md](/optGame/wine.md)
 
 ### later
 
@@ -15,16 +15,17 @@
 
 ### extra
  
+- #Arch [xone.md](/optGame/_arch/xone.md)
 - [ppsspp.md](/optGame/ppsspp.md)
 - [retroarch.md](/optGame/retroarch.md) _download_
 
 ### cache
 
 - #love [mari0.md](/optGame/mari0.md)
+- #Windows [hydralauncher.md](/optGame/_windows/hydralauncher.md) _release_
 - [cave-story-md.md](/optGame/cave-story-md.md)
 - [curse-of-the-arrow.md](/optGame/curse-of-the-arrow.md)
 - [doukutsu-rs.md](/optGame/doukutsu-rs.md)
-- [hydralauncher.md](/optGame/hydralauncher.md) _release_
 - [nxengine-evo-rpi.md](/optGame/nxengine-evo-rpi.md)
 - [nxengine-evo.md](/optGame/nxengine-evo.md)
 - [pegasus-frontend.md](/optGame/pegasus-frontend.md)

@@ -4,32 +4,29 @@
 
 ### mark
 
-- [act.md](/bin/_arch/act.md)
 - [asciinema.md](/bin/_arch/asciinema.md)
 - [atuin.md](/bin/_arch/atuin.md)
-- [cmus.md](/bin/_arch/cmus.md)
-- [firewalld.md](/bin/_arch/firewalld.md)
-- [flatpak.md](/bin/_arch/flatpak.md)
+- [gnupg.md](/bin/_arch/gnupg.md)
 - [keyd.md](/bin/_arch/keyd.md)
 - [networkmanager.md](/bin/_arch/networkmanager.md)
-- [openssh.md](/bin/_arch/openssh.md)
-- [pacman.md](/bin/_arch/pacman.md)
 - [pass.md](/bin/_arch/pass.md)
 - [sdcv.md](/bin/_arch/sdcv.md)
 - [texlive.md](/bin/_arch/texlive.md)
-- [ufw.md](/bin/_arch/ufw.md)
-- [xone.md](/bin/_arch/xone.md)
-- [tmux](https://github.com/tmux/tmux)
+- [tmux](/bin/_arch/tmux/tmux.md)
 - [translate-shell.md](/bin/_arch/translate-shell.md)
-- [yay.md](/bin/_arch/yay.md)
 - [zsh.md](/bin/_arch/zsh.md)
 
 ### later
 
+- [cmus.md](/bin/_arch/cmus.md)
 - [menyoki.md](/bin/_arch/menyoki.md)
 - [mutt.md](/bin/_arch/mutt.md)
 - [neomutt.md](/bin/_arch/neomutt.md)
 - [newsboat.md](/bin/_arch/newsboat.md)
+
+### extra
+
+- [act.md](/bin/_arch/act.md)
 
 ### cache
 
@@ -38,26 +35,20 @@
 - [ftp.md](/bin/_arch/ftp.md)
 - [gradient-figlet.md](/bin/_arch/gradient-figlet.md)
 - [jsc.md](/bin/_arch/jsc.md)
-- [mount.md](/bin/_arch/mount.md)
 - [open-codex_codingmoh.md](/bin/_arch/open-codex_codingmoh.md)
 - [open-codex_ymichael.md](/bin/_arch/open-codex_ymichael.md)
 - [plandex.md](/bin/_arch/plandex.md)
 - [ranger.md](/bin/_arch/ranger.md)
 - [sddm.md](/bin/_arch/sddm.md)
 - [terminus-font.md](/bin/_arch/terminus-font.md)
+- [ufw.md](/bin/_arch/ufw.md)
 - [zeal-lynx-cli.md](/bin/_arch/zeal-lynx-cli.md)
-
-### cache
 
 ## resource
 
-### mark
-
-- #bookmark [bookmarks.txt](https://github.com/soulim/bookmarks.txt)
-- #ls [eza](https://github.com/eza-community/eza)
-
 ### later
 
+- [bookmarks.txt](https://github.com/soulim/bookmarks.txt)
 - [devdocs-offline](https://github.com/dimitry-ishenko-cpp/devdocs-offline)
 - [OpenAI Codex CLI](https://github.com/openai/codex)
 

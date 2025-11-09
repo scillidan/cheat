@@ -45,6 +45,12 @@ python main.py --directml
 
 - [CUDA Toolkit 12.8](https://developer.nvidia.com/cuda-12-8-0-download-archive)
 
+## cross-reference
+
+### cache
+
+- [comfyui-auto_installer.md](/optWeb/comfyui/comfyui-auto_installer.md)
+
 ## resource
 
 ### mark

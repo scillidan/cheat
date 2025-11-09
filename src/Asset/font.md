@@ -4,8 +4,11 @@
 
 ### mark
 
-- #monospace [Sarasa Gothic ⨯ Nerd Fonts](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts) by jonz94 / [MIT](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts?tab=MIT-1-ov-file#readme) _release_
 - #monospace [Sarasa Term SC Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd) by laishulu / [OFL-1.1](https://github.com/laishulu/Sarasa-Term-SC-Nerd/blob/main/LICENSE) _release_
+
+### extra
+
+- #monospace [Sarasa Gothic ⨯ Nerd Fonts](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts) by jonz94 / [MIT](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts?tab=MIT-1-ov-file#readme) _release_
 - #sans-serif [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic) by Renzhi Li / [OFL-1.1](https://github.com/be5invis/Sarasa-Gothic/blob/main/LICENSE) _release_
 - #sans-serif [Source Han Sans](https://github.com/adobe-fonts/source-han-sans) by Adobe / [OFL-1.1](https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt) _release_
 - #sans-serif [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans) by atelierAnchor / [OFL-1.1](https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE) _release_

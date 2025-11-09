@@ -37,6 +37,7 @@
 
 ### later
 
+- [abogen.md](/opt/abogen.md)
 - [anki.md](/opt/anki.md)
 - [audacity.md](/opt/audacity.md) _release_
 - [chainner.md](/opt/chainner.md) _release_

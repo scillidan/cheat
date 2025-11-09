@@ -8,4 +8,3 @@ standard input and converts it into arguments for another program. [Petr Stříb
 ## reference
 
 -#document [xargs(1) - Linux manual page](https://man7.org/linux/man-pages/man1/xargs.1.html)
-

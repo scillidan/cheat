@@ -11,9 +11,8 @@ scoop install television
 cargo install --force television
 ```
 
-## Personal do
+## usage
 
 ```sh
-# Windows 10
-mklink "$APPDATA\television\config.toml" "%DOTFILES_DIR%\television\config.toml"
+tv
 ```

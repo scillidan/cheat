@@ -43,6 +43,12 @@ webui-user.bat
 - [How to make web-ui available on local network](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6589)
 - [Choosing which GPU to use when running](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1561)
 
+## cross-reference
+
+### cache
+
+- [stable-diffusion-webui-amdgpu.md](/optWeb/sd-webui/stable-diffusion-webui-amdgpu.md)
+
 ## resource
 
 ### mark

@@ -148,6 +148,12 @@ sudo apt-get remove --purge postgresql-16
 
 - [Feed Filtering Rules](https://miniflux.app/docs/rules.html#feed-filtering-rules)
 
+## cross-reference
+
+### mark
+
+- [miniflux-theme-reeder](https://github.com/rootknight/Miniflux-Theme-Reeder)
+
 [^1]: [initdb](https://www.postgresql.org/docs/current/app-initdb.html)
 [^2]: [Server Dialog](https://www.pgadmin.org/docs/pgadmin4/development/server_dialog.html)
 [^3]: [Configuration Parameters](https://miniflux.app/docs/configuration.html)

@@ -2,16 +2,16 @@
 
 ## cross-reference
 
-- [arch](/os/arch)
-- [windows10.md](/os/windows/windows10.md)
-
 ### mark
 
-- #Arch [Dotfiles.md](/os/Dotfiles.md)
-- #Arch [File-Permission.md](/os/File-Permission.md)
+- [arch](/os/arch/arch-linux.md)
 - [ubuntu-22-arm.md](/os/ubuntu-22-arm.md)
+- [windows10.md](/os/windows/windows10.md)
 
 ### extra
+
+- [Dotfiles.md](/os/Dotfiles.md)
+- [File-Permission.md](/os/File-Permission.md)
 
 - [recalbox.md](/os/recalbox.md)
 - [retropie.md](/os/retropie.md)
@@ -31,16 +31,13 @@
 
 ### cache
 
-- camera|[Frigate](https://github.com/blakeblackshear/frigate)
-- game|[Batocera Linux](https://github.com/batocera-linux/batocera.linux)
-- game|[Lakka](https://lakka.tv)
-- game|[ROCKNIX](https://github.com/ROCKNIX/distribution)
-- game|[TIC-80](https://tic80.com)
-- music|[HiFiBerryOS](https://hifiberry.com/hifiberryos)
-- nas|[openmediavault](https://github.com/openmediavault/openmediavault)
-- watch|[Open-Smartwatch Operating System](https://github.com/Open-Smartwatch/open-smartwatch-os)
-- windows|[AtlasOS](https://github.com/Atlas-OS/Atlas)
-- windows|[Hiren’s BootCD PE](https://hirensbootcd.org)
-- windows|[ReviOS](https://github.com/meetrevision/playbook)
+- #camera [Frigate](https://github.com/blakeblackshear/frigate)
+- #game [Batocera Linux](https://github.com/batocera-linux/batocera.linux)
+- #game [Lakka](https://lakka.tv)
+- #game [ROCKNIX](https://github.com/ROCKNIX/distribution)
+- #game [TIC-80](https://tic80.com)
+- #music [HiFiBerryOS](https://hifiberry.com/hifiberryos)
+- #nas [openmediavault](https://github.com/openmediavault/openmediavault)
+- #watch [Open-Smartwatch Operating System](https://github.com/Open-Smartwatch/open-smartwatch-os)
 - [Bazzite](https://github.com/ublue-os/bazzite)
 - [PostmarketOS - uConsole CM4](https://forum.clockworkpi.com/t/postmarketos-uconsole-cm4/12458)

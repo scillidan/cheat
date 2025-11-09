@@ -25,6 +25,14 @@ set XFORMERS_FORCE_DISABLE_TRITON="1"
 python gradio_app.py
 ```
 
+## reference
+
+### cache
+
+- [ToonCrafter](https://github.com/sdbds/ToonCrafter-for-windows)
+
 [^1]: [[bug]: Error caught was: No module named 'triton'](https://github.com/invoke-ai/InvokeAI/issues/2611)
+
+## annex
 
 ![tooncrafter](/_image/optWeb/tooncrafter.png)

@@ -61,6 +61,7 @@
 - [subtitles-cleaner.md](/opt/_windows/subtitles-cleaner.md)
 - [wallpaper-engine.md](/opt/_windows/wallpaper-engine.md)
 - [wcap.md](/opt/_windows/wcap.md) _download_
+- [wincdemu.md](/opt/_windows/wincdemu.md)
 
 ### cache
 
@@ -274,7 +275,6 @@
 - [Steam Upload GUI](https://github.com/RPicster/Steam-Upload-GUI)
 - [TreeSize](https://jam-software.com/treesize_free)
 - [Twinkle Tray](https://twinkletray.com/)
-- [WinCDEmu](https://github.com/sysprogs/WinCDEmu)
 - [Windows Directory Structure Synchronizer](https://github.com/fernvenue/path-dumper-windows)
 - [WindowTextExtractor](https://github.com/AlexanderPro/WindowTextExtractor)
 - [WinXcorners](https://github.com/vhanla/winxcorners)

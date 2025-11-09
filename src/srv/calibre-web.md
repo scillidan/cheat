@@ -66,4 +66,11 @@ sudo systemctl enable --now calibre-web
 
 - [linuxserver/calibre-web](https://docs.linuxserver.io/images/docker-calibre-web)
 
+## resource
+
+- [Calibre-Web Automated](https://github.com/crocodilestick/Calibre-Web-Automated)
+- [Calibre-Web-Automated-Book-Downloader](https://github.com/calibrain/calibre-web-automated-book-downloader)
+
+## annex
+
 ![calibre-web](/_image/srv/calibre-web.png)

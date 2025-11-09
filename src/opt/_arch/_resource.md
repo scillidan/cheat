@@ -40,7 +40,6 @@
 
 - #flatpak [Bazaar](https://flathub.org/apps/io.github.kolunmi.Bazaar)
 - #flatpak [Pins](https://flathub.org/apps/io.github.fabrialberio.pinapp)
-- [xone](https://github.com/medusalix/xone)
 
 ### later
 
@@ -59,6 +58,7 @@
 
 ### cache
 
+- #Arch [WinApps](https://github.com/winapps-org/winapps)
 - #audio [NoiseTorch-ng](https://github.com/noisetorch/NoiseTorch)
 - #audiobook [Cozy](https://github.com/geigi/cozy)
 - #color [Color Manager](https://github.com/NicklasVraa/Color-manager)
@@ -67,6 +67,7 @@
 - #device [WatchFlower](https://emeric.io/WatchFlower)
 - #draw [ASCII Draw](https://github.com/Nokse22/ascii-draw)
 - #firmware [GNOME Firmware](https://gitlab.gnome.org/World/gnome-firmware)
+- #flatpak [Bottles](https://github.com/bottlesdevs/Bottles)
 - #flatpak [Warehouse](https://github.com/flattool/warehouse)
 - #gnome [gnome-shell-extension-caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
 - #grep [Clapgrep](https://github.com/luleyleo/clapgrep)
@@ -82,15 +83,13 @@
 - #status-bar [Waybar](https://github.com/Alexays/Waybar)
 - #syncthing [SyncThingy](https://github.com/zocker-160/SyncThingy)
 - #theme [Material-Original gtk theme](https://github.com/Macintosh98/Material-Original)
-- #tv [Open TV](https://github.com/Fredolx/open-tv)
 - #video [multiplex](https://github.com/pojntfx/multiplex)
 - #viewer [Gwenview](https://invent.kde.org/graphics/gwenview)
-- #window [QuickTile](https://github.com/ssokolow/quicktile)
-- #window #i3 [i3](https://github.com/i3/i3)
 - #window #i3 [autotiling](https://github.com/nwg-piotr/autotiling)
-- #windows [Bottles](https://github.com/bottlesdevs/Bottles)
+- #window #i3 [i3](https://github.com/i3/i3)
+- #window [QuickTile](https://github.com/ssokolow/quicktile)
 - [Asteria](https://github.com/alamahant/Asteria)
 - [Cave Story NX](https://gitlab.com/coringao/cavestory-nx)
 - [clamav-desktop](https://github.com/ivangabriele/clamav-desktop)
 - [Memento](https://github.com/apirrone/Memento)
-- [WinApps](https://github.com/winapps-org/winapps)
+- [Open TV](https://github.com/Fredolx/open-tv)

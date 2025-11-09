@@ -40,6 +40,10 @@ sudo docker compose up -d
 
 - [Deploy LobeChat with Vercel](https://lobehub.com/docs/self-hosting/platform/vercel)
 
+## cross-reference
+
+- [lobe-chat-database.md](/optWeb/lobe-chat/lobe-chat-database.md)
+
 ## resource
 
 ### mark

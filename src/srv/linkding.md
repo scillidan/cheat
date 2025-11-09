@@ -105,6 +105,17 @@ linkding --url "http://<your_host>:8002" --token "<token>" bookmarks all -q $1 ^
   | tidy-viewer -u 45
 ```
 
+## resource
+
+### extra
+
+- #linkding [linkding extension](https://github.com/sissbruecker/linkding-extension)
+- #linkding [linkding injector](https://github.com/fivefold/linkding-injector)
+
+### cache
+
+- #linkding [Linkding Archiver](https://github.com/sebw/linkding-archiver)
+
 [^1]: [Development](https://github.com/sissbruecker/linkding#development)
 [^2]: [linkding - Setup](https://github.com/sissbruecker/linkding/blob/master/README.md#setup)
 [^3]: [ModuleNotFoundError: No module named 'ruamel'](https://github.com/fair-workflows/nanopub/issues/106)

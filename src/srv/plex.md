@@ -19,4 +19,10 @@ Visit `http://<your_host>:32400/web`.
 
 - #guide [Plex & Booksonic Audiobook Guide](https://github.com/seanap/Plex-Audiobook-Guide)
 
+## cross-reference
+
+### cache
+
+- [MPV Shim for Plex](https://github.com/iwalton3/plex-mpv-shim)
+
 [^1]: [Install of plex on Ubuntu server 22.04](https://www.reddit.com/r/PleX/comments/yp13yb/install_of_plex_on_ubuntu_server_2204/)

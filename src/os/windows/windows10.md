@@ -151,39 +151,7 @@ gsudo scoop install ^
 	windowsdesktop-runtime-lts
 ```
 
-```sh
-# Personal scoop bucket
-scoop install ^
-	7zip-extra ^
-	altbacktick ^
-	audiobookconverter ^
-	audiowaveform ^
-	cjam ^
-	dictzip ^
-	hydralauncher ^
-	keppymidiconverter ^
-	madamiru ^
-	nomeiryoui ^
-	pgstosrt ^
-	rectanglewin ^
-	resizer2 ^
-	sizer ^
-	smartzip ^
-	someruler ^
-	svg2png ^
-	wxmp3gain ^
-	wcap ^
-	webify
-	# pro
-```
-
-```sh
-# Personal scoop bucket
-gsudo scoop install ^
-	sshfs-win-manager-np
-```
-
-Install by installer:
+## Install by installer
 
 - Brave
 - clawPDF
@@ -253,67 +221,7 @@ mklink "%SendTo%\ttf2woff.bat" "%DirSendTo%\ttf2woff.bat"
 mklink "%SendTo%\yoga.bat" "%DirSendTo%\yoga.bat"
 ```
 
-## reference
-
-- #guide [video-compare - Practical tips](https://github.com/pixop/video-compare?tab=readme-ov-file#practical-tips)
-
-## cross-reference
-
-1. [archwsl.md#resource](os/arch/archwsl.md)
-2. [arch-linux.md#resource](os/arch/arch-linux.md)
-
-- #windows [advancedrenamer.md](/opt/_windows/advancedrenamer.md)
-- #windows [autohotkey.md](/lib/_windows/autohotkey.md)
-- #windows [bulk-rename-utility.md](/opt/_windows/bulk-rename-utility.md)
-- #windows [carnac.md](/opt/_windows/carnac.md)
-- #windows [centertaskbar.md](/opt/_windows/centertaskbar.md)
-- #windows [chocolatey.md](/bin/_windows/chocolatey.md)
-- #windows [cmder.md](/opt/_windows/cmder/cmder.md)
-- #windows [cpu-z.md](/opt/_windows/cpu-z.md)
-- #windows [deskpins.md](/opt/_windows/deskpins.md)
-- #windows [detect-it-easy.md](/opt/_windows/detect-it-easy.md)
-- #windows [directory-opus.md](/opt/_windows/directory-opus.md)
-- #windows [ditto.md](/opt/_windows/ditto.md)
-- #windows [dngrep.md](/opt/_windows/dngrep.md)
-- #windows [eartrumpet.md](/opt/_windows/eartrumpet.md)
-- #windows [everything.md](/opt/_windows/everything.md)
-- #windows [geekuninstaller.md](/opt/_windows/geekuninstaller.md)
-- #windows [gpu-z.md](/opt/_windows/gpu-z.md)
-- #windows [hosts-file-editor.md](/opt/_windows/hosts-file-editor.md)
-- #windows [imageglass.md](/opt/_windows/imageglass.md)
-- #windows [irfanview.md](/opt/_windows/irfanview.md)
-- #windows [jpegview.md](/opt/_windows/jpegview.md)
-- #windows [keypirinha.md](/opt/_windows/keypirinha.md)
-- #windows [lintalist.md](/opt/_windows/lintalist.md)
-- #windows [lockhunter.md](/opt/_windows/lockhunter.md)
-- #windows [miktex.md](/opt/_windows/miktex.md)
-- #windows [mp3tag.md](/opt/_windows/mp3tag.md)
-- #windows [nohboard.md](/opt/_windows/nohboard.md)
-- #windows [open-shell.md](/opt/_windows/open-shell.md)
-- #windows [powersession-rs.md](/bin/_windows/powersession-rs.md)
-- #windows [powershell.md](/bin/_windows/powershell.md)
-- #windows [openhashtab.md](/opt/_windows/openhashtab.md)
-- #windows [rbtray.md](/opt/_windows/rbtray.md)
-- #windows [reduce-memory.md](/opt/_windows/reduce-memory.md)
-- #windows [restart-explorer.md](/opt/_windows/restart-explorer.md)
-- #windows [rufus.md](/opt/_windows/rufus.md)
-- #windows [scoop.md](/bin/_windows/scoop.md)
-- #windows [sd-card-formatter.md](/opt/_windows/sd-card-formatter.md)
-- #windows [sharpkeys.md](/opt/_windows/sharpkeys.md)
-- #windows [shellexview.md](/opt/_windows/shellexview.md)
-- #windows [smartzip.md](/opt/_windows/smartzip.md)
-- #windows [sumatrapdf.md](/opt/_windows/sumatrapdf.md)
-- #windows [t-clock.md](/opt/_windows/t-clock.md)
-- #windows [winmerge.md](/opt/_windows/winmerge.md)
-- #windows [winscp.md](/opt/_windows/winscp.md)
-- #windows [winsshterm.md](/opt/_windows/winsshterm.md)
-- [tightvnc.md](/opt/tightvnc.md)
-
-## troubleshoot
-
-- [Fix problems with Opus OGG files in Windows 10](https://www.youtube.com/watch?v=y6wMvTldfQo)
-
-## cache
+## config (Cache) { #config }
 
 - `Win+Q`
 	- 搜索权限和历史记录 → (All Off)
@@ -373,3 +281,29 @@ mklink "%SendTo%\yoga.bat" "%DirSendTo%\yoga.bat"
 	- 命令提示符 → `ipconfig /flushdns`
 - 打印机
 	- 属性 → 共享 → 共享这台打印机 (On) → 在客户端计算机上呈现打印作业 (On)
+
+
+## reference
+
+- #guide [video-compare - Practical tips](https://github.com/pixop/video-compare?tab=readme-ov-file#practical-tips)
+
+## cross-reference
+
+### mark
+
+- [revios.md](/os/windows/revios.md)
+
+### cache
+
+- [wsl.md](/os/windows/wsl.md)
+
+## troubleshoot
+
+- [Fix problems with Opus OGG files in Windows 10](https://www.youtube.com/watch?v=y6wMvTldfQo)
+
+## resource
+
+### cache
+
+- [AtlasOS](https://github.com/Atlas-OS/Atlas)
+- [Hiren’s BootCD PE](https://hirensbootcd.org)

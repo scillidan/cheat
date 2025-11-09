@@ -62,5 +62,11 @@ mono --debug JackettConsole.exe
 
 - [jsc.md](/bin/_arch/jsc.md)
 
+## resource
+
+### extra
+
+- [jackett.md](https://gist.github.com/wilmardo/cffb41d694edd069c28d585d2e20e0fc)
+
 [^1]: [How to Install Jackett on Ubuntu 20.04](https://varhowto.com/install-jackett-ubuntu-20-04/)
 [^2]: [[Package]: Jackett](https://github.com/termux/termux-packages/issues/9757)
