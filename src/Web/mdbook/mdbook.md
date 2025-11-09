@@ -24,10 +24,15 @@ mdbook build
 
 ## cross-reference
 
+### mark
+
 - [mdbook-admonish.md](/Web/mdbook/mdbook-admonish.md)
-- [mdbook-embedify.md](/Web/mdbook/mdbook-embedify.md)
 - [mdbook-force-relative-links.md](/Web/mdbook/mdbook-force-relative-links.md)
 - [mdbook-tailor.md](/Web/mdbook/mdbook-tailor.md)
+
+### cache
+
+- [mdbook-embedify.md](/Web/mdbook/mdbook-embedify.md)
 
 ## resource
 

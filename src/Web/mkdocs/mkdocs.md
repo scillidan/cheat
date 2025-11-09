@@ -1,23 +1,31 @@
 # [MkDocs](https://mkdocs.org)
 
+## cross-reference
+
+### mark
+
+- [mkdocs-material.md](/Web/mkdocs/mkdocs-material.md)
+
 ## resource
 
 ### mark
 
-- #audio [MkDocs Audio](https://github.com/jfcmontmorency/mkdocs-audio)
-- #image [MkDocs GLightbox](https://github.com/blueswen/mkdocs-glightbox)
-- #index [File exclude plugin for mkdocs](https://github.com/apenwarr/mkdocs-exclude)
-- #index [mkdocs-exclude-search](https://github.com/chrieke/mkdocs-exclude-search)
-- #link [MkDocs - Open in a new tab plugin](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab)
-- #link [MkDocs Autolinks Plugin](https://github.com/zachhannum/mkdocs-autolinks-plugin)
-- #meta [mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates)
-- #minify [mkdocs-minify-plugin](https://github.com/byrnereese/mkdocs-minify-plugin)
-- #navigate [mkdocs-literate-nav](https://github.com/oprypin/mkdocs-literate-nav)
-- #theme [Material for MkDocs](https://squidfunk.github.io/mkdocs-material)
-- #video [MkDocs Video](https://github.com/soulless-viewer/mkdocs-video)
 - [Breakless Lists Markdown Extension](https://github.com/adamb70/mdx-breakless-lists)
+- [File exclude plugin for mkdocs](https://github.com/apenwarr/mkdocs-exclude)
 - [Mdx Truly Sane Lists](https://github.com/radude/mdx_truly_sane_lists)
+- [MkDocs - Open in a new tab plugin](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab)
+- [MkDocs Autolinks Plugin](https://github.com/zachhannum/mkdocs-autolinks-plugin)
+- [mkdocs-document-dates](https://github.com/jaywhj/mkdocs-document-dates)
+- [mkdocs-exclude-search](https://github.com/chrieke/mkdocs-exclude-search)
+- [mkdocs-literate-nav](https://github.com/oprypin/mkdocs-literate-nav)
 - [mkdocs-llmstxt](https://github.com/pawamoy/mkdocs-llmstxt)
+- [mkdocs-minify-plugin](https://github.com/byrnereese/mkdocs-minify-plugin)
+
+### extra
+
+- [MkDocs Audio](https://github.com/jfcmontmorency/mkdocs-audio)
+- [MkDocs GLightbox](https://github.com/blueswen/mkdocs-glightbox)
+- [MkDocs Video](https://github.com/soulless-viewer/mkdocs-video)
 
 ### cache
 

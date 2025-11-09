@@ -18,7 +18,6 @@ jobs:
           cargo install mdbook-force-relative-links
           cargo install mdbook-admonish
           cargo install mdbook-tailor
-          cargo install mdbook-embedify
       - run: mdbook build
       - uses: peaceiris/actions-gh-pages@v4
         with:

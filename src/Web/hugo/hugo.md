@@ -12,6 +12,12 @@ scoop install hugo-extended
 - #document [Hugo Documentation](https://gohugo.io/documentation/)
 	- [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/)
 
+## cross-reference
+
+### cache
+
+- [quietfoodie.md](/Web/hugo/quietfoodie.md)
+
 ## resource
 
 ### mark
