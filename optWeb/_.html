@@ -1,0 +1,556 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>optWeb - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href=".././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/optWeb/_.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="optweb"><a class="header" href="#optweb">optWeb</a></h1>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li><em><a href="/optWeb/github-search-rss.html">github-search-rss.md</a></em> github-search-rss (<a href="https://scillidan.github.io/github-search-rss">gh-pages</a>)</li>
+<li><em><a href="/optWeb/kumo.html">kumo.md</a></em> クモ (<a href="https://gm-kumo.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/lobe-chat/lobe-chat.html">lobe-chat.md</a></em> Lobe Chat (<a href="https://gm-lobe-chat.vercel.app">vercel</a>)</li>
+<li>BookSearchParty (<a href="https://booksearch.party">url</a>)</li>
+<li>Choose an open source license (<a href="https://choosealicense.com/">url</a>)</li>
+<li>Creative Commons Licenses for GitHub Projects (<a href="https://github.com/santisoler/cc-licenses">url</a>)</li>
+<li>DownSub (<a href="https://downsub.com">url</a>)</li>
+<li>Dynamic Dummy Image Generator (<a href="https://dummyimage.com">url</a>)</li>
+<li>GIF Compressor (<a href="https://gifcompressor.com">url</a>)</li>
+<li>GitDiagram (<a href="https://gitdiagram.com">url</a>)</li>
+<li>Gothic Font Generator (<a href="https://capitalizemytitle.com/gothic-font-generator">url</a>)</li>
+<li>HTML Formatter (<a href="https://webformatter.com/html">url</a>)</li>
+<li>Musescore Downloader (<a href="https://nanomidi.net/musescore-downloader">url</a>)</li>
+<li>Online LaTeX to image converter (<a href="https://www.bruot.org/tex2img/">url</a>)</li>
+<li>OnlineMiniTools (<a href="https://onlineminitools.com">url</a>)</li>
+<li>Photo Gradient (<a href="https://photogradient.com">url</a>)</li>
+<li>PNG or JPG to SVG (<a href="https://www.pngtosvg.com">url</a>)</li>
+<li>PNG to SVG (<a href="https://png2svg.com">url</a>)</li>
+<li>Spotify Downloader (<a href="https://spotidown.app/en">url1</a>, <a href="https://spotidownloader.com">url2</a>)</li>
+<li>SYMBL (<a href="https://symbl.cc">url</a>)</li>
+<li>TableConvert (<a href="https://tableconvert.com">url</a>)</li>
+<li>texdoc online documentation (<a href="https://texdoc.org/index.html">url</a>)</li>
+<li>VirusTotal (<a href="https://www.virustotal.com/gui/home/upload">url</a>)</li>
+<li>Y2Mate (<a href="https://y2mate.nu/en-GczD">url</a>)</li>
+<li>字幕机翻 (<a href="https://tern.1c7.me">url</a>)</li>
+</ul>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li>#audio <a href="https://github.com/fralapo/LipSyncify">Lipsync Generator: Rhubarb &amp; Whisper AI</a></li>
+<li>#audio <a href="https://github.com/QuentinFuxa/WhisperLiveKit">WhisperLiveKit</a></li>
+<li><a href="https://github.com/LoredCast/filewizard">File Wizard</a></li>
+<li><a href="https://github.com/index-tts/index-tts">IndexTTS2</a></li>
+<li><a href="https://github.com/11cafe/jaaz">Jaaz.app</a></li>
+<li><a href="https://github.com/PicoTrex/Awesome-Nano-Banana-images">Nano-Banana</a></li>
+<li><a href="https://github.com/chatdoc-com/OCRFlux">OCRFlux</a></li>
+<li><a href="https://github.com/papra-hq/papra">Papra</a></li>
+<li><a href="https://github.com/scribeocr/scribeocr">Scribe OCR</a></li>
+<li><a href="https://github.com/renzorlive/vimmaster">VIM Master</a></li>
+<li><a href="https://github.com/liu-ziting/what-to-eat">一饭封神</a></li>
+<li><em><a href="/optWeb/bilingual_book_maker.html">bilingual_book_maker.md</a></em></li>
+<li><em><a href="/optWeb/book-translator.html">book-translator.md</a></em></li>
+<li><em><a href="/optWeb/comfyui/comfyui.html">comfyui.md</a></em> ComfyUI</li>
+<li><em><a href="/optWeb/fish-speech.html">fish-speech.md</a></em> Fish Speech</li>
+<li><em><a href="/optWeb/noisecraft.html">noisecraft.md</a></em> NoiseCraft</li>
+<li><em><a href="/optWeb/regexr.html">regexr.md</a></em> RegExr (<a href="https://regexr.com">url</a>)</li>
+<li><em><a href="/optWeb/satori.html">satori.md</a></em> Satori</li>
+<li>_<a href="/optWeb/showcase-recipe-search.html">showcase-recipe-search.md</a> Instant Recipe Search (<a href="https://github.com/typesense/showcase-recipe-search">url</a>)</li>
+<li><em><a href="/optWeb/tldraw.html">tldraw.md</a></em> tldraw</li>
+<li>Free OG Image Generator (<a href="https://ogimage.click">url</a>)</li>
+<li>Free Open Graph Generator (<a href="https://og.indiehub.best">url</a>)</li>
+<li>newTrackon (<a href="https://newtrackon.com">url</a>)</li>
+<li>regex101 (<a href="https://regex101.com">url</a>)</li>
+</ul>
+<h3 id="extra"><a class="header" href="#extra">extra</a></h3>
+<ul>
+<li><a href="https://github.com/AnimMouse/torrent-webseed-creator">Torrent Webseed Creator</a></li>
+<li><em><a href="/optWeb/animegarden.html">animegarden.md</a></em> Anime Garden (<a href="https://gm-anime-garden.vercel.app">vercel</a>)</li>
+<li>_<a href="/optWeb/devdocs.html">devdocs.md</a> DevDocs (<a href="https://devdocs.io">url</a>)</li>
+<li><em><a href="/optWeb/excalith-start-page.html">excalith-start-page.md</a></em> Excalith Start Page</li>
+<li><em><a href="/optWeb/muser.html">muser.md</a></em> Muser</li>
+<li><em><a href="/optWeb/open-webui.html">open-webui.md</a></em> Open WebUI</li>
+<li><em><a href="/optWeb/sd-webui/stable-diffusion-webui.html">stable-diffusion-webui.md</a></em> Stable Diffusion web UI</li>
+<li>Pegasus Frontend - Metadata converter (<a href="https://pegasus-frontend.org/tools/convert">url</a>)</li>
+<li>rssTea (<a href="https://scillidan.github.io/rssTea">gh-pages</a>)</li>
+<li>Snippet Generator (<a href="https://snippets.zander.wtf">url</a>)</li>
+<li>VIA Web Application (<a href="https://gm-via-web.vercel.app">vercel</a>)</li>
+<li>Winbindex (<a href="https://winbindex.m417z.com">url</a>)</li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#annotate <a href="https://hypothes.is">Hypothesis</a></li>
+<li>#audio <a href="https://github.com/Zejun-Yang/AniPortrait">AniPortrait</a></li>
+<li>#audio <a href="https://github.com/increpare/bfxr">bfxr</a></li>
+<li>#audio <a href="https://github.com/2noise/ChatTTS">ChatTTS</a></li>
+<li>#audio <a href="https://github.com/FireRedTeam/FireRedTTS2">FireRedTTS-2</a></li>
+<li>#audio <a href="https://github.com/usefulsensors/moonshine">Moonshine</a></li>
+<li>#audio <a href="https://github.com/CorentinJ/Real-Time-Voice-Cloning">Real-Time Voice Cloning</a></li>
+<li>#audio <a href="https://github.com/alesaccoia/VoiceStreamAI">VoiceStreamAI</a></li>
+<li>#database <a href="https://github.com/outerbase/studio">studio</a></li>
+<li>#dictionary <a href="https://github.com/ddugovic/words">words</a></li>
+<li>#document <a href="https://github.com/nickthecook/archyve">Archyve</a></li>
+<li>#document <a href="https://github.com/ucbepic/docetl">DocETL</a></li>
+<li>#image <a href="https://github.com/molarmanful/bited">bited</a></li>
+<li>#image <a href="https://github.com/GradientSurfer/Draw2Img">Draw2Img</a></li>
+<li>#image <a href="https://github.com/jbilcke-hf/FacePoke">FacePoke</a></li>
+<li>#image <a href="https://github.com/IDEA-Research/Grounded-Segment-Anything">Grounded-Segment-Anything</a></li>
+<li>#image <a href="https://github.com/GaParmar/img2img-turbo">img2img-turbo</a></li>
+<li>#image <a href="https://nyoroko.itch.io/kaleido-pic">Kaleido Pic</a></li>
+<li>#ink <a href="https://github.com/elliotherriman/calico">Calico</a></li>
+<li>#llm <a href="https://github.com/dezoito/ollama-grid-search">Ollama Grid Search</a></li>
+<li>#llm <a href="https://github.com/zhangchenchen/query_gpt">Query GPT</a></li>
+<li>#llm <a href="https://github.com/Canner/WrenAI">Wren AI</a></li>
+<li>#manga <a href="https://github.com/mayocream/koharu">Koharu</a></li>
+<li>#mode <a href="https://github.com/Stability-AI/generative-models">Generative Models by Stability AI</a></li>
+<li>#music <a href="https://github.com/torcado194/scritch-player">Scritch player</a></li>
+<li>#niimbot <a href="https://github.com/MultiMote/niimblue">NiimBlue</a></li>
+<li>#pdf <a href="https://github.com/lamm-mit/PDF2Audio">PDF to Audio Converter</a></li>
+<li>#pdf <a href="https://github.com/rsharvesh16/SmartDoc-Document-Processing-With-LLM">SmartDoc</a></li>
+<li>#python <a href="https://github.com/marimo-team/marimo">marimo</a></li>
+<li>#rag <a href="https://github.com/severian42/GraphRAG-Local-UI">GraphRAG Local</a></li>
+<li>#rag <a href="https://github.com/Cinnamon/kotaemon">kotaemon</a></li>
+<li>#rag <a href="https://github.com/HKUDS/LightRAG">LightRAG</a></li>
+<li>#rag <a href="https://github.com/morphik-org/morphik-core">Morphik</a></li>
+<li>#record <a href="https://github.com/whitphx/streamlit-webrtc">streamlit-webrtc</a></li>
+<li>#record<a href="https://github.com/Zackriya-Solutions/meeting-minutes">Meetily - AI-Powered Meeting Assistant</a></li>
+<li>#repository <a href="https://github.com/AsyncFuncAI/deepwiki-open">DeepWiki-Open</a></li>
+<li>#sdk <a href="https://github.com/vercel/ai-chatbot">Next.js AI Chatbot</a></li>
+<li>#subtitle <a href="https://github.com/buxuku/SmartSub">SmartSub</a></li>
+<li>#terminal <a href="https://github.com/rajnandan1/termo">Termo</a></li>
+<li>#translate <a href="https://github.com/bropines/Deeplx-vercel">DeepLX Vercel</a></li>
+<li>#tta <a href="https://github.com/haoheliu/AudioLDM">AudioLDM</a></li>
+<li>#tta <a href="https://github.com/RVC-Boss/GPT-SoVITS">GPT-SoVITS-WebUI</a></li>
+<li>#video <a href="https://github.com/facebookresearch/AnimatedDrawings">Animated Drawings</a></li>
+<li>#video <a href="https://github.com/magic-research/magic-animate">MagicAnimate</a></li>
+<li>#video <a href="https://github.com/williamyang1991/Rerender_A_Video">Rerender_A_Video</a></li>
+<li>#video <a href="https://github.com/OpenTalker/video-retalking">VideoReTalking</a></li>
+<li>#voice <a href="https://github.com/santinic/audiblez">Audiblez</a></li>
+<li>#voice <a href="https://github.com/nari-labs/dia">Dia</a></li>
+<li>#voice <a href="https://github.com/CheshireCC/faster-whisper-GUI">faster-whisper-GUI</a></li>
+<li><a href="https://github.com/Adam-CAD/CADAM">CADAM</a></li>
+<li><a href="https://github.com/rianadon/Cosmos-Keyboards">Cosmos Keyboards</a></li>
+<li><a href="https://github.com/camelot-dev/excalibur">Excalibur</a></li>
+<li><a href="https://github.com/frappe/books">Frappe Books</a></li>
+<li><a href="https://github.com/cedricbonhomme/freshermeat">freshermeat</a></li>
+<li><a href="https://github.com/renzhezhilu/gifsicle-wasm-browser">Gifsicle Wasm Browser</a></li>
+<li><a href="https://github.com/typesense/showcase-recipe-search">Instant Recipe Search</a></li>
+<li><a href="https://github.com/Ajatt-Tools/kitsunekko-tools">kitsunekko-tools</a></li>
+<li><a href="https://github.com/bmaltais/kohya_ss">Kohya's GUI</a></li>
+<li><a href="https://github.com/ading2210/linuxpdf">LinuxPDF</a></li>
+<li><a href="https://github.com/monkeytypegame/monkeytype">Monkeytype</a></li>
+<li><a href="https://github.com/BigJk/snd">Sales &amp; Dungeons</a></li>
+<li><a href="https://github.com/johannesjo/super-productivity">Super Productivity</a></li>
+<li><a href="https://github.com/emtee40/torrents-csv-server">Torrents.csv</a></li>
+<li><a href="https://github.com/xantiagoma/zealusercontributions">Zeal User Contributions &amp; Cheat Sheets</a></li>
+<li><a href="https://github.com/key-networks/ztncui">ztncui</a></li>
+<li><em><a href="/optWeb/albumapp-django.html">albumapp-django.md</a></em></li>
+<li><em><a href="/optWeb/altium_js.html">altium_js.md</a></em> altium.js (<a href="https://scillidan.github.io/altium_js/altium_sch.html">gh-pages</a>, <a href="https://gm-altium-js.vercel.app/altium_sch.html">vercel</a>)</li>
+<li><em><a href="/optWeb/asciiflow.html">asciiflow.md</a></em> ASCIIFlow (<a href="https://scillidan.github.io/asciiflow">gh-pages</a>)</li>
+<li><em><a href="/optWeb/audiomass.html">audiomass.md</a></em> AudioMass (<a href="https://audiomass.co">url</a>)</li>
+<li><em><a href="/optWeb/autoflow.html">autoflow.md</a></em></li>
+<li><em><a href="/optWeb/bark-webui.html">bark-webui.md</a></em></li>
+<li><em><a href="/optWeb/bfxr2.html">bfxr2.md</a></em> bfxr2 (<a href="https://gm-bfxr2.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/blamscamp.html">blamscamp.md</a></em> blamscamp editor (<a href="https://gm-blamscamp.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/calcutext.html">calcutext.md</a></em> Calcutext (<a href="https://gm-calcutext.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/changedetection.html">changedetection.md</a></em></li>
+<li><em><a href="/optWeb/chartdb.html">chartdb.md</a></em></li>
+<li><em><a href="/optWeb/chat2db.html">chat2db.md</a></em></li>
+<li><em><a href="/optWeb/chatgpt-subtitle-translator.html">chatgpt-subtitle-translator.md</a></em></li>
+<li><em><a href="/optWeb/clcalc.html">clcalc.md</a></em> CL Calc (<a href="https://gm-clcalc.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/cnvrt.html">cnvrt.md</a></em> cnvrt (<a href="https://gm-cnvrt.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/codi-link.html">codi-link.md</a></em> Codi.link (<a href="https://gm-codi-link.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/comic-template-maker.html">comic-template-maker.md</a></em></li>
+<li><em><a href="/optWeb/cyberchef.html">cyberchef.md</a></em> CyberChef (<a href="https://scillidan.github.io/CyberChef">gh-pages</a>)</li>
+<li><em><a href="/optWeb/datasette-lite.html">datasette-lite.md</a></em> Datasette Lite (<a href="https://scillidan.github.io/datasette-lite/?csv=https://raw.githubusercontent.com/WeblateOrg/language-data/refs/heads/main/languages.csv">gh-pages</a>)</li>
+<li><em><a href="/optWeb/deeplx-vercel.html">deeplx-vercel.md</a></em> Deeplx Vercel (<a href="https://gm-deeplx-vercel.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/dify.html">dify.md</a></em></li>
+<li><em><a href="/optWeb/doctr.html">doctr.md</a></em></li>
+<li><em><a href="/optWeb/drawdb.html">drawdb.md</a></em> drawDB (<a href="https://gm-drawdb.vercel.app/editor">vercel</a>)</li>
+<li><em><a href="/optWeb/drawflow.html">drawflow.md</a></em> Drawflow (<a href="https://scillidan.github.io/Drawflow">gh-pages</a>)</li>
+<li><em><a href="/optWeb/easy-web-summarizer.html">easy-web-summarizer.md</a></em></li>
+<li><em><a href="/optWeb/ebook2audiobook.html">ebook2audiobook.md</a></em></li>
+<li><em><a href="/optWeb/ebook-reader.html">ebook-reader.md</a></em> Ebook Reader (<a href="https://gm-ebook-reader.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/editor.html">editor.md</a></em> Editor (<a href="https://scillidan.github.io/Editor">gh-pages</a>)</li>
+<li><em><a href="/optWeb/epub-manga-creator.html">epub-manga-creator.md</a></em> EPUB Manga Creator V2 (<a href="https://gm-epub-manga-creator.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/epubviewer.html">epubviewer.md</a></em> ePubViewer (<a href="https://scillidan.github.io/ePubViewer">gh-pages</a>, <a href="https://gm-epubviewer.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/etymologysearch.html">etymologysearch.md</a></em> Etymology Search (<a href="https://gm-etymology-search.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/etytree.html">etytree.md</a></em> etytree (<a href="https://gm-etytree.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/excalidraw.html">excalidraw.md</a></em> Excalidraw (<a href="https://gm-excalidraw.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/f5-tts.html">f5-tts.md</a></em></li>
+<li><em><a href="/optWeb/faster-whisper-webui.html">faster-whisper-webui.md</a></em></li>
+<li><em><a href="/optWeb/fastgpt.html">fastgpt.md</a></em></li>
+<li><em><a href="/optWeb/favycon.html">favycon.md</a></em> Favycon (<a href="https://gm-favycon.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/finetuneas.html">finetuneas.md</a></em> finetuneas (<a href="https://gm-finetuneas.vercel.app/finetuneas.html">vercel</a>)</li>
+<li><em><a href="/optWeb/flood.html">flood.md</a></em></li>
+<li><em><a href="/optWeb/flowgram-ai.html">flowgram-ai.md</a></em></li>
+<li><em><a href="/optWeb/flowise.html">flowise.md</a></em></li>
+<li><em><a href="/optWeb/focustide.html">focustide.md</a></em> FocusTide (<a href="https://gm-focus-tide.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/foliate-js.html">foliate-js.md</a></em> foliate-js (<a href="https://gm-foliate-js.vercel.app/reader.html">vercel</a>)</li>
+<li><em><a href="/optWeb/font-combination-generator.html">font-combination-generator.md</a></em></li>
+<li><em><a href="/optWeb/fossflow.html">fossflow.md</a></em> FossFLOW (<a href="https://gm-foss-flow.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/gifsicle-wasm-browser.html">gifsicle-wasm-browser.md</a></em> Gifsicle Wasm Broswer (<a href="https://scillidan.github.io/gifsicle-wasm-browser">gh-pages</a>, <a href="https://gm-gifsicle-wasm-browser.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/git-rawify.html">git-rawify.md</a></em> GIT.RAWify (<a href="https://gm-git-rawify.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/graphite.html">graphite.md</a></em></li>
+<li><em><a href="/optWeb/guita-tab-editor.html">guita-tab-editor.md</a></em> Guitar Tab Editor</li>
+<li><em><a href="/optWeb/guitar-tabs-editor.html">guitar-tabs-editor.md</a></em> Guitar Tab Editor (<a href="https://scillidan.github.io/tab-editor">gh-pages</a>)</li>
+<li><em><a href="/optWeb/h2m.html">h2m.md</a></em> h2m (<a href="https://scillidan.github.io/h2m">gh-pages</a>, <a href="https://gm-h2m.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/headscale-ui.html">headscale-ui.md</a></em></li>
+<li><em><a href="/optWeb/invoify.html">invoify.md</a></em> Invoify (<a href="https://gm-invoify.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/iopaint.html">iopaint.md</a></em></li>
+<li><em><a href="/optWeb/it-tools.html">it-tools.md</a></em> IT-TOOLS (<a href="https://gm-it-tools.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/js-image-carver.html">js-image-carver.md</a></em> JS IMAGE CARVER (<a href="https://gm-js-image-carver.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/jsetymology.html">jsetymology.md</a></em> jsetymology (<a href="https://gm-jsetymology.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/json-crack.html">json-crack.md</a></em> JSON Crack (<a href="https://gm-jsoncrack-com.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/khoj.html">khoj.md</a></em></li>
+<li>_<a href="/optWeb/kiwix-js.html">kiwix-js.md</a></li>
+<li><em><a href="/optWeb/kiwix-js-pwa.html">kiwix-js-pwa.md</a></em> Kiwix JS (<a href="https://gm-kiwix-js-pwa.vercel.app/www/index.html">vercel</a>)</li>
+<li><em><a href="/optWeb/kokoro/kokoro.html">kokoro.md</a></em></li>
+<li><em><a href="/optWeb/langchain-chatchat.html">langchain-chatchat.md</a></em></li>
+<li><em><a href="/optWeb/langflow.html">langflow.md</a></em></li>
+<li><em><a href="/optWeb/liveportrait.html">liveportrait.md</a></em></li>
+<li><em><a href="/optWeb/local-deep-researcher.html">local-deep-researcher.md</a></em></li>
+<li><em><a href="/optWeb/localpdfmerger.html">localpdfmerger.md</a></em> Localpdf.tech (<a href="https://gm-localpdfmerger.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/lookscanned.html">lookscanned.md</a></em> Look Scanned (<a href="https://gm-lookscanned-io.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/lrc_editor.html">lrc_editor.md</a></em> lrc_editor (<a href="https://scillidan.github.io/lrc_editor/">gh-pages</a>, <a href="https://gm-lrc-editor.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/manga-colorizer.html">manga-colorizer.md</a></em></li>
+<li><em><a href="/optWeb/manga-image-translator.html">manga-image-translator.md</a></em></li>
+<li><em><a href="/optWeb/markdownlint.html">markdownlint.md</a></em> markdownlint (<a href="https://gm-markdownlint.vercel.app/default.htm">vercel</a>)</li>
+<li><em><a href="/optWeb/melotts.html">melotts.md</a></em></li>
+<li><em><a href="/optWeb/mermaid-live-editor.html">mermaid-live-editor.md</a></em> Mermaidv Live Editor (<a href="https://gm-mermaid-live-editor.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/mineru.html">mineru.md</a></em> MinerU (<a href="https://scillidan.github.io/MinerU/demo/">gh-pages</a>)</li>
+<li><em><a href="/optWeb/mini-photo-editor.html">mini-photo-editor.md</a></em> mini-img-editor (<a href="https://gm-mini-photo-editor.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/minipaint.html">minipaint.md</a></em> miniPaint (<a href="https://scillidan.github.io/miniPaint">gh-pages</a>)</li>
+<li><em><a href="/optWeb/mokuro-reader.html">mokuro-reader.md</a></em> Mokuro reader (<a href="https://gm-mokuro-reader.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/myip.html">myip.md</a></em></li>
+<li><em><a href="/optWeb/nash.html">nash.md</a></em> nash (<a href="https://scillidan.github.io/nash">gh-pages</a>, <a href="https://gm-nash.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/notecalc3.html">notecalc3.md</a></em> NoteCalc (<a href="https://gm-notecalc.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/notepad-calculator.html">notepad-calculator.md</a></em> Notepad Calculator Prototype (<a href="https://gm-notepad-calculator.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/ollama-deep-researcher.html">ollama-deep-researcher.md</a></em></li>
+<li><em><a href="/optWeb/openvoice.html">openvoice.md</a></em></li>
+<li><em><a href="/optWeb/ordered-dither-maker.html">ordered-dither-maker.md</a></em> ordered-dither-maker (<a href="https://gm-ordered-dither-maker.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/path-motion.html">path-motion.md</a></em> Path Motion (<a href="https://gm-path-motion.vercel.app/canvas">vercel</a>)</li>
+<li><em><a href="/optWeb/pdf-duplex-scan.html">pdf-duplex-scan.md</a></em> Rearrange PDF as Duplex Scan (<a href="https://gm-pdf-duplex-scan.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/pdf-js.html">pdf-js.md</a></em> PDF.js (<a href="https://gm-pdf-js.vercel.app/web/viewer.html">vercel</a>)</li>
+<li><em><a href="/optWeb/pdf-margins.html">pdf-margins.md</a></em> pdf-margins (<a href="https://gm-pdf-margins.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/pdf-narrator.html">pdf-narrator.md</a></em></li>
+<li><em><a href="/optWeb/pdfmathtranslate.html">pdfmathtranslate.md</a></em></li>
+<li><em><a href="/optWeb/perplexica.html">perplexica.md</a></em></li>
+<li><em><a href="/optWeb/pic-smaller.html">pic-smaller.md</a></em> Pic Smaller (<a href="https://gm-pic-smaller.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/pixelizer.html">pixelizer.md</a></em></li>
+<li><em><a href="/optWeb/programmingfonts.html">programmingfonts.md</a></em> Programming Fonts (<a href="https://gm-programmingfonts.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/prompt-optimizer.html">prompt-optimizer.md</a></em> Prompt Optimizer (<a href="https://gm-prompt-optimizer.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/qr-designer.html">qr-designer.md</a></em> QR code designer (<a href="https://scillidan.github.io/qr-designer">gh-pages</a>)</li>
+<li><em><a href="/optWeb/qrframe.html">qrframe.md</a></em> qrframe (<a href="https://gm-qrframe.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/query_gpt.html">query_gpt.md</a></em> Query QPT (<a href="https://gm-query-gpt.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/quickpic.html">quickpic.md</a></em> QuickPic (<a href="https://gm-quickpic.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/quiver.html">quiver.md</a></em> quiver (<a href="https://scillidan.github.io/quiver">gh-pages</a>)</li>
+<li><em><a href="/optWeb/rag-chatbot.html">rag-chatbot.md</a></em></li>
+<li><em><a href="/optWeb/ragflow.html">ragflow.md</a></em></li>
+<li><em><a href="/optWeb/rclone-webui-angular.html">rclone-webui-angular.md</a></em></li>
+<li><em><a href="/optWeb/readium-js-viewer.html">readium-js-viewer.md</a></em> readium-js-viewer (<a href="https://scillidan.github.io/readium-js-viewer">gh-pages</a>)</li>
+<li><em><a href="/optWeb/reaflow.html">reaflow.md</a></em> REAFLOW (<a href="https://scillidan.github.io/reaflow">gh-pages</a>)</li>
+<li><em><a href="/optWeb/recoded.html">recoded.md</a></em> recoded (<a href="https://gm-recoded.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/reference.html">reference.md</a></em> Reference (<a href="https://gm-reference.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/reminiflux.html">reminiflux.md</a></em> reminiflux (<a href="https://gm-reminiflux.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/reportbro-designer.html">reportbro-designer.md</a></em> ReportBro Designer (<a href="https://gm-reportbro-designer.vercel.app/demos/default.html">vercel</a>)</li>
+<li><em><a href="/optWeb/retro-assembly.html">retro-assembly.md</a></em> RetroAssembly (<a href="https://gm-retro-assembly.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/scira.html">scira.md</a></em></li>
+<li><em><a href="/optWeb/screen-sharing.html">screen-sharing.md</a></em> Screen Sharing Application (<a href="https://gm-screen-sharing.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/signal.html">signal.md</a></em> signal (<a href="https://gm-signal.vercel.app/edit">vercel</a>)</li>
+<li><em><a href="/optWeb/signature_pad.html">signature_pad.md</a></em> Signature Pad (<a href="https://scillidan.github.io/signature_pad">gh-pages</a>, <a href="https://gm-signature-pad.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/sketch-to-lineart.html">sketch-to-lineart.md</a></em> sketch-to-lineart (<a href="https://gm-sketch-to-lineart.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/snippet-box.html">snippet-box.md</a></em></li>
+<li><em><a href="/optWeb/sqlite-web.html">sqlite-web.md</a></em></li>
+<li><em><a href="/optWeb/sreadium.html">sreadium.md</a></em> sreadium (<a href="https://scillidan.github.io/sreadium/?epubs=https%3A%2F%2Fscillidan.github.io/media_audioebook%2Fepub_library.opds">gh-pages</a>, <a href="https://gm-sreadium.vercel.app/?epubs=https%3A%2F%2F-m-media-audioebook.vercel.app%2Fepub_library.opds">vercel</a>)</li>
+<li><em><a href="/optWeb/star-vector.html">star-vector.md</a></em></li>
+<li><em><a href="/optWeb/streamlit-image-crop.html">streamlit-image-crop.md</a></em></li>
+<li><em><a href="/optWeb/strike.html">strike.md</a></em> Strike (<a href="https://gm-strike.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/studio.html">studio.md</a></em> studio (<a href="https://gm-studio1.vercel.app/connect">vercel</a>)</li>
+<li><em><a href="/optWeb/svg-path-editor.html">svg-path-editor.md</a></em> SvgPathEditor (<a href="https://gm-svg-path-editor.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/svgedit.html">svgedit.md</a></em> SVGEdit (<a href="https://gm-svgedit.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/svgomg.html">svgomg.md</a></em></li>
+<li><em><a href="/optWeb/text-generation-webui.html">text-generation-webui.md</a></em></li>
+<li><em><a href="/optWeb/texthooker-ui.html">texthooker-ui.md</a></em> Texthooker UI (<a href="https://scillidan.github.io/texthooker-ui">gh-pages</a>, <a href="https://gm-texthooker-ui.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/textreader.html">textreader.md</a></em> textReader (<a href="https://scillidan.github.io/textReader/textReader.html">gh-pages</a>, <a href="https://gm-text-reader.vercel.app/textReader.html">vercel</a>)</li>
+<li><em><a href="/optWeb/tooncrafter.html">tooncrafter.md</a></em></li>
+<li><em><a href="/optWeb/transformer-explainer.html">transformer-explainer.md</a></em> Transformer Explainer (<a href="https://scillidan.github.io/transformer-explainer">gh-pages</a>)</li>
+<li><em><a href="/optWeb/translatebookwithllm.html">translatebookwithllm.md</a></em></li>
+<li><em><a href="/optWeb/url-encoder.html">url-encoder.md</a></em> Url encoder for SVG (<a href="https://scillidan.github.io/url-encoder">gh-pages</a>)</li>
+<li><em><a href="/optWeb/verba.html">verba.md</a></em></li>
+<li><em><a href="/optWeb/video-gif-web-converter.html">video-gif-web-converter.md</a></em> video-gif-web-converter (<a href="https://gm-video-gif-web-converter.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/villain.html">villain.md</a></em> Villain (<a href="https://scillidan.github.io/Villain">gh-pages</a>, <a href="https://gm-villain.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/visionmagic.html">visionmagic.md</a></em> visionmagic (<a href="https://gm-visionmagic.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/vivliostylejs.html">vivliostylejs.md</a></em> Vivliostyle Viewer (<a href="https://scillidan.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html">gh-pages</a>, <a href="https://gm-vivliostyle-js.vercel.app">vercel</a>)</li>
+<li><em><a href="/optWeb/vtracer.html">vtracer.md</a></em> Vtracer Web App (<a href="https://scillidan.github.io/vtracer/webapp/app">gh-pages</a>)</li>
+<li><em><a href="/optWeb/web-check.html">web-check.md</a></em></li>
+<li><em><a href="/optWeb/webvm.html">webvm.md</a></em> WebVM (<a href="https://scillidan.github.io/webvm">gh-pages</a>)</li>
+<li><em><a href="/optWeb/whisper-webui.html">whisper-webui.md</a></em></li>
+<li><em><a href="/optWeb/yomi-reader.html">yomi-reader.md</a></em> Yomi-Reader (<a href="https://yomi-reader-git-gh-pages-goblin-market.vercel.app">vercel</a>)</li>
+<li>Battery Life Calculator (<a href="https://a64.in/tools/battery-life-calculator.html">url</a>)</li>
+<li>Cadmapper (<a href="https://cadmapper.com">url</a>)</li>
+<li>cursor.directory (<a href="https://cursor.directory">url</a>)</li>
+<li>Dev Encyclopedia; (<a href="https://devpedia.dev">url</a>)</li>
+<li>Doggo DNS (<a href="https://doggo.mrkaran.dev">url</a>)</li>
+<li>Free SVG (<a href="https://freesvg.org">url</a>)</li>
+<li>Grammar Checker (<a href="https://wordcount.com/grammar-checker">url</a>)</li>
+<li>Guitar-Editor (<a href="https://scillidan.github.io/guitar-tabs-editor">gh-pages</a>)</li>
+<li>kitsuneko.net (<a href="https://kitsunekko.net">url</a>)</li>
+<li>LinkPreview (<a href="https://linkpreview.xyz">url</a>)</li>
+<li>LyricsPoster (<a href="https://lyricsposter.net">url</a>)</li>
+<li>Markdown Live Preview (<a href="https://markdownlivepreview.com">url</a>)</li>
+<li>Musical Artifacts Preview (<a href="https://preview.musical-artifacts.com">url</a>)</li>
+<li>neovimcraft (<a href="https://neovimcraft.com">url</a>)</li>
+<li>OldMapsOnline (<a href="https://www.oldmapsonline.org">url</a>)</li>
+<li>Project AI Summarizer App <a href="https://gm-project-ai-summarizer-app.vercel.app">vercel</a></li>
+<li>prompts.chat (<a href="https://prompts.chat">url</a>)</li>
+<li>woah! (<a href="https://gm-woah.vercel.app">vercel</a>)<em><a href="/optWeb/woah.html">woah.md</a></em></li>
+<li>You need 4 colors (<a href="https://www.iamsajid.com/colors">url</a>)</li>
+</ul>
+<h3 id="cancel"><a class="header" href="#cancel">cancel</a></h3>
+<ul>
+<li><em><a href="/optWeb/cheatsheet-generator.html">cheatsheet-generator.md</a></em> <a href="https://github.com/scillidan/cheatsheet-generator">Cheatsheet Generator</a></li>
+<li><em><a href="/optWeb/dgmjs.html">dgmjs.md</a></em> <a href="https://github.com/scillidan/dgmjs">dgmjs</a></li>
+<li><em><a href="/optWeb/diceroller.html">diceroller.md</a></em> <a href="https://github.com/scillidan/diceRoller">diceRoller</a></li>
+<li><em><a href="/optWeb/flatdraw.html">flatdraw.md</a></em> <a href="https://github.com/scillidan/flatdraw">Flatdraw</a></li>
+<li><em><a href="/optWeb/flowchart-fun.html">flowchart-fun.md</a></em> <a href="https://github.com/scillidan/flowchart-fun">Flowchart Fun</a></li>
+<li><em><a href="/optWeb/gifconverter.html">gifconverter.md</a></em> <a href="https://github.com/scillidan/gifconverter">Gif Converter with WASM</a></li>
+<li><em><a href="/optWeb/hot-chain-svg.html">hot-chain-svg.md</a></em> <a href="https://github.com/scillidan/hot-chain-svg">hot-chain-svg</a></li>
+<li><em><a href="/optWeb/image-editor.html">image-editor.md</a></em> <a href="https://github.com/scillidan/image-editor">image-editor</a></li>
+<li><em><a href="/optWeb/mangarepack.html">mangarepack.md</a></em> <a href="https://github.com/scillidan/mangarepack">Manga Repack</a></li>
+<li><em><a href="/optWeb/pdf-lib-draw-table.html">pdf-lib-draw-table.md</a></em> <a href="https://github.com/scillidan/pdf-lib-draw-table">pdf-lib-draw-table</a></li>
+<li><em><a href="/optWeb/pdfme.html">pdfme.md</a></em> <a href="https://github.com/scillidan/pdfme">PDFME</a></li>
+<li><em><a href="/optWeb/potluck.html">potluck.md</a></em> <a href="https://github.com/scillidan/potluck">Potluck</a></li>
+<li><em><a href="/optWeb/tikzcd-editor.html">tikzcd-editor.md</a></em> <a href="https://github.com/scillidan/tikzcd-editor">tikzcd-editor</a></li>
+<li><em><a href="/optWeb/vocssels.html">vocssels.md</a></em> <a href="https://github.com/scillidan/file_html/tree/main/vocssels/dist">VoCSSels</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../optGame/es-de/iconic-es-de.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../optWeb/albumapp-django.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../optGame/es-de/iconic-es-de.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../optWeb/albumapp-django.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

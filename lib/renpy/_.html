@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>renpy - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/lib/renpy/_.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="renpy"><a class="header" href="#renpy"><a href="https://www.renpy.org">Renpy</a></a></h1>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<h3 id="build-distributions-windows-10"><a class="header" href="#build-distributions-windows-10">Build Distributions (Windows 10)</a></h3>
+<ol>
+<li>Download <code>SDK.zip</code> from <a href="https://www.renpy.org/latest.html">Download Ren'Py</a>.</li>
+<li>Decompress it to <code>renpy-*-sdk\</code>.</li>
+<li>Run <code>renpy-*-sdk\renpy.exe</code>.</li>
+<li>preferences → General → Projects Directory → <code>&lt;path_to&gt;\proj_renpy</code> → Return.</li>
+<li><code>cd &lt;path_to&gt;\proj_renpy</code>.</li>
+<li><code>git clone --depth=1 https://codeberg.org/fhs/katawa-shoujo-re-engineered</code>.</li>
+<li>Renpy → PROJECTS → refresh → Select <code>katawa-shoujo-re-engineered</code>.</li>
+<li>Build Distributions → Build.</li>
+</ol>
+<h3 id="build-android-windows-10"><a class="header" href="#build-android-windows-10">Build Android (Windows 10)</a></h3>
+<ol>
+<li>Install <a href="https://www.oracle.com/java/technologies/downloads/">JDK</a> and <a href="https://gradle.org/">Gradle</a>. For example:</li>
+<li>Download and Decompress <code>OpenJDK21U-jdk_x64_windows_hotspot_21.0.4_7.zip</code> to <code>jdk-21.04\</code>.</li>
+<li>Download and Decompress <code>gradle-8.5-bin.zip</code> to <code>gradle-8.5\</code>. Or put <code>gradle-8.5-bin.zip</code> into <code>%USERPROFILE%\.gradle\wrapper\dists\gradle-8.5-bin\&lt;some_string&gt;\</code>.</li>
+<li>Add <code>jdk-21.04\bin</code>, <code>gradle-8.5\bin</code> into PATH.</li>
+<li>Restart Renpy.</li>
+</ol>
+<ul>
+<li>Renpy → Android → Build
+<ol>
+<li>Install SDK</li>
+<li>Generate Keys</li>
+<li>Build Package</li>
+</ol>
+</li>
+</ul>
+<h2 id="build-renpy-documentation-ubuntu-2404-arm"><a class="header" href="#build-renpy-documentation-ubuntu-2404-arm">Build renpy documentation (Ubuntu 24.04 ARM)</a></h2>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
+<pre><code class="language-sh">sudo apt install virtualenvwrapper python3-dev libavcodec-dev libavformat-dev libswresample-dev libswscale-dev libharfbuzz-dev libfreetype6-dev libfribidi-dev libsdl2-dev libsdl2-image-dev libsdl2-gfx-dev libsdl2-mixer-dev libsdl2-ttf-dev libjpeg-dev
+. /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+mkvirtualenv renpy
+pip install -U setuptools future six typing pefile requests ecdsa
+pip install -U "cython&lt;3.0.0"
+</code></pre>
+<pre><code class="language-sh">git clone --depth=1 https://www.github.com/renpy/pygame_sdl2
+pushd pygame_sdl2
+python setup.py install
+python install_headers.py $VIRTUAL_ENV
+popd
+</code></pre>
+<pre><code class="language-sh">LATEST_RELEASE=$(curl -s https://api.github.com/repos/renpy/renpy/releases/latest | jq -r .tag_name)
+wget https://github.com/renpy/renpy/archive/refs/tags/$LATEST_RELEASE.zip
+unzip $LATEST_RELEASE.zip
+pushd renpy-*
+pushd module
+python setup.py install
+cd ..
+pushd sphinx
+pip install -U sphinx sphinx_rtd_theme sphinx_rtd_dark_mode
+./build.sh
+</code></pre>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<ul>
+<li><a href="/opt/zeal.html">zeal.md</a></li>
+</ul>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#document <a href="https://www.renpy.org/doc/html/index.html">Ren'Py Documentation</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#chat-log #display <a href="https://github.com/JimTheCactus/chatlogging">Chat Log</a></li>
+<li>#dialogue #block <a href="https://patreon.renpy.org/multiple-dialogue.html">Multiple Dialogue Blocks</a></li>
+<li>#dialogue #tooltip <a href="https://github.com/valery-iwanofu/renpy-word-description">Word Description</a></li>
+<li>#glossary #page <a href="https://github.com/jsfehler/renpy-encyclopaedia">Encyclopaedia Framework for Ren'Py</a></li>
+<li>#template <a href="https://github.com/shawna-p/EasyRenPyGui">Easy Ren'Py GUI</a></li>
+</ul>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li>#ads #google-ads <a href="https://www.youtube.com/watch?v=oUhcXlzc2a4">Renpy : How to add Google Ads(Admob) to Renpy</a></li>
+<li>#ads #yandex-ads <a href="https://github.com/valery-iwanofu/rapt-yandex-ads">Yandex Mobile Ads в Ren'Py игре</a></li>
+<li>#animation #move <a href="https://github.com/Thediamondcryst/Ren-Py-Free-To-Use-Moving-Clouds">Moving Clouds</a></li>
+<li>#animation #move <a href="https://traumendes-madchen.com/blog/?p=1395">Tutorial: How to do a cloud animation with RenPy</a></li>
+<li>#api #bot <a href="https://github.com/alvarensixy/RenPyro">RenPyro</a></li>
+<li>#api #discord <a href="https://github.com/Lezalith/RenPy-Discord-Presence">Discord Rich Presence Support</a></li>
+<li>#api #epic <a href="https://github.com/Ayowel/renpy-epicgames-eos">Epic Online Services extension for Ren’Py</a></li>
+<li>#api #news <a href="https://patreon.renpy.org/news.html#integrating-it-with-your-game">Integrating it with your Game</a></li>
+<li>#background #camera <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=54333#p507598">Scroll any, not even seamless background</a></li>
+<li>#background #tile <a href="https://github.com/RuolinZheng08/renpy-awesome-template#panning-background-with-seamless-tiles">Panning background with seamless tiles</a></li>
+<li>#bar <a href="https://gist.github.com/midgethetree/b210ddadfb07e85873022fde0202f646">Scrollbutton code for the Ren'Py visual novel engine</a></li>
+<li>#code #reconstruct <a href="https://feniksdev.com/organizing-a-renpy-project/">Organizing a Ren’Py Project</a></li>
+<li>#cursor #icon <a href="https://patreon.renpy.org/dev-2020-11.html#hardware-accelerated-custom-mouse-cursor">Hardware-Accelerated Custom Mouse Cursor</a></li>
+<li>#cursor #icon <a href="https://patreon.renpy.org/dev-2021-04.html#mouse-displayables">Mouse Displayables</a></li>
+<li>#data <a href="https://github.com/HyJyncks/DynamicTooltips">Dynamic Tooltips</a></li>
+<li>#development #sprite <a href="https://github.com/kyouryuukunn/renpy-ActionEditor3">ActionEditor3</a></li>
+<li>#dialogue #effect <a href="https://tympanus.net/codrops/2023/07/13/inspiration-for-text-block-transitions">Inspiration for Text Block Transitions</a></li>
+<li>#dialogue #effect <a href="https://tympanus.net/codrops/2023/02/22/some-more-on-scroll-typography-animations">Some More On-Scroll Typography Animations</a></li>
+<li>#engine #item <a href="https://www.lezcave.com/lezinventory-framework/">Free Inventory Framework for Ren'Py, by Lezalith</a></li>
+<li>#engine #item <a href="https://github.com/Patchmonk/Simple-Renpy-Inventory">Simple Renpy Inventory</a></li>
+<li>#engine <a href="https://github.com/shawna-p/mysterious-messenger">Mysterious Messenger</a></li>
+<li>#feature #flow <a href="https://devilspider.itch.io/flowchart-plug-in">Flowchart Plug-In</a></li>
+<li>#fuction <a href="https://feniksdev.itch.io/achievements-for-renpy">Achievements for Ren'Py</a></li>
+<li>#fuction <a href="https://bobcgames.itch.io/bobcachievements">Achievements Framework</a></li>
+<li>#fuction <a href="https://bobcgames.itch.io/bobcgallery">Gallery Framework</a></li>
+<li>#fuction <a href="https://github.com/Yoimer-Davila/gallerynpy">Gallerynpy</a></li>
+<li>#menu #avater <a href="https://patreon.renpy.org/menu-arguments.html#image-badges">Image Badges</a></li>
+<li>#menu #background <a href="https://patreon.renpy.org/menu-arguments.html#background">Background</a></li>
+<li>#menu #background <a href="https://patreon.renpy.org/dev-2020-09.html#menu-blurring">Menu Blurring</a></li>
+<li>#menu #disappear <a href="https://patreon.renpy.org/very-old-features.html#menu-sets">Menu Sets</a></li>
+<li>#menu #layout <a href="https://patreon.renpy.org/menu-arguments.html#grid-menus">Grid Menus</a></li>
+<li>#menu #lock <a href="https://patreon.renpy.org/menu-arguments.html#condition-and-sensitive">Condition and Sensitive</a></li>
+<li>#menu #multi-select <a href="https://github.com/Wendy-Nam/RenPy-RadioButtonGroup">RadioButtonGroup Plugin</a></li>
+<li>#menu #postion <a href="https://patreon.renpy.org/menu-arguments.html#positioning-menu-choices">Positioning Menu Choices</a></li>
+<li>#menu #timing <a href="https://patreon.renpy.org/custom-preferences.html">Custom Preferences</a></li>
+<li>#menu #timing <a href="https://patreon.renpy.org/timed-choice-menus.html">Timed Choice Menus</a></li>
+<li>#menu #transition <a href="https://gist.github.com/dossy/cbb7b7ed18a292e4d9c51c8d63a15c69">Blur scene behind choice menu, fade choices in and out</a></li>
+<li>#notify #feedback <a href="https://patreon.renpy.org/check-for-changes.html">Checking for Changes and Displaying A Message</a></li>
+<li>#nvl #gui <a href="https://github.com/jsfehler/entroponaut">- E N T R O P O N A U T -</a></li>
+<li>#nvl <a href="https://gist.github.com/methanoliver/7671cbcabe46bcc8a0f757ba195bb1a4">Renpy: A ctc indicator that ...</a></li>
+<li>#nvl <a href="https://gist.github.com/methanoliver/cb6ae08d432d9395cff65975733599ab">Two-column NVL mode</a></li>
+<li>#packager #flatpak <a href="https://github.com/dcbaker/renpy2flatpak">renpy2flatpak</a></li>
+<li>#packager #kit <a href="https://github.com/Andykl/renpy-distributor">Ren'Py Distributor</a></li>
+<li>#packager <a href="https://github.com/ProjectAliceDev/renpy-build-action">Build Ren'Py Project</a></li>
+<li>#project-page <a href="https://nnda.itch.io/page-components">CSS Components</a></li>
+<li>#publish <a href="https://github.com/b1f6c1c4/renpy-counter">Counter</a></li>
+<li>#publish <a href="https://github.com/Ayowel/renpy-demotools">Demotools</a></li>
+<li>#script #word-count <a href="https://kigyo.itch.io/renpy-word-counter">Ren'py Word Counter</a></li>
+<li>#shader #dust <a href="https://gist.github.com/rurubell/a30752048bbe20de546d737c2476916f">Dust</a></li>
+<li>#shader #outline <a href="https://github.com/RenpyRemix/outline-shader">Outline Shader</a></li>
+<li>#shader #particle <a href="https://github.com/AgentAlpha81/RenPyParticles">Particles</a></li>
+<li>#shader #rain <a href="https://gist.github.com/methanoliver/98fe9304b63fff1f7d3419120e2c11f5">Neat RenPy rain effect</a></li>
+<li>#shader #rain <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=52&amp;t=37489#p406150">Simple Rain Effect</a></li>
+<li>#sprite #layer <a href="https://patreon.renpy.org/layeredimage-conversion.html">Layered Image Conversion</a></li>
+<li>#sprite #rain <a href="https://pixeladdictgames.itch.io/rain-maker">Rain Maker</a></li>
+<li>#sprite <a href="https://kaiakairos.itch.io/pngtuber-plus">PNGTuber Plus</a></li>
+<li>#start-menu #background <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=47193#p472755">Main Menu with a Video Background Code</a></li>
+<li>#start-menu #background <a href="https://github.com/jbondguy007/Renpy-tutorial-conditional-main-menu-background">Tutorial Conditional Main Menu Background</a></li>
+<li>#start-menu #icon <a href="https://github.com/RuolinZheng08/renpy-awesome-template#dynamic-main-menu-and-feather-icons-in-the-ui-text">Dynamic Main Menu And Feather Icons In The Ui Text</a></li>
+<li>#start-menu <a href="https://patreon.renpy.org/dev-2020-01.html#visual-conference">Visual;Conference</a></li>
+<li>#syntax #character <a href="https://patreon.renpy.org/character-customization.html">Character Customization</a></li>
+<li>#syntax #dialogue <a href="https://gist.github.com/methanoliver/fb2ef18de4c23fadbb23b13fa3d10d48">Subscript/superscript tags</a></li>
+<li>#syntax #menu <a href="https://patreon.renpy.org/menu-arguments.html#choice-screen-selection">Choice Screen Selection</a></li>
+<li>#syntax #scene <a href="https://patreon.renpy.org/title-screens.html">Title Screens</a></li>
+<li>#text #syntax <a href="https://gist.github.com/methanoliver/166c18caa224fa15ead6dca95cccbb05">Smallcaps tag for RenPy</a></li>
+<li>#tool #version <a href="https://github.com/kobaltcore/renkit">renkit</a></li>
+<li>#translate <a href="https://github.com/anonymousException/renpy-translator">Renpy Translator</a></li>
+<li>#translate <a href="https://github.com/TibixDev/Renquill">Renquill</a></li>
+<li>#translate <a href="https://github.com/SadCrabCom/community_tl">Weblate-based Translation File Management for Ren'Py Projects</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#api #mobile <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=46091#p467178">Expanding Mobile Functionality With Pyobjus/Pyjnius ...</a></li>
+<li>#audio #animation <a href="https://github.com/Wendy-Nam/RenPy-Lipsync-Plugin">Lip Sync Plugin for Ren'Py</a></li>
+<li>#audio #animation <a href="https://sleepyagents.blogspot.com/2016/09/bpm-in-renpy-timing-animations-to-your.html">Timing animations to your musics tempo</a></li>
+<li>#audio #api <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=54324#p507536">Buns with sound in renpy</a></li>
+<li>#audio #generate <a href="https://bpgc.itch.io/splatoon-gibberish-generator">Splatoon Audio Generator</a></li>
+<li>#audio #script <a href="https://github.com/RFHGames/renpy-voice-topmix">Ren'Py Voice Topmix</a></li>
+<li>#background #camera <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=52&amp;t=37628#p407567">1080p wipes (image dissolve transitions)</a></li>
+<li>#bar #value <a href="https://github.com/RenpyRemix/extra-animated-value">Extra Animated Value</a></li>
+<li>#button <a href="https://patreon.renpy.org/python-tricks-2.html#bgqueue">BGQueue</a></li>
+<li>#code #python <a href="https://feniksdev.itch.io/inline-python-for-renpy">Inline Python for Ren'Py</a></li>
+<li>#code #variables <a href="https://feniksdev.com/the-definitive-default-define-renpy-article/">Definitive Default</a></li>
+<li>#cursor <a href="https://gist.github.com/shawna-p/3a12772369af03b85b25196275412868#file-cps_preview-rpy-L14">Preview Slow CPS in Ren'Py</a></li>
+<li>#decompile #decompile <a href="https://github.com/cnfatal/rpycdec">rpycdec</a></li>
+<li>#decompile #decompile <a href="https://github.com/CensoredUsername/unrpyc">Unrpyc</a></li>
+<li>#development #audiobook <a href="https://github.com/asayake-b5/audiobooksync2renpy">AudioTextSync To Ren’Py</a></li>
+<li>#development #json <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=65400">Import Json Data Easier</a></li>
+<li>#development #menu-history <a href="https://patreon.renpy.org/dev-2020-02.html#label-log">Label Log</a></li>
+<li>#formatter #python-block <a href="https://github.com/kobaltcore/renpyfmt">renpyfmt</a></li>
+<li>#image #border <a href="https://devilspider.itch.io/image-bounds-displayable">Image Bounds Displayable</a></li>
+<li>#lighting-effect #background <a href="https://github.com/RuolinZheng08/renpy-awesome-template#lightning-modes-day-dusk-night-dim-sepia">Lightning modes</a></li>
+<li>#linter <a href="https://github.com/ProjectAliceDev/renpy-lint-action">Lint Ren'Py Project</a></li>
+<li>#linter <a href="https://github.com/actions-marketplace-validations/nyancatda_RenpyLint">Ren'Py Lint</a></li>
+<li>#linter <a href="https://github.com/devorbitus/vnproofer">VNProofer</a></li>
+<li>#map #minimap <a href="https://kigyo.itch.io/renpy-locationminimap-system">Location Minimap System</a></li>
+<li>#map <a href="https://www.youtube.com/watch?v=o699N1TdlZ8">Map Navigation in RenPy - Vlog #4 Creating a Map Screen</a></li>
+<li>#map <a href="https://github.com/mapeditor/tiled">Tiled Map Editor</a></li>
+<li>#setting <a href="https://minute.itch.io/renpy-accessibility">Ren'Py Accessibility Add-On</a></li>
+<li>#sprite #generate <a href="https://gist.github.com/methanoliver/2668767d5332aea66a866d2b84692d1c">A primitive automatic loader for the simple kind of layered images</a></li>
+<li>#start-menu <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=48154#p477769">button Continue game”</a></li>
+<li>#stats <a href="https://bobcgames.itch.io/bobcstats">Ren'Py Stats Framework</a></li>
+<li>#text #display <a href="https://feniksdev.itch.io/marquee-for-renpy">Marquee for Ren'Py</a></li>
+<li>#text <a href="https://github.com/rakugoteam/AdvancedText">AdvancedText</a></li>
+<li>#tool <a href="https://mythic-forge-games.itch.io/renpy-image-converter">Ren'Py Image Converter</a></li>
+<li>#tutorial <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=45448#p463349">Making a Separate Content Patch</a></li>
+<li>#video #pause <a href="https://patreon.renpy.org/dev-2021-07.html#pausing-movies">Pausing Movies</a></li>
+</ul>
+<h3 id="cancal"><a class="header" href="#cancal">Cancal</a></h3>
+<ul>
+<li>#api #patreon <a href="https://dinaki.itch.io/auth-with-patreon-in-renpy-game">Patreon auth in Ren'Py Patreon Auth in Ren‘Py</a></li>
+<li>#audio #generate <a href="https://github.com/lugia19/renpyDialogToAudio">Renpy dialog voice generator</a></li>
+<li>#background #parallax <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=62705">Parallax Camera and Drunken Blur</a></li>
+<li>#background #parallax <a href="https://gist.github.com/midgethetree/b449be114f21974ed21b3fbf3653433f">Parallax code for the Ren'Py visual novel engin</a></li>
+<li>#background #parallax <a href="https://github.com/RuolinZheng08/renpy-awesome-template#parallax">Parallax</a></li>
+<li>#background <a href="https://github.com/arsenic-rp/renpy-panorama">renpy-panorama</a></li>
+<li>#bar <a href="https://feniksdev.itch.io/multi-thumb-bar-for-renpy">Multi-Thumb Bar for Ren'Py</a></li>
+<li>#bar <a href="https://devilspider.itch.io/radar-chart-displayable">Radar Chart Displayable</a></li>
+<li>#button <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=8&amp;t=57848&amp;sid=95776df5d873ef265bcf05244d317495">Button PRESSED state</a></li>
+<li>#character #avater <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=64534">Automated Side Images with Circular Cropping</a></li>
+<li>#character #hightlight <a href="https://wattson.itch.io/renpy-auto-highlight">Renpy Auto Highlight</a></li>
+<li>#character #lighting <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=49140#p483366">Noir-Style Shadow/Lighting Effects</a></li>
+<li>#character #zoom <a href="https://github.com/Elckarow/Autofocus">Autofocus</a></li>
+<li>#cursor #prop <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=62128">X-ray effect: Creator-Defined Displayable</a></li>
+<li>#development #flowchart <a href="https://github.com/EwenQuim/renpy-graphviz">Ren'Py graph visualizer - branches flowchart generator</a></li>
+<li>#development #sprite <a href="https://github.com/Elckarow/Expreviewer">Expreviewer</a></li>
+<li>#development #sprite <a href="https://feniksdev.itch.io/image-tools-for-renpy">Image Tools for Ren'Py</a></li>
+<li>#development #sprite <a href="https://feniksdev.itch.io/layered-image-visualizer-for-renpy">Layered Image Visualizer for Ren'Py [Addon]</a></li>
+<li>#development #tester <a href="https://minute.itch.io/renedit">Ren'Edit</a></li>
+<li>#dialogue #effect <a href="https://github.com/yukinogatari/Ren-Py-FancyText">FancyText Module</a></li>
+<li>#dialogue #effect <a href="https://github.com/SoDaRa/Kinetic-Text-Tags">Kinetic Text Tags</a></li>
+<li>#dialogue #effect <a href="https://github.com/Lezalith/renpy-rainbowtext">Rainbowtext</a></li>
+<li>#dialogue #gui-editor <a href="https://github.com/SqFKYo/articy3_renpy3">draft 3 to Ren'Py 3 converter</a></li>
+<li>#dialogue #gui-editor <a href="https://renpymaker.com">Maker</a></li>
+<li>#dialogue #gui-editor <a href="https://github.com/FiendChain/ScriptEditor">Node based script editor</a></li>
+<li>#dialogue #gui-editor <a href="https://ludowoods.itch.io/twine-to-renpy-tool">Twine to Ren'Py</a></li>
+<li>#dialogue #history <a href="https://devilspider.itch.io/history-search-tool">History Search Tool</a></li>
+<li>#dialogue #phone-simulator <a href="https://github.com/Elckarow/Better-EMR-Phone">Better EMR Phone</a></li>
+<li>#dialogue #phone-simulator <a href="https://github.com/albireo-games/renpy_phone">Phone interface</a></li>
+<li>#dialogue #phone-simulator <a href="https://github.com/israelrbb/RenpyPhoneSMS">Phone SMS</a></li>
+<li>#dialogue <a href="https://patreon.renpy.org/speech-bubbles.html">Automatic Speech Bubbles</a></li>
+<li>#engine #battle <a href="https://github.com/Habitacle/battle-engine">RPG Battle Engine for Ren'Py</a></li>
+<li>#engine <a href="https://github.com/DRincs-Productions/NQTR-System">Navigation Quest Time Routine System for Ren'py</a></li>
+<li>#formatter #convert <a href="https://github.com/RunawayHaggis/FDtoRenpy">Final Draft screenplay to Renpy</a></li>
+<li>#formatter #syntax <a href="https://github.com/gameboxthing/renpy_parser">Parser</a></li>
+<li>#frame #fillet <a href="https://gist.github.com/Pseurae/15dc9c6a145161063126c3b4de39a0aa">A Frame displayable which has rounds off corners using shaders</a></li>
+<li>#frame #gui <a href="https://feniksdev.itch.io/frame-tool-for-renpy">Frame Tool for Ren'Py</a></li>
+<li>#framework #driver <a href="https://github.com/njunius/Puppitor">Puppitor</a></li>
+<li>#framework #godot <a href="https://github.com/rakugoteam/Examples">Rakugo Examples</a></li>
+<li>#framework <a href="https://github.com/DRincs-Productions/Renpygame">Renpygame</a></li>
+<li>#fuction <a href="https://feniksdev.itch.io/extended-music-room-for-renpy">Extended Music Room for Ren'Py</a></li>
+<li>#fuction <a href="https://feniksdev.itch.io/multi-touch-zoom-gallery-for-renpy">Multi Touch Gallery</a></li>
+<li>#github-action <a href="https://github.com/Ayowel/renpy-setup-action">Ren'Py installer</a></li>
+<li>#glossary #api <a href="https://patreon.renpy.org/wiki.html">In-Game Wiki-Like Glossary or Codex</a></li>
+<li>#lighting-effect #character <a href="https://feniksdev.itch.io/image-tint-tool">Image Tint Tool for Ren'Py [Addon]</a></li>
+<li>#map <a href="https://pink-productions.itch.io/pink-engine">Pink Engine</a></li>
+<li>#menu #menu-block <a href="https://patreon.renpy.org/dev-2022-05.html#drop-down-menus">Drop Down Menus</a></li>
+<li>#mini-game #russian <a href="https://renpyfordummies.blogspot.com/2022/09/renpy.html?m=1">Finding items</a></li>
+<li>#mini-game <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=50068#p486361">Another Rock Paper Scissors game</a></li>
+<li>#mini-game <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=8&amp;t=57541#p522463">Help with a connect the dots mini game?</a></li>
+<li>#mini-game <a href="https://github.com/RuolinZheng08/renpy-chess">Ren'Py Chess Engine 2.0</a></li>
+<li>#mini-game <a href="https://github.com/RuolinZheng08/renpy-rhythm">Ren'Py Rhythm: A Rhythm Game Engine for Ren'Py</a></li>
+<li>#mini-game <a href="https://github.com/CharlieFuu69/RenPy_RhythmBeats">Ren'Py RhythmBeats!</a></li>
+<li>#mini-game <a href="https://github.com/Wendy-Nam/Renpy-ShootingGamePlugin-FPS">Shooting Game Plugin for Ren'Py (FPS)</a></li>
+<li>#mini-game <a href="https://siyokoy.itch.io/radialcardspreadrenpy">Siyokoy's Radial Card Spread menu</a></li>
+<li>#mini-tool <a href="https://feniksdev.itch.io/color-picker-for-renpy">Color Picker for Ren'Py</a></li>
+<li>#mini-tool <a href="https://github.com/shawna-p/renpy-color-picker">Color Picker</a></li>
+<li>#mini-tool <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=8&amp;t=65755">Drawing a line on a screen</a></li>
+<li>#mini-tool <a href="https://github.com/jsfehler/renpy-radarchart">Radar Chart for Ren'Py</a></li>
+<li>#mini-tool <a href="https://github.com/NyashniyVladya/RenPyDraw">RenPyDraw</a></li>
+<li>#mini-tool <a href="https://github.com/Foxcapades/renpy-color-picker">Ren’Py Color Picker</a></li>
+<li>#notify #audio <a href="https://npckc.itch.io/caption-tool-for-renpy">Caption Tool for Ren’Py</a></li>
+<li>#pronoun #variable <a href="https://npckc.itch.io/pronoun-tool">Pronoun Tool</a></li>
+<li>#pronoun <a href="https://feniksdev.itch.io/in-depth-pronouns-for-renpy">Pronouns</a></li>
+<li>#prop #atm-simulator <a href="https://github.com/cimo95/atm_os">Simulator ATM</a></li>
+<li>#prop #clock-simulator <a href="https://github.com/williamd1k0/renpy-analog-clock">Analog Clock</a></li>
+<li>#prop #clock-simulator <a href="https://badmustard.itch.io/simpo-clock">Simpo Clock</a></li>
+<li>#prop #odometer-simulator <a href="https://patreon.renpy.org/dev-2023-05.html#odometer">Odometer</a></li>
+<li>#shader #blur <a href="https://github.com/renpy/renpy/issues/4442#issuecomment-1470990844">Implementing better blur?</a></li>
+<li>#shader #collect <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=65248">Shader</a></li>
+<li>#shader #fall-leaf <a href="https://github.com/Thediamondcryst/Ren-Py-Free-to-Use-Falling-Leaves">Falling Leaves</a></li>
+<li>#shader #glitch <a href="https://github.com/Gouvernathor/renpy-ChromaGlitch">Chroma Glitch</a></li>
+<li>#simulator #nes <a href="https://github.com/renpytom/nges">Next-Generation Enhancement System</a></li>
+<li>#sprite #auto <a href="https://klast-halc.itch.io/sprite-face-changer">Sprite Face Changer</a></li>
+<li>#sprite #blink <a href="https://feniksdev.itch.io/easy-blinking-for-renpy">Easy Blinking for Ren'Py</a></li>
+<li>#sprite #customizer <a href="https://github.com/Foxcapades/renpy-sprite-customizer">Sprite Customizer</a></li>
+<li>#start-menu #background <a href="https://albireogames.tumblr.com/post/684623598192902144/">Title screen</a></li>
+<li>#subtitle #api <a href="https://patreon.renpy.org/dev-2021-11.html#marquee">Marquee</a></li>
+<li>#syntax #code <a href="https://feniksdev.itch.io/inline-conditions-for-renpy">Inline Conditions for Ren'Py</a></li>
+<li>#template <a href="https://heecawroo.itch.io/4p-template">Multiplayer Adventure Template</a></li>
+<li>#test-tool #test position <a href="https://bobcjunk.itch.io/renpy-position-tester">Position Tester</a></li>
+<li>#tool <a href="https://github.com/Xrisofor/RDAA">RenPy download of additional assets</a></li>
+<li>#tool <a href="https://github.com/UniverseDevel/RPA-Explorer">RPA Explorer</a></li>
+<li>#translate #ai <a href="https://github.com/Moshibit/RenPy_automatic_translations">Automatic Translations</a></li>
+<li>#translate #bilingual <a href="https://github.com/SadCrabCom/community_tl">community_tl</a></li>
+<li>#translate #bilingual <a href="https://github.com/Gouvernathor/renpy-TranslationTools">Translation Tools</a></li>
+<li>#translate #excel <a href="https://github.com/KagariSoft/renxel">Ren’xel</a></li>
+<li>#translate #tutorial <a href="https://mysterycorgi.itch.io/renpy-tips/devlog/74300/implementing-translations">Implementing Translations</a></li>
+<li>#translate <a href="https://github.com/O5-7/renpy_translation_manager">Renpy translation manager</a></li>
+<li>#tutorial #data <a href="https://patreon.renpy.org/save-metadata.html">Save Metadata</a></li>
+<li>#tutorial #data <a href="https://patreon.renpy.org/save-on-quit.html">Save on Quit</a></li>
+<li>#variable #api <a href="https://github.com/Gouvernathor/renpy-PronounsClass">PronounsClass</a></li>
+<li>#variable <a href="https://github.com/lure0xaos/rpycg">RenPy Cheat Generator</a></li>
+<li>#vscode <a href="https://github.com/LuqueDaniel/vscode-language-renpy">Ren'Py Language for Visual Studio Code</a></li>
+<li>#vscode <a href="https://github.com/tiliv/renpy-vscode-template">Ren'Py VSCode Project Template</a></li>
+</ul>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://github.com/renpy/renpy#compiling-the-modules">renpy - Compiling the Modules</a> <a href="#fr-1-1">↩</a></p>
+</li>
+</ol>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../lib/python/virtualenv.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../lib/ruby/_.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../lib/python/virtualenv.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../lib/ruby/_.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

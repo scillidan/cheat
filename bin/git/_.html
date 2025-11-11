@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>git - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/bin/git/_.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="git"><a class="header" href="#git"><a href="https://git-scm.com/">git</a></a></h1>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<pre><code class="language-sh"># Arch
+sudo pacman -S git
+# Windows 10
+scoop install git
+</code></pre>
+<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
+<pre><code class="language-sh"># Linux
+git config --global core.autocrlf input
+# Windows
+git config --global core.autocrlf true
+</code></pre>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<h3 id="config"><a class="header" href="#config">config</a></h3>
+<pre><code class="language-sh">git config --global user.email "user@email.com"
+git config --global user.name "username"
+</code></pre>
+<h3 id="init"><a class="header" href="#init">Init</a></h3>
+<pre><code class="language-sh">git init
+git remote add origin https://github.com/&lt;user&gt;/&lt;repo&gt;
+git branch -M main
+</code></pre>
+<h3 id="push"><a class="header" href="#push">Push</a></h3>
+<pre><code class="language-sh"># git diff
+git add &lt;file1&gt; &lt;dir1&gt; &lt;dir2&gt;
+# git status
+git commit -m "&lt;commit_info&gt;"
+# git push -u origin main
+git push
+</code></pre>
+<h3 id="pull"><a class="header" href="#pull">Pull</a></h3>
+<pre><code class="language-sh"># git pull origin main
+git pull
+</code></pre>
+<h3 id="push-tag"><a class="header" href="#push-tag">Push tag</a></h3>
+<pre><code class="language-sh"># git tag -d v0.0.1
+# git push --delete origin v0.0.1
+git tag v0.0.1
+git push origin v0.0.1
+</code></pre>
+<h3 id="other"><a class="header" href="#other">Other</a></h3>
+<pre><code class="language-sh">git config --global http.proxy "socks5://127.0.0.1:&lt;port&gt;"
+git config --global --unset http.proxy
+</code></pre>
+<pre><code class="language-sh">git config --global http.sslVerify true
+git config --global http.sslVerify false
+</code></pre>
+<pre><code class="language-sh"># Undo and re-push
+git fetch --all
+git reset --hard &lt;commit-hash&gt;
+# git reset --hard HEAD~1
+git push --force origin &lt;branch&gt;
+</code></pre>
+<pre><code class="language-sh"># Rebase the above 3 commit
+git rebase -i HEAD~3
+</code></pre>
+<pre><code>pick &lt;the first commit&gt;
+squash &lt;will merge into first commit&gt;
+squash &lt;will merge into first commit&gt;
+</code></pre>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#blog <a href="https://blog.brachiosoft.com/en/posts/git/">A Git story: Not so fun this time</a></li>
+<li>#blog <a href="https://cadence.moe/blog/2022-07-03-git-forge-opinions-github-gitlab-gitea-sourcehut">Git forge opinions: GitHub, GitLab, Gitea, Sourcehut</a></li>
+<li>#guide <a href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository">Adding a license to a repository</a></li>
+<li>#guide <a href="https://github.com/linrongbin16/fzfx.nvim?tab=readme-ov-file#git-for-windows">Git for Windows</a></li>
+<li>#lesson <a href="https://www.conventionalcommits.org">Conventional Commits</a></li>
+<li>#lesson <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a></li>
+<li>#lesson <a href="https://semver.org">Semantic Versioning</a></li>
+<li>#post <a href="https://github.com/MarcDiethelm/contributing">Contributing</a></li>
+<li>#post <a href="https://sfconservancy.org/blog/2021/jun/30/who-should-own-foss-copyrights/">It Matters Who Owns Your Copylefted Copyrights</a></li>
+</ul>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li>#Arch <a href="/bin/git/forgit.html">forgit.md</a></li>
+<li><a href="/bin/git/git-crypt.html">git-crypt.md</a></li>
+<li><a href="/bin/git/git-sync.html">git-sync.md</a></li>
+<li><a href="/bin/git/gitleaks.html">gitleaks.md</a></li>
+<li><a href="/bin/git/lazygit.html">lazygit.md</a></li>
+<li><a href="/bin/git/multi-git-status.html">multi-git-status.md</a></li>
+</ul>
+<h3 id="extra"><a class="header" href="#extra">extra</a></h3>
+<ul>
+<li><a href="/bin/git/gptcommit.html">gptcommit.md</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li><a href="/bin/git/cz-cli.html">cz-cli.md</a></li>
+<li><a href="/bin/git/git-branchless.html">git-branchless.md</a></li>
+<li><a href="/bin/git/git-cliff.html">git-cliff.md</a></li>
+<li><a href="/bin/git/git-filter-repo.html">git-filter-repo.md</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark-1"><a class="header" href="#mark-1">mark</a></h3>
+<ul>
+<li>#Windows <a href="https://github.com/git-for-windows/git">Git for Windows</a></li>
+<li><a href="https://github.com/github/git-sizer">git-sizer</a></li>
+<li><a href="https://github.com/tadashi-aikawa/gowl">gowl</a></li>
+<li><a href="https://github.com/Bhupesh-V/ugit">ugit</a></li>
+</ul>
+<h3 id="cache-1"><a class="header" href="#cache-1">cache</a></h3>
+<ul>
+<li><a href="https://github.com/chriswalz/bit">bit</a></li>
+<li><a href="https://github.com/commitizen-tools/commitizen">commitizen</a></li>
+<li><a href="https://github.com/Zhengqbbb/cz-git">cz-git</a></li>
+<li><a href="https://github.com/Rich-Harris/degit">degit</a></li>
+<li><a href="https://github.com/TheYkk/git-switcher">Git Profile Switcher</a></li>
+<li><a href="https://github.com/MichaelMure/git-bug">git-bug</a></li>
+<li><a href="https://github.com/jevakallio/git-notify">git-notify</a></li>
+<li><a href="https://github.com/paulirish/git-open">git-open</a></li>
+<li><a href="https://github.com/paulirish/git-recent">git-recent</a></li>
+<li><a href="https://github.com/amitsaha/gitbackup">gitbackup</a></li>
+<li><a href="https://github.com/extrawurst/gitui">GitUI</a></li>
+<li><a href="https://github.com/jj-vcs/jj">jj</a></li>
+<li><a href="https://mercurial-scm.org">Mercurial</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../bin/_windows/scoop/scoop-search.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../bin/git/cz-cli.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../bin/_windows/scoop/scoop-search.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../bin/git/cz-cli.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>neovim - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/bin/neovim/_.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="neovim"><a class="header" href="#neovim"><a href="https://neovim.io">Neovim</a></a></h1>
+<blockquote>
+<p>Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. [neovim.io]</p>
+</blockquote>
+<blockquote>
+<p>Neovim是一个基于Vim的文本编辑器，旨在提高可扩展性和可用性，以鼓励新的应用程序和贡献。 [neovim.io]</p>
+</blockquote>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<pre><code class="language-sh"># Arch
+sudo pacman -S neovim
+# Windows 10
+scoop insatll neovim
+</code></pre>
+<h3 id="build-from-source"><a class="header" href="#build-from-source">Build from source</a></h3>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup> <sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup> <sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">3</a></sup></p>
+<pre><code class="language-sh"># Ubuntu 22 ARM
+sudo apt-get install ninja-build gettext cmake unzip curl
+</code></pre>
+<ol>
+<li>Get <code>Source code</code> from <a href="https://github.com/neovim/neovim/releases">Neovim - Releases</a>.</li>
+<li>Decompress it to <code>neovim/</code>.</li>
+</ol>
+<pre><code class="language-sh">cd neovim
+# rm -r build
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+make install
+ln -s ~/neovim/bin/nvim ~/.local/bin/
+# rm -rf ~/.local/share/nvim/lazy/
+nvim
+</code></pre>
+<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
+<pre><code class="language-sh"># Arch
+sudo pacman -S \
+	ffmpegthumbnailer
+yay -S --noconfirm \
+	pdftoppm \
+	epub-thumbnailer-git \
+	wordnet-common
+mkdir -p ~/.config/nvim/dictionary
+wget ~/.config/nvim/dictionary/word.txt https://raw.githubusercontent.com/dwyl/english-words/refs/heads/master/words.txt
+</code></pre>
+<pre><code class="language-sh"># Windows 10
+set "NEOVIM_CONFIG=%LOCALAPPDATA%\nvim"
+# set "NEOVIM_DATA=%LOCALAPPDATA%\nvim-data"
+del "%NEOVIM_CONFIG%\cheatsheet.txt"
+del "%NEOVIM_CONFIG%\init.lua"
+rmdir /S /Q "%NEOVIM_CONFIG%\lua"
+mklink "%NEOVIM_CONFIG%\cheatsheet.txt" "%DOTFILES_DIR%\.config\nvim\cheatsheet.txt"
+mklink "%NEOVIM_CONFIG%\init.lua" "%DOTFILES_DIR%\.config\nvim\init.lua"
+mklink /J "%NEOVIM_CONFIG%\lua" "%DOTFILES_DIR%\.config\nvim\lua"
+</code></pre>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
+<h3 id="configure-lsp"><a class="header" href="#configure-lsp">Configure LSP</a></h3>
+<ul>
+<li><a href="https://linovox.com/configuring-language-server-protocol-lsp-in-neovim/">Configuring Language Server Protocol (LSP) in Neovim</a></li>
+<li><a href="https://www.bilibili.com/video/BV1iG7rzTEaz">neovim的LSP配置这一块</a></li>
+</ul>
+<h3 id="configure-cmp"><a class="header" href="#configure-cmp">Configure CMP</a></h3>
+<ul>
+<li><a href="https://linovox.com/install-and-use-nvim-cmp/">How to Install and Use nvim cmp Autocompletion</a></li>
+<li><a href="https://www.jonashietala.se/blog/2024/05/26/autocomplete_with_nvim-cmp/">Autocomplete with nvim-cmp</a></li>
+</ul>
+<h2 id="neovim-headless-service"><a class="header" href="#neovim-headless-service">Neovim headless service</a></h2>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
+<p>Not recommended. I suspect it once kill my RPI-5's os.</p>
+</div>
+</div>
+<p>On Ubuntu 24 ARM:</p>
+<pre><code class="language-sh">vim ~/.config/systemd/user/nvim-headless.service
+</code></pre>
+<pre><code>[Unit]
+Description=Start Neovim Headless Server
+
+[Service]
+ExecStart=nvim --headless --listen 0.0.0.0:1234
+Restart=on-failure
+User=&lt;username&gt;
+
+[Install]
+WantedBy=default.target
+</code></pre>
+<pre><code class="language-sh">systemctl --user daemon-reload
+systemctl --user enable --now nvim-headless
+</code></pre>
+<p>On Windows10:</p>
+<pre><code class="language-sh">C:\Users\User\Scoop\apps\git\current\usr\bin\ssh.exe &lt;username&gt;@&lt;your_host&gt; -L 1234:0.0.0.0:1234 -- /home/&lt;your_host&gt;/.local/bin/nvim --headless --listen 0.0.0.0:1234
+neovide --server &lt;your_host&gt;:1234
+</code></pre>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#blog <a href="https://jdhao.github.io/2018/11/15/neovim_configuration_windows/">Neovim configuration on Windows 10</a></li>
+<li>#document <a href="https://neovim.io/doc/user/lua-guide.html">Neovim - Guide to using Lua in Nvim</a></li>
+<li>#post <a href="https://github.com/LunarWatcher/auto-pairs#nvim-warning">Nvim warning</a></li>
+<li>#post <a href="https://www.reddit.com/r/vim/comments/16cdbyd/why_you_switched_from_neovim_to_vim/">Why you switched from Neovim to Vim?</a></li>
+<li>#sheet <a href="https://paulgorman.org/technical/vim.html">Paul Gorman's Vim Cheatsheet</a></li>
+<li>#video <a href="https://www.bilibili.com/video/BV1ohWqeSETr">优化neovim启动速度</a></li>
+<li>#video <a href="https://www.bilibili.com/video/BV1UHWoetEz3">重写neovim配置，新的开始</a></li>
+<li><a href="https://ctan.org/tex-archive/macros/latex/contrib/gitinfo2">Copy all the lines to clipboard</a></li>
+<li><a href="https://vi.stackexchange.com/questions/36426/how-do-i-change-my-language-in-my-init-lua-neovim">How do I change my language in my init.lua? - neovim</a></li>
+<li><a href="https://vi.stackexchange.com/questions/16386/how-to-use-wsls-bash-shell-as-default-terminal-of-gvim-windows-10">How to use WSL's bash shell as default terminal of gvim/windows 10?</a></li>
+<li><a href="https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/">Only just discovered 'set signcolumn=number', I like it</a></li>
+<li><a href="https://unix.stackexchange.com/questions/11402/why-does-esc-move-the-cursor-back-in-vim">Why does <code>ESC</code> move the cursor back in vim?</a></li>
+</ul>
+<h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
+<h3 id="mark"><a class="header" href="#mark">mark</a></h3>
+<ul>
+<li><a href="bin/neovim/blink-cmp.html">blink-cmp.md</a></li>
+<li><a href="bin/neovim/lazy-nvim.html">lazy-nvim.md</a></li>
+<li><a href="bin/neovim/luasnip.html">luasnip.md</a></li>
+<li><a href="bin/neovim/mason-nvim.html">mason-nvim.md</a></li>
+<li><a href="bin/neovim/nvim-treesitter.html">nvim-treesitter.md</a></li>
+<li><a href="bin/neovim/telescope-nvim.html">telescope-nvim.md</a></li>
+<li><a href="/bin/neovim/vanta-nvim.html">vanta-nvim.md</a></li>
+</ul>
+<h3 id="extra"><a class="header" href="#extra">extra</a></h3>
+<ul>
+<li><a href="bin/neovim/godotdev-nvim.html">godotdev-nvim.md</a></li>
+<li><a href="bin/neovim/nvim-dap.html">nvim-dap.md</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li><a href="bin/neovim/cmp-lsp-rimels.html">cmp-lsp-rimels.md</a></li>
+<li><a href="bin/neovim/obsidian-nvim.html">obsidian-nvim.md</a></li>
+<li><a href="bin/neovim/packer-nvim.html">packer-nvim.md</a></li>
+<li><a href="/bin/neovim/lunarvim.html">lunarvim.md</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="mark-1"><a class="header" href="#mark-1">mark</a></h3>
+<ul>
+<li>#cheatsheet <a href="https://github.com/saxon1964/neovim-tips">Neovim Tips Plugin</a></li>
+<li>#console <a href="https://github.com/akinsho/toggleterm.nvim">toggleterm.nvim</a></li>
+<li>#debug <a href="https://github.com/folke/trouble.nvim">Trouble</a></li>
+<li>#deveplop <a href="https://github.com/S1M0N38/love2d.nvim">LÖVE 2D</a></li>
+<li>#document <a href="https://github.com/maskudo/devdocs.nvim">devdocs.nvim</a></li>
+<li>#edit #bookmark <a href="https://github.com/otavioschwanck/arrow.nvim">arrow.nvim</a></li>
+<li>#edit #bookmark <a href="https://github.com/crusj/bookmarks.nvim">bookmarks.nvim</a></li>
+<li>#edit #escape <a href="https://github.com/TheBlob42/houdini.nvim">Houdini</a></li>
+<li>#edit #fold <a href="https://github.com/chrisgrieser/nvim-origami">nvim-origami</a></li>
+<li>#edit #move <a href="https://github.com/kobbikobb/move-lines.nvim">move-lines.nvim</a></li>
+<li>#edit #navigate <a href="https://github.com/DanilaMihailov/beacon.nvim">Beacon.nvim</a></li>
+<li>#edit #navigate <a href="https://github.com/DNLHC/glance.nvim">Glance</a></li>
+<li>#edit #navigate <a href="https://github.com/rmagatti/goto-preview">Goto Preview</a></li>
+<li>#edit #replace <a href="https://github.com/MagicDuck/grug-far.nvim">grug-far.nvim</a></li>
+<li>#edit #table <a href="https://github.com/hat0uma/csvview.nvim">csvview.nvim</a></li>
+<li>#edit #view <a href="https://github.com/rewhile/fsread.nvim">fsread.nvim</a></li>
+<li>#edit #view <a href="https://github.com/rachartier/tiny-glimmer.nvim">tiny-glimmer.nvim</a></li>
+<li>#edit #view <a href="https://github.com/folke/twilight.nvim">Twilight</a></li>
+<li>#edit #yank <a href="https://github.com/AckslD/nvim-neoclip.lua">nvim-neoclip.lua</a></li>
+<li>#edit <a href="https://github.com/Pocco81/auto-save.nvim">auto-save.nvim</a></li>
+<li>#edit <a href="https://github.com/folke/flash.nvim">flash.nvim</a></li>
+<li>#edit <a href="https://github.com/vodchella/hodur.nvim">Hodur</a></li>
+<li>#edit <a href="https://github.com/brenton-leighton/multiple-cursors.nvim">multiple-cursors.nvim</a></li>
+<li>#edit <a href="https://github.com/windwp/nvim-autopairs">nvim-autopairs</a></li>
+<li>#edit <a href="https://github.com/leath-dub/snipe.nvim">Snipe.nvim</a></li>
+<li>#edit <a href="https://github.com/abecodes/tabout.nvim">tabout.nvim</a></li>
+<li>#edit <a href="https://github.com/y3owk1n/time-machine.nvim">time-machine.nvim</a></li>
+<li>#edit <a href="https://github.com/mtrajano/tssorter.nvim">tssorter.nvim</a></li>
+<li>#epub <a href="https://github.com/CrystalDime/epub.nvim">epub.nvim</a></li>
+<li>#explorer <a href="https://github.com/mikavilpas/yazi.nvim">A Neovim Plugin for yazi</a></li>
+<li>#explorer <a href="https://github.com/refractalize/oil-git-status.nvim">oil-git-status</a></li>
+<li>#explorer <a href="https://github.com/stevearc/oil.nvim">oil.nvim</a></li>
+<li>#font <a href="https://github.com/khaledhosny/ots">OpenType Sanitizer</a></li>
+<li>#formatter <a href="https://github.com/stevearc/conform.nvim">conform.nvim</a></li>
+<li>#git <a href="https://github.com/lewis6991/gitsigns.nvim">gitsigns.nvim</a></li>
+<li>#help <a href="https://github.com/Djancyp/cheat-sheet">Nvim Cheat Sheet</a></li>
+<li>#highlight <a href="https://github.com/catgoose/nvim-colorizer.lua">colorizer.lua</a></li>
+<li>#highlight <a href="https://github.com/fei6409/log-highlight.nvim">log-highlight.nvim</a></li>
+<li>#key <a href="https://github.com/folke/which-key.nvim">Which Key</a></li>
+<li>#latex <a href="https://github.com/Aidavdw/bibcite.nvim">bibcite.nvim</a></li>
+<li>#learn <a href="https://github.com/m4xshen/hardtime.nvim">hardtime.nvim</a></li>
+<li>#lsp #linter <a href="https://github.com/mfussenegger/nvim-lint">nvim-lint</a></li>
+<li>#lsp #server <a href="https://github.com/junnplus/lsp-setup.nvim">lsp-setup.nvim</a></li>
+<li>#lsp #type <a href="https://github.com/justinsgithub/wezterm-types">wezterm-types</a></li>
+<li>#lsp <a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig</a></li>
+<li>#lsp <a href="https://github.com/SmiteshP/nvim-navic">nvim-navic</a></li>
+<li>#markdown <a href="https://github.com/Nedra1998/nvim-mdlink">nvim-mdlink</a></li>
+<li>#markdown <a href="https://github.com/richardbizik/nvim-toc">nvim-toc</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.align">mini.align</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.comment">mini.comment</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.cursorword">mini.cursorword</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.diff">mini.diff</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini-git">mini.git</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.icons">mini.icons</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.move">mini.move</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.splitjoin">mini.splitjoin</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.statusline">mini.statusline</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.surround">mini.surround</a></li>
+<li>#mini <a href="https://github.com/echasnovski/mini.trailspace">mini.trailspace</a></li>
+<li>#other #dictionary <a href="https://github.com/Nealium/dict-popup.nvim">dict-popup.nvim</a></li>
+<li>#other #dictionary <a href="https://github.com/carlinigraphy/dictd.nvim">dictd.nvim</a></li>
+<li>#other #translate <a href="https://github.com/echuraev/translate-shell.vim">translate-shell.vim</a></li>
+<li>#other #translate <a href="https://github.com/uga-rosa/translate.nvim">translate.nvim</a></li>
+<li>#other <a href="https://github.com/neo451/feed.nvim">feed.nvim</a></li>
+<li>#other <a href="https://github.com/whleucka/reverb.nvim">reverb.nvim</a></li>
+<li>#project <a href="https://github.com/coffebar/neovim-project">Neovim project manager plugin</a></li>
+<li>#project <a href="https://github.com/y3owk1n/warp.nvim">warp.nvim</a></li>
+<li>#qol #config <a href="https://github.com/folke/neoconf.nvim">neoconf.nvim</a></li>
+<li>#qol #session <a href="https://github.com/rmagatti/auto-session">auto-session</a></li>
+<li>#qol <a href="https://github.com/jghauser/mkdir.nvim">mkdir.nvim</a></li>
+<li>#qol <a href="https://github.com/folke/snacks.nvim">snacks.nvim</a></li>
+<li>#setup <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a></li>
+<li>#setup <a href="https://github.com/folke/lazydev.nvim">lazydev.nvim</a></li>
+<li>#snips <a href="https://github.com/rafamadriz/friendly-snippets">Friendly Snippets</a></li>
+<li>#snips <a href="https://github.com/L3MON4D3/LuaSnip">LuaSnip</a></li>
+<li>#theme <a href="https://github.com/EdenEast/nightfox.nvim">Nightfox</a></li>
+<li>#theme <a href="https://github.com/nishu-murmu/ThemeSwitch.nvim">ThemeSwitch</a></li>
+<li>#tmux <a href="https://github.com/connordeckers/tmux-navigator.nvim">tmux-navigator.nvim</a></li>
+<li>#ui <a href="https://github.com/nvim-tree/nvim-web-devicons">nvim-web-devicons</a></li>
+<li>#ui <a href="https://github.com/lewis6991/satellite.nvim">satellite.nvim</a></li>
+<li>#window <a href="https://github.com/moyiz/git-dev.nvim">git-dev.nvim</a></li>
+<li>#window <a href="https://github.com/TaDaa/vimade">Vimade</a></li>
+<li>#window <a href="https://github.com/sindrets/winshift.nvim">WinShift.nvim</a></li>
+<li>#workspace <a href="https://github.com/natecraddock/workspaces.nvim">workspaces.nvim</a></li>
+</ul>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li>#buffer <a href="https://github.com/ahkohd/buffer-sticks.nvim">buffer-sticks.nvim</a></li>
+<li>#learn <a href="https://github.com/timseriakov/spamguard.nvim">spamguard.nvim</a></li>
+<li>#git <a href="https://github.com/yus-works/csc.nvim">csc.nvim</a></li>
+<li><a href="https://github.com/ellisonleao/carbon-now.nvim">carbon-now.nvim</a></li>
+<li><a href="https://github.com/Saghen/filler-begone.nvim">filler-begone.nvim</a></li>
+<li><a href="https://github.com/markgandolfo/lightswitch.nvim">LightSwitch.nvim</a></li>
+</ul>
+<h3 id="cache-1"><a class="header" href="#cache-1">cache</a></h3>
+<ul>
+<li>#bookmark <a href="https://github.com/heilgar/bookmarks.nvim">bookmarks.nvim</a></li>
+<li>#buffer <a href="https://github.com/akinsho/bufferline.nvim">bufferline.nvim</a></li>
+<li>#buffer <a href="https://github.com/francescarpi/buffon.nvim">Buffon</a></li>
+<li>#buffer <a href="https://github.com/manugoyal/githubify">Githubify</a></li>
+<li>#buffer <a href="https://github.com/shortcuts/no-neck-pain.nvim">no-neck-pain.nvim</a></li>
+<li>#cmp <a href="https://github.com/brianaung/compl.nvim">compl.nvim</a></li>
+<li>#cmp <a href="https://github.com/ssstba/ecolog.nvim">ecolog.nvim</a></li>
+<li>#cmp <a href="https://github.com/hrsh7th/nvim-cmp">nvim-cmp</a></li>
+<li>#cmp <a href="https://github.com/kristijanhusak/vim-dadbod-completion">vim-dadbod-completion</a></li>
+<li>#comment <a href="https://github.com/numToStr/Comment.nvim">Comment.nvim</a></li>
+<li>#comment <a href="https://github.com/folke/ts-comments.nvim">ts-comments.nvim</a></li>
+<li>#comment <a href="https://github.com/wangfanstar/vim-hidecomments">vim-hidecomments</a></li>
+<li>#config <a href="https://github.com/WhiteBlackGoose/nvim-latex-preconfig">Neovim minimal LaTeX configuration</a></li>
+<li>#console <a href="https://github.com/CRAG666/betterTerm.nvim">Better Term</a></li>
+<li>#console <a href="https://github.com/YaroSpace/lua-console.nvim">Lua console</a></li>
+<li>#console <a href="https://github.com/karshPrime/tmux-compile.nvim">tmux-compile.nvim</a></li>
+<li>#console <a href="https://github.com/Veirt/trun.nvim">trun.nvim</a></li>
+<li>#database <a href="https://github.com/Kurren123/mssql.nvim">mssql.nvim</a></li>
+<li>#database <a href="https://github.com/zongben/dbout.nvim">Dbout.nvim</a></li>
+<li>#debug <a href="https://github.com/sakhnik/nvim-gdb">GDB for neovim</a></li>
+<li>#deveplop <a href="https://github.com/kosekidev/build-script">BuildScript Plugin</a></li>
+<li>#deveplop <a href="https://github.com/linrongbin16/commons.nvim">commons.nvim</a></li>
+<li>#deveplop <a href="https://github.com/robertazzopardi/depsync.nvim">DepSync</a></li>
+<li>#deveplop <a href="https://github.com/polirritmico/lazy-local-patcher.nvim">Lazy local patcher</a></li>
+<li>#deveplop <a href="https://github.com/abidibo/nvim-httpyac">Neovim HttpYac</a></li>
+<li>#deveplop <a href="https://github.com/jsongerber/nvim-px-to-rem">nvim-px-to-rem</a></li>
+<li>#deveplop <a href="https://github.com/pysan3/pathlib.nvim">pathlib.nvim</a></li>
+<li>#deveplop <a href="https://github.com/MeanderingProgrammer/py-requirements.nvim">py-requirements.nvim</a></li>
+<li>#deveplop <a href="https://github.com/AckslD/swenv.nvim">swenv.nvim</a></li>
+<li>#deveplop <a href="https://github.com/dheerajshenoy/templatory.nvim">templatory.nvim</a></li>
+<li>#docset <a href="https://github.com/sei40kr/dash-docs.nvim">dash-docs.nvim</a></li>
+<li>#docset <a href="https://github.com/Sanix-Darker/zeal-lynx-cli">zeal-lynx-cli</a></li>
+<li>#document <a href="https://github.com/KabbAmine/zeavim.vim">Zeavim</a></li>
+<li>#edit #bookmark <a href="https://github.com/yuriescl/minimal-bookmarks.nvim">A minimal bookmarks plugin for Neovim</a></li>
+<li>#edit #bookmark <a href="https://github.com/walkersumida/fusen.nvim">fusen.nvim</a></li>
+<li>#edit #bookmark <a href="https://github.com/tristone13th/lspmark.nvim">Lspmark.nvim</a></li>
+<li>#edit #bookmark <a href="https://github.com/jameswolensky/marker-groups.nvim">marker-groups.nvim</a></li>
+<li>#edit #bookmark <a href="https://github.com/EvWilson/spelunk.nvim">spelunk.nvim</a></li>
+<li>#edit #comment <a href="https://github.com/javiorfo/nvim-hemingway">nvim-hemingway</a></li>
+<li>#edit #csv <a href="https://github.com/emmanueltouzery/decisive.nvim">Decisive.nvim</a></li>
+<li>#edit #fold <a href="https://github.com/OXY2DEV/foldtext.nvim">foldtext.nvim</a></li>
+<li>#edit #fold <a href="https://github.com/kevinhwang91/nvim-ufo">nvim-ufo</a></li>
+<li>#edit #ime <a href="https://github.com/wasden/cmp-flypy.nvim">cmp-flypy.nvim</a></li>
+<li>#edit #ime <a href="https://github.com/tonyfettes/fcitx5.nvim">fcitx5.nvim</a></li>
+<li>#edit #ime <a href="https://github.com/uga-rosa/jam.nvim">jam.nvim</a></li>
+<li>#edit #license <a href="https://github.com/attilarepka/header.nvim">header.nvim</a></li>
+<li>#edit #mode <a href="https://github.com/Pocco81/true-zen.nvim">true-zen.nvim</a></li>
+<li>#edit #mode <a href="https://github.com/folke/zen-mode.nvim">zen-mode.nvim</a></li>
+<li>#edit #move <a href="https://github.com/aaronik/Treewalker.nvim">Treewalker.nvim</a></li>
+<li>#edit #wrap <a href="https://git.foosoft.net/alex/vim-argwrap">Vim-ArgWrap</a></li>
+<li>#edit <a href="https://github.com/jokesper/align.nvim">align.nvim</a></li>
+<li>#edit <a href="https://github.com/petersid2022/clippy.nvim">clippy.nvim</a></li>
+<li>#edit <a href="https://github.com/gregorias/coerce.nvim">Coerce</a></li>
+<li>#edit <a href="https://github.com/soemre/commentless.nvim">commentless.nvim</a></li>
+<li>#edit <a href="https://github.com/monaqa/dial.nvim">dial.nvim</a></li>
+<li>#edit <a href="https://github.com/ronisbr/emojify.nvim">Emojify.nvim</a></li>
+<li>#edit <a href="https://github.com/wsdjeg/format.nvim">format.nvim</a></li>
+<li>#edit <a href="https://github.com/mityu/vim-gyoza">gyoza.vim</a></li>
+<li>#edit <a href="https://github.com/drop-stones/im-switch.nvim">im-switch.nvim</a></li>
+<li>#edit <a href="https://github.com/hakonharnes/img-clip.nvim">img-clip.nvim</a></li>
+<li>#edit <a href="https://github.com/ysmb-wtsg/in-and-out.nvim">in-and-out.nvim</a></li>
+<li>#edit <a href="https://github.com/tanloong/interlaced.nvim">interlaced.nvim</a></li>
+<li>#edit <a href="https://github.com/jakeru/join.nvim">join.nvim</a></li>
+<li>#edit <a href="https://github.com/homerours/jumper.nvim">jumper.nvim</a></li>
+<li>#edit <a href="https://github.com/rlychrisg/keepcursor.nvim">keepcursor.nvim</a></li>
+<li>#edit <a href="https://github.com/ggandor/leap.nvim">leap.nvim</a></li>
+<li>#edit <a href="https://github.com/smoka7/multicursors.nvim">Multicursors.nvim</a></li>
+<li>#edit <a href="https://github.com/bassamsdata/namu.nvim">namu.nvim</a></li>
+<li>#edit <a href="https://github.com/you-n-g/navigate-note.nvim">navigate-note.nvim</a></li>
+<li>#edit <a href="https://github.com/zongben/navimark.nvim">navimark.nvim</a></li>
+<li>#edit <a href="https://github.com/karb94/neoscroll.nvim">Neoscroll</a></li>
+<li>#edit <a href="https://github.com/wallpants/ghost-text.nvim">Neovim GhostText</a></li>
+<li>#edit <a href="https://github.com/nacro90/numb.nvim">numb.nvim</a></li>
+<li>#edit <a href="https://github.com/kylechui/nvim-surround">nvim-surround</a></li>
+<li>#edit <a href="https://github.com/josephburgess/nvumi">nvumi</a></li>
+<li>#edit <a href="https://github.com/mistgc/pinmd.nvim">Pinmd</a></li>
+<li>#edit <a href="https://github.com/romus204/referencer.nvim">referencer.nvim</a></li>
+<li>#edit <a href="https://github.com/mawkler/refjump.nvim">Refjump</a></li>
+<li>#edit <a href="https://github.com/vladdoster/remember.nvim">remember.nvim</a></li>
+<li>#edit <a href="https://github.com/chrisgrieser/nvim-rip-substitute">rip-substitute</a></li>
+<li>#edit <a href="https://github.com/wassimk/scalpel.nvim">scalpel.nvim</a></li>
+<li>#edit <a href="https://github.com/gen740/SmoothCursor.nvim">Smooth Cursor</a></li>
+<li>#edit <a href="https://github.com/sQVe/sort.nvim">sort.nvim</a></li>
+<li>#edit <a href="https://github.com/Kolkhis/streamer-mode.nvim">Streamer Mode</a></li>
+<li>#edit <a href="https://github.com/Grafcube/suedit.nvim">SuEdit</a></li>
+<li>#edit <a href="https://github.com/tigion/swap.nvim">swap.nvim</a></li>
+<li>#edit <a href="https://github.com/johmsalas/text-case.nvim">text-case.nvim</a></li>
+<li>#edit <a href="https://github.com/rlychrisg/truncateline.nvim">truncateline.nvim</a></li>
+<li>#edit <a href="https://github.com/machakann/vim-sandwich">vim-sandwich</a></li>
+<li>#edit <a href="https://github.com/kopsha/vim-saver">VimSaver</a></li>
+<li>#edit <a href="https://github.com/wurli/visimatch.nvim">visimatch.nvim</a></li>
+<li>#explorer <a href="https://github.com/dhruvmanila/browser-bookmarks.nvim">browser-bookmarks.nvim</a></li>
+<li>#explorer <a href="https://github.com/wincent/command-t">Command-T</a></li>
+<li>#explorer <a href="https://github.com/X3eRo0/dired.nvim">dired.nvim</a></li>
+<li>#explorer <a href="https://github.com/is0n/fm-nvim">fm-nvim</a></li>
+<li>#explorer <a href="https://github.com/A7Lavinraj/fyler.nvim">Fyler.nvim</a></li>
+<li>#explorer <a href="https://github.com/cbochs/grapple.nvim">Grapple.nvim</a></li>
+<li>#explorer <a href="https://github.com/nvim-neo-tree/neo-tree.nvim">Neo-tree.nvim</a></li>
+<li>#explorer <a href="https://github.com/prichrd/netrw.nvim">netrw.nvim</a></li>
+<li>#explorer <a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree.lua</a></li>
+<li>#explorer <a href="https://github.com/tyru/open-browser.vim">open-browser.vim</a></li>
+<li>#explorer <a href="https://github.com/kelly-lin/ranger.nvim">ranger.nvim</a></li>
+<li>#explorer <a href="https://github.com/kevinhwang91/rnvimr">Rnvimr</a></li>
+<li>#explorer <a href="https://github.com/sidebar-nvim/sidebar.nvim">sidebar.nvim</a></li>
+<li>#explorer <a href="https://github.com/simonmclean/triptych.nvim">Triptych.nvim</a></li>
+<li>#explorer <a href="https://github.com/obaland/vfiler.vim">vfiler.vim</a></li>
+<li>#explorer <a href="https://github.com/brglng/vim-sidebar-manager">vim-sidebar-manager</a></li>
+<li>#font <a href="https://github.com/awesometoolbox/otf2ttf">otf2ttf</a></li>
+<li>#formatter <a href="https://github.com/ckipp01/stylua-nvim">stylua-nvim</a></li>
+<li>#git #commit <a href="https://github.com/404pilo/aicommits.nvim">aicommits.nvim</a></li>
+<li>#git #diff <a href="https://github.com/axkirillov/unified.nvim">axkirillov/unified.nvim</a></li>
+<li>#git #issue <a href="https://github.com/pwntester/octo.nvim">Octo.nvim</a></li>
+<li>#git #issue <a href="https://github.com/cd-4/git-needy.nvim">Git Needy</a></li>
+<li>#git <a href="https://github.com/pv-hernandez/conflict-juggler.nvim">conflict-juggler.nvim</a></li>
+<li>#git <a href="https://github.com/sindrets/diffview.nvim">Diffview.nvim</a></li>
+<li>#git <a href="https://github.com/ring0-rootkit/gitblame.nvim">gitblame.nvim</a></li>
+<li>#git <a href="https://github.com/yujinyuz/gitpad.nvim">gitpad.nvim</a></li>
+<li>#git <a href="https://github.com/kdheepak/lazygit.nvim">lazygit.nvim</a></li>
+<li>#git <a href="https://github.com/LhKipp/nvim-git-fixer">nvim-git-fixer</a></li>
+<li>#gui <a href="https://github.com/akiyosi/goneovim">Goneovim</a></li>
+<li>#gui <a href="https://github.com/lalbornoz/roarie-commands.vim">roarie-commands</a></li>
+<li>#highlight <a href="https://github.com/xzbdmw/colorful-menu.nvim">colorful-menu.nvim</a></li>
+<li>#highlight <a href="https://github.com/mawkler/modicator.nvim">Modicator.nvim</a></li>
+<li>#highlight <a href="https://github.com/fmbarina/multicolumn.nvim">multicolumn.nvim</a></li>
+<li>#highlight <a href="https://github.com/ecthelionvi/NeoColumn.nvim">NeoColumn.nvim</a></li>
+<li>#highlight <a href="https://github.com/ya2s/nvim-cursorline">nvim-cursorline</a></li>
+<li>#highlight <a href="https://github.com/folke/paint.nvim">Paint</a></li>
+<li>#highlight <a href="https://gitlab.com/HiPhish/rainbow-delimiters.nvim">Rainbow delimiters for Neovim</a></li>
+<li>#highlight <a href="https://github.com/sontungexpt/stcursorword">STCursorword</a></li>
+<li>#highlight <a href="https://github.com/ukyouz/syntax-highlighted-cursor.nvim">Syntax Highlighted Cursor</a></li>
+<li>#highlight <a href="https://github.com/johnfrankmorgan/whitespace.nvim">whitespace.nvim</a></li>
+<li>#history <a href="https://github.com/gaborvecsei/memento.nvim">Memento.nvim</a></li>
+<li>#ime <a href="https://github.com/Freed-Wu/rime.nvim">rime.nvim</a></li>
+<li>#key <a href="https://github.com/FeiyouG/commander.nvim">commander.nvim</a></li>
+<li>#key <a href="https://github.com/gmatheu/keymap-stats.nvim">keymap-stats.nvim</a></li>
+<li>#key <a href="https://github.com/mrjones2014/legendary.nvim">legendary.nvim</a></li>
+<li>#key <a href="https://github.com/gregorias/nvim-mapper">Mapper</a></li>
+<li>#latex <a href="https://github.com/barreiroleo/ltex_extra.nvim">LTeX_extra.nvim</a></li>
+<li>#latex <a href="https://github.com/evesdropper/luasnip-latex-snippets.nvim">LuaSnip-LaTeX-Snippets</a></li>
+<li>#latex <a href="https://github.com/amarz45/nvim-cmp-lua-latex-symbols">nvim-cmp Lua LaTeX Symbols</a></li>
+<li>#latex <a href="https://github.com/franco-ruggeri/pdf-preview.nvim">PDF Preview</a></li>
+<li>#latex <a href="https://github.com/bamonroe/rnoweb-nvim">rnoweb-nvim</a></li>
+<li>#latex <a href="https://github.com/lervag/vimtex">VimTeX</a></li>
+<li>#license <a href="https://github.com/attilarepka/header.nvim">header.nvim</a></li>
+<li>#llm <a href="https://github.com/joshuavial/aider.nvim">Aider Plugin for Neovim</a></li>
+<li>#llm <a href="https://github.com/dzfrias/arena.nvim">arena.nvim</a></li>
+<li>#llm <a href="https://github.com/yetone/avante.nvim">avante.nvim</a></li>
+<li>#llm <a href="https://github.com/jackMort/ChatGPT.nvim">ChatGPT.nvim</a></li>
+<li>#llm <a href="https://github.com/olimorris/codecompanion.nvim">CodeCompanion</a></li>
+<li>#llm <a href="https://github.com/Kurama622/llm.nvim">llm.nvim</a></li>
+<li>#llm <a href="https://github.com/GeorgesAlkhouri/nvim-aider">nvim-aider</a></li>
+<li>#llm <a href="https://github.com/nomnivore/ollama.nvim">ollama.nvim</a></li>
+<li>#llm <a href="https://github.com/frankroeder/parrot.nvim">parrot.nvim</a></li>
+<li>#llm <a href="https://github.com/sphamba/smear-cursor.nvim">Smear cursor for Neovim</a></li>
+<li>#llm <a href="https://github.com/milanglacier/yarepl.nvim">yarepl.nvim</a></li>
+<li>#lsp #deveplop <a href="https://github.com/nvimtools/none-ls.nvim">none-ls.nvim</a></li>
+<li>#lsp <a href="https://github.com/yarospace/dev-tools.nvim">dev-tools.nvim</a></li>
+<li>#lsp <a href="https://github.com/elijah-potter/harper">Harper</a></li>
+<li>#lsp <a href="https://github.com/dundalek/lazy-lsp.nvim">lazy-lsp.nvim</a></li>
+<li>#lsp <a href="https://github.com/ray-x/lsp_signature.nvim">lsp_signature.nvim</a></li>
+<li>#lsp <a href="https://github.com/onsails/lspkind.nvim">lspkind-nvim</a></li>
+<li>#lsp <a href="https://github.com/wlh320/rime-ls">rime-ls</a></li>
+<li>#markdown #table <a href="https://github.com/SCJangra/table-nvim">A markdown table editor</a></li>
+<li>#markdown <a href="https://github.com/lukas-reineke/headlines.nvim">headlines.nvim</a></li>
+<li>#markdown <a href="https://github.com/serenevoid/kiwi.nvim">kiwi.nvim</a></li>
+<li>#markdown <a href="https://github.com/ChuufMaster/markdown-toc">markdown-toc</a></li>
+<li>#markdown <a href="https://github.com/YousefHadder/markdown-plus.nvim">markdown-plus.nvim</a></li>
+<li>#markdown <a href="https://github.com/MeanderingProgrammer/markdown.nvim">markdown.nvim</a></li>
+<li>#markdown <a href="https://github.com/antonk52/markdowny.nvim">markdowny.nvim</a></li>
+<li>#markdown <a href="https://github.com/daenikon/marknav.nvim">marknav.nvim</a></li>
+<li>#markdown <a href="https://github.com/timantipov/md-table-tidy.nvim">md-table-tidy.nvim</a></li>
+<li>#markdown <a href="https://github.com/jakewvincent/mkdnflow.nvim">mkdnflow.nvim</a></li>
+<li>#markdown <a href="https://github.com/toppair/peek.nvim">peek.nvim</a></li>
+<li>#move <a href="https://github.com/jinh0/eyeliner.nvim">eyeliner.nvim</a></li>
+<li>#mpv #youtube <a href="https://github.com/tamton-aquib/mpv.nvim">mpv.nvim</a></li>
+<li>#mpv <a href="https://github.com/Rits1272/riff.nvim">riff.nvim</a></li>
+<li>#navigate <a href="https://github.com/stevearc/aerial.nvim">aerial.nvim</a></li>
+<li>#navigate <a href="https://github.com/kevinhwang91/nvim-bqf">nvim-bqf</a></li>
+<li>#opt #tmux <a href="https://github.com/connordeckers/tmux-navigator.nvim">tmux-navigator.nvim</a></li>
+<li>#opt <a href="https://github.com/tomato3713/dps-joplin">dps-joplin</a></li>
+<li>#opt <a href="https://github.com/pieces-app/plugin_neovim">plugin_neovim</a></li>
+<li>#other #dictionary <a href="https://github.com/jalvesaq/dict.nvim">dict.nvim</a></li>
+<li>#other #dictionary <a href="https://github.com/chrscchrn/dictionary.nvim">dictionary.nvim</a></li>
+<li>#other #hex <a href="https://github.com/theKnightsOfRohan/hexer.nvim">hexer.nvim</a></li>
+<li>#other #macro <a href="https://github.com/ecthelionvi/NeoComposer.nvim">NeoComposer.nvim</a></li>
+<li>#other #note <a href="https://github.com/KIMGEONUNG/memo.nvim">Memo.nvim</a></li>
+<li>#other #sftp <a href="https://github.com/DevDec/transmit.nvim">Transmit.nvim</a></li>
+<li>#other #translate <a href="https://github.com/Omochice/dps-translate-vim">dps-translate-vim</a></li>
+<li>#other #translate <a href="https://github.com/JuanZoran/Trans.nvim">Trans.nvim</a></li>
+<li>#other #watch <a href="https://github.com/cristianoliveira/funzzy.nvim">funzzy.nvim</a></li>
+<li>#other <a href="https://github.com/Eandrju/cellular-automaton.nvim">cellular-automaton.nvim</a></li>
+<li>#other <a href="https://github.com/ziontee113/color-picker.nvim">color-picker.nvim</a></li>
+<li>#other <a href="https://github.com/MisanthropicBit/decipher.nvim">decipher.nvim</a></li>
+<li>#other <a href="https://github.com/pyonk/dexercism.vim">dexercism.vim</a></li>
+<li>#other <a href="https://github.com/rguruprakash/simple-note.nvim">Neovim Simple Note Plugin</a></li>
+<li>#other <a href="https://github.com/queue-miscreant/neovimpv">neovimpv</a></li>
+<li>#other <a href="https://github.com/EMPAT94/nvim-rss">NVIM-RSS</a></li>
+<li>#other <a href="https://github.com/rsdot/sqlpilot.nvim">sqlpilot.nvim</a></li>
+<li>#other <a href="https://github.com/wsdjeg/vim-todo">vim-todo</a></li>
+<li>#pdf <a href="https://github.com/facebookresearch/nougat">nougat.nvim</a></li>
+<li>#pdf <a href="https://github.com/kaymmm/nvim-pandoc-pdf">nvim-pandoc-pdf</a></li>
+<li>#pdf <a href="https://github.com/jhofscheier/nvim-texis">nvim-texis</a></li>
+<li>#preset <a href="https://github.com/AstroNvim/AstroNvim">AstroNvim</a></li>
+<li>#preset <a href="https://github.com/nvim-lua/kickstart.nvim">kickstart.nvim</a></li>
+<li>#preset <a href="https://github.com/nvim-neorg/neorg">Neorg</a></li>
+<li>#preset <a href="https://github.com/NvChad/NvChad">NvChad</a></li>
+<li>#preset <a href="https://github.com/nyoom-engineering/oxocarbon.nvim">oxocarbon.nvim</a></li>
+<li>#project <a href="https://github.com/DrKJeff16/project.nvim">project.nvim</a></li>
+<li>#recent <a href="https://github.com/wsdjeg/mru.nvim">mru.nvim</a></li>
+<li>#run <a href="https://github.com/MajorZiploc/code_runner.vim">code_runner.vim</a></li>
+<li>#run <a href="https://github.com/metakirby5/codi.vim">codi.vim</a></li>
+<li>#run <a href="https://github.com/sashetophizika/compal.nvim">compal.nvim</a></li>
+<li>#run <a href="https://github.com/arjunmahishi/flow.nvim">flow.nvim</a></li>
+<li>#run <a href="https://github.com/sergei-mironov/litrepl">LitREPL</a></li>
+<li>#run <a href="https://github.com/benlubas/molten-nvim">Molten</a></li>
+<li>#run <a href="https://github.com/GCBallesteros/NotebookNavigator.nvim">Notebook Navigator</a></li>
+<li>#run <a href="https://github.com/javiorfo/nvim-fuel">nvim-fuel</a></li>
+<li>#run <a href="https://github.com/MarcHamamji/runner.nvim">runner.nvim</a></li>
+<li>#run <a href="https://github.com/bugsbugsbux/sendline">sendline</a></li>
+<li>#run <a href="https://github.com/Mackrics/neoslime">Slime for neovim</a></li>
+<li>#run <a href="https://github.com/jeff-dh/tshunkyPy.nvim">tshunkyPy</a></li>
+<li>#screenshot <a href="https://github.com/niuiic/code-shot.nvim">code-shot.nvim</a></li>
+<li>#screenshot <a href="https://github.com/mistricky/codesnap.nvim">codesnap</a></li>
+<li>#screenshot <a href="https://github.com/AlejandroSuero/freeze-code.nvim">Freeze Neovim Plugin</a></li>
+<li>#screenshot <a href="https://github.com/ndom91/freeze.nvim">freeze.nvim</a></li>
+<li>#search <a href="https://github.com/anthony-halim/bible-verse.nvim">bible-verse.nvim</a></li>
+<li>#search <a href="https://github.com/stephansama/fzf-nerdfont.nvim">fzf-nerdfont.nvim</a></li>
+<li>#search <a href="https://github.com/linrongbin16/fzfx.nvim">fzfx.nvim</a></li>
+<li>#session <a href="https://github.com/folke/persistence.nvim">Persistence</a></li>
+<li>#session <a href="https://github.com/rmagatti/session-lens">Session Lens</a></li>
+<li>#session <a href="https://github.com/natecraddock/sessions.nvim">sessions.nvim</a></li>
+<li>#setup <a href="https://github.com/roobert/activate.nvim">activate.nvim</a></li>
+<li>#setup <a href="https://github.com/nvim-neorocks/rocks.nvim">rocks.nvim</a></li>
+<li>#setup <a href="https://github.com/junegunn/vim-plug">vim-plug</a></li>
+<li>#ssh <a href="https://github.com/inhesrom/remote-ssh.nvim">Remote SSH</a></li>
+<li>#statusline <a href="https://github.com/nvim-lualine/lualine.nvim">lualine.nvim</a></li>
+<li>#synax <a href="https://github.com/Shougo/dpp.vim">dpp.vim</a></li>
+<li>#synax <a href="https://github.com/kg8m/vim-detect-indent">vim-detect-indent</a></li>
+<li>#syntax <a href="https://github.com/martineausimon/nvim-lilypond-suite">nvim-lilypond-suite</a></li>
+<li>#syntax <a href="https://github.com/paul-louyot/toggle-quotes.nvim">toggle-quotes.nvim</a></li>
+<li>#syntax <a href="https://github.com/tani/vim-typo">vim-typo</a></li>
+<li>#syntax <a href="https://github.com/mickael-menu/zk-nvim">zk-nvim</a></li>
+<li>#tabline <a href="https://github.com/koenverburg/minimal-tabline.nvim">Minimal-tabline.nvim</a></li>
+<li>#task <a href="https://github.com/desdic/macrothis.nvim">Macrothis.nvim</a></li>
+<li>#task <a href="https://github.com/stevearc/overseer.nvim">overseer.nvim</a></li>
+<li>#terminal <a href="https://github.com/waiting-for-dev/ergoterm.nvim">ErgoTerm</a></li>
+<li>#terminal <a href="https://github.com/ingur/floatty.nvim">floatty.nvim</a></li>
+<li>#terminal <a href="https://github.com/imranZERO/multiterm.nvim">Multiterm.nvim</a></li>
+<li>#theme <a href="https://github.com/flashcodes-themayankjha/fkthemes.nvim">FkThemes.nvim</a></li>
+<li>#theme <a href="https://gitlab.com/motaz-shokry/gruvbox.nvim">gruvbox.nvim</a></li>
+<li>#theme <a href="https://github.com/ellisonleao/gruvbox.nvim">gruvbox.nvim</a></li>
+<li>#theme <a href="https://github.com/Erl-koenig/theme-hub.nvim">ThemeHub.nvim</a></li>
+<li>#theme <a href="https://github.com/BonnyAD9/TypeDark">TypeDark</a></li>
+<li>#todo <a href="https://github.com/phrmendes/todotxt.nvim">todotxt.nvim</a></li>
+<li>#ui #statusline <a href="https://github.com/justinhj/battery.nvim">battery.nvim</a></li>
+<li>#ui #statusline <a href="https://github.com/linrongbin16/lsp-progress.nvim">lsp-progress.nvim</a></li>
+<li>#ui #statusline <a href="https://github.com/sschleemilch/slimline.nvim">slimline.nvim</a></li>
+<li>#ui #statusline <a href="https://github.com/brianaung/yasl.nvim">yasl.nvim</a></li>
+<li>#theme #dark <a href="https://github.com/eddyekofo95/gruvbox-flat.nvim">Gruvbox Flat</a></li>
+<li>#theme #dark <a href="https://github.com/cocopon/iceberg.vim">Iceberg</a></li>
+<li>#theme #dark <a href="https://github.com/slugbyte/lackluster.nvim">lackluster</a></li>
+<li>#theme <a href="https://github.com/raddari/last-color.nvim">Last Color</a></li>
+<li>#theme #dark <a href="https://github.com/datsfilipe/min-theme.nvim">Min Theme</a></li>
+<li>#theme <a href="https://github.com/rafamadriz/neon">Neon</a></li>
+<li>#theme <a href="https://github.com/yorik1985/newpaper.nvim">newpaper.nvim</a></li>
+<li>#theme <a href="https://github.com/m-gail/northernlights.vim">northernlights.vim</a></li>
+<li>#theme <a href="https://github.com/folke/styler.nvim">Styler</a></li>
+<li>#theme <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">Themes</a></li>
+<li>#theme <a href="https://github.com/LmanTW/themify.nvim">Themify</a></li>
+<li>#theme <a href="https://github.com/folke/tokyonight.nvim">Tokyo Night</a></li>
+<li>#ui <a href="https://github.com/folke/noice.nvim">Noice</a></li>
+<li>#ui <a href="https://github.com/rcarriga/nvim-notify">nvim-notify</a></li>
+<li>#ui <a href="https://github.com/rachartier/tiny-devicons-auto-colors.nvim">tiny-devicons-auto-colors.nvim</a></li>
+<li>#ui <a href="https://github.com/mcauley-penney/visual-whitespace.nvim">visual-whitespace.nvim</a></li>
+<li>#uml <a href="https://github.com/chaosystema/nvim-soil">nvim-soil</a></li>
+<li>#version <a href="https://github.com/MordechaiHadad/bob">Bob</a></li>
+<li>#version <a href="https://github.com/y3owk1n/nvs">nvs (Neovim Version Switcher)</a></li>
+<li>#view <a href="https://github.com/arminveres/md-pdf.nvim">Markdown to PDF</a></li>
+<li>#winbar <a href="https://github.com/utilyre/barbecue.nvim">barbecue.nvim</a></li>
+<li>#winbar <a href="https://github.com/OXY2DEV/bars.nvim">bars.nvim</a></li>
+<li>#winbar <a href="https://github.com/nocksock/do.nvim">do.nvim</a></li>
+<li>#winbar <a href="https://github.com/b0o/incline.nvim">incline.nvim</a></li>
+<li>#window <a href="https://github.com/levouh/tint.nvim">tint.nvim</a></li>
+<li>#window <a href="https://github.com/ycdzj/win-mover.nvim">win-mover.nvim</a></li>
+<li>#window <a href="https://github.com/MisanthropicBit/winmove.nvim">winmove.nvim</a></li>
+<li>#workdir <a href="https://github.com/wsdjeg/rooter.nvim">rooter.nvim</a></li>
+<li>#yank <a href="https://github.com/tenxsoydev/karen-yank.nvim">karen-yank</a></li>
+<li>#yank <a href="https://github.com/ptdewey/yankbank-nvim">YankBank</a></li>
+<li>#yank <a href="https://github.com/obergodmar/yanklines.nvim">yanklines.nvim</a></li>
+<li>#yank <a href="https://github.com/daltongd/yanklock.nvim">yanklock.nvim</a></li>
+<li><a href="https://github.com/chrisgve/databox.nvim">databox.nvim</a></li>
+<li><a href="https://github.com/mahyarmirrashed/famous-quotes.nvim">famous-quotes.nvim</a></li>
+<li><a href="https://github.com/doganalper/template.nvim">Filetype Based Template Plugin For Neovim</a></li>
+<li><a href="https://github.com/harrisoncramer/GitLab.nvim">gitlab.nvim</a></li>
+<li><a href="https://github.com/yelog/i18n.nvim">i18n.nvim</a></li>
+<li><a href="https://github.com/camspiers/luarocks">Luarocks.nvim</a></li>
+<li>#loading <a href="https://github.com/nvim-neorocks/lz.n">lz.n</a></li>
+<li>#loading <a href="https://github.com/BirdeeHub/lze">lze</a></li>
+<li><a href="https://github.com/SunnyTamang/neodoc.nvim">NeoDoc.nvim</a></li>
+<li><a href="https://github.com/MisanthropicBit/neotest-busted">neotest-busted</a></li>
+<li><a href="https://github.com/LuxVim/nvim-luxmotion">nvim-luxmotion</a></li>
+<li><a href="https://github.com/3ZsForInsomnia/pacer.nvim">pacer.nvim</a></li>
+<li><a href="https://github.com/hat0uma/prelive.nvim">prelive.nvim</a></li>
+<li><a href="https://github.com/mangelozzi/rgflow.nvim">rgflow.nvim</a></li>
+<li><a href="https://github.com/uhs-robert/sshfs.nvim">sshfs.nvim</a></li>
+<li><a href="https://github.com/alex-popov-tech/store.nvim">store.nvim</a></li>
+<li><a href="https://github.com/johannww/tts.nvim">Text-to-speech in neovim</a></li>
+<li><a href="https://github.com/ravsii/timers.nvim">timers.nvim</a></li>
+<li><a href="https://github.com/yukimura1227/vim-yazi">vim-yazi</a></li>
+</ul>
+<h3 id="cancel"><a class="header" href="#cancel">cancel</a></h3>
+<ul>
+<li>#docset <a href="https://github.com/warpaint9299/nvim-devdocs">nvim-devdocs</a></li>
+<li>#docset <a href="https://github.com/luckasRanarison/nvim-devdocs">nvim-devdocs</a></li>
+<li>#edit <a href="https://github.com/gbprod/yanky.nvim">yanky.nvim</a></li>
+</ul>
+<hr>
+<ol class="footnote-definition"><li id="footnote-1">
+<p><a href="https://www.reddit.com/r/neovim/comments/166fpfb/ppa_not_working_with_lazynvim/">PPA not working with lazy.nvim</a> <a href="#fr-1-1">↩</a></p>
+</li>
+<li id="footnote-2">
+<p><a href="https://github.com/neovim/neovim/blob/master/BUILD.md#build-prerequisites">Neovim - Build prerequisites</a> <a href="#fr-2-1">↩</a></p>
+</li>
+<li id="footnote-3">
+<p><a href="https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-source">Install from source</a> <a href="#fr-3-1">↩</a></p>
+</li>
+</ol>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../bin/github-cli/gh-tidy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../bin/neovim/blink-cmp.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../bin/github-cli/gh-tidy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../bin/neovim/blink-cmp.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

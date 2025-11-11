@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>love2d - cheat</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../.././assets/css/mdbook-admonish.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "light";
+            const default_dark_theme = "ayu";
+            window.path_to_searchindex_js = "../../searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cheat</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/scillidan/cheat/main/src/lib/love2d/_.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="lÖve"><a class="header" href="#lÖve"><a href="https://love2d.org">LÖVE</a></a></h1>
+<h2 id="reference"><a class="header" href="#reference">reference</a></h2>
+<ul>
+<li>#post <a href="https://love2d.org/forums/viewtopic.php?t=94809">Simplifying loves learning curve</a></li>
+<li>#lession <a href="https://sheepolution.com/learn/book/contents">Sheepolution</a></li>
+<li><a href="https://github.com/love2d-community/LOVE-Example-Browser/">Löve-Example-Browser</a></li>
+</ul>
+<h2 id="resource"><a class="header" href="#resource">resource</a></h2>
+<h3 id="later"><a class="header" href="#later">later</a></h3>
+<ul>
+<li>#ecs <a href="https://github.com/BlackMATov/evolved.lua">evolved.lua</a></li>
+<li>#screen <a href="https://github.com/Oval-Tutu/shove">Shöve</a></li>
+<li>#packager <a href="https://github.com/Oval-Tutu/bootstrap-love2d-project">LÖVE Game Development &amp; Automated Build System</a></li>
+<li><a href="https://github.com/jasonjmcghee/livelove">livelove</a></li>
+</ul>
+<h3 id="cache"><a class="header" href="#cache">cache</a></h3>
+<ul>
+<li>#math <a href="https://github.com/DUznanski/vornmath">vornmath</a></li>
+<li>#action <a href="https://github.com/Nikaoto/deep">deep</a></li>
+<li>#action <a href="https://github.com/dknight/polysec">Polysec</a></li>
+<li>#action <a href="https://github.com/arthurealike/turtle.lua">turtle.lua</a></li>
+<li>#action <a href="https://github.com/davisdude/Walt">Walt</a></li>
+<li>#api <a href="https://github.com/uspgamedev/luasteam">luasteam</a></li>
+<li>#asset <a href="https://github.com/bjornbytes/cargo">cargo</a></li>
+<li>#asset <a href="https://github.com/MikuAuahDark/lily">lily</a></li>
+<li>#asset <a href="https://github.com/elloramir/love-ase">love-ase</a></li>
+<li>#asset <a href="https://github.com/EngineerSmith/nativefs">nativefs</a></li>
+<li>#asset <a href="https://github.com/josh-perry/peachy">peachy</a></li>
+<li>#asset <a href="https://github.com/premek/require.lua">require.lua</a></li>
+<li>#color <a href="https://github.com/santoslove/colorchanger">colorchanger</a></li>
+<li>#deploy <a href="https://github.com/tducasse/love-deploy">love-deploy</a></li>
+<li>#dialogue <a href="https://github.com/Miisan-png/Love-Dialogue">LoveDialogue</a></li>
+<li>#ecs <a href="https://github.com/Keyslam/Concord">concord</a></li>
+<li>#ecs <a href="https://github.com/nidorx/ecs-lua">ecs-lua</a></li>
+<li>#ecs <a href="https://github.com/bakpakin/tiny-ecs">tiny-ecs</a></li>
+<li>#function <a href="https://github.com/excessive/i18n">i18n</a></li>
+<li>#function <a href="https://github.com/Nrosa01/LOVElyTrees">LÖVEly Trees</a></li>
+<li>#function <a href="https://github.com/EngineerSmith/Runtime-TextureAtlas">runtime-textureatlas</a></li>
+<li>#gui <a href="https://github.com/apicici/cimgui-love">cimgui-love</a></li>
+<li>#gui <a href="https://github.com/tavuntu/gooi">gooi</a></li>
+<li>#gui <a href="https://github.com/Keyslam/Inky">inky</a></li>
+<li>#gui <a href="https://github.com/keharriso/love-nuklear">love-nuklear</a></li>
+<li>#gui <a href="https://github.com/vinnyhorgan/lovely-engine">lovely-engine</a></li>
+<li>#gui <a href="https://github.com/flamendless/Slab">Slab</a></li>
+<li>#gui <a href="https://gitea.it/1414codeforge/yui">yui</a></li>
+<li>#http <a href="https://github.com/elloramir/fetch-lua">Fetch Lua</a></li>
+<li>#image <a href="https://github.com/kikito/anim8">anim8</a></li>
+<li>#image <a href="https://github.com/besnoi/animX">animX</a></li>
+<li>#image <a href="https://github.com/rxi/autobatch">autobatch</a></li>
+<li>#image <a href="https://github.com/tesselode/cartographer">cartographer</a></li>
+<li>#image <a href="https://github.com/besnoi/iffy">iffy</a></li>
+<li>#image <a href="https://github.com/globalcitizen/svglover">svglover</a></li>
+<li>#image <a href="https://github.com/poke1024/tove2d">tove2d</a></li>
+<li>#ink <a href="https://github.com/astrochili/narrator">narrator</a></li>
+<li>#keyboard <a href="https://github.com/xiejiangzhi/input">input</a></li>
+<li>#keyboard <a href="https://github.com/MikuAuahDark/Kazari">Kazari</a></li>
+<li>#keyboard <a href="https://github.com/SpaceCat-Chan/LoveKeys">LoveKeys</a></li>
+<li>#keyboard <a href="https://github.com/zombrodo/swipe">swipe</a></li>
+<li>#layout <a href="https://github.com/S-Walrus/centers">center</a></li>
+<li>#layout <a href="https://github.com/zombrodo/plan">plan</a></li>
+<li>#layout <a href="https://github.com/wqferr/slicy">slicy</a></li>
+<li>#library <a href="https://github.com/Nabeel20/Badar">Badar</a></li>
+<li>#library <a href="https://github.com/Nawias/bar128-love">bar128-love</a></li>
+<li>#library <a href="https://github.com/a13X-B/bitumbra">bitumbra</a></li>
+<li>#library <a href="https://github.com/HDictus/breezefield">breezefield</a></li>
+<li>#library <a href="https://github.com/novemberisms/brinevector">brinevector</a></li>
+<li>#library <a href="https://github.com/excessive/cpml">cpml</a></li>
+<li>#library <a href="https://github.com/GwyrddGlas/GameStateManager">GameStateManager</a></li>
+<li>#library <a href="https://github.com/tanema/light_world.lua">light_world.lua</a></li>
+<li>#library <a href="https://github.com/speakk/lighter">lighter</a></li>
+<li>#library <a href="https://github.com/a13X-B/loaded_dice">loaded_dice</a></li>
+<li>#library <a href="https://github.com/Nawias/love-qrcode">love-qrcode</a></li>
+<li>#library <a href="https://github.com/solenum/loveblobs">loveblobs</a></li>
+<li>#library <a href="https://github.com/DevonPalma/LowerClass">LowerClass</a></li>
+<li>#library <a href="https://github.com/kikito/middleclass">middleclass</a></li>
+<li>#library <a href="https://github.com/YellowButShort/servelove">servelove</a></li>
+<li>#library <a href="https://github.com/erinmaus/slick">slick</a></li>
+<li>#library <a href="https://github.com/Aweptimum/Strike">strike</a></li>
+<li>#library <a href="https://github.com/a327ex/windfield">windfield</a></li>
+<li>#moon <a href="https://github.com/patrixr/lovelier">lovelier</a></li>
+<li>#moon <a href="https://github.com/megagrump/moonblob">moonblob</a></li>
+<li>#moon <a href="https://github.com/leafo/moonscript">moonscript</a></li>
+<li>#moon <a href="https://github.com/megagrump/muun">muun</a></li>
+<li>#moon <a href="https://github.com/apicici/pathfun">pathfun</a></li>
+<li>#moon <a href="https://github.com/novafacing/selene">selene</a></li>
+<li>#packager <a href="https://github.com/AppImage/AppImageKit">AppImageKit</a></li>
+<li>#packager <a href="https://github.com/camchenry/boon">boon</a></li>
+<li>#packager <a href="https://github.com/ruanformigoni/gameimage">GameImage</a></li>
+<li>#packager <a href="https://github.com/MikuAuahDark/love-fuser">love-fuser</a></li>
+<li>#packager <a href="https://github.com/simplifylabs/love-packager">love-packager</a></li>
+<li>#packager <a href="https://github.com/Wolfyxon/lover">Lover</a></li>
+<li>#packager <a href="https://github.com/ellraiser/love-build">löve-build</a></li>
+<li>#packager <a href="https://github.com/pfirsich/makelove">makelove</a></li>
+<li>#particle <a href="https://github.com/ReFreezed/HotParticles">Hot Particles</a></li>
+<li>#particle <a href="https://github.com/santoslove/particle-system-playground">particle-system-playground</a></li>
+<li>#platform <a href="https://github.com/lovebrew/lovepotion">LÖVE Potion</a></li>
+<li>#play <a href="https://github.com/CSaratakij/LovePlayground">loveplayground</a></li>
+<li>#play <a href="https://github.com/cristoferfb/lovet">lovet</a></li>
+<li>#profiler <a href="https://github.com/EngineerSmith/AppleCake">AppleCake</a></li>
+<li>#profiler <a href="https://github.com/flamendless/lovedebug">lovedebug</a></li>
+<li>#profiler <a href="https://github.com/dknight/loveprofiler">loveprofiler</a></li>
+<li>#profiler <a href="https://github.com/deltadaedalus/vudu">vudu</a></li>
+<li>#screen <a href="https://github.com/nobytesgiven/ini_parser">ini_parser</a></li>
+<li>#screen <a href="https://github.com/Ulydev/push">push</a></li>
+<li>#screen <a href="https://github.com/Vovkiv/resolution_solution">resolution_solution</a></li>
+<li>#screen <a href="https://github.com/tesselode/roomy">roomy</a></li>
+<li>#screen <a href="https://github.com/paltze/scenery">scenery</a></li>
+<li>#screen <a href="https://github.com/sysl-dev/Sysl-Pixel">sysl-pixel</a></li>
+<li>#screen <a href="https://github.com/kithf/yas">yas</a></li>
+<li>#txt <a href="https://github.com/MikuAuahDark/NPad93/blob/master/manami.lua">manami.lua</a></li>
+<li>#txt <a href="https://github.com/josefnpat/reflowprint">reflowprint</a></li>
+<li>#txt <a href="https://github.com/sysl-dev/SYSL-Text">SYSL-Text</a></li>
+<li>#ui <a href="https://github.com/immortalx74/lovr-ui2d">lovr-ui2d</a></li>
+<li>#ui <a href="https://github.com/SiENcE/luis">LUIS: Love UI System</a></li>
+<li><a href="https://github.com/gvx/bitser">bitser</a></li>
+<li><a href="https://github.com/WetDesertRock/GifCat">GifCat</a></li>
+<li><a href="https://codeberg.org/togfox/Lovely-Toasts">Lövely Toasts</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../lib/latex/_command/twoside.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../lib/lua/_.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../lib/latex/_command/twoside.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../lib/lua/_.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
