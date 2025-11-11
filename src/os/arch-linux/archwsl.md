@@ -70,7 +70,7 @@ systemd=true
 
 ## cross-reference
 
-0. [arch-linux.md](/os/arch/arch-linux.md)
+0. [arch-linux.md](/os/arch-linux/arch-linux.md)
 1. [wsl.md](/os/windows/wsl.md)
 2. [pacman](/bin/_arch/pacman.md)
 3. [yay](/bin/_arch/yay.md)
