@@ -7,4 +7,6 @@
 uv tool install pip_search
 ```
 
+## annex
+
 ![pip_search](/_image/bin/pip_search.png)

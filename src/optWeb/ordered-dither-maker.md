@@ -19,4 +19,6 @@ serve -s docs -p 4321
 
 If app take up `4321` port, visit `chrome://serviceworker-internals/?devtools` and unregister it.
 
+## annex
+
 ![ordered-dither-maker](/_image/optWeb/ordered-dither-maker.png)

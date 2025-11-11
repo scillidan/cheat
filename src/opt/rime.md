@@ -70,6 +70,8 @@ git clone --depth=1 https://github.com/iDvel/rime-ice
 
 ## cross-reference
 
+### extra
+
 - #script [init_rime.bat](https://github.com/scillidan/Shell/blob/main/opt/init_rime.bat)
 - #script [init_rime.sh](https://github.com/scillidan/Shell/blob/main/opt/init_rime.sh)
 
@@ -82,7 +84,7 @@ git clone --depth=1 https://github.com/iDvel/rime-ice
 
 [^1]: [Can't awaken the input method(fcitx5)](https://github.com/alacritty/alacritty/issues/6528)
 
-# annexs
+# annex
 
 ![rime](/_image/opt/rime.png)
 

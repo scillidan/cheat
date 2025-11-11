@@ -110,15 +110,15 @@ sudo systemctl enable --now komga.service
 java -jar "komga.jar" --komga.config-dir="config"
 ```
 
+## reference
+
+- [Configuration options - Komga](https://komga.org/docs/installation/configuration)
+
 ## cross-reference
 
 - [komga-cover-extractor.md](/bin/komga-cover-extractor.md)
 - [mount.md](/bin/_arch/mount.md)
 - [to-cbz.md](/bin/to_cbz.md)
-
-## reference
-
-- [Configuration options - Komga](https://komga.org/docs/installation/configuration)
 
 [^1]: [Run with Docker | Komga](https://komga.org/docs/installation/docker)
 [^2]: [How to Install Komga on Ubuntu Server Latest](https://ipv6.rs/tutorial/Ubuntu_Server_Latest/Komga/)

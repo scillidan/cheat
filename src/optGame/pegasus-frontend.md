@@ -66,6 +66,8 @@ launch: "/home/<user>/RetroArch/retroarch" -L "/home/<user>/RetroArch/cores/flyc
 
 ## cross-reference
 
+### extra
+
 - #script [init_pegasus.bat](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.bat)
 - #script [init_pegasus.sh](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.sh)
 

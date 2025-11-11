@@ -12,4 +12,6 @@ pipx install sqlite-web
 sqlite_web <db_file>
 ```
 
+## annex
+
 ![sqlite-web](/_image/optWeb/sqlite-web.png)

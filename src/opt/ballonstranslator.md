@@ -29,7 +29,7 @@ python launch.py
 	- General → Typesetting → Auto layout (Off)
 
 
-## annexs
+## annex
 
 ![ballonstranslator](/_image/opt/ballonstranslator.png)
 

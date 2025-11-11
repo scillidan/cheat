@@ -50,7 +50,9 @@ pdflatex --shell-escape "$1"
 
 ## cross-reference
 
-- [latex.md](/lib/latex/latex.md)
+### mark
+
+- [latex.md](/lib/latex/_.md)
 
 [^1]: [TeX Live](https://wiki.archlinux.org/title/TeX_Live)
 [^2]: [tlmgr](https://tug.org/texlive/doc/tlmgr.html)

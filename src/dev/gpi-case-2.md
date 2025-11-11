@@ -49,7 +49,11 @@ wget -O - "https://raw.githubusercontent.com/RetroFlag/GPiCase2-Script/main/retr
 
 ## cross-reference
 
+### mark
+
 - [recalbox.md](/os/recalbox.md)
 - [retropie.md](/os/retropie.md)
+
+## annex
 
 [gpi-case-2_20241018.mp4](https://scillidan.github.io/media_cheat/dev/gpi-case-2_20241018.mp4), ([bilibili](https://www.bilibili.com/video/BV1DqCmYNEvw)

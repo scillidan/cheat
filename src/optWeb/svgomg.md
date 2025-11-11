@@ -17,4 +17,6 @@ npm run build
 serve -s build -p 4321
 ```
 
+## annex
+
 ![svgomg](/_image/optWeb/svgomg.png)

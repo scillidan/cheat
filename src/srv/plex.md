@@ -19,7 +19,7 @@ Visit `http://<your_host>:32400/web`.
 
 - #guide [Plex & Booksonic Audiobook Guide](https://github.com/seanap/Plex-Audiobook-Guide)
 
-## cross-reference
+## resource
 
 ### cache
 

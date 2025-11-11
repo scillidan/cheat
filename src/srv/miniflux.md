@@ -148,7 +148,7 @@ sudo apt-get remove --purge postgresql-16
 
 - [Feed Filtering Rules](https://miniflux.app/docs/rules.html#feed-filtering-rules)
 
-## cross-reference
+## resource
 
 ### mark
 
@@ -161,5 +161,7 @@ sudo apt-get remove --purge postgresql-16
 [^5]: [How do I solve this problem to use psql? | psql: error: FATAL: role "postgres" does not exist](https://stackoverflow.com/questions/65222869/how-do-i-solve-this-problem-to-use-psql-psql-error-fatal-role-postgres-d)
 [^6]: [How To Completely Uninstall PostgreSQL](https://kb.objectrocket.com/postgresql/how-to-completely-uninstall-postgresql-757)
 [^7]: [Linux downloads (Ubuntu)](https://www.postgresql.org/download/linux/ubuntu/)
+
+## annex
 
 ![miniflux](/_image/srv/miniflux.png)

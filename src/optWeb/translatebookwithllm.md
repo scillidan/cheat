@@ -18,4 +18,6 @@ uv pip install flask flask-cors flask-socketio python-socketio requests tqdm aio
 python translation_api.py
 ```
 
+## annex
+
 ![translatebookwithllm](/_image/optWeb/translatebookwithllm.png)

@@ -30,4 +30,6 @@ gui-subtrans
 
 - Open file → Select `<subtitle>` → Project Settings → Entry `Movie Name`, `Target Language` → Start.
 
+## annex
+
 ![gpt-subtrans](/_image/opt/gpt-subtrans.png)

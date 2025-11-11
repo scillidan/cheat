@@ -40,4 +40,6 @@ streamlit run example.py
 
 [^1]: [click.get_os_args is deprecated on module 'click 8.1.0'](https://github.com/streamlit/streamlit/issues/4555)
 
+## annex
+
 ![streamlit-image-crop](/_image/optWeb/streamlit-image-crop.png)

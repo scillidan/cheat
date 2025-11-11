@@ -23,4 +23,6 @@ python manage.py runserver localhost:8010
 
 Visit `http://localhost:8010/albums`.
 
+## annex
+
 ![albumapp-django](/_image/optWeb/albumapp-django.png)

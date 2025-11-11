@@ -18,4 +18,6 @@ npm run build
 serve -s dist -p 4321
 ```
 
+## annex
+
 ![mangarepack](/_image/optWeb/mangarepack.png)

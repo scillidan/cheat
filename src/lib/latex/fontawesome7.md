@@ -28,7 +28,3 @@ Alternative syntax:
 ## example
 
 [fontawesome6.tex](https://github.com/braniii/fontawesome/blob/main/fontawesome6/doc/fontawesome6.tex)
-
-## cross-reference
-
-- [fontawesome_ex1.md](/lib/latex/_example/fontawesome_ex1.md)

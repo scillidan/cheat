@@ -13,8 +13,4 @@ make
 # sudo make install
 ```
 
-## cross-reference
-
-- [dictd.md](/srv/dictd.md)
-
 [^1]: [How can I uncompress a \*.7z file?](https://askubuntu.com/questions/219392/how-can-i-uncompress-a-7z-file)

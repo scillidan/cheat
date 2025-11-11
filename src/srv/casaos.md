@@ -8,4 +8,6 @@ sudo ufw allow 80
 # sudo casaos-uninstall
 ```
 
+## annex
+
 ![casaos](/_image/srv/casaos.png)

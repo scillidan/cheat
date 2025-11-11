@@ -167,7 +167,7 @@ sudo systemctl status xow
 2. [raspberry-pi-os.md](/os/raspberry-pi-os.md)
 
 - [curse-of-the-arrow.md](/optGame/curse-of-the-arrow.md)
-- [es-de.md](/opt/es-de/es-de.md)
+- [es-de.md](/opt/es-de/_.md)
 - [mari0.md](/optGame/mari0.md)
 - [nxengine-evo-rpi.md](/optGame/nxengine-evo-rpi.md)
 - [pegasus-frontend.md](/optGame/pegasus-frontend.md)
@@ -181,5 +181,7 @@ sudo systemctl status xow
 [^7]: [Pegasus Docs - Platform Notes: Raspberry](https://pegasus-frontend.org/docs/user-guide/platform-raspberry/#retropie)
 [^8]: [RetroPie Docs - Love](https://retropie.org.uk/docs/Love/)
 [^9]: [PyGame LÖVE (love2d) in RecalBox](https://forum.recalbox.com/topic/19222/pygame-l%C3%B6ve-love2d-in-recalbox)
+
+## annex
 
 ![retropie](/_image/os/retropie.png)

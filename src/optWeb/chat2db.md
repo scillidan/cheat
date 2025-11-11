@@ -19,4 +19,6 @@ sudo docker compose up -d
 
 Visit `http://<your_host>:10824`, login with user `chat2db`, password `chat2db`.
 
+## annex
+
 ![chat2db](/_image/optWeb/chat2db.png)

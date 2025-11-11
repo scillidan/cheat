@@ -120,4 +120,6 @@ linkding --url "http://<your_host>:8002" --token "<token>" bookmarks all -q $1 ^
 [^2]: [linkding - Setup](https://github.com/sissbruecker/linkding/blob/master/README.md#setup)
 [^3]: [ModuleNotFoundError: No module named 'ruamel'](https://github.com/fair-workflows/nanopub/issues/106)
 
+## annex
+
 ![linkding](/_image/srv/linkding.png)

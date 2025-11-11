@@ -83,4 +83,6 @@ mv JetBrains** ~/.local/share/fonts
 [^2]: [No internet connection after ubuntu server 20.04 install, ifconfig not available](https://askubuntu.com/questions/1233934/no-internet-connection-after-ubuntu-server-20-04-install-ifconfig-not-available)
 [^3]: [ubuntu wiki - Fonts](https://wiki.ubuntu.com/Fonts)
 
+## annex
+
 ![ubuntu-22-arm](/_image/os/ubuntu-22-arm.png)

@@ -34,4 +34,6 @@ subl nuxt.config.js
   },
 ```
 
+## annex
+
 ![qr-designer](/_image/optWeb/qr-designer.png)

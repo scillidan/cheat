@@ -9,4 +9,6 @@ yay -S --noconfirm exifcleaner
 scoop install exifcleaner
 ```
 
+## annex
+
 ![exifcleaner](/_image/opt/exifcleaner.png)

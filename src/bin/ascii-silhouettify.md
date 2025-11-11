@@ -13,4 +13,6 @@ pnpm add -g ascii-silhouettify
 ascii-silhouettify --input "$1"
 ```
 
+## annex
+
 ![quasar-ascii-silhouettify](/_image/optWeb/quasar-ascii-silhouettify.png)

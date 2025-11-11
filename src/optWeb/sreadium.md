@@ -21,4 +21,6 @@ serve -s . -p 4321
 
 If app take up `4321` port, visit `chrome://serviceworker-internals/?devtools` and unregister it.
 
+## annex
+
 ![sreadium](/_image/optWeb/sreadium.png)

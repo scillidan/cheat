@@ -74,4 +74,6 @@ iopaint start --model=lama --port=8080 --enable-restoreformer --restoreformer-de
 iopaint start --model=lama --port=8080 --enable-anime-seg
 ```
 
+## annex
+
 ![iopaint](/_image/optWeb/iopaint.png)

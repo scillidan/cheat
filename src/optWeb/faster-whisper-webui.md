@@ -70,4 +70,6 @@ python.exe app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --server
 [^3]: [services.py](https://github.com/usoonees/logseq-whisper-subtitles-server/blob/main/logseq_whisper_subtitles_server/services.py)
 [^4]: [Segmentation Fault when loading pyannote/speaker-diarization-3.0 in rockylinux9/python3 environment](https://github.com/pyannote/pyannote-audio/issues/1499)
 
+## annex
+
 ![faster-whisper-webui](/_image/optWeb/faster-whisper-webui.png)

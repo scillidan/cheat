@@ -26,7 +26,3 @@ Text\parnote{``Placing footnotes or endnotes at the end of the current paragraph
 ## example
 
 [parnotes.tex](https://github.com/FrankMittelbach/fmitex-parnotes/blob/main/parnotes.tex)
-
-## cross-reference
-
-- [fmitex-parnotes_ex1.md](/lib/latex/_example/fmitex-parnotes_ex1.md)

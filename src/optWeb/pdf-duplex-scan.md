@@ -18,4 +18,6 @@ npm run build
 serve -s dist -p 4321
 ```
 
+## annex
+
 ![pdf-duplex-scan](/_image/optWeb/pdf-duplex-scan.png)

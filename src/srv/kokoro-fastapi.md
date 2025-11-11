@@ -58,4 +58,6 @@ uv run --no-sync uvicorn api.src.main:app --host 0.0.0.0 --port 8880
 
 [^1]: [start-gpu.ps1](https://github.com/remsky/Kokoro-FastAPI/blob/master/start-gpu.ps1)
 
+## annex
+
 ![kokoro-fastapi](/_image/optWeb/kokoro-fastapi.png)

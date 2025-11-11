@@ -7,4 +7,6 @@
 
 ## cross-reference
 
+### cache
+
 - [rime-ls.md](/srv/rime-ls.md)

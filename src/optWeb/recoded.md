@@ -18,4 +18,6 @@ serve -s build -p 4321
 # pm2 serve build 4321 --name recoded --spa
 ```
 
+## annex
+
 ![recoded](/_image/optWeb/recoded.png)

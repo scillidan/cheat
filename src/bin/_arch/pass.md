@@ -14,4 +14,6 @@ pass show <key_name>
 
 ## cross-reference
 
+### mark
+
 - [gnupg.md](/bin/_arch/gnupg.md)

@@ -28,4 +28,6 @@ lvim
 
 [^1]: [Installation](https://www.lunarvim.org/docs/installation)
 
+## annex
+
 ![lunarvim](/_image/bin/lunarvim.png)
