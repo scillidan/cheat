@@ -1,5 +1,9 @@
 # [n8n](https://n8n.io/)
 
+> Build with the precision of code or the speed of drag-n-drop. Host with on-prem control or in-the-cloud convenience. n8n gives you more freedom to implement multi-step AI agents and integrate apps than any other tool. [n8n.io]
+
+> 通过代码的精确性或拖放的速度进行构建。可以选择本地控制或云端便捷进行托管。n8n比其他任何工具都提供更多自由，以实现多步骤的AI代理和应用程序集成。 [GPT-4o mini]
+
 ## install
 
 [^1]
@@ -36,10 +40,6 @@ sudo docker compose up -d
 ```
 
 ## resource
-
-### later
-
-- [Awesome N8N](https://github.com/restyler/awesome-n8n)
 
 ### cache
 

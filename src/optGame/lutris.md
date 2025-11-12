@@ -1,5 +1,9 @@
 # [Lutris](https://lutris.net/)
 
+> Lutris is an open-source, Linux-focused gaming platform that acts as a centralized launcher and manager for your PC game library. It integrates with major storefronts (such as Steam, GOG, Humble Bundle, and Epic Games Store) and uses community-maintained install scripts to streamline the setup of Windows games through compatibility layers like Wine, emulators, and other runtimes. In short, Lutris aims to simplify installing, organizing, and launching a wide variety of games on Linux from a single interface. [perplexity.ai]
+
+> Lutris是一个开源的、以Linux为中心的游戏平台，充当您PC游戏库的集中启动器和管理器。它与主要的游戏商店（如Steam、GOG、Humble Bundle和Epic Games Store）集成，并使用社区维护的安装脚本，通过兼容层（如Wine）、模拟器和其他运行时来简化Windows游戏的设置。简而言之，Lutris旨在通过单一界面简化在Linux上安装、组织和启动各种游戏的过程。 [GPT-4o mini]
+
 ## install
 
 [^1]

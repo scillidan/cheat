@@ -45,5 +45,6 @@
 - #serif [剔骨仿宋](https://github.com/LingDong-/tk-fangsong-font) by Lingdong Huang / [OFL-1.1](https://github.com/LingDong-/tk-fangsong-font/blob/main/LICENSE) _download_
 - #serif [崇羲篆体](https://www.maoken.com/freefonts/16595.html) by 王心怡 x 季旭昇 / [CC-BY-ND](https://www.maoken.com/by-nd) _download_
 - #serif [汇文仿宋](https://www.maoken.com/freefonts/24495.html) by 特里王 / [作者声明](https://www.maoken.com/freefonts/24495.html) _download_
+- #serif [京華老宋体](https://www.maoken.com/freefonts/19417.html) by 特里王 / [作者声明](https://www.maoken.com/freefonts/19417.html) _download_
 - #serif [汇迹正楷](https://www.maoken.com/freefonts/24749.html) by 綿雲飴里 × 特里王 / [OFL-1.1](https://www.maoken.com/ofl) _download_
 - #serif [齊伋體](https://github.com/LingDong-/qiji-font) by Lingdong Huang / [OFL-1.1](https://github.com/LingDong-/qiji-font/blob/master/LICENSE) _release_

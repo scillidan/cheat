@@ -1,5 +1,11 @@
 # [Datasette](https://datasette.io)
 
+> Datasette is a tool for exploring and publishing data. It helps people take data of any shape, analyze and explore it, and publish it as an interactive website and accompanying API.  
+> Datasette is aimed at data journalists, museum curators, archivists, local governments, scientists, researchers and anyone else who has data that they wish to share with the world. It is part of a wider ecosystem of 44 tools and 154 plugins dedicated to making working with structured data as productive as possible. [datasette.io]
+
+> Datasette是一个用于探索和发布数据的工具。它帮助人们处理任何形状的数据，进行分析和探索，并将其发布为互动网站及配套的API。  
+> Datasette旨在服务于数据记者、博物馆策展人、档案管理员、地方政府、科学家、研究人员以及希望与全球分享数据的其他人。它是一个更广泛的生态系统的一部分，包括44个工具和154个插件，致力于使处理结构化数据的工作尽可能高效。 [GPT-4o mini]
+
 ## Data processing
 
 ```sh
@@ -90,7 +96,7 @@ Vercel → Project `database` → Settings → Build and Deployment → Node.js 
 - [datasette-search-all](https://github.com/simonw/datasette-search-all)
 - [datasette-sitemap](https://github.com/simonw/datasette-sitemap)
 
-### later
+### extra
 
 - [datasette-media](https://github.com/simonw/datasette-media)
 - [datasette-multiline-links](https://github.com/simonw/datasette-multiline-links)

@@ -56,6 +56,11 @@ sudo pacman -S pacman-contrib
 sudo paccache -rk 2
 ```
 
+```sh
+# removes all orphaned packages plus their unused dependencies and their configuration files, cleaning up your system from packages that are no longer required.
+sudo pacman -Rns $(pacman -Qdtq)
+```
+
 ## resource
 
 ### mark
