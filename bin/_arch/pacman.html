@@ -219,6 +219,9 @@ sudo pacman -S pacman-contrib
 <pre><code class="language-sh"># Removes older versions of packages from the cache, keeping only the two most recent versions for each one.
 sudo paccache -rk 2
 </code></pre>
+<pre><code class="language-sh"># removes all orphaned packages plus their unused dependencies and their configuration files, cleaning up your system from packages that are no longer required.
+sudo pacman -Rns $(pacman -Qdtq)
+</code></pre>
 <h2 id="resource"><a class="header" href="#resource">resource</a></h2>
 <h3 id="mark"><a class="header" href="#mark">mark</a></h3>
 <ul>
