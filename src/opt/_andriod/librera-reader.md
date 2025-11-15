@@ -1,4 +1,4 @@
-# [Librera Reader](https://github.com/foobnix/LibreraReader)
+# [Librera Reader](https://f-droid.org/en/packages/com.foobnix.pro.pdf.reader/) 
 
 ## usage
 

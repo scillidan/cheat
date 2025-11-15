@@ -2,7 +2,7 @@
 
 > Build with the precision of code or the speed of drag-n-drop. Host with on-prem control or in-the-cloud convenience. n8n gives you more freedom to implement multi-step AI agents and integrate apps than any other tool. [n8n.io]
 
-> 通过代码的精确性或拖放的速度进行构建。可以选择本地控制或云端便捷进行托管。n8n比其他任何工具都提供更多自由，以实现多步骤的AI代理和应用程序集成。 [GPT-4o mini]
+> 通过代码的精确性或拖放的速度进行构建。可以选择本地控制或云端便捷进行托管。n8n比其他任何工具都提供更多自由，以实现多步骤的AI代理和应用程序集成。 [n8n.io]
 
 ## install
 
@@ -40,6 +40,14 @@ sudo docker compose up -d
 ```
 
 ## resource
+
+### later
+
+- [n8n-docx-converter](https://github.com/cre8tiv/n8n-docx-converter)
+- [n8n-nodes-pdfco](https://github.com/pdfdotco/n8n-nodes-pdfco)
+- [n8n-nodes-pdfkit](https://github.com/bramkn/n8n-nodes-pdfkit)
+- [n8n-nodes-pdforge](https://github.com/pdforge/n8n-nodes-pdforge)
+- [n8n-nodes-qrcode](https://github.com/0xtlt/n8n-nodes-qrcode)
 
 ### cache
 

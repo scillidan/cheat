@@ -1,4 +1,4 @@
-# [AnkiDroid](https://github.com/ankidroid/Anki-Android)
+# [AnkiDroid: Flashcards](https://f-droid.org/en/packages/com.ichi2.anki/)
 
 ## config
 

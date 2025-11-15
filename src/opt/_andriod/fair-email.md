@@ -1,4 +1,4 @@
-# [FairEmail](https://github.com/M66B/FairEmail)
+# [FairEmail](https://f-droid.org/en/packages/eu.faircode.email)
 
 ## usage
 

@@ -1,4 +1,4 @@
-# [Amaze](https://github.com/TeamAmaze/AmazeFileManager)
+# [Amaze](https://f-droid.org/en/packages/com.amaze.filemanager/)
 
 ## usage
 

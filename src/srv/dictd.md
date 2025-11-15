@@ -116,8 +116,6 @@ dict -h localhost -p 2528 -d <database> <word>
 
 ## cross-reference
 
-- [dict-ecdict.md](/bin/dict-ecdict.md)
-
 ### cache
 
 - [ClipDict](https://github.com/github-young/ClipDict)

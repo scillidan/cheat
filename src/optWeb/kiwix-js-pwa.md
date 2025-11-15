@@ -1,4 +1,4 @@
-# [Kiwix JS](https://github.com/kiwix/kiwix-js-pwa)
+# [Kiwix JS for PWA, Windows and Linux (Electron, NWJS, UWP)](https://github.com/kiwix/kiwix-js-pwa)
 
 ![](https://img.shields.io/github/license/kiwix/kiwix-js-pwa) ![](https://img.shields.io/github/last-commit/scillidan/kiwix-js-pwa/main?label=last%20commit%20(fork))
 
