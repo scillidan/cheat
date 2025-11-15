@@ -182,64 +182,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <hr />
-<p>tags:</p>
-<ul>
-<li>Navigation</li>
-<li>Layout</li>
-</ul>
-<hr />
-<h1 id="global-layers"><a class="header" href="#global-layers"><a href="https://sli.dev/features/global-layers.html">Global Layers</a></a></h1>
-<pre><code class="language-html">&lt;!-- global-bottom.vue --&gt;
-&lt;template&gt;
-  &lt;footer class="absolute bottom-0 left-0 right-0 p-2"&gt;Your Name&lt;/footer&gt;
-&lt;/template&gt;
-</code></pre>
-<pre><code class="language-html">&lt;!-- custom-nav-controls --&gt;
-&lt;template&gt;
-  &lt;button class="icon-btn" title="Next" @click="$nav.next"&gt;
-    &lt;div class="i-carbon:arrow-right" /&gt;
-  &lt;/button&gt;
-&lt;/template&gt;
-</code></pre>
-<pre><code class="language-html">&lt;!-- hide the footer from Page 4 --&gt;
-&lt;template&gt;
-  &lt;footer
-    v-if="$nav.currentPage !== 4"
-    class="absolute bottom-0 left-0 right-0 p-2"
-  &gt;
-    Your Name
-  &lt;/footer&gt;
-&lt;/template&gt;
-</code></pre>
-<pre><code class="language-html">&lt;!-- hide the footer from "cover" layout --&gt;
-&lt;template&gt;
-  &lt;footer
-    v-if="$nav.currentLayout !== 'cover'"
-    class="absolute bottom-0 left-0 right-0 p-2"
-  &gt;
-    Your Name
-  &lt;/footer&gt;
-&lt;/template&gt;
-</code></pre>
-<pre><code class="language-html">&lt;!-- an example footer for pages --&gt;
-&lt;template&gt;
-  &lt;footer
-    v-if="$nav.currentLayout !== 'cover'"
-    class="absolute bottom-0 left-0 right-0 p-2"
-  &gt;
-    {{ $nav.currentPage }} / {{ $nav.total }}
-  &lt;/footer&gt;
-&lt;/template&gt;
-</code></pre>
-<pre><code class="language-html">&lt;!-- custom-nav-controls --&gt;
-&lt;!-- hide the button in Presenter model --&gt;
-&lt;template&gt;
-  &lt;button v-if="!$nav.isPresenter" class="icon-btn" title="Next" @click="$nav.next"&gt;
-    &lt;div class="i-carbon:arrow-right" /&gt;
-  &lt;/button&gt;
-&lt;/template&gt;
-</code></pre>
+                        <h1 id="global-layers"><a class="header" href="#global-layers">global-layers</a></h1>
 
                     </main>
 

@@ -182,42 +182,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <hr />
-<p>tags:</p>
-<ul>
-<li>Codeblock</li>
-<li>Animation</li>
-</ul>
-<hr />
-<h1 id="shiki-magic-move"><a class="header" href="#shiki-magic-move"><a href="https://sli.dev/features/shiki-magic-move.html">Shiki Magic Move</a></a></h1>
-<pre><code class="language-md">````md magic-move
-```js
-console.log(`Step ${1}`)
-```
-```js
-console.log(`Step ${1 + 1}`)
-```
-```ts
-console.log(`Step ${3}` as string)
-```
-````
-</code></pre>
-<pre><code class="language-md">````md magic-move {at:4, lines: true} // [!code hl]
-```js {*|1|2-5} // [!code hl]
-let count = 1
-function add() {
-  count++
-}
-```
-
-Non-code blocks in between as ignored, you can put some comments.
-
-```js {*}{lines: false} // [!code hl]
-let count = 1
-const add = () =&gt; count += 1
-```
-````
-</code></pre>
+                        <h1 id="shiki-magic-move"><a class="header" href="#shiki-magic-move">shiki-magic-move</a></h1>
 
                     </main>
 
