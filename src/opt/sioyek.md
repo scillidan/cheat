@@ -11,5 +11,14 @@ scoop install sioyek
 
 ## reference
 
-- #config [prefs.config - ahrm/sioyek](https://sioyek-documentation.readthedocs.io/en/latest/configuration.html)
-- #config [Configuration Sioyek document](https://github.com/ahrm/sioyek/blob/main/pdf_viewer/prefs.config)
+- #document [Sioyek Documentation](https://sioyek-documentation.readthedocs.io/en/latest)
+	- [Usage](https://sioyek-documentation.readthedocs.io/en/latest/usage.html)
+		- [Data and Synchronization](https://sioyek-documentation.readthedocs.io/en/latest/usage.html#data-and-synchronization)
+	- [Configuration](https://sioyek-documentation.readthedocs.io/en/latest/configuration.html)
+	- [Defining custom commands](https://sioyek-documentation.readthedocs.io/en/latest/scripting.html#defining-custom-commands)
+
+## resource
+
+### extra
+
+- [sioyek-python-extensions](https://github.com/ahrm/sioyek-python-extensions)

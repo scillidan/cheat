@@ -27,28 +27,29 @@
 
 ### later
 
-- #answer [Answer Set](https://github.com/scott2000/answerset)
-- #cloze [Edit Field During Review (Cloze)](https://github.com/BlueGreenMagick/Edit-Field-During-Review-Cloze/)
-- #code [Anki programming flashcards](https://github.com/badlydrawnrob/anki)
-- #field [anki-field-autocomplete](https://github.com/AnKing-VIP/anki-field-autocomplete)
-- #image [AJT Media Converter](https://github.com/Ajatt-Tools/PasteImagesAsWebP)
-- #import [Cross Profile Search and Import](https://github.com/Ajatt-Tools/cropro)
-- #order [AnkiMorphs](https://github.com/mortii/anki-morphs)
-- #post [Anki Cards](https://github.com/MNandor/anki-cards)
-- #size [Note Size Anki addon](https://github.com/Aleks-Ya/note-size-anki-addon)
-- #style [pin1yin1 → pīnyīn](https://github.com/maltevonehren/pinyin-numbers-to-tone-marks)
+- #template [Anki programming flashcards](https://github.com/badlydrawnrob/anki)
 - #template [Anki Word Wizard Template](https://github.com/ankiwords/anki-word-wizard-template)
-- #text [Anki Word Hyphenator](https://github.com/gregorias/anki-word-hyphenator)
 - #theme [Ankimin](https://github.com/ctrlaltwill/ankimin)
-- #tts [AwesomeTTS-AI-Version(unofficial)](https://github.com/sioChannell/AwesomeTTS-AI-Version-unofficial-)
+
+### extra
+
+- #cloze [Answer Set](https://ankiweb.net/shared/info/1827331674)
+- #cloze [Edit Field During Review (Cloze)](https://ankiweb.net/shared/info/385888438)
+- [AJT CroPro - Cross Profile Search and Import](https://ankiweb.net/shared/info/1772763629)
+- [AJT Media Converter - WebP, AVIF, Opus](https://ankiweb.net/shared/info/1151815987)
+- [AnkiMorphs](https://ankiweb.net/shared/info/472573498)
+- [Field AutoComplete](https://ankiweb.net/shared/info/511710206)
+- [Hyphenate Words](https://ankiweb.net/shared/info/1140138750)
+- [Minimize to tray](https://ankiweb.net/shared/info/85158043)
+- [Note Size](https://ankiweb.net/shared/info/1188705668)
 
 ### cache
 
-- #analyze #pandas [AnkiPandas](https://github.com/klieret/AnkiPandas)
 - #analyze [Anki History Visualization](https://github.com/xiety/AnkiHistoryVisualization)
+- #analyze [AnkiPandas](https://github.com/klieret/AnkiPandas)
 - #analyze [Search Stats Extended](https://github.com/Luc-Mcgrady/Anki-Search-Stats-Extended)
 - #choice [Anki-Multiple-Choice](https://github.com/ale18V/Anki-Multiple-Choice)
-- #cli #add [apy](https://github.com/lervag/apy)
+- #cli [apy](https://github.com/lervag/apy)
 - #cli [vocage](https://github.com/proycon/vocage)
 - #cloze [Anki Card Text Randomizer](https://github.com/Yustynn/anki-card-text-randomizer)
 - #convert #dev [yanki](https://github.com/kitschpatrol/yanki)
@@ -96,6 +97,7 @@
 - #sound [voicevox-anki](https://github.com/0xspringtime/voicevox-anki)
 - #stroke-diagram [anki-kanji](https://github.com/bzhoek/anki-kanji)
 - #style [Anki Code Highlighter](https://github.com/gregorias/anki-code-highlighter)
+- #style [pin1yin1 → pīnyīn](https://github.com/maltevonehren/pinyin-numbers-to-tone-marks)
 - #style [Rainbow Cloze](https://github.com/gyuudon3187/rainbow-cloze)
 - #template [Anki Templates 02](https://github.com/ikkz/anki-template)
 - #template [Anki Templates](https://github.com/nico-lechatnoir/Anki-Templates)
@@ -116,3 +118,5 @@
 - #web [web](https://github.com/2anki/web)
 - #wiki [Ankipedia](https://github.com/ctrlaltwill/ankipedia)
 - [Kardenwort](https://github.com/kardenwort/20250913122858-kardenwort)
+- [AnkiBrain](https://ankiweb.net/shared/info/1915225457)
+- [AwesomeTTS-AI-Version(unofficial)](https://github.com/sioChannell/AwesomeTTS-AI-Version-unofficial-)

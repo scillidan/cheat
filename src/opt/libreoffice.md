@@ -1,9 +1,8 @@
 # [LibreOffice](https://www.libreoffice.org)
 
-> LibreOffice is a private, free and open source office suite – the successor project to OpenOffice.
-It's compatible with Microsoft Office/365 files (.doc, .docx, .xls, .xlsx, .ppt, .pptx) and is backed by a non-profit organisation. [libreoffice.org]
+> LibreOffice is a freely available, fully-featured, open-source office productivity suite compatible  with other major office suites and is available on various platforms. The native file format used is  the Open Document Format (ODF). However, LibreOffice can also open and save documents in  numerous other formats, including those used by various versions of Microsoft Office. ["LibreOffice - Getting Started Guide (25.2)"]
 
-> LibreOffice是一个私有的、免费开源的办公套件——OpenOffice的继任项目。它与Microsoft Office/365文件（.doc、.docx、.xls、.xlsx、.ppt、.pptx）兼容，并由一个非营利组织支持。 [libreoffice.org]
+> LibreOffice是一个免费提供的、功能齐全的开源办公生产力套件，与其他主要办公套件兼容，并可在各种平台上使用。其使用的原生文件格式为开放文档格式（ODF）。不过，LibreOffice还可以以多种其他格式打开和保存文档，包括各个版本的Microsoft Office所使用的格式。 ["LibreOffice - Getting Started Guide (25.2)"]
 
 ## install
 

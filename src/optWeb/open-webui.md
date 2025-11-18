@@ -66,6 +66,10 @@ Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to 
 - #model [Librarian](https://openwebui.com/m/javi/librarian:latest)
 - #model [The Good Doctor](https://openwebui.com/m/nicluckie/the-good-doctor:latest)
 
+### later
+
+- [Document Search](https://openwebui.com/m/daradib/documentsearch)
+
 ### cache
 
 - #function [N8N Pipe](https://openwebui.com/f/coleam/n8n_pipe)
