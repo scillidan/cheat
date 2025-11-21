@@ -68,7 +68,7 @@ Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to 
 
 ### later
 
-- [Document Search](https://openwebui.com/m/daradib/documentsearch)
+- #model [Document Search](https://openwebui.com/m/daradib/documentsearch)
 
 ### cache
 
@@ -78,7 +78,7 @@ Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to 
 - #model [Sigmund Freud](https://openwebui.com/m/geometric/sigmund-freud)
 - #prompt [Code Expert](https://openwebui.com/p/masterdee/code-expert)
 - #prompt [Code Optimization](https://openwebui.com/p/hub/code-optimization)
-- [WebUI Auto Translator](https://openwebui.com/t/nnaoycurt/webui_auto_translator)
+- #tool [WebUI Auto Translator](https://openwebui.com/t/nnaoycurt/webui_auto_translator)
 
 ## annex
 

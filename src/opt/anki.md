@@ -117,6 +117,7 @@
 - #web [VocabSieve](https://github.com/FreeLanguageTools/vocabsieve)
 - #web [web](https://github.com/2anki/web)
 - #wiki [Ankipedia](https://github.com/ctrlaltwill/ankipedia)
-- [Kardenwort](https://github.com/kardenwort/20250913122858-kardenwort)
+- [Anki Search Utility](https://github.com/voothi/20240408222910-goldendict-anki-search)
 - [AnkiBrain](https://ankiweb.net/shared/info/1915225457)
 - [AwesomeTTS-AI-Version(unofficial)](https://github.com/sioChannell/AwesomeTTS-AI-Version-unofficial-)
+- [Kardenwort](https://github.com/kardenwort/20250913122858-kardenwort)

@@ -447,6 +447,7 @@
     - [rbenv](lib/ruby/rbenv.md)
   - [rust](lib/rust/_.md)
     - [cargo-sweep](lib/rust/cargo-sweep.md)
+  - [typst](lib/typst/_.md)
 - [opt](opt/_.md)
   - [7-zip](opt/7-zip.md)
   - [abogen](opt/abogen.md)

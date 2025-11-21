@@ -22,3 +22,9 @@ sudo pacman -S tailscale
 sudo systemctl enable --now tailscaled
 sudo tailscale login
 ```
+
+## reference
+
+### cache
+
+- [Subnet routers](https://tailscale.com/kb/1019/subnets)
