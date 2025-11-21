@@ -12,13 +12,13 @@
 
 ### mark
 
-- [blink-cmp-conventional-commits](https://github.com/disrupted/blink-cmp-conventional-commits)
 - [blink-cmp-dictionary](https://github.com/Kaiser-Yang/blink-cmp-dictionary)
 - [blink-cmp-latex](https://github.com/erooke/blink-cmp-latex)
 - [blink-cmp-npm](https://github.com/alexandre-abrioux/blink-cmp-npm.nvim)
 - [blink-emoji.nvim](https://github.com/moyiz/blink-emoji.nvim)
 - [blink-ripgrep.nvim](https://github.com/mikavilpas/blink-ripgrep.nvim)
 - [blink.compat](https://github.com/Saghen/blink.compat)
+- [csc.nvim](https://github.com/yus-works/csc.nvim)
 - [css-vars.nvim](https://github.com/jdrupal-dev/css-vars.nvim)
 - [gitmoji.nvim](https://github.com/Dynge/gitmoji.nvim)
 
@@ -29,6 +29,7 @@
 ### cache
 
 - [Blink Indent (blink.indent)](https://github.com/saghen/blink.indent)
+- [blink-cmp-conventional-commits](https://github.com/disrupted/blink-cmp-conventional-commits)
 - [blink-cmp-env](https://github.com/bydlw98/blink-cmp-env)
 - [blink-cmp-git](https://github.com/Kaiser-Yang/blink-cmp-git)
 - [blink-cmp-im](https://github.com/yehuohan/blink-cmp-im)
