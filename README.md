@@ -9,4 +9,3 @@
 ## Todo
 
 - Clear tags in `_resource.md` and `## resource`.
-- Clear and move marked resource URL content into `## cross-reference`.

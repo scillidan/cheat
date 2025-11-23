@@ -29,7 +29,7 @@ bash = "#"
 [output.html.playground]
 runnable = false
 
-[prepocessor.force-relative-links]
+[preprocessor.force-relative-links]
 after = ["links"]
 
 [preprocessor.admonish]
