@@ -18,6 +18,9 @@ jobs:
           cargo install mdbook-force-relative-links
           cargo install mdbook-admonish
           cargo install mdbook-tailor
+      - run: |
+          sudo chmod +x ./generate_summary.sh
+          ./generate_summary.sh
       - run: mdbook build
       - uses: peaceiris/actions-gh-pages@v4
         with:
