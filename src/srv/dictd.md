@@ -66,10 +66,6 @@ access {
 }
 
 # For example
-database wn {
-	data /usr/share/dictd/wn.dict.dz
-	index /usr/share/dictd/wn.index
-}
 database ecdict {
 	data /usr/share/dictd/ecdict.dict.dz
 	index /usr/share/dictd/ecdict.index
@@ -81,6 +77,10 @@ database gcide {
 database etymonline {
 	data /usr/share/dictd/etymonline.dict.dz
 	index /usr/share/dictd/etymonline.index
+}
+database wn {
+	data /usr/share/dictd/wn.dict.dz
+	index /usr/share/dictd/wn.index
 }
 database dict-en-en {
 	data /usr/share/dictd/dict-en-en.dict.dz
@@ -113,6 +113,10 @@ sudo systemctl enable --now dictd.service
 dict --host localhost --port 2528 -I -v
 dict -h localhost -p 2528 -d <database> <word>
 ```
+
+## reference
+
+- [Database copyright information](https://dict.org/bin/Dict?Form=Dict1&Query=00-database-info&Strategy=*&Database=*)
 
 ## cross-reference
 
