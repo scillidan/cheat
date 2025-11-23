@@ -17,7 +17,7 @@ jobs:
           cargo install mdbook --force
           cargo install mdbook-force-relative-links --force
           cargo install mdbook-admonish --force
-          cargo install mdbook-tailor --force
+          # cargo install mdbook-tailor --force
       - run: |
           sudo chmod +x ./generate_summary.sh
           ./generate_summary.sh
