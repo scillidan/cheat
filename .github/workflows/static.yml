@@ -14,10 +14,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions-rust-lang/setup-rust-toolchain@v1
       - run: |
-          cargo install mdbook
-          cargo install mdbook-force-relative-links
-          cargo install mdbook-admonish
-          cargo install mdbook-tailor
+          cargo install mdbook --force
+          cargo install mdbook-force-relative-links --force
+          cargo install mdbook-admonish --force
+          cargo install mdbook-tailor --force
       - run: |
           sudo chmod +x ./generate_summary.sh
           ./generate_summary.sh
