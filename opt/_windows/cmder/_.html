@@ -35,7 +35,7 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-6704d6cd.js";
+            window.path_to_searchindex_js = "../../../searchindex-d03935db.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc-11545f60.js"></script>
@@ -190,8 +190,8 @@ cd "%USERPROFILE%/Usr/Source/cmder"
 git clone --depth=1 https://github.com/chrisant996/clink-fzf
 git clone --depth=1 https://github.com/chrisant996/clink-gizmos
 git clone --depth=1 https://github.com/davidmarek/clink-git-extensions
-git clone --depth=1 https://github.com/mwmi/clink-carapace
 git clone --depth=1 https://github.com/shunsambongi/clink-zoxide
+# git clone --depth=1 https://github.com/mwmi/clink-carapace
 </code></pre>
 <pre><code class="language-sh">set "CMDER_HOME=%USERPROFILE%\Usr\Opt\cmder_mini"
 set "CMDER_SRC=%USERPROFILE%\Usr\Source\cmder"
@@ -226,13 +226,13 @@ del "%CMDER_HOME%\vendor\git_branch_autocomplete.lua"
 mklink "%CMDER_HOME%\vendor\git_aliases_autocomplete.lua" "%CMDER_SRC%\clink-git-extensions\git_aliases_autocomplete.lua"
 mklink "%CMDER_HOME%\vendor\git_branch_autocomplete.lua" "%CMDER_SRC%\clink-git-extensions\git_branch_autocomplete.lua"
 
-del "%CMDER_HOME%\vendor\carapace.lua"
-del "%CMDER_HOME%\vendor\matchicons.lua"
-mklink "%CMDER_HOME%\vendor\carapace.lua" "%CMDER_SRC%\clink-carapace\carapace.lua"
-mklink "%CMDER_HOME%\vendor\matchicons.lua" "%CMDER_SRC%\clink-gizmos\matchicons.lua"
-
 del "%CMDER_HOME%\vendor\zoxide.lua"
 mklink "%CMDER_HOME%\vendor\zoxide.lua" "%CMDER_SRC%\clink-zoxide\zoxide.lua"
+
+# del "%CMDER_HOME%\vendor\carapace.lua"
+# del "%CMDER_HOME%\vendor\matchicons.lua"
+# mklink "%CMDER_HOME%\vendor\carapace.lua" "%CMDER_SRC%\clink-carapace\carapace.lua"
+# mklink "%CMDER_HOME%\vendor\matchicons.lua" "%CMDER_SRC%\clink-gizmos\matchicons.lua"
 </code></pre>
 <h2 id="config"><a class="header" href="#config">config</a></h2>
 <p>Cmder → Settings → Import → <code>user-ConEmu.xml</code>.</p>
@@ -246,7 +246,7 @@ mklink "%CMDER_HOME%\vendor\zoxide.lua" "%CMDER_SRC%\clink-zoxide\zoxide.lua"
 <h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
 <h3 id="mark"><a class="header" href="#mark">mark</a></h3>
 <ul>
-<li><a href="/opt/_windows/cmder/clink-fzf.html">clink-fzf.md</a></li>
+<li><a href="/bin/_windows/clink/_.html">clink.md</a></li>
 </ul>
 <h2 id="resource"><a class="header" href="#resource">resource</a></h2>
 <h3 id="mark-1"><a class="header" href="#mark-1">mark</a></h3>
@@ -260,7 +260,6 @@ mklink "%CMDER_HOME%\vendor\zoxide.lua" "%CMDER_SRC%\clink-zoxide\zoxide.lua"
 <h3 id="cache"><a class="header" href="#cache">cache</a></h3>
 <ul>
 <li><a href="https://github.com/tadashi-aikawa/owl-cmder-tools">Owl Cmder Tools</a></li>
-<li><a href="https://github.com/skywind3000/z.lua">z.lua</a></li>
 </ul>
 <h2 id="annex"><a class="header" href="#annex">annex</a></h2>
 <p><img src="/_image/opt/_windows/cmder/colorcheme_fakenight.png" alt="colorcheme_fakenight">

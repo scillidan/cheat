@@ -35,7 +35,7 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-6704d6cd.js";
+            window.path_to_searchindex_js = "../../../searchindex-d03935db.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc-11545f60.js"></script>
@@ -225,9 +225,14 @@ if ($MyInvocation.ExpectingInput) { $input | &amp; $path  @args } else { &amp; $
 exit $LASTEXITCODE
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
-<pre><code class="language-sh"># scoop update innounp
+<pre><code class="language-sh"># Install pkg
+# scoop update innounp
 scoop install &lt;pkg&gt;
+# Clean up old installed version
+scoop cleanup *
+# Only download pkg files
 scoop download &lt;pkg&gt;
+# Show local pkg files
 scoop cache show
 </code></pre>
 <h2 id="update-scoop"><a class="header" href="#update-scoop">Update scoop</a></h2>
