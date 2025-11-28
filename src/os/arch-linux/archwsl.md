@@ -72,9 +72,9 @@ systemd=true
 
 0. [arch-linux.md](/os/arch-linux/_.md)
 1. [wsl.md](/os/windows10/wsl.md)
-2. [pacman](/bin/_arch/pacman.md)
-3. [yay](/bin/_arch/yay.md)
-4. [openssh](/bin/_arch/openssh.md)
+2. [pacman.md](/bin/_arch/pacman.md)
+3. [yay.md](/bin/_arch/yay.md)
+4. [openssh.md](/bin/_arch/openssh.md)
 5. [tigervnc.md](/opt/_arch/tigervnc.md)
 
 [^1]: [Known issues](https://wsldl-pg.github.io/ArchW-docs/Known-issues/)

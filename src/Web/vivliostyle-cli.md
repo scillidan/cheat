@@ -16,10 +16,7 @@ vivliostyle init
 subl vivliostyle.config.js
 # Edit it as needed
 ```
-
-```admonish question
-I don't know why, but sometimes after you use "vivliostyle preview", you need to used `Task Manager` to find and stop the (multi-) `chromium` process.
-```
+_I don't know why, but sometimes after you use "vivliostyle preview", you need to used `Task Manager` to find and stop the (multi-) `chromium` process._
 
 ```sh
 vivliostyle preview

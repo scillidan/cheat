@@ -66,30 +66,30 @@ access {
 }
 
 # For example
-database ecdict {
-	data /usr/share/dictd/ecdict.dict.dz
-	index /usr/share/dictd/ecdict.index
-}
-database gcide {
-	data /usr/share/dictd/gcide.dict.dz
-	index /usr/share/dictd/gcide.index
-}
-database etymonline {
-	data /usr/share/dictd/etymonline.dict.dz
-	index /usr/share/dictd/etymonline.index
-}
 database wn {
 	data /usr/share/dictd/wn.dict.dz
 	index /usr/share/dictd/wn.index
 }
-database dict-en-en {
-	data /usr/share/dictd/dict-en-en.dict.dz
-	index /usr/share/dictd/dict-en-en.index
+
+database ecdict {
+	data /usr/share/dictd/ecdict.dict.dz
+	index /usr/share/dictd/ecdict.index
 }
-database wikdict-en-zh {
-	data /usr/share/dictd/wikdict-en-zh.dict.dz
-	index /usr/share/dictd/wikdict-en-zh.index
+
+database gcide {
+	data /usr/share/dictd/gcide.dict.dz
+	index /usr/share/dictd/gcide.index
 }
+
+
+# database dict-en-en {
+# 	data /usr/share/dictd/dict-en-en.dict.dz
+# 	index /usr/share/dictd/dict-en-en.index
+# }
+# database wikdict-en-zh {
+# 	data /usr/share/dictd/wikdict-en-zh.dict.dz
+# 	index /usr/share/dictd/wikdict-en-zh.index
+# }
 
 #LASTLINE
 ```
@@ -122,8 +122,13 @@ dict -h localhost -p 2528 -d <database> <word>
 
 ### cache
 
-- [ClipDict](https://github.com/github-young/ClipDict)
+- [dict-ecdict.md](/bin/dict-ecdict.md)
 
 ## resource
+
+### cache
+
+- [ClipDict](https://github.com/github-young/ClipDict)
+- [dict-cedic](https://github.com/tuberry/dict-cedict)
 
 [^1]: [dictd.conf](https://gist.github.com/wind0204/d65c7d1b5d7794c4c7fa1a02d5151acc)

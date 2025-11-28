@@ -10,6 +10,8 @@
 
 - Yomitan → Yomitan Settings
   - General → Language → `English (en)`
+  - Appearance → Configure collapsible dictionaries → <the_dict> → Collapsed
+
 
 ## reference
 
@@ -17,6 +19,7 @@
   - [Advanced Features](https://yomitan.wiki/advanced/)
 - [How Do I Make A Yomichan Dictionary?](https://github.com/MarvNC/yomitan-dictionaries/blob/master/how-to-make-yomichan-dictionaries.md)
 - [Contributing to a Language](https://github.com/yomidevs/yomitan/blob/master/docs/development/language-features.md)
+- [Handling multiple entries for same headword DSL -> Yomichan](https://github.com/ilius/pyglossary/issues/574)
 
 ## asset
 
