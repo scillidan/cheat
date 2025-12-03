@@ -7,12 +7,11 @@
 [^1]
 
 ```sh
-mkdir MinerU
+git clone --depth=1 https://github.com/opendatalab/MinerU
 cd MinerU
-uv venv
+uv venv --python 3.13
 source .venv/bin/activate
-uv pip install -U "mineru[core]"
-uv pip install hf_transfer
+uv pip install .[core]
 ```
 
 ### Docker compose

@@ -10,11 +10,14 @@ vim Gemfile
 ```
 
 ```
-ruby '3.4.1'
+ruby '3.4.7'
 ```
 
 ```sh
-rbenv install 3.4.1
+rbenv update
+rbenv install 3.4.7
+rbenv shell 3.4.7
+rbenv version
 gem install bundler
 bundle install
 ```
