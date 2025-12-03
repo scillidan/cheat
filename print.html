@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "searchindex-67cef739.js";
+            window.path_to_searchindex_js = "searchindex-32e01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-11545f60.js"></script>
@@ -21422,6 +21422,7 @@ git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 <li>Gothic Font Generator (<a href="https://capitalizemytitle.com/gothic-font-generator">public</a>)</li>
 <li>HTML Formatter (<a href="https://webformatter.com/html">public</a>)</li>
 <li>Lobe Chat (<a href="https://gm-lobe-chat.vercel.app">vercel</a>) <a href="/optWeb/lobe-chat/lobe-chat.html">lobe-chat.md</a></li>
+<li>MinerU (<a href="https://scillidan.github.io/MinerU/demo/">gh-pages</a>) <a href="/optWeb/mineru.html">mineru.md</a></li>
 <li>Musescore Downloader (<a href="https://nanomidi.net/musescore-downloader">public</a>)</li>
 <li>nano MIDI <a href="https://nanomidi.net/musescore-downloader">public</a></li>
 <li>Online LaTeX to image converter (<a href="https://www.bruot.org/tex2img/">public</a>)</li>
@@ -21639,7 +21640,6 @@ git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 <li>markdownlint (<a href="https://gm-markdownlint.vercel.app/default.htm">vercel</a>) <a href="/optWeb/markdownlint.html">markdownlint.md</a></li>
 <li>MeloTTS <a href="/optWeb/melotts.html">melotts.md</a></li>
 <li>Mermaidv Live Editor (<a href="https://gm-mermaid-live-editor.vercel.app">vercel</a>) <a href="/optWeb/mermaid-live-editor.html">mermaid-live-editor.md</a></li>
-<li>MinerU (<a href="https://scillidan.github.io/MinerU/demo/">gh-pages</a>) <a href="/optWeb/mineru.html">mineru.md</a></li>
 <li>mini-img-editor (<a href="https://gm-mini-photo-editor.vercel.app">vercel</a>) <a href="/optWeb/mini-photo-editor.html">mini-photo-editor.md</a></li>
 <li>miniPaint (<a href="https://scillidan.github.io/miniPaint">gh-pages</a>) <a href="/optWeb/minipaint.html">minipaint.md</a></li>
 <li>Mokuro reader (<a href="https://gm-mokuro-reader.vercel.app">vercel</a>) <a href="/optWeb/mokuro-reader.html">mokuro-reader.md</a></li>
@@ -22004,9 +22004,12 @@ cd devdocs
 cp Gemfile Gemfile.bak
 vim Gemfile
 </code></pre>
-<pre><code>ruby '3.4.1'
+<pre><code>ruby '3.4.7'
 </code></pre>
-<pre><code class="language-sh">rbenv install 3.4.1
+<pre><code class="language-sh">rbenv update
+rbenv install 3.4.7
+rbenv shell 3.4.7
+rbenv version
 gem install bundler
 bundle install
 </code></pre>
@@ -23198,12 +23201,11 @@ yarn build
 <p><img src="https://img.shields.io/github/license/opendatalab/MinerU" alt=""> <img src="https://img.shields.io/github/last-commit/scillidan/MinerU/main?label=last%20commit%20(fork)" alt=""> <img src="https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&amp;logoColor=white" alt=""></p>
 <h3 id="pip"><a class="header" href="#pip">Pip</a></h3>
 <p><sup class="footnote-reference" id="fr-1-1-71"><a href="#footnote-1-76">1</a></sup></p>
-<pre><code class="language-sh">mkdir MinerU
+<pre><code class="language-sh">git clone --depth=1 https://github.com/opendatalab/MinerU
 cd MinerU
-uv venv
+uv venv --python 3.13
 source .venv/bin/activate
-uv pip install -U "mineru[core]"
-uv pip install hf_transfer
+uv pip install .[core]
 </code></pre>
 <h3 id="docker-compose-1"><a class="header" href="#docker-compose-1">Docker compose</a></h3>
 <p><sup class="footnote-reference" id="fr-2-1-28"><a href="#footnote-2-31">2</a></sup></p>
@@ -26271,6 +26273,7 @@ C:\Users\User\.pyenv\pyenv-win\shims;
 C:\Users\User\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;
 C:\Users\User\Usr\Git\Shell\_windows\Patch;
 C:\Users\User\Usr\Git\Shell\_windows;
+C:\Users\User\Usr\Git\Shell\optWeb;
 C:\Users\User\Usr\Lib\rbenv\rbenv\bin;
 C:\Users\User\Usr\Lib\rbenv\shims;
 C:\Users\User\Usr\Opt\cmder_mini;

@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-67cef739.js";
+            window.path_to_searchindex_js = "../searchindex-32e01ba8.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-11545f60.js"></script>
@@ -184,12 +184,11 @@
 <p><img src="https://img.shields.io/github/license/opendatalab/MinerU" alt=""> <img src="https://img.shields.io/github/last-commit/scillidan/MinerU/main?label=last%20commit%20(fork)" alt=""> <img src="https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&amp;logoColor=white" alt=""></p>
 <h3 id="pip"><a class="header" href="#pip">Pip</a></h3>
 <p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
-<pre><code class="language-sh">mkdir MinerU
+<pre><code class="language-sh">git clone --depth=1 https://github.com/opendatalab/MinerU
 cd MinerU
-uv venv
+uv venv --python 3.13
 source .venv/bin/activate
-uv pip install -U "mineru[core]"
-uv pip install hf_transfer
+uv pip install .[core]
 </code></pre>
 <h3 id="docker-compose"><a class="header" href="#docker-compose">Docker compose</a></h3>
 <p><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>
