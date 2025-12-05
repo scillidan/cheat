@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-32e01ba8.js";
+            window.path_to_searchindex_js = "../searchindex-a3eb15d3.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-11545f60.js"></script>
+        <script src="../toc-0aabdaa6.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -212,7 +212,7 @@ cp gzip.exe gunzip.exe
 cp gzip.shim gunzip.shim
 </code></pre>
 <h2 id="deploy-with-docker-compose"><a class="header" href="#deploy-with-docker-compose">Deploy with Docker compose</a></h2>
-<p><sup class="footnote-reference" id="fr-3-1"><a href="#footnote-3">1</a></sup></p>
+<p><sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></p>
 <pre><code class="language-sh">mkdir devdocs
 cd devdocs
 vim docker-compose.yml
@@ -227,10 +227,15 @@ vim docker-compose.yml
 </code></pre>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>
+<h2 id="troubleshoot"><a class="header" href="#troubleshoot">Troubleshoot</a></h2>
+<ul>
+<li><a href="https://github.com/CocoaPods/CocoaPods/issues/9955">Any pod command fails for lack of libcurl.dll on a Windows machine.</a></li>
+<li><a href="https://github.com/freeCodeCamp/devdocs/issues/1152">Not installable on Windows</a></li>
+</ul>
 <hr>
 <ol class="footnote-definition">
-<li id="footnote-3">
-<p><a href="https://github.com/freeCodeCamp/devdocs#using-docker-recommended">Using Docker (Recommended)</a> <a href="#fr-3-1">↩</a></p>
+<li id="footnote-1">
+<p><a href="https://github.com/freeCodeCamp/devdocs#using-docker-recommended">Using Docker (Recommended)</a> <a href="#fr-1-1">↩</a></p>
 </li>
 </ol>
 
