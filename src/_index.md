@@ -10,7 +10,7 @@
 		  - bin
 		  	- opt
 		  	- optGame
-		  	- optWeb
 		  	- srv
+		  		- optWeb
 		  - Web
 ```

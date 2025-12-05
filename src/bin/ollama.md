@@ -10,9 +10,11 @@ scoop install ollama-full
 ## usage
 
 ```sh
+ollama pull llama3
 ollama pull llama3.1
 # ollama pull qwen2.5-coder:3b
 # ollama pull qwen2.5-coder:7b
+# ollama pull qwen3:14b
 ollama pull nomic-embed-text
 ollama list
 ```

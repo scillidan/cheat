@@ -29,6 +29,7 @@
 ### cache
 
 - [Blink Indent (blink.indent)](https://github.com/saghen/blink.indent)
+- [blink-cmp-bibtex](https://github.com/krissen/blink-cmp-bibtex)
 - [blink-cmp-conventional-commits](https://github.com/disrupted/blink-cmp-conventional-commits)
 - [blink-cmp-env](https://github.com/bydlw98/blink-cmp-env)
 - [blink-cmp-git](https://github.com/Kaiser-Yang/blink-cmp-git)

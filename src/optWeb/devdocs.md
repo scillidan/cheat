@@ -47,7 +47,7 @@ cp gzip.shim gunzip.shim
 
 ## Deploy with Docker compose
 
-[^3]
+[^1]
 
 ```sh
 mkdir devdocs
@@ -68,7 +68,9 @@ services:
 ```sh
 sudo docker compose up -d
 ```
+[^1]: [Using Docker (Recommended)](https://github.com/freeCodeCamp/devdocs#using-docker-recommended)
 
-[^1]: [Any pod command fails for lack of libcurl.dll on a Windows machine.](https://github.com/CocoaPods/CocoaPods/issues/9955)
-[^2]: [Not installable on Windows](https://github.com/freeCodeCamp/devdocs/issues/1152)
-[^3]: [Using Docker (Recommended)](https://github.com/freeCodeCamp/devdocs#using-docker-recommended)
+## Troubleshoot
+
+- [Any pod command fails for lack of libcurl.dll on a Windows machine.](https://github.com/CocoaPods/CocoaPods/issues/9955)
+- [Not installable on Windows](https://github.com/freeCodeCamp/devdocs/issues/1152)
