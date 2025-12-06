@@ -26,6 +26,8 @@ bundle install
 
 ```sh
 # Docs
+bundle exec thor docs:list
+bundle exec thor docs:download html
 bundle exec thor docs:download --all
 bundle exec thor docs:download --installed
 # Docs be saved into public\docs.

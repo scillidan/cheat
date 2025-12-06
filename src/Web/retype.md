@@ -25,5 +25,4 @@ retype build
 ## reference
 
 - #document [Retype](https://retype.com)
-- #github-action [Retype Build Action](https://github.com/retypeapp/action-build)
 - [how customize the css · Issue #610 · retypeapp/retype](https://github.com/retypeapp/retype/issues/610)

@@ -27,7 +27,6 @@ theme:
 - #document [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
   - [Changing the logo and icons - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/)
   - [Code blocks - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#embedding-external-files)
-- #github-action [Publishing your site - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
 
 ## troubleshoot
 

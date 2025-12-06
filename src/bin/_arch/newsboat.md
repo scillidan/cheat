@@ -30,6 +30,7 @@ https://hnrss.org/newest
 ## usage
 
 ```sh
+newsboat -i <your>.opml
 newsboat
 ```
 
