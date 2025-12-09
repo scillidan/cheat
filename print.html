@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "searchindex-3eab1d0b.js";
+            window.path_to_searchindex_js = "searchindex-2e52e561.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-618343f7.js"></script>
@@ -7643,7 +7643,6 @@ scoop bucket add nonportable
 scoop bucket add nirsoft
 scoop bucket add versions
 scoop bucket add java
-# scoop bucket add games
 </code></pre>
 <p>Or:</p>
 <pre><code class="language-sh">cd &lt;path_to&gt;\Scoop\buckets
@@ -7653,32 +7652,19 @@ git clone --depth=1 https://github.com/ScoopInstaller/Nonportable
 git clone --depth=1 https://github.com/kodybrown/scoop-nirsoft
 git clone --depth=1 https://github.com/ScoopInstaller/Versions
 git clone --depth=1 https://github.com/ScoopInstaller/Java
-# git clone --depth=1 https://github.com/Calinou/scoop-games
 </code></pre>
 <h2 id="reference-49"><a class="header" href="#reference-49">reference</a></h2>
 <ul>
 <li>#blog <a href="https://chawyehsu.com/blog/talk-about-scoop-the-package-manager-for-windows-again">再谈谈 Scoop 这个 Windows 下的软件包管理器</a></li>
-<li>#document <a href="https://github.com/ScoopInstaller/Scoop/wiki">Home · ScoopInstaller/Scoop Wiki</a>
-<ul>
-<li><a href="https://github.com/ScoopInstaller/Scoop/wiki/Buckets">Buckets</a>
-<ul>
-<li><a href="https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests">App Manifests</a></li>
-<li><a href="https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate">App Manifest Autoupdate</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>#guide <a href="https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md">CONTRIBUTING.md</a></li>
-<li>#guide <a href="https://github.com/ScoopInstaller/BucketTemplate">Scoop Bucket Template</a></li>
+<li>#document <a href="https://github.com/ScoopInstaller/Scoop/wiki">Home · ScoopInstaller/Scoop Wiki</a></li>
 </ul>
 <h2 id="cross-reference-16"><a class="header" href="#cross-reference-16">cross-reference</a></h2>
 <h3 id="mark-21"><a class="header" href="#mark-21">mark</a></h3>
 <ul>
-<li><a href="bin/_windows/scoop/bin/_windows/scoop/bucket.html">bucket</a></li>
+<li><a href="bin/_windows/scoop/bin/_windows/scoop/bucket-template.html">bucket-template.md</a></li>
 </ul>
 <h3 id="cache-29"><a class="header" href="#cache-29">cache</a></h3>
 <ul>
-<li><a href="bin/_windows/scoop/bin/_windows/scoop/bucket-template.html">bucket-template.md</a></li>
 <li><a href="bin/_windows/scoop/bin/_windows/scoop/scoop-search.html">scoop-search.md</a></li>
 </ul>
 <h2 id="resource-32"><a class="header" href="#resource-32">resource</a></h2>
@@ -7718,58 +7704,26 @@ git clone --depth=1 https://github.com/ScoopInstaller/Java
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="buckettemplate"><a class="header" href="#buckettemplate"><a href="https://github.com/ScoopInstaller/BucketTemplate">BucketTemplate</a></a></h1>
-<h2 id="personal-do-7"><a class="header" href="#personal-do-7">Personal do</a></h2>
-<p>extra later</p>
+<h2 id="reference-50"><a class="header" href="#reference-50">reference</a></h2>
 <ul>
-<li><a href="https://github.com/scillidan/bucket/7zip-extra.json">7zip-extra</a></li>
-<li><a href="https://github.com/scillidan/bucket/altbacktick.json">altbacktick</a></li>
-<li><a href="https://github.com/scillidan/bucket/audiobookconverter.json">audiobookconverter</a></li>
-<li><a href="https://github.com/scillidan/bucket/audiowaveform.json">audiowaveform</a></li>
-<li><a href="https://github.com/scillidan/bucket/cjam.json">cjam</a></li>
-<li><a href="https://github.com/scillidan/bucket/dictzip.json">dictzip</a></li>
-<li><a href="https://github.com/scillidan/bucket/hydralauncher.json">hydralauncher</a></li>
-<li><a href="https://github.com/scillidan/bucket/keppymidiconverter.json">keppymidiconverter</a></li>
-<li><a href="https://github.com/scillidan/bucket/lintalist.json">lintalist</a></li>
-<li><a href="https://github.com/scillidan/bucket/madamiru.json">madamiru</a></li>
-<li><a href="https://github.com/scillidan/bucket/mdtable2csv.json">mdtable2csv</a></li>
-<li><a href="https://github.com/scillidan/bucket/nomeiryoui.json">nomeiryoui</a></li>
-<li><a href="https://github.com/scillidan/bucket/pgstosrt.json">pgstosrt</a></li>
-<li><a href="https://github.com/scillidan/bucket/pro.json">pro</a></li>
-<li><a href="https://github.com/scillidan/bucket/rectanglewin.json">rectanglewin</a></li>
-<li><a href="https://github.com/scillidan/bucket/resizer2.json">resizer2</a></li>
-<li><a href="https://github.com/scillidan/bucket/sizer.json">sizer</a></li>
-<li><a href="https://github.com/scillidan/bucket/smartzip.json">smartzip</a></li>
-<li><a href="https://github.com/scillidan/bucket/someruler.json">someruler</a></li>
-<li><a href="https://github.com/scillidan/bucket/sshfs-win-manager-np.json">sshfs-win-manager-np</a></li>
-<li><a href="https://github.com/scillidan/bucket/svg2png.json">svg2png</a></li>
-<li><a href="https://github.com/scillidan/bucket/wcap.json">wcap</a></li>
-<li><a href="https://github.com/scillidan/bucket/webify.json">webify</a></li>
-<li><a href="https://github.com/scillidan/bucket/wxmp3gain.json">wxmp3gain</a></li>
+<li>#document <a href="https://github.com/ScoopInstaller/Scoop/wiki/Buckets">Buckets</a>
+<ul>
+<li><a href="https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests">App Manifests</a></li>
+<li><a href="https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate">App Manifest Autoupdate</a></li>
+<li><a href="https://github.com/ScoopInstaller/Scoop/wiki/Pre-Post-(un)install-scripts">Pre Post (un)install scripts</a></li>
 </ul>
-<h3 id="archived"><a class="header" href="#archived">archived</a></h3>
-<ul>
-<li><a href="https://github.com/scillidan/bucket/shell-x.json">shell-x</a></li>
-</ul>
-<h3 id="cache-30"><a class="header" href="#cache-30">cache</a></h3>
-<ul>
-<li><a href="https://github.com/scillidan/bucket/es-de.json">es-de</a></li>
-<li><a href="https://github.com/scillidan/bucket/gvm.json">gvm</a></li>
-<li><a href="https://github.com/scillidan/bucket/smf-dsp.json">smf-dsp</a></li>
-<li><a href="https://github.com/scillidan/bucket/tagstudio.json">tagstudio</a></li>
-<li><a href="https://github.com/scillidan/bucket/textractor.json">textractor</a></li>
-<li><a href="https://github.com/scillidan/bucket/trilium-next.json">trilium-next</a></li>
-<li><a href="https://github.com/scillidan/bucket/virgo.json">virgo</a></li>
-<li><a href="https://github.com/scillidan/bucket/zonylrctoolsx.json">zonylrctoolsx</a></li>
+</li>
+<li>#guide <a href="https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md">CONTRIBUTING.md</a></li>
+<li>#guide <a href="https://github.com/ScoopInstaller/BucketTemplate">Scoop Bucket Template</a></li>
 </ul>
 <h2 id="reference-examples"><a class="header" href="#reference-examples">Reference examples</a></h2>
 <ul>
-<li><a href="https://github.com/ScoopInstaller/Main/blob/master/bucket/7zip.json">7zip.json</a></li>
-<li><a href="https://github.com/ScoopInstaller/Extras/blob/master/bucket/alacritty.json">alacritty.json</a></li>
-<li><a href="https://github.com/ScoopInstaller/Extras/blob/master/bucket/calibre.json">calibre.json</a></li>
-<li><a href="https://github.com/ScoopInstaller/Extras/blob/master/bucket/handbrake.json">handbrake.json</a></li>
-<li><a href="https://github.com/ScoopInstaller/Extras/blob/master/bucket/mpv.json">mpv.json</a></li>
-<li><a href="https://github.com/ScoopInstaller/Main/blob/master/bucket/neovim.json">neovim.json</a></li>
-<li><a href="https://github.com/ScoopInstaller/Versions/blob/master/bucket/sumatrapdf-installer.json">sumatrapdf-installer.json</a></li>
+<li><a href="https://github.com/ScoopInstaller/Main/blob/master/bucket/7zip.json">7zip.json</a> <em>post_install</em></li>
+<li><a href="https://github.com/ScoopInstaller/Extras/blob/master/bucket/alacritty.json">alacritty.json</a> <em>post_install</em> <em>pre_uninstall</em></li>
+<li><a href="https://github.com/ScoopInstaller/Extras/blob/master/bucket/calibre.json">calibre.json</a> <em>installer</em></li>
+<li><a href="https://github.com/ScoopInstaller/Extras/blob/master/bucket/handbrake.json">handbrake.json</a> <em>installer</em></li>
+<li><a href="https://github.com/ScoopInstaller/Main/blob/master/bucket/neovim.json">neovim.json</a> <em>checkver</em></li>
+<li><a href="https://github.com/ScoopInstaller/Versions/blob/master/bucket/sumatrapdf-installer.json">sumatrapdf-installer.json</a> <em>pre_install</em> <em>installer</em> <em>post_install</em> <em>uninstaller</em></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="scoop-search"><a class="header" href="#scoop-search"><a href="https://github.com/shilangyu/scoop-search">scoop-search</a></a></h1>
@@ -7784,7 +7738,7 @@ sudo pacman -S git
 # Windows 10
 scoop install git
 </code></pre>
-<h2 id="personal-do-8"><a class="header" href="#personal-do-8">Personal do</a></h2>
+<h2 id="personal-do-7"><a class="header" href="#personal-do-7">Personal do</a></h2>
 <pre><code class="language-sh"># Linux
 git config --global core.autocrlf input
 # Windows
@@ -7838,7 +7792,7 @@ git rebase -i HEAD~3
 squash &lt;will merge into first commit&gt;
 squash &lt;will merge into first commit&gt;
 </code></pre>
-<h2 id="reference-50"><a class="header" href="#reference-50">reference</a></h2>
+<h2 id="reference-51"><a class="header" href="#reference-51">reference</a></h2>
 <ul>
 <li>#blog <a href="https://blog.brachiosoft.com/en/posts/git/">A Git story: Not so fun this time</a></li>
 <li>#blog <a href="https://lambdaland.org/posts/2025-11-18_federate_your_forges/">Federate Away From GitHub</a></li>
@@ -7865,7 +7819,7 @@ squash &lt;will merge into first commit&gt;
 <ul>
 <li><a href="/bin/git/gptcommit.html">gptcommit.md</a></li>
 </ul>
-<h3 id="cache-31"><a class="header" href="#cache-31">cache</a></h3>
+<h3 id="cache-30"><a class="header" href="#cache-30">cache</a></h3>
 <ul>
 <li><a href="/bin/git/cz-cli.html">cz-cli.md</a></li>
 <li><a href="/bin/git/git-branchless.html">git-branchless.md</a></li>
@@ -7898,7 +7852,7 @@ squash &lt;will merge into first commit&gt;
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="gist"><a class="header" href="#gist">Gist</a></h1>
-<h2 id="reference-51"><a class="header" href="#reference-51">reference</a></h2>
+<h2 id="reference-52"><a class="header" href="#reference-52">reference</a></h2>
 <ul>
 <li>#option <a href="https://gist.github.com/santisbon/2e1e9c69b58bdf4c9624219a44d40d83">Gist</a></li>
 </ul>
@@ -8009,7 +7963,7 @@ git-crypt export-key &lt;path_to&gt;/git-crypt_key_&lt;repo&gt;
 git-crypt status
 git-crypt unlock &lt;path_to&gt;/git-crypt_key_&lt;repo&gt;
 </code></pre>
-<h2 id="personal-do-9"><a class="header" href="#personal-do-9">Personal do</a></h2>
+<h2 id="personal-do-8"><a class="header" href="#personal-do-8">Personal do</a></h2>
 <pre><code class="language-sh">chezmoi init
 chezmoi add ~/.gnupg
 cd ~/.local/share/chezmoi
@@ -8070,7 +8024,7 @@ sudo pacman -S lazygit
 # Windows 10
 scoop install lazygit
 </code></pre>
-<h2 id="personal-do-10"><a class="header" href="#personal-do-10">Personal do</a></h2>
+<h2 id="personal-do-9"><a class="header" href="#personal-do-9">Personal do</a></h2>
 <pre><code class="language-sh"># Windows 10
 del "%LOCALAPPDATA%\lazygit\config.yml"
 mklink "%LOCALAPPDATA%\lazygit\config.yml" "%DOTFILES_DIR%\.config\lazygit\config.yml"
@@ -8123,7 +8077,7 @@ gh extension remove &lt;user/repo&gt;
 <li><a href="https://github.com/proudust/gh-describe">gh describe</a></li>
 <li><a href="https://github.com/fchimpan/gh-slimify">gh-slimify</a></li>
 </ul>
-<h3 id="cache-32"><a class="header" href="#cache-32">cache</a></h3>
+<h3 id="cache-31"><a class="header" href="#cache-31">cache</a></h3>
 <ul>
 <li>#action <a href="https://github.com/actions/gh-actions-cache">gh-actions-cache</a></li>
 <li>#action <a href="https://github.com/rsese/gh-actions-status">gh-actions-status</a></li>
@@ -8244,7 +8198,7 @@ npm run preview
 <li><a href="/bin/kokoro/ltts.html">ltts.md</a></li>
 </ul>
 <h2 id="resource-35"><a class="header" href="#resource-35">resource</a></h2>
-<h3 id="cache-33"><a class="header" href="#cache-33">cache</a></h3>
+<h3 id="cache-32"><a class="header" href="#cache-32">cache</a></h3>
 <ul>
 <li><a href="https://github.com/eduardolat/kokoro-web">Kokoro Web</a></li>
 </ul>
@@ -8272,7 +8226,7 @@ python setup.py install
 <pre><code class="language-sh">set KOKORO_PATH="&lt;path_to&gt;\Kokoro-TTS-Local"
 echo 'Hello! How are you today?' | kokoro-tts
 </code></pre>
-<h2 id="reference-52"><a class="header" href="#reference-52">reference</a></h2>
+<h2 id="reference-53"><a class="header" href="#reference-53">reference</a></h2>
 <ul>
 <li><a href="https://github.com/cheuerde/kokoro-tts-cli?tab=readme-ov-file#processing-modes">Processing Modes</a></li>
 </ul>
@@ -8356,7 +8310,7 @@ ln -s ~/neovim/bin/nvim ~/.local/bin/
 # rm -rf ~/.local/share/nvim/lazy/
 nvim
 </code></pre>
-<h2 id="personal-do-11"><a class="header" href="#personal-do-11">Personal do</a></h2>
+<h2 id="personal-do-10"><a class="header" href="#personal-do-10">Personal do</a></h2>
 <pre><code class="language-sh"># Arch
 sudo pacman -S \
 	ffmpegthumbnailer
@@ -8411,7 +8365,7 @@ systemctl --user enable --now nvim-headless
 <pre><code class="language-sh">C:\Users\User\Scoop\apps\git\current\usr\bin\ssh.exe &lt;username&gt;@&lt;your_host&gt; -L 1234:0.0.0.0:1234 -- /home/&lt;your_host&gt;/.local/bin/nvim --headless --listen 0.0.0.0:1234
 neovide --server &lt;your_host&gt;:1234
 </code></pre>
-<h2 id="reference-53"><a class="header" href="#reference-53">reference</a></h2>
+<h2 id="reference-54"><a class="header" href="#reference-54">reference</a></h2>
 <ul>
 <li>#blog <a href="https://jdhao.github.io/2018/11/15/neovim_configuration_windows/">Neovim configuration on Windows 10</a></li>
 <li>#document <a href="https://neovim.io/doc/user/lua-guide.html">Neovim - Guide to using Lua in Nvim</a></li>
@@ -8442,7 +8396,7 @@ neovide --server &lt;your_host&gt;:1234
 <li><a href="/bin/neovim/godotdev-nvim.html">godotdev-nvim.md</a></li>
 <li><a href="/bin/neovim/nvim-dap.html">nvim-dap.md</a></li>
 </ul>
-<h3 id="cache-34"><a class="header" href="#cache-34">cache</a></h3>
+<h3 id="cache-33"><a class="header" href="#cache-33">cache</a></h3>
 <ul>
 <li><a href="/bin/neovim/cmp-lsp-rimels.html">cmp-lsp-rimels.md</a></li>
 <li><a href="/bin/neovim/obsidian-nvim.html">obsidian-nvim.md</a></li>
@@ -8898,7 +8852,7 @@ neovide --server &lt;your_host&gt;:1234
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="blink-completion-blinkcmp"><a class="header" href="#blink-completion-blinkcmp"><a href="https://github.com/Saghen/blink.cmp">Blink Completion (blink.cmp)</a></a></h1>
-<h2 id="reference-54"><a class="header" href="#reference-54">reference</a></h2>
+<h2 id="reference-55"><a class="header" href="#reference-55">reference</a></h2>
 <ul>
 <li>#document <a href="https://cmp.saghen.dev/">Blink Completion (blink.cmp)</a>
 <ul>
@@ -8926,7 +8880,7 @@ neovide --server &lt;your_host&gt;:1234
 <ul>
 <li><a href="https://github.com/mgalliou/blink-cmp-tmux">blink-cmp-tmux</a></li>
 </ul>
-<h3 id="cache-35"><a class="header" href="#cache-35">cache</a></h3>
+<h3 id="cache-34"><a class="header" href="#cache-34">cache</a></h3>
 <ul>
 <li><a href="https://github.com/saghen/blink.indent">Blink Indent (blink.indent)</a></li>
 <li><a href="https://github.com/Kaiser-Yang/blink-cmp-avante">blink-cmp-avante</a></li>
@@ -8944,13 +8898,13 @@ neovide --server &lt;your_host&gt;:1234
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="cmp-lsp-rimels"><a class="header" href="#cmp-lsp-rimels"><a href="https://github.com/liubianshi/cmp-lsp-rimels">cmp-lsp-rimels</a></a></h1>
-<h2 id="reference-55"><a class="header" href="#reference-55">reference</a></h2>
+<h2 id="reference-56"><a class="header" href="#reference-56">reference</a></h2>
 <ul>
 <li><a href="https://github.com/liubianshi/cmp-lsp-rimels/issues/1">莫名奇妙的参数类型错误</a></li>
 <li><a href="https://gist.github.com/EmadAdly/dfd18bf1ed7380fb9754ef798d23ec3b">install JDK and Android SDK on Linux Ubuntu</a></li>
 </ul>
 <h2 id="cross-reference-21"><a class="header" href="#cross-reference-21">cross-reference</a></h2>
-<h3 id="cache-36"><a class="header" href="#cache-36">cache</a></h3>
+<h3 id="cache-35"><a class="header" href="#cache-35">cache</a></h3>
 <ul>
 <li><a href="/srv/rime-ls.html">rime-ls.md</a></li>
 </ul>
@@ -8972,7 +8926,7 @@ uv tool install neovim-remote
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="lazynvim"><a class="header" href="#lazynvim"><a href="https://github.com/folke/lazy.nvim">lazy.nvim</a></a></h1>
-<h2 id="personal-do-12"><a class="header" href="#personal-do-12">Personal do</a></h2>
+<h2 id="personal-do-11"><a class="header" href="#personal-do-11">Personal do</a></h2>
 <pre><code class="language-sh"># Windows 10
 git clone https://github.com/folke/lazy.nvim C:\Users\User\AppData\Local\nvim-data\lazy\lazy.nvim
 </code></pre>
@@ -8982,13 +8936,13 @@ git clone https://github.com/folke/lazy.nvim C:\Users\User\AppData\Local\nvim-da
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="luasnip"><a class="header" href="#luasnip"><a href="https://github.com/L3MON4D3/LuaSnip">LuaSnip</a></a></h1>
-<h2 id="reference-56"><a class="header" href="#reference-56">reference</a></h2>
+<h2 id="reference-57"><a class="header" href="#reference-57">reference</a></h2>
 <ul>
 <li>#document <a href="https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md">DOC.md - L3MON4D3/LuaSnip</a></li>
 <li>#document <a href="https://github.com/L3MON4D3/LuaSnip/wiki">Wiki - L3MON4D3/LuaSnip</a></li>
 </ul>
 <h2 id="resource-38"><a class="header" href="#resource-38">resource</a></h2>
-<h3 id="cache-37"><a class="header" href="#cache-37">cache</a></h3>
+<h3 id="cache-36"><a class="header" href="#cache-36">cache</a></h3>
 <ul>
 <li><a href="https://github.com/iurimateus/luasnip-latex-snippets.nvim">luasnip-latex-snippets</a></li>
 </ul>
@@ -9009,7 +8963,7 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 <h2 id="usage-145"><a class="header" href="#usage-145">usage</a></h2>
 <pre><code class="language-sh">lvim
 </code></pre>
-<h2 id="reference-57"><a class="header" href="#reference-57">reference</a></h2>
+<h2 id="reference-58"><a class="header" href="#reference-58">reference</a></h2>
 <ul>
 <li>#keymap <a href="https://www.lunarvim.org/docs/beginners-guide/keybinds-overview">LunarVim</a></li>
 </ul>
@@ -9023,7 +8977,7 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="masonnvim"><a class="header" href="#masonnvim"><a href="https://github.com/williamboman/mason.nvim">mason.nvim</a></a></h1>
-<h2 id="reference-58"><a class="header" href="#reference-58">reference</a></h2>
+<h2 id="reference-59"><a class="header" href="#reference-59">reference</a></h2>
 <ul>
 <li><a href="https://github.com/wsoule/config.nvim/blob/main/lua/custom/plugins/lsp.lua">lsp.lua</a></li>
 <li><a href="https://github.com/wsoule/config.nvim/blob/main/lua/custom/plugins/lint.lua">lint.lua</a></li>
@@ -9051,13 +9005,13 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 <li><a href="https://github.com/echasnovski/mini.pick">mini.pick</a></li>
 <li><a href="https://github.com/echasnovski/mini.sessions">mini.sessions</a></li>
 </ul>
-<h3 id="cache-38"><a class="header" href="#cache-38">cache</a></h3>
+<h3 id="cache-37"><a class="header" href="#cache-37">cache</a></h3>
 <ul>
 <li>#preset <a href="https://github.com/nvim-mini/MiniMax">MiniMax</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="nvim-dap"><a class="header" href="#nvim-dap"><a href="https://github.com/mfussenegger/nvim-dap">nvim-dap</a></a></h1>
-<h2 id="reference-59"><a class="header" href="#reference-59">reference</a></h2>
+<h2 id="reference-60"><a class="header" href="#reference-60">reference</a></h2>
 <ul>
 <li>#video <a href="https://www.bilibili.com/video/BV1StNueVEVe">neovim中的代码调试工具（上）</a></li>
 <li>#video <a href="https://www.bilibili.com/video/BV1uJAmejEdL">neovim中的代码调试工具（下）</a></li>
@@ -9070,7 +9024,7 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 <li><a href="https://github.com/mfussenegger/nvim-dap-python">nvim-dap-python</a></li>
 <li><a href="https://github.com/theHamsta/nvim-dap-virtual-text">nvim-dap-virtual-text</a></li>
 </ul>
-<h3 id="cache-39"><a class="header" href="#cache-39">cache</a></h3>
+<h3 id="cache-38"><a class="header" href="#cache-38">cache</a></h3>
 <ul>
 <li>#ui <a href="https://github.com/igorlfs/nvim-dap-view">nvim-dap-view</a></li>
 <li><a href="https://github.com/Carcuis/dap-breakpoints.nvim">dap-breakpoints.nvim</a></li>
@@ -9080,7 +9034,7 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="nvim-treesitter"><a class="header" href="#nvim-treesitter"><a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter</a></a></h1>
-<h2 id="reference-60"><a class="header" href="#reference-60">reference</a></h2>
+<h2 id="reference-61"><a class="header" href="#reference-61">reference</a></h2>
 <ul>
 <li><a href="https://github.com/nvim-treesitter/nvim-treesitter/issues/1097">tree-sitter executable not found</a></li>
 </ul>
@@ -9098,7 +9052,7 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 <li><a href="https://github.com/alexmozaidze/tree-comment.nvim">tree-comment.nvim</a></li>
 <li><a href="https://github.com/kiyoon/treesitter-indent-object.nvim">Treesitter-indent-object.nvim</a></li>
 </ul>
-<h3 id="cache-40"><a class="header" href="#cache-40">cache</a></h3>
+<h3 id="cache-39"><a class="header" href="#cache-39">cache</a></h3>
 <ul>
 <li><a href="https://github.com/nvim-treesitter/nvim-treesitter-refactor">nvim-treesitter-refactor</a></li>
 <li><a href="https://github.com/nvim-treesitter/nvim-treesitter-textobjects">nvim-treesitter-textobjects</a></li>
@@ -9106,19 +9060,19 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="obsidiannvim"><a class="header" href="#obsidiannvim"><a href="https://github.com/epwalsh/obsidian.nvim">obsidian.nvim</a></a></h1>
-<h2 id="reference-61"><a class="header" href="#reference-61">reference</a></h2>
+<h2 id="reference-62"><a class="header" href="#reference-62">reference</a></h2>
 <ul>
 <li><a href="https://github.com/epwalsh/obsidian.nvim/issues/770">Support blink.nvim Autocomplete</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="packernvim"><a class="header" href="#packernvim"><a href="https://github.com/wbthomason/packer.nvim">packer.nvim</a></a></h1>
-<h2 id="reference-62"><a class="header" href="#reference-62">reference</a></h2>
+<h2 id="reference-63"><a class="header" href="#reference-63">reference</a></h2>
 <ul>
 <li><a href="https://linovox.com/install-and-use-packer-in-neovim/">How to Install and Use Packer in Neovim/Nvim</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="telescopenvim"><a class="header" href="#telescopenvim"><a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a></a></h1>
-<h2 id="reference-63"><a class="header" href="#reference-63">reference</a></h2>
+<h2 id="reference-64"><a class="header" href="#reference-64">reference</a></h2>
 <ul>
 <li><a href="https://github.com/LazyVim/LazyVim/discussions/1127">How to change telescope theme</a></li>
 </ul>
@@ -9149,7 +9103,7 @@ set "LUNARVIM_RUNTIME_DIR=%APPDATA%\lunarvim"
 <li><a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a></li>
 <li><a href="https://github.com/ryanmsnyder/toggleterm-manager.nvim">toggleterm-manager.nvim</a></li>
 </ul>
-<h3 id="cache-41"><a class="header" href="#cache-41">cache</a></h3>
+<h3 id="cache-40"><a class="header" href="#cache-40">cache</a></h3>
 <ul>
 <li>#dir <a href="https://github.com/smilovanovic/telescope-search-dir-picker.nvim">telescope-search-dir-picker</a></li>
 <li>#dir <a href="https://github.com/salorak/whaler.nvim">Whaler</a></li>
@@ -9194,7 +9148,7 @@ sudo pacman -S vim
 # Windows 10
 scoop install vim
 </code></pre>
-<h2 id="personal-do-13"><a class="header" href="#personal-do-13">Personal do</a></h2>
+<h2 id="personal-do-12"><a class="header" href="#personal-do-12">Personal do</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1-25"><a href="#footnote-1-27">1</a></sup></p>
 <pre><code class="language-sh">vim ~/.vimrc
 </code></pre>
@@ -9202,12 +9156,12 @@ scoop install vim
 set shiftwidth=4
 set noexpandtab
 </code></pre>
-<h2 id="reference-64"><a class="header" href="#reference-64">reference</a></h2>
+<h2 id="reference-65"><a class="header" href="#reference-65">reference</a></h2>
 <ul>
 <li>#blog <a href="https://danielmiessler.com/blog/vim">Learn Vim For the Last Time</a></li>
 </ul>
 <h2 id="cross-reference-22"><a class="header" href="#cross-reference-22">cross-reference</a></h2>
-<h3 id="cache-42"><a class="header" href="#cache-42">cache</a></h3>
+<h3 id="cache-41"><a class="header" href="#cache-41">cache</a></h3>
 <ul>
 <li><a href="/bin/vim/wim.html">wim.md</a></li>
 </ul>
@@ -9313,7 +9267,7 @@ sudo pacman -S yazi
 # Windows 10
 scoop install yazi
 </code></pre>
-<h2 id="personal-do-14"><a class="header" href="#personal-do-14">Personal do</a></h2>
+<h2 id="personal-do-13"><a class="header" href="#personal-do-13">Personal do</a></h2>
 <pre><code class="language-sh">ya pkg add gosxrgxx/flexoki-dark
 ya pkg add gosxrgxx/flexoki-light
 ya pkg add AnirudhG07/custom-shell
@@ -9338,7 +9292,7 @@ mkdir %AppData%\yazi\config\
 <pre><code class="language-sh">ya pkg add &lt;pkg&gt;
 ya pkg upgrade
 </code></pre>
-<h2 id="reference-65"><a class="header" href="#reference-65">reference</a></h2>
+<h2 id="reference-66"><a class="header" href="#reference-66">reference</a></h2>
 <ul>
 <li>#document <a href="https://yazi-rs.github.io/docs/installation">Yazi</a></li>
 <li>#keymap <a href="https://yazi-rs.github.io/docs/quick-start#keybindings">Keybindings</a></li>
@@ -9348,7 +9302,7 @@ ya pkg upgrade
 <ul>
 <li><a href="/bin/yazi/whoosh-yazi.html">whoosh-yazi.md</a></li>
 </ul>
-<h3 id="cache-43"><a class="header" href="#cache-43">cache</a></h3>
+<h3 id="cache-42"><a class="header" href="#cache-42">cache</a></h3>
 <ul>
 <li><a href="/bin/yazi/duckdb-yazi.html">duckdb-yazi.md</a></li>
 </ul>
@@ -9552,7 +9506,7 @@ desc = "Rename bookmark by fzf"
 <ul>
 <li><a href="/dev/gpi-case-2.html">gpi-case-2.md</a></li>
 </ul>
-<h3 id="cache-44"><a class="header" href="#cache-44">cache</a></h3>
+<h3 id="cache-43"><a class="header" href="#cache-43">cache</a></h3>
 <ul>
 <li><a href="/dev/3D-Printer.html">3D-Printer.md</a></li>
 <li><a href="/dev/raspberry-pi-5.html">raspberry-pi-5.md</a></li>
@@ -9613,15 +9567,15 @@ desc = "Rename bookmark by fzf"
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="3d-printer"><a class="header" href="#3d-printer">3D Printer</a></h1>
-<h2 id="reference-66"><a class="header" href="#reference-66">reference</a></h2>
-<h3 id="cache-45"><a class="header" href="#cache-45">cache</a></h3>
+<h2 id="reference-67"><a class="header" href="#reference-67">reference</a></h2>
+<h3 id="cache-44"><a class="header" href="#cache-44">cache</a></h3>
 <ul>
 <li>#blog <a href="https://vorpal.se/posts/2025/jun/23/3d-printing-with-unconventional-vase-mode/">3D printing with unconventional vase mode</a></li>
 <li>#blog <a href="https://www.jonashietala.se/blog/2024/02/09/printing_hextraction_for_my_kids/">Printing Hextraction for my kids</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="printer"><a class="header" href="#printer">Printer</a></h1>
-<h2 id="reference-67"><a class="header" href="#reference-67">reference</a></h2>
+<h2 id="reference-68"><a class="header" href="#reference-68">reference</a></h2>
 <ul>
 <li>#blog <a href="https://sspai.com/post/90194">终于可以在 Linux 下愉快打印了：Linux 发行版配置打印机攻略</a></li>
 <li>#pdf <a href="https://support.brother.com/g/s/id/htmldoc/mfc/cv_dcpl2508dw/sch/PDF/PDF.pdf">brother高级说明书-DCP-L2508DW</a>
@@ -9632,7 +9586,7 @@ desc = "Rename bookmark by fzf"
 </li>
 </ul>
 <h2 id="resource-47"><a class="header" href="#resource-47">resource</a></h2>
-<h3 id="cache-46"><a class="header" href="#cache-46">cache</a></h3>
+<h3 id="cache-45"><a class="header" href="#cache-45">cache</a></h3>
 <ul>
 <li><a href="https://github.com/andreisperid/E-TKT">E-TKT</a></li>
 </ul>
@@ -9678,7 +9632,7 @@ desc = "Rename bookmark by fzf"
 <li>Insert SD card into GPi CASE 2, turn it on.</li>
 <li>After first boot, you can hold a button to configure keymap. You can hold any button until it is be skipped.</li>
 </ol>
-<h2 id="reference-68"><a class="header" href="#reference-68">reference</a></h2>
+<h2 id="reference-69"><a class="header" href="#reference-69">reference</a></h2>
 <ul>
 <li><a href="https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md#placing-games-and-other-resources-on-network-shares">Placing games and other resources on network shares</a></li>
 <li><a href="https://github.com/cosmo0/arcade-manager">Arcade manager</a></li>
@@ -9696,7 +9650,7 @@ desc = "Rename bookmark by fzf"
 <p><a href="https://scillidan.github.io/media_cheat/dev/gpi-case-2_20241018.mp4">gpi-case-2_20241018.mp4</a>, (<a href="https://www.bilibili.com/video/BV1DqCmYNEvw">bilibili</a></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="raspberry-pi-4"><a class="header" href="#raspberry-pi-4"><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4</a></a></h1>
-<h2 id="reference-69"><a class="header" href="#reference-69">reference</a></h2>
+<h2 id="reference-70"><a class="header" href="#reference-70">reference</a></h2>
 <ul>
 <li><a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#usb-host-boot-mode">USB host boot mode</a></li>
 <li><a href="https://raspberrypi.stackexchange.com/questions/91889/boot-from-usb-if-no-then-sd-card">Boot from USB, if no then SD card</a></li>
@@ -9863,13 +9817,13 @@ dtoverlay=uconsole,cm4
 </code></pre>
 <pre><code class="language-sh">sudo umount /mnt/boot /mnt
 </code></pre>
-<h2 id="reference-70"><a class="header" href="#reference-70">reference</a></h2>
+<h2 id="reference-71"><a class="header" href="#reference-71">reference</a></h2>
 <ul>
 <li><a href="https://github.com/clockworkpi/DevTerm/wiki/Create-DevTerm-CM4-OS-image-from-scratch">Create DevTerm CM4 OS image from scratch</a></li>
 <li><a href="https://github.com/clockworkpi/uConsole/wiki/How-uConsole-CM4-OS-image-made">How uConsole CM4 OS image made</a></li>
 </ul>
 <h2 id="resource-48"><a class="header" href="#resource-48">resource</a></h2>
-<h3 id="cache-47"><a class="header" href="#cache-47">cache</a></h3>
+<h3 id="cache-46"><a class="header" href="#cache-46">cache</a></h3>
 <ul>
 <li><a href="https://github.com/emdash/uConsole_sway_config">uConsole Sway Configuration</a></li>
 <li><a href="https://github.com/dzaczek/Uconsole-i3">Uconsole-i3</a></li>
@@ -9912,7 +9866,7 @@ dtoverlay=uconsole,cm4
 <li><a href="/lib/godot/_.html">godot.md</a></li>
 <li><a href="/lib/latex/_.html">latex.md</a></li>
 </ul>
-<h3 id="cache-48"><a class="header" href="#cache-48">cache</a></h3>
+<h3 id="cache-47"><a class="header" href="#cache-47">cache</a></h3>
 <ul>
 <li><a href="/lib/love2d/_.html">love2d.md</a></li>
 <li><a href="/lib/renpy/_.html">renpy.md</a></li>
@@ -10016,7 +9970,7 @@ dtoverlay=uconsole,cm4
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="regex"><a class="header" href="#regex">Regex</a></h1>
-<h2 id="reference-71"><a class="header" href="#reference-71">reference</a></h2>
+<h2 id="reference-72"><a class="header" href="#reference-72">reference</a></h2>
 <ul>
 <li>#sheet <a href="https://cheatsheets.zip/regex">RegEX cheatsheet</a></li>
 <li>#syntax <a href="https://github.com/google/re2/wiki/Syntax">Syntax · google/re2 Wiki</a></li>
@@ -10039,7 +9993,7 @@ WHERE `column_1` LIKE '%string%'
 OR `column_2` LIKE '%string%'
 OR `column_3` LIKE '%string%';
 </code></pre>
-<h2 id="reference-72"><a class="header" href="#reference-72">reference</a></h2>
+<h2 id="reference-73"><a class="header" href="#reference-73">reference</a></h2>
 <ul>
 <li>#lession <a href="https://www.youtube.com/watch?v=G_zGBR0mQmE">sql 十四分钟速成班!没错不要怀疑，数据库语法比中午决定吃什麽还要简单! - Youtube</a></li>
 </ul>
@@ -10051,7 +10005,7 @@ OR `column_3` LIKE '%string%';
 <li><a href="/lib/_windows/autohotkey/_.html">autohotkey.md</a></li>
 <li><a href="/lib/_windows/msys2.html">msys2.md</a></li>
 </ul>
-<h3 id="cache-49"><a class="header" href="#cache-49">cache</a></h3>
+<h3 id="cache-48"><a class="header" href="#cache-48">cache</a></h3>
 <ul>
 <li><a href="/lib/_windows/cygwin.html">cygwin.md</a></li>
 </ul>
@@ -10102,7 +10056,7 @@ OR `column_3` LIKE '%string%';
 # pacman -S mingw-w64-x86_64-cargo-c mingw-w64-x86_64-protobuf
 # cargo install atuin
 </code></pre>
-<h2 id="reference-73"><a class="header" href="#reference-73">reference</a></h2>
+<h2 id="reference-74"><a class="header" href="#reference-74">reference</a></h2>
 <ul>
 <li><a href="https://www.devdungeon.com/content/install-gcc-compiler-windows-msys2-cc">Install gcc compiler on Windows with MSYS2 for C/C++</a></li>
 <li><a href="https://www.msys2.org/docs/cmake/">Using CMake in MSYS2</a></li>
@@ -10118,7 +10072,7 @@ OR `column_3` LIKE '%string%';
 <h2 id="install-250"><a class="header" href="#install-250">install</a></h2>
 <pre><code class="language-sh">scoop install autohotkey1.1 autohotkey
 </code></pre>
-<h2 id="personal-do-15"><a class="header" href="#personal-do-15">Personal do</a></h2>
+<h2 id="personal-do-14"><a class="header" href="#personal-do-14">Personal do</a></h2>
 <pre><code class="language-sh">mkdir "%USERPROFILE%/Usr/Source/autohotkey"
 cd "%USERPROFILE%/Usr/Source/autohotkey"
 git clone --depth=1 https://github.com/flyinclouds/KBLAutoSwitch
@@ -10130,7 +10084,7 @@ git clone --depth=1 https://github.com/fenchai23/QuickSwitch
 </code></pre>
 <h2 id="config-23"><a class="header" href="#config-23">config</a></h2>
 <p>QuickSwitch → MBtn_R → Always AutoSwitch (On)</p>
-<h2 id="reference-74"><a class="header" href="#reference-74">reference</a></h2>
+<h2 id="reference-75"><a class="header" href="#reference-75">reference</a></h2>
 <ul>
 <li>#document <a href="https://www.autohotkey.com/docs/v2/">AutoHotkey</a></li>
 </ul>
@@ -10139,7 +10093,7 @@ git clone --depth=1 https://github.com/fenchai23/QuickSwitch
 <ul>
 <li>#script <a href="https://github.com/scillidan/Shell/blob/main/_windows/Other/startup_autohotkey.bat">startup_autohotkey.bat</a></li>
 </ul>
-<h3 id="cache-50"><a class="header" href="#cache-50">cache</a></h3>
+<h3 id="cache-49"><a class="header" href="#cache-49">cache</a></h3>
 <ul>
 <li><a href="/lib/_windows/autohotkey/ahk-keyboard-locker.html">ahk-keyboard-locker.md</a></li>
 <li><a href="/lib/_windows/autohotkey/keymap.html">keymap.md</a></li>
@@ -10281,7 +10235,7 @@ go env -w GOPROXY=https://goproxy.cn,direct
 # go env -w GOPROXY=
 </code></pre>
 <h2 id="cross-reference-29"><a class="header" href="#cross-reference-29">cross-reference</a></h2>
-<h3 id="cache-51"><a class="header" href="#cache-51">cache</a></h3>
+<h3 id="cache-50"><a class="header" href="#cache-50">cache</a></h3>
 <ul>
 <li><a href="/lib/go/goenv.html">goenv.md</a></li>
 <li><a href="/lib/go/gvm.html">gvm.md</a></li>
@@ -10324,19 +10278,19 @@ scoop install gvm
 gvm use 1.21.0
 </code></pre>
 <h2 id="resource-53"><a class="header" href="#resource-53">resource</a></h2>
-<h3 id="cache-52"><a class="header" href="#cache-52">cache</a></h3>
+<h3 id="cache-51"><a class="header" href="#cache-51">cache</a></h3>
 <ul>
 <li><a href="https://github.com/danielkermode/gvm">danielkermode/gvm</a></li>
 <li><a href="https://github.com/olimpias/gvm">olimpias/gvm</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="godot"><a class="header" href="#godot"><a href="https://godotengine.org/">Godot</a></a></h1>
-<h2 id="reference-75"><a class="header" href="#reference-75">reference</a></h2>
+<h2 id="reference-76"><a class="header" href="#reference-76">reference</a></h2>
 <ul>
 <li>#document <a href="https://docs.godotengine.org/en/stable/">Godot Docs</a></li>
 </ul>
 <h2 id="resource-54"><a class="header" href="#resource-54">resource</a></h2>
-<h3 id="cache-53"><a class="header" href="#cache-53">cache</a></h3>
+<h3 id="cache-52"><a class="header" href="#cache-52">cache</a></h3>
 <ul>
 <li>#2d <a href="https://github.com/Firemanarg/godot-astar-2d-grid-node">A Star 2D Grid Node</a></li>
 <li>#2d <a href="https://github.com/KoBeWi/Godot-Parallax2D-Preview">Parallax2D Preview</a></li>
@@ -10424,7 +10378,7 @@ gvm use 1.21.0
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="latex"><a class="header" href="#latex"><a href="https://www.latex-project.org/">LaTeX</a></a></h1>
-<h2 id="reference-76"><a class="header" href="#reference-76">reference</a></h2>
+<h2 id="reference-77"><a class="header" href="#reference-77">reference</a></h2>
 <ul>
 <li>#blog
 <ul>
@@ -10461,7 +10415,7 @@ gvm use 1.21.0
 <li>#Arch <a href="/bin/_arch/texlive.html">texlive.md</a></li>
 <li>#Windows <a href="/opt/_windows/miktex.html">miktex.md</a> <em>download</em></li>
 </ul>
-<h3 id="cache-54"><a class="header" href="#cache-54">cache</a></h3>
+<h3 id="cache-53"><a class="header" href="#cache-53">cache</a></h3>
 <ul>
 <li><a href="/lib/latex/_command/listfiles.html">listfiles.md</a></li>
 <li><a href="/lib/latex/_command/null.html">null.md</a></li>
@@ -11820,7 +11774,7 @@ This is the second chapter.
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="löve"><a class="header" href="#löve"><a href="https://love2d.org">LÖVE</a></a></h1>
-<h2 id="reference-77"><a class="header" href="#reference-77">reference</a></h2>
+<h2 id="reference-78"><a class="header" href="#reference-78">reference</a></h2>
 <ul>
 <li>#post <a href="https://love2d.org/forums/viewtopic.php?t=94809">Simplifying loves learning curve</a></li>
 <li>#lession <a href="https://sheepolution.com/learn/book/contents">Sheepolution</a></li>
@@ -11834,7 +11788,7 @@ This is the second chapter.
 <li>#packager <a href="https://github.com/Oval-Tutu/bootstrap-love2d-project">LÖVE Game Development &amp; Automated Build System</a></li>
 <li><a href="https://github.com/jasonjmcghee/livelove">livelove</a></li>
 </ul>
-<h3 id="cache-55"><a class="header" href="#cache-55">cache</a></h3>
+<h3 id="cache-54"><a class="header" href="#cache-54">cache</a></h3>
 <ul>
 <li>#math <a href="https://github.com/DUznanski/vornmath">vornmath</a></li>
 <li>#action <a href="https://github.com/Nikaoto/deep">deep</a></li>
@@ -11943,14 +11897,14 @@ This is the second chapter.
 <pre><code class="language-sh"># Termux
 pkg install lua53 luarocks
 </code></pre>
-<h2 id="reference-78"><a class="header" href="#reference-78">reference</a></h2>
+<h2 id="reference-79"><a class="header" href="#reference-79">reference</a></h2>
 <ul>
 <li>#blog <a href="https://ruoyusun.com/2013/03/23/pragmatic-lua-basics-in-30-mins.html">Pragmatic Lua Basics in 30 Minutes</a></li>
 <li>#guide <a href="https://obscureproblemsandgotchas.com/development/windows/installing-lua-for-development-on-windows/">Installing Lua for development on Windows – Obscure Problems and Gotchas</a></li>
 <li>#post <a href="https://www.lua.org/manual/5.4/manual.html#3.1">Lexical Conventions</a></li>
 </ul>
 <h2 id="cross-reference-31"><a class="header" href="#cross-reference-31">cross-reference</a></h2>
-<h3 id="cache-56"><a class="header" href="#cache-56">cache</a></h3>
+<h3 id="cache-55"><a class="header" href="#cache-55">cache</a></h3>
 <ul>
 <li><a href="/lib/lua/hererocks.html">hererocks.md</a></li>
 <li><a href="/lib/lua/luajit.html">luajit.md</a></li>
@@ -12061,7 +12015,7 @@ PREFIX= nvm use --delete-prefix stable
 </code></pre>
 <pre><code>node_mirror: https://npmmirror.com/mirrors/node/
 </code></pre>
-<h2 id="reference-79"><a class="header" href="#reference-79">reference</a></h2>
+<h2 id="reference-80"><a class="header" href="#reference-80">reference</a></h2>
 <ul>
 <li><a href="https://nodejs.org/en/about/previous-releases">Node.js Releases</a></li>
 </ul>
@@ -12073,7 +12027,7 @@ PREFIX= nvm use --delete-prefix stable
 <li><a href="/lib/python/pyenv.html">pyenv.md</a></li>
 <li><a href="/lib/python/uv.html">uv.md</a></li>
 </ul>
-<h3 id="cache-57"><a class="header" href="#cache-57">cache</a></h3>
+<h3 id="cache-56"><a class="header" href="#cache-56">cache</a></h3>
 <ul>
 <li><a href="/lib/python/jupyter.html">jupyter.md</a></li>
 <li><a href="/lib/python/anaconda.html">anaconda.md</a></li>
@@ -12103,7 +12057,7 @@ scoop install pnpm
 <pre><code class="language-sh"># Windows 10
 scoop install python310
 </code></pre>
-<h2 id="personal-do-16"><a class="header" href="#personal-do-16">Personal do</a></h2>
+<h2 id="personal-do-15"><a class="header" href="#personal-do-15">Personal do</a></h2>
 <pre><code class="language-sh">python -m pip install pipx
 pipx ensurepath
 </code></pre>
@@ -12119,7 +12073,7 @@ python -m build
 <pre><code class="language-sh">pip install -e . --index-url https://pypi.org/simple
 pip cache purge
 </code></pre>
-<h2 id="reference-80"><a class="header" href="#reference-80">reference</a></h2>
+<h2 id="reference-81"><a class="header" href="#reference-81">reference</a></h2>
 <ul>
 <li>#blog <a href="https://ashishb.net/programming/python-in-production-2">How to run Python in production</a></li>
 <li>#blog <a href="https://nielscautaerts.xyz/python-dependency-management-is-a-dumpster-fire.html">Python dependency management is a dumpster fire</a></li>
@@ -12232,7 +12186,7 @@ eval "$(pyenv init -)"
 <pre><code class="language-sh"># Windows 10
 git clone --depth=1 https://github.com/pyenv-win/pyenv-win ~/.pyenv
 </code></pre>
-<h2 id="personal-do-17"><a class="header" href="#personal-do-17">Personal do</a></h2>
+<h2 id="personal-do-16"><a class="header" href="#personal-do-16">Personal do</a></h2>
 <pre><code class="language-sh">pyenv install 3.11-dev
 pyenv global 3.11-dev
 pyenv shell 3.11-dev
@@ -12363,7 +12317,7 @@ pip install -U sphinx sphinx_rtd_theme sphinx_rtd_dark_mode
 <ul>
 <li><a href="/opt/zeal.html">zeal.md</a></li>
 </ul>
-<h2 id="reference-81"><a class="header" href="#reference-81">reference</a></h2>
+<h2 id="reference-82"><a class="header" href="#reference-82">reference</a></h2>
 <ul>
 <li>#document <a href="https://www.renpy.org/doc/html/index.html">Ren’Py Documentation</a></li>
 </ul>
@@ -12448,7 +12402,7 @@ pip install -U sphinx sphinx_rtd_theme sphinx_rtd_dark_mode
 <li>#translate <a href="https://github.com/TibixDev/Renquill">Renquill</a></li>
 <li>#translate <a href="https://github.com/SadCrabCom/community_tl">Weblate-based Translation File Management for Ren’Py Projects</a></li>
 </ul>
-<h3 id="cache-58"><a class="header" href="#cache-58">cache</a></h3>
+<h3 id="cache-57"><a class="header" href="#cache-57">cache</a></h3>
 <ul>
 <li>#api #mobile <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=46091#p467178">Expanding Mobile Functionality With Pyobjus/Pyjnius …</a></li>
 <li>#audio #animation <a href="https://github.com/Wendy-Nam/RenPy-Lipsync-Plugin">Lip Sync Plugin for Ren’Py</a></li>
@@ -12607,7 +12561,7 @@ sudo make install
 <ul>
 <li><a href="/lib/ruby/rbenv.html">rbenv.md</a></li>
 </ul>
-<h3 id="cache-59"><a class="header" href="#cache-59">cache</a></h3>
+<h3 id="cache-58"><a class="header" href="#cache-58">cache</a></h3>
 <ul>
 <li><a href="/lib/ruby/chruby.html">chruby.md</a></li>
 </ul>
@@ -12652,13 +12606,13 @@ sudo apt install rustc cargo
 <pre><code class="language-sh">rustup default stable
 rustup update
 </code></pre>
-<h2 id="reference-82"><a class="header" href="#reference-82">reference</a></h2>
+<h2 id="reference-83"><a class="header" href="#reference-83">reference</a></h2>
 <ul>
 <li>#book <a href="https://kaisery.github.io/trpl-zh-cn/title-page.html">Rust 程序设计语言</a></li>
 <li>#book <a href="https://bevy-cheatbook.github.io/">Unofficial Bevy Cheat Book</a></li>
 </ul>
 <h2 id="cross-reference-36"><a class="header" href="#cross-reference-36">cross-reference</a></h2>
-<h3 id="cache-60"><a class="header" href="#cache-60">cache</a></h3>
+<h3 id="cache-59"><a class="header" href="#cache-59">cache</a></h3>
 <ul>
 <li><a href="/lib/rust/cargo-sweep.html">cargo-sweep.md</a></li>
 </ul>
@@ -12705,7 +12659,7 @@ pnpm run export
 # slidev export -format pptx --dark
 # slidev export -format png --omit-background
 </code></pre>
-<h2 id="reference-83"><a class="header" href="#reference-83">reference</a></h2>
+<h2 id="reference-84"><a class="header" href="#reference-84">reference</a></h2>
 <ul>
 <li><a href="https://sli.dev/guide/syntax">Syntax Guide</a></li>
 <li><a href="https://sli.dev/custom/directory-structure">Directory Structure</a></li>
@@ -13461,7 +13415,7 @@ const count = ref(0)
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="typst"><a class="header" href="#typst"><a href="https://github.com/typst/typst">typst</a></a></h1>
-<h2 id="reference-84"><a class="header" href="#reference-84">reference</a></h2>
+<h2 id="reference-85"><a class="header" href="#reference-85">reference</a></h2>
 <ul>
 <li>#blog <a href="https://lambdaland.org/posts/2025-11-20_typst_your_codeblocks/">Typst for Your Code Blocks</a></li>
 <li>#document <a href="https://typst.app/docs/">Typst Documentation</a>
@@ -13540,7 +13494,7 @@ const count = ref(0)
 <li><a href="https://typst.app/universe/package/typewind">typewind</a></li>
 <li><a href="https://typst.app/universe/package/wordometer">wordometer</a></li>
 </ul>
-<h3 id="cache-61"><a class="header" href="#cache-61">cache</a></h3>
+<h3 id="cache-60"><a class="header" href="#cache-60">cache</a></h3>
 <ul>
 <li>#book <a href="https://typst.app/universe/package/ilm">ilm</a></li>
 <li>#book <a href="https://typst.app/universe/package/js">js</a></li>
@@ -13751,7 +13705,7 @@ const count = ref(0)
 <li><a href="/opt/video-sub-finder.html">video-sub-finder.md</a> <em>download</em></li>
 <li><a href="/opt/yoga-image-optimizer.html">yoga-image-optimizer.md</a></li>
 </ul>
-<h3 id="cache-62"><a class="header" href="#cache-62">cache</a></h3>
+<h3 id="cache-61"><a class="header" href="#cache-61">cache</a></h3>
 <ul>
 <li><a href="/opt/anki.html">anki.md</a></li>
 <li><a href="/opt/aseprite.mD">aseprite.md</a></li>
@@ -14046,7 +14000,7 @@ deactivate
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="arch1t3chts-aegisub-fork"><a class="header" href="#arch1t3chts-aegisub-fork"><a href="https://github.com/arch1t3cht/Aegisub">arch1t3cht’s Aegisub “fork”</a></a></h1>
-<h2 id="reference-85"><a class="header" href="#reference-85">reference</a></h2>
+<h2 id="reference-86"><a class="header" href="#reference-86">reference</a></h2>
 <ul>
 <li><a href="https://note.tonycrane.cc/others/subs/aegisub/karaoke/">Aegisub 卡拉 OK 特效模板</a></li>
 </ul>
@@ -14074,14 +14028,14 @@ vim $HOME/.config/alacritty/alacritty.toml
 # Windows 10
 subl %APPDATA%\alacritty\alacritty.toml
 </code></pre>
-<h2 id="reference-86"><a class="header" href="#reference-86">reference</a></h2>
+<h2 id="reference-87"><a class="header" href="#reference-87">reference</a></h2>
 <ul>
 <li>#document <a href="https://alacritty.org/config-alacritty.html">Alacritty</a></li>
 <li>(Windows 10) <a href="https://github.com/alacritty/alacritty/issues/3301#issuecomment-753320506">How can I configure alacritty to work with MSYS2?</a></li>
 <li><a href="https://convoluted.bearblog.dev/alacritty-config-example-guide/">An Example and Concise Guide to Alacritty Configuration through TOML</a></li>
 </ul>
 <h2 id="resource-60"><a class="header" href="#resource-60">resource</a></h2>
-<h3 id="cache-63"><a class="header" href="#cache-63">cache</a></h3>
+<h3 id="cache-62"><a class="header" href="#cache-62">cache</a></h3>
 <ul>
 <li><a href="https://github.com/alacritty/alacritty-theme">Alacritty Theme</a></li>
 </ul>
@@ -14106,7 +14060,7 @@ subl %APPDATA%\alacritty\alacritty.toml
 </ul>
 </li>
 </ul>
-<h2 id="reference-87"><a class="header" href="#reference-87">reference</a></h2>
+<h2 id="reference-88"><a class="header" href="#reference-88">reference</a></h2>
 <ul>
 <li>#blog <a href="https://tatsumoto-ren.github.io/blog/passive-listening.html">Passive immersion tech</a></li>
 <li>#blog <a href="https://tatsumoto-ren.github.io/blog/setting-up-anki.html">Setting up Anki</a></li>
@@ -14140,7 +14094,7 @@ subl %APPDATA%\alacritty\alacritty.toml
 <li><a href="https://ankiweb.net/shared/info/85158043">Minimize to tray</a></li>
 <li><a href="https://ankiweb.net/shared/info/1188705668">Note Size</a></li>
 </ul>
-<h3 id="cache-64"><a class="header" href="#cache-64">cache</a></h3>
+<h3 id="cache-63"><a class="header" href="#cache-63">cache</a></h3>
 <ul>
 <li>#analyze <a href="https://github.com/xiety/AnkiHistoryVisualization">Anki History Visualization</a></li>
 <li>#analyze <a href="https://github.com/klieret/AnkiPandas">AnkiPandas</a></li>
@@ -14221,7 +14175,7 @@ subl %APPDATA%\alacritty\alacritty.toml
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="anythingllm"><a class="header" href="#anythingllm"><a href="https://anythingllm.com">AnythingLLM</a></a></h1>
-<h2 id="reference-88"><a class="header" href="#reference-88">reference</a></h2>
+<h2 id="reference-89"><a class="header" href="#reference-89">reference</a></h2>
 <ul>
 <li><a href="https://hub.anythingllm.com/">AnythingLLM Community Hub</a></li>
 </ul>
@@ -14232,7 +14186,7 @@ subl %APPDATA%\alacritty\alacritty.toml
 <li>#slash-command <a href="https://hub.anythingllm.com/i/slash-command/D80ShVBJ0upqsmogkE43">/optimize</a></li>
 <li>#slash-command <a href="https://hub.anythingllm.com/i/slash-command/DtYLkMQtusEF4yafdQFi">/adcopy</a></li>
 </ul>
-<h3 id="cache-65"><a class="header" href="#cache-65">cache</a></h3>
+<h3 id="cache-64"><a class="header" href="#cache-64">cache</a></h3>
 <ul>
 <li>#agent-skill <a href="https://hub.anythingllm.com/i/agent-skill/5SKdNIhEug0sI7xNRcio">Home Assistant Automation</a></li>
 <li>#agent-skill <a href="https://hub.anythingllm.com/i/agent-skill/SZxzBiZ4B3XkgVLs3yF1">N8N Workflow Connector</a></li>
@@ -14249,7 +14203,7 @@ subl %APPDATA%\alacritty\alacritty.toml
 <p>动画精灵编辑器和像素艺术工具（适用于Windows、macOS、Linux）。 [aseprite/aseprite]</p>
 </blockquote>
 <h2 id="resource-62"><a class="header" href="#resource-62">resource</a></h2>
-<h3 id="cache-66"><a class="header" href="#cache-66">cache</a></h3>
+<h3 id="cache-65"><a class="header" href="#cache-65">cache</a></h3>
 <ul>
 <li>#audio <a href="https://ddmplayer.itch.io/aseprite-audio-extension">Aseprite Audio Extension</a></li>
 <li>#brush <a href="https://thkaspar.itch.io/brush-transformation">Brush Transformations</a></li>
@@ -14323,7 +14277,7 @@ scoop install audacity
 </li>
 <li>Edit → Preferences → Modules → mod-script-pipe → Enabled</li>
 </ul>
-<h2 id="reference-89"><a class="header" href="#reference-89">reference</a></h2>
+<h2 id="reference-90"><a class="header" href="#reference-90">reference</a></h2>
 <ul>
 <li><a href="https://manual.audacityteam.org/man/noise_reduction.html">Noise Reduction</a></li>
 <li><a href="https://manual.audacityteam.org/man/alternative_noise_reduction_techniques.html">Noise Gate</a></li>
@@ -14452,7 +14406,7 @@ webui-user.bat --api
 <li>chaiNNer → Settings → Advanced → Enable experimental features → Restart chaiNNer</li>
 <li>chaiNNer → Use System Python instead</li>
 </ol>
-<h2 id="reference-90"><a class="header" href="#reference-90">reference</a></h2>
+<h2 id="reference-91"><a class="header" href="#reference-91">reference</a></h2>
 <ul>
 <li><a href="https://github.com/scillidan/dictionary/blob/main/chat/what-difference/pytorch%2Cncnn%2Connx.md">What is the difference between PyTorch, NCNN, ONNX?</a></li>
 <li><a href="https://github.com/scillidan/dictionary/blob/main/chat/what-difference/inpainting%2Cdenoising%2Cdejpeg%2Ccolorization%2Cdehazing%2Clow-light-enhancement.md">What is the difference between Inpainting, Denoising, DeJPEG, Colorization, Dehazing, Low-light Enhancement?</a></li>
@@ -14503,7 +14457,7 @@ sudo pacman -S darktable
 scoop install darktable
 </code></pre>
 <h2 id="resource-63"><a class="header" href="#resource-63">resource</a></h2>
-<h3 id="cache-67"><a class="header" href="#cache-67">cache</a></h3>
+<h3 id="cache-66"><a class="header" href="#cache-66">cache</a></h3>
 <ul>
 <li>#lut <a href="https://github.com/bastibe/Fujifilm-Auto-Settings-for-Darktable">Fujifilm Auto Settings for Darktable</a></li>
 <li>#lut <a href="https://github.com/sfi0zy/street-monochrome">Street Monochrome</a></li>
@@ -14531,14 +14485,14 @@ scoop install darktable
 <pre><code class="language-sh"># Windows 10
 scoop install dbeaver
 </code></pre>
-<h2 id="reference-91"><a class="header" href="#reference-91">reference</a></h2>
+<h2 id="reference-92"><a class="header" href="#reference-92">reference</a></h2>
 <ul>
 <li>#document <a href="https://dbeaver.com/docs/dbeaver/">DBeaver</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="discord"><a class="header" href="#discord"><a href="https://discord.com">Discord</a></a></h1>
 <h2 id="resource-64"><a class="header" href="#resource-64">resource</a></h2>
-<h3 id="cache-68"><a class="header" href="#cache-68">cache</a></h3>
+<h3 id="cache-67"><a class="header" href="#cache-67">cache</a></h3>
 <ul>
 <li><a href="https://github.com/vyfor/cord.nvim">Cord – Tailor Your Presence Like Never Before</a></li>
 <li><a href="https://github.com/ELginas/discord-image-gallery">Discord Image Gallery</a></li>
@@ -14578,14 +14532,14 @@ yay -S --noconfirm espanso-x11-bin
 # Windows 10
 scoop install espanso
 </code></pre>
-<h2 id="personal-do-18"><a class="header" href="#personal-do-18">Personal do</a></h2>
+<h2 id="personal-do-17"><a class="header" href="#personal-do-17">Personal do</a></h2>
 <pre><code class="language-sh"># Windows 10
 rmdir /S /Q "%SCOOP_HOME%\apps\espanso\current\.espanso\config"
 mklink /J "%SCOOP_HOME%\apps\espanso\current\.espanso\config" "%DOTFILES_DIR%\.config\espanso\config"
 rmdir /S /Q "%SCOOP_HOME%\apps\espanso\current\.espanso\match"
 mklink /J "%SCOOP_HOME%\apps\espanso\current\.espanso\match" "%DOTFILES_DIR%\.config\espanso\match"
 </code></pre>
-<h2 id="reference-92"><a class="header" href="#reference-92">reference</a></h2>
+<h2 id="reference-93"><a class="header" href="#reference-93">reference</a></h2>
 <ul>
 <li>#document <a href="https://espanso.org/docs/get-started/">Espanso</a></li>
 <li><a href="https://espanso.org/docs/matches/variables/">Variables</a></li>
@@ -14646,7 +14600,7 @@ Password: &lt;token&gt;
 </code></pre>
 </li>
 </ol>
-<h2 id="reference-93"><a class="header" href="#reference-93">reference</a></h2>
+<h2 id="reference-94"><a class="header" href="#reference-94">reference</a></h2>
 <ul>
 <li>#keymap <a href="https://github.com/yang991178/fluent-reader/wiki/Support#keyboard-shortcuts">Fluent Reader</a></li>
 </ul>
@@ -14670,7 +14624,7 @@ sudo pacman -S freecad
 # Windows 10
 scoop install freecad
 </code></pre>
-<h2 id="reference-94"><a class="header" href="#reference-94">reference</a></h2>
+<h2 id="reference-95"><a class="header" href="#reference-95">reference</a></h2>
 <ul>
 <li>#document <a href="https://wiki.freecad.org/Manual:Introduction">FreeCAD</a></li>
 </ul>
@@ -14705,7 +14659,7 @@ scoop install gimp
 <li>添加图层模板 → 选区工具 → 填充黑色</li>
 <li>模式 → 点光/叠加/色相</li>
 </ul>
-<h2 id="reference-95"><a class="header" href="#reference-95">reference</a></h2>
+<h2 id="reference-96"><a class="header" href="#reference-96">reference</a></h2>
 <ul>
 <li>#reference <a href="https://docs.gimp.org/quickreference/gimp-keys-en.pdf">GIMP Quickreference</a></li>
 </ul>
@@ -14804,7 +14758,7 @@ scoop install gpodder
 </li>
 </ul>
 <h2 id="resource-66"><a class="header" href="#resource-66">resource</a></h2>
-<h3 id="cache-69"><a class="header" href="#cache-69">cache</a></h3>
+<h3 id="cache-68"><a class="header" href="#cache-68">cache</a></h3>
 <ul>
 <li><a href="https://gpodder.github.io/docs/extensions/normalizeaudio.html">Normalize Audio</a></li>
 </ul>
@@ -14845,7 +14799,7 @@ scoop install handbrake handbrake-cli
 <pre><code class="language-sh"># Encode video using Handbrake CLI with a preset
 handbrakecli --preset-import-file &lt;preset.json&gt; --input "$1" --output "_handbrake.mp4"
 </code></pre>
-<h2 id="reference-96"><a class="header" href="#reference-96">reference</a></h2>
+<h2 id="reference-97"><a class="header" href="#reference-97">reference</a></h2>
 <ul>
 <li>#option <a href="https://handbrake.fr/docs/en/latest/cli/command-line-reference.html">HandBrake</a></li>
 <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1856527757">How to reduce video file size using Handbrake</a></li>
@@ -14870,7 +14824,7 @@ sudo pacman -S inkscape
 scoop install inkscape
 </code></pre>
 <h2 id="resource-67"><a class="header" href="#resource-67">resource</a></h2>
-<h3 id="cache-70"><a class="header" href="#cache-70">cache</a></h3>
+<h3 id="cache-69"><a class="header" href="#cache-69">cache</a></h3>
 <ul>
 <li><a href="https://github.com/textext/textext">TexText</a></li>
 </ul>
@@ -14900,7 +14854,7 @@ scoop install inkscape
 <li><a href="https://github.com/Kaid00/joplin-note-statistics">Joplin Note Statistics</a></li>
 <li><a href="https://github.com/djsudduth/joplin-plugin-paragraph-extractor">Paragraph Extractor</a></li>
 </ul>
-<h3 id="cache-71"><a class="header" href="#cache-71">cache</a></h3>
+<h3 id="cache-70"><a class="header" href="#cache-70">cache</a></h3>
 <ul>
 <li>#backup <a href="https://github.com/gerlos/logseq-backup">logseq-backup</a></li>
 <li>#command <a href="https://github.com/gateswizard/joplin-plugin-insert-command-exec">joplin-plugin-insert-command-exec</a></li>
@@ -14990,12 +14944,12 @@ sudo pacman -S kicad
 # Windows 10
 scoop install kicad
 </code></pre>
-<h2 id="reference-97"><a class="header" href="#reference-97">reference</a></h2>
+<h2 id="reference-98"><a class="header" href="#reference-98">reference</a></h2>
 <ul>
 <li>#document <a href="https://docs.kicad.org/7.0/en/getting_started_in_kicad/getting_started_in_kicad.html">KiCad</a></li>
 </ul>
 <h2 id="resource-69"><a class="header" href="#resource-69">resource</a></h2>
-<h3 id="cache-72"><a class="header" href="#cache-72">cache</a></h3>
+<h3 id="cache-71"><a class="header" href="#cache-71">cache</a></h3>
 <ul>
 <li><a href="https://github.com/yaqwsx/KiKit">KiKit – Automation for KiCAD</a></li>
 </ul>
@@ -15023,7 +14977,7 @@ sudo pacman -S krita
 # Windows 10
 scoop install krita
 </code></pre>
-<h2 id="reference-98"><a class="header" href="#reference-98">reference</a></h2>
+<h2 id="reference-99"><a class="header" href="#reference-99">reference</a></h2>
 <ul>
 <li>#document <a href="https://docs.krita.org/en/index.html">Krita</a></li>
 <li>#keymap <a href="https://www.graphicsandprogramming.net/pdf/krita-shortcuts-hotkeys-english.pdf">Krita - shortcuts/hotkeys</a></li>
@@ -15122,7 +15076,7 @@ scoop install localsend
 <li>view <a href="https://github.com/yoyurec/logseq-tabler-picker">Tabler picker</a></li>
 <li>view <a href="https://github.com/pengx17/logseq-plugin-tabs">Tabs</a></li>
 </ul>
-<h3 id="cache-73"><a class="header" href="#cache-73">cache</a></h3>
+<h3 id="cache-72"><a class="header" href="#cache-72">cache</a></h3>
 <ul>
 <li><a href="https://github.com/YU000jp/logseq-plugin-multiple-assets">“Logseq Plugin: Multiple Files into Assets”</a></li>
 <li><a href="https://github.com/c6p/logseq-hypothesis">Hypothesis</a></li>
@@ -15309,7 +15263,7 @@ B-Frames: 2
 <ul>
 <li>Select one on tab <sources> → Filters → Effect Filters → Add → Color Key.</sources></li>
 </ul>
-<h2 id="reference-99"><a class="header" href="#reference-99">reference</a></h2>
+<h2 id="reference-100"><a class="header" href="#reference-100">reference</a></h2>
 <ul>
 <li><a href="https://support.google.com/youtube/answer/1722171">YouTube 推荐的上传编码设置</a></li>
 </ul>
@@ -15338,7 +15292,7 @@ scoop install ocenaudio
 <pre><code class="language-sh"># Windows
 scoop install omegat
 </code></pre>
-<h2 id="reference-100"><a class="header" href="#reference-100">reference</a></h2>
+<h2 id="reference-101"><a class="header" href="#reference-101">reference</a></h2>
 <ul>
 <li>#document <a href="https://omegat.sourceforge.io/manual-standard/en/index.html">OmegaT - User Manual</a></li>
 <li><a href="https://codeberg.org/miurahr/omegat-flat-theme">OmegaT flat theme plugin</a></li>
@@ -15370,7 +15324,7 @@ dmg2img -i BaseSystem.dmg BaseSystem.img
 qemu-img create -f qcow2 mac_hdd_ng.img 100G
 ./OpenCore-Boot.sh
 </code></pre>
-<h2 id="reference-101"><a class="header" href="#reference-101">reference</a></h2>
+<h2 id="reference-102"><a class="header" href="#reference-102">reference</a></h2>
 <ul>
 <li>#guide <a href="https://sick.codes/how-to-install-macos-virtual-machine-on-linux-arch-manjaro-catalina-mojave-or-high-sierra-xcode-working/">How To Install macOS Virtual Machine on Linux/Arch/Manjaro – Catalina, Mojave, or High Sierra! XCode working! Tutorial for Ubuntu/RHEL/CentOS/Fedora</a></li>
 </ul>
@@ -15419,7 +15373,7 @@ scoop install pureref
 <li><code>Ctrl+Right</code> → <code>Ctrl+Down</code> → <code>Ctrl+f</code> → Resize by mouse wheel → <code>Ctrl+Shift+r</code></li>
 </ul>
 <h2 id="resource-71"><a class="header" href="#resource-71">resource</a></h2>
-<h3 id="cache-74"><a class="header" href="#cache-74">cache</a></h3>
+<h3 id="cache-73"><a class="header" href="#cache-73">cache</a></h3>
 <ul>
 <li><a href="https://github.com/FyorDev/PureRef-format">PureRef-format</a></li>
 </ul>
@@ -15507,7 +15461,7 @@ sudo virsh net-start default
 <ul>
 <li>TigerVNC viewer → VNC server → <code>localhost:5900</code> → Connect.</li>
 </ul>
-<h2 id="reference-102"><a class="header" href="#reference-102">reference</a></h2>
+<h2 id="reference-103"><a class="header" href="#reference-103">reference</a></h2>
 <ul>
 <li>#document <a href="https://wiki.archlinux.org/title/QEMU">QEMU ArchWiki</a></li>
 </ul>
@@ -15528,7 +15482,7 @@ scoop install qimgv
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="qownnotes"><a class="header" href="#qownnotes"><a href="https://qownnotes.org">QOwnNotes</a></a></h1>
 <h2 id="resource-72"><a class="header" href="#resource-72">resource</a></h2>
-<h3 id="cache-75"><a class="header" href="#cache-75">cache</a></h3>
+<h3 id="cache-74"><a class="header" href="#cache-74">cache</a></h3>
 <ul>
 <li><a href="https://github.com/qownnotes/web-companion">QOwnNotes Web Companion</a></li>
 </ul>
@@ -15727,7 +15681,7 @@ export GLFW_IM_MODULE="ibus"
 </ul>
 </li>
 </ul>
-<h2 id="personal-do-19"><a class="header" href="#personal-do-19">Personal do</a></h2>
+<h2 id="personal-do-18"><a class="header" href="#personal-do-18">Personal do</a></h2>
 <pre><code class="language-sh"># Arch
 mkdir -p ~/.local/share/fcitx5/rime
 mkdir -p ~/Usr/Source/rime
@@ -15739,7 +15693,7 @@ mkdir "%USERPROFILE%\Usr\Source\rime"
 cd "%USERPROFILE%\Usr\Source\rime"
 git clone --depth=1 https://github.com/iDvel/rime-ice
 </code></pre>
-<h2 id="reference-103"><a class="header" href="#reference-103">reference</a></h2>
+<h2 id="reference-104"><a class="header" href="#reference-104">reference</a></h2>
 <ul>
 <li>#document <a href="https://wiki.archlinux.org/title/Fcitx5">Fcitx5 - ArchWiki</a></li>
 <li>#document <a href="https://wiki.archlinux.org/title/Rime">Rime - ArchWiki</a></li>
@@ -15796,7 +15750,7 @@ sudo pacman -S sigil
 # Windows 10
 scoop install sigil
 </code></pre>
-<h2 id="reference-104"><a class="header" href="#reference-104">reference</a></h2>
+<h2 id="reference-105"><a class="header" href="#reference-105">reference</a></h2>
 <ul>
 <li>#document <a href="https://sigil-ebook.com/sigil-user-guide/index2.html?epub=epub_content%2Fguide">Sigil</a></li>
 </ul>
@@ -15808,7 +15762,7 @@ sudo pacamn -S sioyek
 # Windows 10
 scoop install sioyek
 </code></pre>
-<h2 id="reference-105"><a class="header" href="#reference-105">reference</a></h2>
+<h2 id="reference-106"><a class="header" href="#reference-106">reference</a></h2>
 <ul>
 <li>#document <a href="https://sioyek-documentation.readthedocs.io/en/latest">Sioyek Documentation</a>
 <ul>
@@ -15829,7 +15783,7 @@ scoop install sioyek
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="snipaste"><a class="header" href="#snipaste"><a href="https://www.snipaste.com/">Snipaste</a></a></h1>
-<h2 id="reference-106"><a class="header" href="#reference-106">reference</a></h2>
+<h2 id="reference-107"><a class="header" href="#reference-107">reference</a></h2>
 <ul>
 <li>#option <a href="https://docs.snipaste.com/zh-cn/command-line-options">Snipaste</a></li>
 </ul>
@@ -15849,7 +15803,7 @@ yay -S --noconfirm stirling-pdf-bin
 # Windows 10
 scoop install stirling-pdf
 </code></pre>
-<h2 id="reference-107"><a class="header" href="#reference-107">reference</a></h2>
+<h2 id="reference-108"><a class="header" href="#reference-108">reference</a></h2>
 <ul>
 <li><a href="https://docs.stirlingpdf.com/Installation/Unix%20Installation">Unix Installation Guide | Stirling-PDF</a></li>
 </ul>
@@ -16222,7 +16176,7 @@ scoop install wezterm
 # Windows 10
 %USERPROFILE%\scoop\apps\wezterm\current\wezterm.lua
 </code></pre>
-<h2 id="reference-108"><a class="header" href="#reference-108">reference</a></h2>
+<h2 id="reference-109"><a class="header" href="#reference-109">reference</a></h2>
 <ul>
 <li>#blog <a href="https://rashil2000.me/blogs/tune-wezterm">How to Obsessively Tune WezTerm</a></li>
 <li>#keymap <a href="https://wezterm.org/config/default-keys.html">Wez’s Terminal - Default Key Assignments</a></li>
@@ -16270,12 +16224,12 @@ uv pip install yoga-image-optimizer
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="yomininja"><a class="header" href="#yomininja"><a href="https://github.com/matt-m-o/YomiNinja">YomiNinja</a></a></h1>
-<h2 id="reference-109"><a class="header" href="#reference-109">reference</a></h2>
+<h2 id="reference-110"><a class="header" href="#reference-110">reference</a></h2>
 <ul>
 <li><a href="https://github.com/matt-m-o/YomiNinja/issues/21">Magpie Support</a></li>
 </ul>
 <h2 id="resource-76"><a class="header" href="#resource-76">resource</a></h2>
-<h3 id="cache-76"><a class="header" href="#cache-76">cache</a></h3>
+<h3 id="cache-75"><a class="header" href="#cache-75">cache</a></h3>
 <ul>
 <li><a href="https://github.com/nell-otsuka/YomiMochi">YomiMochi</a></li>
 </ul>
@@ -16358,7 +16312,7 @@ scoop install zeal
 <ul>
 <li>#Chrome <a href="/opt/Browser/kokoro-tts-reader.html">kokoro-tts-reader.md</a></li>
 </ul>
-<h3 id="cache-77"><a class="header" href="#cache-77">cache</a></h3>
+<h3 id="cache-76"><a class="header" href="#cache-76">cache</a></h3>
 <ul>
 <li>#Chrome #Firefox <a href="/opt/Browser/immersive-translate.html">immersive-translate.md</a></li>
 <li><a href="/opt/Browser/linkding-extension.html">linkding-extension.md</a></li>
@@ -16721,12 +16675,12 @@ scoop install librewolf
 </ul>
 </li>
 </ul>
-<h2 id="reference-110"><a class="header" href="#reference-110">reference</a></h2>
+<h2 id="reference-111"><a class="header" href="#reference-111">reference</a></h2>
 <ul>
 <li>#document <a href="https://linguister.io/docs/">Linguist Translate</a></li>
 </ul>
 <h2 id="resource-78"><a class="header" href="#resource-78">resource</a></h2>
-<h3 id="cache-78"><a class="header" href="#cache-78">cache</a></h3>
+<h3 id="cache-77"><a class="header" href="#cache-77">cache</a></h3>
 <ul>
 <li><a href="https://github.com/MoonDragon-MD/linguist-NLLB-translator">linguist-NLLB-translator</a></li>
 <li><a href="https://github.com/MoonDragon-MD/linguist-WindowsTTS/blob/main/WindowsTTS.js">linguist-WindowsTTS</a></li>
@@ -16776,7 +16730,7 @@ scoop install librewolf
 </ul>
 </li>
 </ul>
-<h2 id="reference-111"><a class="header" href="#reference-111">reference</a></h2>
+<h2 id="reference-112"><a class="header" href="#reference-112">reference</a></h2>
 <ul>
 <li>#document <a href="https://yomitan.wiki">Yomitan</a>
 <ul>
@@ -16792,7 +16746,7 @@ scoop install librewolf
 <li><a href="https://github.com/MarvNC/yomichan-dictionaries">Yomichan/Yomitan Dictionaries</a></li>
 </ul>
 <h2 id="resource-79"><a class="header" href="#resource-79">resource</a></h2>
-<h3 id="cache-79"><a class="header" href="#cache-79">cache</a></h3>
+<h3 id="cache-78"><a class="header" href="#cache-78">cache</a></h3>
 <ul>
 <li>#dictionary <a href="https://github.com/stephenmk/Jitendex">Jitendex</a></li>
 <li>#dictionary <a href="https://github.com/kamui-fin/yomi-freq">Yomichan Frequency List Generator</a></li>
@@ -16821,7 +16775,7 @@ scoop install librewolf
 <ul>
 <li><a href="/opt/_andriod/app-manager.html">app-manager.md</a></li>
 </ul>
-<h3 id="cache-80"><a class="header" href="#cache-80">cache</a></h3>
+<h3 id="cache-79"><a class="header" href="#cache-79">cache</a></h3>
 <ul>
 <li><a href="/opt/_andriod/andbible.html">andbible.md</a></li>
 <li><a href="/opt/_andriod/fair-email.html">fair-email.md</a> <em>obtainium</em></li>
@@ -16960,12 +16914,12 @@ scoop install librewolf
 </ul>
 </li>
 </ul>
-<h2 id="reference-112"><a class="header" href="#reference-112">reference</a></h2>
+<h2 id="reference-113"><a class="header" href="#reference-113">reference</a></h2>
 <ul>
 <li>#document <a href="https://docs.ankidroid.org/">AnkiDroid User Manual</a></li>
 </ul>
 <h2 id="cross-reference-44"><a class="header" href="#cross-reference-44">cross-reference</a></h2>
-<h3 id="cache-81"><a class="header" href="#cache-81">cache</a></h3>
+<h3 id="cache-80"><a class="header" href="#cache-80">cache</a></h3>
 <ul>
 <li><a href="/srv/anki-sync-server.html">anki-sync-server.md</a></li>
 </ul>
@@ -16978,7 +16932,7 @@ scoop install librewolf
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="f-droid"><a class="header" href="#f-droid"><a href="https://f-droid.org/">F-Droid</a></a></h1>
-<h2 id="reference-113"><a class="header" href="#reference-113">reference</a></h2>
+<h2 id="reference-114"><a class="header" href="#reference-114">reference</a></h2>
 <ul>
 <li><a href="https://sspai.com/post/63647">F-Droid 使用指南</a></li>
 <li><a href="https://gitlab.com/fdroid/mirror-monitor">Mirror Monitor</a></li>
@@ -16998,7 +16952,7 @@ scoop install librewolf
 </ul>
 </li>
 </ul>
-<h2 id="reference-114"><a class="header" href="#reference-114">reference</a></h2>
+<h2 id="reference-115"><a class="header" href="#reference-115">reference</a></h2>
 <ul>
 <li>#document <a href="https://github.com/koreader/koreader/wiki">Home · koreader/koreader Wiki</a>
 <ul>
@@ -17155,7 +17109,7 @@ proot-distro install archlinux
 proot-distro list
 proot-distro login archlinux
 </code></pre>
-<h2 id="reference-115"><a class="header" href="#reference-115">reference</a></h2>
+<h2 id="reference-116"><a class="header" href="#reference-116">reference</a></h2>
 <ul>
 <li>#keymap <a href="https://wiki.termux.com/wiki/Touch_Keyboard">Termux</a></li>
 </ul>
@@ -17251,7 +17205,7 @@ fi
 <li><a href="/opt/_arch/grub-btrfs.html">grub-btrfs.md</a></li>
 <li><a href="/opt/qdiskinfo.html">qdiskinfo.md</a></li>
 </ul>
-<h3 id="cache-82"><a class="header" href="#cache-82">cache</a></h3>
+<h3 id="cache-81"><a class="header" href="#cache-81">cache</a></h3>
 <ul>
 <li><a href="/opt/_arch/foliate.html">foliate.md</a></li>
 <li><a href="/opt/_arch/input-leap.html">input-leap.md</a></li>
@@ -17458,7 +17412,7 @@ greeter-session=lightdm-webkit2-greeter
 <h2 id="usage-195"><a class="header" href="#usage-195">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl enable --now lightdm
 </code></pre>
-<h2 id="reference-116"><a class="header" href="#reference-116">reference</a></h2>
+<h2 id="reference-117"><a class="header" href="#reference-117">reference</a></h2>
 <ul>
 <li><a href="https://wiki.archlinux.org/title/LightDM">LightDM - ArchWiki</a></li>
 </ul>
@@ -17494,7 +17448,7 @@ greeter-session=lightdm-webkit2-greeter
 <h2 id="usage-197"><a class="header" href="#usage-197">usage</a></h2>
 <pre><code class="language-sh">ocrdesktop -l eng -x 1
 </code></pre>
-<h2 id="reference-117"><a class="header" href="#reference-117">reference</a></h2>
+<h2 id="reference-118"><a class="header" href="#reference-118">reference</a></h2>
 <ul>
 <li>#document <a href="https://wiki.archlinux.org/title/Ocrdesktop">Ocrdesktop - ArchWiki</a></li>
 </ul>
@@ -17533,12 +17487,12 @@ yay -S --noconfirm qdiskinfo-bin
 </code></pre>
 <pre><code class="language-sh">sudo cp /etc/sway/config ~/.config/sway/config
 </code></pre>
-<h2 id="reference-118"><a class="header" href="#reference-118">reference</a></h2>
+<h2 id="reference-119"><a class="header" href="#reference-119">reference</a></h2>
 <ul>
 <li><a href="https://wiki.archlinux.org/title/Sway">Sway - ArchWiki</a></li>
 </ul>
 <h2 id="resource-82"><a class="header" href="#resource-82">resource</a></h2>
-<h3 id="cache-83"><a class="header" href="#cache-83">cache</a></h3>
+<h3 id="cache-82"><a class="header" href="#cache-82">cache</a></h3>
 <ul>
 <li><a href="https://github.com/dawsers/scroll">scroll</a></li>
 <li><a href="https://github.com/francma/wob">wob</a></li>
@@ -17586,7 +17540,7 @@ vncserver :1
 </code></pre>
 <pre><code class="language-sh">./vncstart.sh
 </code></pre>
-<h2 id="reference-119"><a class="header" href="#reference-119">reference</a></h2>
+<h2 id="reference-120"><a class="header" href="#reference-120">reference</a></h2>
 <ul>
 <li>#document <a href="https://tigervnc.org/doc/vncviewer.html">vncviewer</a></li>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-22-04">How to Install and Configure VNC on Ubuntu 22.04</a></li>
@@ -17638,7 +17592,7 @@ sudo systemctl enable --now cronie.service
 	zathura-cb \
 	zathura-pdf-mupdf
 </code></pre>
-<h2 id="reference-120"><a class="header" href="#reference-120">reference</a></h2>
+<h2 id="reference-121"><a class="header" href="#reference-121">reference</a></h2>
 <ul>
 <li>#manpage <a href="https://github.com/pwmt/zathura/blob/develop/doc/man/zathura.1.rst">zathura.1.rst</a></li>
 </ul>
@@ -17667,7 +17621,7 @@ sudo systemctl enable --now cronie.service
 <li><a href="/opt/_arch/rofi/rofi-pass.html">rofi-pass.md</a></li>
 <li><a href="/opt/_arch/rofi/rofi-zeal.html">rofi-zeal.md</a></li>
 </ul>
-<h3 id="cache-84"><a class="header" href="#cache-84">cache</a></h3>
+<h3 id="cache-83"><a class="header" href="#cache-83">cache</a></h3>
 <ul>
 <li><a href="/opt/_arch/rofi/dict-sh.html">dict-sh.md</a></li>
 <li><a href="/opt/_arch/rofi/kaomoji-rofi.html">kaomoji-rofi.md</a></li>
@@ -18002,7 +17956,7 @@ tar -xvf Chroma-White-S.tar.xz
 	...
 </code></pre>
 <h2 id="cross-reference-50"><a class="header" href="#cross-reference-50">cross-reference</a></h2>
-<h3 id="cache-85"><a class="header" href="#cache-85">cache</a></h3>
+<h3 id="cache-84"><a class="header" href="#cache-84">cache</a></h3>
 <ul>
 <li><a href="/opt/_arch/xfce/xfce-tile.html">xfce-tile.md</a></li>
 </ul>
@@ -18096,7 +18050,7 @@ chmod +x ./xfce-setup-shortcuts.sh
 <li><a href="/opt/_windows/wcap.html">wcap.md</a> <em>download</em></li>
 <li><a href="/opt/_windows/wincdemu.html">wincdemu.md</a></li>
 </ul>
-<h3 id="cache-86"><a class="header" href="#cache-86">cache</a></h3>
+<h3 id="cache-85"><a class="header" href="#cache-85">cache</a></h3>
 <ul>
 <li><a href="/opt/_windows/bleachbit.html">bleachbit.md</a></li>
 <li><a href="/opt/_windows/faststone-image-viewer.html">faststone-image-viewer.md</a></li>
@@ -18374,7 +18328,7 @@ scoop install bulk-rename-command
 <li>设置 → 文件类型 → 文件类型群组 → Archives → 编辑 → Ctrl + 左键双击 → <code>SmartZip.exe x {allfilepath}</code></li>
 <li>设置 → 文件类型 → 系统文件类型 → URL:Magnet URI → 编辑 → open → 编辑<code>C:\Users\User\Scoop\apps\qbittorrent-enhanced\current\qbittorrent.exe "%1"</code></li>
 </ul>
-<h2 id="reference-121"><a class="header" href="#reference-121">reference</a></h2>
+<h2 id="reference-122"><a class="header" href="#reference-122">reference</a></h2>
 <ul>
 <li><a href="https://www.gpsoft.com.au/help/opus12/index.html#!Documents/Codes_for_passing_filenames.htm">Codes for passing filenames</a></li>
 <li><a href="https://resource.dopus.com/t/how-do-i-edit-the-folder-background-context-menu/35712/2">How do I edit the folder background context menu?</a></li>
@@ -18399,7 +18353,7 @@ scoop install bulk-rename-command
 <li>#theme <a href="https://resource.dopus.com/t/simple-windows-10-dark-theme/30055">Simple Windows 10 Dark Theme</a></li>
 <li>#view <a href="https://resource.dopus.com/t/cycle-through-layouts/51223">Cycle through Layouts</a></li>
 </ul>
-<h3 id="cache-87"><a class="header" href="#cache-87">cache</a></h3>
+<h3 id="cache-86"><a class="header" href="#cache-86">cache</a></h3>
 <ul>
 <li>#cd <a href="https://resource.dopus.com/t/gorootarchive-jump-back-to-the-root-of-an-archive/51408">GoRootArchive</a></li>
 <li>#clean <a href="https://resource.dopus.com/t/folder-cleaner-delete-folders-but-keep-files/52555">Folder Cleaner</a></li>
@@ -18718,7 +18672,7 @@ Shortcut key: Shift+p
 <blockquote>
 <p>Lintalist允许您以捆绑的方式存储、增量搜索和编辑文本，并将选定的文本粘贴到您当前活动的程序中。文本可以是交互式的，例如，您可以自动插入当前的时间和日期，询问（基本）用户输入或从列表中进行选择等，最后它还可以运行脚本。您可以使用键盘快捷键或缩写在不打开搜索窗口的情况下粘贴文本（或运行脚本）。 [lintalist.github.io]</p>
 </blockquote>
-<h2 id="personal-do-20"><a class="header" href="#personal-do-20">Personal do</a></h2>
+<h2 id="personal-do-19"><a class="header" href="#personal-do-19">Personal do</a></h2>
 <pre><code class="language-sh">scoop install lintalist
 mkdir %USERPROFILE%\Usr\Source\lintalist
 cd %USERPROFILE%\Usr\Source\lintalist
@@ -18752,7 +18706,7 @@ unzip Solarized.zip -d Solarized
 </ul>
 </li>
 </ul>
-<h2 id="reference-122"><a class="header" href="#reference-122">reference</a></h2>
+<h2 id="reference-123"><a class="header" href="#reference-123">reference</a></h2>
 <ul>
 <li>#post <a href="https://lintalist.github.io/#Introduction">Introduction</a></li>
 <li>#document <a href="https://lintalist.github.io/">Lintalist</a></li>
@@ -18773,7 +18727,7 @@ unzip Solarized.zip -d Solarized
 </ul>
 </li>
 </ul>
-<h2 id="reference-123"><a class="header" href="#reference-123">reference</a></h2>
+<h2 id="reference-124"><a class="header" href="#reference-124">reference</a></h2>
 <ul>
 <li><a href="https://github.com/rocksdanister/lively/wiki/Command-Line-Controls#random-wallpaper-medium">Random Wallpaper (Medium)</a></li>
 <li><a href="https://github.com/rocksdanister/lively/wiki/Command-Line-Controls#rainmeter">Rainmeter</a></li>
@@ -18986,7 +18940,7 @@ shell-x -init
 <h2 id="install-430"><a class="header" href="#install-430">install</a></h2>
 <pre><code class="language-sh">scoop install staxrip
 </code></pre>
-<h2 id="reference-124"><a class="header" href="#reference-124">reference</a></h2>
+<h2 id="reference-125"><a class="header" href="#reference-125">reference</a></h2>
 <ul>
 <li><a href="https://sspai.com/post/88056">StaxRip烧录硬字幕踩坑记录</a></li>
 <li><a href="https://staxrip.github.io/x265-encoding-tutorial/">x265-encoding-tutorial</a></li>
@@ -19004,7 +18958,7 @@ shell-x -init
 <h2 id="install-431"><a class="header" href="#install-431">install</a></h2>
 <pre><code class="language-sh">scoop install sumatrapdf-installer
 </code></pre>
-<h2 id="reference-125"><a class="header" href="#reference-125">reference</a></h2>
+<h2 id="reference-126"><a class="header" href="#reference-126">reference</a></h2>
 <ul>
 <li><a href="https://github.com/sumatrapdfreader/sumatrapdf/issues/959">Allow enabling/disabling thumbnails from settings</a></li>
 </ul>
@@ -19031,7 +18985,7 @@ shell-x -init
 <li>文件 → 打开最近的项目 → file.json.</li>
 <li>创意工坊 → 在创意工坊上分享壁纸 → 预览图片 → 导入文件 → 发布更新 → 关闭.</li>
 </ol>
-<h2 id="reference-126"><a class="header" href="#reference-126">reference</a></h2>
+<h2 id="reference-127"><a class="header" href="#reference-127">reference</a></h2>
 <ul>
 <li><a href="https://help.wallpaperengine.io/en/functionality/editingwallpapers.html#updating-a-lost-project">Updating a lost project</a></li>
 </ul>
@@ -19107,7 +19061,7 @@ Caomparion criteria: Modification time
 <h2 id="install-437"><a class="header" href="#install-437">install</a></h2>
 <pre><code class="language-sh">scoop install clink clink-completions conemu
 </code></pre>
-<h2 id="personal-do-21"><a class="header" href="#personal-do-21">Personal do</a></h2>
+<h2 id="personal-do-20"><a class="header" href="#personal-do-20">Personal do</a></h2>
 <pre><code class="language-sh">mkdir "%USERPROFILE%/Usr/Source/cmder"
 cd "%USERPROFILE%/Usr/Source/cmder"
 git clone --depth=1 https://github.com/chrisant996/clink-fzf
@@ -19159,7 +19113,7 @@ mklink "%CMDER_HOME%\vendor\zoxide.lua" "%CMDER_SRC%\clink-zoxide\zoxide.lua"
 </code></pre>
 <h2 id="config-71"><a class="header" href="#config-71">config</a></h2>
 <p>Cmder → Settings → Import → <code>user-ConEmu.xml</code>.</p>
-<h2 id="reference-127"><a class="header" href="#reference-127">reference</a></h2>
+<h2 id="reference-128"><a class="header" href="#reference-128">reference</a></h2>
 <ul>
 <li>#document <a href="https://chrisant996.github.io/clink/clink.html">Clink</a></li>
 <li><a href="https://github.com/cmderdev/cmder#shortcut-to-open-cmder-in-a-chosen-folder">Shortcut to open Cmder in a chosen folder</a></li>
@@ -19180,7 +19134,7 @@ mklink "%CMDER_HOME%\vendor\zoxide.lua" "%CMDER_SRC%\clink-zoxide\zoxide.lua"
 <ul>
 <li><a href="https://github.com/hasansujon786/Cmder-Color-Themes">Color Schemes for ConEmu</a></li>
 </ul>
-<h3 id="cache-88"><a class="header" href="#cache-88">cache</a></h3>
+<h3 id="cache-87"><a class="header" href="#cache-87">cache</a></h3>
 <ul>
 <li><a href="https://github.com/tadashi-aikawa/owl-cmder-tools">Owl Cmder Tools</a></li>
 </ul>
@@ -19280,14 +19234,14 @@ Windows.old
 </ul>
 </li>
 </ul>
-<h2 id="reference-128"><a class="header" href="#reference-128">reference</a></h2>
+<h2 id="reference-129"><a class="header" href="#reference-129">reference</a></h2>
 <ul>
 <li>#config [<a href="https://www.voidtools.com/support/everything/ini/">INI - voidtools</a>](https://www.voidtools.com/support/everything/ini/)</li>
 <li>#option <a href="https://www.voidtools.com/support/everything/searching/">Everything</a></li>
 <li>#syntax <a href="https://www.voidtools.com/support/everything/searching/">Searching - voidtools</a></li>
 </ul>
 <h2 id="cross-reference-53"><a class="header" href="#cross-reference-53">cross-reference</a></h2>
-<h3 id="cache-89"><a class="header" href="#cache-89">cache</a></h3>
+<h3 id="cache-88"><a class="header" href="#cache-88">cache</a></h3>
 <ul>
 <li><a href="/opt/_windows/everything/everything-toolbar.html">everything-toolbar.md</a></li>
 </ul>
@@ -19366,7 +19320,7 @@ Executable: krita.exe
 <h2 id="install-442"><a class="header" href="#install-442">install</a></h2>
 <pre><code class="language-sh">scoop install keypirinha
 </code></pre>
-<h2 id="personal-do-22"><a class="header" href="#personal-do-22">Personal do</a></h2>
+<h2 id="personal-do-21"><a class="header" href="#personal-do-21">Personal do</a></h2>
 <pre><code class="language-sh">rmdir /S /Q "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\User"
 mklink /J "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\User" "%DOTFILES_DIR%\.config\_windows_keypirinha\Profile\User"
 mkdir "%USERPROFILE%/Usr/File"
@@ -19388,7 +19342,7 @@ terminal = "C:\Users\User\.local\bin\alacritty_command.lnk"
 </code></pre>
 </li>
 </ol>
-<h2 id="reference-129"><a class="header" href="#reference-129">reference</a></h2>
+<h2 id="reference-130"><a class="header" href="#reference-130">reference</a></h2>
 <ul>
 <li><a href="https://github.com/Keypirinha/Packages/pull/41">Add provider for chromium based edge bookmarks</a></li>
 <li><a href="https://community.brave.com/t/copy-past-bookmark-folder-to-new-location/437841">Copy &amp; Past bookmark folder to new location</a></li>
@@ -19425,7 +19379,7 @@ terminal = "C:\Users\User\.local\bin\alacritty_command.lnk"
 <li><a href="https://github.com/dozius/keypirinha-snippets">snippets</a></li>
 <li><a href="https://github.com/grandsilence/keypirinha-win10-theme-switcher">win10-theme-switcher</a></li>
 </ul>
-<h3 id="cache-90"><a class="header" href="#cache-90">cache</a></h3>
+<h3 id="cache-89"><a class="header" href="#cache-89">cache</a></h3>
 <ul>
 <li><a href="https://github.com/novamostra/Keypirinha_SearchCSV">Keypirinha_SearchCSV</a></li>
 <li><a href="https://github.com/armotic/keypirinha-audioswitcher">Keypirinha Plugin: Audio Switcher</a></li>
@@ -19606,7 +19560,7 @@ URL: http://&lt;your_host&gt;:&lt;port&gt;/?models=librarian-answer-in-zh&amp;q=
 <li>Select a book → Enter → Check book format → Download.</li>
 <li>Select book → View → View with calibre E-book viewer.</li>
 </ol>
-<h2 id="reference-130"><a class="header" href="#reference-130">reference</a></h2>
+<h2 id="reference-131"><a class="header" href="#reference-131">reference</a></h2>
 <ul>
 <li><a href="https://kenfavors.com/code/how-to-install-calibre-server-calibre-web-on-ubuntu-22-04/">How To Install Calibre Server &amp; Calibre Web On Ubuntu 22.04</a></li>
 </ul>
@@ -19623,7 +19577,7 @@ URL: http://&lt;your_host&gt;:&lt;port&gt;/?models=librarian-answer-in-zh&amp;q=
 <li><a href="https://github.com/un-pogaz/ePub-Extended-Metadata">ePub Extended Metadata</a></li>
 <li><a href="https://www.mobileread.com/forums/showthread.php?t=358911">K2pdfopt</a></li>
 </ul>
-<h3 id="cache-91"><a class="header" href="#cache-91">cache</a></h3>
+<h3 id="cache-90"><a class="header" href="#cache-90">cache</a></h3>
 <ul>
 <li><a href="https://github.com/fugary/calibre-douban">calibre-douban</a></li>
 <li><a href="https://github.com/every-day-things/citadel">citadel</a></li>
@@ -19668,7 +19622,7 @@ yay -S --noconfirm goldendict-git
 # Windows 10
 scoop install goldendict
 </code></pre>
-<h2 id="personal-do-23"><a class="header" href="#personal-do-23">Personal do</a></h2>
+<h2 id="personal-do-22"><a class="header" href="#personal-do-22">Personal do</a></h2>
 <pre><code class="language-sh"># Arch
 mkdir "~/Usr/Source/goldendict"
 cd "~/Usr/Source/goldendict"
@@ -19692,7 +19646,7 @@ mkdir -p $HOME/.config/goldendict/styles/Dark
 (cat "$(pwd)/GoldenDict/styles/Dark/article-style.css"; curl -s https://raw.githubusercontent.com/scillidan/dotfiles/refs/heads/main/.config/_goldendict/article-style_user.css) &gt; "$HOME/.config/goldendict/styles/Dark/article-style.css"
 ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styles/Dark/qt-style.css
 </code></pre>
-<h2 id="reference-131"><a class="header" href="#reference-131">reference</a></h2>
+<h2 id="reference-132"><a class="header" href="#reference-132">reference</a></h2>
 <ul>
 <li>#blog <a href="https://scillidan.github.io/YAFA-site/blog/goldendict/">配置GoldenDict</a></li>
 <li>#blog <a href="https://scillidan.github.io/YAFA-site/blog/goldendict-expand/">配置GoldenDict·番外</a></li>
@@ -19714,7 +19668,7 @@ ln -sfn $(pwd)/GoldenDict/styles/Dark/qt-style.css $HOME/.config/goldendict/styl
 <ul>
 <li><a href="https://github.com/xiaodaxia-2008/golden-dict-trans">golden-dict-trans</a></li>
 </ul>
-<h3 id="cache-92"><a class="header" href="#cache-92">cache</a></h3>
+<h3 id="cache-91"><a class="header" href="#cache-91">cache</a></h3>
 <ul>
 <li><a href="https://terokarvinen.com/2017/acute-0-2-2-integrate-help-commands-to-single-interface-pydoc3-puppet-describe-and-man-in-goldendict/?fromSearch=acute">Acute</a></li>
 <li><a href="https://github.com/maxdymko/goldendict-dictionary-editor">editor for goldendict-dictionary entries</a></li>
@@ -19751,7 +19705,7 @@ sudo pacman -S mpv
 # Windows 10
 scoop install mpv
 </code></pre>
-<h2 id="reference-132"><a class="header" href="#reference-132">reference</a></h2>
+<h2 id="reference-133"><a class="header" href="#reference-133">reference</a></h2>
 <ul>
 <li>#blog <a href="https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/">mpv.conf</a></li>
 <li>#document <a href="https://mpv.io/manual/master/">mpv.io</a>
@@ -19773,7 +19727,7 @@ scoop install mpv
 <li><a href="/opt/mpv/mpv-handler.html">mpv-handler.md</a></li>
 <li><a href="/opt/mpv/webtorrent-mpv-hook.html">webtorrent-mpv-hook.md</a></li>
 </ul>
-<h3 id="cache-93"><a class="header" href="#cache-93">cache</a></h3>
+<h3 id="cache-92"><a class="header" href="#cache-92">cache</a></h3>
 <ul>
 <li><a href="/opt/mpv/mpv-cheatsheet.html">mpv-cheatsheet.md</a></li>
 <li><a href="/bin/ffsubsync.html">ffsubsync.md</a></li>
@@ -20131,7 +20085,7 @@ scoop install obsidian
 </ul>
 </li>
 </ul>
-<h2 id="reference-133"><a class="header" href="#reference-133">reference</a></h2>
+<h2 id="reference-134"><a class="header" href="#reference-134">reference</a></h2>
 <ul>
 <li><a href="https://help.obsidian.md/embeds">Embed files</a></li>
 <li><a href="https://help.obsidian.md/aliases">Aliases</a></li>
@@ -20210,7 +20164,7 @@ scoop install obsidian
 <ul>
 <li><a href="https://github.com/4Source/settings-profiles-obsidian-plugin">Settings profiles</a></li>
 </ul>
-<h3 id="cache-94"><a class="header" href="#cache-94">cache</a></h3>
+<h3 id="cache-93"><a class="header" href="#cache-93">cache</a></h3>
 <ul>
 <li>#live <a href="https://github.com/caronchen/obsidian-calibre-plugin">Calibre</a></li>
 <li><a href="https://github.com/LordGrimmauld/aw-watcher-obsidian">ActivityWatch</a></li>
@@ -20479,7 +20433,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 <ul>
 <li>Edit → Permute Lines → Unique</li>
 </ul>
-<h2 id="reference-134"><a class="header" href="#reference-134">reference</a></h2>
+<h2 id="reference-135"><a class="header" href="#reference-135">reference</a></h2>
 <ul>
 <li>#document <a href="https://docs.sublimetext.io/guide/">ST Community Docs</a></li>
 <li>#document <a href="https://www.sublimetext.com/docs/scope_naming.html">Scope Naming</a></li>
@@ -20576,7 +20530,7 @@ mklink /J "%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User" "%DOTFILES_
 <li><a href="https://github.com/wakatime/sublime-wakatime">WakaTime</a></li>
 <li><a href="https://github.com/djjcast/mirodark-st2">Mirodark Color Scheme</a></li>
 </ul>
-<h3 id="cache-95"><a class="header" href="#cache-95">cache</a></h3>
+<h3 id="cache-94"><a class="header" href="#cache-94">cache</a></h3>
 <ul>
 <li>#bookmark <a href="https://github.com/ibensw/LsBookmarks">ViewBookmarks</a></li>
 <li>#code <a href="https://github.com/pieces-app/plugin_sublime">Pieces</a></li>
@@ -20726,13 +20680,13 @@ scoop install vscodium
     "terminal.integrated.tabs.enableAnimation": false
 }
 </code></pre>
-<h2 id="reference-135"><a class="header" href="#reference-135">reference</a></h2>
+<h2 id="reference-136"><a class="header" href="#reference-136">reference</a></h2>
 <ul>
 <li>#sheet <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Visual Studio Code</a></li>
 <li><a href="https://www.reddit.com/r/vscode/comments/kb0eb5/extensions_missing/">Extensions missing?</a></li>
 </ul>
 <h2 id="cross-reference-64"><a class="header" href="#cross-reference-64">cross-reference</a></h2>
-<h3 id="cache-96"><a class="header" href="#cache-96">cache</a></h3>
+<h3 id="cache-95"><a class="header" href="#cache-95">cache</a></h3>
 <ul>
 <li>#mcp <a href="/bin/godot-mcp.html">godot-mcp.md</a></li>
 <li>#mcp <a href="/bin/mcp_godot_rag.html">mcp_godot_rag.md</a></li>
@@ -20966,7 +20920,7 @@ scoop install vscodium
 </code></pre>
 </li>
 </ul>
-<h2 id="reference-136"><a class="header" href="#reference-136">reference</a></h2>
+<h2 id="reference-137"><a class="header" href="#reference-137">reference</a></h2>
 <ul>
 <li><a href="https://www.rectcircle.cn/posts/open-source-ai-code-tool-1-continue/">开源 AI 编程工具（一） Continue</a></li>
 </ul>
@@ -21017,7 +20971,7 @@ scoop install vscodium
 <li><a href="/optGame/ppsspp.html">ppsspp.md</a></li>
 <li><a href="/optGame/retroarch.html">retroarch.md</a> <em>download</em></li>
 </ul>
-<h3 id="cache-97"><a class="header" href="#cache-97">cache</a></h3>
+<h3 id="cache-96"><a class="header" href="#cache-96">cache</a></h3>
 <ul>
 <li>#love <a href="/optGame/mari0.html">mari0.md</a></li>
 <li>#Windows <a href="/optGame/hydralauncher.html">hydralauncher.md</a> <em>release</em></li>
@@ -21190,7 +21144,7 @@ cd mari0-1.6.2/mari0-1.6.2
 7z a -tzip mari0-1.6.2.love *
 mv mari0-1.6.2.love &lt;RetroPie&gt;/home/pi/RetroPie/roms/love/
 </code></pre>
-<h2 id="reference-137"><a class="header" href="#reference-137">reference</a></h2>
+<h2 id="reference-138"><a class="header" href="#reference-138">reference</a></h2>
 <ul>
 <li><a href="https://deepwiki.com/Stabyourself/mari0">Stabyourself/mari0</a></li>
 </ul>
@@ -21381,7 +21335,7 @@ launch: "{env.PEGASUS_HOME}\RetroArch\retroarch.exe" -L "{env.PEGASUS_HOME}\Retr
 <pre><code># Arch
 launch: "/home/&lt;user&gt;/RetroArch/retroarch" -L "/home/&lt;user&gt;/RetroArch/cores/flycast_libretro.so" "{file.path}"
 </code></pre>
-<h2 id="reference-138"><a class="header" href="#reference-138">reference</a></h2>
+<h2 id="reference-139"><a class="header" href="#reference-139">reference</a></h2>
 <ul>
 <li><a href="https://pegasus-frontend.org/tools/">Pegasus Tools Collection</a></li>
 <li><a href="https://github.com/muldjord/skyscraper">Skyscraper</a></li>
@@ -21399,7 +21353,7 @@ launch: "/home/&lt;user&gt;/RetroArch/retroarch" -L "/home/&lt;user&gt;/RetroArc
 <ul>
 <li>#theme <a href="https://github.com/y-muller/retromega-sleipnir">Sleipnir</a></li>
 </ul>
-<h3 id="cache-98"><a class="header" href="#cache-98">cache</a></h3>
+<h3 id="cache-97"><a class="header" href="#cache-97">cache</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/mmatyas/pegasus-theme-flixnet">Flixnet theme for Pegasus</a></li>
 <li>#theme <a href="https://github.com/mmatyas/pegasus-theme-grid-micro">Grid Micro theme for Pegasus</a></li>
@@ -21440,7 +21394,7 @@ scoop install retroarch
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="slay-the-spire"><a class="header" href="#slay-the-spire"><a href="https://store.steampowered.com/app/646570/Slay_the_Spire/">Slay the Spire</a></a></h1>
-<h2 id="reference-139"><a class="header" href="#reference-139">reference</a></h2>
+<h2 id="reference-140"><a class="header" href="#reference-140">reference</a></h2>
 <ul>
 <li><a href="https://civitai.com/models/150006/slay-the-spire-xlora">Slay the Spire XLora</a></li>
 <li><a href="https://civitai.com/models/728686/slay-the-spire-card-art-style">Slay the Spire (Card Art Style)</a></li>
@@ -21488,7 +21442,7 @@ sudo apt-get install libc6:armhf -y
 sudo apt install libcurl3t64-gnutls:armhf libcurl4t64:armhf
 sudo apt install mesa-vulkan-drivers -y
 </code></pre>
-<h2 id="reference-140"><a class="header" href="#reference-140">reference</a></h2>
+<h2 id="reference-141"><a class="header" href="#reference-141">reference</a></h2>
 <hr>
 <ol class="footnote-definition">
 <li id="footnote-1-65">
@@ -21536,7 +21490,7 @@ yay -S --noconfirm emulationstation-de
 <li>Get <code>ES-DE_*-x64_Portable.zip</code> from <a href="https://gitlab.com/es-de/emulationstation-de/-/releases">Releases</a>.</li>
 <li>Decompress it to <code>ES-DE/</code>.</li>
 </ol>
-<h2 id="reference-141"><a class="header" href="#reference-141">reference</a></h2>
+<h2 id="reference-142"><a class="header" href="#reference-142">reference</a></h2>
 <ul>
 <li>#document <a href="https://gitlab.com/es-de/emulationstation-de/-/blob/master/USERGUIDE.md">ES-DE Frontend</a>
 <ul>
@@ -21551,7 +21505,7 @@ yay -S --noconfirm emulationstation-de
 <li><a href="/optGame/es-de/iconic-es-de.html">iconic-es-de.md</a></li>
 </ul>
 <h2 id="resource-97"><a class="header" href="#resource-97">resource</a></h2>
-<h3 id="cache-99"><a class="header" href="#cache-99">cache</a></h3>
+<h3 id="cache-98"><a class="header" href="#cache-98">cache</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/Siddy212/iconic-es-de">Iconic (ES-DE Version)</a></li>
 <li>#theme <a href="https://github.com/anthonycaccese/mister-menu-es-de">MiSTer Menu UI (for ES-DE)</a></li>
@@ -21649,7 +21603,7 @@ git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 <li>VIA Web Application (<a href="https://gm-via-web.vercel.app">vercel</a>)</li>
 <li>Winbindex (<a href="https://winbindex.m417z.com">public</a>)</li>
 </ul>
-<h3 id="cache-100"><a class="header" href="#cache-100">cache</a></h3>
+<h3 id="cache-99"><a class="header" href="#cache-99">cache</a></h3>
 <ul>
 <li>#annotate <a href="https://hypothes.is">Hypothesis</a></li>
 <li>#audio <a href="https://github.com/Zejun-Yang/AniPortrait">AniPortrait</a></li>
@@ -22306,7 +22260,7 @@ API base: https://api.openai.com
 <li>Studio → llama 3.1 → Context → Add → <code>&lt;knowledge&gt;</code></li>
 </ol>
 <h2 id="resource-100"><a class="header" href="#resource-100">resource</a></h2>
-<h3 id="cache-101"><a class="header" href="#cache-101">cache</a></h3>
+<h3 id="cache-100"><a class="header" href="#cache-100">cache</a></h3>
 <ul>
 <li><a href="https://dify101.com/market/claude-thinking-Content-Editing">Content Editing</a></li>
 <li><a href="https://dify101.com/market/claude-thinking-E-commerce-Specialist">E-commerce Specialist</a></li>
@@ -22577,7 +22531,7 @@ python cli.py --whisper_implementation "faster-whisper" --vad "silero-vad-skip-g
 <pre><code class="language-sh">## As Web UI
 python.exe app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --server_port 7830 --whisper_implementation "faster-whisper" --default_model_name "large-v2" --vad_parallel_devices 0 --auto_parallel true --auth_token &lt;hf_token&gt; --output_dir "C:/Users/User/Downloads"
 </code></pre>
-<h2 id="reference-142"><a class="header" href="#reference-142">reference</a></h2>
+<h2 id="reference-143"><a class="header" href="#reference-143">reference</a></h2>
 <ul>
 <li><a href="https://github.com/scillidan/gpt_share/blob/main/what%20diff_silero-vad%2C%20silero-vad-skip-gaps%2C%20silero-vad-expan%20d-into-gaps%2C%20periodic-vad_02.md">what diff_silero-vad, silero-vad-skip-gaps, silero-vad-expan d-into-gaps, periodic-vad_02.md</a></li>
 </ul>
@@ -22672,7 +22626,7 @@ uv pip install hf_transfer
 python -m tools.run_webui --llama-checkpoint-path "checkpoints/openaudio-s1-mini" --decoder-checkpoint-path "checkpoints/openaudio-s1-mini/codec.pth" --decoder-config-name modded_dac_vq
 </code></pre>
 <p>If serve port used, edit <code>API_FLAGS.txt</code>.</p>
-<h2 id="reference-143"><a class="header" href="#reference-143">reference</a></h2>
+<h2 id="reference-144"><a class="header" href="#reference-144">reference</a></h2>
 <ul>
 <li><a href="https://github.com/fishaudio/fish-speech/blob/main/docs/en/inference.md#command-line-inference">Command Line Inference</a></li>
 </ul>
@@ -22943,7 +22897,7 @@ npm install
 npm run build
 npm add -g serve
 </code></pre>
-<h2 id="reference-144"><a class="header" href="#reference-144">reference</a></h2>
+<h2 id="reference-145"><a class="header" href="#reference-145">reference</a></h2>
 <ul>
 <li><a href="https://tailscale.com/kb/1476/install-ubuntu-2404">Setting up Tailscale on Ubuntu 24.04 (noble)</a></li>
 <li><a href="https://tailscale.com/kb/1166/vscode-ipad">Coding on iPad using VSCode, Caddy, and code-server</a></li>
@@ -23481,7 +23435,7 @@ npm install --save-dev cross-env
 npm run start
 # set NODE_ENV=development &amp;&amp; node tools/bundler.js
 </code></pre>
-<h2 id="reference-145"><a class="header" href="#reference-145">reference</a></h2>
+<h2 id="reference-146"><a class="header" href="#reference-146">reference</a></h2>
 <ul>
 <li>#deepwiki <a href="https://deepwiki.com/jonshamir/muser">jonshamir/muser</a></li>
 <li><a href="https://gist.github.com/scillidan/92b36835451da63a247e287e6753ea5c">batch_muser_tagger.py</a></li>
@@ -23598,7 +23552,7 @@ sudo docker compose up -d
 </ul>
 </li>
 </ul>
-<h2 id="reference-146"><a class="header" href="#reference-146">reference</a></h2>
+<h2 id="reference-147"><a class="header" href="#reference-147">reference</a></h2>
 <ul>
 <li><a href="https://docs.openwebui.com/tutorials/tips/rag-tutorial/">Tutorial: Configuring RAG with Open WebUI Documentation</a></li>
 <li><a href="https://docs.openwebui.com/tutorials/integrations/browser-search-engine/#step-2-add-open-webui-as-a-custom-search-engine">Add Open WebUI as a Custom Search Engine</a></li>
@@ -23615,7 +23569,7 @@ sudo docker compose up -d
 <ul>
 <li>#model <a href="https://openwebui.com/m/daradib/documentsearch">Document Search</a></li>
 </ul>
-<h3 id="cache-102"><a class="header" href="#cache-102">cache</a></h3>
+<h3 id="cache-101"><a class="header" href="#cache-101">cache</a></h3>
 <ul>
 <li>#function <a href="https://openwebui.com/f/coleam/n8n_pipe">N8N Pipe</a></li>
 <li>#function <a href="https://openwebui.com/f/owndev/n8n_pipeline">N8N Pipeline</a></li>
@@ -23989,7 +23943,7 @@ npm run build
 <h2 id="annex-192"><a class="header" href="#annex-192">annex</a></h2>
 <p><img src="/_image/optWeb/recoded.png" alt="recoded"></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="reference-147"><a class="header" href="#reference-147"><a href="https://github.com/Fechin/reference">Reference</a></a></h1>
+<h1 id="reference-148"><a class="header" href="#reference-148"><a href="https://github.com/Fechin/reference">Reference</a></a></h1>
 <p><img src="https://img.shields.io/github/license/Fechin/reference" alt=""> <img src="https://img.shields.io/github/last-commit/scillidan/reference/main?label=last%20commit%20(fork)" alt=""></p>
 <h2 id="install-545"><a class="header" href="#install-545">install</a></h2>
 <p><sup class="footnote-reference" id="fr-1-1-77"><a href="#footnote-1-82">1</a></sup></p>
@@ -24506,8 +24460,8 @@ uv pip install -r requirements-windows.txt
 <pre><code class="language-sh">set XFORMERS_FORCE_DISABLE_TRITON="1"
 python gradio_app.py
 </code></pre>
-<h2 id="reference-148"><a class="header" href="#reference-148">reference</a></h2>
-<h3 id="cache-103"><a class="header" href="#cache-103">cache</a></h3>
+<h2 id="reference-149"><a class="header" href="#reference-149">reference</a></h2>
+<h3 id="cache-102"><a class="header" href="#cache-102">cache</a></h3>
 <ul>
 <li><a href="https://github.com/sdbds/ToonCrafter-for-windows">ToonCrafter</a></li>
 </ul>
@@ -24627,7 +24581,7 @@ wasm-pack build
 <li>Github → Project → Settings → Pages → Build and deployment → Branch → gh-pages.</li>
 <li>After deploy, visit <code>https://&lt;user&gt;.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html</code>.</li>
 </ol>
-<h2 id="reference-149"><a class="header" href="#reference-149">reference</a></h2>
+<h2 id="reference-150"><a class="header" href="#reference-150">reference</a></h2>
 <ul>
 <li><a href="https://answers.netlify.com/t/support-guide-handling-cors-on-netlify/107739">[Support Guide] Handling CORS on Netlify</a></li>
 </ul>
@@ -24748,7 +24702,7 @@ set HSA_OVERRIDE_GFX_VERSION=10.3.0
 <li><a href="https://developer.nvidia.com/cuda-12-8-0-download-archive">CUDA Toolkit 12.8</a></li>
 </ul>
 <h2 id="cross-reference-69"><a class="header" href="#cross-reference-69">cross-reference</a></h2>
-<h3 id="cache-104"><a class="header" href="#cache-104">cache</a></h3>
+<h3 id="cache-103"><a class="header" href="#cache-103">cache</a></h3>
 <ul>
 <li><a href="/optWeb/comfyui/comfyui-auto_installer.html">comfyui-auto_installer.md</a></li>
 </ul>
@@ -24778,7 +24732,7 @@ set HSA_OVERRIDE_GFX_VERSION=10.3.0
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="umeairt---comfyui-auto-installer"><a class="header" href="#umeairt---comfyui-auto-installer"><a href="https://huggingface.co/UmeAiRT/ComfyUI-Auto_installer">UmeAiRT - ComfyUI auto installer</a></a></h1>
-<h2 id="personal-do-24"><a class="header" href="#personal-do-24">Personal do</a></h2>
+<h2 id="personal-do-23"><a class="header" href="#personal-do-23">Personal do</a></h2>
 <p>Put <code>file.json</code> into <code>ComfyUI/user/default/workflows/</code>.</p>
 <pre><code class="language-sh">git clone --depth=1 https://github.com/ltdrdata/ComfyUI-Manager custom_nodes\comfyui-manager
 pip install -r custom_nodes\comfyui-manager\requirements.txt
@@ -24901,7 +24855,7 @@ vim docker-compose.yml
 # sudo docker compose pull
 sudo docker compose up -d
 </code></pre>
-<h2 id="reference-150"><a class="header" href="#reference-150">reference</a></h2>
+<h2 id="reference-151"><a class="header" href="#reference-151">reference</a></h2>
 <ul>
 <li><a href="https://lobehub.com/docs/self-hosting/platform/vercel">Deploy LobeChat with Vercel</a></li>
 <li><a href="https://learnprompting.org/zh-Hans/docs/basics/prompt_structure">提示的组成部分</a></li>
@@ -24924,7 +24878,7 @@ sudo docker compose up -d
 <ul>
 <li>#tool #Translation <a href="https://lobechat.com/discover/assistant/encn-fy">English Technology Article Reading Assistant</a> <em>英文科技文章阅读助手</em></li>
 </ul>
-<h3 id="cache-105"><a class="header" href="#cache-105">cache</a></h3>
+<h3 id="cache-104"><a class="header" href="#cache-104">cache</a></h3>
 <ul>
 <li>#develop #Games <a href="https://lobechat.com/discover/assistant/godot-guru">Godot Guru</a></li>
 <li>#develop #General <a href="https://lobechat.com/discover/assistant/lobe-chat-unit-test-dev">LobeChat Test Engineer</a> <em>LobeChat测试工程师</em></li>
@@ -25085,7 +25039,7 @@ sed -i 's/localhost/&lt;your_ip&gt;/g' .env
 <li>Casdorr → Identity → Applications → LobeChat → Edit.</li>
 <li>Redirect URLs → Add → <code>http://&lt;your_ip&gt;:3210/api/auth/callback/casdoor</code> → Save &amp; Exit.</li>
 </ol>
-<h2 id="reference-151"><a class="header" href="#reference-151">reference</a></h2>
+<h2 id="reference-152"><a class="header" href="#reference-152">reference</a></h2>
 <ul>
 <li><a href="https://lobehub.com/docs/self-hosting/server-database/vercel">Deploying Server Database Version on Vercel</a></li>
 </ul>
@@ -25126,14 +25080,14 @@ webui-user.bat
 <li>Extensions → Install from URL.</li>
 <li>Extensions → Installed → Apply and restartUI.</li>
 </ol>
-<h2 id="reference-152"><a class="header" href="#reference-152">reference</a></h2>
+<h2 id="reference-153"><a class="header" href="#reference-153">reference</a></h2>
 <ul>
 <li>#option <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings">Stable Diffusion web UI</a></li>
 <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/6589">How to make web-ui available on local network</a></li>
 <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1561">Choosing which GPU to use when running</a></li>
 </ul>
 <h2 id="cross-reference-71"><a class="header" href="#cross-reference-71">cross-reference</a></h2>
-<h3 id="cache-106"><a class="header" href="#cache-106">cache</a></h3>
+<h3 id="cache-105"><a class="header" href="#cache-105">cache</a></h3>
 <ul>
 <li><a href="/optWeb/sd-webui/stable-diffusion-webui-amdgpu.html">stable-diffusion-webui-amdgpu.md</a></li>
 </ul>
@@ -25311,7 +25265,7 @@ webui-user.bat
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="os"><a class="header" href="#os">os</a></h1>
-<h2 id="reference-153"><a class="header" href="#reference-153">reference</a></h2>
+<h2 id="reference-154"><a class="header" href="#reference-154">reference</a></h2>
 <ul>
 <li>#blog <a href="https://kevinboone.me/lineage-eos-graphene.html">omparing Android alternatives: Lineage OS, ∕e∕OS, and Graphene OS</a></li>
 </ul>
@@ -25329,7 +25283,7 @@ webui-user.bat
 <li><a href="/os/recalbox.html">recalbox.md</a></li>
 <li><a href="/os/retropie.html">retropie.md</a></li>
 </ul>
-<h3 id="cache-107"><a class="header" href="#cache-107">cache</a></h3>
+<h3 id="cache-106"><a class="header" href="#cache-106">cache</a></h3>
 <ul>
 <li><a href="/os/android-tv.html">android-tv.md</a></li>
 <li><a href="/os/armbian.html">armbian.md</a></li>
@@ -25362,7 +25316,7 @@ webui-user.bat
 <blockquote>
 <p>类似于shell，许多其他应用程序将其配置存储在以点（.）开头的文件中。这些是在Linux和类Unix操作系统中的隐藏文件。开发人员和系统管理员通常将“dotfiles”这个术语专门用于指代与我们关心的应用程序和工具配置相关的隐藏文件子集。<br>dotfiles通常散布在用户的主目录（~/）或其他特定于应用程序的位置，和其他文件和文件夹混在一起。与几乎所有事物一样，我们通常希望这些文件在某个版本控制系统下，以便可以在多台计算机之间共享它们或将它们恢复到之前的工作配置。有多种方法可以实现这一点，但最常见的方法是将所有dotfiles放在一个文件夹中，并使用像Git这样的版本控制系统来将该文件夹跟踪为一个代码库。 [Petr Stříbný, “Command Line Handbook”]</p>
 </blockquote>
-<h2 id="reference-154"><a class="header" href="#reference-154">reference</a></h2>
+<h2 id="reference-155"><a class="header" href="#reference-155">reference</a></h2>
 <ul>
 <li>#dotfiles <a href="https://github.com/Ultra-Code/archsway">ArchSway</a></li>
 <li>#dotfiles <a href="https://github.com/Fluffy-Bean/dots">Config Files</a></li>
@@ -25415,7 +25369,7 @@ users, we will arrive at a three digit number, like <code>400</code> for <code>r
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="android-tv"><a class="header" href="#android-tv"><a href="https://www.android.com/tv/">Android TV</a></a></h1>
-<h2 id="reference-155"><a class="header" href="#reference-155">reference</a></h2>
+<h2 id="reference-156"><a class="header" href="#reference-156">reference</a></h2>
 <ul>
 <li><a href="https://konstakang.com/devices/rpi4/LineageOS21/">LineageOS 21 (Android 14)</a></li>
 </ul>
@@ -25452,7 +25406,7 @@ sudo tailscale up
 netsh advfirewall firewall add rule name="GameStream UDP" dir=in protocol=udp localport=48010 action=allow
 netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp localport=48000,48010 action=allow
 </code></pre>
-<h2 id="reference-156"><a class="header" href="#reference-156">reference</a></h2>
+<h2 id="reference-157"><a class="header" href="#reference-157">reference</a></h2>
 <ul>
 <li>#post <a href="https://linuxblog.io/immutable-linux-distros-are-they-right-for-you-take-the-test/">Immutable Linux Distros: Are They Right for You? Take the Test.</a></li>
 <li><a href="https://docs.bazzite.gg/General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware/#__tabbed_1_3">Installing Bazzite for Desktop/Laptop Hardware</a></li>
@@ -25460,7 +25414,7 @@ netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp lo
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="home-assistant"><a class="header" href="#home-assistant"><a href="https://www.home-assistant.io/">Home Assistant</a></a></h1>
-<h2 id="reference-157"><a class="header" href="#reference-157">reference</a></h2>
+<h2 id="reference-158"><a class="header" href="#reference-158">reference</a></h2>
 <ul>
 <li><a href="https://www.home-assistant.io/installation/raspberrypi/">Home Assistant - Raspberry Pi</a></li>
 <li><a href="https://github.com/XiaoMi/ha_xiaomi_home">Xiaomi Home Integration for Home Assistant</a></li>
@@ -25470,7 +25424,7 @@ netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp lo
 <p><img src="/_image/srv/home-assistant.png" alt="home-assistant"></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="osmc"><a class="header" href="#osmc"><a href="https://osmc.tv/">OSMC</a></a></h1>
-<h2 id="reference-158"><a class="header" href="#reference-158">reference</a></h2>
+<h2 id="reference-159"><a class="header" href="#reference-159">reference</a></h2>
 <ul>
 <li><a href="https://pimylifeup.com/raspberry-pi-osmc/">Installing OSMC on the Raspberry Pi</a></li>
 <li><a href="https://github.com/BurningC4/Chinese-IPTV">Chinese-IPTV</a></li>
@@ -25493,7 +25447,7 @@ netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp lo
 <li>拔掉USB → 电源键+音量上键 → FastBoot Mode</li>
 <li>插上USB → 在PC上运行<code>fastboot oem unlock</code></li>
 </ol>
-<h2 id="reference-159"><a class="header" href="#reference-159">reference</a></h2>
+<h2 id="reference-160"><a class="header" href="#reference-160">reference</a></h2>
 <ul>
 <li>#blog <a href="https://chuck.is/a7/">The E-Ink Smartphone That I Adore &amp; Despise - Hisense A7 Review</a></li>
 <li>#document <a href="https://wiki.postmarketos.org/wiki/OnePlus_5_(oneplus-cheeseburger)">postmarketOS Wiki - OnePlus 5</a></li>
@@ -25546,7 +25500,7 @@ deb https://mirrors.ustc.edu.cn/debian bullseye-updates main contrib non-free
 # deb https://mirrors.ustc.edu.cn/debian bullseye-backports main contrib non-free
 # deb-src https://mirrors.ustc.edu.cn/debian bullseye-backports main contrib non-free
 </code></pre>
-<h2 id="reference-160"><a class="header" href="#reference-160">reference</a></h2>
+<h2 id="reference-161"><a class="header" href="#reference-161">reference</a></h2>
 <ul>
 <li>#blog <a href="https://kiljan.org/2023/11/24/arch-linux-arm-on-a-raspberry-pi-5-model-b/">Arch Linux ARM on a Raspberry Pi 5 Model B</a></li>
 <li>#blog <a href="http://blog.hellonico.info/posts/iot/arch_on_raspberry/">Arch Linux on Raspberry Pi 5: Back from the trenches</a></li>
@@ -25597,7 +25551,7 @@ password: recalboxroot
 </code></pre>
 </li>
 </ol>
-<h2 id="reference-161"><a class="header" href="#reference-161">reference</a></h2>
+<h2 id="reference-162"><a class="header" href="#reference-162">reference</a></h2>
 <ul>
 <li>#document <a href="https://wiki.recalbox.com/en/home">Welcome to the Recalbox wiki! | Recalbox Wiki</a>
 <ul>
@@ -25749,7 +25703,7 @@ sudo systemctl status xow
 <li>Configure keymap: <code>&lt;Start&gt;</code> → Main Menu → Configure Input → Hold a key on controller to set.</li>
 <li>Refresh roms: <code>&lt;Start&gt;</code> → Main Menu → Quit → Restart EmulationStation → Game listing will be refreshing.</li>
 </ol>
-<h2 id="reference-162"><a class="header" href="#reference-162">reference</a></h2>
+<h2 id="reference-163"><a class="header" href="#reference-163">reference</a></h2>
 <ul>
 <li>#document <a href="https://retropie.org.uk/docs/">RetroPie</a></li>
 <li>#document <a href="https://pidoc.cn/">树莓派文档</a></li>
@@ -26070,7 +26024,7 @@ sudo vim /etc/mkinitcpio.conf
 <pre><code class="language-sh">sudo mkinitcpio -P
 sudo reboot
 </code></pre>
-<h2 id="personal-do-25"><a class="header" href="#personal-do-25">Personal do</a></h2>
+<h2 id="personal-do-24"><a class="header" href="#personal-do-24">Personal do</a></h2>
 <pre><code class="language-sh">sudo pacman -Rns \
 	xfce4-dict \
 	xfce4-terminal \
@@ -26080,7 +26034,7 @@ sudo reboot
 	# xfce4-notifyd \
 	# xfwm4 \
 </code></pre>
-<h2 id="reference-163"><a class="header" href="#reference-163">reference</a></h2>
+<h2 id="reference-164"><a class="header" href="#reference-164">reference</a></h2>
 <ul>
 <li><a href="https://wiki.archlinux.org/title/desktop_entries">Desktop entries</a></li>
 <li><a href="https://github.com/bibjaw99/workstation">My workstation configs</a></li>
@@ -26116,7 +26070,7 @@ sudo reboot
 <p><a href="/os/arch-linux/appimage.html">appimage.md</a></p>
 </li>
 </ul>
-<h3 id="cache-108"><a class="header" href="#cache-108">cache</a></h3>
+<h3 id="cache-107"><a class="header" href="#cache-107">cache</a></h3>
 <ul>
 <li><a href="/os/arch-linux/rasparch.html">rasparch.md</a></li>
 <li><a href="/os/arch-linux/xdg-base-directory.html">xdg-base-directory.md</a></li>
@@ -26237,7 +26191,7 @@ exit
 <pre><code class="language-sh">arch config --default-user &lt;user&gt;
 arch
 </code></pre>
-<h2 id="personal-do-26"><a class="header" href="#personal-do-26">Personal do</a></h2>
+<h2 id="personal-do-25"><a class="header" href="#personal-do-25">Personal do</a></h2>
 <pre><code class="language-sh">sudo pacman -Syyu \
 	inetutils \
 	less \
@@ -26263,7 +26217,7 @@ sudo dbus-daemon --system
 <pre><code>[boot]
 systemd=true
 </code></pre>
-<h2 id="reference-164"><a class="header" href="#reference-164">reference</a></h2>
+<h2 id="reference-165"><a class="header" href="#reference-165">reference</a></h2>
 <ul>
 <li><a href="https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL">Install Arch Linux on WSL - ArchWiki</a></li>
 </ul>
@@ -26349,7 +26303,7 @@ makepkg -si
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="xdg-base-directory"><a class="header" href="#xdg-base-directory">XDG Base Directory</a></h1>
-<h2 id="reference-165"><a class="header" href="#reference-165">reference</a></h2>
+<h2 id="reference-166"><a class="header" href="#reference-166">reference</a></h2>
 <ul>
 <li>#document <a href="https://wiki.archlinux.org/title/XDG_Base_Directory">XDG Base Directory - ArchWiki</a>
 <ul>
@@ -26382,7 +26336,7 @@ sac
 xev
 # Get your keyboard key's keycode
 </code></pre>
-<h2 id="reference-166"><a class="header" href="#reference-166">reference</a></h2>
+<h2 id="reference-167"><a class="header" href="#reference-167">reference</a></h2>
 <ul>
 <li><a href="https://unix.stackexchange.com/questions/47359/what-is-xsession-for">What is “.xsession” for?</a></li>
 </ul>
@@ -26448,6 +26402,8 @@ C:\Users\User\.pyenv\pyenv-win\bin;
 C:\Users\User\.pyenv\pyenv-win\shims;
 C:\Users\User\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;
 C:\Users\User\Usr\Git\Shell\_windows\AutoHotkey;
+C:\Users\User\Usr\Git\Shell\_windows\Keypirinha;
+C:\Users\User\Usr\Git\Shell\_windows\Other;
 C:\Users\User\Usr\Git\Shell\_windows\Patch;
 C:\Users\User\Usr\Git\Shell\_windows\Startup;
 C:\Users\User\Usr\Git\Shell\_windows;
@@ -26455,7 +26411,6 @@ C:\Users\User\Usr\Git\Shell\optWeb;
 C:\Users\User\Usr\Lib\rbenv\rbenv\bin;
 C:\Users\User\Usr\Lib\rbenv\shims;
 C:\Users\User\Usr\Opt\cmder_mini;
-C:\Users\User\Usr\Source\cmder\owl-cmder-tools\bin;
 C:\Users\User\Usr\Srv\Kiwix-Server;
 C:\Program Files (x86)\Aspell-0.60\bin;
 C:\Program Files\BraveSoftware\Brave-Browser\Application;
@@ -26465,7 +26420,6 @@ C:\Program Files\LinkShellExtension\32;
 C:\Program Files\Sublime Text;
 # C:\Users\User\Scoop\apps\yarn\current\bin;
 # C:\Users\User\Scoop\apps\yarn\current\global\node_modules\.bin;
-# C:\Users\User\Scoop\apps\sioyek\current;
 </code></pre>
 <h2 id="command-23"><a class="header" href="#command-23">command</a></h2>
 <pre><code class="language-sh"># Get Windows environments
@@ -26501,7 +26455,7 @@ PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # PATH
 Path=C:\Windows;C:\Windows\system32;C:\Windows\System32\OpenSSH;C:\Windows\system32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0
 </code></pre>
-<h2 id="personal-do-27"><a class="header" href="#personal-do-27">Personal do</a></h2>
+<h2 id="personal-do-26"><a class="header" href="#personal-do-26">Personal do</a></h2>
 <pre><code class="language-sh">scoop install ^
 	bun ^
 	cmake ^
@@ -26716,7 +26670,7 @@ mklink "%SendTo%\yoga.bat" "%DirSendTo%\yoga.bat"
 </ul>
 </li>
 </ul>
-<h2 id="reference-167"><a class="header" href="#reference-167">reference</a></h2>
+<h2 id="reference-168"><a class="header" href="#reference-168">reference</a></h2>
 <ul>
 <li>#blog <a href="https://creolened.com/windows-gui-good-bad-and-pretty-ugly-ranked/">Windows GUI: Good, Bad and Pretty Ugly (Ranked)</a></li>
 <li>#guide <a href="https://github.com/pixop/video-compare?tab=readme-ov-file#practical-tips">video-compare - Practical tips</a></li>
@@ -26726,7 +26680,7 @@ mklink "%SendTo%\yoga.bat" "%DirSendTo%\yoga.bat"
 <ul>
 <li><a href="/os/windows10/revios.html">revios.md</a></li>
 </ul>
-<h3 id="cache-109"><a class="header" href="#cache-109">cache</a></h3>
+<h3 id="cache-108"><a class="header" href="#cache-108">cache</a></h3>
 <ul>
 <li><a href="/os/windows10/wsl.html">wsl.md</a></li>
 </ul>
@@ -26742,7 +26696,7 @@ mklink "%SendTo%\yoga.bat" "%DirSendTo%\yoga.bat"
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="revios"><a class="header" href="#revios"><a href="https://www.revi.cc">ReviOS</a></a></h1>
-<h2 id="reference-168"><a class="header" href="#reference-168">reference</a></h2>
+<h2 id="reference-169"><a class="header" href="#reference-169">reference</a></h2>
 <ol>
 <li><a href="https://learn.microsoft.com/zh-cn/windows/release-health/release-information">Windows 10 版本信息</a></li>
 <li><a href="https://www.revi.cc/docs/faq/before/features">List of system changes</a></li>
@@ -26844,7 +26798,7 @@ guiApplications=false
 <li><a href="/srv/silverdict.html">silverdict.md</a></li>
 <li><a href="/srv/suwayomi-server.html">suwayomi-server.md</a></li>
 </ul>
-<h3 id="cache-110"><a class="header" href="#cache-110">cache</a></h3>
+<h3 id="cache-109"><a class="header" href="#cache-109">cache</a></h3>
 <ul>
 <li><a href="/srv/activity-watch.html">activity-watch.md</a></li>
 <li><a href="/srv/anki-sync-server.html">anki-sync-server.md</a></li>
@@ -27079,7 +27033,7 @@ guiApplications=false
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="activitywatch"><a class="header" href="#activitywatch"><a href="https://github.com/ActivityWatch/activitywatch">ActivityWatch</a></a></h1>
 <h2 id="resource-107"><a class="header" href="#resource-107">resource</a></h2>
-<h3 id="cache-111"><a class="header" href="#cache-111">cache</a></h3>
+<h3 id="cache-110"><a class="header" href="#cache-110">cache</a></h3>
 <ul>
 <li><a href="https://github.com/ActivityWatch/aw-watcher-web">ActivityWatch Web Watcher</a></li>
 <li><a href="https://github.com/ActivityWatch/aw-watcher-input">aw-watcher-input</a></li>
@@ -27140,7 +27094,7 @@ vim docker-compose.yml
 </code></pre>
 <pre><code class="language-sh">sudo docker compose up -d
 </code></pre>
-<h2 id="reference-169"><a class="header" href="#reference-169">reference</a></h2>
+<h2 id="reference-170"><a class="header" href="#reference-170">reference</a></h2>
 <ul>
 <li><a href="https://www.audiobookshelf.org/docs/#book-directory-structure">Directory Structure</a></li>
 </ul>
@@ -27217,7 +27171,7 @@ cargo build --release
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="calcom"><a class="header" href="#calcom"><a href="https://cal.com">Cal.com</a></a></h1>
-<h2 id="reference-170"><a class="header" href="#reference-170">reference</a></h2>
+<h2 id="reference-171"><a class="header" href="#reference-171">reference</a></h2>
 <ul>
 <li><a href="https://cal.com/docs/self-hosting/docker">Getting Started - Docker</a></li>
 </ul>
@@ -27269,7 +27223,7 @@ WantedBy=multi-user.target
 <li>Calibre → Add books → There’s <code>Calibre Library\</code> here now.</li>
 <li>Calibre-Web → Admin → Edit Cabibre Database Configuration → Select folder contains the <code>metadata.db</code>.</li>
 </ol>
-<h2 id="reference-171"><a class="header" href="#reference-171">reference</a></h2>
+<h2 id="reference-172"><a class="header" href="#reference-172">reference</a></h2>
 <ul>
 <li><a href="https://docs.linuxserver.io/images/docker-calibre-web">linuxserver/calibre-web</a></li>
 </ul>
@@ -27291,7 +27245,7 @@ sudo ufw allow 80
 <p><img src="/_image/srv/casaos.png" alt="casaos"></p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="code-server"><a class="header" href="#code-server"><a href="https://github.com/coder/code-server/">code-server</a></a></h1>
-<h2 id="reference-172"><a class="header" href="#reference-172">reference</a></h2>
+<h2 id="reference-173"><a class="header" href="#reference-173">reference</a></h2>
 <ul>
 <li><a href="https://coder.com/docs/code-server/npm">Install - npm</a></li>
 <li><a href="https://coder.com/docs/code-server/termux">Usage - Termux</a></li>
@@ -27341,7 +27295,7 @@ WantedBy=multi-user.target
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="dashy"><a class="header" href="#dashy"><a href="https://github.com/Lissy93/dashy">Dashy</a></a></h1>
-<h2 id="reference-173"><a class="header" href="#reference-173">reference</a></h2>
+<h2 id="reference-174"><a class="header" href="#reference-174">reference</a></h2>
 <ul>
 <li><a href="https://dashy.to/docs/quick-start">Dashy - Quick Start</a></li>
 <li><a href="https://dashy.to/docs/showcase/#system-monitor">Dashy Showcase - System Monitor</a></li>
@@ -27414,7 +27368,7 @@ jobs:
             --project database
 </code></pre>
 <p>Vercel → Project <code>database</code> → Settings → Build and Deployment → Node.js Version → 18.x.</p>
-<h2 id="reference-174"><a class="header" href="#reference-174">reference</a></h2>
+<h2 id="reference-175"><a class="header" href="#reference-175">reference</a></h2>
 <ul>
 <li><a href="https://docs.datasette.io/en/stable/full_text_search.html#configuring-fts-using-sqlite-utils">Configuring FTS using sqlite-utils</a></li>
 </ul>
@@ -27437,7 +27391,7 @@ jobs:
 <li><a href="https://github.com/simonw/datasette-render-images">datasette-render-images</a></li>
 <li><a href="https://github.com/simonw/datasette-render-markdown">datasette-render-markdown</a></li>
 </ul>
-<h3 id="cache-112"><a class="header" href="#cache-112">cache</a></h3>
+<h3 id="cache-111"><a class="header" href="#cache-111">cache</a></h3>
 <ul>
 <li><a href="https://github.com/simonw/csvs-to-sqlite">csvs-to-sqlite</a></li>
 <li><a href="https://github.com/LNshuti/data-tourism">data-tourism</a></li>
@@ -27521,7 +27475,7 @@ WantedBy=multi-user.target
 <h2 id="usage-337"><a class="header" href="#usage-337">usage</a></h2>
 <pre><code class="language-sh">sudo systemctl enable --now deeplx.service
 </code></pre>
-<h2 id="reference-175"><a class="header" href="#reference-175">reference</a></h2>
+<h2 id="reference-176"><a class="header" href="#reference-176">reference</a></h2>
 <ul>
 <li><a href="https://github.com/OwO-Network/DeepLX/issues/111">请求添加对树莓派ARM的二进制程序</a></li>
 </ul>
@@ -27612,12 +27566,12 @@ database gcide {
 <pre><code class="language-sh">dict --host localhost --port 2528 -I -v
 dict -h localhost -p 2528 -d &lt;database&gt; &lt;word&gt;
 </code></pre>
-<h2 id="reference-176"><a class="header" href="#reference-176">reference</a></h2>
+<h2 id="reference-177"><a class="header" href="#reference-177">reference</a></h2>
 <ul>
 <li><a href="https://dict.org/bin/Dict?Form=Dict1&amp;Query=00-database-info&amp;Strategy=*&amp;Database=*">Database copyright information</a></li>
 </ul>
 <h2 id="cross-reference-81"><a class="header" href="#cross-reference-81">cross-reference</a></h2>
-<h3 id="cache-113"><a class="header" href="#cache-113">cache</a></h3>
+<h3 id="cache-112"><a class="header" href="#cache-112">cache</a></h3>
 <ul>
 <li><a href="/bin/dict-ecdict.html">dict-ecdict.md</a></li>
 </ul>
@@ -27749,7 +27703,7 @@ sudo docker network prune -f
 # Prune the entire Docker system, including images, containers, volumes, and networks
 sudo docker system prune -a --volumes -f
 </code></pre>
-<h2 id="reference-177"><a class="header" href="#reference-177">reference</a></h2>
+<h2 id="reference-178"><a class="header" href="#reference-178">reference</a></h2>
 <ul>
 <li>#lession <a href="https://docker-curriculum.com/">Docker for beginners</a></li>
 </ul>
@@ -27794,7 +27748,7 @@ sudo docker compose up -d
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="font-files"><a class="header" href="#font-files"><a href="https://github.com/fontsource/font-files">font-files</a></a></h1>
-<h2 id="reference-178"><a class="header" href="#reference-178">reference</a></h2>
+<h2 id="reference-179"><a class="header" href="#reference-179">reference</a></h2>
 <ul>
 <li><a href="https://github.com/fontsource/font-files/blob/main/CONTRIBUTING.md">Contributing to Fontsource</a></li>
 <li><a href="https://markoskon.com/creating-font-subsets/">Creating font subsets</a></li>
@@ -27862,7 +27816,7 @@ sudo chmod 640 /etc/gitea/app.ini
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="github-actions-runner"><a class="header" href="#github-actions-runner"><a href="https://github.com/actions/runner">GitHub Actions Runner</a></a></h1>
-<h2 id="reference-179"><a class="header" href="#reference-179">reference</a></h2>
+<h2 id="reference-180"><a class="header" href="#reference-180">reference</a></h2>
 <ul>
 <li>#blog <a href="https://nesbitt.io/2025/12/06/github-actions-package-manager.html">GitHub Actions Has a Package Manager, and It Might Be the Worst</a></li>
 </ul>
@@ -27879,7 +27833,7 @@ sudo chmod 640 /etc/gitea/app.ini
 <li><a href="https://github.com/kujov/gitlab-sync">GitLab Sync - GitHub Action</a></li>
 <li><a href="https://github.com/AnimMouse/torrent-webseed-creator">Torrent Webseed Creator</a></li>
 </ul>
-<h3 id="cache-114"><a class="header" href="#cache-114">cache</a></h3>
+<h3 id="cache-113"><a class="header" href="#cache-113">cache</a></h3>
 <ul>
 <li>#hugo <a href="https://github.com/peaceiris/actions-hugo">actions-hugo</a></li>
 <li>#logseq <a href="https://github.com/marketplace/actions/logseq-publish-spa">Logseq Publish SPA</a></li>
@@ -27987,7 +27941,7 @@ mono --debug JackettConsole.exe
 </ul>
 </li>
 </ul>
-<h2 id="reference-180"><a class="header" href="#reference-180">reference</a></h2>
+<h2 id="reference-181"><a class="header" href="#reference-181">reference</a></h2>
 <ul>
 <li><a href="https://github.com/Jackett/Jackett/wiki/Troubleshooting#security-risk-your-instance-has-external-access-enabled-without-using-an-admin-password">Security Risk: Your instance has external access enabled without using an admin password.</a></li>
 </ul>
@@ -28019,13 +27973,13 @@ sudo dpkg -i jellyfin-ffmpeg6_6.0.1-8-jammy_arm64.deb
 sudo systemctl enable --now jellyfin
 systemctl status jellyfin
 </code></pre>
-<h2 id="reference-181"><a class="header" href="#reference-181">reference</a></h2>
+<h2 id="reference-182"><a class="header" href="#reference-182">reference</a></h2>
 <ul>
 <li><a href="https://jellyfin.org/docs/general/server/media/movies/">Media - Movies</a></li>
 <li><a href="https://jellyfin.org/docs/general/server/plugins/">Plugins</a></li>
 </ul>
 <h2 id="resource-112"><a class="header" href="#resource-112">resource</a></h2>
-<h3 id="cache-115"><a class="header" href="#cache-115">cache</a></h3>
+<h3 id="cache-114"><a class="header" href="#cache-114">cache</a></h3>
 <ul>
 <li><a href="https://github.com/jellyfin/jellyfin-mpv-shim">Jellyfin MPV Shim</a></li>
 <li><a href="https://github.com/jellyfin/jellyfin-plugin-opensubtitles">Jellyfin OpenSubtitles Plugin</a></li>
@@ -28038,7 +27992,7 @@ systemctl status jellyfin
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="jupyter-1"><a class="header" href="#jupyter-1"><a href="https://jupyter.org/">Jupyter</a></a></h1>
-<h2 id="reference-182"><a class="header" href="#reference-182">reference</a></h2>
+<h2 id="reference-183"><a class="header" href="#reference-183">reference</a></h2>
 <ul>
 <li><a href="https://github.com/jupyterhub/jupyterhub-deploy-docker">jupyterhub-deploy-docker</a></li>
 <li><a href="https://github.com/defeo/jupyterhub-docker">JupyterHub deployment in use at Université de Versailles</a></li>
@@ -28193,7 +28147,7 @@ sudo systemctl enable --now komga.service
 <h3 id="windows-10-12"><a class="header" href="#windows-10-12">Windows 10</a></h3>
 <pre><code class="language-sh">java -jar "komga.jar" --komga.config-dir="config"
 </code></pre>
-<h2 id="reference-183"><a class="header" href="#reference-183">reference</a></h2>
+<h2 id="reference-184"><a class="header" href="#reference-184">reference</a></h2>
 <ul>
 <li><a href="https://komga.org/docs/installation/configuration">Configuration options - Komga</a></li>
 </ul>
@@ -28407,7 +28361,7 @@ sudo docker compose up -d
 <li>Create admin user, then login.</li>
 <li>Admin settings → Languages → <code>&lt;your_lang&gt;</code> → Install.</li>
 </ol>
-<h2 id="reference-184"><a class="header" href="#reference-184">reference</a></h2>
+<h2 id="reference-185"><a class="header" href="#reference-185">reference</a></h2>
 <ul>
 <li><a href="https://github.com/simjanos-dev/LinguaCafe/wiki/2.-Setup#importing-dictionaries">Importing dictionaries</a></li>
 </ul>
@@ -28504,7 +28458,7 @@ Set WshShell = Nothing
 <li>#linkding <a href="https://github.com/sissbruecker/linkding-extension">linkding extension</a></li>
 <li>#linkding <a href="https://github.com/fivefold/linkding-injector">linkding injector</a></li>
 </ul>
-<h3 id="cache-116"><a class="header" href="#cache-116">cache</a></h3>
+<h3 id="cache-115"><a class="header" href="#cache-115">cache</a></h3>
 <ul>
 <li>#linkding <a href="https://github.com/sebw/linkding-archiver">Linkding Archiver</a></li>
 </ul>
@@ -28594,7 +28548,7 @@ http://&lt;your_host&gt;:5000/?source=en&amp;target=zh-Hans&amp;q=[LUTE]
 </ul>
 </li>
 </ul>
-<h2 id="reference-185"><a class="header" href="#reference-185">reference</a></h2>
+<h2 id="reference-186"><a class="header" href="#reference-186">reference</a></h2>
 <ul>
 <li>#document <a href="https://luteorg.github.io/lute-manual/install/install.html">Lute manual</a></li>
 </ul>
@@ -28732,7 +28686,7 @@ Set WshShell = Nothing
 <li>Create shortcut of <code>start_miniflux.vbs</code>.</li>
 <li>Put the shortcut into <code>C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\</code>.</li>
 </ol>
-<h2 id="reference-186"><a class="header" href="#reference-186">reference</a></h2>
+<h2 id="reference-187"><a class="header" href="#reference-187">reference</a></h2>
 <ul>
 <li><a href="https://miniflux.app/docs/rules.html#feed-filtering-rules">Feed Filtering Rules</a></li>
 </ul>
@@ -28811,7 +28765,7 @@ sudo docker compose up -d
 <li><a href="https://github.com/pdforge/n8n-nodes-pdforge">n8n-nodes-pdforge</a></li>
 <li><a href="https://github.com/0xtlt/n8n-nodes-qrcode">n8n-nodes-qrcode</a></li>
 </ul>
-<h3 id="cache-117"><a class="header" href="#cache-117">cache</a></h3>
+<h3 id="cache-116"><a class="header" href="#cache-116">cache</a></h3>
 <ul>
 <li><a href="https://n8n.io/workflows/697-archive-spotifys-discover-weekly-playlist/">Archive Spotify’s discover weekly playlist</a></li>
 <li><a href="https://n8n.io/workflows/2042-bulk-automated-google-drive-files-sharing-and-direct-download-link-generation/">Bulk Automated Google Drive Files Sharing and Direct Download Link Generation</a></li>
@@ -28900,7 +28854,7 @@ sudo systemctl enable --now ntfy
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="overleaf"><a class="header" href="#overleaf"><a href="https://github.com/overleaf/overleaf">Overleaf</a></a></h1>
-<h2 id="reference-187"><a class="header" href="#reference-187">reference</a></h2>
+<h2 id="reference-188"><a class="header" href="#reference-188">reference</a></h2>
 <ul>
 <li><a href="https://github.com/overleaf/toolkit/blob/master/doc/quick-start-guide.md">Quick-Start Guide</a></li>
 </ul>
@@ -28927,7 +28881,7 @@ PAPERLESS_SECRET_KEY=&lt;secret_key&gt;
 sudo docker compose run --rm webserver createsuperuser
 sudo docker compose up -d
 </code></pre>
-<h2 id="reference-188"><a class="header" href="#reference-188">reference</a></h2>
+<h2 id="reference-189"><a class="header" href="#reference-189">reference</a></h2>
 <ul>
 <li><a href="https://github.com/paperless-ngx/paperless-ngx/wiki/Scanner-&amp;-Software-Recommendations">Scanner &amp; Software Recommendations</a></li>
 </ul>
@@ -28963,12 +28917,12 @@ sudo apt install plexmediaserver
 sudo systemctl status plexmediaserver
 </code></pre>
 <p>Visit <code>http://&lt;your_host&gt;:32400/web</code>.</p>
-<h2 id="reference-189"><a class="header" href="#reference-189">reference</a></h2>
+<h2 id="reference-190"><a class="header" href="#reference-190">reference</a></h2>
 <ul>
 <li>#guide <a href="https://github.com/seanap/Plex-Audiobook-Guide">Plex &amp; Booksonic Audiobook Guide</a></li>
 </ul>
 <h2 id="resource-116"><a class="header" href="#resource-116">resource</a></h2>
-<h3 id="cache-118"><a class="header" href="#cache-118">cache</a></h3>
+<h3 id="cache-117"><a class="header" href="#cache-117">cache</a></h3>
 <ul>
 <li><a href="https://github.com/iwalton3/plex-mpv-shim">MPV Shim for Plex</a></li>
 </ul>
@@ -29084,7 +29038,7 @@ force user = qbittorrent
 </code></pre>
 <pre><code class="language-sh">sudo systemctl restart smbd
 </code></pre>
-<h2 id="reference-190"><a class="header" href="#reference-190">reference</a></h2>
+<h2 id="reference-191"><a class="header" href="#reference-191">reference</a></h2>
 <ul>
 <li><a href="https://www.gsvd.dev/blog/create-a-seedbox-on-raspberry-pi-using-the-latest-version-of-qbittorrent">Create a seedbox on Raspberry Pi using the latest version of qbittorrent</a></li>
 </ul>
@@ -29330,7 +29284,7 @@ Group language(s): zh
 </ul>
 </li>
 </ul>
-<h2 id="reference-191"><a class="header" href="#reference-191">reference</a></h2>
+<h2 id="reference-192"><a class="header" href="#reference-192">reference</a></h2>
 <ul>
 <li>#document <a href="https://github.com/Crissium/SilverDict/wiki">Crissium/SilverDict Wiki</a>
 <ul>
@@ -29378,7 +29332,7 @@ vim docker-compose.yml
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="storyteller"><a class="header" href="#storyteller"><a href="https://gitlab.com/smoores/storyteller">Storyteller</a></a></h1>
-<h2 id="reference-192"><a class="header" href="#reference-192">reference</a></h2>
+<h2 id="reference-193"><a class="header" href="#reference-193">reference</a></h2>
 <ul>
 <li><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">Installing the NVIDIA Container Toolkit — NVIDIA Container Toolkit</a></li>
 </ul>
@@ -29486,12 +29440,12 @@ sudo pacman -S syncthing
 # Windows 10
 scoop install syncthing
 </code></pre>
-<h2 id="reference-193"><a class="header" href="#reference-193">reference</a></h2>
+<h2 id="reference-194"><a class="header" href="#reference-194">reference</a></h2>
 <ul>
 <li>#document <a href="https://docs.syncthing.net/users/syncthing.html">Syncthing — Syncthing documentation</a></li>
 </ul>
 <h2 id="resource-117"><a class="header" href="#resource-117">resource</a></h2>
-<h3 id="cache-119"><a class="header" href="#cache-119">cache</a></h3>
+<h3 id="cache-118"><a class="header" href="#cache-118">cache</a></h3>
 <ul>
 <li>#docker <a href="https://github.com/linuxserver/docker-syncthing">Syncthing</a></li>
 </ul>
@@ -29513,8 +29467,8 @@ sudo pacman -S tailscale
 sudo systemctl enable --now tailscaled
 sudo tailscale login
 </code></pre>
-<h2 id="reference-194"><a class="header" href="#reference-194">reference</a></h2>
-<h3 id="cache-120"><a class="header" href="#cache-120">cache</a></h3>
+<h2 id="reference-195"><a class="header" href="#reference-195">reference</a></h2>
+<h3 id="cache-119"><a class="header" href="#cache-119">cache</a></h3>
 <ul>
 <li><a href="https://tailscale.com/kb/1019/subnets">Subnet routers</a></li>
 </ul>
@@ -29775,7 +29729,7 @@ sudo apt install -y \
 <pre><code class="language-sh">sudo apt install -y nginx uwsgi uwsgi-plugin-python3 redis-server postgresql postgresql-contrib exim4 gettext
 sudo apt-get install git-svn
 </code></pre>
-<h2 id="reference-195"><a class="header" href="#reference-195">reference</a></h2>
+<h2 id="reference-196"><a class="header" href="#reference-196">reference</a></h2>
 <ul>
 <li>#document <a href="https://docs.weblate.org/en/latest">Weblate</a></li>
 </ul>
@@ -29876,7 +29830,7 @@ set "PM2_SERVICE_DIRECTORY=C:\ProgramData\pm2\service"
   ProxyPassReverse / http://localhost:3000/
 &lt;/VirtualHost&gt;
 </code></pre>
-<h2 id="reference-196"><a class="header" href="#reference-196">reference</a></h2>
+<h2 id="reference-197"><a class="header" href="#reference-197">reference</a></h2>
 <ul>
 <li>#option <a href="https://pm2.io/docs/runtime/reference/pm2-cli/">PM2</a></li>
 <li><a href="https://github.com/nuxt/nuxt/issues/10305">Vue packages version mismatch</a></li>
