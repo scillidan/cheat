@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-3b4356f1.js";
+            window.path_to_searchindex_js = "../../searchindex-3eab1d0b.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-686ca978.js"></script>
+        <script src="../../toc-618343f7.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -184,9 +184,14 @@
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <h3 id="publish-npm-package"><a class="header" href="#publish-npm-package">Publish npm package</a></h3>
 <pre><code class="language-sh">npm login
+</code></pre>
+<pre><code># Publish
 npm init
 npm publish
 # npm version patch
+</code></pre>
+<pre><code class="language-sh"># Deprecate
+npm deprecate &lt;pkg&gt; "Deprecate `&lt;pkg&gt;`"
 </code></pre>
 <h3 id="other"><a class="header" href="#other">Other</a></h3>
 <pre><code class="language-sh">npm config set proxy http://127.0.0.1:&lt;port&gt;
