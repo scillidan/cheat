@@ -1,5 +1,9 @@
 # [GitHub Actions Runner](https://github.com/actions/runner)
 
+## reference
+
+- #blog [GitHub Actions Has a Package Manager, and It Might Be the Worst](https://nesbitt.io/2025/12/06/github-actions-package-manager.html)
+
 ## asset
 
 ### mark

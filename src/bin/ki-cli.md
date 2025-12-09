@@ -7,8 +7,8 @@
 pnpm add -g ki-cli
 ```
 
-## resource
+## command
 
-### cache
-
-- [ki-cli-hyphen](https://github.com/scillidan/ki-cli-hyphen)
+```sh
+ki a b c foo.hoge bar.fuga baz.piyo long.long.long.depth | sed "s/├/-/g; s/│/ /g; s/└/-/g; s/──/--/g" | sed "s/-─/-/g"
+```

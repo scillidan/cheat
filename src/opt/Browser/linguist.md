@@ -13,4 +13,15 @@
 		- Enable popup with original text (On)
 	- Export config
 
+## reference
+
+- #document [Linguist Translate](https://linguister.io/docs/)
+
+## resource
+
+### cache
+
+- [linguist-NLLB-translator](https://github.com/MoonDragon-MD/linguist-NLLB-translator)
+- [linguist-WindowsTTS](https://github.com/MoonDragon-MD/linguist-WindowsTTS/blob/main/WindowsTTS.js)
+
 [^1]: [Offline translation - translate-tools/linguist](https://github.com/translate-tools/linguist/blob/master/docs/manuals/OfflineTranslation.md)

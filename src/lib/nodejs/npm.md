@@ -6,9 +6,18 @@
 
 ```sh
 npm login
+```
+
+```
+# Publish
 npm init
 npm publish
 # npm version patch
+```
+
+```sh
+# Deprecate
+npm deprecate <pkg> "Deprecate `<pkg>`"
 ```
 
 ### Other
