@@ -35,7 +35,7 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-38cac688.js";
+            window.path_to_searchindex_js = "../../../searchindex-c58d4899.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc-0d9125e8.js"></script>
@@ -212,9 +212,9 @@ rmdir /S /Q "%CMDER_HOME%\vendor\clink-completions"
 rmdir /S /Q "%CMDER_HOME%\vendor\conemu-maximus5"
 mklink "%CMDER_HOME%\vendor\fzf.lua" "%DOTFILES_DIR%\.config\_windows_cmder\vendor\fzf.lua"
 mklink "%CMDER_HOME%\vendor\setpath.bat" "%DOTFILES_DIR%\.config\_windows_cmder\vendor\setpath.bat"
-mklink /J "%CMDER_HOME%\vendor\clink" "%SCOOP_HOME%\apps\clink\current"
-mklink /J "%CMDER_HOME%\vendor\clink-completions" "%SCOOP_HOME%\apps\clink-completions\current"
-mklink /J "%CMDER_HOME%\vendor\conemu-maximus5" "%SCOOP_HOME%\apps\conemu\current"
+mklink /J "%CMDER_HOME%\vendor\clink" "%SCOOP%\apps\clink\current"
+mklink /J "%CMDER_HOME%\vendor\clink-completions" "%SCOOP%\apps\clink-completions\current"
+mklink /J "%CMDER_HOME%\vendor\conemu-maximus5" "%SCOOP%\apps\conemu\current"
 
 del "%CMDER_HOME%\vendor\fuzzy_history.lua"
 mklink "%CMDER_HOME%\vendor\fuzzy_history.lua" "%CMDER_SRC%\clink-gizmos\fuzzy_history.lua"

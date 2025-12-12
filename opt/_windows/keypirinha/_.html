@@ -35,7 +35,7 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-38cac688.js";
+            window.path_to_searchindex_js = "../../../searchindex-c58d4899.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../../toc-0d9125e8.js"></script>
@@ -185,14 +185,14 @@
 <pre><code class="language-sh">scoop install keypirinha
 </code></pre>
 <h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh">rmdir /S /Q "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\User"
-mklink /J "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\User" "%DOTFILES_DIR%\.config\_windows_keypirinha\Profile\User"
+<pre><code class="language-sh">rmdir /S /Q "%SCOOP%\apps\keypirinha\current\portable\Profile\User"
+mklink /J "%SCOOP%\apps\keypirinha\current\portable\Profile\User" "%DOTFILES_DIR%\.config\_windows_keypirinha\Profile\User"
 mkdir "%USERPROFILE%/Usr/File"
 </code></pre>
 <pre><code class="language-sh">cd "%USERPROFILE%\Usr\File"
 git clone --depth=1 https://github.com/scillidan/file_keypirinha_pkg
-rmdir /S /Q "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\InstalledPackages"
-mklink /J "%SCOOP_HOME%\apps\keypirinha\current\portable\Profile\InstalledPackages" "%USERPROFILE%\Usr\File\file_keypirinha_pkg"
+rmdir /S /Q "%SCOOP%\apps\keypirinha\current\portable\Profile\InstalledPackages"
+mklink /J "%SCOOP%\apps\keypirinha\current\portable\Profile\InstalledPackages" "%USERPROFILE%\Usr\File\file_keypirinha_pkg"
 </code></pre>
 <pre><code class="language-sh">cd "%USERPROFILE%\Usr\RepoFork"
 git clone --depth=1 https://github.com/scillidan/Keypirinha-PuzzTools

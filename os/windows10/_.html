@@ -35,7 +35,7 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-38cac688.js";
+            window.path_to_searchindex_js = "../../searchindex-c58d4899.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc-0d9125e8.js"></script>
@@ -221,7 +221,8 @@ TESSDATA_PREFIX=C:\Users\User\Scoop\apps\tesseract-languages\current
 # Other
 DOTFILES_DIR=C:\Users\User\Usr\Git\dotfiles
 PEGASUS_HOME=C:\Users\User\Scoop\apps\pegasus\current
-SCOOP_HOME=C:\Users\User\Scoop
+SCOOP=C:\Users\User\Scoop
+SCOOP_GLOBAL=C:\Users\User\Scoop
 </code></pre>
 <p>Ignore <code>scoop install</code> add, add into Path:</p>
 <pre><code>C:\Users\User\AppData\Local\Yarn\bin;
@@ -324,16 +325,13 @@ Path=C:\Windows;C:\Windows\system32;C:\Windows\System32\OpenSSH;C:\Windows\syste
 </code></pre>
 <h2 id="install-by-installer"><a class="header" href="#install-by-installer">Install by installer</a></h2>
 <ul>
-<li>Anki</li>
 <li>Brave</li>
 <li>clawPDF</li>
-<li>cmder_mini</li>
 <li>Copy Dialog Lunar Lander</li>
 <li>DarkThumbs</li>
 <li>DeviceCleanup</li>
 <li>Directory Opus</li>
 <li>DiskGenius</li>
-<li>Image To PDF Converter</li>
 <li>Qt Movie Thumbnailer</li>
 <li>QuickSFV</li>
 <li>STL-Thumb</li>
@@ -341,6 +339,10 @@ Path=C:\Windows;C:\Windows\system32;C:\Windows\System32\OpenSSH;C:\Windows\syste
 <li>SVG Shell Extensions and SVG Text Editor</li>
 <li>Video Duplicate Finder</li>
 <li>Virtual Display Driver</li>
+</ul>
+<h2 id="install-by-portable-archive"><a class="header" href="#install-by-portable-archive">Install by portable archive</a></h2>
+<ul>
+<li>cmder_mini</li>
 </ul>
 <h2 id="personal-do-1"><a class="header" href="#personal-do-1">Personal do</a></h2>
 <h3 id="dotfiles"><a class="header" href="#dotfiles">dotfiles</a></h3>
@@ -373,9 +375,9 @@ del "%SendTo%\pdf2jpg.bat"
 del "%SendTo%\pngquant.bat"
 del "%SendTo%\ttf2woff.bat"
 del "%SendTo%\yoga.bat"
-mklink "%SendTo%\7zFM.exe" "%SCOOP_HOME%\apps\7zip\current\7zFM.exe"
-mklink "%SendTo%\WinMergeU.exe" "%SCOOP_HOME%\apps\winmerge\current\WinMergeU.exe"
-mklink "%SendTo%\video-compare.exe" "%SCOOP_HOME%\apps\video-compare\current\video-compare.exe"
+mklink "%SendTo%\7zFM.exe" "%SCOOP%\apps\7zip\current\7zFM.exe"
+mklink "%SendTo%\WinMergeU.exe" "%SCOOP%\apps\winmerge\current\WinMergeU.exe"
+mklink "%SendTo%\video-compare.exe" "%SCOOP%\apps\video-compare\current\video-compare.exe"
 mklink "%SendTo%\img2jpg.bat" "%DirSendTo%\img2jpg.bat"
 mklink "%SendTo%\oxipng.bat" "%DirSendTo%\oxipng.bat"
 mklink "%SendTo%\pdf2jpg.bat" "%DirSendTo%\pdf2jpg.bat"
