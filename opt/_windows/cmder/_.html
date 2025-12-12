@@ -35,10 +35,10 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-2e52e561.js";
+            window.path_to_searchindex_js = "../../../searchindex-38cac688.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../../toc-618343f7.js"></script>
+        <script src="../../../toc-0d9125e8.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -189,9 +189,7 @@
 cd "%USERPROFILE%/Usr/Source/cmder"
 git clone --depth=1 https://github.com/chrisant996/clink-fzf
 git clone --depth=1 https://github.com/chrisant996/clink-gizmos
-git clone --depth=1 https://github.com/davidmarek/clink-git-extensions
 git clone --depth=1 https://github.com/shunsambongi/clink-zoxide
-# git clone --depth=1 https://github.com/mwmi/clink-carapace
 </code></pre>
 <pre><code class="language-sh">set "CMDER_HOME=%USERPROFILE%\Usr\Opt\cmder_mini"
 set "CMDER_SRC=%USERPROFILE%\Usr\Source\cmder"
@@ -221,18 +219,8 @@ mklink /J "%CMDER_HOME%\vendor\conemu-maximus5" "%SCOOP_HOME%\apps\conemu\curren
 del "%CMDER_HOME%\vendor\fuzzy_history.lua"
 mklink "%CMDER_HOME%\vendor\fuzzy_history.lua" "%CMDER_SRC%\clink-gizmos\fuzzy_history.lua"
 
-del "%CMDER_HOME%\vendor\git_aliases_autocomplete.lua"
-del "%CMDER_HOME%\vendor\git_branch_autocomplete.lua"
-mklink "%CMDER_HOME%\vendor\git_aliases_autocomplete.lua" "%CMDER_SRC%\clink-git-extensions\git_aliases_autocomplete.lua"
-mklink "%CMDER_HOME%\vendor\git_branch_autocomplete.lua" "%CMDER_SRC%\clink-git-extensions\git_branch_autocomplete.lua"
-
 del "%CMDER_HOME%\vendor\zoxide.lua"
 mklink "%CMDER_HOME%\vendor\zoxide.lua" "%CMDER_SRC%\clink-zoxide\zoxide.lua"
-
-# del "%CMDER_HOME%\vendor\carapace.lua"
-# del "%CMDER_HOME%\vendor\matchicons.lua"
-# mklink "%CMDER_HOME%\vendor\carapace.lua" "%CMDER_SRC%\clink-carapace\carapace.lua"
-# mklink "%CMDER_HOME%\vendor\matchicons.lua" "%CMDER_SRC%\clink-gizmos\matchicons.lua"
 </code></pre>
 <h2 id="config"><a class="header" href="#config">config</a></h2>
 <p>Cmder → Settings → Import → <code>user-ConEmu.xml</code>.</p>
