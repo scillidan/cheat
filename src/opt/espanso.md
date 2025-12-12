@@ -13,10 +13,10 @@ scoop install espanso
 
 ```sh
 # Windows 10
-rmdir /S /Q "%SCOOP_HOME%\apps\espanso\current\.espanso\config"
-mklink /J "%SCOOP_HOME%\apps\espanso\current\.espanso\config" "%DOTFILES_DIR%\.config\espanso\config"
-rmdir /S /Q "%SCOOP_HOME%\apps\espanso\current\.espanso\match"
-mklink /J "%SCOOP_HOME%\apps\espanso\current\.espanso\match" "%DOTFILES_DIR%\.config\espanso\match"
+rmdir /S /Q "%SCOOP%\apps\espanso\current\.espanso\config"
+mklink /J "%SCOOP%\apps\espanso\current\.espanso\config" "%DOTFILES_DIR%\.config\espanso\config"
+rmdir /S /Q "%SCOOP%\apps\espanso\current\.espanso\match"
+mklink /J "%SCOOP%\apps\espanso\current\.espanso\match" "%DOTFILES_DIR%\.config\espanso\match"
 ```
 
 ## reference
