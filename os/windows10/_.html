@@ -35,7 +35,7 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-c58d4899.js";
+            window.path_to_searchindex_js = "../../searchindex-3c12ac91.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc-0d9125e8.js"></script>
@@ -190,7 +190,11 @@
 <li>运行 → <code>control userpasswords2</code> → 属性 → 要使用本计算机，用户必须输入用户名和密码(Off)</li>
 </ol>
 <h2 id="system-environment"><a class="header" href="#system-environment">System environment</a></h2>
-<p>Add into Environment:</p>
+<p>Add into System Environment:</p>
+<pre><code>USER=&lt;user_path&gt;
+SCOOP_GLOBAL=C:\Users\User\Scoop
+</code></pre>
+<p>Add into User Environment:</p>
 <pre><code>EDITOR=nvim
 # Lib
 CARGO_HOME=C:\Users\User\.cargo
@@ -199,8 +203,8 @@ GOPATH=C:\Users\User\.go
 GOROOT=C:\Users\User\Scoop\apps\go122\current
 # GOROOT=C:\Users\User\Usr\Lib\go1.20.1
 JAVA_HOME=C:\Users\User\Scoop\apps\openjdk22\current
-LUA_PATH=C:\gcc-lua-install\lua-5.4.8;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?.lua;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?\init.lua
-LUA_CPATH=C:\gcc-lua-install\lua-5.4.8\src;C:\Users\User\AppData\Roaming\luarocks\lib\lua\5.4\?.dll
+LUA_PATH=C:\Users\User\Usr\Lib\lua-5.4.6;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?.lua;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?\init.lua
+LUA_CPATH=C:\Users\User\Usr\Lib\lua-5.4.6\src;C:\Users\User\AppData\Roaming\luarocks\lib\lua\5.4\?.dll
 PIPX_HOME=C:\Users\User\.pipx
 PNPM_HOME=C:\Users\User\.pnpm
 # Bin
@@ -222,16 +226,14 @@ TESSDATA_PREFIX=C:\Users\User\Scoop\apps\tesseract-languages\current
 DOTFILES_DIR=C:\Users\User\Usr\Git\dotfiles
 PEGASUS_HOME=C:\Users\User\Scoop\apps\pegasus\current
 SCOOP=C:\Users\User\Scoop
-SCOOP_GLOBAL=C:\Users\User\Scoop
 </code></pre>
 <p>Ignore <code>scoop install</code> add, add into Path:</p>
-<pre><code>C:\Users\User\AppData\Local\Yarn\bin;
-C:\Users\User\AppData\Roaming\luarocks\bin;
-C:\gcc-lua-install\lua-5.4.8\lua;
-C:\gcc-lua-install\lua-5.4.8\lua\bin;
-C:\Users\User\Scoop\apps\gridplayer\current;
-C:\Users\User\Scoop\apps\sioyek\current;
-C:\Users\User\Scoop\apps\video-compare\current;
+<pre><code>C:\Program Files (x86)\Aspell-0.60\bin;
+C:\Program Files\BraveSoftware\Brave-Browser\Application;
+C:\Program Files\Ethea\SVGShellExtensions;
+C:\Program Files\GPSoftware\Directory Opus;
+C:\Program Files\LinkShellExtension\32;
+C:\Program Files\Sublime Text;
 C:\Users\User\.cargo\bin;
 C:\Users\User\.cargo\tmp\release\deps;
 C:\Users\User\.go\bin;
@@ -241,24 +243,25 @@ C:\Users\User\.pnpm;
 C:\Users\User\.pyenv\pyenv-win\bin;
 C:\Users\User\.pyenv\pyenv-win\shims;
 C:\Users\User\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;
+C:\Users\User\AppData\Local\Yarn\bin;
+C:\Users\User\AppData\Roaming\luarocks\bin;
+C:\Users\User\Scoop\apps\sioyek\current;
+C:\Users\User\Usr\Git\Shell\_windows;
 C:\Users\User\Usr\Git\Shell\_windows\AutoHotkey;
 C:\Users\User\Usr\Git\Shell\_windows\Keypirinha;
 C:\Users\User\Usr\Git\Shell\_windows\Other;
 C:\Users\User\Usr\Git\Shell\_windows\Patch;
 C:\Users\User\Usr\Git\Shell\_windows\SendTo;
 C:\Users\User\Usr\Git\Shell\_windows\Startup;
-C:\Users\User\Usr\Git\Shell\_windows;
 C:\Users\User\Usr\Git\Shell\optWeb;
+C:\Users\User\Usr\Lib\lua-5.4.6;
+C:\Users\User\Usr\Lib\lua-5.4.6\bin;
 C:\Users\User\Usr\Lib\rbenv\rbenv\bin;
 C:\Users\User\Usr\Lib\rbenv\shims;
 C:\Users\User\Usr\Opt\cmder_mini;
 C:\Users\User\Usr\Srv\Kiwix-Server;
-C:\Program Files (x86)\Aspell-0.60\bin;
-C:\Program Files\BraveSoftware\Brave-Browser\Application;
-C:\Program Files\Ethea\SVGShellExtensions;
-C:\Program Files\GPSoftware\Directory Opus;
-C:\Program Files\LinkShellExtension\32;
-C:\Program Files\Sublime Text;
+# C:\Users\User\Scoop\apps\gridplayer\current;
+# C:\Users\User\Scoop\apps\video-compare\current;
 # C:\Users\User\Scoop\apps\yarn\current\bin;
 # C:\Users\User\Scoop\apps\yarn\current\global\node_modules\.bin;
 </code></pre>
@@ -351,7 +354,6 @@ mklink "$APPDATA\pip\pip.ini" "%DOTFILES_DIR%\.config\pip\pip.conf"
 mklink "C:\Users\User\.npmrc" "%DOTFILES_DIR%\.npmrc"
 mkdir -p "C:\Users\User\.nvm"
 mklink "C:\Users\User\.nvm\settings.txt" "%DOTFILES_DIR%\.config\nvm\settings_windows.txt"
-mklink "C:\Users\User\.yarnrc" "%DOTFILES_DIR%\.yarnrc"
 mkdir -p "C:\Users\User\.cargo"
 mklink "C:\Users\User\.cargo\config.toml" "%DOTFILES_DIR%\.cargo\config.toml"
 </code></pre>
@@ -363,28 +365,6 @@ git clone --depth=1 https://github.com/fboender/multi-git-status
 git clone --depth=1 https://github.com/badrelmers/RefrEnv
 </code></pre>
 <h3 id="sendto-menu"><a class="header" href="#sendto-menu">SendTo menu</a></h3>
-<pre><code class="language-sh">set SendTo="C:\Users\User\AppData\Roaming\Microsoft\Windows\SendTo"
-set DirSendTo="C:\Users\User\Usr\Git\Shell\_windows\SendTo"
-del "%SendTo%\7zFM.exe"
-del "%SendTo%\WinMergeU.exe"
-del "%SendTo%\video-compare.exe"
-del "%SendTo%\img2jpg.bat"
-del "%SendTo%\gridplayer.bat"
-del "%SendTo%\oxipng.bat"
-del "%SendTo%\pdf2jpg.bat"
-del "%SendTo%\pngquant.bat"
-del "%SendTo%\ttf2woff.bat"
-del "%SendTo%\yoga.bat"
-mklink "%SendTo%\7zFM.exe" "%SCOOP%\apps\7zip\current\7zFM.exe"
-mklink "%SendTo%\WinMergeU.exe" "%SCOOP%\apps\winmerge\current\WinMergeU.exe"
-mklink "%SendTo%\video-compare.exe" "%SCOOP%\apps\video-compare\current\video-compare.exe"
-mklink "%SendTo%\img2jpg.bat" "%DirSendTo%\img2jpg.bat"
-mklink "%SendTo%\oxipng.bat" "%DirSendTo%\oxipng.bat"
-mklink "%SendTo%\pdf2jpg.bat" "%DirSendTo%\pdf2jpg.bat"
-mklink "%SendTo%\pngquant.bat" "%DirSendTo%\pngquant.bat"
-mklink "%SendTo%\ttf2woff.bat" "%DirSendTo%\ttf2woff.bat"
-mklink "%SendTo%\yoga.bat" "%DirSendTo%\yoga.bat"
-</code></pre>
 <h2 id="config"><a class="header" href="#config">config (Cache)</a></h2>
 <ul>
 <li><code>Win+Q</code>
