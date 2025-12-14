@@ -22,3 +22,9 @@ sudo pacman -S p7zip-full
 # Compress with volume size is 10m
 7z a -v10m <compress_dir>.7z <compress_dir>
 ```
+
+## resource
+
+### cache
+
+- [7Zip Plugins](https://github.com/DevX-Cipher/7zip-plugin)
