@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-3c12ac91.js";
+            window.path_to_searchindex_js = "../../searchindex-2acc58c9.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-0d9125e8.js"></script>
+        <script src="../../toc-4ae114cb.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -193,6 +193,55 @@ yay -S --noconfirm goldendict-git
 # Windows 10
 scoop install goldendict
 </code></pre>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
+<ul>
+<li>GoldenDict
+<ul>
+<li>View
+<ul>
+<li>Search Pane (On)</li>
+<li>Results Navigation Pane (Off)</li>
+<li>Favorites Pane (Off)</li>
+<li>History Pane (Off)</li>
+<li>Dictionary Bar (Off)</li>
+<li>Navigation (Off)</li>
+</ul>
+</li>
+<li>Edit
+<ul>
+<li>Preferences
+<ul>
+<li>Interface
+<ul>
+<li>Hide Single tab (On)</li>
+<li>Start to system tray (On)</li>
+<li>Select word by single click (On)</li>
+<li>ESC key hides main window (On)</li>
+</ul>
+</li>
+<li>Scan Popup
+<ul>
+<li>Enable scan popup functionality (Off)</li>
+</ul>
+</li>
+<li>Hotkeys
+<ul>
+<li>Use the following hotkey to show or hide the main window: <code>Alt+Shift+G</code></li>
+<li>Use the following hotkey to translate a word from clipboard: <code>Alt+Z</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dictionaries
+<ul>
+<li>Sources → Transliteration → Chinese Conversion (On)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
 <pre><code class="language-sh"># Arch
 mkdir "~/Usr/Source/goldendict"
@@ -202,14 +251,13 @@ cd "~/Usr/Source/goldendict"
 mkdir "%USERPROFILE%/Usr/Source/goldendict"
 cd "%USERPROFILE%/Usr/Source/goldendict"
 git clone --depth=1 https://github.com/VimWei/GoldenDictOCR
-</code></pre>
-<pre><code class="language-sh">git clone --depth=1 https://gist.github.com/e95773454d79dc047aeed016fb00daef tencenttrans_2zh_zh2en
-</code></pre>
-<pre><code class="language-sh">git clone --depth=1 https://github.com/LibreOffice/dictionaries
+git clone --depth=1 https://gist.github.com/e95773454d79dc047aeed016fb00daef tencenttrans_2zh_zh2en
+git clone --depth=1 https://github.com/LibreOffice/dictionaries
 </code></pre>
 <h3 id="dark-theme"><a class="header" href="#dark-theme">Dark theme</a></h3>
 <pre><code class="language-sh">git clone --depth=1 https://github.com/yozhic/GoldenDict-Full-Dark-Theme
 cd GoldenDict-Full-Dark-Theme
+# Arch
 sudo ln -sfn $(pwd)/GoldenDict/extras /usr/share/goldendict/extras
 sudo ln -sfn $(pwd)/GoldenDict/icons /usr/share/goldendict/icons
 ln -sfn $(pwd)/GoldenDict/fonts $HOME/.config/goldendict/fonts

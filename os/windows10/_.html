@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-3c12ac91.js";
+            window.path_to_searchindex_js = "../../searchindex-2acc58c9.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-0d9125e8.js"></script>
+        <script src="../../toc-4ae114cb.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -190,84 +190,8 @@
 <li>运行 → <code>control userpasswords2</code> → 属性 → 要使用本计算机，用户必须输入用户名和密码(Off)</li>
 </ol>
 <h2 id="system-environment"><a class="header" href="#system-environment">System environment</a></h2>
-<p>Add into System Environment:</p>
-<pre><code>USER=&lt;user_path&gt;
-SCOOP_GLOBAL=C:\Users\User\Scoop
-</code></pre>
-<p>Add into User Environment:</p>
-<pre><code>EDITOR=nvim
-# Lib
-CARGO_HOME=C:\Users\User\.cargo
-CARGO_TARGET_DIR=C:\Users\User\.cargo\tmp
-GOPATH=C:\Users\User\.go
-GOROOT=C:\Users\User\Scoop\apps\go122\current
-# GOROOT=C:\Users\User\Usr\Lib\go1.20.1
-JAVA_HOME=C:\Users\User\Scoop\apps\openjdk22\current
-LUA_PATH=C:\Users\User\Usr\Lib\lua-5.4.6;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?.lua;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?\init.lua
-LUA_CPATH=C:\Users\User\Usr\Lib\lua-5.4.6\src;C:\Users\User\AppData\Roaming\luarocks\lib\lua\5.4\?.dll
-PIPX_HOME=C:\Users\User\.pipx
-PNPM_HOME=C:\Users\User\.pnpm
-# Bin
-BASH=C:\Users\User\Scoop\shims\bash.exe
-SSH=C:\Users\User\Scoop\apps\git\current\usr\bin\ssh.exe
-## By scoop
-LIBCLANG_PATH=C:\Users\User\Scoop\apps\llvm\current\bin
-LLVM_LIB_DIR=C:\Users\User\Scoop\apps\llvm\current\lib
-# LUA_DEV=C:\Users\User\apps\lua-for-windows\current
-NVM_HOME=C:\Users\User\Scoop\apps\nvm\current
-NVM_SYMLINK=C:\Users\User\Scoop\persist\nvm\nodejs\nodejs
-# Opt
-MAGICK_CODER_MODULE_PATH=C:\Users\User\Scoop\apps\imagemagick\current\modules\coders
-MAGICK_HOME=C:\Users\User\Scoop\apps\imagemagick\current
-OLLAMA_HOST=0.0.0.0
-OLLAMA_ORIGINS=*
-TESSDATA_PREFIX=C:\Users\User\Scoop\apps\tesseract-languages\current
-# Other
-DOTFILES_DIR=C:\Users\User\Usr\Git\dotfiles
-PEGASUS_HOME=C:\Users\User\Scoop\apps\pegasus\current
-SCOOP=C:\Users\User\Scoop
-</code></pre>
-<p>Ignore <code>scoop install</code> add, add into Path:</p>
-<pre><code>C:\Program Files (x86)\Aspell-0.60\bin;
-C:\Program Files\BraveSoftware\Brave-Browser\Application;
-C:\Program Files\Ethea\SVGShellExtensions;
-C:\Program Files\GPSoftware\Directory Opus;
-C:\Program Files\LinkShellExtension\32;
-C:\Program Files\Sublime Text;
-C:\Users\User\.cargo\bin;
-C:\Users\User\.cargo\tmp\release\deps;
-C:\Users\User\.go\bin;
-C:\Users\User\.local\bin;
-C:\Users\User\.pipx\bin;
-C:\Users\User\.pnpm;
-C:\Users\User\.pyenv\pyenv-win\bin;
-C:\Users\User\.pyenv\pyenv-win\shims;
-C:\Users\User\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;
-C:\Users\User\AppData\Local\Yarn\bin;
-C:\Users\User\AppData\Roaming\luarocks\bin;
-C:\Users\User\Scoop\apps\sioyek\current;
-C:\Users\User\Usr\Git\Shell\_windows;
-C:\Users\User\Usr\Git\Shell\_windows\AutoHotkey;
-C:\Users\User\Usr\Git\Shell\_windows\Keypirinha;
-C:\Users\User\Usr\Git\Shell\_windows\Other;
-C:\Users\User\Usr\Git\Shell\_windows\Patch;
-C:\Users\User\Usr\Git\Shell\_windows\SendTo;
-C:\Users\User\Usr\Git\Shell\_windows\Startup;
-C:\Users\User\Usr\Git\Shell\optWeb;
-C:\Users\User\Usr\Lib\lua-5.4.6;
-C:\Users\User\Usr\Lib\lua-5.4.6\bin;
-C:\Users\User\Usr\Lib\rbenv\rbenv\bin;
-C:\Users\User\Usr\Lib\rbenv\shims;
-C:\Users\User\Usr\Opt\cmder_mini;
-C:\Users\User\Usr\Srv\Kiwix-Server;
-# C:\Users\User\Scoop\apps\gridplayer\current;
-# C:\Users\User\Scoop\apps\video-compare\current;
-# C:\Users\User\Scoop\apps\yarn\current\bin;
-# C:\Users\User\Scoop\apps\yarn\current\global\node_modules\.bin;
-</code></pre>
-<h2 id="command"><a class="header" href="#command">command</a></h2>
-<pre><code class="language-sh"># Get Windows environments
-SET
+<h3 id="get-windows-default-environments"><a class="header" href="#get-windows-default-environments">Get Windows default environments</a></h3>
+<pre><code class="language-sh">SET
 </code></pre>
 <pre><code># BaseDirs
 ALLUSERSPROFILE=C:\ProgramData
@@ -299,72 +223,87 @@ PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # PATH
 Path=C:\Windows;C:\Windows\system32;C:\Windows\System32\OpenSSH;C:\Windows\system32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0
 </code></pre>
-<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh">scoop install ^
-	bun ^
-	cmake ^
-	gsudo ^
-	gzip ^
-	libwebp ^
-	llvm ^
-	meson ^
-	ninja ^
-	perl ^
-	sed ^
-	sox ^
-	trzsz ^
-	unrar ^
-	vcxsrv ^
-	wget ^
-	win32yank ^
-	zig ^
-	zlib
+<h3 id="add-into-system-environment"><a class="header" href="#add-into-system-environment">Add into System Environment</a></h3>
+<pre><code>USER=&lt;user_path&gt;
+SCOOP_GLOBAL=C:\Users\User\Scoop
 </code></pre>
-<pre><code class="language-sh">gsudo scoop install ^
-	sshfs-np ^
-	windowsdesktop-runtime-6.0 ^
-	windowsdesktop-runtime-7.0 ^
-	windowsdesktop-runtime-lts
+<h3 id="add-into-top-of-system-path"><a class="header" href="#add-into-top-of-system-path">Add into top of System PATH</a></h3>
+<pre><code>C:\Users\User\Scoop\apps\curl\current
+C:\Users\User\Scoop\apps\git\current\bin
 </code></pre>
-<h2 id="install-by-installer"><a class="header" href="#install-by-installer">Install by installer</a></h2>
-<ul>
-<li>Brave</li>
-<li>clawPDF</li>
-<li>Copy Dialog Lunar Lander</li>
-<li>DarkThumbs</li>
-<li>DeviceCleanup</li>
-<li>Directory Opus</li>
-<li>DiskGenius</li>
-<li>Qt Movie Thumbnailer</li>
-<li>QuickSFV</li>
-<li>STL-Thumb</li>
-<li>Sublime Text</li>
-<li>SVG Shell Extensions and SVG Text Editor</li>
-<li>Video Duplicate Finder</li>
-<li>Virtual Display Driver</li>
-</ul>
-<h2 id="install-by-portable-archive"><a class="header" href="#install-by-portable-archive">Install by portable archive</a></h2>
-<ul>
-<li>cmder_mini</li>
-</ul>
-<h2 id="personal-do-1"><a class="header" href="#personal-do-1">Personal do</a></h2>
-<h3 id="dotfiles"><a class="header" href="#dotfiles">dotfiles</a></h3>
-<pre><code class="language-sh">mkdir "$APPDATA\pip"
-mklink "$APPDATA\pip\pip.ini" "%DOTFILES_DIR%\.config\pip\pip.conf"
-mklink "C:\Users\User\.npmrc" "%DOTFILES_DIR%\.npmrc"
-mkdir -p "C:\Users\User\.nvm"
-mklink "C:\Users\User\.nvm\settings.txt" "%DOTFILES_DIR%\.config\nvm\settings_windows.txt"
-mkdir -p "C:\Users\User\.cargo"
-mklink "C:\Users\User\.cargo\config.toml" "%DOTFILES_DIR%\.cargo\config.toml"
+<h3 id="add-into-user-environment"><a class="header" href="#add-into-user-environment">Add into User Environment</a></h3>
+<pre><code>EDITOR=nvim
+# Lib
+CARGO_HOME=C:\Users\User\.cargo
+CARGO_TARGET_DIR=C:\Users\User\.cargo\tmp
+GOPATH=C:\Users\User\.go
+GOROOT=C:\Users\User\Scoop\apps\go122\current
+# GOROOT=C:\Users\User\Usr\Lib\go1.20.1
+JAVA_HOME=C:\Users\User\Scoop\apps\openjdk22\current
+LUA_PATH=C:\Users\User\Usr\Lib\lua-5.4.6;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?.lua;C:\Users\User\AppData\Roaming\luarocks\share\lua\5.4\?\init.lua
+LUA_CPATH=C:\Users\User\Usr\Lib\lua-5.4.6\src;C:\Users\User\AppData\Roaming\luarocks\lib\lua\5.4\?.dll
+PIPX_HOME=C:\Users\User\.pipx
+PNPM_HOME=C:\Users\User\.pnpm
+# Bin
+BASH=C:\Users\User\Scoop\shims\bash.exe
+SSH=C:\Users\User\Scoop\apps\git\current\usr\bin\ssh.exe
+LIBCLANG_PATH=C:\Users\User\Scoop\apps\llvm\current\bin
+LLVM_LIB_DIR=C:\Users\User\Scoop\apps\llvm\current\lib
+SCOOP=C:\Users\User\Scoop
+# LUA_DEV=C:\Users\User\apps\lua-for-windows\current
+NVM_HOME=C:\Users\User\Scoop\apps\nvm\current
+NVM_SYMLINK=C:\Users\User\Scoop\persist\nvm\nodejs\nodejs
+# Opt
+MAGICK_CODER_MODULE_PATH=C:\Users\User\Scoop\apps\imagemagick\current\modules\coders
+MAGICK_HOME=C:\Users\User\Scoop\apps\imagemagick\current
+OLLAMA_HOST=0.0.0.0
+OLLAMA_ORIGINS=*
+TESSDATA_PREFIX=C:\Users\User\Scoop\apps\tesseract-languages\current
+# Other
+DOTFILES_DIR=C:\Users\User\Usr\Git\dotfiles
+PEGASUS_HOME=C:\Users\User\Scoop\apps\pegasus\current
 </code></pre>
-<h3 id="script-and-bin"><a class="header" href="#script-and-bin">Script and bin</a></h3>
-<pre><code class="language-sh">mkdir C:\Users\User\Usr\Shell
-cd C:\Users\User\Usr\Shell
-git clone --depth=1 https://github.com/simonthum/git-sync
-git clone --depth=1 https://github.com/fboender/multi-git-status
-git clone --depth=1 https://github.com/badrelmers/RefrEnv
+<h3 id="add-into-user-path-ignore-the-scoop-add"><a class="header" href="#add-into-user-path-ignore-the-scoop-add">Add into User PATH (ignore the scoop add)</a></h3>
+<pre><code>C:\Program Files\BraveSoftware\Brave-Browser\Application;
+C:\Program Files\Ethea\SVGShellExtensions;
+C:\Program Files\GPSoftware\Directory Opus;
+C:\Program Files\LinkShellExtension\32;
+C:\Program Files\Sublime Text;
+C:\Users\User\.cargo\bin;
+C:\Users\User\.cargo\tmp\release\deps;
+C:\Users\User\.go\bin;
+C:\Users\User\.local\bin;
+C:\Users\User\.pipx\bin;
+C:\Users\User\.pnpm;
+C:\Users\User\.pyenv\pyenv-win\bin;
+C:\Users\User\.pyenv\pyenv-win\shims;
+C:\Users\User\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin;
+C:\Users\User\AppData\Local\Yarn\bin;
+C:\Users\User\AppData\Roaming\luarocks\bin;
+C:\Users\User\Scoop\apps\sioyek\current;
+C:\Users\User\Usr\Git\Shell\_windows;
+C:\Users\User\Usr\Git\Shell\_windows\AutoHotkey;
+C:\Users\User\Usr\Git\Shell\_windows\Keypirinha;
+C:\Users\User\Usr\Git\Shell\_windows\Other;
+C:\Users\User\Usr\Git\Shell\_windows\Patch;
+C:\Users\User\Usr\Git\Shell\_windows\SendTo;
+C:\Users\User\Usr\Git\Shell\_windows\Startup;
+C:\Users\User\Usr\Git\Shell\optWeb;
+C:\Users\User\Usr\Lib\lua-5.4.6;
+C:\Users\User\Usr\Lib\lua-5.4.6\bin;
+C:\Users\User\Usr\Lib\rbenv\rbenv\bin;
+C:\Users\User\Usr\Lib\rbenv\shims;
+C:\Users\User\Usr\Opt\cmder_mini;
+C:\Users\User\Usr\Opt\Espanso;
+C:\Users\User\Usr\Opt\WezTerm;
+C:\Users\User\Usr\Srv\Kiwix-Server;
+# C:\Program Files (x86)\Aspell-0.60\bin;
+# C:\Users\User\Scoop\apps\gridplayer\current;
+# C:\Users\User\Scoop\apps\video-compare\current;
+# C:\Users\User\Scoop\apps\yarn\current\bin;
+# C:\Users\User\Scoop\apps\yarn\current\global\node_modules\.bin;
 </code></pre>
-<h3 id="sendto-menu"><a class="header" href="#sendto-menu">SendTo menu</a></h3>
+<h2 id="command"><a class="header" href="#command">command</a></h2>
 <h2 id="config"><a class="header" href="#config">config (Cache)</a></h2>
 <ul>
 <li><code>Win+Q</code>
