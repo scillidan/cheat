@@ -1,5 +1,12 @@
 # [AnythingLLM](https://anythingllm.com)
 
+## install
+
+```sh
+# Windows 10
+scoop install anythingllm
+```
+
 ## reference
 
 - [AnythingLLM Community Hub](https://hub.anythingllm.com/)

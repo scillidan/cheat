@@ -3,6 +3,9 @@
 ## install
 
 ```sh
+# Scoop
+gsudo scoop install open-shell-np
+# Chocolatey
 choco install -y open-shell
 ```
 

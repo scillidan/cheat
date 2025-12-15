@@ -10,7 +10,7 @@
 # Arch
 yay -S --noconfirm pegasus-frontend-git
 # Windows 10
-scoop install k-lite-codec-pack-basic-np
+gsudo scoop install k-lite-codec-pack-basic-np
 ```
 
 ## config

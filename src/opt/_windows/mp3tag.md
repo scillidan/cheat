@@ -6,6 +6,13 @@
 scoop install mp3tag
 ```
 
+```pwsh
+# Install context menu option
+start 'regsvr32' -Verb 'RunAs' -Args @("C:\Users\User\Scoop\apps\mp3tag\current\Mp3tagShell.dll", '/s')
+# Uninstall context menu option
+start 'regsvr32' -Verb 'RunAs' -Args @('/u', "C:\Users\User\Scoop\apps\mp3tag\current\Mp3tagShell.dll", '/s')
+```
+
 ## annex
 
 ![mp3tag](/_image/opt/_windows/mp3tag.png)

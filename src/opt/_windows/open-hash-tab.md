@@ -3,5 +3,8 @@
 ## install
 
 ```sh
+# Scoop
+gsudo scoop install openhashtab-np
+# Chocolatey
 choco install -y openhashtab
 ```
