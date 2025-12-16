@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-940bedd7.js";
+            window.path_to_searchindex_js = "../searchindex-6753276a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-a404bd89.js"></script>
+        <script src="../toc-d95774de.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -190,9 +190,18 @@ uv venv
 uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
 uv pip install -r requirements.txt
 uv pip install hf_transfer
+subl user-start-webui.bat
+</code></pre>
+<pre><code class="language-sh"># The modified lines, for example
+set SERVER_NAME=127.0.0.1
+set SERVER_PORT=7861
+set WHISPER_TYPE=faster-whisper
+set FASTER_WHISPER_MODEL_DIR="&lt;path_to&gt;\Simple_Speech_Recognition\modelsCache"
+set INSANELY_FAST_WHISPER_MODEL_DIR="C:\Users\User\Downloads"
+set DIARIZATION_MODEL_DIR="&lt;path_to&gt;\Whisper-WebUI\models"
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
-<pre><code class="language-sh">user-start-webui.bat
+<pre><code>user-start-webui.bat
 </code></pre>
 <h2 id="annex"><a class="header" href="#annex">annex</a></h2>
 <p><img src="/_image/optWeb/whisper-webui.png" alt="whisper-webui"></p>

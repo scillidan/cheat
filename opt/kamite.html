@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-940bedd7.js";
+            window.path_to_searchindex_js = "../searchindex-6753276a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-a404bd89.js"></script>
+        <script src="../toc-d95774de.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -189,6 +189,50 @@
 </blockquote>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <pre><code class="language-sh">mpv --input-ipc-server=/./pipe/kamite-mpvsocket --sub-file="$2" --sid=2 --secondary-sid=1 --secondary-sub-visibility=no --save-position-on-quit "$1"
+</code></pre>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
+<p><code>config.hocon</code>:</p>
+<pre><code># https://github.com/fauu/Kamite/blob/master/config/config.default.hocon
+# The modified lines, for example
+lookup {
+  targets = [
+    ${LOOKUP_TARGETS.deepl}
+    ${LOOKUP_TARGETS.reverso}
+  ]
+}
+
+ocr: {
+  engine: mangaocr
+  tesseract: {
+    path: "tesseract"
+  }
+  mangaocr: {
+    pythonPath: "&lt;path_to&gt;/manga-ocr/Scripts/python.exe"
+  }
+  ocrspace: {
+    engine: 1
+  }
+}
+
+LOOKUP_TARGETS {
+  deepl {
+    symbol = DEP
+    name = DeepL
+    url = "https://www.deepl.com/translator#ja/en/{}"
+  }
+  reverso {
+    symbol = REV
+    name = Reverso
+    url = "https://www.reverso.net/text-translation#sl=jpn&amp;tl=eng&amp;text={}"
+  }
+}
+
+integrations: {
+  agent: {
+    enable: no
+    host: "127.0.0.1:9001"
+  }
+}
 </code></pre>
 <h2 id="annex"><a class="header" href="#annex">annex</a></h2>
 <ul>

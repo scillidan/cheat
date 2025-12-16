@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-940bedd7.js";
+            window.path_to_searchindex_js = "../../searchindex-6753276a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-a404bd89.js"></script>
+        <script src="../../toc-d95774de.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -200,7 +200,21 @@ pnpm build
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <pre><code class="language-sh">pnpm start
-# pm2 start pnpm --name lobe-chat -- run start
+</code></pre>
+<h3 id="with-pm2"><a class="header" href="#with-pm2">With PM2</a></h3>
+<pre><code class="language-sh">pm2 start pnpm --name lobe-chat -- run start
+</code></pre>
+<p>Or use <code>ecosystem.json</code>:</p>
+<pre><code class="language-json">{
+  "apps": [
+    {
+      "name": "lobe-chat",
+      "script": "pnpm",
+      "args": "start",
+      "interpreter": "C:\\Users\\User\\Scoop\\shims\\bash.exe"
+    }
+  ]
+}
 </code></pre>
 <h2 id="deploy-with-docker-compose"><a class="header" href="#deploy-with-docker-compose">Deploy with Docker compose</a></h2>
 <p><sup class="footnote-reference" id="fr-2-1"><a href="#footnote-2">2</a></sup></p>

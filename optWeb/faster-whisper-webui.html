@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-940bedd7.js";
+            window.path_to_searchindex_js = "../searchindex-6753276a.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-a404bd89.js"></script>
+        <script src="../toc-d95774de.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -197,20 +197,21 @@ uv pip install hf_transfer
 cp config.json5 config.json5.bak
 subl config.json5
 </code></pre>
-<pre><code class="language-json">"models": [
+<pre><code class="language-json"># The modified lines, for example
+"models": [
 	{
 		"name": "medium",
-		"url": "Simple_Speech_Recognition/modelsCache/faster-whisper-medium",
+		"url": "&lt;path_to&gt;/Simple_Speech_Recognition/modelsCache/faster-whisper-medium",
 		"type": "filesystem"
 	},
 	{
 		"name": "large-v2",
-		"url": "Simple_Speech_Recognition/modelsCache/faster-whisper-large-v2",
+		"url": "&lt;path_to&gt;/Simple_Speech_Recognition/modelsCache/faster-whisper-large-v2",
 		"type": "filesystem"
 	},
 	{
 		"name": "large-v3",
-		"url": "Simple_Speech_Recognition/modelsCache/faster-whisper-large-v3",
+		"url": "&lt;path_to&gt;/Simple_Speech_Recognition/modelsCache/faster-whisper-large-v3",
 		"type": "filesystem"
 	},
 ]
