@@ -22,20 +22,21 @@ subl config.json5
 ```
 
 ```json
+# The modified lines, for example
 "models": [
 	{
 		"name": "medium",
-		"url": "Simple_Speech_Recognition/modelsCache/faster-whisper-medium",
+		"url": "<path_to>/Simple_Speech_Recognition/modelsCache/faster-whisper-medium",
 		"type": "filesystem"
 	},
 	{
 		"name": "large-v2",
-		"url": "Simple_Speech_Recognition/modelsCache/faster-whisper-large-v2",
+		"url": "<path_to>/Simple_Speech_Recognition/modelsCache/faster-whisper-large-v2",
 		"type": "filesystem"
 	},
 	{
 		"name": "large-v3",
-		"url": "Simple_Speech_Recognition/modelsCache/faster-whisper-large-v3",
+		"url": "<path_to>/Simple_Speech_Recognition/modelsCache/faster-whisper-large-v3",
 		"type": "filesystem"
 	},
 ]

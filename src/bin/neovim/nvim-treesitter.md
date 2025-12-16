@@ -24,3 +24,7 @@
 - [nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
 - [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
 - [treesitter-modules.nvim](https://github.com/MeanderingProgrammer/treesitter-modules.nvim)
+
+## troubleshoot
+
+- [tree-sitter executable not found](https://github.com/nvim-treesitter/nvim-treesitter/issues/1097)

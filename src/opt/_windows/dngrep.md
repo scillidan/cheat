@@ -27,8 +27,8 @@ scoop install dngrep
 			Command: WinMergeU.exe
 			Arguments: /e /u /x
 			```
-	- Search in
-		- Patterns to match → `*.md;*.txt`
-		- Patterns to exclude → `.git\*;node_modules;public;site;_build;_gen`
 	- Search results
 		- Show results tree expanded (On)
+	- Search in
+		- Patterns to match → `*.md;*.txt`
+		- Patterns to exclude → `SUMMARY.md;.git\*;node_modules;public;site;_build;_gen`
