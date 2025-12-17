@@ -9,3 +9,4 @@
 ## Todo
 
 - Clear tags in `_resource.md` and `## resource`.
+- Name the markdown file name using pkgname or abbreviation.

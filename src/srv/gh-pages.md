@@ -8,3 +8,8 @@
 	1. Source → Deploy from a branch.
 	2. Branch → `gh-pages`, `/(root)`.
 4. Visit `https://<user>.github.io/qr-designer`.
+
+## reference
+
+- #guide [Creating a clean gh-pages branch](https://gist.github.com/ramnathv/2227408)
+- #guide [Free image CDN: Github Pages & js](https://transloadit.com/devtips/free-image-cdn-setup-with-github-pages-javascript-cdn/)

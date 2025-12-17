@@ -1,5 +1,9 @@
 # css
 
+## reference
+
+- #guide [Creating a halftone effect with CSS](https://leanrada.com/notes/pure-css-halftone)
+
 ## resource
 
 ### cache

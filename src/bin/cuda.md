@@ -16,3 +16,7 @@ nvcc -V
 echo %CUDA_PATH%
 # echo %CUDA_PATH_V12_1%
 ```
+
+## reference
+
+- #guide [Steps to manage multiple CUDA environments](https://gist.github.com/garg-aayush/156ec6ddda3d62e2c0ddad00b7e66956)

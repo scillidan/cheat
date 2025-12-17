@@ -32,3 +32,8 @@ scoop install dngrep
 	- Search in
 		- Patterns to match → `*.md;*.txt`
 		- Patterns to exclude → `SUMMARY.md;.git\*;node_modules;public;site;_build;_gen`
+
+## usage
+
+- dnGrep
+	- Results panel → More → Copy results

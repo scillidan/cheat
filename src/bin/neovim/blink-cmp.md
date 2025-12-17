@@ -12,7 +12,7 @@
 
 ### mark
 
-- [blink-cmp-dictionary](https://github.com/Kaiser-Yang/blink-cmp-dictionary)
+- #Arch [blink-cmp-dictionary](https://github.com/Kaiser-Yang/blink-cmp-dictionary)
 - [blink-cmp-latex](https://github.com/erooke/blink-cmp-latex)
 - [blink-cmp-npm](https://github.com/alexandre-abrioux/blink-cmp-npm.nvim)
 - [blink-emoji.nvim](https://github.com/moyiz/blink-emoji.nvim)

@@ -13,6 +13,10 @@ start 'regsvr32' -Verb 'RunAs' -Args @("C:\Users\User\Scoop\apps\mp3tag\current\
 start 'regsvr32' -Verb 'RunAs' -Args @('/u', "C:\Users\User\Scoop\apps\mp3tag\current\Mp3tagShell.dll", '/s')
 ```
 
+## reference
+
+- #sheet [Tag Field Mappings](https://docs.mp3tag.de/mapping/)
+
 ## annex
 
 ![mp3tag](/_image/opt/_windows/mp3tag.png)
