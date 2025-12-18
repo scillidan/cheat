@@ -17,6 +17,6 @@ npm run build
 npm run watch
 ```
 
-## annex
+## appdedix
 
 ![noisecraft](/_image/opt/noisecraft.png)

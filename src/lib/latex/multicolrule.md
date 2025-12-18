@@ -6,7 +6,9 @@
 > 该包允许您自定义在多列文本之间出现的垂直规则的外观。它主要旨在与multicol包配合使用，因此得名，但也支持标准类提供的twocolumn选项和\twocolumn宏（以及KOMA-Script等相关类的等效项）。  
 > 该包依赖于expl3和xparse。 [ctan.org/pkg/multicolrule]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass{article}

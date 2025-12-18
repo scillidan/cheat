@@ -8,7 +8,9 @@
 > 该包了解所有标准纸张尺寸，因此用户无需知道纸张的名义“真实”尺寸，只需知道其标准名称（如a4、letter等）。  
 > 一个重要的特性是该包能够将其设置的纸张尺寸传达给输出（无论是通过DVI的`\specials`还是通过与pdf(La)TeX的直接交互）。 [ctan.org/pkg/geometry]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage[margin=2em]{geometry}

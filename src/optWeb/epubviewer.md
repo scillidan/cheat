@@ -19,6 +19,6 @@ serve -s . -p 4321
 1. Visit `http://localhost:4000` or `http://localhost:4000#book.epub`.
 2. If app take up `4321` port, visit `chrome://serviceworker-internals/?devtools` and unregister it.
 
-## annex
+## appdedix
 
 ![epubviewer](/_image/optWeb/epubviewer.png)

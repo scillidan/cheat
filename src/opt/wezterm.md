@@ -9,7 +9,7 @@ sudo pacman -S wezterm
 scoop install wezterm
 ```
 
-## setting
+## config
 
 ```sh
 # Arch
@@ -25,7 +25,7 @@ scoop install wezterm
 - [Is it possible to show/hide a split-pane?](https://github.com/wezterm/wezterm/discussions/3779)
 - [How to bind mouse right-click with Copy & Paste? (Like windows terminal)](https://github.com/wezterm/wezterm/discussions/3541)
 
-## annex
+## appdedix
 
 ![color_vanta](/_image/opt/wezterm/color_vanta.png)
 ![color_visiblue](/_image/opt/wezterm/color_visiblue.png)

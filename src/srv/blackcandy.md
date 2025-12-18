@@ -30,6 +30,6 @@ services:
 
 [^1]: [Media Files Mounts](https://github.com/blackcandy-org/blackcandy#media-files-mounts)
 
-## annex
+## appdedix
 
 ![blackcandy](/_image/srv/blackcandy.png)

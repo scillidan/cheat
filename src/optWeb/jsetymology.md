@@ -15,6 +15,6 @@ cd jsetymology
 serve -s . -p 4321
 ```
 
-## annex
+## appdedix
 
 ![jsetymology](/_image/optWeb/jsetymology.png)

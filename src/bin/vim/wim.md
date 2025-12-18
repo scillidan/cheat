@@ -10,6 +10,6 @@ set "PYTHONIOENCODING=UTF-8"
 set "DYNAMIC_PYTHON3_DLL=%LocalAppData%\Programs\Python\Python310\python310.dll"
 ```
 
-## annex
+## appdedix
 
 ![wim](/_image/bin/wim.png)

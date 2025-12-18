@@ -22,6 +22,6 @@ sudo docker compose up -d
 
 [^1]: [Updating to the latest version](https://github.com/simjanos-dev/LinguaCafe#updating-to-the-latest-version)
 
-## annex
+## appdedix
 
 ![linguacafe](/_image/srv/linguacafe.png)

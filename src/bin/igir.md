@@ -1,5 +1,5 @@
 # [igir](https://github.com/emmercm/igir)
 
-## annex
+## appdedix
 
 ![igir](/_image/bin/igir.png)

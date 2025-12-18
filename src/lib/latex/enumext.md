@@ -4,13 +4,15 @@
 
 > 该包提供了与PDF标记兼容的编号列表环境，用于创建“简单练习表”和“多项选择题”，并使用multicol包将这些题目的“答案”存储在内存中。 [ctan.org/pkg/enumext]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{enumext}
 ```
 
-```
+```tex
 \begin{enumext*}[widest=10,columns=4]
 	\item The first
 	\item* The second

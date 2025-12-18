@@ -42,6 +42,6 @@ yay -S --noconfirm videosubfinder
 
 - [rapidvideocr.md](/bin/rapidvideocr.md)
 
-## annex
+## appdedix
 
 - [videosubfinder.mp4](https://scillidan.github.io/media_cheat/opt/videosubfinder.mp4) ([bilibili](https://www.bilibili.com/video/BV17Y6dYcEaH))

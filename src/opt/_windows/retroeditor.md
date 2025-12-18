@@ -1,5 +1,5 @@
 # [RetroEditor](https://zxretrosoft.itch.io/retroeditor)
 
-## annex
+## appdedix
 
 ![retroeditor](/_image/opt/_windows/retroeditor.png)

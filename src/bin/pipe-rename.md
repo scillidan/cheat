@@ -9,7 +9,9 @@ sudo pacman -S pipe-rename
 cargo install --force pipe-rename
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
 ls | renamer

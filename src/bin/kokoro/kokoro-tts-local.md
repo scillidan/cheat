@@ -27,6 +27,6 @@ pip install ordered_set pypinyin cn2an jieba
 python gradio_interface.py
 ```
 
-## annex
+## appdedix
 
 ![kokoro-tts-local](/_image/optWeb/kokoro-tts-local.png)

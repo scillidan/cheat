@@ -13,7 +13,9 @@ yay -S --noconfirm tidy-viewer
 cargo install --force tidy-viewer
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
 # Fetch color data from various markdown sources, convert to CSV, and display with coloring tools

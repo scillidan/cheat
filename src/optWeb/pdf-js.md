@@ -28,6 +28,6 @@ Visit `http://localhost:<port>/web/viewer.html` or `http://localhost:<port>/web/
 
 [^1]: [Error on npm install](https://github.com/mozilla/pdf.js/issues/15112)
 
-## annex
+## appdedix
 
 ![pdf-js](/_image/optWeb/pdf-js.png)

@@ -18,6 +18,6 @@ serve -s app/build -p 4321
 # pm2 serve app\build\ 4321 --name flowchart-fun --spa
 ```
 
-## annex
+## appdedix
 
 ![flowchart-fun](/_image/optWeb/flowchart-fun.png)

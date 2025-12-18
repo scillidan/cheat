@@ -20,6 +20,6 @@ uv pip install -U "langgraph-cli[inmem]"
 langgraph dev
 ```
 
-## annex
+## appdedix
 
 ![ollama_deep_researcher](/_image/optWeb/ollama_deep_researcher.png)

@@ -36,7 +36,7 @@ vivliostyle build --format epub -o <file>.epub
 - [MurakamiShinyu/kaigainotabi1](https://github.com/MurakamiShinyu/kaigainotabi1)
 - [Option to use a specific Vivliostyle Viewer version or its URL · Issue #232 · vivliostyle/vivliostyle-cli](https://github.com/vivliostyle/vivliostyle-cli/issues/232)
 
-## annex
+## appdedix
 
 ![vivliostyle_01](/_image/Web/vivliostyle_01.png)
 ![vivliostyle_02](/_image/Web/vivliostyle_02.png)

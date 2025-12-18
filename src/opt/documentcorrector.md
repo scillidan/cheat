@@ -16,6 +16,6 @@ pip install nuitka setuptools
 python makeExe.py
 ```
 
-## annex
+## appdedix
 
 ![documentcorrector](/_image/opt/documentcorrector.png)

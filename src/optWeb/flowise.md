@@ -1,5 +1,5 @@
 # [Flowise](https://github.com/FlowiseAI/Flowise)
 
-## annex
+## appdedix
 
 ![flowise](/_image/optWeb/flowise.png)

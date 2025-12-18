@@ -4,7 +4,9 @@
 
 > 该LaTeX包使超链接带下划线，就像在网页上一样。该包使用hyperref和ulem。 [ctan.org/pkg/href-ul]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \pagestyle{empty}

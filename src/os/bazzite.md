@@ -23,6 +23,7 @@ netsh advfirewall firewall add rule name="GameStream TCP" dir=in protocol=tcp lo
 
 ## reference
 
-- #post [Immutable Linux Distros: Are They Right for You? Take the Test.](https://linuxblog.io/immutable-linux-distros-are-they-right-for-you-take-the-test/)
-- [Installing Bazzite for Desktop/Laptop Hardware](https://docs.bazzite.gg/General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware/#__tabbed_1_3)
-- [Can I change the hostname of my device?](https://docs.bazzite.gg/General/FAQ/#can-i-change-the-hostname-of-my-device)
+- #blog [Immutable Linux Distros: Are They Right for You? Take the Test.](https://linuxblog.io/immutable-linux-distros-are-they-right-for-you-take-the-test/)
+- #document [Bazzite Documentation](https://docs.bazzite.gg/)
+	- [Installing Bazzite for Desktop/Laptop Hardware](https://docs.bazzite.gg/General/Installation_Guide/Installing_Bazzite_for_Desktop_or_Laptop_Hardware/#__tabbed_1_3)
+	- [Can I change the hostname of my device?](https://docs.bazzite.gg/General/FAQ/#can-i-change-the-hostname-of-my-device)

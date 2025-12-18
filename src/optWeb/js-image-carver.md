@@ -27,6 +27,6 @@ npm run build
 serve -s build -l 4321
 ```
 
-## annex
+## appdedix
 
 ![js-image-carver](/_image/optWeb/js-image-carver.png)

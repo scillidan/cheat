@@ -7,6 +7,6 @@
 3. Edit repo folder in editor, replace all `qrframe.kylezhe.ng` in files with `<prefix_name>.vercel.app`.
 4. `<prefix_name>.vercel.app` is the same as in Vercel project's domain setting.
 
-## annex
+## appdedix
 
 ![qrframe](/_image/optWeb/qrframe.png)

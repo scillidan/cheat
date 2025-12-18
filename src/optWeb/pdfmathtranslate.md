@@ -18,6 +18,6 @@ uv pip install -e .
 pdf2zh -i
 ```
 
-## annex
+## appdedix
 
 ![pdfmathtranslate](/_image/optWeb/pdfmathtranslate.png)

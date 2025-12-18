@@ -33,6 +33,6 @@ app.listen(4321, 'localhost', function(err) {
 });
 ```
 
-## annex
+## appdedix
 
 ![tab-editor](/_image/optWeb/tab-editor.png)

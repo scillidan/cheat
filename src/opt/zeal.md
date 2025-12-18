@@ -49,6 +49,6 @@ You can get Feed URL from [Zeal User Contributions & Cheat Sheets](https://zealu
   - [Tailwind CSS](http://zealusercontributions.vercel.app/api/docsets/Tailwind_CSS.xml)
   - [Terraform](http://zealusercontributions.vercel.app/api/docsets/Terraform.xml)
 
-## annex
+## appdedix
 
 ![zeal](/_image/opt/zeal.png)

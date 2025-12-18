@@ -18,6 +18,6 @@ cd quiver
 serve -s src -p 4321
 ```
 
-## annex
+## appdedix
 
 ![quiver](/_image/optWeb/quiver.png)

@@ -1,5 +1,5 @@
 # [Doom Emacs](https://github.com/doomemacs/doomemacs)
 
-## annex
+## appdedix
 
 ![doomemacs](/_image/bin/doomemacs.png)

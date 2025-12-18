@@ -18,6 +18,6 @@ npm run start
 # pm2 serve build 4321 --name url-encoder --spa
 ```
 
-## annex
+## appdedix
 
 ![url-encoder](/_image/optWeb/url-encoder.png)

@@ -1,5 +1,5 @@
 # [Snapdrop](https://github.com/SnapDrop/snapdrop)
 
-## annex
+## appdedix
 
 ![snapdrop](/_image/srv/snapdrop.png)

@@ -17,6 +17,6 @@ scoop install thorium-reader
 	Link: http://<your_host>/opds
 	```
 
-## annex
+## appdedix
 
 ![thorium-reader](/_image/opt/thorium-reader.png)

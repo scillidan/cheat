@@ -2,6 +2,6 @@
 
 ![](https://img.shields.io/github/license/YYsuni/path-motion) ![](https://img.shields.io/github/last-commit/scillidan/path-motion/main?label=last%20commit%20(fork))
 
-## annex
+## appdedix
 
 ![path-motion](/_image/optWeb/path-motion.png)

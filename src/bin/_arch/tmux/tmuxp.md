@@ -20,3 +20,6 @@ vim user.yaml
 tmuxp load user
 ```
 
+## annex
+
+- #dotfiles [tmuxp/](https://github.com/scillidan/dotfiles/tree/main/.config/tmuxp)

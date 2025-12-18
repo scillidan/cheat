@@ -29,6 +29,6 @@ subl .env
 SAKURA_API_BASE=http://127.0.0.1:5000
 ```
 
-## annex
+## appdedix
 
 ![manga-image-translator](/_image/optWeb/manga-image-translator.png)

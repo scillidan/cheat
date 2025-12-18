@@ -6,6 +6,6 @@
 scoop install rufus
 ```
 
-## annex
+## appdedix
 
 ![rufus](/_image/opt/_windows/rufus.png)

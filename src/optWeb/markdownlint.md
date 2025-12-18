@@ -18,6 +18,6 @@ npm run build-demo
 
 Open `./demo/default.htm`.
 
-## annex
+## appdedix
 
 ![markdownlint](/_image/optWeb/markdownlint.png)

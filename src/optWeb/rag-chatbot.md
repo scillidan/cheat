@@ -20,6 +20,6 @@ uv pip install hf_transfer
 python -m rag_chatbot --host localhost & ngrok http 4321
 ```
 
-## annex
+## appdedix
 
 ![rag-chatbot](/_image/optWeb/rag-chatbot.png)

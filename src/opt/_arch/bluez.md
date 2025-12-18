@@ -27,9 +27,9 @@ connect XX:XX:XX:XX:XX:XX
 trust XX:XX:XX:XX:XX:XX
 ```
 
-## requirement
+## reference
 
-- [bluetoothctl(1) - Arch manual pages](https://man.archlinux.org/man/extra/bluez-utils/bluetoothctl.1.en)
+- #man [bluetoothctl(1) - Arch manual pages](https://man.archlinux.org/man/extra/bluez-utils/bluetoothctl.1.en)
 
 [^1]: [Bluetooth headset connection occasionally fails: br-connection-page-timeout](https://www.reddit.com/r/archlinux/comments/qnffce/bluetooth_headset_connection_occasionally_fails/)
 [^2]: [How to Set up Bluetooth in Arch Linux](https://www.jeremymorgan.com/tutorials/linux/how-to-bluetooth-arch-linux/)

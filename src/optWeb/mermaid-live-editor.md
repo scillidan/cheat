@@ -17,6 +17,6 @@ yarn build
 serve -s docs -l 4321
 ```
 
-## annex
+## appdedix
 
 ![mermaid-live-editor](/_image/optWeb/mermaid-live-editor.png)

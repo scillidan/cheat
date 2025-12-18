@@ -4,7 +4,9 @@
 
 > 该包仅定义了用户级宏`\blowUp`，可用于对文档的所有页面进行放大或缩小。它类似于TeX原始命令`\mag`，但更加准确和用户友好。`\blowUp`对于将正常大小的文档制作成海报，以及对已完成文档进行其他类型的微调（例如，微小的缩放变化和页面位置的调整）非常有用。 [ctan.org/pkg/blowup]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass[letterpaper,twoside]{article}
@@ -20,10 +22,6 @@ Letter-size document on A4-size paper
 \end{document}
 ```
 
-## example
+## reference
 
-[blowup-ex1.tex](https://github.com/rolfn/blowup/blob/master/blowup-ex1.tex)
-
-## requirement
-
-- [blowup_ex1.md](/lib/latex/_example/blowup_ex1.md)
+- #file [blowup-ex1.tex](https://github.com/rolfn/blowup/blob/master/blowup-ex1.tex)

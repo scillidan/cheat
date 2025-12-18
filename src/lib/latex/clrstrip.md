@@ -4,7 +4,9 @@
 
 > 该轻量级包提供了colorstrip环境，将其内容放置在占据整页宽度的色条中。 [ctan.org/pkg/clrstrip]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{xcolor}

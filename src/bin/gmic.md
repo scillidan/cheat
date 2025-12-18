@@ -1,6 +1,8 @@
 # [G'MIC](https://gmic.eu)
 
-## command
+## usage
+
+### command
 
 ```sh
 # Apply match patch with warping

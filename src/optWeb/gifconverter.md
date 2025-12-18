@@ -18,6 +18,6 @@ npm run build
 npm run dev
 ```
 
-## annex
+## appdedix
 
 ![gifconverter](/_image/optWeb/gifconverter.png)

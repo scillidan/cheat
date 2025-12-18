@@ -17,7 +17,7 @@ vim docker-compose.yml
 sudo docker compose up -d
 ```
 
-## setting
+## config
 
 - Lute → Settings
 	- Languages → English → Dictionaries → Add

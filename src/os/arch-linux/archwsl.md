@@ -8,7 +8,7 @@ wsl --install archlinux
 arch
 ```
 
-## useradd
+## `useradd` { #useradd }
 
 ```sh
 passwd
@@ -23,9 +23,12 @@ arch config --default-user <user>
 arch
 ```
 
-## Personal do
+## usage
+
+### command
 
 ```sh
+# Personal do
 sudo pacman -Syyu \
 	inetutils \
 	less \
@@ -33,12 +36,6 @@ sudo pacman -Syyu \
 	wget \
 	xsel
 # editorconfig-checker \
-```
-
-```sh
-yay -S --noconfirm \
-	fuzzy-pkg-finder \
-	paru
 ```
 
 ## WSL Optionals
@@ -72,14 +69,14 @@ systemd=true
 
 0. [arch-linux.md](/os/arch-linux/_.md)
 1. [wsl.md](/os/windows10/wsl.md)
-2. [pacman.md](/bin/_arch/pacman.md)
+2. [pacman.md](/bin/_arch/pacman/_.md)
 3. [yay.md](/bin/_arch/yay.md)
 4. [openssh.md](/bin/_arch/openssh.md)
 5. [tigervnc.md](/opt/_arch/tigervnc.md)
 
 [^1]: [Known issues](https://wsldl-pg.github.io/ArchW-docs/Known-issues/)
 
-## annex
+## appdedix
 
 ![archwsl_01](/_image/os/archwsl_01.png)
 ![archwsl_02](/_image/os/archwsl_02.png)

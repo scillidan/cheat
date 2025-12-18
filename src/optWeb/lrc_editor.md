@@ -18,6 +18,6 @@ npm run build
 serve -s docs -p 4321
 ```
 
-## annex
+## appdedix
 
 ![lrc_editor](/_image/optWeb/lrc_editor.png)

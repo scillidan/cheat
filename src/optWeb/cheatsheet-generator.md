@@ -18,6 +18,6 @@ npm run build
 
 Open `./dist/<the_one>.htm`.
 
-## annex
+## appdedix
 
 ![cheatsheet-generator](/_image/optWeb/cheatsheet-generator.png)

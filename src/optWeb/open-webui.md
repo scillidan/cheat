@@ -46,7 +46,7 @@ sudo docker compose up -d
 
 Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to complete initialization.
 
-## optional
+## config
 
 - Open WebUI → User → Admin Panel → Settings → Documents
 	- Embedding Model Engine → `Ollama`
@@ -56,6 +56,22 @@ Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to 
 
 - [Tutorial: Configuring RAG with Open WebUI Documentation](https://docs.openwebui.com/tutorials/tips/rag-tutorial/)
 - [Add Open WebUI as a Custom Search Engine](https://docs.openwebui.com/tutorials/integrations/browser-search-engine/#step-2-add-open-webui-as-a-custom-search-engine)
+
+## file
+
+```json
+// _path_librarian.json
+// The modified lines, for example.
+[
+    {
+        "base_model_id": "qwen3:14b",
+        "params":
+        {
+            "system": "...And you always answer in Simplified Chinese."
+        },
+    }
+]
+```
 
 ## [asset]((https://openwebui.com))
 
@@ -80,7 +96,7 @@ Visit `http://<your_host>:<port>`, you may need to wait a few minutes for it to 
 - #prompt [Code Optimization](https://openwebui.com/p/hub/code-optimization)
 - #tool [WebUI Auto Translator](https://openwebui.com/t/nnaoycurt/webui_auto_translator)
 
-## annex
+## appdedix
 
 ![open-webui_01](/_image/optWeb/open-webui_01.png)
 ![open-webui_02](/_image/optWeb/open-webui_02.png)

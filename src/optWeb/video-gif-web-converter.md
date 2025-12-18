@@ -18,6 +18,6 @@ npm run build
 npm start
 ```
 
-## annex
+## appdedix
 
 ![video-gif-web-converter](/_image/optWeb/video-gif-web-converter.png)

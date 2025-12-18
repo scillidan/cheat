@@ -35,6 +35,6 @@ url: http://localhost
 
 [^1]: [Watchexec](https://github.com/watchexec/watchexec)
 
-## annex
+## appdedix
 
 ![reference](/_image/optWeb/reference.png)

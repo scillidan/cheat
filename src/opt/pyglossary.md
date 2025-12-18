@@ -29,4 +29,8 @@ pyglossary
 
 ## annex
 
+- [xdxf_makedict_xdxf-standard-draft-034.md](https://github.com/scillidan/mark_cheat/blob/main/xdxf_makedict_xdxf-standard-draft-034.md) ([2zh](https://github.com/scillidan/mark_cheat/blob/main/xdxf_makedict_xdxf-standard-draft-034.zh.md))
+
+## appdedix
+
 ![pyglossary](/_image/opt/pyglossary.png)

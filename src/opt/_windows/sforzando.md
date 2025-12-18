@@ -1,5 +1,5 @@
 # [sforzando](https://plogue.com/products/sforzando.html)
 
-## annex
+## appdedix
 
 ![sforzando](/_image/opt/_windows/sforzando.png)

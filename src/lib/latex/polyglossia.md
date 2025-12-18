@@ -22,7 +22,9 @@
 > - 对于有自己数字系统的语言，适当修改数字的格式。  
 > - 确保文档的正确方向性，如果文档包含从右到左书写的语言（通过分别提供的包bidi和luabidi）。 [ctan.org/pkg/polyglossia]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 % !TeX program = xelatex

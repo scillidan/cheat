@@ -1,5 +1,5 @@
 # [ChartDB](https://github.com/chartdb/chartdb)
 
-## annex
+## appdedix
 
 ![chartdb](/_image/optWeb/chartdb.png)

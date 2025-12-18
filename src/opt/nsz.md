@@ -17,6 +17,6 @@ uv pip install -r requirements-gui.txt
 python nsz.py
 ```
 
-## annex
+## appdedix
 
 ![nsz](/_image/opt/nsz.png)

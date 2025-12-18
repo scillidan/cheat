@@ -20,6 +20,6 @@ npm run dist
 
 Open `dist/tikzcd-editor-v0.9.0/index.html`.
 
-## annex
+## appdedix
 
 ![tikzcd-editor](/_image/optWeb/tikzcd-editor.png)

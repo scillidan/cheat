@@ -95,16 +95,6 @@ pm2 save
 3. Create shortcut of `start_linkding.vbs`.
 4. Put the shortcut into `C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`.
 
-## command
-
-```sh
-linkding --url "http://<your_host>:8002" --token "<token>" bookmarks all -q $1 ^
-  | jq ".results[]" ^
-  | ramda -c -o csv ^
-  | xsv select tag_names,url,website_title ^
-  | tidy-viewer -u 45
-```
-
 ## resource
 
 ### extra
@@ -121,5 +111,16 @@ linkding --url "http://<your_host>:8002" --token "<token>" bookmarks all -q $1 ^
 [^3]: [ModuleNotFoundError: No module named 'ruamel'](https://github.com/fair-workflows/nanopub/issues/106)
 
 ## annex
+
+```sh
+# Command combo 🤡
+linkding --url "http://<your_host>:8002" --token "<token>" bookmarks all -q $1 ^
+  | jq ".results[]" ^
+  | ramda -c -o csv ^
+  | xsv select tag_names,url,website_title ^
+  | tidy-viewer -u 45
+```
+
+## appdedix
 
 ![linkding](/_image/srv/linkding.png)

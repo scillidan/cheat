@@ -3,5 +3,5 @@
 ## install
 
 1. Get `mpv-handler-*.zip` from [Releases](https://github.com/akiirui/mpv-handler/releases).
-2. Decompress to `mpv-handler/`.
+2. Decompress it to `mpv-handler/`.
 3. Run `mpv-handler/handler-install.bat` as Administrator.

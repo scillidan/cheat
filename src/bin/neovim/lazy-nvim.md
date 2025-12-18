@@ -1,10 +1,10 @@
 # [lazy.nvim](https://github.com/folke/lazy.nvim)
 
-## Personal do
+## install
 
 ```sh
-# Windows 10
-git clone https://github.com/folke/lazy.nvim C:\Users\User\AppData\Local\nvim-data\lazy\lazy.nvim
+# Alternative installation methods on Windows 10
+git clone https://github.com/folke/lazy.nvim %LOCALAPPDATA%\nvim-data\lazy\lazy.nvim
 ```
 
 ## troubleshoot

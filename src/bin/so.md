@@ -1,5 +1,5 @@
 # [so](https://github.com/samtay/so)
 
-## annex
+## appdedix
 
 ![so](/_image/bin/so.png)

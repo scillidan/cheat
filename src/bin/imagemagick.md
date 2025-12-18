@@ -9,7 +9,9 @@ sudo pacman -S imagemagick
 scoop install imagemagick
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
 # Add a border to an image

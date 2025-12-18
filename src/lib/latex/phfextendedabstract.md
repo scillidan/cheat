@@ -18,7 +18,9 @@
 > - 列表，即itemize和enumerate环境，使用enumitem包进行了自定义，以减少空间。您还可以获得一个enumerate*环境，将其项目排版为内联，呈现在一个段落中。（注意，如果您选择通过不包括enumitem的pkgset=选项加载包集，则此自定义将不起作用。）  
 > - 默认情况下，我们加载phfthm包并设置自定义的定理样式，以便其突出而与章节和段落标题形成良好的对比。 [ctan.org/pkg/phfextendedabstract]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 % Bug here

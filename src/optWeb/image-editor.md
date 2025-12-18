@@ -20,6 +20,6 @@ serve -s build -l 4321
 # pm2 serve build 4321 --name image-editor --watch --spa
 ```
 
-## annex
+## appdedix
 
 ![image-editor](/_image/optWeb/image-editor.png)

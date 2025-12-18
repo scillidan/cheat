@@ -23,6 +23,6 @@ scoop install fluent-reader
 
 - #keymap [Fluent Reader](https://github.com/yang991178/fluent-reader/wiki/Support#keyboard-shortcuts)
 
-## annex
+## appdedix
 
 ![fluent-reader](/_image/opt/fluent-reader.png)

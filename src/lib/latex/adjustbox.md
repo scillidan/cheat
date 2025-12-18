@@ -4,7 +4,9 @@
 
 > adjustbox的主要功能是通用的\adjustbox宏，它扩展了graphicx包的\includegraphics的key=value接口，并将其应用于通用文本内容。它还提供进一步的文本/框修改关键字、宏和环境。 [ctan.org/pkg/adjustbox]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{adjustbox}
@@ -16,6 +18,6 @@
 }
 ```
 
-## example
+## reference
 
-[demo.tex](https://github.com/MartinScharrer/adjustbox/blob/main/demo.tex)
+- #file [demo.tex](https://github.com/MartinScharrer/adjustbox/blob/main/demo.tex)

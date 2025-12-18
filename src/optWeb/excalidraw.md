@@ -17,6 +17,6 @@ yarn build
 yarn start
 ```
 
-## annex
+## appdedix
 
 ![excalidraw](/_image/optWeb/excalidraw.png)

@@ -18,6 +18,6 @@ serve -s . -p 4321
 # pm2 serve . 4321 --name minipaint --spa
 ```
 
-## annex
+## appdedix
 
 ![minipaint](/_image/optWeb/minipaint.png)

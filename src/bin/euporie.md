@@ -1,5 +1,5 @@
 # [euporie](https://github.com/joouha/euporie)
 
-## annex
+## appdedix
 
 ![euporie](/_image/bin/euporie.png)

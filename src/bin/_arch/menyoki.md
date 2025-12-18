@@ -6,7 +6,9 @@
 sudo pacman -S menyoki
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
 # Record 30 frames per second and encode as APNG

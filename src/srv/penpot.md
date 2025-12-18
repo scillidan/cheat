@@ -8,6 +8,6 @@ wget https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-c
 sudo docker compose up -d
 ```
 
-## annex
+## appdedix
 
 ![penpot](/_image/srv/penpot.png)

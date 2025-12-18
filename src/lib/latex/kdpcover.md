@@ -4,7 +4,9 @@
 
 > 该类解决的问题是根据书籍的页数更改封面PDF的大小——书籍越大，书脊的宽度就必须越大。提供的类实时进行必要的计算，使用qpdf工具。显然，你需要安装它。此外，你必须使用`--shell-escape`选项运行pdflatex，以允许LaTeX运行qpdf。 [ctan.org/pkg/kdpcover]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass[pages=200,6x9]{kdpcover}

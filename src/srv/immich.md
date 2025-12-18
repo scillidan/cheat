@@ -14,6 +14,6 @@ sudo docker compose up -d
 
 [^1]: [Docker Compose [Recommended]](https://immich.app/docs/install/docker-compose)
 
-## annex
+## appdedix
 
 ![immich](/_image/srv/immich.png)

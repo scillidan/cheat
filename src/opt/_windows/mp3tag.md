@@ -17,6 +17,6 @@ start 'regsvr32' -Verb 'RunAs' -Args @('/u', "C:\Users\User\Scoop\apps\mp3tag\cu
 
 - #sheet [Tag Field Mappings](https://docs.mp3tag.de/mapping/)
 
-## annex
+## appdedix
 
 ![mp3tag](/_image/opt/_windows/mp3tag.png)

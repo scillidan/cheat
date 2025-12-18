@@ -9,10 +9,6 @@ sudo pacman -S lazygit
 scoop install lazygit
 ```
 
-## Personal do
+## annex
 
-```sh
-# Windows 10
-del "%LOCALAPPDATA%\lazygit\config.yml"
-mklink "%LOCALAPPDATA%\lazygit\config.yml" "%DOTFILES_DIR%\.config\lazygit\config.yml"
-```
+- #dotfiles [lazygit/](https://github.com/scillidan/dotfiles/tree/main/.config/lazygit)

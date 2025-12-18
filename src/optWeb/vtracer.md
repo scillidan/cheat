@@ -36,6 +36,6 @@ serve -s . -p 4321
 vtracer -i "$1" -o _vtracer.svg
 ```
 
-## annex
+## appdedix
 
 ![vtracer_webapp](/_image/optWeb/vtracer_webapp.png)

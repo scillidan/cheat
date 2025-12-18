@@ -17,6 +17,6 @@ npm run build
 npm run dev
 ```
 
-## annex
+## appdedix
 
 ![flatdraw](/_image/optWeb/flatdraw.png)

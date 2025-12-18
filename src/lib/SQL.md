@@ -1,6 +1,8 @@
 # SQL
 
-## command
+## usage
+
+### command
 
 ```sql
 -- Generate feed URLs based on subscription type.
@@ -26,3 +28,7 @@ OR `column_3` LIKE '%string%';
 ## reference
 
 - #lession [sql 十四分钟速成班!没错不要怀疑，数据库语法比中午决定吃什麽还要简单! - Youtube](https://www.youtube.com/watch?v=G_zGBR0mQmE)
+
+## annex
+
+- [sqlite_database-file-format.md](https://github.com/scillidan/mark_cheat/blob/main/sqlite_database-file-format.md)

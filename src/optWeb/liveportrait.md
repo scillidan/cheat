@@ -34,6 +34,6 @@ python app.py --flag_do_torch_compile
 
 [^1]: [ERROR: Exception in ASGI application](https://github.com/gradio-app/gradio/issues/10662)
 
-## annex
+## appdedix
 
 ![liveportrait](/_image/optWeb/liveportrait.png)

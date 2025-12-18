@@ -9,6 +9,6 @@ yay -S --noconfirm mp3gain
 
 ### [wxMP3gain](https://github.com/cfgnunes/wxmp3gain)
 
-## annex
+## appdedix
 
 ![mp3gain](/_image/opt/mp3gain.png)

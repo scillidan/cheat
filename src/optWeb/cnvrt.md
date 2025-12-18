@@ -17,6 +17,6 @@ pnpm build
 pnpm start
 ```
 
-## annex
+## appdedix
 
 ![cnvrt](/_image/optWeb/cnvrt.png)

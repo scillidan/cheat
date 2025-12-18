@@ -33,6 +33,6 @@ npm run build
 npm start
 ```
 
-## annex
+## appdedix
 
 ![deepwiki-open](/_image/optWeb/deepwiki-open.png)

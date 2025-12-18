@@ -20,7 +20,7 @@ scoop install alacritty
 sudo pacman -S ueberzugpp
 ```
 
-## setting
+## config
 
 [^1]
 

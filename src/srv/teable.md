@@ -25,7 +25,7 @@ sudo docker compose --env-file .env up -d
 
 [^1]: [Docker Deployment - Teable](https://help.teable.io/en/deploy/docker)
 
-## annex
+## appdedix
 
 ![ai-pdf-summary](/_image/srv/teable/ai-pdf-summary.png)
 ![applicant-tracker](/_image/srv/teable/applicant-tracker.png)

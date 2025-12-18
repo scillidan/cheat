@@ -23,6 +23,6 @@ npm run serve
 3. (Optional) Install PWA.
 4. If you clean up the cache of browser, you need to do it again.
 
-## annex
+## appdedix
 
 ![kiwix-js-pwa](/_image/optWeb/kiwix-js-pwa.png)

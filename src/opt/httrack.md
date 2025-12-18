@@ -1,5 +1,5 @@
 # [HTTrack](https://httrack.com)
 
-## annex
+## appdedix
 
 ![httrack](/_image/opt/httrack.png)

@@ -1,6 +1,6 @@
 # [UmeAiRT - ComfyUI auto installer](https://huggingface.co/UmeAiRT/ComfyUI-Auto_installer)
 
-## Personal do
+## install (Cache) { #install }
 
 Put `file.json` into `ComfyUI/user/default/workflows/`.
 
@@ -70,7 +70,7 @@ pip install sageattention-2.1.1-cp312-cp312-win_amd64.whl
 python main.py --windows-standalone-build --lowvram --use-sage-attention
 ```
 
-## Download models
+### Download models
 
 ```
 # From https://hf-mirror.com/UmeAiRT/ComfyUI-Auto_installer/tree/main/models/diffusion_models/FLUX

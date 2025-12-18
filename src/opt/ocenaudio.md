@@ -9,6 +9,6 @@ yay -S --noconfirm ocenaudio-bin
 scoop install ocenaudio
 ```
 
-## annex
+## appdedix
 
 ![ocenaudio](/_image/opt/ocenaudio.png)

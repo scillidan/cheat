@@ -1,5 +1,5 @@
 # [lessmsi](https://github.com/activescott/lessmsi)
 
-## annex
+## appdedix
 
 ![lessmsi](/_image/opt/_windows/lessmsi.png)

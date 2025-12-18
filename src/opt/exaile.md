@@ -1,5 +1,5 @@
 # [Exaile](https://github.com/exaile/exaile)
 
-## annex
+## appdedix
 
 ![exaile](/_image/opt/exaile.png)

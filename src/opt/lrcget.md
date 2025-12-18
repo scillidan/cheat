@@ -15,7 +15,7 @@
 yay -S --noconfirm lrcget-bin
 ```
 
-## annex
+## appdedix
 
 ![lrcget](/_image/opt/lrcget.png)
 

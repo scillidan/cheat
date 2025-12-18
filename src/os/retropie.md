@@ -182,6 +182,6 @@ sudo systemctl status xow
 [^8]: [RetroPie Docs - Love](https://retropie.org.uk/docs/Love/)
 [^9]: [PyGame LÖVE (love2d) in RecalBox](https://forum.recalbox.com/topic/19222/pygame-l%C3%B6ve-love2d-in-recalbox)
 
-## annex
+## appdedix
 
 ![retropie](/_image/os/retropie.png)

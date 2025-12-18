@@ -7,6 +7,6 @@
 pnpm add -g webtorrent-mpv-hook
 ```
 
-## annex
+## appdedix
 
 ![webtorrent-cli](/_image/opt/mpv/webtorrent-cli.png)

@@ -78,6 +78,6 @@ deb https://mirrors.ustc.edu.cn/debian bullseye-updates main contrib non-free
 [^1]: [Installing Raspberry Pi OS on an NVMe SSD (Command-Line Style)](https://wolfpaulus.com/rp5-cli/)
 [^2]: [USTC Mirror Help - Raspbian](https://mirrors.ustc.edu.cn/help/raspbian.html)
 
-## annex
+## appdedix
 
 ![raspberry-pi-os](/_image/os/raspberry-pi-os.png)

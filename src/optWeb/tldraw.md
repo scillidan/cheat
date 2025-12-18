@@ -18,6 +18,6 @@ yarn dev
 
 Visit `http://localhost:5420/develop`.
 
-## annex
+## appdedix
 
 ![tldraw](/_image/optWeb/tldraw.png)

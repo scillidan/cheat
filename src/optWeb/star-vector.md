@@ -38,6 +38,6 @@ python -m starvector.serve.model_worker --host 127.0.0.1 --controller http://127
 [^1]: [Failed to Install flash-attn==2.7.4.post1 with ModuleNotFoundError: No module named 'torch' on Pre-Configured Image](https://github.com/huggingface/open-r1/issues/282)
 [^2]: [Project installation is obscure and not working](https://github.com/joanrod/star-vector/issues/19)
 
-## annex
+## appdedix
 
 ![star-vector](/_image/optWeb/star-vector.png)

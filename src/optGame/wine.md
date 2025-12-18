@@ -1,6 +1,8 @@
 # [Wine](https://www.winehq.org/)
 
-## command
+## usage
+
+### command
 
 ```sh
 # Uninstall

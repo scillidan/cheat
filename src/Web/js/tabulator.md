@@ -1,9 +1,9 @@
 # [Tabulator](https://tabulator.info)
 
-## example
+## annex
 
 ```js
-# Mini
+// tabulator-example-mini.js
 var table = [
     {:""},
     {:""},
@@ -27,6 +27,7 @@ var table = new Tabulator("#tabulator_", {
 ```
 
 ```js
+// tabulator-example.js
 var minMaxFilterEditor = function (cell, onRendered, success, cancel, editorParams) {
     var end;
     var container = document.createElement("span");

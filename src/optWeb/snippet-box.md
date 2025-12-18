@@ -39,6 +39,6 @@ node server.js
 
 Visit `localhost:5000`.
 
-## annex
+## appdedix
 
 ![snippet-box](/_image/optWeb/snippet-box.png)

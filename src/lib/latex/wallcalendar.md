@@ -20,6 +20,6 @@
 > - 清漆蒙版  
 > 还支持从CSV文件加载事件标记。 [ctan.org/pkg/wallcalendar]
 
-## example
+## reference
 
-[cal-year-planner.tex](https://github.com/profound-labs/wallcalendar/blob/master/doc/examples/cal-year-planner.tex)
+- #file [cal-year-planner.tex](https://github.com/profound-labs/wallcalendar/blob/master/doc/examples/cal-year-planner.tex)

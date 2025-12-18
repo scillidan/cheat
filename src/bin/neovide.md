@@ -14,7 +14,7 @@ sudo pacman -S neovide
 scoop install neovide
 ```
 
-## setting
+## config
 
 [^1]
 
@@ -28,6 +28,8 @@ subl %APPDATA%\neovide\config.toml
 ```
 
 ## usage
+
+### command
 
 ```sh
 # Launch Neovide with specific settings

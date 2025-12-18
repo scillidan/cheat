@@ -42,7 +42,47 @@ starfetch -L
 starfetch orion
 ```
 
-## resource
+## annex
 
-- [summer_triangle(CoderCharmander_starfetch).json](https://gist.github.com/scillidan/83ba8a592eaed7c8256b6e1984c56809)
-- [summer_triangle(Haruno19_starfetch).json](https://gist.github.com/scillidan/773260fba75a1bfc9b203c445d371b55)
+```json
+// summer_triangle.json for https://github.com/Haruno19/starfetch.
+{
+  "title": "──── ｓｍｒｔｇｌ ────",
+  "graph": {
+    "line1": { "5": "✦"},
+    "line2": { "18": "✦"},
+    "line3": {},
+    "line4": {},
+    "line5": {},
+    "line6": {},
+    "line7": {},
+    "line8": {},
+    "line9": { "10": "✦" },
+    "line10": {}
+  },
+  "name": "Summer Triangle",
+  "quadrant": "NQ4",
+  "right ascension": "18h36m56s to 20h41m26s",
+  "declination": "+08°52′06″ to +45°16′49″",
+  "area": "",
+  "main stars": "3"
+}
+```
+
+```json
+// summer_triangle.json for https://github.com/CoderCharmander/starfetch.
+{
+    "title": "──── ｓｍｒｔｇｌ ────",
+    "graph": [
+        [5, 1, "✦"],
+        [18, 2, "✦"],
+        [10, 9, "✦"]
+    ],
+    "name": "Summer Triangle",
+    "quadrant": "NQ4",
+    "right_ascension": "18h36m56s to 20h41m26s",
+    "declination": "+08°52′06″ to +45°16′49″",
+    "area": "null",
+    "main_stars": "3"
+}
+```

@@ -2,6 +2,6 @@
 
 ![](https://img.shields.io/github/license/dmliao/strike) ![](https://img.shields.io/github/last-commit/scillidan/strike/main?label=last%20commit%20(fork))
 
-## annex
+## appdedix
 
 ![strike](/_image/optWeb/strike.png)

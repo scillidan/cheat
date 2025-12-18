@@ -84,7 +84,6 @@
 - #order [FSRS4Anki Helper](https://github.com/open-spaced-repetition/fsrs4anki-helper)
 - #order [FSRS4Anki](https://github.com/open-spaced-repetition/fsrs4anki)
 - #order [Limit New by Young](https://github.com/lune-stone/anki-addon-limit-new-by-young)
-- #post [CSV-to-ANKI](https://github.com/AnkiMonkey/CSV-to-ANKI)
 - #poup [JL](https://github.com/rampaa/JL)
 - #read [Bionic Reading](https://github.com/AnKing-VIP/anki-bionic-reading)
 - #scrap [web-scraping-for-sentence-mining](https://github.com/AtilioA/web-scraping-for-sentence-mining)
@@ -120,4 +119,5 @@
 - [Anki Search Utility](https://github.com/voothi/20240408222910-goldendict-anki-search)
 - [AnkiBrain](https://ankiweb.net/shared/info/1915225457)
 - [AwesomeTTS-AI-Version(unofficial)](https://github.com/sioChannell/AwesomeTTS-AI-Version-unofficial-)
+- [CSV-to-ANKI](https://github.com/AnkiMonkey/CSV-to-ANKI)
 - [Kardenwort](https://github.com/kardenwort/20250913122858-kardenwort)

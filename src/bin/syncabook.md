@@ -71,7 +71,7 @@ mkdir plaintext
 ```
 
 1. For example, download "Alice in Wonderland, Retold in Words of One Syllable" by Carroll and Gorham, the `Plain Text UTF-8` format from [Project Gutenberg](https://www.gutenberg.org/ebooks/19551), rename to `text.txt`.
-2. Download the corresponding book's vocal reading audio files from [LibriVox](https://librivox.org/alice-in-wonderland-retold-in-words-of-one-syllable-by-jc-gorham/), rename to `audio.zip`, then decompress to `audio/`.
+2. Download the corresponding book's vocal reading audio files from [LibriVox](https://librivox.org/alice-in-wonderland-retold-in-words-of-one-syllable-by-jc-gorham/), rename to `audio.zip`, then decompress it to `audio/`.
 3. In `plaintext/`, create a `001_title.txt`.
 4. Open `text.txt`, cut all content that above chapter strings liked `CHAPTER I`, `ACT I` into `001_title.txt`.
 
@@ -102,6 +102,6 @@ sudo docker run --rm -v ~/Git/_/synclibrivox/books:/books -it scillidan/syncaboo
 
 [^1]: [Installing aeneas - Linux](https://github.com/readbeyond/aeneas/blob/master/wiki/INSTALL.md#linux)
 
-## annex
+## appdedix
 
 - [syncabook.mp4](https://scillidan.github.io/media_cheat/bin/syncabook.mp4) ([bilibili](https://www.bilibili.com/video/BV1hJYBzfEpt))

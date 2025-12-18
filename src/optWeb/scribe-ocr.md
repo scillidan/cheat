@@ -12,6 +12,6 @@ npm install
 npx http-server
 ```
 
-## annex
+## appdedix
 
 ![scribe-ocr](/_image/optWeb/scribe-ocr.png)

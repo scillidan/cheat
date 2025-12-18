@@ -1,6 +1,6 @@
 # [tmux-thumbs](https://github.com/fcsonline/tmux-thumbs)
 
-## Personal do
+## install
 
 ```sh
 # Cargo

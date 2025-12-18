@@ -21,20 +21,18 @@ python setup.py install
 # pip install onnxruntime-directml
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
-# CPU
+# CPU mode
 rapid_videocr -o srt -i <rgb_images_dir> -s _output
-```
 
-```sh
-# GPU
+# GPU mode
 uv pip install rapidocr_paddle
 rapid_videocr --use_cuda -o srt -i <rgb_images_dir> -s _output
-```
 
-```sh
 # With VideoSubFinder
 rapid_videocr -vsf "<path_to>\VideoSubFinder\Release_x64\VideoSubFinderWXW.exe" -video_dir "$1"
 ```
@@ -49,6 +47,6 @@ rapid_videocr -vsf "<path_to>\VideoSubFinder\Release_x64\VideoSubFinderWXW.exe" 
 [^2]: [飞桨 - 快速安装](https://www.paddlepaddle.org.cn/install/quick)
 [^3]: [rapidocr_paddle - 安装及使用](https://rapidai.github.io/RapidOCRDocs/install_usage/rapidocr_paddle/usage/)
 
-## annex
+## appdedix
 
 ![rapidvideocr](/_image/optWeb/rapidvideocr.png)

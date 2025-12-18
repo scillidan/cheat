@@ -7,7 +7,9 @@
 sudo pacman -S timidity++
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
 # Convert MIDI file to MP3

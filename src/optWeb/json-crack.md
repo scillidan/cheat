@@ -2,6 +2,6 @@
 
 ![](https://img.shields.io/github/license/AykutSarac/jsoncrack.com)
 
-## annex
+## appdedix
 
 ![json-crack](/_image/optWeb/json-crack.png)

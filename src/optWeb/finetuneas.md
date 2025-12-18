@@ -15,6 +15,6 @@ cd finetuneas
 serve -s . -p 4321
 ```
 
-## annex
+## appdedix
 
 ![finetuneas](/_image/optWeb/finetuneas.png)

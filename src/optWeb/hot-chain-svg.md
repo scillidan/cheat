@@ -16,6 +16,6 @@ yarn
 yarn start
 ```
 
-## annex
+## appdedix
 
 ![hot-chain-svg](/_image/optWeb/hot-chain-svg.png)

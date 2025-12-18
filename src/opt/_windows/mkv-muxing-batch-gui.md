@@ -6,6 +6,6 @@
 choco install -y mkv-muxing-batch-gui
 ```
 
-## annex
+## appdedix
 
 ![mkv-muxing-batch-gui](/_image/opt/mkv-muxing-batch-gui.png)

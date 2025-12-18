@@ -22,6 +22,6 @@ serve -s dist/editor -l 4321
 1. When deploy with [Vercel](https://vercel.com).
 2. The Project → Settings → General → Build & Development Settings → Output Directory → `dist/editor`.
 
-## annex
+## appdedix
 
 ![svgedit](/_image/optWeb/svgedit.png)

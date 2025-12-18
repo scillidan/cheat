@@ -16,6 +16,6 @@ serve -s . -p 4321
 # pm2 serve . 4321 --name git-rawify --spa
 ```
 
-## annex
+## appdedix
 
 ![git-rawify](/_image/optWeb/git-rawify.png)

@@ -6,6 +6,6 @@
 scoop install nohboard
 ```
 
-## annex
+## appdedix
 
 ![nohboard](/_image/opt/_windows/nohboard.png)

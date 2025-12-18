@@ -28,6 +28,6 @@ sudo docker compose up -d
 
 [^1]: [Docker Compose](https://www.audiobookshelf.org/docs/#docker-compose-install)
 
-## annex
+## appdedix
 
 ![audiobookshelf](/_image/srv/audiobookshelf.png)

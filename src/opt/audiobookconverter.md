@@ -53,6 +53,6 @@ Chapter template (Default):
 <if(BOOK_NUMBER)><BOOK_NUMBER>. <endif><if(BOOK_TITLE)><BOOK_TITLE>. <endif><if(CHAPTER_TEXT)><CHAPTER_TEXT> <endif><if(CHAPTER_NUMBER)><CHAPTER_NUMBER; format="%,03d"> <endif><if(TAG)><TAG> <endif><if(CUSTOM_TITLE)><CUSTOM_TITLE> <endif><if(DURATION)> - <DURATION; format="%02d:%02d:%02d"><endif>
 ```
 
-## annex
+## appdedix
 
 ![audiobookconverter](/_image/opt/audiobookconverter.png)

@@ -109,6 +109,6 @@ Create shortcut of `languagetool_service.vbs`, put it into `C:\Users\User\AppDat
 [^2]: [Anyone self-hosting languagetool?](https://www.reddit.com/r/selfhosted/comments/ksvmii/anyone_selfhosting_languagetool/)
 [^3]: [Finding errors using n-gram data](https://dev.languagetool.org/finding-errors-using-n-gram-data)
 
-## annex
+## appdedix
 
 - [languagetool.mp4](https://scillidan.github.io/media_cheat/opt/Browser/languagetool.mp4) ([bilibili](https://www.bilibili.com/video/BV13c411t7QS)

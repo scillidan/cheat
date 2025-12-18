@@ -9,16 +9,6 @@ yay -S --noconfirm espanso-x11-bin
 scoop install espanso
 ```
 
-## Personal do
-
-```sh
-# Windows 10
-rmdir /S /Q "%SCOOP%\apps\espanso\current\.espanso\config"
-mklink /J "%SCOOP%\apps\espanso\current\.espanso\config" "%DOTFILES_DIR%\.config\espanso\config"
-rmdir /S /Q "%SCOOP%\apps\espanso\current\.espanso\match"
-mklink /J "%SCOOP%\apps\espanso\current\.espanso\match" "%DOTFILES_DIR%\.config\espanso\match"
-```
-
 ## reference
 
 - #document [Espanso](https://espanso.org/docs/get-started/)
@@ -29,3 +19,7 @@ mklink /J "%SCOOP%\apps\espanso\current\.espanso\match" "%DOTFILES_DIR%\.config\
 - [All Emojis](https://hub.espanso.org/all-emojis)
 - [Greek Letters based on Latex](https://hub.espanso.org/greek-letters-improved)
 - [Math symbols based on Latex](https://hub.espanso.org/math-symbols)
+
+## annex
+
+- #dotfiles [espanso/](https://github.com/scillidan/dotfiles/tree/main/.config/espanso)

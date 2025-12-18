@@ -6,7 +6,9 @@
 > cleveref包增强了LATEX的交叉引用功能，允许根据交叉引用的“类型”（方程、章节等）和交叉引用使用的上下文自动确定交叉引用的格式。每种交叉引用类型的格式可以在文档的前言中完全自定义。此外，cleveref可以排版多个标签的交叉引用，根据它们的类型自动格式化，排序，并压缩数值连续标签的序列。同样，多个引用的格式化也是完全可自定义的。  
 > 通常，cleveref包的最新版本可以通过CTAN获得。偶尔，稍新一些的“预发布”版本会在www.dr-qubit.org/latex.php#cleveref上提供，稍早于它们上架CTAN。 [ctan.org/pkg/cleveref]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass{article}

@@ -18,7 +18,9 @@
 > - 符合戏剧剧本的常见手稿标准格式，
 > - 与LaTeX的轻松集成，方便编剧准备提交的剧本。 [ctan.org/pkg/stage]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass{stage}

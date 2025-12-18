@@ -17,6 +17,6 @@ npm run build
 serve -s build -p 4321
 ```
 
-## annex
+## appdedix
 
 ![epub-manga-creator](/_image/optWeb/epub-manga-creator.png)

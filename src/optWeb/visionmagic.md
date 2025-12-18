@@ -21,6 +21,6 @@ wasm-pack build
 npm start
 ```
 
-## annex
+## appdedix
 
 ![visionmagic](/_image/optWeb/visionmagic.png)

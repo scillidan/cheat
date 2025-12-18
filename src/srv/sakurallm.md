@@ -37,6 +37,6 @@ python translate_epub.py --trust_remote_code --model_name_or_path models/sakura-
 [^1]: [Sakura模型部署教程-本地运行-Transformers模型](https://github.com/SakuraLLM/tutorial/blob/main/tutorial-local-transformers.md)
 [^2]: [各种推理引擎的使用说明](https://github.com/SakuraLLM/SakuraLLM/blob/main/usage.md)
 
-## annex
+## appdedix
 
 - [sakurallm.mp4](https://scillidan.github.io/media_cheat/srv/sakurallm.mp4) ([bilibili](https://www.bilibili.com/video/BV1V1421X7zL))

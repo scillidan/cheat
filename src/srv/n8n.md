@@ -65,7 +65,7 @@ sudo docker compose up -d
 
 [^1]: [Server setups - Docker-Compose](https://docs.n8n.io/hosting/installation/server-setups/docker-compose/)
 
-## annex
+## appdedix
 
 ![n8n_01](/_image/srv/n8n_01.png)
 ![n8n_02](/_image/srv/n8n_02.png)

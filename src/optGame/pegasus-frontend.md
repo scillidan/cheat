@@ -64,13 +64,6 @@ launch: "/home/<user>/RetroArch/retroarch" -L "/home/<user>/RetroArch/cores/flyc
 - [Retro BIOSes](https://github.com/Abdess/retroarch_system)
 - [RetroArch asset server](https://github.com/NickHeap2/retroarch-asset-server)
 
-## cross-reference
-
-### extra
-
-- #script [init_pegasus.bat](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.bat)
-- #script [init_pegasus.sh](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.sh)
-
 ## resource
 
 ### mark
@@ -89,6 +82,11 @@ launch: "/home/<user>/RetroArch/retroarch" -L "/home/<user>/RetroArch/cores/flyc
 - #theme [Slick theme for Pegasus](https://github.com/buzz/pegasus-theme-slick)
 
 ## annex
+
+- [init_pegasus.bat](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.bat)
+- [init_pegasus.sh](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.sh)
+
+## appdedix
 
 ![pegasus-g](/_image/optGame/pegasus-g.png)
 

@@ -6,6 +6,6 @@
 
 - [QOwnNotes Web Companion](https://github.com/qownnotes/web-companion)
 
-## annex
+## appdedix
 
 ![qownnotes](/_image/opt/qownnotes.png)

@@ -31,7 +31,7 @@ Get `kokoro-v0_19.pth` from [hexgrad/kLegacy](https://huggingface.co/hexgrad/kLe
 
 [^1]: [https://github.com/Mithadon/obsidian-kokoro-tts-plugin#manual-installation](https://github.com/Mithadon/obsidian-kokoro-tts-plugin#manual-installation)
 
-## annex
+## appdedix
 
 ![obsidian-kokoro-tts-plugin_01](/_image/opt/obsidian/obsidian-kokoro-tts-plugin_01.png)
 ![obsidian-kokoro-tts-plugin_02](/_image/opt/obsidian/obsidian-kokoro-tts-plugin_02.png)

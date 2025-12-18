@@ -6,7 +6,9 @@
 > 该包名为oPlotSymbl，包含一些不易获得的符号。这些符号主要用于科学绘图，但潜在用户可以以其他方式使用它们。  
 > 该包使用TikZ和xcolor。 [ctan.org/pkg/oplotsymbl]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{oplotsymbl}

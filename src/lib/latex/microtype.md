@@ -10,7 +10,9 @@
 > 请注意，字符突出需要pdfTeX、LuaTeX或XeTeX。字体扩展可以在pdfTeX或LuaTeX下工作。该包默认启用突出和扩展功能，如果可以安全地假定它们可以正常工作。禁用连字需要pdfTeX或LuaTeX，而单词间距和字距的调整仅在pdfTeX下有效。字母间距在pdfTeX、LuaTeX或XeTeX下可用。  
 > 替代包“letterspace”也支持plain TeX，仅提供字母间距的用户命令，省略对所有其他扩展的支持。 [ctan.org/pkg/microtype]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass{article}

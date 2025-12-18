@@ -19,6 +19,6 @@ serve -s dist/svg-path-editor -l 4321
 
 If app take up `4321` port, visit `chrome://serviceworker-internals/?devtools` and unregister it.
 
-## annex
+## appdedix
 
 ![svg-path-editor](/_image/optWeb/svg-path-editor.png)

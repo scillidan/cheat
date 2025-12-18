@@ -10,6 +10,6 @@ scoop install ffmpeg-batch
 
 - 流多路复用 → 字幕轨 → 保存轨道
 
-## annex
+## appdedix
 
 ![ffmpeg-batch](/_image/opt/_windows/ffmpeg-batch.png)

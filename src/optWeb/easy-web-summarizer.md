@@ -25,6 +25,6 @@ python app/webui.py -u <url>
 python app/webui.py
 ```
 
-## annex
+## appdedix
 
 ![easy-web-summarizer](/_image/optWeb/easy-web-summarizer.png)

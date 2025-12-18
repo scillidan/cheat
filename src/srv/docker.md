@@ -97,7 +97,7 @@ sudo docker run -p 8080:80 --rm nginx
 sudo docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 ```
 
-## command
+### command
 
 ```sh
 # Update

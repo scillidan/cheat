@@ -9,6 +9,6 @@ yay -S --noconfirm fastflix-bin
 scoop install fastflix
 ```
 
-## annex
+## appdedix
 
 ![fastflix](/_image/opt/fastflix.png)

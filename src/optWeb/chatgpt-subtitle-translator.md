@@ -20,6 +20,6 @@ npm run dev
 
 Visit `http://localhost:3000/chatgpt-subtitle-translator`.
 
-## annex
+## appdedix
 
 ![chatgpt-subtitle-translator](/_image/optWeb/chatgpt-subtitle-translator.png)

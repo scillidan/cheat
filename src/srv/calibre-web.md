@@ -71,6 +71,6 @@ sudo systemctl enable --now calibre-web
 - [Calibre-Web Automated](https://github.com/crocodilestick/Calibre-Web-Automated)
 - [Calibre-Web-Automated-Book-Downloader](https://github.com/calibrain/calibre-web-automated-book-downloader)
 
-## annex
+## appdedix
 
 ![calibre-web](/_image/srv/calibre-web.png)

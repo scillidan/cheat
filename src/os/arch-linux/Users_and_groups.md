@@ -1,14 +1,14 @@
 # [Users and groups](https://wiki.archlinux.org/title/Users_and_groups)
 
-## command
+## usage
+
+### command
 
 ```sh
 # Add user
 sudo useradd -m <user>
 sudo passwd <user>
-```
 
-```sh
 # Add group
 sudo addgroup sudousers
 # Add user into group

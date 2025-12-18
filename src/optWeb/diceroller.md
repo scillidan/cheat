@@ -20,6 +20,6 @@ npm run build
 npm run start
 ```
 
-## annex
+## appdedix
 
 ![diceroller](/_image/optWeb/diceroller.png)

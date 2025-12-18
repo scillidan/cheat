@@ -24,7 +24,9 @@ sudo /usr/local/texlive/2024/bin/x86_64-linux/tlmgr update --all
 termux-install-tl
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
 tlmgr search --global <pkg>

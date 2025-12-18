@@ -4,6 +4,6 @@
 
 Comment out the line about `Inter-Light`, `Inter-SemiBold` in `src/app/utils/og-generator.tsx`.
 
-## annex
+## appdedix
 
 ![quickpic](/_image/optWeb/quickpic.png)

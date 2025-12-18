@@ -7,6 +7,6 @@
 yay -S --noconfirm garlmap
 ```
 
-## annex
+## appdedix
 
 ![garlmap](/_image/opt/garlmap.png)

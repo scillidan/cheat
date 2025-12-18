@@ -1,5 +1,5 @@
 # [PDFsam](https://github.com/torakiki/pdfsam)
 
-## annex
+## appdedix
 
 ![pdfsam](/_image/opt/pdfsam.png)

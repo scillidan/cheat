@@ -8,5 +8,7 @@
 
 ## Todo
 
-- Clear tags in `_resource.md` and `## resource`.
-- Name the markdown file name using pkgname or abbreviation.
+- Take a snapshot(screenshot) and re-create repository.
+- Clear tag of `resource`.
+- Name the markdown file using pkgname, repository name, etc..
+- Format tag of reference and title name.

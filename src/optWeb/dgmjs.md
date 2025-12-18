@@ -17,6 +17,6 @@ npm build
 npm run dev
 ```
 
-## annex
+## appdedix
 
 ![dgmjs](/_image/optWeb/dgmjs.png)

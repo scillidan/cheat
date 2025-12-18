@@ -6,7 +6,9 @@
 > LaTeX表格是通过TeX命令如\halign、\noalign、\span和\omit来实现的。为了实现新特性，许多宏包修改了LaTeX内部的表格命令。这使得宏包的代码变得复杂，难以维护，并且经常相互冲突。  
 > 目前，LaTeX3编程层基本上已经成熟。这个tabularray包将抛弃旧的\halign命令，直接使用LaTeX3函数来解析表格，然后排版整个表格。在与LaTeX2表格基本语法兼容的前提下，这个宏包将完全分离表格的内容和样式，表格的样式可以完全通过键值方式设置。 [ctan.org/pkg/tabularray]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass{article}

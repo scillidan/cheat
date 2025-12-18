@@ -33,6 +33,6 @@ python gradio_app.py
 
 [^1]: [[bug]: Error caught was: No module named 'triton'](https://github.com/invoke-ai/InvokeAI/issues/2611)
 
-## annex
+## appdedix
 
 ![tooncrafter](/_image/optWeb/tooncrafter.png)

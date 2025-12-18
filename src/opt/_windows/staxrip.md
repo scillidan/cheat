@@ -14,9 +14,9 @@ scoop install staxrip
 
 ## reference
 
-- [StaxRip烧录硬字幕踩坑记录](https://sspai.com/post/88056)
-- [x265-encoding-tutorial](https://staxrip.github.io/x265-encoding-tutorial/)
+- #blog [StaxRip烧录硬字幕踩坑记录](https://sspai.com/post/88056)
+- #guide [x265-encoding-tutorial](https://staxrip.github.io/x265-encoding-tutorial/)
 
-## annex
+## appdedix
 
 - [staxrip.mp4](https://scillidan.github.io/media_cheat/opt/_windows/staxrip.mp4) ([bilibili](https://www.bilibili.com/video/BV15Ti2YHEAP))

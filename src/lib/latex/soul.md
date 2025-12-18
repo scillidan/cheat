@@ -4,7 +4,9 @@
 
 > 这个版本是原始软件包soul（版本2.5，与2003年的版本2.4相比，包含了一些小的修正）和soulutf8的合并，后者增加了对UTF-8的支持。即，输入编码utf8.def来自软件包inputenc，软件包ucs的utf8x.def也得到了支持。原始的soul软件包已经更名为soul-ori，并仍然被加载。其文档仍然适用。 [ctan.org/pkg/soul]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass{article}

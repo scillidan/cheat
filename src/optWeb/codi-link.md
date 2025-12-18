@@ -17,6 +17,6 @@ npm run build
 serve -s dist -p 4321
 ```
 
-## annex
+## appdedix
 
 ![codi-link](/_image/optWeb/codi-link.png)

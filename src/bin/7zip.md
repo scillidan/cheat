@@ -11,14 +11,14 @@ scoop install 7zip
 sudo pacman -S p7zip-full
 ```
 
-## command
+## usage
+
+### command
 
 ```sh
 # Decomporess with password
 7z x $1 -p"<password>"
-```
 
-```sh
 # Compress with volume size is 10m
 7z a -v10m <compress_dir>.7z <compress_dir>
 ```

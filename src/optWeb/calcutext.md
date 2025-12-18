@@ -19,6 +19,6 @@ npm run build
 serve -s build -p 4321
 ```
 
-## annex
+## appdedix
 
 ![calcutext](/_image/optWeb/calcutext.png)

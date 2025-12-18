@@ -10,7 +10,9 @@
 > - 手动放置，使用`\parnotes`命令  
 > 该包的灵感来源于TEX Stack Exchange上的一个问题，该问题询问如何将注释放在提到它们的段落后，以避免脚注带来的干扰。 [ctan.org/pkg/parnotes]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{parnotes}
@@ -23,6 +25,6 @@ Text\parnote{``Placing footnotes or endnotes at the end of the current paragraph
 \parnotes
 ```
 
-## example
+## reference
 
-[parnotes.tex](https://github.com/FrankMittelbach/fmitex-parnotes/blob/main/parnotes.tex)
+- #file [parnotes.tex](https://github.com/FrankMittelbach/fmitex-parnotes/blob/main/parnotes.tex)

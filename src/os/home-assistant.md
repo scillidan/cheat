@@ -6,6 +6,6 @@
 - [Xiaomi Home Integration for Home Assistant](https://github.com/XiaoMi/ha_xiaomi_home)
 - [Android TV Remote](https://www.home-assistant.io/integrations/androidtv_remote/)
 
-## annex
+## appdedix
 
 ![home-assistant](/_image/srv/home-assistant.png)

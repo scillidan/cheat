@@ -18,6 +18,6 @@ npm run build-prod
 
 Open `./demos/default.html`.
 
-## annex
+## appdedix
 
 ![reportbro-designer](/_image/optWeb/reportbro-designer.png)

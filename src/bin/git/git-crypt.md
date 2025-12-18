@@ -30,7 +30,7 @@ git-crypt status
 git-crypt unlock <path_to>/git-crypt_key_<repo>
 ```
 
-## Personal do
+### With chezmoi
 
 ```sh
 chezmoi init

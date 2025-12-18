@@ -10,7 +10,9 @@
 > ImageMagick的集成允许您配置位图图形的压缩和锐化，以导出文档的网页、打印或预览版本。并行图像优化、缓存和草稿模式使得即使对于包含大量照片和图形的大型文档也能快速创建PDF并实现高效的工作流程。  
 > pagelayout类还集成了PGF/TikZ和tcolorbox LaTeX包。 [ctan.org/pkg/pagelayout]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \documentclass[draft,grid,graphpaper,preflight,optimize={density=600}]{pagelayout}

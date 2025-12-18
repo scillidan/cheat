@@ -19,6 +19,6 @@ set USE_TORCH=1
 streamlit run demo/app.py
 ```
 
-## annex
+## appdedix
 
 ![doctr](/_image/optWeb/doctr.png)

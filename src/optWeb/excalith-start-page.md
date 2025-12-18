@@ -17,6 +17,6 @@ yarn dev
 # pm2 start yarn --watch --name "excalith-start-page" -- dev
 ```
 
-## annex
+## appdedix
 
 ![excalith-start-page](/_image/optWeb/excalith-start-page.png)

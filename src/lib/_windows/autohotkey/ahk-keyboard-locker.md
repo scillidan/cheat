@@ -5,7 +5,7 @@
 ```sh
 git clone --depth=1 https://github.com/sophice/ahk-keyboard-locker
 cd ahk-keyboard-locker
-<path_to>\autohotkey1.1\AutoHotkeyU64.exe keyboard-locker.ahk
+autohotkeyu64 keyboard-locker.ahk
 ```
 
 ## config

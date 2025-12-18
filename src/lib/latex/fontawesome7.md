@@ -8,7 +8,9 @@
 > 加载包后，要使用图标，只需输入图标名称，使用CamelCase并以`\fa`为前缀，例如`\faAddressBook`用于地址簿图标。  
 > TeX文件源自Font Awesome 5包，由Daniel Nagel维护，并根据LaTeX项目公共许可证第1.3c版发布。所有包含的字体均由Fort Awesome根据SIL OFL 1.1许可证提供。该包不是Fort Awesome的官方项目。 [ctan.org/pkg/fontawesome7]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{fontawesome7}
@@ -25,6 +27,6 @@ Alternative syntax:
 	\faIcon[regular]{file}~.
 ```
 
-## example
+## reference
 
-[fontawesome6.tex](https://github.com/braniii/fontawesome/blob/main/fontawesome6/doc/fontawesome6.tex)
+- #file [fontawesome6.tex](https://github.com/braniii/fontawesome/blob/main/fontawesome6/doc/fontawesome6.tex)

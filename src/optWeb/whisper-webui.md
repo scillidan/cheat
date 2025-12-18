@@ -31,6 +31,6 @@ set DIARIZATION_MODEL_DIR="<path_to>\Whisper-WebUI\models"
 user-start-webui.bat
 ```
 
-## annex
+## appdedix
 
 ![whisper-webui](/_image/optWeb/whisper-webui.png)

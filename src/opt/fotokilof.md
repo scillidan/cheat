@@ -1,5 +1,5 @@
 # [FotoKilof](https://github.com/TeaM-TL/FotoKilof)
 
-## annex
+## appdedix
 
 ![fotokilof](/_image/opt/fotokilof.png)

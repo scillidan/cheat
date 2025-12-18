@@ -43,6 +43,6 @@ sudo docker compose up -d
 [^1]: [Docker using the Installation Script](https://docs.paperless-ngx.com/setup/#docker_script)
 [^2]: [Paperless-ngx - Bare Metal Route](https://docs.paperless-ngx.com/setup/#bare_metal)
 
-## annex
+## appdedix
 
 ![paperless-ngx](/_image/srv/paperless-ngx.png)

@@ -19,6 +19,6 @@ serve -s docs -p 4321
 
 If app take up `4321` port, visit `chrome://serviceworker-internals/?devtools` and unregister it.
 
-## annex
+## appdedix
 
 ![sketch-to-lineart](/_image/optWeb/sketch-to-lineart.png)

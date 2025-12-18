@@ -1,5 +1,5 @@
 # [musikcube](https://musikcube.com)
 
-## annex
+## appdedix
 
 ![musikcube](/_image/bin/musikcube.png)

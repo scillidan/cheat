@@ -45,7 +45,7 @@ OLLAMA = "http://127.0.0.1:11434"
 [^1]: [How to Contribute to Perplexica](https://github.com/ItzCrazyKns/Perplexica/blob/master/CONTRIBUTING.md)
 [^2]: [Getting Started with Docker (Recommended)](https://github.com/ItzCrazyKns/Perplexica#getting-started-with-docker-recommended)
 
-## annex
+## appdedix
 
 ![perplexica](/_image/optWeb/perplexica.png)
 ![perplexity](/_image/optWeb/perplexity.png)

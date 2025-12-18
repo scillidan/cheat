@@ -162,6 +162,6 @@ sudo apt-get remove --purge postgresql-16
 [^6]: [How To Completely Uninstall PostgreSQL](https://kb.objectrocket.com/postgresql/how-to-completely-uninstall-postgresql-757)
 [^7]: [Linux downloads (Ubuntu)](https://www.postgresql.org/download/linux/ubuntu/)
 
-## annex
+## appdedix
 
 ![miniflux](/_image/srv/miniflux.png)

@@ -16,6 +16,6 @@ npm install
 serve -s . -p 4321
 ```
 
-## annex
+## appdedix
 
 ![programmingfonts](/_image/optWeb/programmingfonts.png)

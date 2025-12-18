@@ -13,6 +13,6 @@ Service Management Menu → Start Service
 
 [^1]: [Self Hosting - Auto-Upstall](https://docs.nocodb.com/getting-started/self-hosted/installation/auto-upstall)
 
-## annex
+## appdedix
 
 ![nocodb](/_image/srv/nocodb.png)

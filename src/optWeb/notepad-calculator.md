@@ -13,6 +13,6 @@ cd notepad-calculator
 
 Open `index.html`.
 
-## annex
+## appdedix
 
 ![notepad-calculator](/_image/optWeb/notepad-calculator.png)

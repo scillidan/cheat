@@ -24,6 +24,6 @@ sudo docker compose up -d
 
 [^1]: [Install Langflow](https://docs.langflow.org/get-started-installation)
 
-## annex
+## appdedix
 
 ![langflow](/_image/optWeb/langflow.png)

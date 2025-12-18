@@ -19,6 +19,6 @@ pnpm dev:playground -- -p 4321
 # set PORT=4321 && pm2 start -n "satori" --cwd "./" "./node_modules/turbo/bin/turbo" -- dev --filter=satori-playground...
 ```
 
-## annex
+## appdedix
 
 ![satori](/_image/optWeb/satori.png)

@@ -1,5 +1,5 @@
 # [Kristall](https://github.com/MasterQ32/kristall)
 
-## annex
+## appdedix
 
 ![kristall](/_image/opt/kristall.png)

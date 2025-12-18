@@ -25,6 +25,6 @@ yay -S --noconfirm ventoy-bin
 scoop install ventoy
 ```
 
-## annex
+## appdedix
 
 ![ventoy](/_image/opt/ventoy.png)

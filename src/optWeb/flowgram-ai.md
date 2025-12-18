@@ -22,6 +22,6 @@ rush dev:demo-fixed-layout
 rush dev:demo-free-layout
 ```
 
-## annex
+## appdedix
 
 ![flowgram-ai](/_image/optWeb/flowgram-ai.png)

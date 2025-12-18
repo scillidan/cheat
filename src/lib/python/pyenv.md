@@ -37,15 +37,6 @@ source ~/.zshrc
 git clone --depth=1 https://github.com/pyenv-win/pyenv-win ~/.pyenv
 ```
 
-## Personal do
-
-```sh
-pyenv install 3.11-dev
-pyenv global 3.11-dev
-pyenv shell 3.11-dev
-pip install build wheel
-```
-
 ## usage
 
 ```sh
@@ -57,11 +48,15 @@ pip install build wheel
 pyenv install -l | findstr 3.11
 pyenv install 3.11.9
 pyenv shell 3.11
+# pyenv install 3.11-dev
+# pyenv global 3.11-dev
+# pyenv shell 3.11-dev
+# pip install build wheel
 ```
 
-## requirement
+## reference
 
-- [Build older python package - 3.9](https://github.com/termux/termux-packages/discussions/9498)
+- #issue [Build older python package - 3.9](https://github.com/termux/termux-packages/discussions/9498)
 
 [^1]: [ubuntu에서 pyenv 설치하기](https://jinmay.github.io/2019/03/16/linux/ubuntu-install-pyenv-1/)
 [^2]: [pyenv install: 3.x BUILD FAILED (Ubuntu 20.04 using python-build 20180424)](https://stackoverflow.com/questions/67807596/pyenv-install-3-x-build-failed-ubuntu-20-04-using-python-build-20180424)

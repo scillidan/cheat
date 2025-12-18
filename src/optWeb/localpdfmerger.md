@@ -30,6 +30,6 @@ subl package.json
 }
 ```
 
-## annex
+## appdedix
 
 ![localpdfmerger](/_image/optWeb/localpdfmerger.png)

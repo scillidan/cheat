@@ -4,7 +4,9 @@
 
 > 该包旨在自动格式化菜单序列、路径和键盘快捷键。它提供了几种预定义的样式，并且用户可以以灵活的方式定义自己的样式。 [ctan.org/pkg/menukeys]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{menukeys}

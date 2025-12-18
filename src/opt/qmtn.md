@@ -1,9 +1,9 @@
 # [qmtn](https://gitlab.com/movie_thumbnailer/qmtn)
 
-## preset
+## annex
 
 ```json
-// 4x4
+// qmtn-4x4.json
 {
     "additional": "",
     "background": "#000000",

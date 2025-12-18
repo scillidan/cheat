@@ -21,6 +21,6 @@ npm run serve
 1. When deploy with [Vercel](https://vercel.com).
 2. The Project → Settings → General → Build & Development Settings → Output Directory → `docs`.
 
-## annex
+## appdedix
 
 ![signature_pad](/_image/optWeb/signature_pad.png)

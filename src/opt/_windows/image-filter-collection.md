@@ -1,5 +1,5 @@
 # [Image Filter Collection](https://github.com/Salmakis/ImageFilterCollection)
 
-## annex
+## appdedix
 
 ![image-filter-collection](/_image/opt/_windows/image-filter-collection.png)

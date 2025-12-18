@@ -78,6 +78,6 @@ sudo docker compose --env-file .env up -d
 [^1]: [Deploy with Docker Compose](https://docs.dify.ai/getting-started/install-self-hosted/docker-compose)
 [^2]: [本地部署Dify基于Llama 3.1和OpenAI创建聊天机器人与知识库](https://dify101.com/market/marketing-copy-clone-machine)
 
-## annex
+## appdedix
 
 ![dify](/_image/srv/dify.png)

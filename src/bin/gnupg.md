@@ -12,7 +12,7 @@ sudo pacman -S gnupg
 gpg --full-generate-key
 ```
 
-## command
+### command
 
 ```sh
 # Create a GnuPG directory and sync files from the user's GnuPG directory.

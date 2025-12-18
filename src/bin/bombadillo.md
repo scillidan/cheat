@@ -1,5 +1,5 @@
 # [Bombadillo](https://bombadillo.colorfield.space)
 
-## annex
+## appdedix
 
 ![bombadillo](/_image/bin/_arch/bombadillo.png)

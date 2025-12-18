@@ -13,15 +13,9 @@ sudo pacman -S yt-dlp
 scoop install yt-dlp
 ```
 
-## Personal do
+## usage
 
-[^1]
-
-1. Get `yt-dlp-ChromeCookieUnlock.zip` from [release](https://github.com/seproDev/yt-dlp-ChromeCookieUnlock).
-2. Decompress it to `yt-dlp-ChromeCookieUnlock/`.
-3. (Windows 10) Move `yt-dlp-ChromeCookieUnlock\` into `C:\Users\User\AppData\Roaming\yt-dlg\plugins\`.
-
-## command
+### command
 
 ```sh
 # List available formats for a given URL
@@ -37,9 +31,17 @@ yt-dlp -f bestvideo+bestaudio "<url_1>"
 yt-dlp -x --audio-format mp3 --audio-quality 320k -o "%(title)s.%(ext)s" "<url_1>"
 ```
 
+## troubleshoot
+
+[^1]
+
+1. Get `yt-dlp-ChromeCookieUnlock.zip` from [release](https://github.com/seproDev/yt-dlp-ChromeCookieUnlock).
+2. Decompress it to `yt-dlp-ChromeCookieUnlock/`.
+3. Move `yt-dlp-ChromeCookieUnlock\` into `C:\Users\User\AppData\Roaming\yt-dlg\plugins\`.
+
 [^1]: [Installing Plugins](https://github.com/yt-dlp/yt-dlp#installing-plugins)
 [^2]: [[YT-DLP] How to automatically convert all audio downloads to mp3/m4a/aac (either one) and all video downloads to mp4/mov (or whatever)?](https://www.reddit.com/r/youtubedl/comments/130i9og/ytdlp_how_to_automatically_convert_all_audio/)
 
-## annex
+## appdedix
 
 - [yt-dlp.mp4](https://scillidan.github.io/media_cheat/bin/yt-dlp.mp4) ([bilibili](https://www.bilibili.com/video/BV1QJYBzfEPw))

@@ -17,6 +17,6 @@ yarn build
 yarn dev
 ```
 
-## annex
+## appdedix
 
 ![etytree](/_image/optWeb/etytree.png)

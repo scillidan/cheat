@@ -15,6 +15,6 @@ npm run build
 
 Open `./docs/index.html`.
 
-## annex
+## appdedix
 
 ![drawflow](/_image/optWeb/drawflow.png)

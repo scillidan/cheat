@@ -4,7 +4,9 @@
 
 > 该包为希望将其文档以知识共享许可证发布的作者提供了一种简单的方式，以便在其文档中包含相关图标。 [ctan.org/pkg/ccicons]
 
-## quickstart
+## usage
+
+### example
 
 ```tex
 \usepackage{ccicons}

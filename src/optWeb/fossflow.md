@@ -1,5 +1,5 @@
 # [FossFLOW](https://github.com/stan-smith/FossFLOW)
 
-## annex
+## appdedix
 
 ![fossflow](/_image/optWeb/fossflow.png)

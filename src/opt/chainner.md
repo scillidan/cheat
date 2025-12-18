@@ -46,7 +46,7 @@ webui-user.bat --api
 
 [^1]: [chaiNNer does not respect system proxy settings](https://github.com/chaiNNer-org/chaiNNer/issues/3043)
 
-## annex
+## appdedix
 
 ![chainner](/_image/opt/chainner.png)
 

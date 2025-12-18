@@ -1,5 +1,5 @@
 # [ttydBridge](https://github.com/Cp0204/ttydBridge)
 
-## annex
+## appdedix
 
 ![ttydbridge](/_image/srv/ttydbridge.png)

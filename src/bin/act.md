@@ -14,6 +14,6 @@ act -n
 act
 ```
 
-## annex
+## appdedix
 
 ![act](/_image/bin/_arch/act.png)

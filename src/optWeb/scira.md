@@ -22,6 +22,6 @@ pnpm dev
 sudo docker compose --env-file .env up -d
 ```
 
-## annex
+## appdedix
 
 ![scira](/_image/optWeb/scira.png)

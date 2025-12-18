@@ -110,6 +110,6 @@ sudo docker compose up -d
 
 - [calibre.md](/opt/calibre.md)
 
-## annex
+## appdedix
 
 ![silverdict](/_image/srv/silverdict.png)

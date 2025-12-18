@@ -19,6 +19,6 @@ python changedetection.py
 # pm2 start changedetection.py --name changedetection --interpreter ".venv/Scripts/python.exe" --cwd "changedetection.io"
 ```
 
-## annex
+## appdedix
 
 ![changedetection](/_image/optWeb/changedetection.png)

@@ -7,6 +7,6 @@
 pnpm add -g npms-cli
 ```
 
-## annex
+## appdedix
 
 ![npms-cli](/_image/bin/npms-cli.png)

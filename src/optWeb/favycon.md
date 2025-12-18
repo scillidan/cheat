@@ -27,6 +27,6 @@ yarn build
 yarn start -- -p 4321
 ```
 
-## annex
+## appdedix
 
 ![favycon](/_image/optWeb/favycon.png)
