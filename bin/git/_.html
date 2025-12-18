@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-2c291c15.js";
+            window.path_to_searchindex_js = "../../searchindex-f3365505.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-4555c70f.js"></script>
+        <script src="../../toc-805fbdd1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -187,46 +187,40 @@ sudo pacman -S git
 # Windows 10
 scoop install git
 </code></pre>
-<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
 <pre><code class="language-sh"># Linux
 git config --global core.autocrlf input
 # Windows
 git config --global core.autocrlf true
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
-<h3 id="config"><a class="header" href="#config">config</a></h3>
-<pre><code class="language-sh">git config --global user.email "user@email.com"
+<h3 id="command"><a class="header" href="#command">command</a></h3>
+<pre><code class="language-sh"># Config
+git config --global user.email "user@email.com"
 git config --global user.name "username"
 </code></pre>
-<h3 id="init"><a class="header" href="#init">Init</a></h3>
-<pre><code class="language-sh">git init
+<pre><code class="language-sh"># Init
+git init
 git remote add origin https://github.com/&lt;user&gt;/&lt;repo&gt;
 git branch -M main
 </code></pre>
-<h3 id="push"><a class="header" href="#push">Push</a></h3>
-<pre><code class="language-sh"># git diff
+<pre><code class="language-sh"># Push
+# git diff
 git add &lt;file1&gt; &lt;dir1&gt; &lt;dir2&gt;
 # git status
 git commit -m "&lt;commit_info&gt;"
 # git push -u origin main
 git push
 </code></pre>
-<h3 id="pull"><a class="header" href="#pull">Pull</a></h3>
-<pre><code class="language-sh"># git pull origin main
+<pre><code class="language-sh"># Pull
+# git pull origin main
 git pull
 </code></pre>
-<h3 id="push-tag"><a class="header" href="#push-tag">Push tag</a></h3>
-<pre><code class="language-sh"># git tag -d v0.0.1
+<pre><code class="language-sh"># Push tag
+# git tag -d v0.0.1
 # git push --delete origin v0.0.1
 git tag v0.0.1
 git push origin v0.0.1
-</code></pre>
-<h3 id="other"><a class="header" href="#other">Other</a></h3>
-<pre><code class="language-sh">git config --global http.proxy "socks5://127.0.0.1:&lt;port&gt;"
-git config --global --unset http.proxy
-</code></pre>
-<pre><code class="language-sh">git config --global http.sslVerify true
-git config --global http.sslVerify false
 </code></pre>
 <pre><code class="language-sh"># Undo and re-push
 git fetch --all
@@ -236,24 +230,30 @@ git push --force origin &lt;branch&gt;
 </code></pre>
 <pre><code class="language-sh"># Rebase the above 3 commit
 git rebase -i HEAD~3
+# Then edit the following.
+# pick &lt;the first commit&gt;
+# squash &lt;will merge into first commit&gt;
+# squash &lt;will merge into first commit&gt;
 </code></pre>
-<pre><code>pick &lt;the first commit&gt;
-squash &lt;will merge into first commit&gt;
-squash &lt;will merge into first commit&gt;
+<pre><code class="language-sh"># Other
+git config --global http.proxy "socks5://127.0.0.1:&lt;port&gt;"
+git config --global --unset http.proxy
+git config --global http.sslVerify false
+git config --global http.sslVerify true
 </code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
 <li>#blog <a href="https://blog.brachiosoft.com/en/posts/git/">A Git story: Not so fun this time</a></li>
+<li>#blog <a href="https://github.com/MarcDiethelm/contributing">Contributing</a></li>
 <li>#blog <a href="https://lambdaland.org/posts/2025-11-18_federate_your_forges/">Federate Away From GitHub</a></li>
 <li>#blog <a href="https://cadence.moe/blog/2022-07-03-git-forge-opinions-github-gitlab-gitea-sourcehut">Git forge opinions: GitHub, GitLab, Gitea, Sourcehut</a></li>
 <li>#guide <a href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository">Adding a license to a repository</a></li>
+<li>#blog <a href="https://sfconservancy.org/blog/2021/jun/30/who-should-own-foss-copyrights/">It Matters Who Owns Your Copylefted Copyrights</a></li>
 <li>#guide <a href="https://github.com/linrongbin16/fzfx.nvim?tab=readme-ov-file#git-for-windows">Git for Windows</a></li>
 <li>#guide <a href="https://maurycyz.com/misc/easy_git/">You already have a git server:</a></li>
 <li>#lesson <a href="https://www.conventionalcommits.org">Conventional Commits</a></li>
 <li>#lesson <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a></li>
 <li>#lesson <a href="https://semver.org">Semantic Versioning</a></li>
-<li>#post <a href="https://github.com/MarcDiethelm/contributing">Contributing</a></li>
-<li>#post <a href="https://sfconservancy.org/blog/2021/jun/30/who-should-own-foss-copyrights/">It Matters Who Owns Your Copylefted Copyrights</a></li>
 </ul>
 <h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
 <h3 id="mark"><a class="header" href="#mark">mark</a></h3>

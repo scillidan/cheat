@@ -35,10 +35,10 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-2c291c15.js";
+            window.path_to_searchindex_js = "../../../searchindex-f3365505.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../../toc-4555c70f.js"></script>
+        <script src="../../../toc-805fbdd1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -190,16 +190,6 @@
 <h2 id="install"><a class="header" href="#install">install</a></h2>
 <pre><code class="language-sh">sudo pacman -S zsh zsh-completions
 </code></pre>
-<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh">sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth=1 https://github.com/subnixr/minimal  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/minimal
-git clone --depth=1 https://github.com/const-void/rose-pine-man ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/rose-pine-man
-rm ~/.zshrc
-git init
-git remote add origin https://github.com/scillidan/dotfiles.git
-git branch -M main
-git pull origin main
-</code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
 <li>#document <a href="https://zsh-user-guide.netlify.app/zshguide">Zsh User’s Guide</a></li>
@@ -341,6 +331,20 @@ git pull origin main
 <li><a href="https://github.com/cnlee1702/zsh-system-update">zsh-system-update</a></li>
 <li><a href="https://github.com/OfferPi/zsh-warrior">zsh-warrior)</a></li>
 <li><a href="https://github.com/bepisdev/zshclean">zshclean</a></li>
+</ul>
+<h2 id="annex"><a class="header" href="#annex">annex</a></h2>
+<pre><code class="language-sh">sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/subnixr/minimal  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/minimal
+git clone --depth=1 https://github.com/const-void/rose-pine-man ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/rose-pine-man
+rm ~/.zshrc
+git init
+git remote add origin https://github.com/scillidan/dotfiles.git
+git branch -M main
+git pull origin main
+</code></pre>
+<ul>
+<li>#dotfiles <a href="https://github.com/scillidan/dotfiles/blob/main/.zshrc">.zshrc</a></li>
+<li>#dotfiles <a href="https://github.com/scillidan/dotfiles/tree/main/.config/zsh">zsh/</a></li>
 </ul>
 
                     </main>

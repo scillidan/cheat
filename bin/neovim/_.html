@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-2c291c15.js";
+            window.path_to_searchindex_js = "../../searchindex-f3365505.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-4555c70f.js"></script>
+        <script src="../../toc-805fbdd1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -210,38 +210,6 @@ ln -s ~/neovim/bin/nvim ~/.local/bin/
 # rm -rf ~/.local/share/nvim/lazy/
 nvim
 </code></pre>
-<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh"># Arch
-sudo pacman -S \
-	ffmpegthumbnailer
-yay -S --noconfirm \
-	pdftoppm \
-	epub-thumbnailer-git \
-	wordnet-common
-mkdir -p ~/.config/nvim/dictionary
-wget ~/.config/nvim/dictionary/word.txt https://raw.githubusercontent.com/dwyl/english-words/refs/heads/master/words.txt
-</code></pre>
-<pre><code class="language-sh"># Windows 10
-set "NEOVIM_CONFIG=%LOCALAPPDATA%\nvim"
-# set "NEOVIM_DATA=%LOCALAPPDATA%\nvim-data"
-del "%NEOVIM_CONFIG%\cheatsheet.txt"
-del "%NEOVIM_CONFIG%\init.lua"
-rmdir /S /Q "%NEOVIM_CONFIG%\lua"
-mklink "%NEOVIM_CONFIG%\cheatsheet.txt" "%DOTFILES_DIR%\.config\nvim\cheatsheet.txt"
-mklink "%NEOVIM_CONFIG%\init.lua" "%DOTFILES_DIR%\.config\nvim\init.lua"
-mklink /J "%NEOVIM_CONFIG%\lua" "%DOTFILES_DIR%\.config\nvim\lua"
-</code></pre>
-<h2 id="config"><a class="header" href="#config">config</a></h2>
-<h3 id="configure-lsp"><a class="header" href="#configure-lsp">Configure LSP</a></h3>
-<ul>
-<li><a href="https://linovox.com/configuring-language-server-protocol-lsp-in-neovim/">Configuring Language Server Protocol (LSP) in Neovim</a></li>
-<li><a href="https://www.bilibili.com/video/BV1iG7rzTEaz">neovim的LSP配置这一块</a></li>
-</ul>
-<h3 id="configure-cmp"><a class="header" href="#configure-cmp">Configure CMP</a></h3>
-<ul>
-<li><a href="https://linovox.com/install-and-use-nvim-cmp/">How to Install and Use nvim cmp Autocompletion</a></li>
-<li><a href="https://www.jonashietala.se/blog/2024/05/26/autocomplete_with_nvim-cmp/">Autocomplete with nvim-cmp</a></li>
-</ul>
 <h2 id="neovim-headless-service"><a class="header" href="#neovim-headless-service">Neovim headless service</a></h2>
 <p><em>Not recommended. I suspect it once kill my RPI-5’s os.</em></p>
 <p>On Ubuntu 24 ARM:</p>
@@ -267,18 +235,22 @@ neovide --server &lt;your_host&gt;:1234
 </code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
+<li>#blog #cmp <a href="https://linovox.com/install-and-use-nvim-cmp/">How to Install and Use nvim cmp Autocompletion</a></li>
+<li>#blog #cmp <a href="https://www.jonashietala.se/blog/2024/05/26/autocomplete_with_nvim-cmp/">Autocomplete with nvim-cmp</a></li>
+<li>#blog #lsp <a href="https://linovox.com/configuring-language-server-protocol-lsp-in-neovim/">Configuring Language Server Protocol (LSP) in Neovim</a></li>
+<li>#blog #lsp <a href="https://www.bilibili.com/video/BV1iG7rzTEaz">neovim的LSP配置这一块</a></li>
 <li>#blog <a href="https://jdhao.github.io/2018/11/15/neovim_configuration_windows/">Neovim configuration on Windows 10</a></li>
+<li>#blog <a href="https://github.com/LunarWatcher/auto-pairs#nvim-warning">Nvim warning</a></li>
 <li>#document <a href="https://neovim.io/doc/user/lua-guide.html">Neovim - Guide to using Lua in Nvim</a></li>
-<li>#post <a href="https://github.com/LunarWatcher/auto-pairs#nvim-warning">Nvim warning</a></li>
+<li>#post <a href="https://stackoverflow.com/questions/1620018/copy-all-the-lines-to-clipboard">Copy all the lines to clipboard</a></li>
+<li>#post <a href="https://vi.stackexchange.com/questions/36426/how-do-i-change-my-language-in-my-init-lua-neovim">How do I change my language in my init.lua? - neovim</a></li>
+<li>#post <a href="https://vi.stackexchange.com/questions/16386/how-to-use-wsls-bash-shell-as-default-terminal-of-gvim-windows-10">How to use WSL’s bash shell as default terminal of gvim/windows 10?</a></li>
+<li>#post <a href="https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/">Only just discovered ‘set signcolumn=number’, I like it</a></li>
+<li>#post <a href="https://unix.stackexchange.com/questions/11402/why-does-esc-move-the-cursor-back-in-vim">Why does <code>ESC</code> move the cursor back in vim?</a></li>
 <li>#post <a href="https://www.reddit.com/r/vim/comments/16cdbyd/why_you_switched_from_neovim_to_vim/">Why you switched from Neovim to Vim?</a></li>
 <li>#sheet <a href="https://paulgorman.org/technical/vim.html">Paul Gorman’s Vim Cheatsheet</a></li>
 <li>#video <a href="https://www.bilibili.com/video/BV1ohWqeSETr">优化neovim启动速度</a></li>
 <li>#video <a href="https://www.bilibili.com/video/BV1UHWoetEz3">重写neovim配置，新的开始</a></li>
-<li><a href="https://ctan.org/tex-archive/macros/latex/contrib/gitinfo2">Copy all the lines to clipboard</a></li>
-<li><a href="https://vi.stackexchange.com/questions/36426/how-do-i-change-my-language-in-my-init-lua-neovim">How do I change my language in my init.lua? - neovim</a></li>
-<li><a href="https://vi.stackexchange.com/questions/16386/how-to-use-wsls-bash-shell-as-default-terminal-of-gvim-windows-10">How to use WSL’s bash shell as default terminal of gvim/windows 10?</a></li>
-<li><a href="https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/">Only just discovered ‘set signcolumn=number’, I like it</a></li>
-<li><a href="https://unix.stackexchange.com/questions/11402/why-does-esc-move-the-cursor-back-in-vim">Why does <code>ESC</code> move the cursor back in vim?</a></li>
 </ul>
 <h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
 <h3 id="mark"><a class="header" href="#mark">mark</a></h3>
@@ -741,6 +713,20 @@ neovide --server &lt;your_host&gt;:1234
 <li>#docset <a href="https://github.com/warpaint9299/nvim-devdocs">nvim-devdocs</a></li>
 <li>#docset <a href="https://github.com/luckasRanarison/nvim-devdocs">nvim-devdocs</a></li>
 <li>#edit <a href="https://github.com/gbprod/yanky.nvim">yanky.nvim</a></li>
+</ul>
+<h2 id="annex"><a class="header" href="#annex">annex</a></h2>
+<pre><code class="language-sh"># Arch
+sudo pacman -S \
+	ffmpegthumbnailer
+yay -S --noconfirm \
+	pdftoppm \
+	epub-thumbnailer-git \
+	wordnet-common
+mkdir -p ~/.config/nvim/dictionary
+wget ~/.config/nvim/dictionary/word.txt https://raw.githubusercontent.com/dwyl/english-words/refs/heads/master/words.txt
+</code></pre>
+<ul>
+<li>#dotfiles <a href="https://github.com/scillidan/dotfiles/tree/main/.config/nvim">nvim/</a></li>
 </ul>
 <hr>
 <ol class="footnote-definition">

@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-2c291c15.js";
+            window.path_to_searchindex_js = "../searchindex-f3365505.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-4555c70f.js"></script>
+        <script src="../toc-805fbdd1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -196,15 +196,16 @@ python setup.py install
 # pip uninstall onnxruntime
 # pip install onnxruntime-directml
 </code></pre>
-<h2 id="command"><a class="header" href="#command">command</a></h2>
-<pre><code class="language-sh"># CPU
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<h3 id="command"><a class="header" href="#command">command</a></h3>
+<pre><code class="language-sh"># CPU mode
 rapid_videocr -o srt -i &lt;rgb_images_dir&gt; -s _output
-</code></pre>
-<pre><code class="language-sh"># GPU
+
+# GPU mode
 uv pip install rapidocr_paddle
 rapid_videocr --use_cuda -o srt -i &lt;rgb_images_dir&gt; -s _output
-</code></pre>
-<pre><code class="language-sh"># With VideoSubFinder
+
+# With VideoSubFinder
 rapid_videocr -vsf "&lt;path_to&gt;\VideoSubFinder\Release_x64\VideoSubFinderWXW.exe" -video_dir "$1"
 </code></pre>
 <h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
@@ -212,7 +213,7 @@ rapid_videocr -vsf "&lt;path_to&gt;\VideoSubFinder\Release_x64\VideoSubFinderWXW
 <ul>
 <li><a href="/opt/videosubfinder.html">videosubfinder.md</a></li>
 </ul>
-<h2 id="annex"><a class="header" href="#annex">annex</a></h2>
+<h2 id="appdedix"><a class="header" href="#appdedix">appdedix</a></h2>
 <p><img src="/_image/optWeb/rapidvideocr.png" alt="rapidvideocr"></p>
 <hr>
 <ol class="footnote-definition">

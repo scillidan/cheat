@@ -35,10 +35,10 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-2c291c15.js";
+            window.path_to_searchindex_js = "../../../searchindex-f3365505.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../../toc-4555c70f.js"></script>
+        <script src="../../../toc-805fbdd1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -186,7 +186,7 @@
 <pre><code class="language-sh">sudo pacman -S xfce4 xfce4-goodies
 # flatpak install flathub io.github.fabrialberio.pinapp
 </code></pre>
-<h2 id="optional"><a class="header" href="#optional">optional</a></h2>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
 <h3 id="configure-theme"><a class="header" href="#configure-theme">Configure theme (<a href="https://github.com/nana-4/materia-theme">Materia</a>)</a></h3>
 <pre><code class="language-sh">sudo pacman -S materia-gtk-theme
 </code></pre>
@@ -383,6 +383,16 @@ tar -xvf Chroma-White-S.tar.xz
 	~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-screensaver.xml \
 	~/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 	...
+</code></pre>
+<h2 id="remove-unneeded-components"><a class="header" href="#remove-unneeded-components">Remove unneeded components</a></h2>
+<pre><code class="language-sh">sudo pacman -Rns \
+	xfce4-dict \
+	xfce4-terminal \
+	xfce4-screenshooter \
+	xfce4-clipman-plugin \
+	ristretto
+	# xfce4-notifyd
+	# xfwm4
 </code></pre>
 <h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
 <h3 id="cache"><a class="header" href="#cache">cache</a></h3>

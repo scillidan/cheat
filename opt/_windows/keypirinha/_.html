@@ -35,10 +35,10 @@
             const path_to_root = "../../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../../searchindex-2c291c15.js";
+            window.path_to_searchindex_js = "../../../searchindex-f3365505.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../../toc-4555c70f.js"></script>
+        <script src="../../../toc-805fbdd1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -184,31 +184,20 @@
 <h2 id="install"><a class="header" href="#install">install</a></h2>
 <pre><code class="language-sh">scoop install keypirinha
 </code></pre>
-<h2 id="personal-do"><a class="header" href="#personal-do">Personal do</a></h2>
-<pre><code class="language-sh">rmdir /S /Q "%SCOOP%\apps\keypirinha\current\portable\Profile\User"
-mklink /J "%SCOOP%\apps\keypirinha\current\portable\Profile\User" "%DOTFILES_DIR%\.config\_windows_keypirinha\Profile\User"
-mkdir "%USERPROFILE%/Usr/File"
-</code></pre>
-<pre><code class="language-sh">cd "%USERPROFILE%\Usr\File"
-git clone --depth=1 https://github.com/scillidan/file_keypirinha_pkg
-rmdir /S /Q "%SCOOP%\apps\keypirinha\current\portable\Profile\InstalledPackages"
-mklink /J "%SCOOP%\apps\keypirinha\current\portable\Profile\InstalledPackages" "%USERPROFILE%\Usr\File\file_keypirinha_pkg"
-</code></pre>
-<pre><code class="language-sh">cd "%USERPROFILE%\Usr\RepoFork"
-git clone --depth=1 https://github.com/scillidan/Keypirinha-PuzzTools
-</code></pre>
+<h2 id="config"><a class="header" href="#config">config</a></h2>
+<h3 id="optional"><a class="header" href="#optional">Optional</a></h3>
 <ol>
 <li>Alacritty → MBtm → Create Shortcut</li>
 <li>Shortcut → MBtm → Properties → Target → `&lt;path_to&gt;\alacritty.exe –config-file “&lt;path_to&gt;\alacritty.toml”  –working-directory “C:\Users\User” –command“</li>
 <li>Keypirinha → MBtn_R → Configure Keypirinha
 <pre><code>[external]
-terminal = "C:\Users\User\.local\bin\alacritty_command.lnk"
+terminal = "${env:USERPROFILE}\.local\bin\alacritty_command.lnk"
 </code></pre>
 </li>
 </ol>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
-<li><a href="https://github.com/Keypirinha/Packages/pull/41">Add provider for chromium based edge bookmarks</a></li>
+<li>#issue <a href="https://github.com/Keypirinha/Packages/pull/41">Add provider for chromium based edge bookmarks</a></li>
 <li><a href="https://community.brave.com/t/copy-past-bookmark-folder-to-new-location/437841">Copy &amp; Past bookmark folder to new location</a></li>
 </ul>
 <h2 id="cross-reference"><a class="header" href="#cross-reference">cross-reference</a></h2>
@@ -226,7 +215,7 @@ terminal = "C:\Users\User\.local\bin\alacritty_command.lnk"
 <li><a href="https://github.com/thisisleobro/Keypirinha-qrcode">Keypirinha QR Code</a></li>
 <li><a href="https://github.com/ueffel/Keypirinha-Plugin-Kill">Kill</a></li>
 <li><a href="https://github.com/andriykrefer/Keypirinha-MyIpExtended">MyIpExtended</a></li>
-<li><a href="https://github.com/EhsanKia/Keypirinha-PuzzTools">PuzzTools</a></li>
+<li><a href="https://github.com/EhsanKia/Keypirinha-PuzzTools">PuzzTools</a> (<a href="https://github.com/scillidan/Keypirinha-PuzzTools">fork</a>)</li>
 <li><a href="https://github.com/s-oram/keypirinha-recent_items">recent_items</a></li>
 <li><a href="https://github.com/DrorHarari/keypirinha-svc">svc</a></li>
 <li><a href="https://github.com/josbalcaen/keypirinha-symbols">symbols</a></li>
@@ -270,6 +259,10 @@ terminal = "C:\Users\User\.local\bin\alacritty_command.lnk"
 <li><a href="https://github.com/NMeJa/keypirinha-powerswitch">PowerSwitch Plugin for Keypirinha</a></li>
 </ul>
 <h2 id="annex"><a class="header" href="#annex">annex</a></h2>
+<ul>
+<li>#dotfiles <a href="https://github.com/scillidan/dotfiles/tree/main/.config/_windows_keypirinha">_windows_keypirinha/</a></li>
+</ul>
+<h2 id="appdedix"><a class="header" href="#appdedix">appdedix</a></h2>
 <p><img src="/_image/opt/_windows/keypirinha/color_fakenight.png" alt="color_fakenight">
 <img src="/_image/opt/_windows/keypirinha/color_vanta.png" alt="color_vanta"></p>
 
