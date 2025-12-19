@@ -37,3 +37,21 @@ scoop install dngrep
 
 - dnGrep
 	- Results panel → More → Copy results
+
+## reference
+
+- #document [dnGrep - Wiki](https://github.com/dnGrep/dnGrep/wiki)
+	- [Command Line](https://github.com/dnGrep/dnGrep/wiki/Command-Line)
+	- [Keyboard](https://github.com/dnGrep/dnGrep/wiki/Keyboard)
+	- [Regular Expressions](https://github.com/dnGrep/dnGrep/wiki/Regular-Expressions)
+	- [Microsoft Word Search](https://github.com/dnGrep/dnGrep/wiki/Microsoft-Word-Search)
+	- [Open XML Search](https://github.com/dnGrep/dnGrep/wiki/Open-XML-Search)
+	- [PDF Search](https://github.com/dnGrep/dnGrep/wiki/PDF-Search)
+
+## resource
+
+### cache
+
+- [new Plugin tested / Exiftool](https://github.com/dnGrep/dnGrep/discussions/1124)
+- [Using Apache Tika with dnGrep](https://github.com/dnGrep/dnGrep/discussions/1049)
+- [Using Msg2txt with dnGrep](https://github.com/dnGrep/dnGrep/discussions/1112)

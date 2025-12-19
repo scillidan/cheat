@@ -9,7 +9,6 @@ scoop install jpegview-fork
 ## config
 
 - JPEGView → MBtm
-  - Show navigation panel (Off)
   - Display order → File name
   - Zoom → Fit window to image (On)
   - Settings/Admin
