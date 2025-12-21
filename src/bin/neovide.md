@@ -46,3 +46,8 @@ neovide --server <your_host>:1234
 - [Run Neovide on remote SSH system](https://github.com/neovide/neovide/discussions/2853)
 
 [^1]: [Config File - Neovide](https://neovide.dev/config-file.html)
+
+## annex
+
+- #dotfiles [neovide/](https://github.com/scillidan/dotfiles/.config/neovide)
+- #Windows [nvd.cmd](https://github.com/scillidan/Shell/_windows/nvd.cmd)

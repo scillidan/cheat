@@ -4,9 +4,15 @@
 
 - [How to change telescope theme](https://github.com/LazyVim/LazyVim/discussions/1127)
 
+## cross-reference
+
+### mark
+
+- [telescope-media-files-nvim.md](/bin/neovim/telescope-nvim/telescope-media-files-nvim.md)
+
 ## resource
 
-### markdown
+### mark
 
 - #cmd [cheatsheet.nvim](https://github.com/sudormrfbin/cheatsheet.nvim)
 - #cmd [telescope-cmdline.nvim](https://github.com/jonarrien/telescope-cmdline.nvim)
@@ -26,7 +32,6 @@
 - [telescope-glyph.nvim](https://github.com/alduraibi/telescope-glyph.nvim)
 - [telescope-heading.nvim](https://github.com/crispgm/telescope-heading.nvim)
 - [telescope-lazy.nvim](https://github.com/tsakirist/telescope-lazy.nvim)
-- [Telescope-media-files.nvim](https://github.com/nvim-telescope/telescope-media-files.nvim)
 - [telescope-repo.nvim](https://github.com/cljoly/telescope-repo.nvim)
 - [telescope-undo.nvim](https://github.com/debugloop/telescope-undo.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)

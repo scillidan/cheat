@@ -83,6 +83,8 @@ launch: "/home/<user>/RetroArch/retroarch" -L "/home/<user>/RetroArch/cores/flyc
 
 ## annex
 
+- [file_pegasus-g](https://github.com/scillidan/file_pegasus-g)
+- [file_pegasus-g_metadata-export](https://github.com/scillidan/file_pegasus-g_metadata-export)
 - [init_pegasus.bat](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.bat)
 - [init_pegasus.sh](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.sh)
 

@@ -24,6 +24,11 @@ scoop install fzf
 
 - [fzf-preview](https://github.com/niksingh710/fzf-preview)
 
+## annex
+
+- #Windows [ff.cmd](https://github.com/scillidan/Shell/_windows/ff.cmd)
+- #Windows [fg.cmd](https://github.com/scillidan/Shell/_windows/fg.cmd)
+
 ## appdedix
 
 - [yt-dlp.mp4](https://scillidan.github.io/media_cheat/bin/yt-dlp.mp4) ([bilibili](https://www.bilibili.com/video/BV1QJYBzfEPw))

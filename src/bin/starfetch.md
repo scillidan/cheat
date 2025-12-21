@@ -86,3 +86,5 @@ starfetch orion
     "main_stars": "3"
 }
 ```
+
+- [starfetch-rust](https://github.com/scillidan/starfetch-rust)

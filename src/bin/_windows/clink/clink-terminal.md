@@ -5,6 +5,7 @@
 ```sh
 scoop bucket add narnaud https://github.com/narnaud/scoop-bucket
 scoop install clink-terminal
+scoop install use
 ```
 
 ## usage

@@ -72,7 +72,7 @@ pm2 save
 ### On Windows 10, how to autorun at startup?
 
 1. Create `start_linkding.bat`:
-   ```batchfile
+   ```batch
    @echo off
    setlocal
  

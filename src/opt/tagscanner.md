@@ -9,6 +9,10 @@ yay -S --noconfirm tagscanner
 scoop install tagscanner
 ```
 
+## annex
+
+- [file_tagscanner_preset-export](https://github.com/scillidan/file_tagscanner_preset-export)
+
 ## appdedix
 
 ![tagscanner](/_image/opt/tagscanner.png)

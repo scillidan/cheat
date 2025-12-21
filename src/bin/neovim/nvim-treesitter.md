@@ -1,5 +1,15 @@
 # [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
+## install
+
+### Fix
+
+```
+# Files installed by TS
+$XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser
+$XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
+```
+
 ## reference
 
 - [tree-sitter executable not found](https://github.com/nvim-treesitter/nvim-treesitter/issues/1097)

@@ -1,5 +1,15 @@
 # [mason.nvim](https://github.com/williamboman/mason.nvim)
 
+## install
+
+### Fix
+
+```sh
+# Remove incomplete LSP installations
+rm $XDG_DATA_HOME/nvim-data/manson/bin/<lsp>
+rm -rf $XDG_DATA_HOME/nvim-data/manson/packages/<lsp>
+```
+
 ## reference
 
 - [lsp.lua](https://github.com/wsoule/config.nvim/blob/main/lua/custom/plugins/lsp.lua)

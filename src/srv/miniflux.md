@@ -125,7 +125,7 @@ sudo apt-get remove --purge postgresql-16
 ### On Windows 10, how to autorun at startup?
 
 1. Create `start_miniflux.bat`.
-   ```batchfile
+   ```batch
    rem Maybe need administrator permissions. I forgot.
    @echo off
  

@@ -22,3 +22,7 @@ scoop install xnconvert
 		```
 
 [^1]: [XnConvert使用JPG压缩时“使用估计质量”与“优化哈夫曼表”等选项含义](https://zhuanlan.zhihu.com/p/490282841)
+
+## annex
+
+- [file_xnconvert_preset](https://github.com/scillidan/file_xnconvert_preset)

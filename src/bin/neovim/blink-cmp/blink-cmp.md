@@ -8,11 +8,16 @@
 	- [Keymap](https://cmp.saghen.dev/configuration/keymap.html)
 - #video [neovim的代码自动补全](https://www.bilibili.com/video/BV1gDETzTEoo)
 
+## cross-reference
+
+### mark
+
+- #Arch [blink-cmp-dictionary.md](/bin/neovim/blink-cmp/blink-cmp-dictionary.md)
+
 ## resource
 
 ### mark
 
-- #Arch [blink-cmp-dictionary](https://github.com/Kaiser-Yang/blink-cmp-dictionary)
 - [blink-cmp-latex](https://github.com/erooke/blink-cmp-latex)
 - [blink-cmp-npm](https://github.com/alexandre-abrioux/blink-cmp-npm.nvim)
 - [blink-emoji.nvim](https://github.com/moyiz/blink-emoji.nvim)

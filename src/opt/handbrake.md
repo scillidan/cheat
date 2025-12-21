@@ -31,3 +31,7 @@ handbrakecli --preset-import-file <preset.json> --input "$1" --output "_handbrak
 - #option [HandBrake](https://handbrake.fr/docs/en/latest/cli/command-line-reference.html)
 - [How to reduce video file size using Handbrake](https://steamcommunity.com/sharedfiles/filedetails/?id=1856527757)
 - [Newbie On Encoding From Blu-Ray Source Files](https://www.reddit.com/r/handbrake/comments/qas35a/newbie_on_encoding_from_bluray_source_files)
+
+## annex
+
+- [file_handbrake_preset](https://github.com/scillidan/file_handbrake_preset)
