@@ -1,4 +1,4 @@
-# [lazydocker](https://github.com/jesseduffield/lazydocker)
+# [Lazydocker](https://github.com/jesseduffield/lazydocker)
 
 ## install
 
