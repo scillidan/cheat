@@ -27,7 +27,7 @@ magick montage "$1" -resize 750x -geometry +0+0 -tile 1x "_montage.png"
 magick convert "$1" -crop x1500 "_%d.png"
 
 # Negate an image
-magick convert "|.png" -channel RGB -negate _negate.png
+magick convert "$1" -channel RGB -negate _negate.png
 
 # Resize the image to a height of 1600 pixels with maximum quality
 magick convert "$1" -resize x1600 -quality 100 "_*.jpg"
