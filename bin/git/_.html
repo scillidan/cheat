@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-fbd567cf.js";
+            window.path_to_searchindex_js = "../../searchindex-674f3f5c.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-805fbdd1.js"></script>
+        <script src="../../toc-dda1fddf.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -222,6 +222,15 @@ git pull
 git tag v0.0.1
 git push origin v0.0.1
 </code></pre>
+<pre><code class="language-sh"># Push a PR
+git checkout -b &lt;branch&gt;
+git add &lt;file&gt;
+git commit -m "&lt;commit&gt;"
+git push origin &lt;branch&gt;
+# Clear Up after finishing PR
+git push origin --delete &lt;branch&gt;
+git branch -d &lt;branch&gt;
+</code></pre>
 <pre><code class="language-sh"># Undo and re-push
 git fetch --all
 git reset --hard &lt;commit-hash&gt;
@@ -267,12 +276,14 @@ git config --global http.sslVerify true
 </ul>
 <h3 id="later"><a class="header" href="#later">later</a></h3>
 <ul>
+<li>#Arch <a href="https://github.com/nosarthur/gita">Gita</a></li>
 <li><a href="/bin/git/git-branchless.html">git-branchless.md</a></li>
 <li><a href="/bin/git/git-cliff.html">git-cliff.md</a></li>
 <li><a href="/bin/git/git-filter-repo.html">git-filter-repo.md</a></li>
 </ul>
 <h3 id="extra"><a class="header" href="#extra">extra</a></h3>
 <ul>
+<li><a href="https://github.com/nickgerace/gfold">gfold</a></li>
 <li><a href="/bin/git/gptcommit.html">gptcommit.md</a></li>
 </ul>
 <h3 id="cache"><a class="header" href="#cache">cache</a></h3>
@@ -283,6 +294,7 @@ git config --global http.sslVerify true
 <h3 id="mark-1"><a class="header" href="#mark-1">mark</a></h3>
 <ul>
 <li>#Windows <a href="https://github.com/git-for-windows/git">Git for Windows</a></li>
+<li><a href="https://github.com/devmatteini/dra">dra</a></li>
 <li><a href="https://github.com/github/git-sizer">git-sizer</a></li>
 <li><a href="https://github.com/tadashi-aikawa/gowl">gowl</a></li>
 <li><a href="https://github.com/Bhupesh-V/ugit">ugit</a></li>
@@ -300,7 +312,7 @@ git config --global http.sslVerify true
 <li><a href="https://github.com/paulirish/git-recent">git-recent</a></li>
 <li><a href="https://github.com/amitsaha/gitbackup">gitbackup</a></li>
 <li><a href="https://github.com/extrawurst/gitui">GitUI</a></li>
-<li><a href="https://github.com/jj-vcs/jj">jj</a></li>
+<li><a href="https://github.com/muandane/goji">goji</a></li>
 <li><a href="https://mercurial-scm.org">Mercurial</a></li>
 </ul>
 

@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-fbd567cf.js";
+            window.path_to_searchindex_js = "../../searchindex-674f3f5c.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-805fbdd1.js"></script>
+        <script src="../../toc-dda1fddf.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -181,6 +181,12 @@
                 <div id="mdbook-content" class="content">
                     <main>
                         <h1 id="masonnvim"><a class="header" href="#masonnvim"><a href="https://github.com/williamboman/mason.nvim">mason.nvim</a></a></h1>
+<h2 id="install"><a class="header" href="#install">install</a></h2>
+<h3 id="fix"><a class="header" href="#fix">Fix</a></h3>
+<pre><code class="language-sh"># Remove incomplete LSP installations
+rm $XDG_DATA_HOME/nvim-data/manson/bin/&lt;lsp&gt;
+rm -rf $XDG_DATA_HOME/nvim-data/manson/packages/&lt;lsp&gt;
+</code></pre>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
 <li><a href="https://github.com/wsoule/config.nvim/blob/main/lua/custom/plugins/lsp.lua">lsp.lua</a></li>

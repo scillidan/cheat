@@ -35,10 +35,10 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-fbd567cf.js";
+            window.path_to_searchindex_js = "../../searchindex-674f3f5c.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../../toc-805fbdd1.js"></script>
+        <script src="../../toc-dda1fddf.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -190,6 +190,26 @@
 <h2 id="install"><a class="header" href="#install">install</a></h2>
 <pre><code class="language-sh">scoop install staxrip
 </code></pre>
+<h2 id="usage"><a class="header" href="#usage">usage</a></h2>
+<h3 id="1080p-30fps-nvenc"><a class="header" href="#1080p-30fps-nvenc">1080p-30fps-nvenc</a></h3>
+<ul>
+<li>Staxrip
+<ul>
+<li>AVS Filters
+<ul>
+<li>Resize (On)</li>
+<li>Add → Frame Rate → AssumeFPS → 30</li>
+</ul>
+</li>
+<li>MKV → X265 → Change to → NVEncC (Nvidia) → H.264
+<ul>
+<li>Encoder Options → Input/Output → Decoder → NVEnc Software</li>
+</ul>
+</li>
+<li>Add job → Start</li>
+</ul>
+</li>
+</ul>
 <h2 id="reference"><a class="header" href="#reference">reference</a></h2>
 <ul>
 <li>#blog <a href="https://sspai.com/post/88056">StaxRip烧录硬字幕踩坑记录</a></li>
