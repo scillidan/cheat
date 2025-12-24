@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-674f3f5c.js";
+            window.path_to_searchindex_js = "../searchindex-d8c89d3f.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-dda1fddf.js"></script>
+        <script src="../toc-ad6aa9d3.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -239,7 +239,7 @@ python.exe app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --server
 <pre><code class="language-batch">rem faster-whisper-webui.bat
 @echo off
 
-cd %USER%\Usr\OptWeb\faster-whisper-webui
+cd %USERHOME%\Usr\OptWeb\faster-whisper-webui
 start .venv\Scripts\python.exe app.py --server_name 127.0.0.1 --server_port 7830 --input_audio_max_duration -1 --whisper_implementation "faster-whisper" --default_model_name "large-v2" --vad_parallel_devices "0" --auto_parallel true --output_dir "C:\Users\User\Downloads"
 
 pause

@@ -35,10 +35,10 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-674f3f5c.js";
+            window.path_to_searchindex_js = "../searchindex-d8c89d3f.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-dda1fddf.js"></script>
+        <script src="../toc-ad6aa9d3.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -196,8 +196,14 @@ USE_LITELLM=true
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <pre><code class="language-sh">sgpt "Hello Ollama"
-sgpt "Resize images to 800x 0.9 quality jpg"
-cat &lt;code_file&gt; | sgpt --code "Generate comments for each line of my code"
+sgpt --model ollama/mistral:7b-instruct "Resize images to 800x 0.9 quality jpg"
+cat &lt;code_file&gt; | sgpt --model ollama/mistral:7b-instruct --code "Generate comments for each line of my code"
+</code></pre>
+<pre><code class="language-sh"># Test
+sgpt --model ollama/mistral:7b-instruct --role explain "magick convert -resize 800x image.jpg -quality 90 resized_image.jpg"
+sgpt --model ollama/mistral:7b-instruct --role optimize "Resize images to 800x 0.9 quality jpg"
+sgpt --model ollama/mistral:7b-instruct --role summarize "Please resize all images to a maximum width of 800 pixels and save them in JPEG format with a compression quality of 0.9."
+sgpt --model ollama/llama3.1:8b --role adcopy "Resizing images for web use, specifically reducing their width to 800 pixels, saving them as JPEGs with a compression quality of 0.9."
 </code></pre>
 <hr>
 <ol class="footnote-definition">
