@@ -3,7 +3,10 @@
 ## install
 
 ```sh
+# Arch
 sudo pacman -S gnupg
+# Windows 10
+scoop install gnupg
 ```
 
 ## usage

@@ -16,4 +16,4 @@ pass show <key_name>
 
 ### mark
 
-- [gnupg.md](/bin/_arch/gnupg.md)
+- [gnupg.md](/bin/gnupg.md)

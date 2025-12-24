@@ -2,8 +2,6 @@
 
 ## mark
 
-- #commit [Awesome Löve](https://github.com/love2d-community/awesome-love2d/commits.atom)
-- #commit [Awesome N8N](https://github.com/restyler/awesome-n8n)
 - #commit [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim/commits.atom)
 - #commit [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins/commits.atom)
 - #github-search-rss [clink](https://scillidan.github.io/github-search-rss/clink.rss)
@@ -11,7 +9,6 @@
 - #github-search-rss [goldendict](https://scillidan.github.io/github-search-rss/goldendict.rss)
 - #github-search-rss [keypirinha](https://scillidan.github.io/github-search-rss/keypirinha.rss)
 - #github-search-rss [mdbook](https://scillidan.github.io/github-search-rss/mdbook.rss)
-- #github-search-rss [sphinx](https://scillidan.github.io/github-search-rss/sphinx.rss)
 - #wiki [mdBook](https://github.com/rust-lang/mdBook/wiki/Third-party-plugins)
 - #wiki [Tablacus Explorer Add-ons](https://github.com/tablacus/TablacusExplorerAddons/wiki)
 - [catalog](https://github.com/mkdocs/catalog/commits.atom)
@@ -20,13 +17,21 @@
 - [F-Droid](https://newapps.f-droid.othing.xyz/new_apps.en-US.xml)
 - [Flathub](https://flathub.org/api/v2/feed/new)
 - [GitHub Trending RSS](https://github.com/mshibanami/GitHubTrendingRSS)
-- [Obsidian Stats](https://www.obsidianstats.com/rss.xml)
 - [ueffel's Package Repository](https://ue.spdns.de/packagecontrol/)
-- [VS Code Marketplace - Recently Added](https://ewired--01814f2c279d11f09d52569c3dd06744.web.val.run/api/vscode.recent.atom)
 
 ## later
 
 - [LobeHub Assistant Market \| RSS Feed](#https://lobehub.com/assistants/feed)
+
+## extra
+
+- #commit [Awesome Löve](https://github.com/love2d-community/awesome-love2d/commits.atom)
+- #commit [Awesome N8N](https://github.com/restyler/awesome-n8n)
+- #github-search-rss [sphinx](https://scillidan.github.io/github-search-rss/sphinx.rss)
+- [F-Droid_Newapps_RSS](https://github.com/yzqzss/f-Droid_Newapps_RSS)
+- [Hacker News RSS](https://github.com/hnrss/hnrss)
+- [Obsidian Stats](https://www.obsidianstats.com/rss.xml)
+- [VS Code Marketplace - Recently Added](https://ewired--01814f2c279d11f09d52569c3dd06744.web.val.run/api/vscode.recent.atom)
 
 ## cache
 
@@ -49,6 +54,4 @@
 - #wiki [mpv](https://github.com/mpv-player/mpv/wiki/User-Scripts)
 - #wiki [rofi](https://github.com/davatorium/rofi/wiki/User-scripts)
 - #wiki [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim/wiki/Extensions)
-- [F-Droid_Newapps_RSS](https://github.com/yzqzss/f-Droid_Newapps_RSS)
-- [Hacker News RSS](https://github.com/hnrss/hnrss)
 - [MDRSS-TS](https://github.com/kindlyfire/mdrss-ts)

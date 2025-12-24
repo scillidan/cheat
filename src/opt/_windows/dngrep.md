@@ -28,10 +28,13 @@ scoop install dngrep
 			Arguments: /e /u /x
 			```
 	- Search results
+		- Sort results automatically when search completes (On)
 		- Show results tree expanded (On)
 	- Search in
 		- Patterns to match → `*.md;*.txt`
 		- Patterns to exclude → `SUMMARY.md;.git\*;node_modules;public;site;_build;_gen`
+	- Results
+		- Preview file (Off)
 
 ## usage
 
