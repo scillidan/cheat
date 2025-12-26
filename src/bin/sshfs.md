@@ -11,9 +11,9 @@ sudo apt install sshfs
 
 ## usage
 
-### Windows client
+```sh
+# Windows 10
+scoop install sshfs-np winfsp-np sshfs-win-manager-np
+```
 
-1. Get `winfsp-*.msi` form [WinFsp - Releases](https://github.com/winfsp/winfsp/releases).
-2. Get `sshfs-win-*-x64.msi` from [SSHFS-Win - Releases](https://github.com/winfsp/sshfs-win/releases).
-3. Get `sshfs-win-manager-*.zip` from [SSHFS-Win Manager - Releases](https://github.com/evsar3/sshfs-win-manager/releases).
-4. SSHFS-Win Manager → Add Connection.
+SSHFS-Win Manager → Add Connection.
