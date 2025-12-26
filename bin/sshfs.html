@@ -35,7 +35,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-9eb0dc83.js";
+            window.path_to_searchindex_js = "../searchindex-78fa667b.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-ad6aa9d3.js"></script>
@@ -188,13 +188,10 @@ sudo pacman -S sshfs
 sudo apt install sshfs
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
-<h3 id="windows-client"><a class="header" href="#windows-client">Windows client</a></h3>
-<ol>
-<li>Get <code>winfsp-*.msi</code> form <a href="https://github.com/winfsp/winfsp/releases">WinFsp - Releases</a>.</li>
-<li>Get <code>sshfs-win-*-x64.msi</code> from <a href="https://github.com/winfsp/sshfs-win/releases">SSHFS-Win - Releases</a>.</li>
-<li>Get <code>sshfs-win-manager-*.zip</code> from <a href="https://github.com/evsar3/sshfs-win-manager/releases">SSHFS-Win Manager - Releases</a>.</li>
-<li>SSHFS-Win Manager → Add Connection.</li>
-</ol>
+<pre><code class="language-sh"># Windows 10
+scoop install sshfs-np winfsp-np sshfs-win-manager-np
+</code></pre>
+<p>SSHFS-Win Manager → Add Connection.</p>
 
                     </main>
 

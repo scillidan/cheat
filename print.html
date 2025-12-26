@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "searchindex-9eb0dc83.js";
+            window.path_to_searchindex_js = "searchindex-78fa667b.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-ad6aa9d3.js"></script>
@@ -2812,7 +2812,6 @@ subl config.yaml
 <li><a href="/bin/tesseract.html">tesseract.md</a></li>
 <li><a href="/bin/tldr.html">tldr.md</a></li>
 <li><a href="/bin/trashy.html">trashy.md</a></li>
-<li><a href="/bin/ugrep.html">ugrep.md</a></li>
 <li><a href="/bin/xargs.html">xargs.md</a></li>
 <li><a href="/bin/yazi/_.html">yazi.md</a></li>
 <li><a href="/bin/zoxide.html">zoxide.md</a></li>
@@ -2880,6 +2879,7 @@ subl config.yaml
 <li><a href="/bin/pypinyin.html">pypinyin.md</a></li>
 <li><a href="/bin/sshfs.html">sshfs.md</a></li>
 <li><a href="/bin/ttf2woff2.html">ttf2woff2.md</a></li>
+<li><a href="/bin/ugrep.html">ugrep.md</a></li>
 <li><a href="/bin/vercel.html">vercel.md</a></li>
 <li><a href="/bin/vim/_.html">vim.md</a></li>
 <li><a href="/bin/yt-dlp.html">yt-dlp.md</a></li>
@@ -5773,13 +5773,10 @@ sudo pacman -S sshfs
 sudo apt install sshfs
 </code></pre>
 <h2 id="usage-99"><a class="header" href="#usage-99">usage</a></h2>
-<h3 id="windows-client"><a class="header" href="#windows-client">Windows client</a></h3>
-<ol>
-<li>Get <code>winfsp-*.msi</code> form <a href="https://github.com/winfsp/winfsp/releases">WinFsp - Releases</a>.</li>
-<li>Get <code>sshfs-win-*-x64.msi</code> from <a href="https://github.com/winfsp/sshfs-win/releases">SSHFS-Win - Releases</a>.</li>
-<li>Get <code>sshfs-win-manager-*.zip</code> from <a href="https://github.com/evsar3/sshfs-win-manager/releases">SSHFS-Win Manager - Releases</a>.</li>
-<li>SSHFS-Win Manager → Add Connection.</li>
-</ol>
+<pre><code class="language-sh"># Windows 10
+scoop install sshfs-np winfsp-np sshfs-win-manager-np
+</code></pre>
+<p>SSHFS-Win Manager → Add Connection.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="starfetch"><a class="header" href="#starfetch"><a href="https://github.com/Haruno19/starfetch">starfetch</a></a></h1>
 <h2 id="install-144"><a class="header" href="#install-144">install</a></h2>
@@ -10479,7 +10476,7 @@ OR `column_3` LIKE '%string%';
 <h1 id="autohotkey"><a class="header" href="#autohotkey"><a href="https://github.com/AutoHotkey/AutoHotkey">AutoHotkey</a></a></h1>
 <h2 id="install-263"><a class="header" href="#install-263">install</a></h2>
 <pre><code class="language-sh">scoop install autohotkey1.1
-scoop install autohotkey
+# scoop install autohotkey
 </code></pre>
 <h2 id="reference-87"><a class="header" href="#reference-87">reference</a></h2>
 <ul>
@@ -12372,7 +12369,9 @@ This is the second chapter.
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="lua"><a class="header" href="#lua"><a href="https://www.lua.org/">Lua</a></a></h1>
 <h2 id="install-275"><a class="header" href="#install-275">install</a></h2>
-<pre><code class="language-sh"># Termux
+<pre><code class="language-sh"># Windows 10
+scoop instlal lua51
+# Termux
 pkg install lua53 luarocks
 </code></pre>
 <h2 id="reference-99"><a class="header" href="#reference-99">reference</a></h2>
@@ -12543,6 +12542,7 @@ scoop install pnpm
 <h2 id="install-279"><a class="header" href="#install-279">install</a></h2>
 <pre><code class="language-sh"># Windows 10
 scoop install python310
+scoop install python312
 </code></pre>
 <h2 id="usage-203"><a class="header" href="#usage-203">usage</a></h2>
 <h3 id="command-23"><a class="header" href="#command-23">command</a></h3>
