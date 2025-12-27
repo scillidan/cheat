@@ -3,10 +3,10 @@
 ## install
 
 ```sh
-uv venv
-.venv\Scripts\activate.bat
+uv venv .marker --python 3.12
+.marker\Scripts\activate.bat
 uv pip install marker-pdf
-uv pip install hf_transfer
+# uv pip install hf_transfer
 ```
 
 ## usage

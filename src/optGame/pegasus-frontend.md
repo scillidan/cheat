@@ -10,6 +10,7 @@
 # Arch
 yay -S --noconfirm pegasus-frontend-git
 # Windows 10
+scoop install https://raw.githubusercontent.com/Calinou/scoop-games/refs/heads/master/bucket/pegasus.json
 gsudo scoop install k-lite-codec-pack-basic-np
 ```
 

@@ -4,5 +4,9 @@
 
 ```sh
 scoop install bulk-rename-utility
+```
+
+```sh
 scoop install bulk-rename-command
+# See %SCOOP%\bulk-rename-command\current\BRC_Manual.pdf
 ```

@@ -3,9 +3,7 @@
 ## install
 
 ```sh
-scoop bucket add narnaud https://github.com/narnaud/scoop-bucket
-scoop install clink-terminal
-scoop install use
+scoop install https://raw.githubusercontent.com/narnaud/scoop-bucket/refs/heads/master/bucket/clink-terminal.json
 ```
 
 ## usage

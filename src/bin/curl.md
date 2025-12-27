@@ -15,4 +15,4 @@ scoop install curl
 
 ### mark
 
-- [Reproducible curl binaries](https://github.com/curl/curl-for-win)
+- #Windows [Reproducible curl binaries](https://github.com/curl/curl-for-win)

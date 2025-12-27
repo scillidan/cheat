@@ -6,5 +6,5 @@
 # Arch
 sudo pacman -S tesseract tesseract-data-eng tesseract-data-chi_sim tesseract-data-chi_sim_vert
 # Windows 10
-scoop install tesseract
+scoop install tesseract tesseract-languages
 ```

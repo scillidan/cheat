@@ -34,3 +34,24 @@ deactivate
 .venv\Scripts\activate.bat
 deactivate.bat
 ```
+
+```sh
+# Create a virtual environment and install all dependencies
+# Or sync virtual environment
+uv sync
+```
+
+```sh
+# Activate the virtual environment and execute a command
+uv run <script> <input_text>
+```
+
+```sh
+# Install in development/editable mode
+uv pip install -e .
+```
+
+```sh
+# Initialize a project
+uv init <project> --name <package> --python 3.12
+```

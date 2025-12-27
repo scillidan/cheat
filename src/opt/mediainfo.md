@@ -8,4 +8,3 @@ sudo pacman -S mediainfo mediainfo-gui
 # Windows 10
 scoop install mediainfo mediainfo-gui
 ```
-

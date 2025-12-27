@@ -4,11 +4,6 @@
 
 ```sh
 scoop install winsshterm
+# Install optionals
+scoop install putty winscp vcxsrv
 ```
-
-## config
-
-- Run WinSSHTerm
-	- Setup [PuTTY](https://www.putty.org/).
-	- Setup [WinSCP](https://winscp.net).
-	- Setup [vcxsrv](https://github.com/marchaesen/vcxsrv).
