@@ -15,8 +15,14 @@ uv pip install -e .
 ## usage
 
 ```sh
+# Extract epub contents to text
 epub2tts <epub> --export txt
-epub2tts <txt> --engine tts --speaker "<Speaker>" --cover cover-image.jpg --sayparts
+# https://github.com/aedocw/epub2tts?tab=readme-ov-file#extract-epub-contents-to-text
+```
+
+```sh
+# XTTS with Coqui Studio voice
+epub2tts <txt> --engine xtts --speaker "Suad Qasim" --cover cover-image.jpg --sayparts
 ```
 
 ## troubleshoot
