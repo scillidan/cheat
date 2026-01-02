@@ -1,0 +1,29 @@
+[book]
+title = "cheat"
+authors = ["scillidan"]
+description = ""
+language = "en"
+# multilingual = false
+src = "src"
+
+[output.html]
+default-theme = "Light"
+preferred-dark-theme = "ayu"
+no-section-label = true
+# git-repository-icon = "fa-github"
+git-repository-url = "https://github.com/scillidan/cheat"
+edit-url-template = "https://github.com/scillidan/cheat/main/{path}"
+
+[output.html.print]
+enable = true
+page-break = true
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.code.hidelines]
+bash = "#"
+
+[output.html.playground]
+runnable = false

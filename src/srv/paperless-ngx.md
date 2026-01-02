@@ -1,0 +1,48 @@
+# [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)
+
+## install
+
+[^1] [^2]
+
+```sh
+mkdir -v ~/paperless-ngx
+wget https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/refs/heads/main/docker/compose/docker-compose.postgres.yml -O docker-compose.yml
+```
+
+Add volumes as additional storage liked:
+
+```sh
+vim docker-compose.yml
+```
+
+```yaml
+    volumes:
+      - /mnt/nvme/paper:/usr/src/paperless/consume
+```
+
+```sh
+wget https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/refs/heads/main/docker/compose/docker-compose.env
+vim docker-compose.env
+```
+
+```
+PAPERLESS_OCR_LANGUAGES=chi-sim chi-sim-vert chi-tra chi-tra-vert
+PAPERLESS_SECRET_KEY=<secret_key>
+```
+
+```sh
+docker compose pull
+sudo docker compose run --rm webserver createsuperuser
+sudo docker compose up -d
+```
+
+## reference
+
+- [Scanner & Software Recommendations](https://github.com/paperless-ngx/paperless-ngx/wiki/Scanner-&-Software-Recommendations)
+
+[^1]: [Docker using the Installation Script](https://docs.paperless-ngx.com/setup/#docker_script)
+[^2]: [Paperless-ngx - Bare Metal Route](https://docs.paperless-ngx.com/setup/#bare_metal)
+
+## appdedix
+
+![paperless-ngx](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/srv/paperless-ngx.png)

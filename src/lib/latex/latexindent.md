@@ -1,0 +1,5 @@
+# [latexindent](https://www.ctan.org/pkg/latexindent)
+
+> latexindent.pl is a Perl script that indents .tex (and other) files according to an indentation scheme that the user can modify to suit their taste. Environments, including those with alignment delimiters (such as tabular), and commands, including those that can split braces and brackets across lines, are usually handled correctly by the script. Options for verbatim-like environments and commands, together with indentation after headings (such as chapter, section, etc) are also available. The script also has the ability to modify line breaks, and to add comment symbols and blank lines; furthermore, it permits string or regex-based substitutions. All user options are customisable via the switches and the YAML interface. [ctan.org/pkg/latexindent]
+
+> latexindent.pl是一个Perl脚本，用于根据用户可以修改的缩进方案对.tex（和其他）文件进行缩进。该脚本通常能够正确处理环境，包括带对齐分隔符的环境（如tabular），以及可以跨行拆分大括号和中括号的命令。还提供了对类verbatim环境和命令的选项，以及在标题（如章节、节等）后进行缩进的功能。该脚本还具有修改换行符的能力，可以添加注释符号和空行；此外，它还允许基于字符串或正则表达式的替换。所有用户选项都可以通过开关和YAML接口进行自定义。 [ctan.org/pkg/latexindent]

@@ -1,0 +1,27 @@
+# [Papra](https://github.com/papra-hq/papra)
+
+## insttall
+
+[^1]
+
+```sh
+# Docker compose
+mkdir papra
+cd papra
+vim docker-compose.yml
+```
+
+```yaml
+services:
+  papra:
+    container_name: papra
+    image: ghcr.io/papra-hq/papra:latest
+    restart: unless-stopped
+    ports:
+      - "1221:1221"
+    volumes:
+      - /mnt/<mount_disk>/share/papra/app-data:/app/app-data
+    user: "${UID}:${GID}"
+```
+
+[^1]: [Using Docker Compose](https://docs.papra.app/self-hosting/using-docker-compose/)
