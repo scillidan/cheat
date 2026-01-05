@@ -12,4 +12,11 @@ sudo pacman -S gnome-keyring
 yay -S --noconfirm github-desktop-bin
 ```
 
+## config
+
+- Github Desktop > File > Options
+	- Integrations
+		- External editor
+		- Shell
+
 [^1]: [The name is not activatable · Issue #18121 · desktop/desktop](https://github.com/desktop/desktop/issues/18121)
