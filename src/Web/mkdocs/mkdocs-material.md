@@ -6,7 +6,7 @@
 mkdir <site>
 cd <site>
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install mkdocs-material
 ```
 

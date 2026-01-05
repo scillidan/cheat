@@ -5,7 +5,7 @@
 ```sh
 # uv (Windows 10)
 uv venv .pyglossary
-.pyglossary\Scripts\activate.bat
+.pyglossary\Scripts\activate
 uv pip install pyglossary lxml beautifulsoup4
 mklink %USERPROFILE%\.local\bin\pyglossary.exe %CD%\.pyglossary\Scripts\pyglossary.exe
 deactivate.bat

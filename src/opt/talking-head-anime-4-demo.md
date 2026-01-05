@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/pkhungurn/talking-head-anime-4-demo
 cd talking-head-anime-4-demo
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install poetry
 cd poetry
 poetry install

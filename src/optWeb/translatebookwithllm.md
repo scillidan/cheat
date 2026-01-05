@@ -8,7 +8,7 @@
 git clone --depth=1 https://github.com/hydropix/TranslateBookWithLLM
 cd TranslateBookWithLLM
 uv venv --python 3.9
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install flask flask-cors flask-socketio python-socketio requests tqdm aiohttp lxml ebooklib
 ```
 

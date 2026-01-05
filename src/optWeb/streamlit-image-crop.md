@@ -11,7 +11,7 @@ git clone --depth=1 https://github.com/mitsuse/streamlit-image-crop
 cd streamlit-image-crop
 uv python install 3.8.20
 uv venv --python 3.8.20
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install poetry
 poetry install
 ```

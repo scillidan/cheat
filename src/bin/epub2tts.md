@@ -6,8 +6,8 @@
 git clone --depth=1 https://github.com/aedocw/epub2tts
 cd epub2tts
 uv venv --python 3.11
-.venv\Scripts\activate.bat
-uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu129
+.venv\Scripts\activate
+uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
 uv pip install coqui-tts --only-binary spacy
 uv pip install -e .
 ```
@@ -21,8 +21,8 @@ epub2tts <epub> --export txt
 ```
 
 ```sh
-# XTTS with Coqui Studio voice
-epub2tts <txt> --engine xtts --speaker "Suad Qasim" --cover cover-image.jpg --sayparts
+# Coqui TTS 
+epub2tts <formatted_txt> --engine tts --language en --speaker "Suad Qasim" --cover cover-image.jpg --sayparts
 ```
 
 ## troubleshoot

@@ -15,7 +15,7 @@ npm run build
 
 ```sh
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv python -m pip install -r requirements.txt
 uv python -m pip install -r requirements.prod.txt
 uv pip install -r requirements.txt

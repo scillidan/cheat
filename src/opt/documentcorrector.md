@@ -5,7 +5,7 @@
 ```sh
 git clone --depth=1 https://github.com/Robomarchello/DocumentCorrector
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -r requirements.txt
 pip install nuitka setuptools
 ```

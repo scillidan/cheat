@@ -9,9 +9,9 @@ git clone --depth=1 https://github.com/sdbds/ToonCrafter-for-windows
 # pyenv install 3.8.10
 # pyenv shell 3.8.10
 # python -m venv venv
-# venv\Scripts\activate.bat
+# venv\Scripts\activate
 uv venv --python 3.8.20
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -r requirements-windows.txt
 ```
 

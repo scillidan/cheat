@@ -8,7 +8,7 @@
 git clone --depth=1 https://github.com/jobsta/albumapp-django
 cd albumapp-django
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install django reportbro-lib
 python manage.py makemigrations albums
 python manage.py migrate

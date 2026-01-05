@@ -22,6 +22,14 @@ edge-tts --list-voices
 edge-playback --voice en-US-AndrewMultilingualNeural --text "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”"
 ```
 
+## reference
+
+- #guide [How I Used Edge-TTS to Build a Free Online Text-to-Speech Site](https://dev.to/alixwang/how-i-used-edge-tts-to-build-a-free-online-text-to-speech-site-47n9)
+
+## asset
+
+- [Free Text to Speech Online](https://tts-free.online/en)
+
 ## annex
 
 - [example_edge-tts](https://github.com/scillidan/example_edge-tts)

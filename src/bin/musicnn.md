@@ -44,7 +44,7 @@ jupter lab
 ```sh
 uv python install 3.7.9
 uv venv --python 3.7.9
-source .venv\Scripts\activate.bat
+source .venv\Scripts\activate
 uv pip install -e .
 uv pip install matplotlib
 yay -S libxcrypt-compat

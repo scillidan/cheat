@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/openai/whisper
 cd whisper
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
 uv pip install -e .
 ```

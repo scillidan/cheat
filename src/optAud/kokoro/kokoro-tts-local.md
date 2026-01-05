@@ -8,7 +8,7 @@
 git clone --depth=1 https://github.com/PierrunoYT/Kokoro-TTS-Local
 cd Kokoro-TTS-Local
 python -m venv venv
-venv\Scripts\activate.bat
+venv\Scripts\activate
 pip install torch --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 pip install hf_transfer

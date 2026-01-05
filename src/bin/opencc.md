@@ -12,9 +12,8 @@ sudo pacman -S opencc
 ```sh
 # Windows 10
 uv venv .opencc --python 3.10
-.opencc\Scripts\activate.bat
-mklink %USERPROFILE%\.local\bin\opencc.exe %CD%\.opencc\Lib\site-packages\opencc\clib\bin\opencc.exe
-deactivate.bat
+.opencc\Scripts\activate
+uv pip install opencc
 ```
 
 ## usage
@@ -23,5 +22,5 @@ deactivate.bat
 # Arch
 opencc -c /usr/share/opencc/t2s.json -i input.txt -o output.txt
 # Windows 10
-opencc -c <path_to>/.opencc/Lib/site-packages/opencc/clib/share/opencc/t2s.json -i input.txt -o output.txt
+.opencc\Lib\site-packages\opencc\clib\bin\opencc -c .opencc/Lib/site-packages/opencc/clib/share/opencc/t2s.json -i input.txt -o output.txt
 ```

@@ -17,4 +17,3 @@ conda init zsh
 # Windows 10
 conda init cmd.exe
 ```
-

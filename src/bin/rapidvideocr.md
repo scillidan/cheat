@@ -13,7 +13,7 @@ pip install rapid_videocr
 # GPU
 git clone --depth=1 https://github.com/SWHL/RapidVideOCR
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install paddlepaddle-gpu==3.0.0b1 -i https://www.paddlepaddle.org.cn/packages/stable/cu123/
 uv pip install get-pypi-latest-version
 python setup.py install

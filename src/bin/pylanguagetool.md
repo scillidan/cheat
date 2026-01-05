@@ -3,11 +3,11 @@
 ## install
 
 ```sh
-uv venv .pyLanguagetool
+uv venv .pylanguagetool
 # Arch
-source .pyLanguagetool/bin/activate
+source .pylanguagetool/bin/activate
 # Windows
-.pyLanguagetool\Scripts\activate.bat
+.pylanguagetool\Scripts\activate
 uv pip install --upgrade setuptools beautifulsoup4 pylanguagetool
 ```
 

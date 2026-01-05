@@ -17,7 +17,7 @@ scoop install espeak-ng
 
 ```sh
 uv venv --python 3.10
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 # set PHONEMIZER_ESPEAK_LIBRARY="<path_to>\libespeak-ng.dll"
 # set PHONEMIZER_ESPEAK_PATH="<path_to>\espeak-ng.exe"
 set PYTHONUTF8=1

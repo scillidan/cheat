@@ -4,7 +4,7 @@
 
 ```sh
 uv venv .marker --python 3.12
-.marker\Scripts\activate.bat
+.marker\Scripts\activate
 uv pip install marker-pdf
 # uv pip install hf_transfer
 ```

@@ -13,7 +13,7 @@ npm run build
 cp -r dist/ ../iopaint/web_app
 cd ..
 uv venv --python 3.10
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 uv pip install -e .
 ```

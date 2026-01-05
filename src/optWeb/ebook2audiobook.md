@@ -7,14 +7,24 @@
 ```sh
 git clone --depth=1 https://github.com/DrewThomasson/ebook2audiobook
 cd ebook2audiobook
-uv venv
-.venv\Scripts\activate.bat
-uv pip isntall -r requirements.txt
+uv venv --python 3.12
+.venv\Scripts\activate
+uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+set PYTHONUTF8=1
+set PYTHONIOENCODING=utf-8
+uv pip install -r requirements.txt
 # uv pip install coqui-tts==0.24.2 pydub nltk beautifulsoup4 ebooklib tqdm gradio==4.44.0
-uv python -m nltk.downloader punkt
-uv python -m nltk.downloader punkt_tab
+python -m nltk.downloader punkt
+python -m nltk.downloader punkt_tab
 uv pip install mecab mecab-python3 unidic
 python -m unidic download
+```
+
+Or:
+
+```sh
+set %CUDA_PATH%=%CUDA_PATH_V12_4%
+ebook2audiobook.cmd
 ```
 
 ## usage

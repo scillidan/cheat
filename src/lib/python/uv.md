@@ -6,6 +6,9 @@
 # Arch
 sudo pacman -S uv
 # Windows 10
+scoop install python310
+scoop install python311
+scoop install python312
 scoop install uv
 ```
 
@@ -14,8 +17,8 @@ scoop install uv
 ```sh
 # Install a specific version
 uv python list
-uv python install 3.10
-uv python pin 3.10
+uv python install <version>
+uv python pin <version>
 ```
 
 ```sh
@@ -31,7 +34,7 @@ uv venv
 source .venv/Scripts/activate
 deactivate
 # Windows 10
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 deactivate.bat
 ```
 

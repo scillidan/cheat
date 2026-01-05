@@ -7,7 +7,7 @@
 ```sh
 git clone --depth=1 https://github.com/machinewrapped/gpt-subtrans
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -r requirements.txt
 scripts\generate-cmd.bat gui-subtrans
 scripts\generate-cmd.bat llm-subtrans

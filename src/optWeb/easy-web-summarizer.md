@@ -8,7 +8,7 @@
 git clone --depth=1 https://github.com/cobanov/easy-web-summarizer
 cd easy-web-summarizer
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -r requirements.txt
 ollama pull llama3:instruct
 ```

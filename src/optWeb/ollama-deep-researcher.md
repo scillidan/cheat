@@ -9,7 +9,7 @@ git clone --depth=1 https://github.com/langchain-ai/ollama-deep-researcher
 cd ollama-deep-researcher
 cp .env.example .env
 uv venv --python 3.11
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -e .
 uv pip install -U "langgraph-cli[inmem]"
 ```

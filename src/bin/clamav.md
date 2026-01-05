@@ -208,7 +208,9 @@ subl <path_to>\freshclam.conf
 ```
 
 ```
-DatabaseDirectory "<path_to>/ClamAV/database"
+# Example
+DatabaseDirectory "<path_to>\ClamAV\database"
+UpdateLogFile "<path_to>\ClamAV\freshclam.log"
 ```
 
 ```sh

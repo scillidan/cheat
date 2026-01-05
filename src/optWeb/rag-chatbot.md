@@ -9,7 +9,7 @@
 git clone --depth=1 https://github.com/datvodinh/rag-chatbot
 cd rag-chatbot
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -e .
 ```
 

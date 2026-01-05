@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/lshqqytiger/stable-diffusion-webui-amdgpu
 cd stable-diffusion-webui-amdgpu
 python -m venv .venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 ```
 
 ```sh

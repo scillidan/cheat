@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/codingmoh/open-codex
 cd open-codex
 uv venv --python=3.11
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install .
 ```
 

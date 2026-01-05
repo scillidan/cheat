@@ -5,7 +5,7 @@
 ```sh
 git clone --depth=1 https://github.com/Sanix-Darker/zeal-lynx-cli
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install argparse xdg==5.1.1 pathlib bs4
 ```
 

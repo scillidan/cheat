@@ -6,7 +6,7 @@
 git clone https://github.com/trakBan/spongebob-cli
 cd spongebob-cli
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -e .
 ```
 

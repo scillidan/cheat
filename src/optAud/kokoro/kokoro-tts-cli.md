@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/cheuerde/kokoro-tts-cli
 cd kokoro-tts-cli
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install torch --index-url https://download.pytorch.org/whl/cu121
 uv pip install tqdm sounddevice scipy numpy phonemizer transformers
 uv pip install windows-curses

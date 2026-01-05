@@ -15,7 +15,7 @@
 git clone --depth=1 https://github.com/TrueMyst/BeatPrints
 cd BeatPrints
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -e .
 uv pip install python-dotenv
 ```

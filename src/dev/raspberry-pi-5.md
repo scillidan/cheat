@@ -25,5 +25,9 @@
 8. Install NVMe driver in Pi5, power on.
 9. You can log in to it via SSH.
 
+## reference
+
+- #guide [How to Build a Time Machine: A GPS-Disciplined Stratum 1 NTP Server](https://chuck.is/ntp/)
+
 [^1]: [Quick Guide to Enabling SSH on Ubuntu 24.04](https://linuxconfig.org/quick-guide-to-enabling-ssh-on-ubuntu-24-04)
 [^2]: [Ubuntu 24.04 LTS Raspberry Pi 5. NVMe install Fix](https://www.youtube.com/watch?v=2qkqCB8x2nM)

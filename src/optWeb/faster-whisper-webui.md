@@ -10,7 +10,7 @@
 git clone https://huggingface.co/spaces/aadnk/faster-whisper-webui
 cd faster-whisper-webui
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 set "CUDA_PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8"
 echo %CUDA_PATH%
 uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118

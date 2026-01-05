@@ -8,7 +8,7 @@
 git clone --depth=1 https://github.com/makawy7/bark-webui
 cd bark-webui
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install torch --index-url https://download.pytorch.org/whl/cu121
 uv pip install .
 uv pip install gradio

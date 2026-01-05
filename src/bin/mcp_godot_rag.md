@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/weekitmo/mcp_godot_rag
 cd mcp_godot_rag
 uv venv --python=3.12
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv sync
 cp .env.example .env.local
 ```

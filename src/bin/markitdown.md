@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/microsoft/markitdown
 cd markitdown
 uv venv --python 3.12
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -e "packages/markitdown[all]"
 ```
 
@@ -22,7 +22,7 @@ mklink %USERPROFILE%\.local\bin\markitdown.exe %CD%\.venv\Scripts\markitdown.exe
 ```sh
 # Update
 git pull
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -e "packages/markitdown[all]"
 ```
 

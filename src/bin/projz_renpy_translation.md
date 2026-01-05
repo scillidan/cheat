@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/abse4411/projz_renpy_translation
 cd projz_renpy_translation
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 cp requirements_full.txt requirements_full.txt.bak
 subl requirements_full.txt
 ```

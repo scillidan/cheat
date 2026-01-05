@@ -7,7 +7,7 @@
 ```sh
 git clone --depth=1 https://github.com/zyddnys/manga-image-translator
 python -m venv venv
-venv\Scripts\activate.bat
+venv\Scripts\activate
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 pip install -r requirements.txt
 ```

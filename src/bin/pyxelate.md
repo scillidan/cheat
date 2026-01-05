@@ -5,7 +5,7 @@
 ```sh
 git clone --depth=1 https://github.com/sedthh/pyxelate
 uv venv .venv --python 3.9
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -r requirements.txt
 uv pip install -e .
 ```

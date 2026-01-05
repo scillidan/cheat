@@ -6,7 +6,7 @@
 git clone --depth=1 https://github.com/ochen1/insanely-fast-whisper-cli
 cd insanely-fast-whisper-cli
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -r requirements.txt
 ```
 

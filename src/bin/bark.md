@@ -7,7 +7,7 @@ git lfs install
 git clone https://huggingface.co/spaces/suno/bark
 cd bark
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install torch --index-url https://download.pytorch.org/whl/cu121
 uv pip install -e .
 ```

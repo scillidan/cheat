@@ -26,7 +26,7 @@ sqlite-utils enable-fts database.db table column_1 column_2
 mkdir <dir>
 cd <dir>
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install datasette
 uv pip install datasette-sitemap datasette-block-robots datasette-backup datasette-search-all datasette-external-links-new-tabs datasette-copyable datasette-publish-vercel
 # datasette install datasette-render-images datasette-multiline-links datasette-render-markdown datasette-media

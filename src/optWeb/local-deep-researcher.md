@@ -4,7 +4,7 @@
 git clone --depth=1 https://github.com/langchain-ai/local-deep-researcher
 cd local-deep-researcher
 uv venv --python 3.11
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 uv pip install -e .
 uv pip install -U "langgraph-cli[inmem]"
 cp .env.example .env

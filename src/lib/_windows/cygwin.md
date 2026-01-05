@@ -1,7 +1,19 @@
 # [Cygwin](https://www.cygwin.com/)
 
-## usage
+## install
 
 ```sh
-apt-cyg install git vim zsh
+scoop install cygwin
+```
+
+```sh
+# Cygwin
+apt-cyg update
+```
+
+## update
+
+```sh
+# Cygwin
+apt-cyg install gcc-core gcc-g++ make automake autoconf libtool pkg-config
 ```

@@ -7,7 +7,7 @@
 ```sh
 # Pip
 uv venv
-.venv\Scripts\activate.bat
+.venv\Scripts\activate
 set CMAKE_ARGS="-DGGML_CUDA=on"
 uv pip install "khoj[local]"
 set USE_EMBEDDED_DB="true"
