@@ -4258,12 +4258,8 @@ scoop install fd
 sudo pacman -S ffmpeg
 # Windows 10
 scoop install ffmpeg
+scoop install ffmpeg-share
 </code></pre>
-<h3 id="optional"><a class="header" href="#optional">Optional (Windows 10)</a></h3>
-<ol>
-<li>Get <code>ffmpeg-master-latest-win64-gpl-shared.zip</code> from <a href="https://github.com/BtbN/FFmpeg-Builds/releases">FFmpeg Static Auto-Builds - Releases</a>.</li>
-<li>Add <code>ffmpeg-gpl-shared\bin</code> into PATH.</li>
-</ol>
 <h2 id="usage-40"><a class="header" href="#usage-40">usage</a></h2>
 <h3 id="command-2"><a class="header" href="#command-2">command</a></h3>
 <pre><code class="language-sh"># Batch convert FLAC to MP3
@@ -7945,6 +7941,7 @@ git config --global http.sslVerify true
 <h3 id="later-13"><a class="header" href="#later-13">later</a></h3>
 <ul>
 <li><a href="https://github.com/narnaud/git-repos">git-repos</a></li>
+<li><a href="https://github.com/git-chglog/git-chglog">git-chglog</a></li>
 </ul>
 <h3 id="extra-15"><a class="header" href="#extra-15">extra</a></h3>
 <ul>
@@ -16472,6 +16469,7 @@ scoop install zeal
 <li>#Chrome <a href="https://chrome.google.com/webstore/detail/table-range-select-and-co/klojbfbefcejadioohmnkhjmbmecfapg">Table Range Select &amp; Copy (Like in Firefox!)</a></li>
 <li>#Chrome <a href="https://github.com/guilryder/chrome-extensions/tree/main/urlintitle">URL in title</a></li>
 <li>#Chrome <a href="https://github.com/useful-forks/useful-forks.github.io">Useful Forks</a></li>
+<li>#Firefox <a href="https://addons.mozilla.org/en-US/firefox/addon/copy-on-select/">Copy On Select</a></li>
 <li>#Firefox <a href="https://github.com/nathanbw/copy-title-as-link">Copy Page Title As Link</a></li>
 <li>#Firefox <a href="https://addons.mozilla.org/en-US/firefox/addon/hide-scrollbars">hide-scrollbars</a></li>
 <li>#Firefox <a href="https://github.com/guidodinello/Smart-Clippy">Smart Clippy</a></li>
@@ -27142,6 +27140,11 @@ C:\Users\User\Scoop\apps\sioyek\current;
 # C:\Program Files (x86)\Aspell-0.60\bin;
 # C:\Users\User\Scoop\apps\yarn\current\bin;
 # C:\Users\User\Scoop\apps\yarn\current\global\node_modules\.bin;
+</code></pre>
+<h3 id="reset-windows-certificate-store"><a class="header" href="#reset-windows-certificate-store">Reset Windows certificate store</a></h3>
+<pre><code class="language-sh">certutil -generateSSTFromWU roots.sst
+certutil -addstore -f root roots.sst
+del roots.sst
 </code></pre>
 <h2 id="config"><a class="header" href="#config">config (Cache)</a></h2>
 <ul>

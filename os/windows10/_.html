@@ -312,6 +312,11 @@ C:\Users\User\Scoop\apps\sioyek\current;
 # C:\Users\User\Scoop\apps\yarn\current\bin;
 # C:\Users\User\Scoop\apps\yarn\current\global\node_modules\.bin;
 </code></pre>
+<h3 id="reset-windows-certificate-store"><a class="header" href="#reset-windows-certificate-store">Reset Windows certificate store</a></h3>
+<pre><code class="language-sh">certutil -generateSSTFromWU roots.sst
+certutil -addstore -f root roots.sst
+del roots.sst
+</code></pre>
 <h2 id="config"><a class="header" href="#config">config (Cache)</a></h2>
 <ul>
 <li><code>Win+Q</code>
