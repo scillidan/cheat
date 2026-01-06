@@ -12,6 +12,8 @@
 ## Todo
 
 - Re-create repository, clear bad commits history.
+- Used as files, then web.
+- Use file (name) to represent files' relationships.
 - Clear `*.md`.
 - Clear `#tags`.
 - Re-name `.md` using pkgname, repository name, etc...

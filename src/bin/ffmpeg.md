@@ -7,12 +7,8 @@
 sudo pacman -S ffmpeg
 # Windows 10
 scoop install ffmpeg
+scoop install ffmpeg-share
 ```
-
-### Optional (Windows 10) { #optional }
-
-1. Get `ffmpeg-master-latest-win64-gpl-shared.zip` from [FFmpeg Static Auto-Builds - Releases](https://github.com/BtbN/FFmpeg-Builds/releases).
-2. Add `ffmpeg-gpl-shared\bin` into PATH.
 
 ## usage
 
