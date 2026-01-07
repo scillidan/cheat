@@ -2,6 +2,7 @@
 
 ## reference
 
+- #blog [Web 字体工程实践：DX、子集化与性能平衡](https://i.vizards.cc/solving-cjk-web-font-performance-with-subsetting-and-automation/)
 - #guide [Creating a halftone effect with CSS](https://leanrada.com/notes/pure-css-halftone)
 
 ## resource
