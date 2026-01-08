@@ -191,6 +191,7 @@ scoop install git
 git config --global core.autocrlf input
 # Windows
 git config --global core.autocrlf true
+git config --global core.editor &quot;subl --new-window --wait&quot;
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <h3 id="command"><a class="header" href="#command">command</a></h3>
@@ -221,7 +222,9 @@ git pull
 git tag v0.0.1
 git push origin v0.0.1
 </code></pre>
-<pre><code class="language-sh"># Push a PR
+<pre><code class="language-sh"># Temporary save
+git stash
+# Push a PR
 git checkout -b &lt;branch&gt;
 git add &lt;file&gt;
 git commit -m &quot;&lt;commit&gt;&quot;
