@@ -70,6 +70,7 @@ services:
 ```sh
 sudo docker compose up -d
 ```
+
 [^1]: [Using Docker (Recommended)](https://github.com/freeCodeCamp/devdocs#using-docker-recommended)
 
 ## Troubleshoot

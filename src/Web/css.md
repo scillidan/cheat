@@ -17,3 +17,4 @@
 - #image [Recreating Palmer’s Draggable Product Grid with GSAP](https://tympanus.net/codrops/2025/09/01/recreating-palmers-draggable-product-grid-with-gsap/)
 - #latex [LaTeX.css](https://latex.vercel.app/)
 - [autosubset](https://github.com/MarcelWaldvogel/autosubset)
+- [readium-css](https://thorium-web.pages.dev/read/experimental/readium-css)
