@@ -11,9 +11,9 @@
 
 ## Todo
 
-- Re-create repository, clear bad commits history.
-- Used as files, liked filename.preview.png, filename.shortcut.conf, ...
-- Use file (name) to represent files' relationships.
-- Clear `*.md`.
-- Clear `#tags`.
-- Re-name `.md` using pkgname, repository name, etc...
+- [ ] Re-create repository, clear bad commits history.
+- [-] Used as files, liked filename.preview.png, filename.shortcut.conf, ...
+- [ ] Use file (name) to represent files' relationships.
+- [ ] Clear `*.md`.
+- [ ] Clear `#tags`.
+- [ ] Re-name `.md` using pkgname, repository name, etc...

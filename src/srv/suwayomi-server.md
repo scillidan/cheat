@@ -79,7 +79,9 @@ sudo firewall-cmd --reload
 2. Visit `http://<your_host>:4567`.
 3. Settings
 	- Brower
-		- Extension repositories → Add repository → `https://raw.githubusercontent.com/ThePBone/tachiyomi-extensions-revived/repo/index.min.json` → OK[^2].
+		- Extension repositories → Add repository[^2][^3]
+			- https://raw.githubusercontent.com/ThePBone/tachiyomi-extensions-revived/repo/index.min.json
+			- https://raw.githubusercontent.com/yuzono/anime-repo/repo/index.min.json
 		- Local source location → `/mnt/<disk>/manga`.
 	- Download → Download localtion → `/mnt/<disk>/share/suwayomi`.
 	- Library → Automatically refresh metadata (On).
@@ -90,3 +92,4 @@ sudo firewall-cmd --reload
 
 [^1]: [can you make it easier to install on ubuntu , and tutorial need to update](https://github.com/Suwayomi/Suwayomi-Server/issues/896)
 [^2]: [Tachiyomi Extensions Revived](https://github.com/timschneeb/tachiyomi-extensions-revived)
+[^3]: [Anikku/Aniyomi Extensions](https://github.com/yuzono/aniyomi-extensions)

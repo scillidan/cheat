@@ -58,3 +58,7 @@ scoop install dngrep
 - [new Plugin tested / Exiftool](https://github.com/dnGrep/dnGrep/discussions/1124)
 - [Using Apache Tika with dnGrep](https://github.com/dnGrep/dnGrep/discussions/1049)
 - [Using Msg2txt with dnGrep](https://github.com/dnGrep/dnGrep/discussions/1112)
+
+## troubleshooting
+
+- [Doc word document read failed](https://github.com/dnGrep/dnGrep/issues/1208)
