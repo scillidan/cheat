@@ -7,24 +7,12 @@
 ```sh
 git clone --depth=1 https://github.com/DrewThomasson/ebook2audiobook
 cd ebook2audiobook
-# set PYTHONUTF8=1
-# set PYTHONIOENCODING=utf-8
-# uv pip install -r requirements.txt
-# # uv pip install coqui-tts==0.24.2 pydub nltk beautifulsoup4 ebooklib tqdm gradio==4.44.0
-# python -m nltk.downloader punkt
-# python -m nltk.downloader punkt_tab
-# uv pip install mecab mecab-python3 unidic
-# python -m unidic download
 set %CUDA_PATH%=%CUDA_PATH_V12_4%
 ebook2audiobook.cmd
-conda activate <path_to>\ebook2audiobook\python_env
-pip install hf_transfer
-pip install --upgrade rich
-conda install espeak-ng
-pip install pyttsx3
-pip install phonemizer
-pip install speechbrain==1.0.0
+python_env\python.exe -m pip install --no-cache-dir torch==2.6.0 torchaudio==2.6.0 --force-reinstall --index-url https://download.pytorch.org/whl/cu124
+python_env\python.exe -m pip install hf_transfer
 set HF_HUB_ENABLE_HF_TRANSFER=0
+# Test it as CLI
 ebook2audiobook.cmd --headless --ebook <path_to>\file.txt --language en --custom_model <path_to>\xtts_v2\MelinaEldenRing
 ```
 

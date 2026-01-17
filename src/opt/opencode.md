@@ -25,6 +25,8 @@ scoop install opencode
 
 - [OpenCode Codex OAuth](https://github.com/numman-ali/opencode-openai-codex-auth)
 - [OpenCode Background Processes Plugin](https://github.com/zenobi-us/opencode-background)
+- [opencode-direnv](https://github.com/simonwjackson/opencode-direnv)
+- [micode](https://github.com/vtemian/micode)
 
 ## appendix
 

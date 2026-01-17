@@ -2,18 +2,16 @@
 
 ## resource
 
-### mark
-
-- #monospace [Sarasa Term SC Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd) by laishulu / [OFL-1.1](https://github.com/laishulu/Sarasa-Term-SC-Nerd/blob/main/LICENSE) _release_
+- #monospace [Sarasa Term SC Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd) by laishulu / [OFL-1.1](https://github.com/laishulu/Sarasa-Term-SC-Nerd/blob/main/LICENSE)
+- #serif [LXGW WenKai GB / 霞鹜文楷 GB](https://github.com/lxgw/LxgwWenkaiGB) by LXGW / [OFL-1.1](https://github.com/lxgw/LxgwWenkaiGB/blob/main/OFL.txt)
+- #sans-serif [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans) by atelierAnchor / [OFL-1.1](https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE)
 
 ### extra
 
 - #monospace [Sarasa Gothic ⨯ Nerd Fonts](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts) by jonz94 / [MIT](https://github.com/jonz94/Sarasa-Gothic-Nerd-Fonts?tab=MIT-1-ov-file#readme) _release_
 - #sans-serif [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic) by Renzhi Li / [OFL-1.1](https://github.com/be5invis/Sarasa-Gothic/blob/main/LICENSE) _release_
 - #sans-serif [Source Han Sans](https://github.com/adobe-fonts/source-han-sans) by Adobe / [OFL-1.1](https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt) _release_
-- #sans-serif [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans) by atelierAnchor / [OFL-1.1](https://github.com/atelier-anchor/smiley-sans/blob/main/LICENSE) _release_
 - #serif [Cardo](https://scholarsfonts.net/cardofnt.html) by David Perry / [OFL-1.1](https://openfontlicense.org/) _download_
-- #serif [LXGW WenKai GB / 霞鹜文楷 GB](https://github.com/lxgw/LxgwWenkaiGB) by LXGW / [OFL-1.1](https://github.com/lxgw/LxgwWenkaiGB/blob/main/OFL.txt) _release_
 - #serif [Source Han Serif](https://github.com/adobe-fonts/source-han-serif) by Adobe / [OFL-1.1](https://github.com/adobe-fonts/source-han-serif/blob/master/LICENSE.txt) _release_
 
 ### cache
