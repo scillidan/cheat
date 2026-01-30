@@ -6172,6 +6172,12 @@ yt-dlp -f bestvideo+bestaudio &quot;&lt;url_1&gt;&quot;
 
 # Download MP3 using yt-dlp
 yt-dlp -x --audio-format mp3 --audio-quality 320k -o &quot;%(title)s.%(ext)s&quot; &quot;&lt;url_1&gt;&quot;
+
+# List playlist
+yt-dlp --flat-playlist --print &quot;%(webpage_url)s&quot; &quot;&lt;url&gt;&quot;
+
+# Download subtitle
+yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs srt --no-check-certificate &quot;&lt;url&gt;&quot;
 </code></pre>
 <h2 id="troubleshoot-4"><a class="header" href="#troubleshoot-4">troubleshoot</a></h2>
 <p><sup class="footnote-reference"><a href="#2">2</a></sup></p>
@@ -22352,7 +22358,6 @@ git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 <li>BookSearchParty <em><a href="https://booksearch.party">public</a></em></li>
 <li>Choose an open source license <em><a href="https://choosealicense.com/">public</a></em></li>
 <li>Creative Commons Licenses for GitHub Projects <em><a href="https://github.com/santisoler/cc-licenses">public</a></em></li>
-<li>DownSub <em><a href="https://downsub.com">public</a></em></li>
 <li>Dynamic Dummy Image Generator <em><a href="https://dummyimage.com">public</a></em></li>
 <li>GIF Compressor <em><a href="https://gifcompressor.com">public</a></em></li>
 <li>GitDiagram <em><a href="https://gitdiagram.com">public</a></em></li>

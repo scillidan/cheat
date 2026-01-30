@@ -206,6 +206,12 @@ yt-dlp -f bestvideo+bestaudio &quot;&lt;url_1&gt;&quot;
 
 # Download MP3 using yt-dlp
 yt-dlp -x --audio-format mp3 --audio-quality 320k -o &quot;%(title)s.%(ext)s&quot; &quot;&lt;url_1&gt;&quot;
+
+# List playlist
+yt-dlp --flat-playlist --print &quot;%(webpage_url)s&quot; &quot;&lt;url&gt;&quot;
+
+# Download subtitle
+yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs srt --no-check-certificate &quot;&lt;url&gt;&quot;
 </code></pre>
 <h2 id="troubleshoot"><a class="header" href="#troubleshoot">troubleshoot</a></h2>
 <p><sup class="footnote-reference"><a href="#2">2</a></sup></p>
