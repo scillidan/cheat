@@ -189,9 +189,9 @@ scoop install ffmpeg-share
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <h3 id="command"><a class="header" href="#command">command</a></h3>
-<pre><code class="language-sh"># Batch convert FLAC to MP3
+<pre><code class="language-sh"># Convert FLAC to MP3
 find . -type f \( -iname &quot;*.wav&quot; -o -iname &quot;*.flac&quot; -o -iname &quot;*.m4a&quot; \) -print0 | xargs -0 -I {} ffmpeg -i &quot;{}&quot; -c:a libmp3lame -ar 44100 -b:a 256k -maxrate 320k -minrate 128k -bufsize 320k &quot;{}.mp3&quot;
-# Batch convert FLACs to one MP3
+# Convert FLACs to one MP3
 find . -maxdepth 1 -type f -name '*.flac' | sort | sed &quot;s|^\./\(.*\)$|file '\1'|&quot; &gt; _temp.txt
 ffmpeg -f concat -safe 0 -i _temp.txt -codec:a libmp3lame -qscale:a 1 _.mp3
 

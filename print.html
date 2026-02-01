@@ -263,6 +263,7 @@
 <li>#No-RSS <a href="https://rawtext.club/~sloum">sloum</a></li>
 <li>#No-RSS <a href="https://wiki.xxiivv.com">XXIIVV</a></li>
 <li>#No-RSS <a href="https://krasjet.com">「 」</a></li>
+<li>#No-RSS <a href="https://visualrambling.space/">visualrambling.space</a></li>
 <li>#3d <a href="https://sketchfab.com/feed">Sketchfab</a></li>
 <li>#3dprint <a href="https://www.instructables.com">Autodesk</a></li>
 <li>#3dprint <a href="https://makerworld.com/en">MakerWorld</a></li>
@@ -4255,9 +4256,9 @@ scoop install ffmpeg-share
 </code></pre>
 <h2 id="usage-40"><a class="header" href="#usage-40">usage</a></h2>
 <h3 id="command-2"><a class="header" href="#command-2">command</a></h3>
-<pre><code class="language-sh"># Batch convert FLAC to MP3
+<pre><code class="language-sh"># Convert FLAC to MP3
 find . -type f \( -iname &quot;*.wav&quot; -o -iname &quot;*.flac&quot; -o -iname &quot;*.m4a&quot; \) -print0 | xargs -0 -I {} ffmpeg -i &quot;{}&quot; -c:a libmp3lame -ar 44100 -b:a 256k -maxrate 320k -minrate 128k -bufsize 320k &quot;{}.mp3&quot;
-# Batch convert FLACs to one MP3
+# Convert FLACs to one MP3
 find . -maxdepth 1 -type f -name '*.flac' | sort | sed &quot;s|^\./\(.*\)$|file '\1'|&quot; &gt; _temp.txt
 ffmpeg -f concat -safe 0 -i _temp.txt -codec:a libmp3lame -qscale:a 1 _.mp3
 
@@ -6263,6 +6264,8 @@ scoop install zoxide
 <h3 id="later-9"><a class="header" href="#later-9">later</a></h3>
 <ul>
 <li><a href="https://github.com/soulim/bookmarks.txt">bookmarks.txt</a></li>
+<li><a href="https://github.com/ahloiscreamo/fmpc">fmpc</a></li>
+<li><a href="https://github.com/v9mirza/lazyports">LazyPorts</a></li>
 <li><a href="https://github.com/openai/codex">OpenAI Codex CLI</a></li>
 <li><a href="https://github.com/joehillen/sysz">sysz</a></li>
 </ul>
@@ -14440,11 +14443,12 @@ Constant bitrate, kb/s: 128
 <h2 id="install-304"><a class="header" href="#install-304">install</a></h2>
 <pre><code class="language-sh">git clone --depth=1 https://github.com/dmMaze/BallonsTranslator
 cd BallonsTranslator
-uv venv
+uv venv --python 3.12
 .venv\Scripts\activate
-uv python install 
-uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 uv pip install -r requirements.txt
+uv pip install pip
+launch_win.bat
 </code></pre>
 <h2 id="usage-217"><a class="header" href="#usage-217">usage</a></h2>
 <pre><code class="language-sh">python launch.py
