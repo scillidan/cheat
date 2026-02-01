@@ -24,6 +24,7 @@
 - #No-RSS [sloum](https://rawtext.club/~sloum)
 - #No-RSS [XXIIVV](https://wiki.xxiivv.com)
 - #No-RSS [「 」](https://krasjet.com)
+- #No-RSS [visualrambling.space](https://visualrambling.space/)
 - #3d [Sketchfab](https://sketchfab.com/feed)
 - #3dprint [Autodesk](https://www.instructables.com)
 - #3dprint [MakerWorld](https://makerworld.com/en)

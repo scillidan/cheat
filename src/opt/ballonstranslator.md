@@ -9,11 +9,12 @@
 ```sh
 git clone --depth=1 https://github.com/dmMaze/BallonsTranslator
 cd BallonsTranslator
-uv venv
+uv venv --python 3.12
 .venv\Scripts\activate
-uv python install 
-uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 uv pip install -r requirements.txt
+uv pip install pip
+launch_win.bat
 ```
 
 ## usage
