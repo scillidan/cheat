@@ -1,5 +1,3 @@
-# ctan
-
 pdf|topic|link_ctan|link_source|link_readme|maintainer
 :-|:-|:-|:-|:-|:-
 <a href="https://mirrors.ctan.org/graphics/pstricks/contrib/pst-nutation/doc/pst-nutation-doc.pdf"><img src="https://scillidan.github.io/cdn_image_latex/pst-nutation.webp" width="30"></a>|pstricks, astronomy, graphics|[pst-nutation – Rotation, precession, nutation of the earth](https://ctan.org/pkg/pst-nutation)|[pst-nutation](https://ctan.org/tex-archive/graphics/pstricks/contrib/pst-nutation)|[Readme](pst-nutation – Rotation, precession, nutation of the earth)|Herbert Voß

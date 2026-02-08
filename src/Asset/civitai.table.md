@@ -1,7 +1,3 @@
-# [Civitai](https://civitai.com)
-
-## resource
-
 type|tag|base_model|link|license|trigger_words
 :-|:-|:-|:-|:-|:-
 checkpoint trained|base model|SD 1.5|[A-Zovya RPG Artist Tools](https://civitai.com/models/8124/a-zovya-rpg-artist-tools)|[url](https://huggingface.co/spaces/CompVis/stable-diffusion-license)|/
