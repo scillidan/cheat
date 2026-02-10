@@ -18,11 +18,15 @@ subl requirements_full.txt
 ```
 
 ```sh
-uv pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
-uv pip install -r requirements_full.txt
+python -m pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+python -m pip install -r requirements_full.txt
 ```
 
 ## usage
+
+```sh
+python server_ui.py
+```
 
 ```sh
 python main.py
@@ -31,6 +35,7 @@ python main.py
 ```sh
 n <game_dir> -n <game_name>
 i <game_name> -l schinese
-t <game_name> -t ai -n {model_name} -l schinese -b 4
+t <game_name> -t openai -n {model_name} -l schinese -b 4
 17 22
+# lt <game_name> -m gemma3:12b
 ```
