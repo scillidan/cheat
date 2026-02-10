@@ -5217,16 +5217,19 @@ subl requirements_full.txt
 # torchaudio==2.0.2+cu117
 # torchvision==0.15.2+cu117
 </code></pre>
-<pre><code class="language-sh">uv pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
-uv pip install -r requirements_full.txt
+<pre><code class="language-sh">python -m pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+python -m pip install -r requirements_full.txt
 </code></pre>
 <h2 id="usage-85"><a class="header" href="#usage-85">usage</a></h2>
+<pre><code class="language-sh">python server_ui.py
+</code></pre>
 <pre><code class="language-sh">python main.py
 </code></pre>
 <pre><code class="language-sh">n &lt;game_dir&gt; -n &lt;game_name&gt;
 i &lt;game_name&gt; -l schinese
-t &lt;game_name&gt; -t ai -n {model_name} -l schinese -b 4
+t &lt;game_name&gt; -t openai -n {model_name} -l schinese -b 4
 17 22
+# lt &lt;game_name&gt; -m gemma3:12b
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="pylanguagetool"><a class="header" href="#pylanguagetool"><a href="https://github.com/Findus23/pyLanguagetool">pyLanguagetool</a></a></h1>
 <h2 id="install-120"><a class="header" href="#install-120">install</a></h2>
@@ -6216,6 +6219,7 @@ scoop install zoxide
 <h3 id="later-7"><a class="header" href="#later-7">later</a></h3>
 <ul>
 <li><a href="https://github.com/soulim/bookmarks.txt">bookmarks.txt</a></li>
+<li><a href="https://github.com/bugzmanov/bookokrat">Bookokrat</a></li>
 <li><a href="https://github.com/ahloiscreamo/fmpc">fmpc</a></li>
 <li><a href="https://github.com/v9mirza/lazyports">LazyPorts</a></li>
 <li><a href="https://github.com/openai/codex">OpenAI Codex CLI</a></li>
