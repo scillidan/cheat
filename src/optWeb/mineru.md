@@ -9,7 +9,7 @@
 ```sh
 git clone --depth=1 https://github.com/opendatalab/MinerU
 cd MinerU
-uv venv --python 3.13
+uv venv --python 3.12
 source .venv/bin/activate
 uv pip install .[core]
 uv pip install hf_transfer
