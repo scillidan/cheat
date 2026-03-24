@@ -23,6 +23,7 @@ scoop install fzf
 ### later
 
 - [fzf-preview](https://github.com/niksingh710/fzf-preview)
+- [keepassxc-fzf](https://github.com/creusvictor/keepassxc-fzf)
 
 ## annex
 
