@@ -25,10 +25,13 @@ scoop install opencode
 
 ## resource
 
-### cache
+### mark
 
 - [opencode-notifier](https://github.com/mohak34/opencode-notifier)
 
+### cache
+
+- [oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim)
 - [OpenCode Codex OAuth](https://github.com/numman-ali/opencode-openai-codex-auth)
 - [OpenCode Background Processes Plugin](https://github.com/zenobi-us/opencode-background)
 - [opencode-direnv](https://github.com/simonwjackson/opencode-direnv)
