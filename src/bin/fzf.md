@@ -20,10 +20,11 @@ scoop install fzf
 
 ## resource
 
-### later
+### cache
 
-- [fzf-preview](https://github.com/niksingh710/fzf-preview)
 - [keepassxc-fzf](https://github.com/creusvictor/keepassxc-fzf)
+- [fzf-preview](https://github.com/niksingh710/fzf-preview)
+- [fzf-navigator](https://github.com/benward2301/fzf-navigator)
 
 ## annex
 
