@@ -6,7 +6,6 @@
 # Arch
 sudo pacman -S ffmpeg
 # Windows 10
-scoop install ffmpeg
 scoop install ffmpeg-share
 ```
 
