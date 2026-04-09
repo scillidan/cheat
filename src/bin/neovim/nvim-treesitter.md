@@ -27,6 +27,7 @@ $XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
 - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [tree-comment.nvim](https://github.com/alexmozaidze/tree-comment.nvim)
+- [tree-sitter-manager.nvim](https://github.com/romus204/tree-sitter-manager.nvim)
 - [Treesitter-indent-object.nvim](https://github.com/kiyoon/treesitter-indent-object.nvim)
 
 ### cache
