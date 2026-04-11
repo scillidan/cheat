@@ -28,6 +28,7 @@ scoop install opencode
 ### mark
 
 - [opencode-notifier](https://github.com/mohak34/opencode-notifier)
+- [opencode-input-translator](https://github.com/tyeongkim/opencode-input-translator)
 
 ### cache
 
