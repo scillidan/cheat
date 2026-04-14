@@ -184,9 +184,9 @@
 <h2 id="install"><a class="header" href="#install">install</a></h2>
 <pre><code class="language-sh">git clone --depth=1 https://github.com/jhj0517/Whisper-WebUI
 cd Whisper-WebUI
-uv venv
+uv venv --python 3.12
 .venv\Scripts\activate
-uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
 uv pip install -r requirements.txt
 uv pip install hf_transfer
 subl user-start-webui.bat
@@ -194,14 +194,14 @@ subl user-start-webui.bat
 <pre><code class="language-sh"># The modified lines, for example
 set SERVER_NAME=127.0.0.1
 set SERVER_PORT=7861
-set WHISPER_TYPE=faster-whisper
-set FASTER_WHISPER_MODEL_DIR=&quot;&lt;path_to&gt;\Simple_Speech_Recognition\modelsCache&quot;
-set INSANELY_FAST_WHISPER_MODEL_DIR=&quot;C:\Users\User\Downloads&quot;
-set DIARIZATION_MODEL_DIR=&quot;&lt;path_to&gt;\Whisper-WebUI\models&quot;
+# set WHISPER_TYPE=faster-whisper
+# set INSANELY_FAST_WHISPER_MODEL_DIR=&quot;C:\Users\User\Downloads&quot;
+# set DIARIZATION_MODEL_DIR=&quot;&lt;path_to&gt;\Whisper-WebUI\models&quot;
 </code></pre>
 <h2 id="usage"><a class="header" href="#usage">usage</a></h2>
 <pre><code>user-start-webui.bat
 </code></pre>
+<p>For transcribing podcast: Whisper-WebUI → Enable Silero VAD Filter (On) → Enable Diarization (On)</p>
 <h2 id="appdedix"><a class="header" href="#appdedix">appdedix</a></h2>
 <p><img src="https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/optWeb/whisper-webui.png" alt="whisper-webui" /></p>
 
