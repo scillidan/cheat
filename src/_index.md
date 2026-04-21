@@ -1,6 +1,6 @@
 # 𝔠𝔥𝔢𝔞𝔱
 
-where I make cheatsheets and do `grep`.
+Where I make cheatsheets and do `grep`. From "log" to "index".
 
 ## Dirname referential relationship
 
