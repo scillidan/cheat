@@ -1,4 +1,7 @@
+- #commit [Awesome LLM Skills](https://github.com/Prat011/awesome-llm-skills)
 - #commit [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim/commits.atom)
+- #commit [Awesome Opencode](https://github.com/awesome-opencode/awesome-opencode/commits.atom)
+- #commit [Awesome Yazi](https://github.com/AnirudhG07/awesome-yazi)
 - #commit [awesome-zsh-plugins](https://github.com/unixorn/awesome-zsh-plugins/commits.atom)
 - #github-search-rss [clink](https://scillidan.github.io/github-search-rss/clink.rss)
 - #github-search-rss [cmder](https://scillidan.github.io/github-search-rss/cmder.rss)
