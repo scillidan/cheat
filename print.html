@@ -3446,17 +3446,12 @@ sudo pacman -S p7zip-full
 </code></pre>
 <h2 id="usage-10"><a class="header" href="#usage-10">usage</a></h2>
 <h3 id="command"><a class="header" href="#command">command</a></h3>
-<pre><code class="language-sh"># Decomporess with password
+<pre><code class="language-sh"># With password
 7z x $1 -p&quot;&lt;password&gt;&quot;
 
-# Compress with volume size is 10m
+# 10m volume size
 7z a -v10m &lt;compress_dir&gt;.7z &lt;compress_dir&gt;
 </code></pre>
-<h2 id="resource-9"><a class="header" href="#resource-9">resource</a></h2>
-<h3 id="cache-14"><a class="header" href="#cache-14">cache</a></h3>
-<ul>
-<li><a href="https://github.com/DevX-Cipher/7zip-plugin">7Zip Plugins</a></li>
-</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="abbreviate"><a class="header" href="#abbreviate"><a href="https://github.com/dnnrly/abbreviate">abbreviate</a></a></h1>
 <h2 id="install-13"><a class="header" href="#install-13">install</a></h2>
 <pre><code class="language-sh">go install -v github.com/dnnrly/abbreviate@latest
@@ -3508,8 +3503,8 @@ sudo pacman -S aspell aspell-en
 # Windows 10
 scoop install aspell
 </code></pre>
-<h2 id="resource-10"><a class="header" href="#resource-10">resource</a></h2>
-<h3 id="cache-15"><a class="header" href="#cache-15">cache</a></h3>
+<h2 id="resource-9"><a class="header" href="#resource-9">resource</a></h2>
+<h3 id="cache-14"><a class="header" href="#cache-14">cache</a></h3>
 <ul>
 <li><a href="https://github.com/adamyg/aspell-win32">aspell-win32</a></li>
 </ul>
@@ -4465,8 +4460,8 @@ scoop install fzf
 <li>#guide <a href="https://github.com/junegunn/fzf/issues/2789">how to make ripgrep fzf integration command searching both file name and content</a></li>
 <li>#guide <a href="https://thevaluable.dev/practical-guide-fzf-example/">A Practical Guide to fzf: Building a File Explorer</a></li>
 </ul>
-<h2 id="resource-11"><a class="header" href="#resource-11">resource</a></h2>
-<h3 id="cache-16"><a class="header" href="#cache-16">cache</a></h3>
+<h2 id="resource-10"><a class="header" href="#resource-10">resource</a></h2>
+<h3 id="cache-15"><a class="header" href="#cache-15">cache</a></h3>
 <ul>
 <li><a href="https://github.com/creusvictor/keepassxc-fzf">keepassxc-fzf</a></li>
 <li><a href="https://github.com/niksingh710/fzf-preview">fzf-preview</a></li>
@@ -4728,8 +4723,8 @@ scoop install jj
 <ul>
 <li>#document <a href="https://jj-for-everyone.github.io">Jujutsu for everyone</a></li>
 </ul>
-<h2 id="resource-12"><a class="header" href="#resource-12">resource</a></h2>
-<h3 id="cache-17"><a class="header" href="#cache-17">cache</a></h3>
+<h2 id="resource-11"><a class="header" href="#resource-11">resource</a></h2>
+<h3 id="cache-16"><a class="header" href="#cache-16">cache</a></h3>
 <ul>
 <li><a href="https://github.com/idursun/jjui">Jujutsu UI</a></li>
 </ul>
@@ -4935,8 +4930,8 @@ python main.py -d artifacts/vector_stores/chroma_db -c artifacts_chunks_SZ_400_O
 <li><a href="https://note.com/honour_neat/n/n88b0ffcefd09">オープンソースの中国語辞書を使ってMeCab用中国語辞書を作る</a></li>
 <li><a href="https://github.com/ueda-keisuke/CC-CEDICT-MeCab">CC-CEDICT-MeCab</a></li>
 </ul>
-<h2 id="resource-13"><a class="header" href="#resource-13">resource</a></h2>
-<h3 id="cache-18"><a class="header" href="#cache-18">cache</a></h3>
+<h2 id="resource-12"><a class="header" href="#resource-12">resource</a></h2>
+<h3 id="cache-17"><a class="header" href="#cache-17">cache</a></h3>
 <ul>
 <li><a href="https://github.com/Pusnow/mecab-ko-msvc">mecab-ko-msvc</a></li>
 <li><a href="https://github.com/SamuraiT/mecab-python3">mecab-python3</a></li>
@@ -5470,8 +5465,8 @@ rsync -r ~/.config/nvim/ /mnt/c/Users/User/AppData/Local/nvim --include={&quot;.
 <ul>
 <li>#document <a href="https://download.samba.org/pub/rsync/rsync.1">rsync</a></li>
 </ul>
-<h2 id="resource-14"><a class="header" href="#resource-14">resource</a></h2>
-<h3 id="cache-19"><a class="header" href="#cache-19">cache</a></h3>
+<h2 id="resource-13"><a class="header" href="#resource-13">resource</a></h2>
+<h3 id="cache-18"><a class="header" href="#cache-18">cache</a></h3>
 <ul>
 <li>#Windows <a href="https://itefix.net/cwrsync">cwRsync</a></li>
 </ul>
@@ -5759,7 +5754,7 @@ uv pip install .
 <pre><code class="language-sh"># Windows 10
 scoop install sudo
 </code></pre>
-<h2 id="resource-15"><a class="header" href="#resource-15">resource</a></h2>
+<h2 id="resource-14"><a class="header" href="#resource-14">resource</a></h2>
 <ul>
 <li>#Windows <a href="https://github.com/lukesampson/psutils">psutils</a></li>
 </ul>
@@ -5902,8 +5897,8 @@ sudo pacman -S timidity++
 <pre><code class="language-sh"># Convert MIDI file to MP3
 timidity &quot;$1&quot; -Ow -o - | ffmpeg -i - -acodec libmp3lame -ab 64k &quot;_mid2.mp3&quot;
 </code></pre>
-<h2 id="resource-16"><a class="header" href="#resource-16">resource</a></h2>
-<h3 id="cache-20"><a class="header" href="#cache-20">cache</a></h3>
+<h2 id="resource-15"><a class="header" href="#resource-15">resource</a></h2>
+<h3 id="cache-19"><a class="header" href="#cache-19">cache</a></h3>
 <ul>
 <li><a href="https://github.com/nanakochi123456/timidity-bin">timidity-bin</a></li>
 </ul>
@@ -5920,8 +5915,8 @@ tldr -c
 # Pulls the latest commits from github.com/tldr-pages/tldr
 tldr -u
 </code></pre>
-<h2 id="resource-17"><a class="header" href="#resource-17">resource</a></h2>
-<h3 id="cache-21"><a class="header" href="#cache-21">cache</a></h3>
+<h2 id="resource-16"><a class="header" href="#resource-16">resource</a></h2>
+<h3 id="cache-20"><a class="header" href="#cache-20">cache</a></h3>
 <ul>
 <li>#tldr <a href="https://github.com/isacikgoz/tldr">tldr++</a></li>
 <li>#tldr <a href="https://github.com/dbrgn/tealdeer">tealdeer</a></li>
@@ -5991,7 +5986,7 @@ scoop install ugrep
 <pre><code class="language-sh"># Windows 10
 scoop install unrar
 </code></pre>
-<h2 id="resource-18"><a class="header" href="#resource-18">resource</a></h2>
+<h2 id="resource-17"><a class="header" href="#resource-17">resource</a></h2>
 <h3 id="mark-12"><a class="header" href="#mark-12">mark</a></h3>
 <ul>
 <li>#Windows <a href="https://www.rarlab.com/">WinRAR archiver, a powerful tool to process RAR and ZIP files</a></li>
@@ -6076,7 +6071,7 @@ uv tool install wappalyzer
 <pre><code class="language-sh"># Windows 10
 scoop install wget
 </code></pre>
-<h2 id="resource-19"><a class="header" href="#resource-19">resource</a></h2>
+<h2 id="resource-18"><a class="header" href="#resource-18">resource</a></h2>
 <h3 id="mark-13"><a class="header" href="#mark-13">mark</a></h3>
 <ul>
 <li>#Windows <a href="https://eternallybored.org/misc/wget/">GNU Wget for Windows</a></li>
@@ -6086,7 +6081,7 @@ scoop install wget
 <pre><code class="language-sh"># Windows 10
 scoop install which
 </code></pre>
-<h2 id="resource-20"><a class="header" href="#resource-20">resource</a></h2>
+<h2 id="resource-19"><a class="header" href="#resource-19">resource</a></h2>
 <h3 id="mark-14"><a class="header" href="#mark-14">mark</a></h3>
 <ul>
 <li>#Windows <a href="https://gnuwin32.sourceforge.net/packages/which.htm">Which for Windows</a></li>
@@ -6261,7 +6256,7 @@ scoop install zoxide
 <li><a href="bin/_arch//bin/_arch/menyoki.html">menyoki.md</a></li>
 <li><a href="bin/_arch//bin/_arch/newsboat.html">newsboat.md</a></li>
 </ul>
-<h3 id="cache-22"><a class="header" href="#cache-22">cache</a></h3>
+<h3 id="cache-21"><a class="header" href="#cache-21">cache</a></h3>
 <ul>
 <li><a href="bin/_arch//bin/_arch/asdf.html">asdf.md</a></li>
 <li><a href="bin/_arch//bin/_arch/bombadillo.html">bombadillo.md</a></li>
@@ -6278,7 +6273,7 @@ scoop install zoxide
 <li><a href="bin/_arch//bin/_arch/zeal-lynx-cli.html">zeal-lynx-cli.md</a></li>
 <li><a href="bin/_arch//bin/_arch/zellij/zellij.html">zellij.md</a></li>
 </ul>
-<h2 id="resource-21"><a class="header" href="#resource-21">resource</a></h2>
+<h2 id="resource-20"><a class="header" href="#resource-20">resource</a></h2>
 <h3 id="later-6"><a class="header" href="#later-6">later</a></h3>
 <ul>
 <li><a href="https://github.com/soulim/bookmarks.txt">bookmarks.txt</a></li>
@@ -6291,7 +6286,7 @@ scoop install zoxide
 <li><a href="https://github.com/ashish0kumar/voxcii">voxcii</a></li>
 <li><a href="https://github.com/indium114/wares">wares</a></li>
 </ul>
-<h3 id="cache-23"><a class="header" href="#cache-23">cache</a></h3>
+<h3 id="cache-22"><a class="header" href="#cache-22">cache</a></h3>
 <ul>
 <li>#alias <a href="https://github.com/MicahElliott/scad">Shell Colorized Aliases for Docker/Podman (SCAD</a></li>
 <li>#ascii <a href="https://github.com/xero/figlet-fonts">figlet-fonts</a></li>
@@ -6354,14 +6349,14 @@ scoop install zoxide
 <li><a href="https://docs.asciinema.org/manual/agg/usage/">agg - Usage</a></li>
 <li><a href="https://weblog.masukomi.org/2022/10/11/recording_and_sharing_terminal_sessions/">Recording &amp; Sharing Terminal Sessions</a></li>
 </ul>
-<h2 id="resource-22"><a class="header" href="#resource-22">resource</a></h2>
+<h2 id="resource-21"><a class="header" href="#resource-21">resource</a></h2>
 <h3 id="mark-16"><a class="header" href="#mark-16">mark</a></h3>
 <ul>
 <li><a href="https://github.com/asciinema/agg">agg</a></li>
 <li><a href="https://github.com/asciinema/asciinema">asciinema</a></li>
 <li><a href="https://github.com/k9withabone/autocast">autocast</a></li>
 </ul>
-<h3 id="cache-24"><a class="header" href="#cache-24">cache</a></h3>
+<h3 id="cache-23"><a class="header" href="#cache-23">cache</a></h3>
 <ul>
 <li><a href="https://github.com/nitram509/ascii-telnet-server">ASCII art movie Telnet player</a></li>
 <li><a href="https://github.com/opcode-eu-org-libs/asciicast2movie">asciicast2movie</a></li>
@@ -6750,8 +6745,8 @@ plandex
 <h2 id="install-202"><a class="header" href="#install-202">install</a></h2>
 <pre><code class="language-sh">sudo pacman -S ranger
 </code></pre>
-<h2 id="resource-23"><a class="header" href="#resource-23">resource</a></h2>
-<h3 id="cache-25"><a class="header" href="#cache-25">cache</a></h3>
+<h2 id="resource-22"><a class="header" href="#resource-22">resource</a></h2>
+<h3 id="cache-24"><a class="header" href="#cache-24">cache</a></h3>
 <ul>
 <li>#explorer <a href="https://github.com/alexanderjeurissen/ranger_devicons">File icons for the Ranger file manager</a></li>
 </ul>
@@ -6774,8 +6769,8 @@ plandex
 <li><a href="https://github.com/nikita-moor/latin-dictionary/issues/2#issuecomment-496029572">Embedding images: StarDict</a></li>
 <li><a href="https://xdxf.sourceforge.net/">XML Dictionary Exchange Format</a></li>
 </ul>
-<h2 id="resource-24"><a class="header" href="#resource-24">resource</a></h2>
-<h3 id="cache-26"><a class="header" href="#cache-26">cache</a></h3>
+<h2 id="resource-23"><a class="header" href="#resource-23">resource</a></h2>
+<h3 id="cache-25"><a class="header" href="#cache-25">cache</a></h3>
 <ul>
 <li><a href="https://github.com/aeghn/scripts">dictf</a></li>
 </ul>
@@ -6884,8 +6879,8 @@ sudo pacman -U yay-bin*.pkg.tar.xz
 yay
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="z"><a class="header" href="#z"><a href="https://github.com/rupa/z">z</a></a></h1>
-<h2 id="resource-25"><a class="header" href="#resource-25">resource</a></h2>
-<h3 id="cache-27"><a class="header" href="#cache-27">cache</a></h3>
+<h2 id="resource-24"><a class="header" href="#resource-24">resource</a></h2>
+<h3 id="cache-26"><a class="header" href="#cache-26">cache</a></h3>
 <ul>
 <li><a href="https://github.com/mrjohannchang/fz.sh">fz</a></li>
 <li><a href="https://github.com/skywind3000/z.lua">z.lua</a></li>
@@ -6947,8 +6942,8 @@ sudo pacman -Rns $(pacman -Qdtq)
 <li><a href="bin/_arch/pacman//bin/_arch/pacman/fuzzy-pkg-finder.html">fuzzy-pkg-finder.md</a></li>
 <li><a href="bin/_arch/pacman//bin/_arch/pacman/paru.html">paru.md</a></li>
 </ul>
-<h2 id="resource-26"><a class="header" href="#resource-26">resource</a></h2>
-<h3 id="cache-28"><a class="header" href="#cache-28">cache</a></h3>
+<h2 id="resource-25"><a class="header" href="#resource-25">resource</a></h2>
+<h3 id="cache-27"><a class="header" href="#cache-27">cache</a></h3>
 <ul>
 <li><a href="https://github.com/Twix53791/pac">pac</a></li>
 </ul>
@@ -6989,7 +6984,7 @@ tmux attach
 <li><a href="bin/_arch/tmux//bin/_arch/tmux/tmux-thumbs.html">tmux-thumbs</a></li>
 <li><a href="bin/_arch/tmux//bin/_arch/tmux/tmuxp.html">tmuxp</a></li>
 </ul>
-<h3 id="cache-29"><a class="header" href="#cache-29">cache</a></h3>
+<h3 id="cache-28"><a class="header" href="#cache-28">cache</a></h3>
 <ul>
 <li><a href="bin/_arch/tmux//bin/_arch/tmux/tmuxifier.html">tmuxifier.md</a></li>
 </ul>
@@ -6997,7 +6992,7 @@ tmux attach
 <ul>
 <li>#issue <a href="https://github.com/tmux-plugins/tpm/issues/67">I get error 127 when trying to install.</a></li>
 </ul>
-<h2 id="resource-27"><a class="header" href="#resource-27">resource</a></h2>
+<h2 id="resource-26"><a class="header" href="#resource-26">resource</a></h2>
 <h3 id="mark-22"><a class="header" href="#mark-22">mark</a></h3>
 <ul>
 <li>
@@ -7031,7 +7026,7 @@ tmux attach
 <p><a href="https://github.com/christoomey/vim-tmux-navigator">vim-tmux-navigator</a></p>
 </li>
 </ul>
-<h3 id="cache-30"><a class="header" href="#cache-30">cache</a></h3>
+<h3 id="cache-29"><a class="header" href="#cache-29">cache</a></h3>
 <ul>
 <li>#ranger <a href="https://github.com/joouha/ranger_tmux">ranger-tmux</a></li>
 <li>#session <a href="https://github.com/ChrisPenner/session-sauce">Session Sauce</a></li>
@@ -7133,8 +7128,8 @@ alias zw='zellij --layout=swap'
 <ul>
 <li><a href="bin/_arch/zellij//bin/_arch/zellij/zjstatus.html">zjstatus.md</a></li>
 </ul>
-<h2 id="resource-28"><a class="header" href="#resource-28">resource</a></h2>
-<h3 id="cache-31"><a class="header" href="#cache-31">cache</a></h3>
+<h2 id="resource-27"><a class="header" href="#resource-27">resource</a></h2>
+<h3 id="cache-30"><a class="header" href="#cache-30">cache</a></h3>
 <ul>
 <li><a href="https://github.com/Nacho114/harpoon">harpoon</a></li>
 <li><a href="https://github.com/nim65s/jbz">jbz</a></li>
@@ -7170,7 +7165,7 @@ curl -L -o $HOME/.config/zellij/plugins/zjstatus.wasm https://github.com/dj95/zj
 <li><a href="bin/_arch/zsh//bin/_arch/zsh/wd.html">wd.md</a></li>
 <li><a href="bin/_arch/zsh//bin/_arch/zsh/zsh-ssh.html">zsh-ssh.md</a></li>
 </ul>
-<h3 id="cache-32"><a class="header" href="#cache-32">cache</a></h3>
+<h3 id="cache-31"><a class="header" href="#cache-31">cache</a></h3>
 <ul>
 <li><a href="bin/_arch/zsh/bin/_arch/zsh/zpy.html">zpy</a></li>
 <li><a href="bin/_arch/zsh/bin/_arch/zsh/zsh-abbr.html">zsh-abbr</a></li>
@@ -7180,7 +7175,7 @@ curl -L -o $HOME/.config/zellij/plugins/zjstatus.wasm https://github.com/dj95/zj
 <ul>
 <li><a href="https://stackoverflow.com/questions/8638012/fix-key-settings-home-end-insert-delete-in-zshrc-when-running-zsh-in-terminat">Fix key settings (Home/End/Insert/Delete) in .zshrc when running Zsh in Terminator Terminal Emulator - Stack Overflow</a></li>
 </ul>
-<h2 id="resource-29"><a class="header" href="#resource-29">resource</a></h2>
+<h2 id="resource-28"><a class="header" href="#resource-28">resource</a></h2>
 <h3 id="mark-25"><a class="header" href="#mark-25">mark</a></h3>
 <ul>
 <li>#alias <a href="https://github.com/zplugin/zsh-exa">Zsh exa</a></li>
@@ -7222,7 +7217,7 @@ curl -L -o $HOME/.config/zellij/plugins/zjstatus.wasm https://github.com/dj95/zj
 <li><a href="https://github.com/michel-kraemer/zsh-patina">zsh-patina</a></li>
 <li><a href="https://github.com/TunaCuma/zsh-vi-man">zsh-vi-man</a></li>
 </ul>
-<h3 id="cache-33"><a class="header" href="#cache-33">cache</a></h3>
+<h3 id="cache-32"><a class="header" href="#cache-32">cache</a></h3>
 <ul>
 <li>#alias <a href="https://github.com/olets/zsh-abbr">zsh-abbr</a>|</li>
 <li>#backup <a href="https://github.com/Skylor-Tang/zshrc-sync">zshrc-sync</a></li>
@@ -7348,8 +7343,8 @@ da8
 <ul>
 <li><a href="https://github.com/olets/zsh-abbr/issues/88">abbr c does not clear abbreviations created with the pattern abbr x=y</a></li>
 </ul>
-<h2 id="resource-30"><a class="header" href="#resource-30">resource</a></h2>
-<h3 id="cache-34"><a class="header" href="#cache-34">cache</a></h3>
+<h2 id="resource-29"><a class="header" href="#resource-29">resource</a></h2>
+<h3 id="cache-33"><a class="header" href="#cache-33">cache</a></h3>
 <ul>
 <li><a href="https://github.com/cohml/zsh-abbr-preview">zsh-abbr-preview</a></li>
 </ul>
@@ -7374,7 +7369,6 @@ zz() {
 <h3 id="mark-26"><a class="header" href="#mark-26">mark</a></h3>
 <ul>
 <li>#Dependence <a href="https://github.com/equalsraf/win32yank">win32yank</a></li>
-<li>#Dependence <a href="https://dotnet.microsoft.com/en-us/download/dotnet">.NET (windowsdesktop-runtime-lts)</a></li>
 <li><a href="bin/_windows//bin/_windows/chocolatey.html">chocolatey.md</a></li>
 <li><a href="bin/_windows//bin/_windows/exiftool.html">exiftool.md</a></li>
 <li><a href="bin/_windows//bin/_windows/clink/_.html">clink.md</a></li>
@@ -7382,14 +7376,14 @@ zz() {
 <li><a href="bin/_windows//bin/_windows/scoop/_.html">scoop.md</a></li>
 <li><a href="bin/_windows//bin/_windows/svg2png.html">svg2png.md</a></li>
 </ul>
-<h3 id="cache-35"><a class="header" href="#cache-35">cache</a></h3>
+<h3 id="cache-34"><a class="header" href="#cache-34">cache</a></h3>
 <ul>
 <li><a href="bin/_windows//bin/_windows/mingw.html">mingw.md</a></li>
 <li><a href="bin/_windows//bin/_windows/mintty.html">mintty.md</a></li>
 <li><a href="bin/_windows//bin/_windows/nssm.html">nssm.md</a></li>
 <li><a href="bin/_windows//bin/_windows/ntop.html">ntop.md</a></li>
 </ul>
-<h2 id="resource-31"><a class="header" href="#resource-31">resource</a></h2>
+<h2 id="resource-30"><a class="header" href="#resource-30">resource</a></h2>
 <h3 id="mark-27"><a class="header" href="#mark-27">mark</a></h3>
 <ul>
 <li>#Dependence <a href="https://gnuwin32.sourceforge.net/packages/gzip.htm">Gzip for Windows</a></li>
@@ -7405,7 +7399,7 @@ zz() {
 <li><a href="https://github.com/rany2/edge-tts">edge-tts</a></li>
 <li><a href="https://github.com/winfsp/sshfs-win">SSHFS-Win · SSHFS for Windows</a></li>
 </ul>
-<h3 id="cache-36"><a class="header" href="#cache-36">cache</a></h3>
+<h3 id="cache-35"><a class="header" href="#cache-35">cache</a></h3>
 <ul>
 <li>#2csv <a href="https://github.com/zitsen/xlsx2csv.rs">xlsx2csv</a></li>
 <li>#binary <a href="https://github.com/forrestthewoods/fts_depends">fts_depends</a></li>
@@ -7501,7 +7495,7 @@ svg2png icon.svg -w 32 icon@2x.png
 <ul>
 <li><a href="bin/_windows/clink//bin/_windows/clink/clink-terminal.html">clink-terminal.md</a></li>
 </ul>
-<h2 id="resource-32"><a class="header" href="#resource-32">resource</a></h2>
+<h2 id="resource-31"><a class="header" href="#resource-31">resource</a></h2>
 <h3 id="mark-29"><a class="header" href="#mark-29">mark</a></h3>
 <ul>
 <li><a href="https://github.com/vladimir-kotikov/clink-completions">clink-completions</a> <em>release</em></li>
@@ -7511,7 +7505,7 @@ svg2png icon.svg -w 32 icon@2x.png
 <li><a href="https://github.com/mwmi/clink-carapace">clink carapace</a> <em>bug</em></li>
 <li><a href="https://github.com/dm17ryk/clink_profile">clink_profile</a></li>
 </ul>
-<h3 id="cache-37"><a class="header" href="#cache-37">cache</a></h3>
+<h3 id="cache-36"><a class="header" href="#cache-36">cache</a></h3>
 <ul>
 <li><a href="https://github.com/HeyItsJono/CheatCompletions">CheatCompletions</a></li>
 <li><a href="https://github.com/chrisant996/clink-flex-prompt">clink-flex-prompt</a></li>
@@ -7576,12 +7570,12 @@ mklink &quot;%CMDER_ROOT%\vendor\zoxide.lua&quot; &quot;%cd%\zoxide.lua&quot;
 <pre><code class="language-sh">scoop install pwsh
 </code></pre>
 <h2 id="cross-reference-17"><a class="header" href="#cross-reference-17">cross-reference</a></h2>
-<h3 id="cache-38"><a class="header" href="#cache-38">cache</a></h3>
+<h3 id="cache-37"><a class="header" href="#cache-37">cache</a></h3>
 <ul>
 <li><a href="bin/_windows/powershell/bin/_windows/powersession-rs.html">powersession-rs.md</a></li>
 </ul>
-<h2 id="resource-33"><a class="header" href="#resource-33">resource</a></h2>
-<h3 id="cache-39"><a class="header" href="#cache-39">cache</a></h3>
+<h2 id="resource-32"><a class="header" href="#resource-32">resource</a></h2>
+<h3 id="cache-38"><a class="header" href="#cache-38">cache</a></h3>
 <ul>
 <li><a href="https://github.com/jandedobbeleer/oh-my-posh">Oh My Posh</a></li>
 <li><a href="https://github.com/dahlbyk/posh-git">posh-git</a></li>
@@ -7665,11 +7659,11 @@ git clone --depth=1 https://github.com/ScoopInstaller/Java
 <ul>
 <li><a href="bin/_windows/scoop/bin/_windows/scoop/bucket-template.html">bucket-template.md</a></li>
 </ul>
-<h3 id="cache-40"><a class="header" href="#cache-40">cache</a></h3>
+<h3 id="cache-39"><a class="header" href="#cache-39">cache</a></h3>
 <ul>
 <li><a href="bin/_windows/scoop/bin/_windows/scoop/scoop-search.html">scoop-search.md</a></li>
 </ul>
-<h2 id="resource-34"><a class="header" href="#resource-34">resource</a></h2>
+<h2 id="resource-33"><a class="header" href="#resource-33">resource</a></h2>
 <h3 id="mark-31"><a class="header" href="#mark-31">mark</a></h3>
 <ul>
 <li>#bucket <a href="https://github.com/ScoopInstaller/Extras">Scoop Extras</a></li>
@@ -7679,7 +7673,7 @@ git clone --depth=1 https://github.com/ScoopInstaller/Java
 <li>#bucket <a href="https://github.com/kodybrown/scoop-nirsoft">scoop-nirsoft</a></li>
 <li><a href="https://github.com/shilangyu/scoop-search">scoop-search</a></li>
 </ul>
-<h3 id="cache-41"><a class="header" href="#cache-41">cache</a></h3>
+<h3 id="cache-40"><a class="header" href="#cache-40">cache</a></h3>
 <ul>
 <li>#bucket <a href="https://github.com/chawyehsu/dorado">dorado</a></li>
 <li>#bucket <a href="https://github.com/rasa/scoops">rasa</a></li>
@@ -7845,11 +7839,11 @@ git config --global http.sslVerify true
 <li><a href="bin/git//bin/git/git-filter-repo.html">git-filter-repo.md</a></li>
 <li><a href="bin/git//bin/git/gptcommit.html">gptcommit.md</a></li>
 </ul>
-<h3 id="cache-42"><a class="header" href="#cache-42">cache</a></h3>
+<h3 id="cache-41"><a class="header" href="#cache-41">cache</a></h3>
 <ul>
 <li><a href="bin/git//bin/git/cz-cli.html">cz-cli.md</a></li>
 </ul>
-<h2 id="resource-35"><a class="header" href="#resource-35">resource</a></h2>
+<h2 id="resource-34"><a class="header" href="#resource-34">resource</a></h2>
 <h3 id="mark-33"><a class="header" href="#mark-33">mark</a></h3>
 <ul>
 <li>#Windows <a href="https://github.com/git-for-windows/git">Git for Windows</a></li>
@@ -7868,7 +7862,7 @@ git config --global http.sslVerify true
 <ul>
 <li><a href="https://github.com/github/git-sizer">git-sizer</a></li>
 </ul>
-<h3 id="cache-43"><a class="header" href="#cache-43">cache</a></h3>
+<h3 id="cache-42"><a class="header" href="#cache-42">cache</a></h3>
 <ul>
 <li><a href="https://github.com/chriswalz/bit">bit</a></li>
 <li><a href="https://github.com/commitizen-tools/commitizen">commitizen</a></li>
@@ -8056,7 +8050,7 @@ gh pr list --search &quot;add version&quot; --state merged --limit 200
 <li><a href="bin/github-cli//bin/github-cli/gh-download.html">gh-download.md</a></li>
 <li><a href="bin/github-cli//bin/github-cli/gh-tidy.html">gh-tidy.md</a></li>
 </ul>
-<h2 id="resource-36"><a class="header" href="#resource-36">resource</a></h2>
+<h2 id="resource-35"><a class="header" href="#resource-35">resource</a></h2>
 <h3 id="later-11"><a class="header" href="#later-11">later</a></h3>
 <ul>
 <li>#download <a href="https://github.com/redraw/gh-install">gh-install</a></li>
@@ -8065,7 +8059,7 @@ gh pr list --search &quot;add version&quot; --state merged --limit 200
 <li><a href="https://github.com/chmouel/gh-news/">gh-news</a></li>
 <li><a href="https://github.com/fchimpan/gh-slimify">gh-slimify</a></li>
 </ul>
-<h3 id="cache-44"><a class="header" href="#cache-44">cache</a></h3>
+<h3 id="cache-43"><a class="header" href="#cache-43">cache</a></h3>
 <ul>
 <li>#action <a href="https://github.com/actions/gh-actions-cache">gh-actions-cache</a></li>
 <li>#action <a href="https://github.com/rsese/gh-actions-status">gh-actions-status</a></li>
@@ -8245,14 +8239,14 @@ neovide --server &lt;your_host&gt;:1234
 <li><a href="bin/neovim//bin/neovim/godotdev-nvim.html">godotdev-nvim.md</a></li>
 <li><a href="bin/neovim//bin/neovim/nvim-dap.html">nvim-dap.md</a></li>
 </ul>
-<h3 id="cache-45"><a class="header" href="#cache-45">cache</a></h3>
+<h3 id="cache-44"><a class="header" href="#cache-44">cache</a></h3>
 <ul>
 <li><a href="bin/neovim//bin/neovim/cmp-lsp-rimels.html">cmp-lsp-rimels.md</a></li>
 <li><a href="bin/neovim//bin/neovim/obsidian-nvim.html">obsidian-nvim.md</a></li>
 <li><a href="bin/neovim//bin/neovim/packer-nvim.html">packer-nvim.md</a></li>
 <li><a href="bin/neovim//bin/neovim/lunarvim.html">lunarvim.md</a></li>
 </ul>
-<h2 id="resource-37"><a class="header" href="#resource-37">resource</a></h2>
+<h2 id="resource-36"><a class="header" href="#resource-36">resource</a></h2>
 <h3 id="mark-36"><a class="header" href="#mark-36">mark</a></h3>
 <ul>
 <li>#buffer <a href="https://github.com/ahkohd/buffer-sticks.nvim">buffer-sticks.nvim</a></li>
@@ -8370,7 +8364,7 @@ neovide --server &lt;your_host&gt;:1234
 <li><a href="https://github.com/leolaurindo/tunnelvision.nvim">tunnelvision.nvim</a></li>
 <li><a href="https://github.com/zaakiy/line-justice.nvim">line-justice.nvim</a></li>
 </ul>
-<h3 id="cache-46"><a class="header" href="#cache-46">cache</a></h3>
+<h3 id="cache-45"><a class="header" href="#cache-45">cache</a></h3>
 <ul>
 <li>#bookmark <a href="https://github.com/heilgar/bookmarks.nvim">bookmarks.nvim</a></li>
 <li>#bookmark <a href="https://github.com/dimtion/guttermarks.nvim">GutterMarks.nvim</a></li>
@@ -8741,7 +8735,7 @@ neovide --server &lt;your_host&gt;:1234
 <li><a href="https://gist.github.com/EmadAdly/dfd18bf1ed7380fb9754ef798d23ec3b">install JDK and Android SDK on Linux Ubuntu</a></li>
 </ul>
 <h2 id="cross-reference-22"><a class="header" href="#cross-reference-22">cross-reference</a></h2>
-<h3 id="cache-47"><a class="header" href="#cache-47">cache</a></h3>
+<h3 id="cache-46"><a class="header" href="#cache-46">cache</a></h3>
 <ul>
 <li><a href="bin/neovim//srv/rime-ls.html">rime-ls.md</a></li>
 </ul>
@@ -8775,8 +8769,8 @@ git clone https://github.com/folke/lazy.nvim %LOCALAPPDATA%\nvim-data\lazy\lazy.
 <li>#document <a href="https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md">DOC.md - L3MON4D3/LuaSnip</a></li>
 <li>#document <a href="https://github.com/L3MON4D3/LuaSnip/wiki">Wiki - L3MON4D3/LuaSnip</a></li>
 </ul>
-<h2 id="resource-38"><a class="header" href="#resource-38">resource</a></h2>
-<h3 id="cache-48"><a class="header" href="#cache-48">cache</a></h3>
+<h2 id="resource-37"><a class="header" href="#resource-37">resource</a></h2>
+<h3 id="cache-47"><a class="header" href="#cache-47">cache</a></h3>
 <ul>
 <li><a href="https://github.com/iurimateus/luasnip-latex-snippets.nvim">luasnip-latex-snippets</a></li>
 </ul>
@@ -8818,7 +8812,7 @@ rm -rf $XDG_DATA_HOME/nvim-data/manson/packages/&lt;lsp&gt;
 <li><a href="https://github.com/wsoule/config.nvim/blob/main/lua/custom/plugins/lint.lua">lint.lua</a></li>
 <li><a href="https://github.com/wsoule/config.nvim/blob/main/lua/custom/plugins/format.lua">format.lua</a></li>
 </ul>
-<h2 id="resource-39"><a class="header" href="#resource-39">resource</a></h2>
+<h2 id="resource-38"><a class="header" href="#resource-38">resource</a></h2>
 <h3 id="mark-37"><a class="header" href="#mark-37">mark</a></h3>
 <ul>
 <li><a href="https://github.com/zapling/mason-conform.nvim">mason-conform.nvim</a></li>
@@ -8826,7 +8820,7 @@ rm -rf $XDG_DATA_HOME/nvim-data/manson/packages/&lt;lsp&gt;
 <li><a href="https://github.com/rshkarin/mason-nvim-lint">mason-nvim-lint</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mininvim"><a class="header" href="#mininvim"><a href="https://github.com/echasnovski/mini.nvim">mini.nvim</a></a></h1>
-<h2 id="resource-40"><a class="header" href="#resource-40">resource</a></h2>
+<h2 id="resource-39"><a class="header" href="#resource-39">resource</a></h2>
 <h3 id="mark-38"><a class="header" href="#mark-38">mark</a></h3>
 <ul>
 <li><a href="https://github.com/echasnovski/mini.bracketed">mini.bracketed</a></li>
@@ -8839,7 +8833,7 @@ rm -rf $XDG_DATA_HOME/nvim-data/manson/packages/&lt;lsp&gt;
 <li><a href="https://github.com/echasnovski/mini.pick">mini.pick</a></li>
 <li><a href="https://github.com/echasnovski/mini.sessions">mini.sessions</a></li>
 </ul>
-<h3 id="cache-49"><a class="header" href="#cache-49">cache</a></h3>
+<h3 id="cache-48"><a class="header" href="#cache-48">cache</a></h3>
 <ul>
 <li>#preset <a href="https://github.com/nvim-mini/MiniMax">MiniMax</a></li>
 </ul>
@@ -8849,7 +8843,7 @@ rm -rf $XDG_DATA_HOME/nvim-data/manson/packages/&lt;lsp&gt;
 <li>#video <a href="https://www.bilibili.com/video/BV1StNueVEVe">neovim中的代码调试工具（上）</a></li>
 <li>#video <a href="https://www.bilibili.com/video/BV1uJAmejEdL">neovim中的代码调试工具（下）</a></li>
 </ul>
-<h2 id="resource-41"><a class="header" href="#resource-41">resource</a></h2>
+<h2 id="resource-40"><a class="header" href="#resource-40">resource</a></h2>
 <h3 id="mark-39"><a class="header" href="#mark-39">mark</a></h3>
 <ul>
 <li>#ui <a href="https://github.com/rcarriga/nvim-dap-ui">nvim-dap-ui</a></li>
@@ -8857,7 +8851,7 @@ rm -rf $XDG_DATA_HOME/nvim-data/manson/packages/&lt;lsp&gt;
 <li><a href="https://github.com/mfussenegger/nvim-dap-python">nvim-dap-python</a></li>
 <li><a href="https://github.com/theHamsta/nvim-dap-virtual-text">nvim-dap-virtual-text</a></li>
 </ul>
-<h3 id="cache-50"><a class="header" href="#cache-50">cache</a></h3>
+<h3 id="cache-49"><a class="header" href="#cache-49">cache</a></h3>
 <ul>
 <li>#ui <a href="https://github.com/igorlfs/nvim-dap-view">nvim-dap-view</a></li>
 <li><a href="https://github.com/Carcuis/dap-breakpoints.nvim">dap-breakpoints.nvim</a></li>
@@ -8880,7 +8874,7 @@ $XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
 <ul>
 <li><a href="https://github.com/nvim-treesitter/nvim-treesitter/issues/2135">nvim-treesitter doesn't seem to work in windows.</a></li>
 </ul>
-<h2 id="resource-42"><a class="header" href="#resource-42">resource</a></h2>
+<h2 id="resource-41"><a class="header" href="#resource-41">resource</a></h2>
 <h3 id="mark-40"><a class="header" href="#mark-40">mark</a></h3>
 <ul>
 <li><a href="https://github.com/Hdoc1509/gh-actions.nvim">gh-actions.nvim</a></li>
@@ -8891,7 +8885,7 @@ $XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
 <li><a href="https://github.com/romus204/tree-sitter-manager.nvim">tree-sitter-manager.nvim</a></li>
 <li><a href="https://github.com/kiyoon/treesitter-indent-object.nvim">Treesitter-indent-object.nvim</a></li>
 </ul>
-<h3 id="cache-51"><a class="header" href="#cache-51">cache</a></h3>
+<h3 id="cache-50"><a class="header" href="#cache-50">cache</a></h3>
 <ul>
 <li><a href="https://github.com/nvim-treesitter/nvim-treesitter-refactor">nvim-treesitter-refactor</a></li>
 <li><a href="https://github.com/nvim-treesitter/nvim-treesitter-textobjects">nvim-treesitter-textobjects</a></li>
@@ -8935,7 +8929,7 @@ $XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
 <ul>
 <li><a href="https://github.com/Saghen/blink.cmp/issues/1222">Deduplicate menu items</a></li>
 </ul>
-<h2 id="resource-43"><a class="header" href="#resource-43">resource</a></h2>
+<h2 id="resource-42"><a class="header" href="#resource-42">resource</a></h2>
 <h3 id="mark-42"><a class="header" href="#mark-42">mark</a></h3>
 <ul>
 <li><a href="https://github.com/erooke/blink-cmp-latex">blink-cmp-latex</a></li>
@@ -8952,7 +8946,7 @@ $XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
 <li><a href="https://github.com/xieyonn/blink-cmp-dat-word">blink-cmp-dat-word</a></li>
 <li><a href="https://github.com/mgalliou/blink-cmp-tmux">blink-cmp-tmux</a></li>
 </ul>
-<h3 id="cache-52"><a class="header" href="#cache-52">cache</a></h3>
+<h3 id="cache-51"><a class="header" href="#cache-51">cache</a></h3>
 <ul>
 <li><a href="https://github.com/saghen/blink.indent">Blink Indent (blink.indent)</a></li>
 <li><a href="https://github.com/Kaiser-Yang/blink-cmp-avante">blink-cmp-avante</a></li>
@@ -8985,7 +8979,7 @@ wget ~/.config/nvim/dictionary/word.txt https://raw.githubusercontent.com/dwyl/e
 <ul>
 <li><a href="bin/neovim/telescope-nvim//bin/neovim/telescope-nvim/telescope-media-files-nvim.html">telescope-media-files-nvim.md</a></li>
 </ul>
-<h2 id="resource-44"><a class="header" href="#resource-44">resource</a></h2>
+<h2 id="resource-43"><a class="header" href="#resource-43">resource</a></h2>
 <h3 id="mark-44"><a class="header" href="#mark-44">mark</a></h3>
 <ul>
 <li>#cmd <a href="https://github.com/sudormrfbin/cheatsheet.nvim">cheatsheet.nvim</a></li>
@@ -9011,7 +9005,7 @@ wget ~/.config/nvim/dictionary/word.txt https://raw.githubusercontent.com/dwyl/e
 <li><a href="https://github.com/nvim-telescope/telescope.nvim">telescope.nvim</a></li>
 <li><a href="https://github.com/ryanmsnyder/toggleterm-manager.nvim">toggleterm-manager.nvim</a></li>
 </ul>
-<h3 id="cache-53"><a class="header" href="#cache-53">cache</a></h3>
+<h3 id="cache-52"><a class="header" href="#cache-52">cache</a></h3>
 <ul>
 <li>#dir <a href="https://github.com/smilovanovic/telescope-search-dir-picker.nvim">telescope-search-dir-picker</a></li>
 <li>#dir <a href="https://github.com/salorak/whaler.nvim">Whaler</a></li>
@@ -9122,12 +9116,12 @@ set noexpandtab
 <li>#blog <a href="https://danielmiessler.com/blog/vim">Learn Vim For the Last Time</a></li>
 </ul>
 <h2 id="cross-reference-26"><a class="header" href="#cross-reference-26">cross-reference</a></h2>
-<h3 id="cache-54"><a class="header" href="#cache-54">cache</a></h3>
+<h3 id="cache-53"><a class="header" href="#cache-53">cache</a></h3>
 <ul>
 <li><a href="bin/vim//bin/vim/wim.html">wim.md</a></li>
 </ul>
-<h2 id="resource-45"><a class="header" href="#resource-45">resource</a></h2>
-<h3 id="cache-55"><a class="header" href="#cache-55">cache</a></h3>
+<h2 id="resource-44"><a class="header" href="#resource-44">resource</a></h2>
+<h3 id="cache-54"><a class="header" href="#cache-54">cache</a></h3>
 <ul>
 <li>#argument <a href="https://github.com/AndrewRadev/sideways.vim">sideways.vim</a></li>
 <li>#argument <a href="https://git.foosoft.net/alex/vim-argwrap">Vim-ArgWrap</a></li>
@@ -9229,15 +9223,15 @@ set &quot;DYNAMIC_PYTHON3_DLL=%LocalAppData%\Programs\Python\Python310\python310
 <ul>
 <li><a href="dev//dev/gpi-case-2.html">gpi-case-2.md</a></li>
 </ul>
-<h3 id="cache-56"><a class="header" href="#cache-56">cache</a></h3>
+<h3 id="cache-55"><a class="header" href="#cache-55">cache</a></h3>
 <ul>
 <li><a href="dev//dev/3D-Printer.html">3D-Printer.md</a></li>
 <li><a href="dev//dev/E-Ink.html">E-Ink.md</a></li>
 <li><a href="dev//dev/raspberry-pi-5.html">raspberry-pi-5.md</a></li>
 <li><a href="dev//dev/uconsole-cm4.html">uconsole-cm4.md</a></li>
 </ul>
-<h2 id="resource-46"><a class="header" href="#resource-46">resource</a></h2>
-<h3 id="cache-57"><a class="header" href="#cache-57">cache</a></h3>
+<h2 id="resource-45"><a class="header" href="#resource-45">resource</a></h2>
+<h3 id="cache-56"><a class="header" href="#cache-56">cache</a></h3>
 <ul>
 <li>#audio <a href="https://github.com/ffont/source">SOURC</a></li>
 <li>#book <a href="https://diybookscanner.org/archivist/index.html">Archivist</a></li>
@@ -9290,7 +9284,7 @@ set &quot;DYNAMIC_PYTHON3_DLL=%LocalAppData%\Programs\Python\Python310\python310
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="3d-printer"><a class="header" href="#3d-printer">3D Printer</a></h1>
 <h2 id="reference-71"><a class="header" href="#reference-71">reference</a></h2>
-<h3 id="cache-58"><a class="header" href="#cache-58">cache</a></h3>
+<h3 id="cache-57"><a class="header" href="#cache-57">cache</a></h3>
 <ul>
 <li>#blog <a href="https://vorpal.se/posts/2025/jun/23/3d-printing-with-unconventional-vase-mode/">3D printing with unconventional vase mode</a></li>
 <li>#blog <a href="https://www.jonashietala.se/blog/2024/02/09/printing_hextraction_for_my_kids/">Printing Hextraction for my kids</a></li>
@@ -9301,8 +9295,8 @@ set &quot;DYNAMIC_PYTHON3_DLL=%LocalAppData%\Programs\Python\Python310\python310
 <ul>
 <li>#blog <a href="https://alavi.me/blog/e-ink-tablet-as-monitor-linux/">Using E-Ink tablet as monitor for Linux</a></li>
 </ul>
-<h2 id="resource-47"><a class="header" href="#resource-47">resource</a></h2>
-<h3 id="cache-59"><a class="header" href="#cache-59">cache</a></h3>
+<h2 id="resource-46"><a class="header" href="#resource-46">resource</a></h2>
+<h3 id="cache-58"><a class="header" href="#cache-58">cache</a></h3>
 <ul>
 <li>#eink <a href="https://github.com/kimmobrunfeldt/eink-weather-display">eink-weather-display</a></li>
 <li>#eink <a href="https://github.com/vroland/epdiy">EPDiy E-Paper Driver</a></li>
@@ -9320,8 +9314,8 @@ set &quot;DYNAMIC_PYTHON3_DLL=%LocalAppData%\Programs\Python\Python310\python310
 </ul>
 </li>
 </ul>
-<h2 id="resource-48"><a class="header" href="#resource-48">resource</a></h2>
-<h3 id="cache-60"><a class="header" href="#cache-60">cache</a></h3>
+<h2 id="resource-47"><a class="header" href="#resource-47">resource</a></h2>
+<h3 id="cache-59"><a class="header" href="#cache-59">cache</a></h3>
 <ul>
 <li><a href="https://github.com/andreisperid/E-TKT">E-TKT</a></li>
 </ul>
@@ -9558,8 +9552,8 @@ dtoverlay=uconsole,cm4
 <li><a href="https://github.com/clockworkpi/DevTerm/wiki/Create-DevTerm-CM4-OS-image-from-scratch">Create DevTerm CM4 OS image from scratch</a></li>
 <li><a href="https://github.com/clockworkpi/uConsole/wiki/How-uConsole-CM4-OS-image-made">How uConsole CM4 OS image made</a></li>
 </ul>
-<h2 id="resource-49"><a class="header" href="#resource-49">resource</a></h2>
-<h3 id="cache-61"><a class="header" href="#cache-61">cache</a></h3>
+<h2 id="resource-48"><a class="header" href="#resource-48">resource</a></h2>
+<h3 id="cache-60"><a class="header" href="#cache-60">cache</a></h3>
 <ul>
 <li><a href="https://github.com/emdash/uConsole_sway_config">uConsole Sway Configuration</a></li>
 <li><a href="https://github.com/dzaczek/Uconsole-i3">Uconsole-i3</a></li>
@@ -9608,7 +9602,7 @@ dtoverlay=uconsole,cm4
 <li><a href="lib//lib/godot/_.html">godot.md</a></li>
 <li><a href="lib//lib/latex/_.html">latex.md</a></li>
 </ul>
-<h3 id="cache-62"><a class="header" href="#cache-62">cache</a></h3>
+<h3 id="cache-61"><a class="header" href="#cache-61">cache</a></h3>
 <ul>
 <li><a href="lib//lib/EPUB.html">EPUB.md</a></li>
 <li><a href="lib//lib/Formula.html">Formula.md</a></li>
@@ -9623,7 +9617,7 @@ dtoverlay=uconsole,cm4
 <ul>
 <li><a href="https://github.com/gibbok/typescript-book">The Concise TypeScript Book</a></li>
 </ul>
-<h2 id="resource-50"><a class="header" href="#resource-50">resource</a></h2>
+<h2 id="resource-49"><a class="header" href="#resource-49">resource</a></h2>
 <h3 id="mark-47"><a class="header" href="#mark-47">mark</a></h3>
 <ul>
 <li>#cargo <a href="https://rustup.rs">rustup</a></li>
@@ -9642,7 +9636,7 @@ dtoverlay=uconsole,cm4
 <li>#python <a href="https://github.com/astral-sh/uv">uv</a></li>
 <li>#ruby <a href="https://github.com/ccmywish/rbenv-for-windows">rbenv for Windows</a></li>
 </ul>
-<h3 id="cache-63"><a class="header" href="#cache-63">cache</a></h3>
+<h3 id="cache-62"><a class="header" href="#cache-62">cache</a></h3>
 <ul>
 <li>#rust <a href="https://github.com/bevyengine/bevy">bevy</a></li>
 <li>#3d <a href="https://github.com/NVlabs/instant-ngp">Instant Neural Graphics Primitives</a></li>
@@ -9725,7 +9719,7 @@ dtoverlay=uconsole,cm4
 <li>#lesson <a href="https://exceljet.net/formulas">1000 Excel Formulas</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="llm"><a class="header" href="#llm">LLM</a></h1>
-<h2 id="resource-51"><a class="header" href="#resource-51">resource</a></h2>
+<h2 id="resource-50"><a class="header" href="#resource-50">resource</a></h2>
 <h3 id="later-16"><a class="header" href="#later-16">later</a></h3>
 <ul>
 <li>#agent <a href="https://github.com/anthropics/skills">Skills</a></li>
@@ -9781,17 +9775,17 @@ OR `column_3` LIKE '%string%';
 <li><a href="lib/_windows//lib/_windows/autohotkey/_.html">autohotkey.md</a> <em>release</em> <em>portable</em></li>
 <li><a href="lib/_windows//lib/_windows/msys2.html">msys2.md</a></li>
 </ul>
-<h3 id="cache-64"><a class="header" href="#cache-64">cache</a></h3>
+<h3 id="cache-63"><a class="header" href="#cache-63">cache</a></h3>
 <ul>
 <li><a href="lib/_windows//lib/_windows/cygwin.html">cygwin.md</a></li>
 </ul>
-<h2 id="resource-52"><a class="header" href="#resource-52">resource</a></h2>
+<h2 id="resource-51"><a class="header" href="#resource-51">resource</a></h2>
 <h3 id="mark-49"><a class="header" href="#mark-49">mark</a></h3>
 <ul>
 <li><a href="https://github.com/coreybutler/nvm-windows">NVM for Windows</a></li>
 <li><a href="https://github.com/pyenv-win/pyenv-win">pyenv for Windows</a></li>
 </ul>
-<h3 id="cache-65"><a class="header" href="#cache-65">cache</a></h3>
+<h3 id="cache-64"><a class="header" href="#cache-64">cache</a></h3>
 <ul>
 <li>#epub <a href="https://github.com/vers-one/EpubReader">pubReader</a></li>
 <li>#notify <a href="https://github.com/mohabouje/WinToast">WinToast</a></li>
@@ -9824,7 +9818,7 @@ apt-cyg install gcc-core gcc-g++ make automake autoconf libtool pkg-config
 <li><a href="https://www.msys2.org/docs/cmake/">Using CMake in MSYS2</a></li>
 <li><a href="https://www.samgalope.dev/2024/09/03/how-to-install-gcc-in-termux-for-c-programming/">How to Install GCC in Termux for C++ Programming</a></li>
 </ul>
-<h2 id="resource-53"><a class="header" href="#resource-53">resource</a></h2>
+<h2 id="resource-52"><a class="header" href="#resource-52">resource</a></h2>
 <h3 id="mark-50"><a class="header" href="#mark-50">mark</a></h3>
 <ul>
 <li><a href="https://github.com/msys2/msys2-installer">MSYS2 Installer</a></li>
@@ -9858,19 +9852,19 @@ apt-cyg install gcc-core gcc-g++ make automake autoconf libtool pkg-config
 <ul>
 <li><a href="https://github.com/cpbotha/vxdesktops.ahk">vxdesktops.ahk</a></li>
 </ul>
-<h3 id="cache-66"><a class="header" href="#cache-66">cache</a></h3>
+<h3 id="cache-65"><a class="header" href="#cache-65">cache</a></h3>
 <ul>
 <li><a href="lib/_windows/autohotkey//lib/_windows/autohotkey/kblautoswitch.html">kblautoswitch.md</a></li>
 <li><a href="lib/_windows/autohotkey//lib/_windows/autohotkey/ahk-keymap.html">ahk-keymap.md</a></li>
 </ul>
-<h2 id="resource-54"><a class="header" href="#resource-54">resource</a></h2>
+<h2 id="resource-53"><a class="header" href="#resource-53">resource</a></h2>
 <h3 id="mark-52"><a class="header" href="#mark-52">mark</a></h3>
 <ul>
 <li><a href="https://github.com/xmdn/2_of_3_lang_switch_hotkey">2_of_3_lang_switch_hotkey</a></li>
 <li><a href="lib/_windows/autohotkey//?search=goldendictocr">goldendictocr</a></li>
 <li><a href="https://github.com/iseahound/Vis2">Vis2</a></li>
 </ul>
-<h3 id="cache-67"><a class="header" href="#cache-67">cache</a></h3>
+<h3 id="cache-66"><a class="header" href="#cache-66">cache</a></h3>
 <ul>
 <li>#autohotkey <a href="https://github.com/spyoungtech/ahk">ahk</a></li>
 <li>#ime <a href="https://github.com/ouweiya/AHK">AHK</a></li>
@@ -10028,7 +10022,7 @@ go env -w GOPROXY=https://goproxy.cn,direct
 # go env -w GOPROXY=
 </code></pre>
 <h2 id="cross-reference-32"><a class="header" href="#cross-reference-32">cross-reference</a></h2>
-<h3 id="cache-68"><a class="header" href="#cache-68">cache</a></h3>
+<h3 id="cache-67"><a class="header" href="#cache-67">cache</a></h3>
 <ul>
 <li><a href="lib/go//lib/go/goenv.html">goenv.md</a></li>
 <li><a href="lib/go//lib/go/gvm.html">gvm.md</a></li>
@@ -10065,8 +10059,8 @@ scoop install gvm
 <pre><code class="language-sh">gvm install 1.21.0
 gvm use 1.21.0
 </code></pre>
-<h2 id="resource-55"><a class="header" href="#resource-55">resource</a></h2>
-<h3 id="cache-69"><a class="header" href="#cache-69">cache</a></h3>
+<h2 id="resource-54"><a class="header" href="#resource-54">resource</a></h2>
+<h3 id="cache-68"><a class="header" href="#cache-68">cache</a></h3>
 <ul>
 <li><a href="https://github.com/danielkermode/gvm">danielkermode/gvm</a></li>
 <li><a href="https://github.com/olimpias/gvm">olimpias/gvm</a></li>
@@ -10076,8 +10070,8 @@ gvm use 1.21.0
 <ul>
 <li>#document <a href="https://docs.godotengine.org/en/stable/">Godot Docs</a></li>
 </ul>
-<h2 id="resource-56"><a class="header" href="#resource-56">resource</a></h2>
-<h3 id="cache-70"><a class="header" href="#cache-70">cache</a></h3>
+<h2 id="resource-55"><a class="header" href="#resource-55">resource</a></h2>
+<h3 id="cache-69"><a class="header" href="#cache-69">cache</a></h3>
 <ul>
 <li>#2d <a href="https://github.com/Firemanarg/godot-astar-2d-grid-node">A Star 2D Grid Node</a></li>
 <li>#2d <a href="https://github.com/KoBeWi/Godot-Parallax2D-Preview">Parallax2D Preview</a></li>
@@ -10223,13 +10217,13 @@ scoop install openjdk22
 <ul>
 <li><a href="https://islandoftex.gitlab.io">The Island of TeX</a></li>
 </ul>
-<h2 id="resource-57"><a class="header" href="#resource-57">resource</a></h2>
+<h2 id="resource-56"><a class="header" href="#resource-56">resource</a></h2>
 <h3 id="later-19"><a class="header" href="#later-19">later</a></h3>
 <ul>
 <li><a href="https://github.com/linoferreira/latex-font-survey">Survey of free fonts for use with LaTeX</a></li>
 <li><a href="https://github.com/let-def/texpresso">TeXpresso</a></li>
 </ul>
-<h3 id="cache-71"><a class="header" href="#cache-71">cache</a></h3>
+<h3 id="cache-70"><a class="header" href="#cache-70">cache</a></h3>
 <ul>
 <li>#bibliography <a href="https://github.com/jabref/jabref/">JabRef Bibliography Management</a></li>
 <li>#editor <a href="https://xm1math.net/texmaker">Texmaker</a></li>
@@ -10493,7 +10487,7 @@ This is the second chapter.
 <li>#lession <a href="https://sheepolution.com/learn/book/contents">Sheepolution</a></li>
 <li><a href="https://github.com/love2d-community/LOVE-Example-Browser/">Löve-Example-Browser</a></li>
 </ul>
-<h2 id="resource-58"><a class="header" href="#resource-58">resource</a></h2>
+<h2 id="resource-57"><a class="header" href="#resource-57">resource</a></h2>
 <h3 id="later-20"><a class="header" href="#later-20">later</a></h3>
 <ul>
 <li>#ecs <a href="https://github.com/BlackMATov/evolved.lua">evolved.lua</a></li>
@@ -10503,7 +10497,7 @@ This is the second chapter.
 <li><a href="https://github.com/jasonjmcghee/livelove">livelove</a></li>
 <li><a href="https://github.com/PrismRL/prism">prism</a></li>
 </ul>
-<h3 id="cache-72"><a class="header" href="#cache-72">cache</a></h3>
+<h3 id="cache-71"><a class="header" href="#cache-71">cache</a></h3>
 <ul>
 <li>#math <a href="https://github.com/DUznanski/vornmath">vornmath</a></li>
 <li>#action <a href="https://github.com/Nikaoto/deep">deep</a></li>
@@ -10620,13 +10614,13 @@ pkg install lua53 luarocks
 <li>#post <a href="https://www.lua.org/manual/5.4/manual.html#3.1">Lexical Conventions</a></li>
 </ul>
 <h2 id="cross-reference-35"><a class="header" href="#cross-reference-35">cross-reference</a></h2>
-<h3 id="cache-73"><a class="header" href="#cache-73">cache</a></h3>
+<h3 id="cache-72"><a class="header" href="#cache-72">cache</a></h3>
 <ul>
 <li><a href="lib/lua//lib/lua/hererocks.html">hererocks.md</a></li>
 <li><a href="lib/lua//lib/lua/luajit.html">luajit.md</a></li>
 </ul>
-<h2 id="resource-59"><a class="header" href="#resource-59">resource</a></h2>
-<h3 id="cache-74"><a class="header" href="#cache-74">cache</a></h3>
+<h2 id="resource-58"><a class="header" href="#resource-58">resource</a></h2>
+<h3 id="cache-73"><a class="header" href="#cache-73">cache</a></h3>
 <ul>
 <li><a href="https://github.com/astrochili/narrator">Narrator</a></li>
 <li><a href="https://github.com/morew4rd/lyte2d">Lyte2D</a></li>
@@ -10916,7 +10910,7 @@ pip install -U sphinx sphinx_rtd_theme sphinx_rtd_dark_mode
 <ul>
 <li>#document <a href="https://www.renpy.org/doc/html/index.html">Ren'Py Documentation</a></li>
 </ul>
-<h2 id="resource-60"><a class="header" href="#resource-60">resource</a></h2>
+<h2 id="resource-59"><a class="header" href="#resource-59">resource</a></h2>
 <h3 id="mark-55"><a class="header" href="#mark-55">mark</a></h3>
 <ul>
 <li>#chat-log #display <a href="https://github.com/JimTheCactus/chatlogging">Chat Log</a></li>
@@ -10997,7 +10991,7 @@ pip install -U sphinx sphinx_rtd_theme sphinx_rtd_dark_mode
 <li>#translate <a href="https://github.com/TibixDev/Renquill">Renquill</a></li>
 <li>#translate <a href="https://github.com/SadCrabCom/community_tl">Weblate-based Translation File Management for Ren'Py Projects</a></li>
 </ul>
-<h3 id="cache-75"><a class="header" href="#cache-75">cache</a></h3>
+<h3 id="cache-74"><a class="header" href="#cache-74">cache</a></h3>
 <ul>
 <li>#api #mobile <a href="https://lemmasoft.renai.us/forums/viewtopic.php?f=51&amp;t=46091#p467178">Expanding Mobile Functionality With Pyobjus/Pyjnius ...</a></li>
 <li>#audio #animation <a href="https://github.com/Wendy-Nam/RenPy-Lipsync-Plugin">Lip Sync Plugin for Ren'Py</a></li>
@@ -11152,7 +11146,7 @@ sudo make install
 <ul>
 <li><a href="lib/ruby//lib/ruby/rbenv.html">rbenv.md</a></li>
 </ul>
-<h3 id="cache-76"><a class="header" href="#cache-76">cache</a></h3>
+<h3 id="cache-75"><a class="header" href="#cache-75">cache</a></h3>
 <ul>
 <li><a href="lib/ruby//lib/ruby/chruby.html">chruby.md</a></li>
 </ul>
@@ -11200,7 +11194,7 @@ rustup update
 <li>#book <a href="https://bevy-cheatbook.github.io/">Unofficial Bevy Cheat Book</a></li>
 </ul>
 <h2 id="cross-reference-38"><a class="header" href="#cross-reference-38">cross-reference</a></h2>
-<h3 id="cache-77"><a class="header" href="#cache-77">cache</a></h3>
+<h3 id="cache-76"><a class="header" href="#cache-76">cache</a></h3>
 <ul>
 <li><a href="lib/rust//lib/rust/cargo-sweep.html">cargo-sweep.md</a></li>
 </ul>
@@ -11989,7 +11983,7 @@ scoop install tinymist typstyle
 <li>#document <a href="https://typst.app/universe/search/?kind=templates">Templates</a></li>
 <li><a href="https://typst.app/universe/search/?kind=packages">Packages</a></li>
 </ul>
-<h2 id="resource-61"><a class="header" href="#resource-61">resource</a></h2>
+<h2 id="resource-60"><a class="header" href="#resource-60">resource</a></h2>
 <h3 id="later-22"><a class="header" href="#later-22">later</a></h3>
 <ul>
 <li>#utility <a href="https://typst.app/universe/package/jurlstify">jurlstify</a></li>
@@ -12023,7 +12017,7 @@ scoop install tinymist typstyle
 <li>#utility <a href="https://typst.app/universe/package/wordometer">wordometer</a></li>
 <li>#utility <a href="https://typst.app/universe/package/zhconv">zhconv</a></li>
 </ul>
-<h3 id="cache-78"><a class="header" href="#cache-78">cache</a></h3>
+<h3 id="cache-77"><a class="header" href="#cache-77">cache</a></h3>
 <ul>
 <li>#book <a href="https://typst.app/universe/package/ilm">ilm</a></li>
 <li>#book <a href="https://typst.app/universe/package/js">js</a></li>
@@ -12298,7 +12292,7 @@ typst compile --root .. --features html --format html content/index.typ _site/in
 <li><a href="opt//opt/unison.html">unison.md</a> <em>release</em></li>
 <li><a href="opt//opt/video-compare.html">video-compare.md</a></li>
 </ul>
-<h3 id="cache-79"><a class="header" href="#cache-79">cache</a></h3>
+<h3 id="cache-78"><a class="header" href="#cache-78">cache</a></h3>
 <ul>
 <li><a href="opt//opt/anki.html">anki.md</a></li>
 <li><a href="opt//opt/aseprite.mD">aseprite.md</a></li>
@@ -12339,7 +12333,7 @@ typst compile --root .. --features html --format html content/index.typ _site/in
 <li><a href="opt//opt/virtualbox.html">virtualbox.md</a></li>
 <li><a href="opt//opt/youtube-music.html">youtube-music.md</a></li>
 </ul>
-<h2 id="resource-62"><a class="header" href="#resource-62">resource</a></h2>
+<h2 id="resource-61"><a class="header" href="#resource-61">resource</a></h2>
 <h3 id="mark-58"><a class="header" href="#mark-58">mark</a></h3>
 <ul>
 <li><a href="https://www.clamav.net">ClamAV</a></li>
@@ -12373,7 +12367,7 @@ typst compile --root .. --features html --format html content/index.typ _site/in
 <li><a href="https://github.com/the-via/releases">VIA</a></li>
 <li><a href="https://github.com/YACReader/yacreader">YACReader</a> <em>release</em></li>
 </ul>
-<h3 id="cache-80"><a class="header" href="#cache-80">cache</a></h3>
+<h3 id="cache-79"><a class="header" href="#cache-79">cache</a></h3>
 <ul>
 <li>#adb <a href="https://github.com/liriliri/aya">AYA</a></li>
 <li>#adb <a href="https://github.com/Genymobile/scrcpy">scrcpy</a></li>
@@ -12621,7 +12615,7 @@ deactivate
 <ul>
 <li><a href="opt//srv/anki-sync-server.html">anki-sync-server.md</a></li>
 </ul>
-<h2 id="resource-63"><a class="header" href="#resource-63">resource</a></h2>
+<h2 id="resource-62"><a class="header" href="#resource-62">resource</a></h2>
 <h3 id="later-25"><a class="header" href="#later-25">later</a></h3>
 <ul>
 <li>#template <a href="https://github.com/badlydrawnrob/anki">Anki programming flashcards</a></li>
@@ -12640,7 +12634,7 @@ deactivate
 <li><a href="https://ankiweb.net/shared/info/85158043">Minimize to tray</a></li>
 <li><a href="https://ankiweb.net/shared/info/1188705668">Note Size</a></li>
 </ul>
-<h3 id="cache-81"><a class="header" href="#cache-81">cache</a></h3>
+<h3 id="cache-80"><a class="header" href="#cache-80">cache</a></h3>
 <ul>
 <li>#analyze <a href="https://github.com/xiety/AnkiHistoryVisualization">Anki History Visualization</a></li>
 <li>#analyze <a href="https://github.com/klieret/AnkiPandas">AnkiPandas</a></li>
@@ -12739,7 +12733,7 @@ scoop install anythingllm
 <li>#slash-command <a href="https://hub.anythingllm.com/i/slash-command/FeHxRthrf5kmUaS6ZzZg">Explain</a></li>
 <li>#slash-command <a href="https://hub.anythingllm.com/i/slash-command/9GDmgLeq0kggTpj6K38U">Summarize</a></li>
 </ul>
-<h3 id="cache-82"><a class="header" href="#cache-82">cache</a></h3>
+<h3 id="cache-81"><a class="header" href="#cache-81">cache</a></h3>
 <ul>
 <li>#agent-skill <a href="https://hub.anythingllm.com/i/agent-skill/5SKdNIhEug0sI7xNRcio">Home Assistant Automation</a></li>
 <li>#agent-skill <a href="https://hub.anythingllm.com/i/agent-skill/SZxzBiZ4B3XkgVLs3yF1">N8N Workflow Connector</a></li>
@@ -12753,8 +12747,8 @@ scoop install anythingllm
 <blockquote>
 <p>动画精灵编辑器和像素艺术工具（适用于Windows、macOS、Linux）。 [aseprite/aseprite]</p>
 </blockquote>
-<h2 id="resource-64"><a class="header" href="#resource-64">resource</a></h2>
-<h3 id="cache-83"><a class="header" href="#cache-83">cache</a></h3>
+<h2 id="resource-63"><a class="header" href="#resource-63">resource</a></h2>
+<h3 id="cache-82"><a class="header" href="#cache-82">cache</a></h3>
 <ul>
 <li>#audio <a href="https://ddmplayer.itch.io/aseprite-audio-extension">Aseprite Audio Extension</a></li>
 <li>#brush <a href="https://thkaspar.itch.io/brush-transformation">Brush Transformations</a></li>
@@ -13017,8 +13011,8 @@ sudo pacman -S darktable
 # Windows 10
 scoop install darktable
 </code></pre>
-<h2 id="resource-65"><a class="header" href="#resource-65">resource</a></h2>
-<h3 id="cache-84"><a class="header" href="#cache-84">cache</a></h3>
+<h2 id="resource-64"><a class="header" href="#resource-64">resource</a></h2>
+<h3 id="cache-83"><a class="header" href="#cache-83">cache</a></h3>
 <ul>
 <li>#lut <a href="https://github.com/bastibe/Fujifilm-Auto-Settings-for-Darktable">Fujifilm Auto Settings for Darktable</a></li>
 <li>#lut <a href="https://github.com/sfi0zy/street-monochrome">Street Monochrome</a></li>
@@ -13054,8 +13048,8 @@ scoop install dbeaver
 <pre><code class="language-sh">scoop install detect-it-easy
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="discord"><a class="header" href="#discord"><a href="https://discord.com">Discord</a></a></h1>
-<h2 id="resource-66"><a class="header" href="#resource-66">resource</a></h2>
-<h3 id="cache-85"><a class="header" href="#cache-85">cache</a></h3>
+<h2 id="resource-65"><a class="header" href="#resource-65">resource</a></h2>
+<h3 id="cache-84"><a class="header" href="#cache-84">cache</a></h3>
 <ul>
 <li><a href="https://github.com/vyfor/cord.nvim">Cord – Tailor Your Presence Like Never Before</a></li>
 <li><a href="https://github.com/ELginas/discord-image-gallery">Discord Image Gallery</a></li>
@@ -13292,8 +13286,8 @@ scoop install gpodder
 </ul>
 </li>
 </ul>
-<h2 id="resource-67"><a class="header" href="#resource-67">resource</a></h2>
-<h3 id="cache-86"><a class="header" href="#cache-86">cache</a></h3>
+<h2 id="resource-66"><a class="header" href="#resource-66">resource</a></h2>
+<h3 id="cache-85"><a class="header" href="#cache-85">cache</a></h3>
 <ul>
 <li><a href="https://gpodder.github.io/docs/extensions/normalizeaudio.html">Normalize Audio</a></li>
 </ul>
@@ -13362,8 +13356,8 @@ sudo pacman -S inkscape
 # Windows 10
 scoop install inkscape
 </code></pre>
-<h2 id="resource-68"><a class="header" href="#resource-68">resource</a></h2>
-<h3 id="cache-87"><a class="header" href="#cache-87">cache</a></h3>
+<h2 id="resource-67"><a class="header" href="#resource-67">resource</a></h2>
+<h3 id="cache-86"><a class="header" href="#cache-86">cache</a></h3>
 <ul>
 <li><a href="https://github.com/textext/textext">TexText</a></li>
 </ul>
@@ -13384,7 +13378,7 @@ Joplin是“优先离线”的，这意味着您的所有数据始终保存在�
 所有平台均提供全文搜索，以快速找到所需信息。应用程序可以通过插件和主题进行自定义，您也可以轻松创建自己的插件和主题。<br />
 该应用程序支持Windows、Linux、macOS、Android和iOS。还提供Web Clipper，可以从浏览器保存网页和屏幕截图，支持Firefox和Chrome。 [laurent22/joplin]</p>
 </blockquote>
-<h2 id="resource-69"><a class="header" href="#resource-69">resource</a></h2>
+<h2 id="resource-68"><a class="header" href="#resource-68">resource</a></h2>
 <h3 id="mark-60"><a class="header" href="#mark-60">mark</a></h3>
 <ul>
 <li>#calendar <a href="https://github.com/hieuthi/joplin-plugin-life-calendar">Life Calendar</a></li>
@@ -13402,7 +13396,7 @@ Joplin是“优先离线”的，这意味着您的所有数据始终保存在�
 <li><a href="https://github.com/Kaid00/joplin-note-statistics">Joplin Note Statistics</a></li>
 <li><a href="https://github.com/djsudduth/joplin-plugin-paragraph-extractor">Paragraph Extractor</a></li>
 </ul>
-<h3 id="cache-88"><a class="header" href="#cache-88">cache</a></h3>
+<h3 id="cache-87"><a class="header" href="#cache-87">cache</a></h3>
 <ul>
 <li>#backup <a href="https://github.com/gerlos/logseq-backup">logseq-backup</a></li>
 <li>#command <a href="https://github.com/gateswizard/joplin-plugin-insert-command-exec">joplin-plugin-insert-command-exec</a></li>
@@ -13538,8 +13532,8 @@ scoop install kicad
 <ul>
 <li>#document <a href="https://docs.kicad.org/7.0/en/getting_started_in_kicad/getting_started_in_kicad.html">KiCad</a></li>
 </ul>
-<h2 id="resource-70"><a class="header" href="#resource-70">resource</a></h2>
-<h3 id="cache-89"><a class="header" href="#cache-89">cache</a></h3>
+<h2 id="resource-69"><a class="header" href="#resource-69">resource</a></h2>
+<h3 id="cache-88"><a class="header" href="#cache-88">cache</a></h3>
 <ul>
 <li><a href="https://github.com/yaqwsx/KiKit">KiKit – Automation for KiCAD</a></li>
 </ul>
@@ -13649,7 +13643,7 @@ yay -S --noconfirm localsend-bin
 scoop install localsend
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="logseq"><a class="header" href="#logseq"><a href="https://github.com/logseq/logseq">Logseq</a></a></h1>
-<h2 id="resource-71"><a class="header" href="#resource-71">resource</a></h2>
+<h2 id="resource-70"><a class="header" href="#resource-70">resource</a></h2>
 <h3 id="mark-61"><a class="header" href="#mark-61">mark</a></h3>
 <ul>
 <li>edit <a href="https://github.com/YU000jp/logseq-plugin-blank-line">Blank Line</a></li>
@@ -13672,7 +13666,7 @@ scoop install localsend
 <li>view <a href="https://github.com/yoyurec/logseq-tabler-picker">Tabler picker</a></li>
 <li>view <a href="https://github.com/pengx17/logseq-plugin-tabs">Tabs</a></li>
 </ul>
-<h3 id="cache-90"><a class="header" href="#cache-90">cache</a></h3>
+<h3 id="cache-89"><a class="header" href="#cache-89">cache</a></h3>
 <ul>
 <li><a href="https://github.com/YU000jp/logseq-plugin-multiple-assets">&quot;Logseq Plugin: Multiple Files into Assets&quot;</a></li>
 <li><a href="https://github.com/c6p/logseq-hypothesis">Hypothesis</a></li>
@@ -13964,8 +13958,8 @@ scoop install pureref
 <ul>
 <li><code>Ctrl+Right</code> → <code>Ctrl+Down</code> → <code>Ctrl+f</code> → Resize by mouse wheel → <code>Ctrl+Shift+r</code></li>
 </ul>
-<h2 id="resource-72"><a class="header" href="#resource-72">resource</a></h2>
-<h3 id="cache-91"><a class="header" href="#cache-91">cache</a></h3>
+<h2 id="resource-71"><a class="header" href="#resource-71">resource</a></h2>
+<h3 id="cache-90"><a class="header" href="#cache-90">cache</a></h3>
 <ul>
 <li><a href="https://github.com/FyorDev/PureRef-format">PureRef-format</a></li>
 </ul>
@@ -14115,8 +14109,8 @@ scoop install qimgv
 }
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="qownnotes"><a class="header" href="#qownnotes"><a href="https://qownnotes.org">QOwnNotes</a></a></h1>
-<h2 id="resource-73"><a class="header" href="#resource-73">resource</a></h2>
-<h3 id="cache-92"><a class="header" href="#cache-92">cache</a></h3>
+<h2 id="resource-72"><a class="header" href="#resource-72">resource</a></h2>
+<h3 id="cache-91"><a class="header" href="#cache-91">cache</a></h3>
 <ul>
 <li><a href="https://github.com/qownnotes/web-companion">QOwnNotes Web Companion</a></li>
 </ul>
@@ -14353,7 +14347,7 @@ scoop install subtitleedit
 <li><a href="https://scillidan.github.io/media_cheat/opt/subtitle-edit_subtitle-translate.mp4">subtitle-edit_subtitle-translate.mp4</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="tabby-1"><a class="header" href="#tabby-1"><a href="https://github.com/Eugeny/tabby">Tabby</a></a></h1>
-<h2 id="resource-74"><a class="header" href="#resource-74">resource</a></h2>
+<h2 id="resource-73"><a class="header" href="#resource-73">resource</a></h2>
 <h3 id="mark-62"><a class="header" href="#mark-62">mark</a></h3>
 <ul>
 <li><a href="https://github.com/eugeny/tabby-save-output">Save Output</a></li>
@@ -14714,8 +14708,8 @@ Use estimated quality (when possible): Off
 <ul>
 <li><a href="https://github.com/matt-m-o/YomiNinja/issues/21">Magpie Support</a></li>
 </ul>
-<h2 id="resource-75"><a class="header" href="#resource-75">resource</a></h2>
-<h3 id="cache-93"><a class="header" href="#cache-93">cache</a></h3>
+<h2 id="resource-74"><a class="header" href="#resource-74">resource</a></h2>
+<h3 id="cache-92"><a class="header" href="#cache-92">cache</a></h3>
 <ul>
 <li><a href="https://github.com/nell-otsuka/YomiMochi">YomiMochi</a></li>
 </ul>
@@ -14795,12 +14789,12 @@ scoop install zeal
 <ul>
 <li>#Chrome <a href="opt/Browser//opt/Browser/kokoro-tts-reader.html">kokoro-tts-reader.md</a></li>
 </ul>
-<h3 id="cache-94"><a class="header" href="#cache-94">cache</a></h3>
+<h3 id="cache-93"><a class="header" href="#cache-93">cache</a></h3>
 <ul>
 <li>#Chrome #Firefox <a href="opt/Browser//opt/Browser/immersive-translate.html">immersive-translate.md</a></li>
 <li><a href="opt/Browser//opt/Browser/linkding-extension.html">linkding-extension.md</a></li>
 </ul>
-<h2 id="resource-76"><a class="header" href="#resource-76">resource</a></h2>
+<h2 id="resource-75"><a class="header" href="#resource-75">resource</a></h2>
 <h3 id="mark-64"><a class="header" href="#mark-64">mark</a></h3>
 <ul>
 <li>#Chrome #Firefox <a href="https://webextension.org/listing/screen-brightness.html">Adjust Page Brightness</a></li>
@@ -14875,7 +14869,7 @@ scoop install zeal
 <li>#Chrome <a href="https://chromewebstore.google.com/detail/vscode-extension-download/hkjdjlmpniknglhaobilgigaigleiebd?pli=1">VSCode Extension Downloader</a></li>
 <li>#Firefox <a href="https://github.com/BassGaming/customtts">Custom TTS Reader</a></li>
 </ul>
-<h3 id="cache-95"><a class="header" href="#cache-95">cache</a></h3>
+<h3 id="cache-94"><a class="header" href="#cache-94">cache</a></h3>
 <ul>
 <li>#Chrome <a href="https://github.com/willbchang/chrome-read-later">Read Later</a></li>
 <li>#chrome <a href="https://docs.anythingllm.com/browser-extension/install">AnythingLLM Browser Companion</a></li>
@@ -15155,8 +15149,8 @@ scoop install librewolf
 <ul>
 <li>#document <a href="https://linguister.io/docs/">Linguist Translate</a></li>
 </ul>
-<h2 id="resource-77"><a class="header" href="#resource-77">resource</a></h2>
-<h3 id="cache-96"><a class="header" href="#cache-96">cache</a></h3>
+<h2 id="resource-76"><a class="header" href="#resource-76">resource</a></h2>
+<h3 id="cache-95"><a class="header" href="#cache-95">cache</a></h3>
 <ul>
 <li><a href="https://github.com/MoonDragon-MD/linguist-NLLB-translator">linguist-NLLB-translator</a></li>
 <li><a href="https://github.com/MoonDragon-MD/linguist-WindowsTTS/blob/main/WindowsTTS.js">linguist-WindowsTTS</a></li>
@@ -15216,8 +15210,8 @@ This repository contains dictionaries for Yomitan, a Japanese dictionary browser
 <ul>
 <li><a href="https://github.com/MarvNC/yomichan-dictionaries">Yomichan/Yomitan Dictionaries</a></li>
 </ul>
-<h2 id="resource-78"><a class="header" href="#resource-78">resource</a></h2>
-<h3 id="cache-97"><a class="header" href="#cache-97">cache</a></h3>
+<h2 id="resource-77"><a class="header" href="#resource-77">resource</a></h2>
+<h3 id="cache-96"><a class="header" href="#cache-96">cache</a></h3>
 <ul>
 <li>#dictionary <a href="https://github.com/stephenmk/Jitendex">Jitendex</a></li>
 <li>#dictionary <a href="https://github.com/kamui-fin/yomi-freq">Yomichan Frequency List Generator</a></li>
@@ -15245,7 +15239,7 @@ This repository contains dictionaries for Yomitan, a Japanese dictionary browser
 <ul>
 <li><a href="opt/_andriod//opt/_andriod/app-manager.html">app-manager.md</a></li>
 </ul>
-<h3 id="cache-98"><a class="header" href="#cache-98">cache</a></h3>
+<h3 id="cache-97"><a class="header" href="#cache-97">cache</a></h3>
 <ul>
 <li><a href="opt/_andriod//opt/_andriod/andbible.html">andbible.md</a></li>
 <li><a href="opt/_andriod//opt/_andriod/ankidroid.html">ankidroid.md</a></li>
@@ -15253,7 +15247,7 @@ This repository contains dictionaries for Yomitan, a Japanese dictionary browser
 <li><a href="opt/_andriod//opt/_andriod/koreader.html">koreader.md</a></li>
 <li><a href="opt/_andriod//opt/_andriod/round-sync.html">round-sync.md</a></li>
 </ul>
-<h2 id="resource-79"><a class="header" href="#resource-79">resource</a></h2>
+<h2 id="resource-78"><a class="header" href="#resource-78">resource</a></h2>
 <h3 id="mark-66"><a class="header" href="#mark-66">mark</a></h3>
 <ul>
 <li><a href="https://github.com/beemdevelopment/Aegis">Aegis Authenticator</a></li>
@@ -15294,7 +15288,7 @@ This repository contains dictionaries for Yomitan, a Japanese dictionary browser
 <li>#reader <a href="https://github.com/readium/kotlin-toolkit">Readium Kotlin Toolkit</a></li>
 <li>#reader <a href="https://gitlab.com/smoores/storyteller">Storyteller</a></li>
 </ul>
-<h3 id="cache-99"><a class="header" href="#cache-99">cache</a></h3>
+<h3 id="cache-98"><a class="header" href="#cache-98">cache</a></h3>
 <ul>
 <li>#vnc <a href="https://github.com/iiordanov/remote-desktop-clients">bVNC Free</a></li>
 <li>#vnc <a href="https://github.com/bk138/droidVNC-NG">droidVNC-NG</a></li>
@@ -15389,7 +15383,7 @@ This repository contains dictionaries for Yomitan, a Japanese dictionary browser
 <li>#document <a href="https://docs.ankidroid.org/">AnkiDroid User Manual</a></li>
 </ul>
 <h2 id="cross-reference-45"><a class="header" href="#cross-reference-45">cross-reference</a></h2>
-<h3 id="cache-100"><a class="header" href="#cache-100">cache</a></h3>
+<h3 id="cache-99"><a class="header" href="#cache-99">cache</a></h3>
 <ul>
 <li><a href="opt/_andriod//srv/anki-sync-server.html">anki-sync-server.md</a></li>
 </ul>
@@ -15669,7 +15663,7 @@ fi
 <li><a href="opt/_arch//opt/_arch/grub-btrfs.html">grub-btrfs.md</a></li>
 <li><a href="opt/_arch//opt/qdiskinfo.html">qdiskinfo.md</a></li>
 </ul>
-<h3 id="cache-101"><a class="header" href="#cache-101">cache</a></h3>
+<h3 id="cache-100"><a class="header" href="#cache-100">cache</a></h3>
 <ul>
 <li><a href="opt/_arch//opt/_arch/foliate.html">foliate.md</a></li>
 <li><a href="opt/_arch//opt/_arch/input-leap.html">input-leap.md</a></li>
@@ -15678,7 +15672,7 @@ fi
 <li><a href="opt/_arch//opt/_arch/ocrdesktop.html">ocrdesktop.md</a></li>
 <li><a href="opt/_arch//opt/_arch/sway.html">sway.md</a></li>
 </ul>
-<h2 id="resource-80"><a class="header" href="#resource-80">resource</a></h2>
+<h2 id="resource-79"><a class="header" href="#resource-79">resource</a></h2>
 <h3 id="mark-69"><a class="header" href="#mark-69">mark</a></h3>
 <ul>
 <li><a href="https://flathub.org/apps/io.github.kolunmi.Bazaar">Bazaar</a> <em>flatpak</em></li>
@@ -15701,7 +15695,7 @@ fi
 <li><a href="https://github.com/tfuxu/Halftone">Halftone</a></li>
 <li><a href="https://github.com/Martchus/syncthingtray">Syncthing Tray</a> <em>release</em></li>
 </ul>
-<h3 id="cache-102"><a class="header" href="#cache-102">cache</a></h3>
+<h3 id="cache-101"><a class="header" href="#cache-101">cache</a></h3>
 <ul>
 <li>#audio <a href="https://github.com/noisetorch/NoiseTorch">NoiseTorch-ng</a></li>
 <li>#audiobook <a href="https://github.com/geigi/cozy">Cozy</a></li>
@@ -15932,8 +15926,8 @@ yay -S --noconfirm qdiskinfo-bin
 <ul>
 <li><a href="https://wiki.archlinux.org/title/Sway">Sway - ArchWiki</a></li>
 </ul>
-<h2 id="resource-81"><a class="header" href="#resource-81">resource</a></h2>
-<h3 id="cache-103"><a class="header" href="#cache-103">cache</a></h3>
+<h2 id="resource-80"><a class="header" href="#resource-80">resource</a></h2>
+<h3 id="cache-102"><a class="header" href="#cache-102">cache</a></h3>
 <ul>
 <li><a href="https://github.com/dawsers/scroll">scroll</a></li>
 <li><a href="https://github.com/francma/wob">wob</a></li>
@@ -16047,13 +16041,13 @@ sudo systemctl enable --now cronie.service
 <li><a href="opt/_arch/rofi//opt/_arch/rofi/rofi-pass.html">rofi-pass.md</a></li>
 <li><a href="opt/_arch/rofi//opt/_arch/rofi/rofi-zeal.html">rofi-zeal.md</a></li>
 </ul>
-<h3 id="cache-104"><a class="header" href="#cache-104">cache</a></h3>
+<h3 id="cache-103"><a class="header" href="#cache-103">cache</a></h3>
 <ul>
 <li><a href="opt/_arch/rofi//opt/_arch/rofi/dict-sh.html">dict-sh.md</a></li>
 <li><a href="opt/_arch/rofi//opt/_arch/rofi/kaomoji-rofi.html">kaomoji-rofi.md</a></li>
 </ul>
-<h2 id="resource-82"><a class="header" href="#resource-82">resource</a></h2>
-<h3 id="cache-105"><a class="header" href="#cache-105">cache</a></h3>
+<h2 id="resource-81"><a class="header" href="#resource-81">resource</a></h2>
+<h3 id="cache-104"><a class="header" href="#cache-104">cache</a></h3>
 <ul>
 <li>#bookmark <a href="https://github.com/carnager/buku_run">buku_run</a></li>
 <li>#bookmark <a href="https://github.com/joajfreitas/marcador">Marcador</a></li>
@@ -16399,12 +16393,12 @@ tar -xvf Chroma-White-S.tar.xz
 <li><a href="https://uli.rocks/p/tilling-xfce/">Tiling in xfce</a></li>
 </ul>
 <h2 id="cross-reference-51"><a class="header" href="#cross-reference-51">cross-reference</a></h2>
-<h3 id="cache-106"><a class="header" href="#cache-106">cache</a></h3>
+<h3 id="cache-105"><a class="header" href="#cache-105">cache</a></h3>
 <ul>
 <li><a href="opt/_arch/xfce//opt/_arch/xfce/xfce-tile.html">xfce-tile.md</a></li>
 </ul>
-<h2 id="resource-83"><a class="header" href="#resource-83">resource</a></h2>
-<h3 id="cache-107"><a class="header" href="#cache-107">cache</a></h3>
+<h2 id="resource-82"><a class="header" href="#resource-82">resource</a></h2>
+<h3 id="cache-106"><a class="header" href="#cache-106">cache</a></h3>
 <ul>
 <li><a href="https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin/start">Clipman - xfce4-clipman-plugin</a></li>
 <li><a href="https://docs.xfce.org/panel-plugins/xfce4-smartbookmark-plugin/start">xfce4-smartbookmark-plugin - Smart Bookmark</a></li>
@@ -16497,7 +16491,7 @@ chmod +x ./xfce-setup-shortcuts.sh
 <li><a href="opt/_windows//opt/_windows/wcap.html">wcap.md</a> <em>download</em></li>
 <li><a href="opt/_windows//opt/_windows/wincdemu.html">wincdemu.md</a></li>
 </ul>
-<h3 id="cache-108"><a class="header" href="#cache-108">cache</a></h3>
+<h3 id="cache-107"><a class="header" href="#cache-107">cache</a></h3>
 <ul>
 <li><a href="opt/_windows//opt/_windows/bleachbit.html">bleachbit.md</a></li>
 <li><a href="opt/_windows//opt/_windows/faststone-image-viewer.html">faststone-image-viewer.md</a></li>
@@ -16514,7 +16508,7 @@ chmod +x ./xfce-setup-shortcuts.sh
 <li><a href="opt/_windows//opt/_windows/sforzando.html">sforzando.md</a></li>
 <li><a href="opt/_windows//opt/_windows/shell-x.html">shell-x.md</a></li>
 </ul>
-<h2 id="resource-84"><a class="header" href="#resource-84">resource</a></h2>
+<h2 id="resource-83"><a class="header" href="#resource-83">resource</a></h2>
 <h3 id="mark-72"><a class="header" href="#mark-72">mark</a></h3>
 <ul>
 <li>#audio <a href="https://github.com/gchudov/cuetools.net">CUETools</a></li>
@@ -16554,7 +16548,7 @@ chmod +x ./xfce-setup-shortcuts.sh
 <li><a href="https://github.com/VirtualDisplay/Virtual-Display-Driver">Virtual Display Driver</a> <em>release</em> <em>installer</em></li>
 <li><a href="https://github.com/ErrorFlynn/ytdlp-interface">ytdlp-interface</a></li>
 </ul>
-<h3 id="cache-109"><a class="header" href="#cache-109">cache</a></h3>
+<h3 id="cache-108"><a class="header" href="#cache-108">cache</a></h3>
 <ul>
 <li>#audio <a href="https://github.com/DannyBen/FlicFlac">FlicFlac</a></li>
 <li>#audio <a href="https://mpesch3.de/">mp3DirectCut</a></li>
@@ -16777,7 +16771,7 @@ scoop install autoruns
 <li><a href="https://resource.dopus.com/t/how-do-i-edit-the-folder-background-context-menu/35712/2">How do I edit the folder background context menu?</a></li>
 <li><a href="https://resource.dopus.com/t/how-to-create-a-icon-set/3415/20">How to create a Icon set?</a></li>
 </ul>
-<h2 id="resource-85"><a class="header" href="#resource-85">resource</a></h2>
+<h2 id="resource-84"><a class="header" href="#resource-84">resource</a></h2>
 <h3 id="mark-73"><a class="header" href="#mark-73">mark</a></h3>
 <ul>
 <li>#backup <a href="https://resource.dopus.com/t/automatic-backup-of-opus-config/16485">Automatic backup of Opus config?</a></li>
@@ -16796,7 +16790,7 @@ scoop install autoruns
 <li>#theme <a href="https://resource.dopus.com/t/simple-windows-10-dark-theme/30055">Simple Windows 10 Dark Theme</a></li>
 <li>#view <a href="https://resource.dopus.com/t/cycle-through-layouts/51223">Cycle through Layouts</a></li>
 </ul>
-<h3 id="cache-110"><a class="header" href="#cache-110">cache</a></h3>
+<h3 id="cache-109"><a class="header" href="#cache-109">cache</a></h3>
 <ul>
 <li>#cd <a href="https://resource.dopus.com/t/gorootarchive-jump-back-to-the-root-of-an-archive/51408">GoRootArchive</a></li>
 <li>#clean <a href="https://resource.dopus.com/t/folder-cleaner-delete-folders-but-keep-files/52555">Folder Cleaner</a></li>
@@ -16934,8 +16928,8 @@ Arguments: /e /u /x
 </ul>
 </li>
 </ul>
-<h2 id="resource-86"><a class="header" href="#resource-86">resource</a></h2>
-<h3 id="cache-111"><a class="header" href="#cache-111">cache</a></h3>
+<h2 id="resource-85"><a class="header" href="#resource-85">resource</a></h2>
+<h3 id="cache-110"><a class="header" href="#cache-110">cache</a></h3>
 <ul>
 <li><a href="https://github.com/dnGrep/dnGrep/discussions/1124">new Plugin tested / Exiftool</a></li>
 <li><a href="https://github.com/dnGrep/dnGrep/discussions/1049">Using Apache Tika with dnGrep</a></li>
@@ -17523,7 +17517,7 @@ scoop install putty winscp vcxsrv
 <ul>
 <li><a href="opt/_windows/cmder//bin/_windows/clink/_.html">clink.md</a></li>
 </ul>
-<h2 id="resource-87"><a class="header" href="#resource-87">resource</a></h2>
+<h2 id="resource-86"><a class="header" href="#resource-86">resource</a></h2>
 <h3 id="mark-75"><a class="header" href="#mark-75">mark</a></h3>
 <ul>
 <li><a href="https://github.com/Maximus5/ConEmu">ConEmu</a> <em>release</em></li>
@@ -17532,7 +17526,7 @@ scoop install putty winscp vcxsrv
 <ul>
 <li><a href="https://github.com/hasansujon786/Cmder-Color-Themes">Color Schemes for ConEmu</a></li>
 </ul>
-<h3 id="cache-112"><a class="header" href="#cache-112">cache</a></h3>
+<h3 id="cache-111"><a class="header" href="#cache-111">cache</a></h3>
 <ul>
 <li><a href="https://github.com/tadashi-aikawa/owl-cmder-tools">Owl Cmder Tools</a></li>
 </ul>
@@ -17660,7 +17654,7 @@ Windows.old
 <ul>
 <li><a href="opt/_windows/everything//bin/_windows/everything-cli.html">everything-cli.md</a></li>
 </ul>
-<h3 id="cache-113"><a class="header" href="#cache-113">cache</a></h3>
+<h3 id="cache-112"><a class="header" href="#cache-112">cache</a></h3>
 <ul>
 <li><a href="opt/_windows/everything//opt/_windows/everything/everything-toolbar.html">everything-toolbar.md</a></li>
 </ul>
@@ -17770,7 +17764,7 @@ terminal = &quot;${env:USERPROFILE}\.local\bin\alacritty_command.lnk&quot;
 <ul>
 <li><a href="opt/_windows/keypirinha//opt/_windows/keypirinha-zealous.html">keypirinha-zealous.md</a></li>
 </ul>
-<h2 id="resource-88"><a class="header" href="#resource-88">resource</a></h2>
+<h2 id="resource-87"><a class="header" href="#resource-87">resource</a></h2>
 <h3 id="mark-78"><a class="header" href="#mark-78">mark</a></h3>
 <ul>
 <li>#build-in <a href="https://keypirinha.com/packages/apps.html">Apps Package</a></li>
@@ -17805,7 +17799,7 @@ terminal = &quot;${env:USERPROFILE}\.local\bin\alacritty_command.lnk&quot;
 <li><a href="https://github.com/dozius/keypirinha-snippets">snippets</a></li>
 <li><a href="https://github.com/grandsilence/keypirinha-win10-theme-switcher">win10-theme-switcher</a></li>
 </ul>
-<h3 id="cache-114"><a class="header" href="#cache-114">cache</a></h3>
+<h3 id="cache-113"><a class="header" href="#cache-113">cache</a></h3>
 <ul>
 <li><a href="https://github.com/novamostra/Keypirinha_SearchCSV">Keypirinha_SearchCSV</a></li>
 <li><a href="https://github.com/armotic/keypirinha-audioswitcher">Keypirinha Plugin: Audio Switcher</a></li>
@@ -17950,7 +17944,7 @@ o = Option
 </li>
 <li><a href="https://github.com/lintalist/lintalist/blob/master/docs/MultiCaret.md">Lintalist MultiCaret support</a></li>
 </ul>
-<h2 id="resource-89"><a class="header" href="#resource-89">resource</a></h2>
+<h2 id="resource-88"><a class="header" href="#resource-88">resource</a></h2>
 <h3 id="extra-38"><a class="header" href="#extra-38">extra</a></h3>
 <ul>
 <li><a href="opt/_windows/lintalist//opt/_windows/lintalist/lintalist-themes.html">lintalist-themes.md</a></li>
@@ -17968,7 +17962,7 @@ unzip Solarized.zip -d Solarized
 <ul>
 <li><a href="opt/_windows/tablacusexplorer//opt/_windows/tablacusexplorer/tablacusexploreraddons.html">tablacusexploreraddons.md</a></li>
 </ul>
-<h2 id="resource-90"><a class="header" href="#resource-90">resource</a></h2>
+<h2 id="resource-89"><a class="header" href="#resource-89">resource</a></h2>
 <h3 id="mark-80"><a class="header" href="#mark-80">mark</a></h3>
 <ul>
 <li>#Access-from-Windows <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/tasktray">Systray</a></li>
@@ -18051,7 +18045,7 @@ EXT=&quot;GIF&quot;</li>
 </li>
 <li>#Panes <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/synchronize">Synchronize</a></li>
 </ul>
-<h3 id="cache-115"><a class="header" href="#cache-115">cache</a></h3>
+<h3 id="cache-114"><a class="header" href="#cache-114">cache</a></h3>
 <ul>
 <li>#Built-in #Folder-Tree <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/treeview">Tree view</a></li>
 <li>#Developers <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/systemfolders">System folders</a></li>
@@ -18203,13 +18197,13 @@ URL: http://&lt;your_host&gt;:&lt;port&gt;/?models=librarian-answer-in-zh&amp;q=
 <li><a href="opt/calibre//optWeb/open-webui/open-webui.html">open-webui.md</a></li>
 <li><a href="opt/calibre//srv/silverdict.html">silverdict.md</a></li>
 </ul>
-<h2 id="resource-91"><a class="header" href="#resource-91">resource</a></h2>
+<h2 id="resource-90"><a class="header" href="#resource-90">resource</a></h2>
 <h3 id="mark-81"><a class="header" href="#mark-81">mark</a></h3>
 <ul>
 <li><a href="https://github.com/un-pogaz/ePub-Extended-Metadata">ePub Extended Metadata</a></li>
 <li><a href="https://www.mobileread.com/forums/showthread.php?t=358911">K2pdfopt</a></li>
 </ul>
-<h3 id="cache-116"><a class="header" href="#cache-116">cache</a></h3>
+<h3 id="cache-115"><a class="header" href="#cache-115">cache</a></h3>
 <ul>
 <li><a href="https://github.com/fugary/calibre-douban">calibre-douban</a></li>
 <li><a href="https://github.com/every-day-things/citadel">citadel</a></li>
@@ -18313,17 +18307,17 @@ scoop install goldendict
 <li><a href="opt/goldendict//opt/goldendict/goldendict-full-dark-theme.html">goldendict-full-dark-theme</a></li>
 <li><a href="opt/goldendict//opt/goldendict/libreoffice-dictionaries.html">libreoffice-dictionaries.md</a></li>
 </ul>
-<h3 id="cache-117"><a class="header" href="#cache-117">cache</a></h3>
+<h3 id="cache-116"><a class="header" href="#cache-116">cache</a></h3>
 <ul>
 <li><a href="opt/goldendict//opt/goldendict/gd-tools.html">gd-tools.md</a></li>
 </ul>
-<h2 id="resource-92"><a class="header" href="#resource-92">resource</a></h2>
+<h2 id="resource-91"><a class="header" href="#resource-91">resource</a></h2>
 <h3 id="mark-82"><a class="header" href="#mark-82">mark</a></h3>
 <ul>
 <li><a href="https://github.com/xiaodaxia-2008/golden-dict-trans">golden-dict-trans</a></li>
 <li><a href="https://gist.github.com/e95773454d79dc047aeed016fb00daef">tencenttrans_2zh_zh2en</a></li>
 </ul>
-<h3 id="cache-118"><a class="header" href="#cache-118">cache</a></h3>
+<h3 id="cache-117"><a class="header" href="#cache-117">cache</a></h3>
 <ul>
 <li><a href="https://terokarvinen.com/2017/acute-0-2-2-integrate-help-commands-to-single-interface-pydoc3-puppet-describe-and-man-in-goldendict/?fromSearch=acute">Acute</a></li>
 <li><a href="https://github.com/maxdymko/goldendict-dictionary-editor">editor for goldendict-dictionary entries</a></li>
@@ -18474,13 +18468,13 @@ scoop install mpv
 <li><a href="opt/mpv//opt/mpv/mpv-handler.html">mpv-handler.md</a></li>
 <li><a href="opt/mpv//opt/mpv/webtorrent-mpv-hook.html">webtorrent-mpv-hook.md</a></li>
 </ul>
-<h3 id="cache-119"><a class="header" href="#cache-119">cache</a></h3>
+<h3 id="cache-118"><a class="header" href="#cache-118">cache</a></h3>
 <ul>
 <li><a href="opt/mpv//opt/mpv/mpv-cheatsheet.html">mpv-cheatsheet.md</a></li>
 <li><a href="opt/mpv//bin/ffsubsync.html">ffsubsync.md</a></li>
 <li><a href="opt/mpv//bin/subliminal.html">subliminal.md</a></li>
 </ul>
-<h2 id="resource-93"><a class="header" href="#resource-93">resource</a></h2>
+<h2 id="resource-92"><a class="header" href="#resource-92">resource</a></h2>
 <h3 id="mark-83"><a class="header" href="#mark-83">mark</a></h3>
 <ul>
 <li>#chapter <a href="https://github.com/dyphire/mpv-scripts">chapter-make-read.lua</a></li>
@@ -18562,7 +18556,7 @@ scoop install mpv
 <li><a href="https://github.com/ajatt-tools/videoclip">videoclip</a></li>
 <li><a href="https://github.com/mfcc64/mpv-scripts">visualizer.lua</a></li>
 </ul>
-<h3 id="cache-120"><a class="header" href="#cache-120">cache</a></h3>
+<h3 id="cache-119"><a class="header" href="#cache-119">cache</a></h3>
 <ul>
 <li>#anki <a href="https://github.com/Ben-Kerman/immersive">Immersive</a></li>
 <li>#anki <a href="https://github.com/ajatt-tools/mpvacious">mpvacious</a></li>
@@ -18846,11 +18840,11 @@ scoop install obsidian
 <ul>
 <li><a href="opt/obsidian//opt/obsidian/obsidian-media-slider.html">obsidian-media-slider.md</a></li>
 </ul>
-<h3 id="cache-121"><a class="header" href="#cache-121">cache</a></h3>
+<h3 id="cache-120"><a class="header" href="#cache-120">cache</a></h3>
 <ul>
 <li><a href="opt/obsidian//opt/obsidian/obsidian-kokoro-tts-plugin.html">obsidian-kokoro-tts-plugin.md</a></li>
 </ul>
-<h2 id="resource-94"><a class="header" href="#resource-94">resource</a></h2>
+<h2 id="resource-93"><a class="header" href="#resource-93">resource</a></h2>
 <h3 id="mark-84"><a class="header" href="#mark-84">mark</a></h3>
 <ul>
 <li><a href="https://github.com/czottmann/obsidian-actions-uri">Actions URI</a></li>
@@ -18917,7 +18911,7 @@ scoop install obsidian
 <ul>
 <li><a href="https://github.com/4Source/settings-profiles-obsidian-plugin">Settings profiles</a></li>
 </ul>
-<h3 id="cache-122"><a class="header" href="#cache-122">cache</a></h3>
+<h3 id="cache-121"><a class="header" href="#cache-121">cache</a></h3>
 <ul>
 <li><a href="https://github.com/LordGrimmauld/aw-watcher-obsidian">ActivityWatch</a></li>
 <li><a href="https://github.com/javalent/admonitions">Admonition</a></li>
@@ -19214,7 +19208,7 @@ export GLFW_IM_MODULE=&quot;ibus&quot;
 <li>#file <a href="https://github.com/rime/rime-prelude/blob/master/symbols.yaml">symbols.yaml - rime/rime-prelude</a></li>
 <li>#file <a href="https://github.com/expoli/rime-config/blob/master/weasel_dev.md">weasel_dev.md - expoli/rime-config</a></li>
 </ul>
-<h2 id="resource-95"><a class="header" href="#resource-95">resource</a></h2>
+<h2 id="resource-94"><a class="header" href="#resource-94">resource</a></h2>
 <h3 id="mark-85"><a class="header" href="#mark-85">mark</a></h3>
 <ul>
 <li><a href="https://github.com/iDvel/rime-ice">雾凇拼音</a></li>
@@ -19281,11 +19275,11 @@ mklink /J &quot;%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User&quot; &
 <li>tex-fmt</li>
 <li>texlab</li>
 </ul>
-<h3 id="cache-123"><a class="header" href="#cache-123">cache</a></h3>
+<h3 id="cache-122"><a class="header" href="#cache-122">cache</a></h3>
 <ul>
 <li>latextools</li>
 </ul>
-<h2 id="resource-96"><a class="header" href="#resource-96">resource</a></h2>
+<h2 id="resource-95"><a class="header" href="#resource-95">resource</a></h2>
 <h3 id="mark-86"><a class="header" href="#mark-86">mark</a></h3>
 <ul>
 <li>#Arch <a href="https://github.com/kernelp4nic/sublime-open-in-thunar">Open in Thunar</a></li>
@@ -19361,7 +19355,7 @@ mklink /J &quot;%USERPROFILE%\AppData\Roaming\Sublime Text\Packages\User&quot; &
 <ul>
 <li>#lsp <a href="https://github.com/Zinggi/DictionaryAutoComplete">DictionaryAutoComplete</a></li>
 </ul>
-<h3 id="cache-124"><a class="header" href="#cache-124">cache</a></h3>
+<h3 id="cache-123"><a class="header" href="#cache-123">cache</a></h3>
 <ul>
 <li>#bookmark <a href="https://github.com/ibensw/LsBookmarks">ViewBookmarks</a></li>
 <li>#code <a href="https://github.com/pieces-app/plugin_sublime">Pieces</a></li>
@@ -19528,7 +19522,7 @@ scoop install vscodium
 <li><a href="https://www.reddit.com/r/vscode/comments/kb0eb5/extensions_missing/">Extensions missing?</a></li>
 </ul>
 <h2 id="cross-reference-66"><a class="header" href="#cross-reference-66">cross-reference</a></h2>
-<h3 id="cache-125"><a class="header" href="#cache-125">cache</a></h3>
+<h3 id="cache-124"><a class="header" href="#cache-124">cache</a></h3>
 <ul>
 <li>#mcp <a href="opt/vscodium//bin/godot-mcp.html">godot-mcp.md</a></li>
 <li>#mcp <a href="opt/vscodium//bin/mcp_godot_rag.html">mcp_godot_rag.md</a></li>
@@ -19536,7 +19530,7 @@ scoop install vscodium
 <li><a href="opt/vscodium//opt/vscodium/continue.html">continue.md</a></li>
 <li><a href="opt/vscodium//opt/vscodium/ltex-ls-plus.html">ltex-ls-plus.md</a></li>
 </ul>
-<h2 id="resource-97"><a class="header" href="#resource-97">resource</a></h2>
+<h2 id="resource-96"><a class="header" href="#resource-96">resource</a></h2>
 <h3 id="mark-87"><a class="header" href="#mark-87">mark</a></h3>
 <ul>
 <li>#complete <a href="https://github.com/atishay/vscode-allautocomplete">All Autocomplete</a></li>
@@ -19627,7 +19621,7 @@ scoop install vscodium
 <li>#frontend <a href="https://github.com/tauri-apps/tauri-vscode">Tauri</a></li>
 <li><a href="https://github.com/rogalmic/vscode-bash-debug">Bash Debug</a></li>
 </ul>
-<h3 id="cache-126"><a class="header" href="#cache-126">cache</a></h3>
+<h3 id="cache-125"><a class="header" href="#cache-125">cache</a></h3>
 <ul>
 <li>#complete <a href="https://github.com/mihai-vlc/path-autocomplete">Path Autocomplete</a></li>
 <li>#converter <a href="https://marketplace.visualstudio.com/items?itemName=utbah.data-format-converter">Data Format Converter</a></li>
@@ -19799,16 +19793,16 @@ scoop install vscodium
 <li>kokoro</li>
 <li>tts</li>
 </ul>
-<h3 id="cache-127"><a class="header" href="#cache-127">cache</a></h3>
+<h3 id="cache-126"><a class="header" href="#cache-126">cache</a></h3>
 <ul>
 <li>whisperlivekit</li>
 </ul>
-<h2 id="resource-98"><a class="header" href="#resource-98">resource</a></h2>
+<h2 id="resource-97"><a class="header" href="#resource-97">resource</a></h2>
 <h3 id="mark-89"><a class="header" href="#mark-89">mark</a></h3>
 <ul>
 <li><a href="https://github.com/Lej77/windows-text-to-speech">windows-text-to-speech</a></li>
 </ul>
-<h3 id="cache-128"><a class="header" href="#cache-128">cache</a></h3>
+<h3 id="cache-127"><a class="header" href="#cache-127">cache</a></h3>
 <ul>
 <li><a href="https://github.com/huggingface/parler-tts">Parler-TTS</a></li>
 <li><a href="https://github.com/absadiki/subsai">Subs AI</a></li>
@@ -19879,8 +19873,8 @@ npm run preview
 <li>kokoro-tts-local</li>
 <li>ltts</li>
 </ul>
-<h2 id="resource-99"><a class="header" href="#resource-99">resource</a></h2>
-<h3 id="cache-129"><a class="header" href="#cache-129">cache</a></h3>
+<h2 id="resource-98"><a class="header" href="#resource-98">resource</a></h2>
+<h3 id="cache-128"><a class="header" href="#cache-128">cache</a></h3>
 <ul>
 <li><a href="https://github.com/eduardolat/kokoro-web">Kokoro Web</a></li>
 <li><a href="https://github.com/kaiidams/Kokoro-Align">Kokoro-Align</a></li>
@@ -20035,7 +20029,7 @@ uv tool install kokoro-tts --python 3.12
 <li><a href="optGame//optGame/ppsspp.html">ppsspp.md</a></li>
 <li><a href="optGame//optGame/retroarch.html">retroarch.md</a> <em>download</em></li>
 </ul>
-<h3 id="cache-130"><a class="header" href="#cache-130">cache</a></h3>
+<h3 id="cache-129"><a class="header" href="#cache-129">cache</a></h3>
 <ul>
 <li>#love <a href="optGame//optGame/mari0.html">mari0.md</a></li>
 <li>#Windows <a href="optGame//optGame/hydralauncher.html">hydralauncher.md</a> <em>release</em></li>
@@ -20047,7 +20041,7 @@ uv tool install kokoro-tts --python 3.12
 <li><a href="optGame//optGame/pegasus-frontend.html">pegasus-frontend.md</a></li>
 <li><a href="optGame//optGame/slay-the-spire.html">slay-the-spire.md</a></li>
 </ul>
-<h2 id="resource-100"><a class="header" href="#resource-100">resource</a></h2>
+<h2 id="resource-99"><a class="header" href="#resource-99">resource</a></h2>
 <h3 id="extra-51"><a class="header" href="#extra-51">extra</a></h3>
 <ul>
 <li>#love <a href="https://github.com/a327ex/BYTEPATH">BYTEPATH</a></li>
@@ -20076,7 +20070,7 @@ uv tool install kokoro-tts --python 3.12
 <li><a href="https://unnamecollective.itch.io/retriggered">retriggere</a></li>
 <li><a href="https://giantlight.itch.io/the-only-tower">The Only Tower</a></li>
 </ul>
-<h3 id="cache-131"><a class="header" href="#cache-131">cache</a></h3>
+<h3 id="cache-130"><a class="header" href="#cache-130">cache</a></h3>
 <ul>
 <li>#3ds <a href="https://citra-emulator.com">Citra</a></li>
 <li>#c <a href="https://github.com/cellos51/balatro-gba">Balatro-GBA</a></li>
@@ -20401,12 +20395,12 @@ launch: &quot;/home/&lt;user&gt;/RetroArch/retroarch&quot; -L &quot;/home/&lt;us
 <li><a href="https://github.com/Abdess/retroarch_system">Retro BIOSes</a></li>
 <li><a href="https://github.com/NickHeap2/retroarch-asset-server">RetroArch asset server</a></li>
 </ul>
-<h2 id="resource-101"><a class="header" href="#resource-101">resource</a></h2>
+<h2 id="resource-100"><a class="header" href="#resource-100">resource</a></h2>
 <h3 id="mark-92"><a class="header" href="#mark-92">mark</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/y-muller/retromega-sleipnir">Sleipnir</a></li>
 </ul>
-<h3 id="cache-132"><a class="header" href="#cache-132">cache</a></h3>
+<h3 id="cache-131"><a class="header" href="#cache-131">cache</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/mmatyas/pegasus-theme-flixnet">Flixnet theme for Pegasus</a></li>
 <li>#theme <a href="https://github.com/mmatyas/pegasus-theme-grid-micro">Grid Micro theme for Pegasus</a></li>
@@ -20444,7 +20438,7 @@ sudo pacman -S retroarch
 scoop install retroarch
 </code></pre>
 <h2 id="asset-11"><a class="header" href="#asset-11">asset</a></h2>
-<h3 id="cache-133"><a class="header" href="#cache-133">cache</a></h3>
+<h3 id="cache-132"><a class="header" href="#cache-132">cache</a></h3>
 <ul>
 <li><a href="https://archive.org/download/MAME216RomsOnlyMerged">MAME216RomsOnlyMerged</a></li>
 <li><a href="https://ia803204.us.archive.org/view_archive.php?archive=/29/items/mame-0.221-roms-merged/neogeo.zip">neogeo.zip</a></li>
@@ -20457,13 +20451,13 @@ scoop install retroarch
 <li><a href="https://sts.huijiwiki.com/wiki/%E6%A8%A1%E6%9D%BF:Navbox%E5%8D%A1%E7%89%8C">卡牌总览</a></li>
 </ul>
 <h2 id="asset-12"><a class="header" href="#asset-12">asset</a></h2>
-<h3 id="cache-134"><a class="header" href="#cache-134">cache</a></h3>
+<h3 id="cache-133"><a class="header" href="#cache-133">cache</a></h3>
 <ul>
 <li><a href="https://civitai.com/models/150006/slay-the-spire-xlora">Slay the Spire XLora</a></li>
 <li><a href="https://civitai.com/models/728686/slay-the-spire-card-art-style">Slay the Spire (Card Art Style)</a></li>
 </ul>
-<h2 id="resource-102"><a class="header" href="#resource-102">resource</a></h2>
-<h3 id="cache-135"><a class="header" href="#cache-135">cache</a></h3>
+<h2 id="resource-101"><a class="header" href="#resource-101">resource</a></h2>
+<h3 id="cache-134"><a class="header" href="#cache-134">cache</a></h3>
 <ul>
 <li>#temp <a href="https://github.com/Alchyr/BasicMod">Basic Mod</a></li>
 <li>#temp <a href="https://github.com/DarkVexon/ProTemplate">ProTemplate</a></li>
@@ -20571,8 +20565,8 @@ yay -S --noconfirm emulationstation-de
 <ul>
 <li><a href="optGame/es-de//optGame/es-de/iconic-es-de.html">iconic-es-de.md</a></li>
 </ul>
-<h2 id="resource-103"><a class="header" href="#resource-103">resource</a></h2>
-<h3 id="cache-136"><a class="header" href="#cache-136">cache</a></h3>
+<h2 id="resource-102"><a class="header" href="#resource-102">resource</a></h2>
+<h3 id="cache-135"><a class="header" href="#cache-135">cache</a></h3>
 <ul>
 <li>#theme <a href="https://github.com/Siddy212/iconic-es-de">Iconic (ES-DE Version)</a></li>
 <li>#theme <a href="https://github.com/anthonycaccese/mister-menu-es-de">MiSTer Menu UI (for ES-DE)</a></li>
@@ -20600,7 +20594,7 @@ git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="optweb"><a class="header" href="#optweb">optWeb</a></h1>
-<h2 id="resource-104"><a class="header" href="#resource-104">resource</a></h2>
+<h2 id="resource-103"><a class="header" href="#resource-103">resource</a></h2>
 <h3 id="mark-93"><a class="header" href="#mark-93">mark</a></h3>
 <ul>
 <li>BookSearchParty <em><a href="https://booksearch.party">public</a></em></li>
@@ -20674,7 +20668,7 @@ git clone --depth=1 https://github.com/Siddy212/iconic-es-de
 <li>VIA Web Application </li>
 <li>Winbindex <em><a href="https://winbindex.m417z.com">public</a></em></li>
 </ul>
-<h3 id="cache-137"><a class="header" href="#cache-137">cache</a></h3>
+<h3 id="cache-136"><a class="header" href="#cache-136">cache</a></h3>
 <ul>
 <li>#annotate <em><a href="https://hypothes.is">Hypothesis</a></em></li>
 <li>#api <em><a href="https://github.com/bropines/Deeplx-vercel">DeepLX Vercel</a></em></li>
@@ -20966,7 +20960,7 @@ cd altium_js
 <div style="break-before: page; page-break-before: always;"></div><h1 id="autoflow"><a class="header" href="#autoflow"><a href="https://github.com/pingcap/autoflow">autoflow</a></a></h1>
 <p><img src="https://img.shields.io/github/license/pingcap/autoflow" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="awesome-nano-banana-images"><a class="header" href="#awesome-nano-banana-images"><a href="https://github.com/PicoTrex/Awesome-Nano-Banana-images">Awesome-Nano-Banana images</a></a></h1>
-<h2 id="resource-105"><a class="header" href="#resource-105">resource</a></h2>
+<h2 id="resource-104"><a class="header" href="#resource-104">resource</a></h2>
 <ul>
 <li><a href="https://github.com/PicoTrex/Awesome-Nano-Banana-images#%E4%BE%8B-59-minecraft-%E9%A3%8E%E6%A0%BC%E5%9C%BA%E6%99%AF%E7%94%9F%E6%88%90by-tetumemo">Minecraft 风格场景生成</a></li>
 <li><a href="https://github.com/PicoTrex/Awesome-Nano-Banana-images#%E4%BE%8B-4-%E5%88%86%E7%A6%BB%E5%87%BA3d%E5%BB%BA%E7%AD%91%E5%88%B6%E4%BD%9C%E7%AD%89%E8%B7%9D%E6%A8%A1%E5%9E%8Bby-zieeett">分离出3D建筑/制作等距模型</a></li>
@@ -21288,8 +21282,8 @@ API base: https://api.openai.com
 </li>
 <li>Studio → llama 3.1 → Context → Add → <code>&lt;knowledge&gt;</code></li>
 </ol>
-<h2 id="resource-106"><a class="header" href="#resource-106">resource</a></h2>
-<h3 id="cache-138"><a class="header" href="#cache-138">cache</a></h3>
+<h2 id="resource-105"><a class="header" href="#resource-105">resource</a></h2>
+<h3 id="cache-137"><a class="header" href="#cache-137">cache</a></h3>
 <ul>
 <li><a href="https://dify101.com/market/claude-thinking-Content-Editing">Content Editing</a></li>
 <li><a href="https://dify101.com/market/claude-thinking-E-commerce-Specialist">E-commerce Specialist</a></li>
@@ -22559,7 +22553,7 @@ sudo docker compose up -d
 <ul>
 <li>#model <a href="https://openwebui.com/m/daradib/documentsearch">Document Search</a></li>
 </ul>
-<h3 id="cache-139"><a class="header" href="#cache-139">cache</a></h3>
+<h3 id="cache-138"><a class="header" href="#cache-138">cache</a></h3>
 <ul>
 <li>#function <a href="https://openwebui.com/f/coleam/n8n_pipe">N8N Pipe</a></li>
 <li>#function <a href="https://openwebui.com/f/owndev/n8n_pipeline">N8N Pipeline</a></li>
@@ -23392,7 +23386,7 @@ uv pip install -r requirements-windows.txt
 python gradio_app.py
 </code></pre>
 <h2 id="reference-164"><a class="header" href="#reference-164">reference</a></h2>
-<h3 id="cache-140"><a class="header" href="#cache-140">cache</a></h3>
+<h3 id="cache-139"><a class="header" href="#cache-139">cache</a></h3>
 <ul>
 <li><a href="https://github.com/sdbds/ToonCrafter-for-windows">ToonCrafter</a></li>
 </ul>
@@ -23623,16 +23617,16 @@ set HSA_OVERRIDE_GFX_VERSION=10.3.0
 </li>
 </ul>
 <h2 id="cross-reference-73"><a class="header" href="#cross-reference-73">cross-reference</a></h2>
-<h3 id="cache-141"><a class="header" href="#cache-141">cache</a></h3>
+<h3 id="cache-140"><a class="header" href="#cache-140">cache</a></h3>
 <ul>
 <li><a href="optWeb/comfyui//optWeb/comfyui/comfyui-auto_installer.html">comfyui-auto_installer.md</a></li>
 </ul>
-<h2 id="resource-107"><a class="header" href="#resource-107">resource</a></h2>
+<h2 id="resource-106"><a class="header" href="#resource-106">resource</a></h2>
 <h3 id="mark-95"><a class="header" href="#mark-95">mark</a></h3>
 <ul>
 <li><a href="https://github.com/ltdrdata/ComfyUI-Manager">ComfyUI Manager</a></li>
 </ul>
-<h3 id="cache-142"><a class="header" href="#cache-142">cache</a></h3>
+<h3 id="cache-141"><a class="header" href="#cache-141">cache</a></h3>
 <ul>
 <li>#txt2img <a href="https://github.com/kijai/ComfyUI-KwaiKolorsWrapper">ComfyUI wrapper for Kwai-Kolors</a></li>
 <li><a href="https://github.com/ServOKio/CImaGen">CImaGen</a></li>
@@ -23802,7 +23796,7 @@ sudo docker compose up -d
 <ul>
 <li><a href="optWeb/lobe-chat//optWeb/lobe-chat/lobe-chat-database.html">lobe-chat-database.md</a></li>
 </ul>
-<h2 id="resource-108"><a class="header" href="#resource-108">resource</a></h2>
+<h2 id="resource-107"><a class="header" href="#resource-107">resource</a></h2>
 <h3 id="mark-96"><a class="header" href="#mark-96">mark</a></h3>
 <ul>
 <li>#develop #General <a href="https://lobechat.com/discover/assistant/prompt-gpt">PromptGPT</a></li>
@@ -23813,7 +23807,7 @@ sudo docker compose up -d
 <ul>
 <li>#tool #Translation <a href="https://lobechat.com/discover/assistant/encn-fy">English Technology Article Reading Assistant</a> <em>英文科技文章阅读助手</em></li>
 </ul>
-<h3 id="cache-143"><a class="header" href="#cache-143">cache</a></h3>
+<h3 id="cache-142"><a class="header" href="#cache-142">cache</a></h3>
 <ul>
 <li>#develop #Games <a href="https://lobechat.com/discover/assistant/godot-guru">Godot Guru</a></li>
 <li>#develop #General <a href="https://lobechat.com/discover/assistant/lobe-chat-unit-test-dev">LobeChat Test Engineer</a> <em>LobeChat测试工程师</em></li>
@@ -24024,11 +24018,11 @@ webui-user.bat
 <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/1561">Choosing which GPU to use when running</a></li>
 </ul>
 <h2 id="cross-reference-75"><a class="header" href="#cross-reference-75">cross-reference</a></h2>
-<h3 id="cache-144"><a class="header" href="#cache-144">cache</a></h3>
+<h3 id="cache-143"><a class="header" href="#cache-143">cache</a></h3>
 <ul>
 <li><a href="optWeb/sd-webui//optWeb/sd-webui/stable-diffusion-webui-amdgpu.html">stable-diffusion-webui-amdgpu.md</a></li>
 </ul>
-<h2 id="resource-109"><a class="header" href="#resource-109">resource</a></h2>
+<h2 id="resource-108"><a class="header" href="#resource-108">resource</a></h2>
 <h3 id="mark-97"><a class="header" href="#mark-97">mark</a></h3>
 <ul>
 <li>#action <a href="https://github.com/Mikubill/sd-webui-controlnet">ControlNet for Stable Diffusion WebUI</a> <em>sd-webui-controlnet</em></li>
@@ -24046,7 +24040,7 @@ webui-user.bat
 <li>#sequence <a href="https://github.com/ArtVentureX/sd-webui-agent-scheduler">Agent Scheduler</a></li>
 <li>#theme <a href="https://github.com/lobehub/sd-webui-lobe-theme">Lobe Theme</a> <em>Lobe Theme</em></li>
 </ul>
-<h3 id="cache-145"><a class="header" href="#cache-145">cache</a></h3>
+<h3 id="cache-144"><a class="header" href="#cache-144">cache</a></h3>
 <ul>
 <li>#action <a href="https://github.com/light-and-ray/sd-webui-cn-in-extras-tab">ControlNet Preprocessor in extras tab</a></li>
 <li>#action <a href="https://github.com/huchenlei/sd-webui-openpose-editor">Openpose Editor for ControlNet ...</a></li>
@@ -24210,7 +24204,7 @@ webui-user.bat
 <li><a href="os//os/recalbox.html">recalbox.md</a></li>
 <li><a href="os//os/retropie.html">retropie.md</a></li>
 </ul>
-<h3 id="cache-146"><a class="header" href="#cache-146">cache</a></h3>
+<h3 id="cache-145"><a class="header" href="#cache-145">cache</a></h3>
 <ul>
 <li><a href="os//os/android-tv.html">android-tv.md</a></li>
 <li><a href="os//os/armbian.html">armbian.md</a></li>
@@ -24221,8 +24215,8 @@ webui-user.bat
 <li><a href="os//os/raspberry-pi-os.html">raspberry-pi-os.md</a></li>
 <li><a href="os//os/ubuntu.html">ubuntu.md</a></li>
 </ul>
-<h2 id="resource-110"><a class="header" href="#resource-110">resource</a></h2>
-<h3 id="cache-147"><a class="header" href="#cache-147">cache</a></h3>
+<h2 id="resource-109"><a class="header" href="#resource-109">resource</a></h2>
+<h3 id="cache-146"><a class="header" href="#cache-146">cache</a></h3>
 <ul>
 <li>#camera <a href="https://github.com/blakeblackshear/frigate">Frigate</a></li>
 <li>#game <a href="https://github.com/batocera-linux/batocera.linux">Batocera Linux</a></li>
@@ -24968,7 +24962,7 @@ sudo reboot
 <p><a href="os/arch-linux//os/arch-linux/appimage.html">appimage.md</a></p>
 </li>
 </ul>
-<h3 id="cache-148"><a class="header" href="#cache-148">cache</a></h3>
+<h3 id="cache-147"><a class="header" href="#cache-147">cache</a></h3>
 <ul>
 <li><a href="os/arch-linux//os/arch-linux/rasparch.html">rasparch.md</a></li>
 <li><a href="os/arch-linux//os/arch-linux/xdg-base-directory.html">xdg-base-directory.md</a></li>
@@ -25491,7 +25485,7 @@ del roots.sst
 <ul>
 <li><a href="os/windows10//os/windows10/revios.html">revios.md</a></li>
 </ul>
-<h3 id="cache-149"><a class="header" href="#cache-149">cache</a></h3>
+<h3 id="cache-148"><a class="header" href="#cache-148">cache</a></h3>
 <ul>
 <li><a href="os/windows10//os/windows10/wsl.html">wsl.md</a></li>
 </ul>
@@ -25499,8 +25493,8 @@ del roots.sst
 <ul>
 <li><a href="https://www.youtube.com/watch?v=y6wMvTldfQo">Fix problems with Opus OGG files in Windows 10</a></li>
 </ul>
-<h2 id="resource-111"><a class="header" href="#resource-111">resource</a></h2>
-<h3 id="cache-150"><a class="header" href="#cache-150">cache</a></h3>
+<h2 id="resource-110"><a class="header" href="#resource-110">resource</a></h2>
+<h3 id="cache-149"><a class="header" href="#cache-149">cache</a></h3>
 <ul>
 <li><a href="https://github.com/Atlas-OS/Atlas">AtlasOS</a></li>
 <li><a href="https://hirensbootcd.org">Hiren’s BootCD PE</a></li>
@@ -25613,7 +25607,7 @@ guiApplications=false
 <li><a href="srv//srv/silverdict.html">silverdict.md</a></li>
 <li><a href="srv//srv/suwayomi-server.html">suwayomi-server.md</a></li>
 </ul>
-<h3 id="cache-151"><a class="header" href="#cache-151">cache</a></h3>
+<h3 id="cache-150"><a class="header" href="#cache-150">cache</a></h3>
 <ul>
 <li><a href="srv//srv/activity-watch.html">activity-watch.md</a></li>
 <li><a href="srv//srv/anki-sync-server.html">anki-sync-server.md</a></li>
@@ -25668,7 +25662,7 @@ guiApplications=false
 <li><a href="srv//srv/zasper.html">zasper.md</a></li>
 <li><a href="srv//srv/zerotier.html">zerotier.md</a> <em>installer</em></li>
 </ul>
-<h2 id="resource-112"><a class="header" href="#resource-112">resource</a></h2>
+<h2 id="resource-111"><a class="header" href="#resource-111">resource</a></h2>
 <h3 id="mark-102"><a class="header" href="#mark-102">mark</a></h3>
 <ul>
 <li><a href="https://github.com/themoeway/local-audio-yomichan">Local Audio Server for Yomichan</a></li>
@@ -25687,7 +25681,7 @@ guiApplications=false
 <li>#markdown <a href="https://github.com/markserv/markserv">Markserv</a></li>
 <li>#torrent <a href="https://github.com/linuxserver/docker-qbittorrent">Qbittorrent</a></li>
 </ul>
-<h3 id="cache-152"><a class="header" href="#cache-152">cache</a></h3>
+<h3 id="cache-151"><a class="header" href="#cache-151">cache</a></h3>
 <ul>
 <li>#alert <a href="https://github.com/keephq/keep">Keep</a></li>
 <li>#analytic <a href="https://github.com/matomo-org/matomo">Matomo</a></li>
@@ -25847,8 +25841,8 @@ guiApplications=false
 <li>#rss <a href="https://github.com/nkanaev/yarr">yarr</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="activitywatch"><a class="header" href="#activitywatch"><a href="https://github.com/ActivityWatch/activitywatch">ActivityWatch</a></a></h1>
-<h2 id="resource-113"><a class="header" href="#resource-113">resource</a></h2>
-<h3 id="cache-153"><a class="header" href="#cache-153">cache</a></h3>
+<h2 id="resource-112"><a class="header" href="#resource-112">resource</a></h2>
+<h3 id="cache-152"><a class="header" href="#cache-152">cache</a></h3>
 <ul>
 <li><a href="https://github.com/ActivityWatch/aw-watcher-web">ActivityWatch Web Watcher</a></li>
 <li><a href="https://github.com/ActivityWatch/aw-watcher-input">aw-watcher-input</a></li>
@@ -26023,7 +26017,7 @@ WantedBy=multi-user.target
 <ul>
 <li><a href="https://docs.linuxserver.io/images/docker-calibre-web">linuxserver/calibre-web</a></li>
 </ul>
-<h2 id="resource-114"><a class="header" href="#resource-114">resource</a></h2>
+<h2 id="resource-113"><a class="header" href="#resource-113">resource</a></h2>
 <ul>
 <li><a href="https://github.com/crocodilestick/Calibre-Web-Automated">Calibre-Web Automated</a></li>
 <li><a href="https://github.com/calibrain/calibre-web-automated-book-downloader">Calibre-Web-Automated-Book-Downloader</a></li>
@@ -26164,7 +26158,7 @@ jobs:
 <ul>
 <li><a href="https://docs.datasette.io/en/stable/full_text_search.html#configuring-fts-using-sqlite-utils">Configuring FTS using sqlite-utils</a></li>
 </ul>
-<h2 id="resource-115"><a class="header" href="#resource-115">resource</a></h2>
+<h2 id="resource-114"><a class="header" href="#resource-114">resource</a></h2>
 <h3 id="mark-103"><a class="header" href="#mark-103">mark</a></h3>
 <ul>
 <li><a href="https://github.com/simonw/datasette-backup">datasette-backup</a></li>
@@ -26183,7 +26177,7 @@ jobs:
 <li><a href="https://github.com/simonw/datasette-render-images">datasette-render-images</a></li>
 <li><a href="https://github.com/simonw/datasette-render-markdown">datasette-render-markdown</a></li>
 </ul>
-<h3 id="cache-154"><a class="header" href="#cache-154">cache</a></h3>
+<h3 id="cache-153"><a class="header" href="#cache-153">cache</a></h3>
 <ul>
 <li><a href="https://github.com/simonw/csvs-to-sqlite">csvs-to-sqlite</a></li>
 <li><a href="https://github.com/LNshuti/data-tourism">data-tourism</a></li>
@@ -26363,12 +26357,12 @@ dict -h localhost -p 2528 -d &lt;database&gt; &lt;word&gt;
 <li><a href="https://dict.org/bin/Dict?Form=Dict1&amp;Query=00-database-info&amp;Strategy=*&amp;Database=*">Database copyright information</a></li>
 </ul>
 <h2 id="cross-reference-85"><a class="header" href="#cross-reference-85">cross-reference</a></h2>
-<h3 id="cache-155"><a class="header" href="#cache-155">cache</a></h3>
+<h3 id="cache-154"><a class="header" href="#cache-154">cache</a></h3>
 <ul>
 <li><a href="srv//bin/dict-ecdict.html">dict-ecdict.md</a></li>
 </ul>
-<h2 id="resource-116"><a class="header" href="#resource-116">resource</a></h2>
-<h3 id="cache-156"><a class="header" href="#cache-156">cache</a></h3>
+<h2 id="resource-115"><a class="header" href="#resource-115">resource</a></h2>
+<h3 id="cache-155"><a class="header" href="#cache-155">cache</a></h3>
 <ul>
 <li><a href="https://github.com/github-young/ClipDict">ClipDict</a></li>
 <li><a href="https://github.com/tuberry/dict-cedict">dict-cedic</a></li>
@@ -26672,7 +26666,7 @@ mono --debug JackettConsole.exe
 <ul>
 <li><a href="srv//bin/_arch/jsc.html">jsc.md</a></li>
 </ul>
-<h2 id="resource-117"><a class="header" href="#resource-117">resource</a></h2>
+<h2 id="resource-116"><a class="header" href="#resource-116">resource</a></h2>
 <h3 id="extra-61"><a class="header" href="#extra-61">extra</a></h3>
 <ul>
 <li><a href="https://gist.github.com/wilmardo/cffb41d694edd069c28d585d2e20e0fc">jackett.md</a></li>
@@ -26698,8 +26692,8 @@ systemctl status jellyfin
 <li><a href="https://jellyfin.org/docs/general/server/media/movies/">Media - Movies</a></li>
 <li><a href="https://jellyfin.org/docs/general/server/plugins/">Plugins</a></li>
 </ul>
-<h2 id="resource-118"><a class="header" href="#resource-118">resource</a></h2>
-<h3 id="cache-157"><a class="header" href="#cache-157">cache</a></h3>
+<h2 id="resource-117"><a class="header" href="#resource-117">resource</a></h2>
+<h3 id="cache-156"><a class="header" href="#cache-156">cache</a></h3>
 <ul>
 <li><a href="https://github.com/jellyfin/jellyfin-mpv-shim">Jellyfin MPV Shim</a></li>
 <li><a href="https://github.com/jellyfin/jellyfin-plugin-opensubtitles">Jellyfin OpenSubtitles Plugin</a></li>
@@ -27101,13 +27095,13 @@ Set WshShell = Nothing
 <li>Create shortcut of <code>start_linkding.vbs</code>.</li>
 <li>Put the shortcut into <code>C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\</code>.</li>
 </ol>
-<h2 id="resource-119"><a class="header" href="#resource-119">resource</a></h2>
+<h2 id="resource-118"><a class="header" href="#resource-118">resource</a></h2>
 <h3 id="extra-62"><a class="header" href="#extra-62">extra</a></h3>
 <ul>
 <li>#linkding <a href="https://github.com/sissbruecker/linkding-extension">linkding extension</a></li>
 <li>#linkding <a href="https://github.com/fivefold/linkding-injector">linkding injector</a></li>
 </ul>
-<h3 id="cache-158"><a class="header" href="#cache-158">cache</a></h3>
+<h3 id="cache-157"><a class="header" href="#cache-157">cache</a></h3>
 <ul>
 <li>#linkding <a href="https://github.com/sebw/linkding-archiver">Linkding Archiver</a></li>
 </ul>
@@ -27336,7 +27330,7 @@ Set WshShell = Nothing
 <ul>
 <li><a href="https://miniflux.app/docs/rules.html#feed-filtering-rules">Feed Filtering Rules</a></li>
 </ul>
-<h2 id="resource-120"><a class="header" href="#resource-120">resource</a></h2>
+<h2 id="resource-119"><a class="header" href="#resource-119">resource</a></h2>
 <h3 id="mark-104"><a class="header" href="#mark-104">mark</a></h3>
 <ul>
 <li><a href="https://github.com/rootknight/Miniflux-Theme-Reeder">miniflux-theme-reeder</a></li>
@@ -27404,7 +27398,7 @@ vim docker-compose.yml
 sudo docker volume create traefik_data
 sudo docker compose up -d
 </code></pre>
-<h2 id="resource-121"><a class="header" href="#resource-121">resource</a></h2>
+<h2 id="resource-120"><a class="header" href="#resource-120">resource</a></h2>
 <h3 id="later-44"><a class="header" href="#later-44">later</a></h3>
 <ul>
 <li><a href="https://github.com/cre8tiv/n8n-docx-converter">n8n-docx-converter</a></li>
@@ -27413,7 +27407,7 @@ sudo docker compose up -d
 <li><a href="https://github.com/pdforge/n8n-nodes-pdforge">n8n-nodes-pdforge</a></li>
 <li><a href="https://github.com/0xtlt/n8n-nodes-qrcode">n8n-nodes-qrcode</a></li>
 </ul>
-<h3 id="cache-159"><a class="header" href="#cache-159">cache</a></h3>
+<h3 id="cache-158"><a class="header" href="#cache-158">cache</a></h3>
 <ul>
 <li><a href="https://n8n.io/workflows/697-archive-spotifys-discover-weekly-playlist/">Archive Spotify's discover weekly playlist</a></li>
 <li><a href="https://n8n.io/workflows/2042-bulk-automated-google-drive-files-sharing-and-direct-download-link-generation/">Bulk Automated Google Drive Files Sharing and Direct Download Link Generation</a></li>
@@ -27551,8 +27545,8 @@ sudo systemctl status plexmediaserver
 <ul>
 <li>#guide <a href="https://github.com/seanap/Plex-Audiobook-Guide">Plex &amp; Booksonic Audiobook Guide</a></li>
 </ul>
-<h2 id="resource-122"><a class="header" href="#resource-122">resource</a></h2>
-<h3 id="cache-160"><a class="header" href="#cache-160">cache</a></h3>
+<h2 id="resource-121"><a class="header" href="#resource-121">resource</a></h2>
+<h3 id="cache-159"><a class="header" href="#cache-159">cache</a></h3>
 <ul>
 <li><a href="https://github.com/iwalton3/plex-mpv-shim">MPV Shim for Plex</a></li>
 </ul>
@@ -28057,8 +28051,8 @@ scoop install syncthing
 <ul>
 <li>#document <a href="https://docs.syncthing.net/users/syncthing.html">Syncthing — Syncthing documentation</a></li>
 </ul>
-<h2 id="resource-123"><a class="header" href="#resource-123">resource</a></h2>
-<h3 id="cache-161"><a class="header" href="#cache-161">cache</a></h3>
+<h2 id="resource-122"><a class="header" href="#resource-122">resource</a></h2>
+<h3 id="cache-160"><a class="header" href="#cache-160">cache</a></h3>
 <ul>
 <li>#docker <a href="https://github.com/linuxserver/docker-syncthing">Syncthing</a></li>
 </ul>
@@ -28080,7 +28074,7 @@ sudo systemctl enable --now tailscaled
 sudo tailscale login
 </code></pre>
 <h2 id="reference-211"><a class="header" href="#reference-211">reference</a></h2>
-<h3 id="cache-162"><a class="header" href="#cache-162">cache</a></h3>
+<h3 id="cache-161"><a class="header" href="#cache-161">cache</a></h3>
 <ul>
 <li><a href="https://tailscale.com/kb/1019/subnets">Subnet routers</a></li>
 </ul>
@@ -28391,7 +28385,7 @@ sudo zerotier-cli listnetworks
 <li><a href="https://github.com/kujov/gitlab-sync">GitLab Sync - GitHub Action</a></li>
 <li><a href="https://github.com/AnimMouse/torrent-webseed-creator">Torrent Webseed Creator</a></li>
 </ul>
-<h3 id="cache-163"><a class="header" href="#cache-163">cache</a></h3>
+<h3 id="cache-162"><a class="header" href="#cache-162">cache</a></h3>
 <ul>
 <li>#hugo <a href="https://github.com/peaceiris/actions-hugo">actions-hugo</a></li>
 <li>#logseq <a href="https://github.com/marketplace/actions/logseq-publish-spa">Logseq Publish SPA</a></li>
@@ -28474,7 +28468,7 @@ jobs:
     overwrite: true
     strip_components: 2
 </code></pre>
-<h3 id="cache-164"><a class="header" href="#cache-164">cache</a></h3>
+<h3 id="cache-163"><a class="header" href="#cache-163">cache</a></h3>
 <pre><code class="language-yaml"># _tencent-cloud-cdn.yml
 # https://www.ioiox.com/archives/69.html
 - name: Install coscmd
