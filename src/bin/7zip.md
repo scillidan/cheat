@@ -16,15 +16,9 @@ sudo pacman -S p7zip-full
 ### command
 
 ```sh
-# Decomporess with password
+# With password
 7z x $1 -p"<password>"
 
-# Compress with volume size is 10m
+# 10m volume size
 7z a -v10m <compress_dir>.7z <compress_dir>
 ```
-
-## resource
-
-### cache
-
-- [7Zip Plugins](https://github.com/DevX-Cipher/7zip-plugin)
