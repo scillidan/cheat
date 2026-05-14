@@ -97,30 +97,6 @@ sudo docker run -p 8080:80 --rm nginx
 sudo docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 ```
 
-### command
-
-```sh
-# Update
-sudo docker compose down
-sudo docker compose pull
-sudo docker compose up -d
-
-# Prune all unused Docker images
-sudo docker image prune -a -f
-
-# Prune unused Docker containers
-sudo docker container prune -f
-
-# Prune unused Docker volumes
-sudo docker volume prune -f
-
-# Prune unused Docker networks
-sudo docker network prune -f
-
-# Prune the entire Docker system, including images, containers, volumes, and networks
-sudo docker system prune -a --volumes -f
-```
-
 ## reference
 
 - #lession [Docker for beginners](https://docker-curriculum.com/)
