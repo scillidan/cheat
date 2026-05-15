@@ -1,14 +1,5 @@
 # [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 
-## install
-
-```sh
-# Arch
-sudo pacman -S rpi-imager
-# Windows 10
-scoop install raspberry-pi-imager
-```
-
 ## usage
 
 - Raspberry Pi Imager

@@ -1,11 +1,5 @@
 # [dnGrep](https://github.com/dnGrep/dnGrep)
 
-## install
-
-```sh
-scoop install dngrep
-```
-
 ## config
 
 - dnGrep

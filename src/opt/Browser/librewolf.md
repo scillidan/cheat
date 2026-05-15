@@ -1,15 +1,5 @@
 # [LibreWolf](https://librewolf.net)
 
-## install
-
-```sh
-# Arch
-sudo pacman -S librewolf
-sudo pacman -S speech-dispatcher
-# Windows 10
-scoop install librewolf
-```
-
 ## config
 
 - LibreWolf

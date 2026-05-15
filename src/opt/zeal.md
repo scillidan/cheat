@@ -1,14 +1,5 @@
 # [Zeal](https://github.com/zealdocs/zeal)
 
-## install
-
-```sh
-# Arch
-sudo pacman -S zeal
-# Windows 10
-scoop install zeal
-```
-
 ## config
 
 Zeal → Edit → Preferences → Docset storage → `<path_to>/docsets`

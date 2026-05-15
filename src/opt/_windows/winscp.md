@@ -1,11 +1,5 @@
 # [WinSCP](https://winscp.net)
 
-## install
-
-```sh
-scoop install winscp
-```
-
 ## usage
 
 - WinSCP → Synchronize:

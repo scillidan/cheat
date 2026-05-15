@@ -11,18 +11,6 @@ sudo apt-get install tailscale
 sudo tailscale up
 ```
 
-```sh
-# Windows 10
-scoop install tailscale
-```
-
-```sh
-# Arch
-sudo pacman -S tailscale
-sudo systemctl enable --now tailscaled
-sudo tailscale login
-```
-
 ## reference
 
 ### cache

@@ -1,19 +1,5 @@
 # [Pegasus Frontend](https://github.com/mmatyas/pegasus-frontend)
 
-> Pegasus is a graphical frontend for browsing your game library and launching all kinds of emulators from the same place. It's focusing on customizability, cross platform support (including embedded) and high performance. [mmatyas/pegasus-frontend]
-
-> Pegasus是一个图形前端，用于浏览您的游戏库并从同一个地方启动各种模拟器。它专注于可定制性、跨平台支持（包括嵌入式设备）和高性能。 [mmatyas/pegasus-frontend]
-
-## install
-
-```sh
-# Arch
-yay -S --noconfirm pegasus-frontend-git
-# Windows 10
-scoop install https://raw.githubusercontent.com/Calinou/scoop-games/refs/heads/master/bucket/pegasus.json
-gsudo scoop install k-lite-codec-pack-basic-np
-```
-
 ## config
 
 1. Get `pegasus-fe*.zip` from releases of [Pegasus Frontend](https://github.com/mmatyas/pegasus-frontend).

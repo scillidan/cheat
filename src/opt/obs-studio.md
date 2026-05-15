@@ -1,12 +1,5 @@
 # [OBS Studio](https://obsproject.com/)
 
-## install
-
-```sh
-# Windows 10
-scoop install obs-studio
-```
-
 ## config
 
 ### Windows 10
