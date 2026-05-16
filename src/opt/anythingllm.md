@@ -2,15 +2,6 @@
 
 ## install
 
-```sh
-# Windows 10
-scoop install anythingllm
-```
-
-## reference
-
-- [AnythingLLM Community Hub](https://hub.anythingllm.com/)
-
 ### mark
 
 - #slash-command [Grammar Check](https://hub.anythingllm.com/i/slash-command/4wru9077FJ8isVe8m4zK)

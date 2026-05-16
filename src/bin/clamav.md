@@ -7,7 +7,6 @@
 [^1] [^2]
 
 ```sh
-sudo pacman -S clamav
 sudo vim /etc/clamav/freshclam.conf
 ```
 
@@ -202,7 +201,6 @@ fangfrisch --conf /etc/fangfrisch/fangfrisch.conf initdb
 ### Windows 10
 
 ```sh
-scoop install clamav
 mkdir -p <path_to>\ClamAV\database
 subl <path_to>\freshclam.conf
 ```
