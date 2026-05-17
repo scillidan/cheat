@@ -1,14 +1,5 @@
 # [QuiteRSS](https://github.com/QuiteRSS/quiterss)
 
-## install
-
-```sh
-# Arch
-yay -S --noconfirm quiterss
-# Windows 10
-scoop install quiterss
-```
-
 ## config
 
 - QuiteRSS

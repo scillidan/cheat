@@ -1,11 +1,5 @@
 # [IrfanView](https://irfanview.com)
 
-## install
-
-```sh
-scoop install irfanview
-```
-
 ## config
 
 - IrfanView → Options → Properties/Settings

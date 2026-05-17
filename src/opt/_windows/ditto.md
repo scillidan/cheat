@@ -1,11 +1,5 @@
 # [Ditto](https://ditto-cp.sourceforge.io)
 
-## install
-
-```sh
-scoop install ditto
-```
-
 ## config
 
 - Ditto

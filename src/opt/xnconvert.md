@@ -1,14 +1,5 @@
 # [XnConvert](https://www.xnview.com/en/xnconvert/)
 
-## install
-
-```sh
-# Arch
-yay -S --noconfirm xnconvert
-# Windows 10
-scoop install xnconvert
-```
-
 ## config
 
 - XnConvert → Settings Load → format settings → Write

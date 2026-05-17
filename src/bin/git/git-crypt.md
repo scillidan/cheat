@@ -1,14 +1,5 @@
 # [git-crypt](https://github.com/AGWA/git-crypt)
 
-## install
-
-```sh
-# Arch
-sudo pacman -S git-crypt
-# Windows 10
-scoop install git-crypt
-```
-
 ## usage
 
 ```sh

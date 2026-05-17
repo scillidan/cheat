@@ -1,11 +1,5 @@
 # [JPEGView](https://github.com/sylikc/jpegview)
 
-## install
-
-```sh
-scoop install jpegview-fork
-```
-
 ## config
 
 - JPEGView → MBtm

@@ -12,10 +12,6 @@ cd Kokoro-FastAPI
 ### Windows 10
 
 ```sh
-scoop install espeak-ng
-```
-
-```sh
 uv venv --python 3.10
 .venv\Scripts\activate
 # set PHONEMIZER_ESPEAK_LIBRARY="<path_to>\libespeak-ng.dll"

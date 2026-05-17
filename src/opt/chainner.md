@@ -1,9 +1,5 @@
 # [chaiNNer](https://github.com/chaiNNer-org/chaiNNer)
 
-> A node-based image processing GUI aimed at making chaining image processing tasks easy and customizable. Born as an AI upscaling application, chaiNNer has grown into an extremely flexible and powerful programmatic image processing application. [chaiNNer-org/chaiNNer]
-
-> 一个基于节点的图像处理图形用户界面，旨在使图像处理任务的链式操作变得简单且可定制。作为一款AI放大应用程序，chaiNNer发展成为一个极其灵活和强大的编程图像处理应用程序。 [chaiNNer-org/chaiNNer]
-
 1. Get `chaiNNer-windows-x64-**.zip` from [Releases](https://github.com/chaiNNer-org/chaiNNer/releases).
 2. Decompress `.zip` to `chaiNNer/`.
 3. Download `cpython-3.11.5+20230826-x86_64-pc-windows-msvc-shared-install_only.tar.gz` from [integratedPython.ts](https://github.com/chaiNNer-org/chaiNNer/blob/main/src/main/python/integratedPython.ts)[^1].

@@ -5,5 +5,5 @@
 ```sh
 # Arch
 sudo pacman -S ffmpegthumbnailer
-yay -S --noconfirm pdftoppm epub-thumbnailer-git
+yay -S --noconfirm pdftoppm
 ```
