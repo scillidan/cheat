@@ -1,9 +1,5 @@
 # [Aseprite](https://github.com/aseprite/aseprite)
 
-> Animated sprite editor & pixel art tool (Windows, macOS, Linux). [aseprite/aseprite]
-
-> 动画精灵编辑器和像素艺术工具（适用于Windows、macOS、Linux）。 [aseprite/aseprite]
-
 ## resource
 
 ### cache

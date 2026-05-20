@@ -5,8 +5,6 @@
 ```sh
 # Arch
 yay -S gvm-git
-# Windows 10
-scoop install gvm
 ```
 
 ## usage

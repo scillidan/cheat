@@ -1,14 +1,5 @@
 # [Fluent Reader](https://github.com/yang991178/fluent-reader)
 
-## install
-
-```sh
-# Arch
-yay -S --noconfirm fluent-reader
-# Windows 10
-scoop install fluent-reader
-```
-
 ## config
 
 1. `miniflux_host` → Settings → API Keys → Create a new API key → `fluent-reader` → Copy the Token

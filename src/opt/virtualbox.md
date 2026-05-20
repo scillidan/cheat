@@ -1,12 +1,5 @@
 # [VirtualBox](https://www.virtualbox.org/)
 
-## install
-
-```sh
-# Windows
-scoop insta virtualbox
-```
-
 ## usage
 
 - File → Preferences → Input → Virtual Machine → Host Key Combination → None or Other[^1].

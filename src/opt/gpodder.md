@@ -1,20 +1,5 @@
 # [gPodder](https://gpodder.github.io)
 
-> gPodder is a simple, open source podcast client.  
-> In development since 2005 with a proven, mature codebase. [gpodder.github.io]
-
-> gPodder是一款简单的开源播客客户端。  
-> 自2005年以来一直在开发，拥有成熟、经过验证的代码库。 [gpodder.github.io]
-
-## install
-
-```sh
-# Arch
-sudo pacman -S gpodder
-# Windows 10
-scoop install gpodder
-```
-
 ## config
 
 - gPodder → Preferences
