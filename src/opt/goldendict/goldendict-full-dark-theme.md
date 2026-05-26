@@ -50,22 +50,22 @@ cp "%cd%\GoldenDict\styles\Dark\article-style.css" "%GD_DATA%\styles\Dark\articl
 ```css
 /* Add to bottom of article-style.css */
 @font-face {
-  font-family: "Sarasa Term SC Nerd";
+  font-family: "Sarasa Mono SC";
   src:
-    local('Sarasa Term SC Nerd') format('truetype');
+    local('Sarasa Mono SC') format('truetype');
   font-weight: normal;
   font-style:  normal;
 }
 
 body
 {
-  font-family: "Sarasa Term SC Nerd", NotoSans;
+  font-family: "Sarasa Mono SC", NotoSans;
   font-size:   10pt;
 }
 
 .dsl_t
 {
-  font-family: "Sarasa Term SC Nerd", NotoSerif;
+  font-family: "Sarasa Mono SC", NotoSerif;
 }
 
 .gdarticle
