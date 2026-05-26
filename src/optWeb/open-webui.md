@@ -1,14 +1,6 @@
 # [Open WebUI](https://github.com/open-webui/open-webui)
 
-![](https://img.shields.io/github/license/open-webui/open-webui)
-
 ## install
-
-```sh
-# Pip
-uv tool install open-webui --python 3.11
-# uv tool install hf_transfer
-```
 
 ```sh
 # Docker compose
@@ -33,11 +25,6 @@ services:
 ```
 
 ## usage
-
-```sh
-# Pip
-open-webui serve
-```
 
 ```sh
 # Docker compose
