@@ -1,14 +1,5 @@
 # [chezmoi](https://www.chezmoi.io)
 
-## install
-
-```sh
-# Arch
-sudo pacman -S chezmoi
-# Windows 10
-scoop install chezmoi
-```
-
 ## usage
 
 [^1] [^2]

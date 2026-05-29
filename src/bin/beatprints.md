@@ -1,9 +1,5 @@
 # [BeatPrints](https://github.com/TrueMyst/BeatPrints)
 
-> Create eye-catching, Pinterest-style music posters effortlessly. BeatPrints integrates with Spotify and LRClib API to help you design custom posters for your favorite tracks or albums. [TrueMyst/BeatPrints]
-
-> 轻松制作引人注目的Pinterest风格的音乐海报。BeatPrint与Spotify和LRClib API集成，帮助你为最喜欢的曲目或专辑设计自定义海报。 [TrueMyst/BeatPrints]
-
 ## install
 
 1. Visit [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).

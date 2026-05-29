@@ -4,7 +4,7 @@
 
 ```sh
 # Npm
-pnpm add -g sublime-snippets-to-vscode
+bun add -g sublime-snippets-to-vscode
 ```
 
 ## usage

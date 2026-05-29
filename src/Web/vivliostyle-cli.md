@@ -4,7 +4,7 @@
 
 ```sh
 # Node.js
-pnpm add -g @vivliostyle/cli
+bun add -g @vivliostyle/cli
 ```
 
 ## usage

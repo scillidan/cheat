@@ -1,12 +1,5 @@
 # [Dolt](https://www.dolthub.com/)
 
-## install
-
-```sh
-# Windows 10
-scoop install dolt
-```
-
 ## usage
 
 ```sh

@@ -4,7 +4,7 @@
 
 ```sh
 # Node.js
-pnpm add -g webtorrent-mpv-hook
+bun add -g webtorrent-mpv-hook
 ```
 
 ## appdedix
