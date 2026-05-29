@@ -10,8 +10,6 @@ uv venv
 uv pip install mkdocs-material
 ```
 
-## usage
-
 ```sh
 mkdocs new .
 subl config.yaml
