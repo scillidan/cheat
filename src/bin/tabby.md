@@ -5,8 +5,8 @@
 [^1] [^2]
 
 ```sh
-tabby.exe serve --model StarCoder-1B --chat-model Qwen2-1.5B-Instruct
-tabby.exe serve --model Qwen2.5-Coder-7B --chat-model CodeQwen-7B-Chat --device cuda
+tabby.exe serve --model StarCoder2-3B --chat-model Qwen2-1.5B-Instruct --device cuda
+tabby.exe serve --model StarCoder2-7B --chat-model Mistral-7B --device cuda
 ```
 
 1. Visit `http://localhost:8080` and login.
