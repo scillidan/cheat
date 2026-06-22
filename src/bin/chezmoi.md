@@ -17,7 +17,7 @@ vim ~/.local/share/chezmoi/.chezmoiignore
 ```
 
 ```sh
-chezmoi add <your_dotfiles>
+chezmoi add <dotfiles>
 chezmoi cd
 ```
 

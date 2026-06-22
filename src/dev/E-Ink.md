@@ -10,5 +10,6 @@
 
 - #eink [eink-weather-display](https://github.com/kimmobrunfeldt/eink-weather-display)
 - #eink [EPDiy E-Paper Driver](https://github.com/vroland/epdiy)
+- #eink [InkyPi](https://github.com/fatihak/InkyPi)
 - #eink [piEreader](https://gitlab.com/guyjeangilles/piereader)
 - #eink [Watchy](https://watchy.sqfmi.com)

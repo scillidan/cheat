@@ -80,8 +80,7 @@ sudo firewall-cmd --reload
 3. Settings
 	- Brower
 		- Extension repositories → Add repository[^2][^3]
-			- https://raw.githubusercontent.com/ThePBone/tachiyomi-extensions-revived/repo/index.min.json
-			- https://raw.githubusercontent.com/yuzono/anime-repo/repo/index.min.json
+			- https://raw.githubusercontent.com/keiyoushi/extensions/refs/heads/repo/index.min.json
 		- Local source location → `/mnt/<disk>/manga`.
 	- Download → Download localtion → `/mnt/<disk>/share/suwayomi`.
 	- Library → Automatically refresh metadata (On).
