@@ -14,10 +14,6 @@ $XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
 
 - [tree-sitter executable not found](https://github.com/nvim-treesitter/nvim-treesitter/issues/1097)
 
-## troubleshoot
-
-- [nvim-treesitter doesn't seem to work in windows.](https://github.com/nvim-treesitter/nvim-treesitter/issues/2135)
-
 ## resource
 
 ### mark
@@ -39,3 +35,4 @@ $XDG_DATA_HOME/nvim-data/lazy/nvim-treesitter/parser-info
 ## troubleshoot
 
 - [tree-sitter executable not found](https://github.com/nvim-treesitter/nvim-treesitter/issues/1097)
+- [nvim-treesitter doesn't seem to work in windows.](https://github.com/nvim-treesitter/nvim-treesitter/issues/2135)

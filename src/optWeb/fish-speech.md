@@ -29,13 +29,5 @@ python -m tools.run_webui --llama-checkpoint-path "checkpoints/openaudio-s1-mini
 
 If serve port used, edit `API_FLAGS.txt`.
 
-## reference
-
-- [Command Line Inference](https://github.com/fishaudio/fish-speech/blob/main/docs/en/inference.md#command-line-inference)
-
 [^1]: [install.md](https://github.com/fishaudio/fish-speech/blob/main/docs/en/install.md)
 [^2]: [inference.md](https://github.com/fishaudio/fish-speech/blob/main/docs/en/inference.md)
-
-## appdedix
-
-![fish-speech](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/optWeb/fish-speech.png)

@@ -27,9 +27,5 @@ sudo systemctl enable --now headscale
 systemctl status headscale
 ```
 
-## cross-reference
-
-- [headscale-ui.md](/optWeb/headscale-ui.md)
-
 [^1]: [Using standalone binaries (advanced)](https://headscale.net/stable/setup/install/official/#using-standalone-binaries-advanced)
 [^2]: [How To Install Headscale on Ubuntu 24.04|22.04|20.04](https://computingforgeeks.com/install-and-configure-headscale-on-ubuntu/)

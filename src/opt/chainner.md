@@ -35,15 +35,4 @@ webui-user.bat --api
 1. chaiNNer → Settings → Advanced → Enable experimental features → Restart chaiNNer
 2. chaiNNer → Use System Python instead
 
-## reference
-
-- [What is the difference between PyTorch, NCNN, ONNX?](https://github.com/scillidan/dictionary/blob/main/chat/what-difference/pytorch%2Cncnn%2Connx.md)
-- [What is the difference between Inpainting, Denoising, DeJPEG, Colorization, Dehazing, Low-light Enhancement?](https://github.com/scillidan/dictionary/blob/main/chat/what-difference/inpainting%2Cdenoising%2Cdejpeg%2Ccolorization%2Cdehazing%2Clow-light-enhancement.md)
-
 [^1]: [chaiNNer does not respect system proxy settings](https://github.com/chaiNNer-org/chaiNNer/issues/3043)
-
-## appdedix
-
-![chainner](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/opt/chainner.png)
-
-- [chainner.mp4](https://scillidan.github.io/media_cheat/opt/chainner.mp4)

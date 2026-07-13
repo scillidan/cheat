@@ -36,13 +36,5 @@ sudo docker compose run --rm webserver createsuperuser
 sudo docker compose up -d
 ```
 
-## reference
-
-- [Scanner & Software Recommendations](https://github.com/paperless-ngx/paperless-ngx/wiki/Scanner-&-Software-Recommendations)
-
 [^1]: [Docker using the Installation Script](https://docs.paperless-ngx.com/setup/#docker_script)
 [^2]: [Paperless-ngx - Bare Metal Route](https://docs.paperless-ngx.com/setup/#bare_metal)
-
-## appdedix
-
-![paperless-ngx](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/srv/paperless-ngx.png)

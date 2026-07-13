@@ -13,10 +13,6 @@
 		- Enable popup with original text (On)
 	- Export config
 
-## reference
-
-- #document [Linguist Translate](https://linguister.io/docs/)
-
 ## resource
 
 ### cache

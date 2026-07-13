@@ -118,12 +118,6 @@ dict -h localhost -p 2528 -d <database> <word>
 
 - [Database copyright information](https://dict.org/bin/Dict?Form=Dict1&Query=00-database-info&Strategy=*&Database=*)
 
-## cross-reference
-
-### cache
-
-- [dict-ecdict.md](/bin/dict-ecdict.md)
-
 ## resource
 
 ### cache

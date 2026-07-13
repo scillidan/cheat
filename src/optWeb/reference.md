@@ -38,7 +38,3 @@ url: http://localhost
 ```
 
 [^1]: [Watchexec](https://github.com/watchexec/watchexec)
-
-## appdedix
-
-![reference](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/optWeb/reference.png)

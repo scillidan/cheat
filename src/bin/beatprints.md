@@ -48,7 +48,3 @@ beatprints
 - [beatprints_from_csv.py](https://gist.github.com/scillidan/203fd0ce69800709e4c3057404f813be)
 
 [^1]: [CLI Setup](https://beatprints.readthedocs.io/en/latest/guidebook/cli.html)
-
-## appdedix
-
-- [beatprints_batch-script.mp4](https://scillidan.github.io/media_cheat/bin/beatprints_batch-script.mp4)

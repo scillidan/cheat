@@ -26,7 +26,3 @@ pm2 serve viewer 4321 --name vivliostyle-viewer --spa
 
 1. Github → Project → Settings → Pages → Build and deployment → Branch → gh-pages.
 2. After deploy, visit `https://<user>.github.io/vivliostyle.js/viewer/vivliostyle-viewer.html`.
-
-## reference
-
-- [[Support Guide] Handling CORS on Netlify](https://answers.netlify.com/t/support-guide-handling-cors-on-netlify/107739)

@@ -35,9 +35,4 @@ WantedBy=multi-user.target
 sudo systemctl enable --now anki-sync-server
 ```
 
-## cross-reference
-
-- [anki.md](/opt/anki.md)
-- [ankidroid.md](/opt/_andriod/ankidroid.md)
-
 [^1]: [Sync Server - Anki Manual](https://docs.ankiweb.net/sync-server.html#with-pip)

@@ -181,11 +181,3 @@ sudo systemctl status xow
 [^7]: [Pegasus Docs - Platform Notes: Raspberry](https://pegasus-frontend.org/docs/user-guide/platform-raspberry/#retropie)
 [^8]: [RetroPie Docs - Love](https://retropie.org.uk/docs/Love/)
 [^9]: [PyGame LÖVE (love2d) in RecalBox](https://forum.recalbox.com/topic/19222/pygame-l%C3%B6ve-love2d-in-recalbox)
-
-## annex
-
-- [file_retropie](https://github.com/scillidan/file_retropie)
-
-## appdedix
-
-![retropie](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/os/retropie.png)

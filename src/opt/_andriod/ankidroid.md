@@ -9,9 +9,3 @@
 ## reference
 
 - #document [AnkiDroid User Manual](https://docs.ankidroid.org/)
-
-## cross-reference
-
-### cache
-
-- [anki-sync-server.md](/srv/anki-sync-server.md)

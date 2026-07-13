@@ -24,8 +24,4 @@ sudo apt install -y nginx uwsgi uwsgi-plugin-python3 redis-server postgresql pos
 sudo apt-get install git-svn
 ```
 
-## reference
-
-- #document [Weblate](https://docs.weblate.org/en/latest)
-
 [^1]: [Installing on Debian and Ubuntu - Weblate 5.13 documentation](https://docs.weblate.org/en/latest/admin/install/venv-debian.html)

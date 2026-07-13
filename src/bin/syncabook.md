@@ -46,7 +46,3 @@ sudo docker run --rm -v ~/Git/_/synclibrivox/books:/books -it scillidan/syncaboo
 - #deepwiki [r4victor/afaligner](https://deepwiki.com/r4victor/afaligner)
 - [Installing aeneas - Linux](https://github.com/readbeyond/aeneas/blob/master/wiki/INSTALL.md#linux)
 - [Literature for Eyes and Ears](https://www.youtube.com/@literature_for_eyes_and_ears/videos)
-
-## appdedix
-
-- [syncabook.mp4](https://scillidan.github.io/media_cheat/bin/syncabook.mp4)

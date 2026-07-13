@@ -28,4 +28,4 @@ dolt sql -r csv -q "SELECT * FROM `blog` > file.csv
 
 ## reference
 
-- #document [Dolt](https://docs.dolthub.com/)
+- #document [Dolt](https://docs.dolthub.com)

@@ -7,7 +7,3 @@
 3. [Installing Windows](https://www.revi.cc/docs/playbook/installwindows)
 4. [Applying Playbook](https://www.revi.cc/docs/playbook/install)
 5. [Post-Install Guide](https://www.revi.cc/docs/post-install)
-
-## appdedix
-
-![revios](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/os/revios.png)

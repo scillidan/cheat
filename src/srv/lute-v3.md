@@ -44,8 +44,4 @@ sudo docker compose up -d
 		2. Language → English
 		3. Save
 
-## reference
-
-- #document [Lute manual](https://luteorg.github.io/lute-manual/install/install.html)
-
 [^1]: [Windows using Docker - Lute manual](https://luteorg.github.io/lute-manual/install/windows/windows-using-docker.html)

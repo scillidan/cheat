@@ -58,10 +58,6 @@ mono --debug JackettConsole.exe
 
 - [Security Risk: Your instance has external access enabled without using an admin password.](https://github.com/Jackett/Jackett/wiki/Troubleshooting#security-risk-your-instance-has-external-access-enabled-without-using-an-admin-password)
 
-## cross-reference
-
-- [jsc.md](/bin/_arch/jsc.md)
-
 ## resource
 
 ### extra

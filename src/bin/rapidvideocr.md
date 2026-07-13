@@ -46,7 +46,3 @@ rapid_videocr -vsf "<path_to>\VideoSubFinder\Release_x64\VideoSubFinderWXW.exe" 
 [^1]: [RapidVideOCR - 高级教程](https://swhl.github.io/RapidVideOCR/docs/tutorial/senior/)
 [^2]: [飞桨 - 快速安装](https://www.paddlepaddle.org.cn/install/quick)
 [^3]: [rapidocr_paddle - 安装及使用](https://rapidai.github.io/RapidOCRDocs/install_usage/rapidocr_paddle/usage/)
-
-## appdedix
-
-![rapidvideocr](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/optWeb/rapidvideocr.png)

@@ -62,10 +62,6 @@ python cli.py --whisper_implementation "faster-whisper" --vad "silero-vad-skip-g
 python.exe app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --server_port 7830 --whisper_implementation "faster-whisper" --default_model_name "large-v2" --vad_parallel_devices 0 --auto_parallel true --auth_token <hf_token> --output_dir "C:/Users/User/Downloads"
 ```
 
-## reference
-
-- [what diff_silero-vad, silero-vad-skip-gaps, silero-vad-expan d-into-gaps, periodic-vad_02.md](https://github.com/scillidan/gpt_share/blob/main/what%20diff_silero-vad%2C%20silero-vad-skip-gaps%2C%20silero-vad-expan%20d-into-gaps%2C%20periodic-vad_02.md)
-
 [^1]: [Running Locally](https://huggingface.co/spaces/aadnk/faster-whisper-webui/blob/main/README.md#running-locally)
 [^2]: [Enabling custom Japanese model](https://huggingface.co/spaces/aadnk/faster-whisper-webui/discussions/5)
 [^3]: [services.py](https://github.com/usoonees/logseq-whisper-subtitles-server/blob/main/logseq_whisper_subtitles_server/services.py)
@@ -82,7 +78,3 @@ start .venv\Scripts\python.exe app.py --server_name 127.0.0.1 --server_port 7830
 
 pause
 ```
-
-## appdedix
-
-![faster-whisper-webui](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/optWeb/faster-whisper-webui.png)

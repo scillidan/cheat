@@ -1,13 +1,5 @@
 # [QEMU](https://www.qemu.org)
 
-> QEMU is a generic and open source machine emulator and virtualizer.  
-> When used as a machine emulator, QEMU can run OSes and programs made for one machine (e.g. an ARM board) on a different machine (e.g. your own PC). By using dynamic translation, it achieves very good performance.  
-> When used as a virtualizer, QEMU achieves near native performance by executing the guest code directly on the host CPU. QEMU supports virtualization when executing under the Xen hypervisor or using the KVM kernel module in Linux. When using KVM, QEMU can virtualize x86, server and embedded PowerPC, 64-bit POWER, S390, 32-bit and 64-bit ARM, and MIPS guests. [qemu.org]
-
-> QEMU 是一个通用的开源机器仿真器和虚拟化工具。  
-> 作为机器仿真器使用时，QEMU 可以在一台机器（例如，ARM 板）上运行为另一台机器（例如，您的个人计算机）制作的操作系统和程序。通过使用动态翻译，它实现了非常好的性能。  
-> 作为虚拟化工具使用时，QEMU 通过直接在主机 CPU 上执行来宾代码来实现接近本地的性能。在使用 Xen 虚拟机监控器或 Linux 中的 KVM 内核模块时，QEMU 支持虚拟化。在使用 KVM 时，QEMU 可以虚拟化 x86、服务器和嵌入式 PowerPC、64 位 POWER、S390、32 位和 64 位 ARM 和 MIPS 来宾。[qemu.org]
-
 ## install
 
 ```sh

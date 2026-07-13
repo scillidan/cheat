@@ -12,12 +12,6 @@ Zeal → Edit → Preferences → Docset storage → `<path_to>/docsets`
 
 You can get Feed URL from [Zeal User Contributions & Cheat Sheets](https://zealusercontributions.vercel.app/docsets).
 
-## cross-reference
-
-### extra
-
-- [keypirinha-zealous.md](/opt/_windows/keypirinha/keypirinha.md)
-
 ## asset
 
 - [Dash's user contributed docset feed](https://github.com/hashhar/dash-contrib-docset-feeds)
@@ -39,7 +33,3 @@ You can get Feed URL from [Zeal User Contributions & Cheat Sheets](https://zealu
   - [npm](http://zealusercontributions.vercel.app/api/docsets/npm.xml)
   - [Tailwind CSS](http://zealusercontributions.vercel.app/api/docsets/Tailwind_CSS.xml)
   - [Terraform](http://zealusercontributions.vercel.app/api/docsets/Terraform.xml)
-
-## appdedix
-
-![zeal](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/opt/zeal.png)

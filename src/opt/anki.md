@@ -17,12 +17,6 @@
 - #guide [Automatic Anime Cards MPV Script](https://anacreondjt.gitlab.io/docs/mpvscript/)
 - #guide [Example targeted sentence cards](https://ankiweb.net/shared/info/1557722832)
 
-## cross-reference
-
-### extra
-
-- [anki-sync-server.md](/srv/anki-sync-server.md)
-
 ## resource
 
 ### later

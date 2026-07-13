@@ -52,11 +52,3 @@ sudo apt-get install libc6:armhf -y
 sudo apt install libcurl3t64-gnutls:armhf libcurl4t64:armhf
 sudo apt install mesa-vulkan-drivers -y
 ```
-
-## reference
-
-[^1]: [How to install Steam on Raspberry Pi](https://www.xda-developers.com/install-steam-on-raspberry-pi/)
-[^2]: [What is the best operating system for a Raspberry Pi to play games and do other heavy graphics tasks?](https://www.quora.com/What-is-the-best-operating-system-for-a-Raspberry-Pi-to-play-games-and-do-other-heavy-graphics-tasks)
-[^3]: [Upgrade your Raspberry Pi 5 with a powerful graphics card](https://www.geeky-gadgets.com/add-a-graphics-card-to-raspberry-pi/)
-[^4]: [Use an External GPU on Raspberry Pi 5 for 4K Gaming](https://www.jeffgeerling.com/blog/2024/use-external-gpu-on-raspberry-pi-5-4k-gaming)
-[^5]: [Raspberry Pilink](https://www.renpy.org/doc/html/raspi.html)

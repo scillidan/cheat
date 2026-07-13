@@ -52,12 +52,6 @@ luaotfload-tool -fu
 pdflatex --shell-escape "$1"
 ```
 
-## cross-reference
-
-### mark
-
-- [latex.md](/lib/latex/_.md)
-
 [^1]: [TeX Live](https://wiki.archlinux.org/title/TeX_Live)
 [^2]: [tlmgr](https://tug.org/texlive/doc/tlmgr.html)
 [^3]: [Upgrade from TeX Live 2024 to 2025](https://www.tug.org/texlive/upgrade.html)

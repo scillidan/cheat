@@ -54,8 +54,4 @@ sudo docker compose up -d
 2. Casdorr → Identity → Applications → LobeChat → Edit.
 3. Redirect URLs → Add → `http://<your_ip>:3210/api/auth/callback/casdoor` → Save & Exit.
 
-## reference
-
-- [Deploying Server Database Version on Vercel](https://lobehub.com/docs/self-hosting/server-database/vercel)
-
 [^1]: [Deploying LobeChat Server Database Version with Docker Compose](https://lobehub.com/docs/self-hosting/server-database/docker-compose)

@@ -62,15 +62,7 @@ sudo systemctl enable --now calibre-web
 3. Calibre → Add books → There's `Calibre Library\` here now.
 4. Calibre-Web → Admin → Edit Cabibre Database Configuration → Select folder contains the `metadata.db`.
 
-## reference
-
-- [linuxserver/calibre-web](https://docs.linuxserver.io/images/docker-calibre-web)
-
 ## resource
 
 - [Calibre-Web Automated](https://github.com/crocodilestick/Calibre-Web-Automated)
 - [Calibre-Web-Automated-Book-Downloader](https://github.com/calibrain/calibre-web-automated-book-downloader)
-
-## appdedix
-
-![calibre-web](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/srv/calibre-web.png)

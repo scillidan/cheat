@@ -50,10 +50,6 @@ subl %UserProfile%\.wslconfig
 guiApplications=false
 ```
 
-## cross-reference
-
-- [ubuntu.md](/os/ubuntu.md)
-
 [^1]: [Install Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/Install-Hyper-V?pivots=windows)
 [^2]: [How to install Arch Linux for WSL](https://dev.to/jrcharney/how-to-install-arch-linux-for-wsl-184a)
 [^3]: [WSL --update fails with unknown error code (0x80240066)](https://github.com/microsoft/WSL/issues/9039)

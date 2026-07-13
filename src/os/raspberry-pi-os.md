@@ -63,21 +63,5 @@ deb https://mirrors.ustc.edu.cn/debian bullseye-updates main contrib non-free
 # deb-src https://mirrors.ustc.edu.cn/debian bullseye-backports main contrib non-free
 ```
 
-## reference
-
-- #blog [Arch Linux ARM on a Raspberry Pi 5 Model B](https://kiljan.org/2023/11/24/arch-linux-arm-on-a-raspberry-pi-5-model-b/)
-- #blog [Arch Linux on Raspberry Pi 5: Back from the trenches](http://blog.hellonico.info/posts/iot/arch_on_raspberry/)
-- #blog [How I built this website on a Raspberry Pi](https://mirawelner.com/posts/website_howto.html)
-- #blog [Raspberry Pi Pico audio player](https://lucstechblog.blogspot.com/2025/02/raspberry-pi-pico-audio-player.html)
-
-## cross-requirement
-
-- [retropie.md](/os/retropie.md)
-- [recalbox.md](/os/recalbox.md)
-
 [^1]: [Installing Raspberry Pi OS on an NVMe SSD (Command-Line Style)](https://wolfpaulus.com/rp5-cli/)
 [^2]: [USTC Mirror Help - Raspbian](https://mirrors.ustc.edu.cn/help/raspbian.html)
-
-## appdedix
-
-![raspberry-pi-os](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/os/raspberry-pi-os.png)

@@ -33,7 +33,3 @@ Download theme into `share/themes`.
 	- [Add themes into frontend](https://wiki.recalbox.com/en/tutorials/frontend-customization/add-themes-into-emulationstation)
 	- [Gamelists](https://github.com/recalbox/recalbox-emulationstation/blob/master/GAMELISTS.md)
 	- [Netplay (online games)](https://wiki.recalbox.com/en/basic-usage/features/netplay-online-games)
-
-## cross-reference
-
-- [winscp.md](/opt/_windows/winscp.md)

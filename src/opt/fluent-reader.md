@@ -9,11 +9,3 @@
 	 Type: API Key
 	 Password: <token>
 	 ```
-
-## reference
-
-- #keymap [Fluent Reader](https://github.com/yang991178/fluent-reader/wiki/Support#keyboard-shortcuts)
-
-## appdedix
-
-![fluent-reader](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/opt/fluent-reader.png)

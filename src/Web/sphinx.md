@@ -22,13 +22,6 @@ make html
 # sphinx-autobuild . _bulid
 ```
 
-## reference
-
-- #document [Create Documentation with RST, Sphinx, Sublime, and GitHub — RST | Sphinx | Sublime | GitHub documentation](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html)
-- #document [Sphinx — Sphinx documentation](https://www.sphinx-doc.org/en/master/index.html#)
-	- [reStructuredText Primer — Sphinx documentation](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
-- #sheet [radeklat/sphinx-rest-cheatsheet](https://github.com/radeklat/sphinx-rest-cheatsheet)
-
 ## resource
 
 ### mark

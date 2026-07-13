@@ -10,9 +10,3 @@ sudo apt-get update
 sudo apt-get install tailscale
 sudo tailscale up
 ```
-
-## reference
-
-### cache
-
-- [Subnet routers](https://tailscale.com/kb/1019/subnets)

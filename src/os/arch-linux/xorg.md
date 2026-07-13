@@ -27,7 +27,3 @@ sudo pacman -S xorg-xev
 xev
 # Get your keyboard key's keycode
 ```
-
-## reference
-
-- [What is ".xsession" for?](https://unix.stackexchange.com/questions/47359/what-is-xsession-for)

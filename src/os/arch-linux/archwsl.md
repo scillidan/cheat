@@ -61,10 +61,6 @@ vim /etc/wsl.conf
 systemd=true
 ```
 
-## reference
-
-- [Install Arch Linux on WSL - ArchWiki](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL)
-
 ## cross-reference
 
 0. [arch-linux.md](/os/arch-linux/_.md)
@@ -75,8 +71,3 @@ systemd=true
 5. [tigervnc.md](/opt/_arch/tigervnc.md)
 
 [^1]: [Known issues](https://wsldl-pg.github.io/ArchW-docs/Known-issues/)
-
-## appdedix
-
-![archwsl_01](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/os/archwsl_01.png)
-![archwsl_02](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/os/archwsl_02.png)

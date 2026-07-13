@@ -22,12 +22,4 @@ vim docker-compose.yml
 sudo docker compose up -d
 ```
 
-## reference
-
-- [Directory Structure](https://www.audiobookshelf.org/docs/#book-directory-structure)
-
 [^1]: [Docker Compose](https://www.audiobookshelf.org/docs/#docker-compose-install)
-
-## appdedix
-
-![audiobookshelf](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/srv/audiobookshelf.png)

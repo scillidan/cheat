@@ -24,9 +24,3 @@ api_key='<paste_to>'
 jsc -t <tracker> -s "<to_search>"
 jsc -t <tracker> -s "<to_search>" | xargs -n 1 -r aria2
 ```
-
-## cross-reference
-
-### mark
-
-- [jackett.md](/srv/jackett.md)

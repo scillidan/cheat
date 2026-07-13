@@ -44,13 +44,6 @@ launch: "{env.PEGASUS_HOME}\RetroArch\retroarch.exe" -L "{env.PEGASUS_HOME}\Retr
 launch: "/home/<user>/RetroArch/retroarch" -L "/home/<user>/RetroArch/cores/flycast_libretro.so" "{file.path}"
 ```
 
-## reference
-
-- [Pegasus Tools Collection](https://pegasus-frontend.org/tools/)
-- [Skyscraper](https://github.com/muldjord/skyscraper)
-- [Retro BIOSes](https://github.com/Abdess/retroarch_system)
-- [RetroArch asset server](https://github.com/NickHeap2/retroarch-asset-server)
-
 ## resource
 
 ### mark
@@ -67,16 +60,3 @@ launch: "/home/<user>/RetroArch/retroarch" -L "/home/<user>/RetroArch/cores/flyc
 - #theme [Retro Mega Next](https://github.com/plaidman/retromega-next)
 - #theme [Retro Mega](https://github.com/djfumberger/retromega)
 - #theme [Slick theme for Pegasus](https://github.com/buzz/pegasus-theme-slick)
-
-## annex
-
-- [file_pegasus-g](https://github.com/scillidan/file_pegasus-g)
-- [file_pegasus-g_metadata-export](https://github.com/scillidan/file_pegasus-g_metadata-export)
-- [init_pegasus.bat](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.bat)
-- [init_pegasus.sh](https://github.com/scillidan/Shell/blob/main/opt/init_pegasus.sh)
-
-## appdedix
-
-![pegasus-g](https://raw.githubusercontent.com/scillidan/cdn_image_cheat/refs/heads/main/optGame/pegasus-g.png)
-
-- [pegasus-frontend_init_windows.mp4](https://scillidan.github.io/media_cheat/opt/pegasus-frontend_init_windows.mp4)

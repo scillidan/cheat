@@ -97,11 +97,6 @@ sudo docker run -p 8080:80 --rm nginx
 sudo docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark
 ```
 
-## reference
-
-- #lession [Docker for beginners](https://docker-curriculum.com/)
-- [How to Change Docker’s Default Data Directory](https://linuxiac.com/how-to-change-docker-data-directory/)
-
 [^1]: [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 [^2]: [Docker / Podman 安装与换源](https://wcbing.top/linux/containers/install/)
 [^3]: [Docker Hub - Quickstart](https://docs.docker.com/docker-hub/quickstart/)
