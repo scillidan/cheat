@@ -9,9 +9,3 @@
 		- File Format → {source}.{preset}
 		- Change case to Title Case (Off)
 		- Replace underscores with a space (Off)
-
-## reference
-
-- #option [HandBrake](https://handbrake.fr/docs/en/latest/cli/command-line-reference.html)
-- [How to reduce video file size using Handbrake](https://steamcommunity.com/sharedfiles/filedetails/?id=1856527757)
-- [Newbie On Encoding From Blu-Ray Source Files](https://www.reddit.com/r/handbrake/comments/qas35a/newbie_on_encoding_from_bluray_source_files)

@@ -166,12 +166,6 @@ sudo systemctl status xow
 1. [gpi-case-2.md](/dev/gpi-case-2.md)
 2. [raspberry-pi-os.md](/os/raspberry-pi-os.md)
 
-- [curse-of-the-arrow.md](/optGame/curse-of-the-arrow.md)
-- [es-de.md](/opt/es-de/_.md)
-- [mari0.md](/optGame/mari0.md)
-- [nxengine-evo-rpi.md](/optGame/nxengine-evo-rpi.md)
-- [pegasus-frontend.md](/optGame/pegasus-frontend.md)
-
 [^1]: [Configure_OS.md](https://github.com/danielfreer/raspberrypi5-retropie-setup/blob/main/Configure_OS.md)
 [^2]: [Install_RetroPie.md](https://github.com/danielfreer/raspberrypi5-retropie-setup/blob/main/Install_RetroPie.md)
 [^3]: [Bluetooth on the Raspberry](https://pimylifeup.com/raspberry-pi-bluetooth/)

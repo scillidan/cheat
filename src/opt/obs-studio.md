@@ -31,9 +31,5 @@
 
 - Select one on tab `<Sources>` → Filters → Effect Filters → Add → Color Key.
 
-## reference
-
-- [YouTube 推荐的上传编码设置](https://support.google.com/youtube/answer/1722171)
-
 [^1]: [Advanced Recording Settings Guide](https://obsproject.com/kb/advanced-recording-settings-guide)
 [^2]: [Best OBS Settings for Streamers: Tips & Tricks](https://wpstream.net/obs-settings/)

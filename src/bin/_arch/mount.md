@@ -95,7 +95,3 @@ sudo systemctl daemon-reload
 sudo mount -a
 sudo systemctl enable mount.service
 ```
-
-## reference
-
-- #blog [USB drives on Arch Linux | ejmastnak](https://ejmastnak.com/tutorials/arch/usb/)

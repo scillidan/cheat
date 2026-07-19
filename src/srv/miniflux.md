@@ -144,16 +144,6 @@ sudo apt-get remove --purge postgresql-16
 3. Create shortcut of `start_miniflux.vbs`.
 4. Put the shortcut into `C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`.
 
-## reference
-
-- [Feed Filtering Rules](https://miniflux.app/docs/rules.html#feed-filtering-rules)
-
-## resource
-
-### mark
-
-- [miniflux-theme-reeder](https://github.com/rootknight/Miniflux-Theme-Reeder)
-
 [^1]: [initdb](https://www.postgresql.org/docs/current/app-initdb.html)
 [^2]: [Server Dialog](https://www.pgadmin.org/docs/pgadmin4/development/server_dialog.html)
 [^3]: [Configuration Parameters](https://miniflux.app/docs/configuration.html)

@@ -118,11 +118,4 @@ dict -h localhost -p 2528 -d <database> <word>
 
 - [Database copyright information](https://dict.org/bin/Dict?Form=Dict1&Query=00-database-info&Strategy=*&Database=*)
 
-## resource
-
-### cache
-
-- [ClipDict](https://github.com/github-young/ClipDict)
-- [dict-cedic](https://github.com/tuberry/dict-cedict)
-
 [^1]: [dictd.conf](https://gist.github.com/wind0204/d65c7d1b5d7794c4c7fa1a02d5151acc)

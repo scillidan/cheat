@@ -106,8 +106,3 @@ sudo systemctl restart smbd
 ## reference
 
 - [Create a seedbox on Raspberry Pi using the latest version of qbittorrent](https://www.gsvd.dev/blog/create-a-seedbox-on-raspberry-pi-using-the-latest-version-of-qbittorrent)
-
-## cross-reference
-
-- [mount.md](/bin/_arch/mount.md)
-- [flood.md](/optWeb/flood.md)

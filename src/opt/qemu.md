@@ -53,8 +53,4 @@ sudo qemu-system-x86_64 \
 
 - TigerVNC viewer → VNC server → `localhost:5900` → Connect.
 
-## reference
-
-- #document [QEMU ArchWiki](https://wiki.archlinux.org/title/QEMU)
-
 [^1]: [How to Install and Use QEMU/KVM on Arch Linux | Siberoloji](https://www.siberoloji.com/how-to-install-and-use-qemukvm-on-arch-linux/)

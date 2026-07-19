@@ -39,7 +39,3 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --set-default-zone=work
 sudo firewall-cmd --zone=work --list-all
 ```
-
-## reference
-
-- [Firewalld - ArchWiki](https://wiki.archlinux.org/title/Firewalld)

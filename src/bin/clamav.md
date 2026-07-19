@@ -233,10 +233,6 @@ clamscan -r -i <dir>
 clamscan -v -a --max-filesize=1000M --max-scansize=1000M --alert-exceeds-max=yes <file>
 ```
 
-## reference
-
-- #document [ClamAV Document](https://docs.clamav.net)
-
 ## troubleshoot
 
 - [Clamscan on Windows does not skip large files (>2 GB) and outputs error reports cl_scandesc_callback: Can't fstat descriptor 3 instead](https://github.com/Cisco-Talos/clamav/issues/1315)
