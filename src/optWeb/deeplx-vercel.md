@@ -1,3 +1,0 @@
-# [DeepLX Vercel](https://github.com/bropines/Deeplx-vercel)
-
-![](https://img.shields.io/github/license/bropines/Deeplx-vercel) ![](https://img.shields.io/github/last-commit/scillidan/Deeplx-vercel/main?label=last%20commit%20(fork))
