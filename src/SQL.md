@@ -1,9 +1,3 @@
-# SQL
-
-## usage
-
-### command
-
 ```sql
 -- Generate feed URLs based on subscription type.
 IF(ISNUMBER(SEARCH("release", [subscribe])), CONCATENATE([url], "/releases.atom"), IF(ISNUMBER(SEARCH("commit", [subscribe])), CONCATENATE([url], "/commits.atom"), ""))
